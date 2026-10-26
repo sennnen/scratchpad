@@ -1,0 +1,412 @@
+/home/user/work/fastchess/fastchess -engine cmd=/home/user/data/sf_research name=ply05_08 option.StudentFile=/home/user/nets/b1/ply05_08.stud tc=inf nodes=20000 -engine cmd=/home/user/data/sf_research name=uniform option.StudentFile=/home/user/nets/b1/uniform.stud tc=inf nodes=20000 -each option.Threads=1 option.Hash=16 -openings file=/home/user/data/UHO_4060_v4.epd format=epd order=random -srand 1 -repeat -rounds 100 -concurrency 4 -resign movecount=3 score=1000 twosided=true -draw movenumber=40 movecount=8 score=8 -pgnout file=experiments/b1/matches/ply05_08_vs_uniform.pgn -ratinginterval 100
+Indexing opening suite...
+Started game 1 of 200 (ply05_08 vs uniform)
+Started game 3 of 200 (ply05_08 vs uniform)
+Started game 2 of 200 (uniform vs ply05_08)
+Started game 4 of 200 (uniform vs ply05_08)
+Finished game 4 (uniform vs ply05_08): 1-0 {White wins by adjudication}
+Started game 5 of 200 (ply05_08 vs uniform)
+Finished game 1 (ply05_08 vs uniform): 1-0 {White wins by adjudication}
+Started game 6 of 200 (uniform vs ply05_08)
+Finished game 3 (ply05_08 vs uniform): 0-1 {Black wins by adjudication}
+Started game 7 of 200 (ply05_08 vs uniform)
+Finished game 2 (uniform vs ply05_08): 1-0 {White wins by adjudication}
+Started game 8 of 200 (uniform vs ply05_08)
+Finished game 5 (ply05_08 vs uniform): 1-0 {White wins by adjudication}
+Started game 9 of 200 (ply05_08 vs uniform)
+Finished game 7 (ply05_08 vs uniform): 0-1 {Black wins by adjudication}
+Started game 10 of 200 (uniform vs ply05_08)
+Finished game 6 (uniform vs ply05_08): 1-0 {White wins by adjudication}
+Started game 11 of 200 (ply05_08 vs uniform)
+Finished game 8 (uniform vs ply05_08): 0-1 {Black mates}
+Started game 12 of 200 (uniform vs ply05_08)
+Finished game 9 (ply05_08 vs uniform): 0-1 {Black wins by adjudication}
+Started game 13 of 200 (ply05_08 vs uniform)
+Finished game 11 (ply05_08 vs uniform): 1-0 {White wins by adjudication}
+Started game 14 of 200 (uniform vs ply05_08)
+Finished game 12 (uniform vs ply05_08): 1-0 {White wins by adjudication}
+Started game 15 of 200 (ply05_08 vs uniform)
+Finished game 10 (uniform vs ply05_08): 1-0 {White wins by adjudication}
+Started game 16 of 200 (uniform vs ply05_08)
+Finished game 13 (ply05_08 vs uniform): 0-1 {Black wins by adjudication}
+Started game 17 of 200 (ply05_08 vs uniform)
+Finished game 14 (uniform vs ply05_08): 1-0 {White wins by adjudication}
+Started game 18 of 200 (uniform vs ply05_08)
+Finished game 16 (uniform vs ply05_08): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 19 of 200 (ply05_08 vs uniform)
+Finished game 15 (ply05_08 vs uniform): 0-1 {Black wins by adjudication}
+Started game 20 of 200 (uniform vs ply05_08)
+Finished game 17 (ply05_08 vs uniform): 1-0 {White wins by adjudication}
+Started game 21 of 200 (ply05_08 vs uniform)
+Finished game 18 (uniform vs ply05_08): 1-0 {White wins by adjudication}
+Started game 22 of 200 (uniform vs ply05_08)
+Finished game 19 (ply05_08 vs uniform): 1-0 {White wins by adjudication}
+Started game 23 of 200 (ply05_08 vs uniform)
+Finished game 20 (uniform vs ply05_08): 0-1 {Black wins by adjudication}
+Started game 24 of 200 (uniform vs ply05_08)
+Finished game 21 (ply05_08 vs uniform): 1-0 {White wins by adjudication}
+Started game 25 of 200 (ply05_08 vs uniform)
+Finished game 22 (uniform vs ply05_08): 0-1 {Black wins by adjudication}
+Started game 26 of 200 (uniform vs ply05_08)
+Finished game 23 (ply05_08 vs uniform): 0-1 {Black wins by adjudication}
+Started game 27 of 200 (ply05_08 vs uniform)
+Finished game 24 (uniform vs ply05_08): 1-0 {White wins by adjudication}
+Started game 28 of 200 (uniform vs ply05_08)
+Finished game 25 (ply05_08 vs uniform): 1-0 {White wins by adjudication}
+Started game 29 of 200 (ply05_08 vs uniform)
+Finished game 26 (uniform vs ply05_08): 0-1 {Black wins by adjudication}
+Started game 30 of 200 (uniform vs ply05_08)
+Finished game 27 (ply05_08 vs uniform): 0-1 {Black wins by adjudication}
+Started game 31 of 200 (ply05_08 vs uniform)
+Finished game 29 (ply05_08 vs uniform): 1-0 {White wins by adjudication}
+Started game 32 of 200 (uniform vs ply05_08)
+Finished game 31 (ply05_08 vs uniform): 0-1 {Black wins by adjudication}
+Started game 33 of 200 (ply05_08 vs uniform)
+Finished game 28 (uniform vs ply05_08): 1/2-1/2 {Draw by stalemate}
+Started game 34 of 200 (uniform vs ply05_08)
+Finished game 30 (uniform vs ply05_08): 0-1 {Black wins by adjudication}
+Started game 35 of 200 (ply05_08 vs uniform)
+Finished game 34 (uniform vs ply05_08): 0-1 {Black wins by adjudication}
+Started game 36 of 200 (uniform vs ply05_08)
+Finished game 33 (ply05_08 vs uniform): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 37 of 200 (ply05_08 vs uniform)
+Finished game 35 (ply05_08 vs uniform): 0-1 {Black wins by adjudication}
+Started game 38 of 200 (uniform vs ply05_08)
+Finished game 32 (uniform vs ply05_08): 0-1 {Black wins by adjudication}
+Started game 39 of 200 (ply05_08 vs uniform)
+Finished game 37 (ply05_08 vs uniform): 1-0 {White wins by adjudication}
+Started game 40 of 200 (uniform vs ply05_08)
+Finished game 39 (ply05_08 vs uniform): 1-0 {White wins by adjudication}
+Started game 41 of 200 (ply05_08 vs uniform)
+Finished game 36 (uniform vs ply05_08): 1-0 {White wins by adjudication}
+Started game 42 of 200 (uniform vs ply05_08)
+Finished game 38 (uniform vs ply05_08): 1-0 {White wins by adjudication}
+Started game 43 of 200 (ply05_08 vs uniform)
+Finished game 40 (uniform vs ply05_08): 1-0 {White wins by adjudication}
+Started game 44 of 200 (uniform vs ply05_08)
+Finished game 43 (ply05_08 vs uniform): 1/2-1/2 {Draw by adjudication}
+Started game 45 of 200 (ply05_08 vs uniform)
+Finished game 42 (uniform vs ply05_08): 1/2-1/2 {Draw by adjudication}
+Started game 46 of 200 (uniform vs ply05_08)
+Finished game 46 (uniform vs ply05_08): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 47 of 200 (ply05_08 vs uniform)
+Finished game 41 (ply05_08 vs uniform): 1-0 {White mates}
+Started game 48 of 200 (uniform vs ply05_08)
+Finished game 44 (uniform vs ply05_08): 1-0 {White wins by adjudication}
+Started game 49 of 200 (ply05_08 vs uniform)
+Finished game 45 (ply05_08 vs uniform): 1-0 {White wins by adjudication}
+Started game 50 of 200 (uniform vs ply05_08)
+Finished game 48 (uniform vs ply05_08): 1-0 {White wins by adjudication}
+Started game 51 of 200 (ply05_08 vs uniform)
+Finished game 47 (ply05_08 vs uniform): 1-0 {White wins by adjudication}
+Started game 52 of 200 (uniform vs ply05_08)
+Finished game 50 (uniform vs ply05_08): 1/2-1/2 {Draw by adjudication}
+Started game 53 of 200 (ply05_08 vs uniform)
+Finished game 51 (ply05_08 vs uniform): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 54 of 200 (uniform vs ply05_08)
+Finished game 49 (ply05_08 vs uniform): 1/2-1/2 {Draw by adjudication}
+Started game 55 of 200 (ply05_08 vs uniform)
+Finished game 53 (ply05_08 vs uniform): 1-0 {White wins by adjudication}
+Started game 56 of 200 (uniform vs ply05_08)
+Finished game 55 (ply05_08 vs uniform): 1-0 {White wins by adjudication}
+Started game 57 of 200 (ply05_08 vs uniform)
+Finished game 52 (uniform vs ply05_08): 1/2-1/2 {Draw by insufficient mating material}
+Started game 58 of 200 (uniform vs ply05_08)
+Finished game 54 (uniform vs ply05_08): 1-0 {White wins by adjudication}
+Started game 59 of 200 (ply05_08 vs uniform)
+Finished game 56 (uniform vs ply05_08): 1/2-1/2 {Draw by insufficient mating material}
+Started game 60 of 200 (uniform vs ply05_08)
+Finished game 59 (ply05_08 vs uniform): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 61 of 200 (ply05_08 vs uniform)
+Finished game 57 (ply05_08 vs uniform): 0-1 {Black wins by adjudication}
+Started game 62 of 200 (uniform vs ply05_08)
+Finished game 58 (uniform vs ply05_08): 1-0 {White wins by adjudication}
+Started game 63 of 200 (ply05_08 vs uniform)
+Finished game 60 (uniform vs ply05_08): 1-0 {White wins by adjudication}
+Started game 64 of 200 (uniform vs ply05_08)
+Finished game 64 (uniform vs ply05_08): 1-0 {White wins by adjudication}
+Started game 65 of 200 (ply05_08 vs uniform)
+Finished game 61 (ply05_08 vs uniform): 1-0 {White wins by adjudication}
+Started game 66 of 200 (uniform vs ply05_08)
+Finished game 62 (uniform vs ply05_08): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 67 of 200 (ply05_08 vs uniform)
+Finished game 65 (ply05_08 vs uniform): 1-0 {White wins by adjudication}
+Started game 68 of 200 (uniform vs ply05_08)
+Finished game 63 (ply05_08 vs uniform): 1-0 {White wins by adjudication}
+Started game 69 of 200 (ply05_08 vs uniform)
+Finished game 66 (uniform vs ply05_08): 1-0 {White wins by adjudication}
+Started game 70 of 200 (uniform vs ply05_08)
+Finished game 69 (ply05_08 vs uniform): 1-0 {White wins by adjudication}
+Started game 71 of 200 (ply05_08 vs uniform)
+Finished game 67 (ply05_08 vs uniform): 1-0 {White wins by adjudication}
+Started game 72 of 200 (uniform vs ply05_08)
+Finished game 70 (uniform vs ply05_08): 0-1 {Black wins by adjudication}
+Started game 73 of 200 (ply05_08 vs uniform)
+Finished game 68 (uniform vs ply05_08): 1-0 {White wins by adjudication}
+Started game 74 of 200 (uniform vs ply05_08)
+Finished game 71 (ply05_08 vs uniform): 0-1 {Black wins by adjudication}
+Started game 75 of 200 (ply05_08 vs uniform)
+Finished game 73 (ply05_08 vs uniform): 1-0 {White wins by adjudication}
+Started game 76 of 200 (uniform vs ply05_08)
+Finished game 74 (uniform vs ply05_08): 1-0 {White wins by adjudication}
+Started game 77 of 200 (ply05_08 vs uniform)
+Finished game 76 (uniform vs ply05_08): 1-0 {White wins by adjudication}
+Started game 78 of 200 (uniform vs ply05_08)
+Finished game 72 (uniform vs ply05_08): 0-1 {Black mates}
+Started game 79 of 200 (ply05_08 vs uniform)
+Finished game 75 (ply05_08 vs uniform): 0-1 {Black wins by adjudication}
+Started game 80 of 200 (uniform vs ply05_08)
+Finished game 77 (ply05_08 vs uniform): 0-1 {Black wins by adjudication}
+Started game 81 of 200 (ply05_08 vs uniform)
+Finished game 79 (ply05_08 vs uniform): 0-1 {Black wins by adjudication}
+Started game 82 of 200 (uniform vs ply05_08)
+Finished game 78 (uniform vs ply05_08): 1-0 {White wins by adjudication}
+Started game 83 of 200 (ply05_08 vs uniform)
+Finished game 80 (uniform vs ply05_08): 0-1 {Black wins by adjudication}
+Started game 84 of 200 (uniform vs ply05_08)
+Finished game 81 (ply05_08 vs uniform): 0-1 {Black wins by adjudication}
+Started game 85 of 200 (ply05_08 vs uniform)
+Finished game 84 (uniform vs ply05_08): 0-1 {Black wins by adjudication}
+Started game 86 of 200 (uniform vs ply05_08)
+Finished game 82 (uniform vs ply05_08): 1-0 {White wins by adjudication}
+Started game 87 of 200 (ply05_08 vs uniform)
+Finished game 83 (ply05_08 vs uniform): 0-1 {Black wins by adjudication}
+Started game 88 of 200 (uniform vs ply05_08)
+Finished game 87 (ply05_08 vs uniform): 0-1 {Black wins by adjudication}
+Started game 89 of 200 (ply05_08 vs uniform)
+Finished game 85 (ply05_08 vs uniform): 1-0 {White wins by adjudication}
+Started game 90 of 200 (uniform vs ply05_08)
+Finished game 86 (uniform vs ply05_08): 1-0 {White wins by adjudication}
+Started game 91 of 200 (ply05_08 vs uniform)
+Finished game 88 (uniform vs ply05_08): 1-0 {White wins by adjudication}
+Started game 92 of 200 (uniform vs ply05_08)
+Finished game 90 (uniform vs ply05_08): 1-0 {White wins by adjudication}
+Started game 93 of 200 (ply05_08 vs uniform)
+Finished game 89 (ply05_08 vs uniform): 1-0 {White wins by adjudication}
+Started game 94 of 200 (uniform vs ply05_08)
+Finished game 92 (uniform vs ply05_08): 1-0 {White mates}
+Started game 95 of 200 (ply05_08 vs uniform)
+Finished game 93 (ply05_08 vs uniform): 1-0 {White wins by adjudication}
+Started game 96 of 200 (uniform vs ply05_08)
+Finished game 94 (uniform vs ply05_08): 1-0 {White wins by adjudication}
+Started game 97 of 200 (ply05_08 vs uniform)
+Finished game 91 (ply05_08 vs uniform): 1/2-1/2 {Draw by insufficient mating material}
+Started game 98 of 200 (uniform vs ply05_08)
+Finished game 95 (ply05_08 vs uniform): 1-0 {White wins by adjudication}
+Started game 99 of 200 (ply05_08 vs uniform)
+Finished game 98 (uniform vs ply05_08): 1-0 {White wins by adjudication}
+Started game 100 of 200 (uniform vs ply05_08)
+Finished game 96 (uniform vs ply05_08): 1/2-1/2 {Draw by adjudication}
+Started game 101 of 200 (ply05_08 vs uniform)
+Finished game 97 (ply05_08 vs uniform): 1-0 {White wins by adjudication}
+Started game 102 of 200 (uniform vs ply05_08)
+Finished game 99 (ply05_08 vs uniform): 1/2-1/2 {Draw by insufficient mating material}
+Started game 103 of 200 (ply05_08 vs uniform)
+Finished game 100 (uniform vs ply05_08): 1-0 {White wins by adjudication}
+Started game 104 of 200 (uniform vs ply05_08)
+Finished game 101 (ply05_08 vs uniform): 1-0 {White wins by adjudication}
+Started game 105 of 200 (ply05_08 vs uniform)
+Finished game 102 (uniform vs ply05_08): 1-0 {White wins by adjudication}
+Started game 106 of 200 (uniform vs ply05_08)
+Finished game 103 (ply05_08 vs uniform): 1-0 {White wins by adjudication}
+Started game 107 of 200 (ply05_08 vs uniform)
+Finished game 105 (ply05_08 vs uniform): 0-1 {Black wins by adjudication}
+Started game 108 of 200 (uniform vs ply05_08)
+Finished game 104 (uniform vs ply05_08): 1-0 {White wins by adjudication}
+Started game 109 of 200 (ply05_08 vs uniform)
+Finished game 106 (uniform vs ply05_08): 1-0 {White wins by adjudication}
+Started game 110 of 200 (uniform vs ply05_08)
+Finished game 107 (ply05_08 vs uniform): 0-1 {Black wins by adjudication}
+Started game 111 of 200 (ply05_08 vs uniform)
+Finished game 108 (uniform vs ply05_08): 1-0 {White wins by adjudication}
+Started game 112 of 200 (uniform vs ply05_08)
+Finished game 109 (ply05_08 vs uniform): 0-1 {Black wins by adjudication}
+Started game 113 of 200 (ply05_08 vs uniform)
+Finished game 110 (uniform vs ply05_08): 0-1 {Black wins by adjudication}
+Started game 114 of 200 (uniform vs ply05_08)
+Finished game 111 (ply05_08 vs uniform): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 115 of 200 (ply05_08 vs uniform)
+Finished game 113 (ply05_08 vs uniform): 0-1 {Black wins by adjudication}
+Started game 116 of 200 (uniform vs ply05_08)
+Finished game 114 (uniform vs ply05_08): 0-1 {Black wins by adjudication}
+Started game 117 of 200 (ply05_08 vs uniform)
+Finished game 116 (uniform vs ply05_08): 1-0 {White wins by adjudication}
+Started game 118 of 200 (uniform vs ply05_08)
+Finished game 112 (uniform vs ply05_08): 1/2-1/2 {Draw by adjudication}
+Started game 119 of 200 (ply05_08 vs uniform)
+Finished game 115 (ply05_08 vs uniform): 0-1 {Black wins by adjudication}
+Started game 120 of 200 (uniform vs ply05_08)
+Finished game 118 (uniform vs ply05_08): 1-0 {White wins by adjudication}
+Started game 121 of 200 (ply05_08 vs uniform)
+Finished game 117 (ply05_08 vs uniform): 1-0 {White wins by adjudication}
+Started game 122 of 200 (uniform vs ply05_08)
+Finished game 119 (ply05_08 vs uniform): 1-0 {White wins by adjudication}
+Started game 123 of 200 (ply05_08 vs uniform)
+Finished game 120 (uniform vs ply05_08): 1-0 {White wins by adjudication}
+Started game 124 of 200 (uniform vs ply05_08)
+Finished game 121 (ply05_08 vs uniform): 1-0 {White wins by adjudication}
+Started game 125 of 200 (ply05_08 vs uniform)
+Finished game 122 (uniform vs ply05_08): 0-1 {Black wins by adjudication}
+Started game 126 of 200 (uniform vs ply05_08)
+Finished game 123 (ply05_08 vs uniform): 1-0 {White wins by adjudication}
+Started game 127 of 200 (ply05_08 vs uniform)
+Finished game 124 (uniform vs ply05_08): 0-1 {Black wins by adjudication}
+Started game 128 of 200 (uniform vs ply05_08)
+Finished game 125 (ply05_08 vs uniform): 1-0 {White wins by adjudication}
+Started game 129 of 200 (ply05_08 vs uniform)
+Finished game 126 (uniform vs ply05_08): 1-0 {White wins by adjudication}
+Started game 130 of 200 (uniform vs ply05_08)
+Finished game 127 (ply05_08 vs uniform): 1-0 {White wins by adjudication}
+Started game 131 of 200 (ply05_08 vs uniform)
+Finished game 130 (uniform vs ply05_08): 1-0 {White wins by adjudication}
+Started game 132 of 200 (uniform vs ply05_08)
+Finished game 128 (uniform vs ply05_08): 1-0 {White wins by adjudication}
+Started game 133 of 200 (ply05_08 vs uniform)
+Finished game 129 (ply05_08 vs uniform): 0-1 {Black wins by adjudication}
+Started game 134 of 200 (uniform vs ply05_08)
+Finished game 131 (ply05_08 vs uniform): 1-0 {White wins by adjudication}
+Started game 135 of 200 (ply05_08 vs uniform)
+Finished game 133 (ply05_08 vs uniform): 1-0 {White wins by adjudication}
+Started game 136 of 200 (uniform vs ply05_08)
+Finished game 135 (ply05_08 vs uniform): 1-0 {White wins by adjudication}
+Started game 137 of 200 (ply05_08 vs uniform)
+Finished game 132 (uniform vs ply05_08): 0-1 {Black wins by adjudication}
+Started game 138 of 200 (uniform vs ply05_08)
+Finished game 136 (uniform vs ply05_08): 1/2-1/2 {Draw by insufficient mating material}
+Started game 139 of 200 (ply05_08 vs uniform)
+Finished game 134 (uniform vs ply05_08): 1-0 {White wins by adjudication}
+Started game 140 of 200 (uniform vs ply05_08)
+Finished game 138 (uniform vs ply05_08): 0-1 {Black wins by adjudication}
+Started game 141 of 200 (ply05_08 vs uniform)
+Finished game 137 (ply05_08 vs uniform): 1-0 {White wins by adjudication}
+Started game 142 of 200 (uniform vs ply05_08)
+Finished game 142 (uniform vs ply05_08): 0-1 {Black wins by adjudication}
+Started game 143 of 200 (ply05_08 vs uniform)
+Finished game 139 (ply05_08 vs uniform): 1/2-1/2 {Draw by insufficient mating material}
+Started game 144 of 200 (uniform vs ply05_08)
+Finished game 141 (ply05_08 vs uniform): 0-1 {Black wins by adjudication}
+Started game 145 of 200 (ply05_08 vs uniform)
+Finished game 143 (ply05_08 vs uniform): 1-0 {White wins by adjudication}
+Started game 146 of 200 (uniform vs ply05_08)
+Finished game 144 (uniform vs ply05_08): 1-0 {White wins by adjudication}
+Started game 147 of 200 (ply05_08 vs uniform)
+Finished game 145 (ply05_08 vs uniform): 1-0 {White wins by adjudication}
+Started game 148 of 200 (uniform vs ply05_08)
+Finished game 140 (uniform vs ply05_08): 1/2-1/2 {Draw by fifty moves rule}
+Started game 149 of 200 (ply05_08 vs uniform)
+Finished game 146 (uniform vs ply05_08): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 150 of 200 (uniform vs ply05_08)
+Finished game 147 (ply05_08 vs uniform): 1-0 {White wins by adjudication}
+Started game 151 of 200 (ply05_08 vs uniform)
+Finished game 149 (ply05_08 vs uniform): 1/2-1/2 {Draw by insufficient mating material}
+Started game 152 of 200 (uniform vs ply05_08)
+Finished game 151 (ply05_08 vs uniform): 1-0 {White wins by adjudication}
+Started game 153 of 200 (ply05_08 vs uniform)
+Finished game 148 (uniform vs ply05_08): 1-0 {White wins by adjudication}
+Started game 154 of 200 (uniform vs ply05_08)
+Finished game 150 (uniform vs ply05_08): 0-1 {Black wins by adjudication}
+Started game 155 of 200 (ply05_08 vs uniform)
+Finished game 154 (uniform vs ply05_08): 1-0 {White wins by adjudication}
+Started game 156 of 200 (uniform vs ply05_08)
+Finished game 152 (uniform vs ply05_08): 0-1 {Black wins by adjudication}
+Started game 157 of 200 (ply05_08 vs uniform)
+Finished game 155 (ply05_08 vs uniform): 0-1 {Black wins by adjudication}
+Started game 158 of 200 (uniform vs ply05_08)
+Finished game 153 (ply05_08 vs uniform): 1-0 {White wins by adjudication}
+Started game 159 of 200 (ply05_08 vs uniform)
+Finished game 156 (uniform vs ply05_08): 1-0 {White wins by adjudication}
+Started game 160 of 200 (uniform vs ply05_08)
+Finished game 157 (ply05_08 vs uniform): 1-0 {White wins by adjudication}
+Started game 161 of 200 (ply05_08 vs uniform)
+Finished game 160 (uniform vs ply05_08): 1-0 {White wins by adjudication}
+Started game 162 of 200 (uniform vs ply05_08)
+Finished game 159 (ply05_08 vs uniform): 0-1 {Black wins by adjudication}
+Started game 163 of 200 (ply05_08 vs uniform)
+Finished game 158 (uniform vs ply05_08): 1/2-1/2 {Draw by adjudication}
+Started game 164 of 200 (uniform vs ply05_08)
+Finished game 163 (ply05_08 vs uniform): 1-0 {White wins by adjudication}
+Started game 165 of 200 (ply05_08 vs uniform)
+Finished game 161 (ply05_08 vs uniform): 1-0 {White wins by adjudication}
+Started game 166 of 200 (uniform vs ply05_08)
+Finished game 164 (uniform vs ply05_08): 0-1 {Black wins by adjudication}
+Started game 167 of 200 (ply05_08 vs uniform)
+Finished game 162 (uniform vs ply05_08): 1-0 {White wins by adjudication}
+Started game 168 of 200 (uniform vs ply05_08)
+Finished game 165 (ply05_08 vs uniform): 1-0 {White mates}
+Started game 169 of 200 (ply05_08 vs uniform)
+Finished game 167 (ply05_08 vs uniform): 0-1 {Black wins by adjudication}
+Started game 170 of 200 (uniform vs ply05_08)
+Finished game 166 (uniform vs ply05_08): 1-0 {White wins by adjudication}
+Started game 171 of 200 (ply05_08 vs uniform)
+Finished game 168 (uniform vs ply05_08): 1-0 {White wins by adjudication}
+Started game 172 of 200 (uniform vs ply05_08)
+Finished game 169 (ply05_08 vs uniform): 1-0 {White wins by adjudication}
+Started game 173 of 200 (ply05_08 vs uniform)
+Finished game 172 (uniform vs ply05_08): 0-1 {Black wins by adjudication}
+Started game 174 of 200 (uniform vs ply05_08)
+Finished game 173 (ply05_08 vs uniform): 1-0 {White wins by adjudication}
+Started game 175 of 200 (ply05_08 vs uniform)
+Finished game 170 (uniform vs ply05_08): 0-1 {Black wins by adjudication}
+Started game 176 of 200 (uniform vs ply05_08)
+Finished game 171 (ply05_08 vs uniform): 1-0 {White wins by adjudication}
+Started game 177 of 200 (ply05_08 vs uniform)
+Finished game 174 (uniform vs ply05_08): 0-1 {Black wins by adjudication}
+Started game 178 of 200 (uniform vs ply05_08)
+Finished game 176 (uniform vs ply05_08): 0-1 {Black wins by adjudication}
+Started game 179 of 200 (ply05_08 vs uniform)
+Finished game 177 (ply05_08 vs uniform): 1-0 {White wins by adjudication}
+Started game 180 of 200 (uniform vs ply05_08)
+Finished game 175 (ply05_08 vs uniform): 1-0 {White wins by adjudication}
+Started game 181 of 200 (ply05_08 vs uniform)
+Finished game 180 (uniform vs ply05_08): 1-0 {White mates}
+Started game 182 of 200 (uniform vs ply05_08)
+Finished game 178 (uniform vs ply05_08): 1-0 {White wins by adjudication}
+Started game 183 of 200 (ply05_08 vs uniform)
+Finished game 181 (ply05_08 vs uniform): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 184 of 200 (uniform vs ply05_08)
+Finished game 179 (ply05_08 vs uniform): 1-0 {White wins by adjudication}
+Started game 185 of 200 (ply05_08 vs uniform)
+Finished game 182 (uniform vs ply05_08): 1-0 {White wins by adjudication}
+Started game 186 of 200 (uniform vs ply05_08)
+Finished game 183 (ply05_08 vs uniform): 0-1 {Black wins by adjudication}
+Started game 187 of 200 (ply05_08 vs uniform)
+Finished game 185 (ply05_08 vs uniform): 1-0 {White wins by adjudication}
+Started game 188 of 200 (uniform vs ply05_08)
+Finished game 184 (uniform vs ply05_08): 1-0 {White wins by adjudication}
+Started game 189 of 200 (ply05_08 vs uniform)
+Finished game 186 (uniform vs ply05_08): 1-0 {White wins by adjudication}
+Started game 190 of 200 (uniform vs ply05_08)
+Finished game 187 (ply05_08 vs uniform): 1-0 {White wins by adjudication}
+Started game 191 of 200 (ply05_08 vs uniform)
+Finished game 189 (ply05_08 vs uniform): 1-0 {White wins by adjudication}
+Started game 192 of 200 (uniform vs ply05_08)
+Finished game 190 (uniform vs ply05_08): 0-1 {Black wins by adjudication}
+Started game 193 of 200 (ply05_08 vs uniform)
+Finished game 192 (uniform vs ply05_08): 1-0 {White wins by adjudication}
+Started game 194 of 200 (uniform vs ply05_08)
+Finished game 191 (ply05_08 vs uniform): 1/2-1/2 {Draw by insufficient mating material}
+Started game 195 of 200 (ply05_08 vs uniform)
+Finished game 188 (uniform vs ply05_08): 1/2-1/2 {Draw by insufficient mating material}
+Started game 196 of 200 (uniform vs ply05_08)
+Finished game 193 (ply05_08 vs uniform): 0-1 {Black wins by adjudication}
+Started game 197 of 200 (ply05_08 vs uniform)
+Finished game 194 (uniform vs ply05_08): 1-0 {White wins by adjudication}
+Started game 198 of 200 (uniform vs ply05_08)
+Finished game 195 (ply05_08 vs uniform): 1/2-1/2 {Draw by adjudication}
+Started game 199 of 200 (ply05_08 vs uniform)
+Finished game 196 (uniform vs ply05_08): 1-0 {White wins by adjudication}
+Started game 200 of 200 (uniform vs ply05_08)
+Finished game 198 (uniform vs ply05_08): 1-0 {White wins by adjudication}
+Finished game 197 (ply05_08 vs uniform): 1-0 {White wins by adjudication}
+Finished game 200 (uniform vs ply05_08): 1-0 {White wins by adjudication}
+Finished game 199 (ply05_08 vs uniform): 1/2-1/2 {Draw by 3-fold repetition}
+--------------------------------------------------
+Results of ply05_08 vs uniform (20000 nodes, 1t, 16MB, UHO_4060_v4.epd):
+Elo: -8.69 +/- 43.42, nElo: -9.69 +/- 48.15
+LOS: 34.67 %, DrawRatio: 44.00 %, PairsRatio: 0.93
+Games: 200, Wins: 83, Losses: 88, Draws: 29, Points: 97.5 (48.75 %)
+Ptnml(0-2): [19, 10, 44, 11, 16], WL/DD Ratio: 10.00
+--------------------------------------------------
+Finished match
+Total Time: 00:03:17 (hours:minutes:seconds)
+

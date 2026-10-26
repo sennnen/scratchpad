@@ -521,3 +521,24 @@ on VT it catches 86% of search-capture-best positions, precision 72%, removes 43
 Arms (teacher labels, re-initialised stacks, lr 3e-3, 3000 steps, 300k each): SEE-T (P3 T pool filtered),
 SEE-G (P3 G pool filtered), vs RS_G_300000 (unfiltered G). Primary: SEE-T vs RS_G_300000 (1000 games).
 Secondary: SEE-G vs RS_G_300000 (600 games).
+
+## B1 + B3 RESULTS (small students, mechanism): which tree positions carry the value?
+Pool: 1,600 master self-play games (seeds 9001-9004, 5000 nodes, 8%, boundary annotation), 26.5M tree
+positions. Each arm: 500k positions, H=256, 1.5e7 training positions; 200 games vs uniform, 20k nodes.
+(Validation numbers printed for filtered arms are invalid: the trainer applied the filters to the
+validation files, which lack the metadata. Training data and matches are unaffected.)
+| arm | Elo vs uniform |
+|---|---|
+| ply 1-4 from root | -47 +/- 37 |
+| ply 5-8 | -9 +/- 43 |
+| ply 9-12 | -2 +/- 41 |
+| ply 13+ | -60 +/- 43 |
+| \\|scaled eval - beta\\| < 100 (near window) | **-531 +/- 121** |
+| \\|scaled eval - beta\\| > 600 (far) | -119 +/- 49 |
+| quiescence nodes only | -17 +/- 41 |
+| main-search nodes only | -80 +/- 42 |
+- No targeted subset beats a uniform sample of the search tree. Coverage of the whole query distribution is
+  what matters; restricting to "decision-relevant" near-window positions is catastrophic (the student never
+  sees decisive material balances), refuting the naive boundary hypothesis for learning from scratch.
+- Quiescence nodes (the leaves whose evals search actually returns) carry most of the value; mid-depth
+  plies are as good as the mixture, the extremes are worse.
