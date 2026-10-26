@@ -1,0 +1,6 @@
+*.bin
+*.nnue
+*.stud
+*.pgn
+__pycache__/
+/build/

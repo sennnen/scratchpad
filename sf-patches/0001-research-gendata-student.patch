@@ -1,0 +1,533 @@
+From f57f314b16428db316dc49ebdd9977004b72fd94 Mon Sep 17 00:00:00 2001
+From: research <research@localhost>
+Date: Mon, 26 Oct 2026 00:35:31 +0000
+Subject: [PATCH] research: gendata, tree recorder, student eval
+
+---
+ src/Makefile     |   4 +-
+ src/engine.cpp   |  15 ++++
+ src/engine.h     |   2 +
+ src/evaluate.cpp |  14 +++-
+ src/gendata.cpp  | 177 +++++++++++++++++++++++++++++++++++++++++++++++
+ src/research.cpp | 122 ++++++++++++++++++++++++++++++++
+ src/research.h   |  64 +++++++++++++++++
+ src/uci.cpp      |   7 ++
+ 8 files changed, 402 insertions(+), 3 deletions(-)
+ create mode 100644 src/gendata.cpp
+ create mode 100644 src/research.cpp
+ create mode 100644 src/research.h
+
+diff --git a/src/Makefile b/src/Makefile
+index d76b646a..57abadb6 100644
+--- a/src/Makefile
++++ b/src/Makefile
+@@ -81,7 +81,7 @@ SRCS = attacks.cpp benchmark.cpp bitboard.cpp evaluate.cpp main.cpp \
+ 	search.cpp thread.cpp timeman.cpp tt.cpp uci.cpp ucioption.cpp tune.cpp syzygy/tbprobe.cpp \
+ 	nnue/nnue_accumulator.cpp nnue/nnue_misc.cpp nnue/network.cpp \
+ 	nnue/features/k32q2.cpp nnue/features/full_threats.cpp nnue/features/pp_3wide.cpp \
+-	engine.cpp score.cpp memory.cpp
++	engine.cpp score.cpp memory.cpp research.cpp gendata.cpp
+ 
+ OTHER_SRCS = universal/entry_x86.cpp universal/entry_arm64.cpp universal/entry_riscv64.cpp universal/nnue_embed.cpp
+ 
+@@ -91,7 +91,7 @@ HEADERS = attacks.h benchmark.h bitboard.h evaluate.h misc.h movegen.h movepick.
+ 		nnue/layers/clipped_relu.h nnue/layers/sqr_clipped_relu.h nnue/nnue_accumulator.h \
+ 		nnue/nnue_architecture.h nnue/nnue_common.h nnue/nnue_feature_transformer.h nnue/simd.h \
+ 		nnue/nnz_helper.h position.h search.h syzygy/tbprobe.h thread.h thread_native.h timeman.h \
+-		tt.h tune.h types.h uci.h ucioption.h perft.h nnue/network.h engine.h score.h numa.h memory.h shm.h shm_unix.h
++		tt.h tune.h types.h uci.h ucioption.h perft.h nnue/network.h engine.h score.h numa.h memory.h shm.h shm_unix.h research.h
+ 
+ OBJS = $(notdir $(SRCS:.cpp=.o))
+ 
+diff --git a/src/engine.cpp b/src/engine.cpp
+index 941d67b8..e5913e4d 100644
+--- a/src/engine.cpp
++++ b/src/engine.cpp
+@@ -38,6 +38,7 @@
+ #include "perft.h"
+ #include "position.h"
+ #include "search.h"
++#include "research.h"
+ #include "shm.h"
+ #include "syzygy/tbprobe.h"
+ #include "types.h"
+@@ -138,11 +139,25 @@ Engine::Engine(std::optional<std::filesystem::path> path) :
+           return std::nullopt;
+       }));
+ 
++    options.add(  //
++      "StudentFile", Option("", [](const Option& o) {
++          Research::load_student(std::string(o));
++          return std::nullopt;
++      }));
++
+     threads.clear();
+     threads.ensure_network_replicated();
+     resize_threads();
+ }
+ 
++int Engine::raw_eval() const {
++    if (pos.checkers())
++        return 0;
++    auto accumulators = std::make_unique<Eval::NNUE::AccumulatorStack>();
++    auto caches       = std::make_unique<Eval::NNUE::AccumulatorCaches>(*network);
++    return network->evaluate(pos, *accumulators, *caches);
++}
++
+ std::variant<u64, PositionSetError>
+ Engine::perft(const std::string& fen, Depth depth, bool isChess960) {
+     verify_network();
+diff --git a/src/engine.h b/src/engine.h
+index c4c05782..2ae37470 100644
+--- a/src/engine.h
++++ b/src/engine.h
+@@ -102,6 +102,8 @@ class Engine {
+     // utility functions
+ 
+     void trace_eval() const;
++    int  raw_eval() const;
++    const Position& position() const { return pos; }
+ 
+     const OptionsMap& get_options() const;
+     OptionsMap&       get_options();
+diff --git a/src/evaluate.cpp b/src/evaluate.cpp
+index e20246da..45acc47c 100644
+--- a/src/evaluate.cpp
++++ b/src/evaluate.cpp
+@@ -29,6 +29,7 @@
+ 
+ #include "misc.h"
+ #include "nnue/network.h"
++#include "research.h"
+ #include "nnue/nnue_misc.h"
+ #include "position.h"
+ #include "types.h"
+@@ -52,7 +53,18 @@ Value Eval::evaluate(const Eval::NNUE::Network&     network,
+                      int                            optimism) {
+ 
+     assert(!pos.checkers());
+-    Value nnue = network.evaluate(pos, accumulators, caches);
++    Value nnue = Research::gStudent ? Research::gStudent->evaluate(pos)
++                                    : network.evaluate(pos, accumulators, caches);
++    if (Research::gRecorder && Research::gRecorder->sample())
++    {
++        Research::Rec r;
++        Research::encode(pos, r);
++        r.src   = 1;
++        Value t = Research::gStudent ? network.evaluate(pos, accumulators, caches) : nnue;
++        r.teacher = int16_t(std::clamp(int(t), -32000, 32000));
++        r.score   = int16_t(std::clamp(int(nnue), -32000, 32000));
++        Research::gRecorder->write(r);
++    }
+     return scale_evaluation(nnue, optimism, pos);
+ }
+ 
+diff --git a/src/gendata.cpp b/src/gendata.cpp
+new file mode 100644
+index 00000000..082fa359
+--- /dev/null
++++ b/src/gendata.cpp
+@@ -0,0 +1,177 @@
++// Self-play data generation with teacher labels (research instrumentation).
++// Usage (UCI command):
++//   gendata nodes N games G out FILE book EPD seed S treerate R [maxply P] [randply K]
++// Game positions (not in check) are written with search score + teacher raw eval + result.
++// With treerate > 0, a random subset of evaluate() calls during the searches is also
++// written (src = 1), labelled by the teacher network (and by the student if one is loaded).
++#include <algorithm>
++#include <chrono>
++#include <cstdio>
++#include <fstream>
++#include <iostream>
++#include <sstream>
++#include <string>
++#include <vector>
++
++#include "engine.h"
++#include "movegen.h"
++#include "position.h"
++#include "research.h"
++#include "score.h"
++#include "search.h"
++#include "uci.h"
++
++namespace Stockfish {
++void gendata(Engine& engine, std::istringstream& is);
++
++void gendata(Engine& engine, std::istringstream& is) {
++    u64         nodes = 5000, games = 10, seed = 1, maxply = 400, randply = 0;
++    double      treerate = 0.0;
++    std::string out = "data.bin", book, token;
++    while (is >> token)
++    {
++        if (token == "nodes") is >> nodes;
++        else if (token == "games") is >> games;
++        else if (token == "out") is >> out;
++        else if (token == "book") is >> book;
++        else if (token == "seed") is >> seed;
++        else if (token == "treerate") is >> treerate;
++        else if (token == "maxply") is >> maxply;
++        else if (token == "randply") is >> randply;
++    }
++    std::vector<std::string> fens;
++    if (!book.empty())
++    {
++        std::ifstream in(book);
++        std::string   line;
++        while (std::getline(in, line))
++        {
++            std::istringstream ls(line);
++            std::string        f, t;
++            for (int i = 0; i < 4 && ls >> t; ++i)
++                f += (i ? " " : "") + t;
++            if (!f.empty())
++                fens.push_back(f + " 0 1");
++        }
++    }
++    if (fens.empty())
++        fens.push_back("rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1");
++
++    FILE* f = std::fopen(out.c_str(), "ab");
++    Research::Recorder rec;
++    rec.f    = f;
++    rec.rate = treerate;
++    rec.rng  = 0x9E3779B97F4A7C15ULL ^ (seed * 0xD1B54A32D192ED03ULL);
++    u64 rng  = seed * 0x2545F4914F6CDD1DULL + 1;
++    auto rnd = [&]() {
++        rng ^= rng << 13; rng ^= rng >> 7; rng ^= rng << 17;
++        return rng;
++    };
++
++    int         lastScore = 0;
++    std::string bestmove;
++    engine.set_on_update_full([&](const Engine::InfoFull& i) {
++        i.score.visit([&](const auto& v) {
++            using T = std::decay_t<decltype(v)>;
++            if constexpr (std::is_same_v<T, Score::InternalUnits>) lastScore = v.value;
++            else if constexpr (std::is_same_v<T, Score::Mate>) lastScore = v.plies > 0 ? 32000 : -32000;
++            else lastScore = v.win ? 31000 : -31000;
++        });
++    });
++    engine.set_on_update_no_moves([&](const Engine::InfoShort&) {});
++    engine.set_on_iter([&](const Engine::InfoIter&) {});
++    engine.set_on_bestmove([&](std::string_view bm, std::string_view) { bestmove = std::string(bm); });
++
++    auto t0 = std::chrono::steady_clock::now();
++    u64  gamePositions = 0, w = 0, d = 0, l = 0;
++    for (u64 g = 0; g < games; ++g)
++    {
++        std::string              fen = fens[rnd() % fens.size()];
++        std::vector<std::string> moves;
++        StateListPtr             states(new std::deque<StateInfo>(1));
++        Position                 pos;
++        pos.set(fen, false, &states->back());
++        engine.search_clear();
++        std::vector<Research::Rec> gameRecs;
++        int  result = -1;  // from white's view: 0 black wins, 1 draw, 2 white wins
++        int  winStreak = 0, drawStreak = 0;
++        for (u64 ply = 0;; ++ply)
++        {
++            MoveList<ALL> legal(pos);
++            if (legal.size() == 0)
++            {
++                result = pos.checkers() ? (pos.side_to_move() == WHITE ? 0 : 2) : 1;
++                break;
++            }
++            if (pos.is_draw(0) || ply >= maxply)
++            {
++                result = 1;
++                break;
++            }
++            Move m;
++            if (ply < randply)
++            {
++                m = *(legal.begin() + rnd() % legal.size());
++            }
++            else
++            {
++                engine.set_position(fen, moves);
++                Search::LimitsType limits;
++                limits.startTime = now();
++                limits.nodes     = nodes;
++                Research::gRecorder = treerate > 0 ? &rec : nullptr;
++                engine.go(limits);
++                engine.wait_for_search_finished();
++                Research::gRecorder = nullptr;
++                if (!pos.checkers())
++                {
++                    Research::Rec r;
++                    Research::encode(pos, r);
++                    r.src     = 0;
++                    r.teacher = int16_t(std::clamp(engine.raw_eval(), -32000, 32000));
++                    r.score   = int16_t(std::clamp(lastScore, -32000, 32000));
++                    gameRecs.push_back(r);
++                }
++                // adjudication on search score (stm view)
++                winStreak  = std::abs(lastScore) >= 2500 ? winStreak + 1 : 0;
++                drawStreak = (ply > 120 && std::abs(lastScore) <= 15) ? drawStreak + 1 : 0;
++                if (winStreak >= 6)
++                {
++                    bool stmWins = lastScore > 0;
++                    result = (pos.side_to_move() == WHITE) == stmWins ? 2 : 0;
++                    break;
++                }
++                if (drawStreak >= 16)
++                {
++                    result = 1;
++                    break;
++                }
++                m = UCIEngine::to_move(pos, bestmove);
++                if (m == Move::none())
++                    break;
++            }
++            moves.push_back(UCIEngine::move(m, false));
++            states->emplace_back();
++            pos.do_move(m, states->back());
++        }
++        if (result < 0) result = 1;
++        (result == 2 ? w : result == 1 ? d : l)++;
++        for (auto& r : gameRecs)
++        {
++            r.result = uint8_t(r.stm == 0 ? result : 2 - result);
++            fwrite(&r, sizeof r, 1, f);
++        }
++        gamePositions += gameRecs.size();
++        if ((g + 1) % 10 == 0 || g + 1 == games)
++        {
++            double secs = std::chrono::duration<double>(std::chrono::steady_clock::now() - t0).count();
++            std::cout << "info string gendata games " << g + 1 << " gamepos " << gamePositions
++                      << " treepos " << rec.written << " W/D/L " << w << "/" << d << "/" << l
++                      << " secs " << secs << std::endl;
++            std::fflush(f);
++        }
++    }
++    std::fclose(f);
++}
++
++}  // namespace Stockfish
+diff --git a/src/research.cpp b/src/research.cpp
+new file mode 100644
+index 00000000..508669e2
+--- /dev/null
++++ b/src/research.cpp
+@@ -0,0 +1,122 @@
++#include "research.h"
++
++#include <algorithm>
++#include <cmath>
++#include <cstring>
++#include <fstream>
++#include <iostream>
++#include <memory>
++
++#include "bitboard.h"
++#include "position.h"
++
++namespace Stockfish::Research {
++
++Recorder*         gRecorder = nullptr;
++const StudentNet* gStudent  = nullptr;
++static std::unique_ptr<StudentNet> studentStorage;
++
++void encode(const Position& pos, Rec& r) {
++    std::memset(&r, 0, sizeof r);
++    for (Square s = SQ_A1; s <= SQ_H8; ++s)
++    {
++        Piece   p = pos.piece_on(s);
++        uint8_t code =
++          p == NO_PIECE ? 0 : uint8_t((color_of(p) == WHITE ? 0 : 8) + type_of(p));
++        r.board[int(s) >> 1] |= (int(s) & 1) ? uint8_t(code << 4) : code;
++    }
++    r.stm    = pos.side_to_move() == WHITE ? 0 : 1;
++    r.result = 255;
++    r.rule50 = uint8_t(std::min(pos.rule50_count(), 255));
++}
++
++// File format (little endian):
++//  char magic[8] = "STUDNT01"; int32 H; int32 NB; float outScale;
++//  float ftW[768*H] (feature-major), ftB[H], outW[NB*2H], outB[NB]
++bool StudentNet::load(const std::string& path) {
++    std::ifstream in(path, std::ios::binary);
++    if (!in)
++        return false;
++    char magic[8];
++    in.read(magic, 8);
++    if (std::memcmp(magic, "STUDNT01", 8) != 0)
++        return false;
++    int32_t h, nb;
++    in.read(reinterpret_cast<char*>(&h), 4);
++    in.read(reinterpret_cast<char*>(&nb), 4);
++    in.read(reinterpret_cast<char*>(&outScale), 4);
++    H  = h;
++    NB = nb;
++    ftW.resize(size_t(768) * H);
++    ftB.resize(H);
++    outW.resize(size_t(NB) * 2 * H);
++    outB.resize(NB);
++    in.read(reinterpret_cast<char*>(ftW.data()), ftW.size() * 4);
++    in.read(reinterpret_cast<char*>(ftB.data()), ftB.size() * 4);
++    in.read(reinterpret_cast<char*>(outW.data()), outW.size() * 4);
++    in.read(reinterpret_cast<char*>(outB.data()), outB.size() * 4);
++    return bool(in);
++}
++
++Value StudentNet::evaluate(const Position& pos) const {
++    alignas(64) float acc[2][1024];
++    const Color       stm = pos.side_to_move();
++    for (int p = 0; p < 2; ++p)
++        std::memcpy(acc[p], ftB.data(), H * sizeof(float));
++
++    Bitboard occ = pos.pieces();
++    while (occ)
++    {
++        Square s  = pop_lsb(occ);
++        Piece  pc = pos.piece_on(s);
++        int    pt = type_of(pc) - 1;
++        for (int p = 0; p < 2; ++p)
++        {
++            Color persp = p == 0 ? stm : ~stm;
++            int   rel   = color_of(pc) == persp ? 0 : 1;
++            int   sq    = persp == WHITE ? int(s) : int(s) ^ 56;
++            const float* w = &ftW[size_t((rel * 6 + pt) * 64 + sq) * H];
++            float*       a = acc[p];
++            for (int i = 0; i < H; ++i)
++                a[i] += w[i];
++        }
++    }
++    int bucket = std::clamp((popcount(pos.pieces()) - 2) / 4, 0, NB - 1);
++    const float* ow = &outW[size_t(bucket) * 2 * H];
++    float        out = outB[bucket];
++    for (int p = 0; p < 2; ++p)
++    {
++        const float* a = acc[p];
++        const float* w = ow + p * H;
++        float        s = 0;
++        for (int i = 0; i < H; ++i)
++        {
++            float x = std::clamp(a[i], 0.0f, 1.0f);
++            s += x * x * w[i];
++        }
++        out += s;
++    }
++    int v = int(std::lround(out * outScale));
++    return Value(std::clamp(v, -20000, 20000));
++}
++
++bool load_student(const std::string& path) {
++    if (path.empty() || path == "<empty>")
++    {
++        gStudent = nullptr;
++        return true;
++    }
++    auto net = std::make_unique<StudentNet>();
++    if (!net->load(path))
++    {
++        std::cerr << "info string failed to load student " << path << std::endl;
++        return false;
++    }
++    studentStorage = std::move(net);
++    gStudent       = studentStorage.get();
++    std::cout << "info string loaded student " << path << " H=" << gStudent->H
++              << " NB=" << gStudent->NB << std::endl;
++    return true;
++}
++
++}  // namespace Stockfish::Research
+diff --git a/src/research.h b/src/research.h
+new file mode 100644
+index 00000000..3e0e2a7f
+--- /dev/null
++++ b/src/research.h
+@@ -0,0 +1,64 @@
++// Research instrumentation: training-data recorder and small "student" network.
++#ifndef RESEARCH_H_INCLUDED
++#define RESEARCH_H_INCLUDED
++
++#include <cstdint>
++#include <cstdio>
++#include <string>
++#include <vector>
++
++#include "types.h"
++
++namespace Stockfish {
++class Position;
++}
++
++namespace Stockfish::Research {
++
++// 40-byte training record. board: 64 nibbles (a1..h8), 0 = empty,
++// 1..6 = white P,N,B,R,Q,K, 9..14 = black P..K.
++struct Rec {
++    uint8_t board[32];
++    uint8_t stm;      // 0 white, 1 black
++    uint8_t result;   // game result from stm view: 0 loss, 1 draw, 2 win, 255 unknown
++    uint8_t src;      // 0 = game position, 1 = search-tree (evaluate() call) position
++    uint8_t rule50;   // halfmove clock (clamped to 255)
++    int16_t teacher;  // teacher raw NNUE eval, stm view, internal units
++    int16_t score;    // search score (game positions) or student eval (tree), stm view
++};
++static_assert(sizeof(Rec) == 40, "Rec must be 40 bytes");
++
++void encode(const Position& pos, Rec& r);
++
++struct Recorder {
++    FILE*    f    = nullptr;
++    double   rate = 0.0;  // probability of recording an evaluate() call
++    uint64_t rng  = 0x9E3779B97F4A7C15ULL;
++    uint64_t written = 0;
++    bool sample() {
++        rng ^= rng << 13;
++        rng ^= rng >> 7;
++        rng ^= rng << 17;
++        return double(rng >> 11) * (1.0 / 9007199254740992.0) < rate;
++    }
++    void write(const Rec& r) {
++        fwrite(&r, sizeof r, 1, f);
++        ++written;
++    }
++};
++extern Recorder* gRecorder;  // single-threaded data generation only
++
++// Student: (768 -> H) x 2 perspectives, SCReLU, -> NB output buckets (by piece count).
++struct StudentNet {
++    int                H = 0, NB = 0;
++    float              outScale = 1.0f;  // network output * outScale = internal units
++    std::vector<float> ftW, ftB, outW, outB;
++    bool               load(const std::string& path);
++    Value              evaluate(const Position& pos) const;
++};
++extern const StudentNet* gStudent;
++bool load_student(const std::string& path);
++
++}  // namespace Stockfish::Research
++
++#endif
+diff --git a/src/uci.cpp b/src/uci.cpp
+index 766541da..e951a8d3 100644
+--- a/src/uci.cpp
++++ b/src/uci.cpp
+@@ -45,6 +45,8 @@
+ 
+ namespace Stockfish {
+ 
++void gendata(Engine& engine, std::istringstream& is);
++
+ using Time = std::chrono::steady_clock;
+ using ms   = std::chrono::milliseconds;
+ 
+@@ -163,6 +165,11 @@ void UCIEngine::loop() {
+             engine.trace_eval();
+         else if (token == "compiler")
+             sync_cout << compiler_info() << sync_endl;
++        else if (token == "gendata")
++        {
++            gendata(engine, is);
++            init_search_update_listeners();
++        }
+         else if (token == "export_net")
+         {
+             std::optional<std::filesystem::path> file;
+-- 
+2.43.0
+

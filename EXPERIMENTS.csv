@@ -1,0 +1,1 @@
+id,date,hypothesis,code_rev,config,data,train_positions,wall_s,cpu_s,peak_rss_mb,val_game_mse,val_tree_mse,match_opponent,match_cond,games,elo,elo_err95,notes
