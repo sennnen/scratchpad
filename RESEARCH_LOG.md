@@ -265,3 +265,21 @@ tree student still stronger; from the tree scaling slope (~+150 Elo per doubling
 strength would be reached at ~175 CPU-s, i.e. ~10x. The earlier ">= 32x" was relative to the 5000-node
 game baseline and overstates the advantage over a tuned game pipeline. E10 tests even cheaper games.
 - E8 (H=1024, all 144M tree positions) vs E4 tree_h1024 (run1 only): +125 +/- 44 (200 games).
+
+## E10: even cheaper game-position pipelines (second correction to R1's ratio)
+Game positions from 300- and 100-node self-play, same 1,870 CPU-s budget (seeds 5001-5004):
+1.42M and 2.08M game positions. H=256, teacher labels. 200-300 games each, 20k nodes:
+| student | vgame | vtree | Elo |
+|---|---|---|---|
+| game_n300_p1.5e7 | 0.02516 | 0.03332 | vs game_n1000: +91 +/- 47 |
+| game_n300_p3e7 | 0.02564 | 0.03343 | vs game_n1000: +115 +/- 47 |
+| game_n100_p1.5e7 | 0.02466 | 0.03379 | vs game_n1000: +108 +/- 44 |
+| game_n100_p3e7 | 0.02448 | 0.03269 | vs game_n1000: +151 +/- 50 |
+Decisive direct match: tree_f32 (234 CPU-s) vs game_n100_p3e7 (1,870 CPU-s): **-78 +/- 37** (300 games).
+Game-data quality rises steeply as self-play gets faster/weaker (5000 -> 1000 -> 100 nodes: 0, +69, ~+220
+on the run1 scale), consistent with the mechanism (diverse, unbalanced positions matter).
+Revised R1: versus the best game pipeline found (100-node self-play), tree distillation reaches equal
+strength with ~5x less generation compute (interpolating the tree curve between 234 and 468 CPU-s:
+~330-360 CPU-s vs 1,870), and is ~+250-300 Elo stronger at equal compute (tree at 1,870 CPU-s: +465,
+or ~+516 with the E3 settings). The earlier ">= 32x" and ">= 8x" figures were relative to weaker game
+baselines and are superseded.

@@ -32,7 +32,7 @@
         "additional_lines_rgx": [],
         "event_name": "Fastchess Tournament",
         "site": "?",
-        "file": "experiments/e9/matches/e8_h1024_all_vs_tree_h1024.pgn",
+        "file": "experiments/e10/matches/tree_f32_vs_game_n100_p3e7.pgn",
         "notation": 0,
         "append_file": true,
         "track_nodes": false,
@@ -69,7 +69,7 @@
     "wait": 0,
     "autosaveinterval": 20,
     "games": 2,
-    "rounds": 100,
+    "rounds": 150,
     "concurrency": 4,
     "force_concurrency": false,
     "recover": false,
@@ -89,15 +89,15 @@
     },
     "engines": [
         {
-            "name": "e8_h1024_all",
+            "name": "tree_f32",
             "dir": "",
-            "cmd": "/home/user/data/sf_research_kb",
+            "cmd": "/home/user/data/sf_research",
             "args": "",
             "restart": false,
             "options": [
                 [
                     "StudentFile",
-                    "/home/user/nets/e9/e8_h1024_all.stud"
+                    "/home/user/nets/e10/tree_f32.stud"
                 ],
                 [
                     "Threads",
@@ -122,15 +122,15 @@
             "variant": 0
         },
         {
-            "name": "tree_h1024",
+            "name": "game_n100_p3e7",
             "dir": "",
-            "cmd": "/home/user/data/sf_research_kb",
+            "cmd": "/home/user/data/sf_research",
             "args": "",
             "restart": false,
             "options": [
                 [
                     "StudentFile",
-                    "/home/user/nets/e9/tree_h1024.stud"
+                    "/home/user/nets/e10/game_n100_p3e7.stud"
                 ],
                 [
                     "Threads",
@@ -156,16 +156,16 @@
         }
     ],
     "stats": {
-        "e8_h1024_all vs tree_h1024": {
-            "wins": 113,
-            "losses": 44,
-            "draws": 43,
-            "penta_WW": 29,
-            "penta_WD": 30,
-            "penta_WL": 25,
-            "penta_DD": 2,
-            "penta_LD": 9,
-            "penta_LL": 5
+        "tree_f32 vs game_n100_p3e7": {
+            "wins": 101,
+            "losses": 167,
+            "draws": 32,
+            "penta_WW": 15,
+            "penta_WD": 11,
+            "penta_WL": 60,
+            "penta_DD": 1,
+            "penta_LD": 19,
+            "penta_LL": 44
         }
     }
 }
