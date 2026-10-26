@@ -438,3 +438,9 @@ either label type); they hurt when *fine-tuning* an already-strong net away from
 set of shallow-search labels. P2-F1's negative is a fine-tuning-regime effect, not a search-label effect.
 (The Phase I E6 direction, +80 for search-labelled tree positions, is thereby confirmed with correct units
 in a different architecture.)
+
+## PRE-REGISTRATION P6 (before results): data scaling of re-distilled production stacks
+P3 data (unfiltered, teacher labels), first n rows of G.ft and T.ft (random order), n in {75k, 150k, 300k}
+plus the P3 600k nets. Steps scale with n (1500 at 75k/150k, 3000 at 300k/600k), lr 3e-3, seed 0.
+Every net plays master (400 games, 20k nodes); joint fit anchored at master. Endpoint: the data
+multiplier k such that T at n matches G at k*n (interpolated in log n).
