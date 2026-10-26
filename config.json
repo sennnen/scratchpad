@@ -32,7 +32,7 @@
         "additional_lines_rgx": [],
         "event_name": "Fastchess Tournament",
         "site": "?",
-        "file": "experiments/b4/matches/FTt_G_vs_FTg_G.pgn",
+        "file": "experiments/c1/matches/OFF_2_vs_OFF_1.pgn",
         "notation": 0,
         "append_file": true,
         "track_nodes": false,
@@ -60,7 +60,7 @@
     },
     "config_name": "config.json",
     "output": 0,
-    "seed": 1,
+    "seed": 2,
     "variant": 0,
     "type": 0,
     "gauntlet_seeds": 1,
@@ -69,7 +69,7 @@
     "wait": 0,
     "autosaveinterval": 20,
     "games": 2,
-    "rounds": 100,
+    "rounds": 300,
     "concurrency": 4,
     "force_concurrency": false,
     "recover": false,
@@ -89,7 +89,7 @@
     },
     "engines": [
         {
-            "name": "FTt_G",
+            "name": "OFF_2",
             "dir": "",
             "cmd": "/home/user/data/sf_research",
             "args": "",
@@ -97,7 +97,7 @@
             "options": [
                 [
                     "StudentFile",
-                    "/home/user/nets/b4/FTt_G.stud"
+                    "/home/user/nets/c1/OFF_2.stud"
                 ],
                 [
                     "Threads",
@@ -122,7 +122,7 @@
             "variant": 0
         },
         {
-            "name": "FTg_G",
+            "name": "OFF_1",
             "dir": "",
             "cmd": "/home/user/data/sf_research",
             "args": "",
@@ -130,7 +130,7 @@
             "options": [
                 [
                     "StudentFile",
-                    "/home/user/nets/b4/FTg_G.stud"
+                    "/home/user/nets/c1/OFF_1.stud"
                 ],
                 [
                     "Threads",
@@ -156,16 +156,16 @@
         }
     ],
     "stats": {
-        "FTt_G vs FTg_G": {
-            "wins": 186,
-            "losses": 4,
-            "draws": 10,
-            "penta_WW": 86,
-            "penta_WD": 10,
-            "penta_WL": 4,
-            "penta_DD": 0,
-            "penta_LD": 0,
-            "penta_LL": 0
+        "OFF_2 vs OFF_1": {
+            "wins": 225,
+            "losses": 197,
+            "draws": 178,
+            "penta_WW": 32,
+            "penta_WD": 67,
+            "penta_WL": 94,
+            "penta_DD": 23,
+            "penta_LD": 65,
+            "penta_LL": 19
         }
     }
 }

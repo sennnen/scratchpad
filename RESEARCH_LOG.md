@@ -589,3 +589,12 @@ learned from game positions only, a tree-trained readout recovers a lot (+186) b
 feature effect (+531). The production master's FT (billions of Leela game positions) behaves like the
 "good features" case (P6/P7/P8: readout effect ~+5..+15). Hence the decisive upstream test, training the
 feature transformer itself with tree positions, needs GPU-scale training and could not be run here.
+
+## C1: iterated on-policy distillation (small students, H=256), iteration 2
+New blocks: 1500 games x 8% each (seeds 12201-12204): S2 = self-play of ON_1 (= base_T1S1) with teacher
+labels (24.2M positions), Tc2 = teacher self-play, same seeds. ON_2 = T1+S1+S2, OFF_2 = T1+T2+Tc2, 2e8
+training positions each. Validation (VG/VT/VS): ON_2 0.01685/0.01723/0.01581; OFF_2 0.01653/0.01653/0.01692.
+- ON_2 vs OFF_2: **+3.1 +/- 17.2** (1000 games): the on-policy edge of iteration 1 (+22.6) vanishes.
+- ON_2 vs ON_1: -15.1 +/- 21.7 (600); OFF_2 vs OFF_1: +16.2 +/- 20.8 (600): no measurable progress for
+  either arm; the H=256 student is capacity-saturated (as already seen in E2: +12 n.s. for 2x teacher data).
+Iteration 3 is running to distinguish plateau from oscillation.
