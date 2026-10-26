@@ -1,0 +1,19 @@
+player                                elo             95% CI
+master                                0.0   [    0.0,     0.0]
+RS_T_600000                          -2.5   [  -66.5,    15.9]
+RS_G_600000                          -3.4   [  -69.4,    13.7]
+RS_T_300000                         -15.7   [  -78.7,     1.8]
+RS_G_300000                         -30.8   [  -99.2,   -12.8]
+RS_G_150000                         -46.3   [ -116.1,   -28.0]
+RS_T_150000                         -57.4   [ -124.0,   -39.7]
+RS_T_75000                          -79.4   [ -148.0,   -55.8]
+RS_G_75000                          -88.3   [ -154.0,   -68.3]
+matches:
+  RS_G_150000 vs master: ptnml [26, 82, 68, 24, 0] games 400
+  RS_G_300000 vs master: ptnml [21, 79, 76, 20, 4] games 400
+  RS_G_600000 vs master: ptnml [15, 66, 85, 34, 0] games 400
+  RS_G_75000 vs master: ptnml [30, 110, 46, 12, 2] games 400
+  RS_T_150000 vs master: ptnml [25, 87, 73, 15, 0] games 400
+  RS_T_300000 vs master: ptnml [15, 79, 73, 33, 0] games 400
+  RS_T_600000 vs master: ptnml [14, 69, 84, 30, 3] games 400
+  RS_T_75000 vs master: ptnml [33, 95, 58, 12, 2] games 400

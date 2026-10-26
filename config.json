@@ -32,7 +32,7 @@
         "additional_lines_rgx": [],
         "event_name": "Fastchess Tournament",
         "site": "?",
-        "file": "experiments/p6/matches/RS_G_600000_vs_master.pgn",
+        "file": "experiments/p7/matches/qT186_vs_master.pgn",
         "notation": 0,
         "append_file": true,
         "track_nodes": false,
@@ -89,7 +89,7 @@
     },
     "engines": [
         {
-            "name": "RS_G_600000",
+            "name": "qT186",
             "dir": "",
             "cmd": "/home/user/data/sf_p2",
             "args": "",
@@ -97,7 +97,7 @@
             "options": [
                 [
                     "EvalFile",
-                    "/home/user/nets/p6/RS_G_600000.nnue"
+                    "/home/user/nets/p4/teacher_T.nnue"
                 ],
                 [
                     "Threads",
@@ -152,16 +152,16 @@
         }
     ],
     "stats": {
-        "RS_G_600000 vs master": {
+        "qT186 vs master": {
             "wins": 3,
-            "losses": 10,
-            "draws": 7,
+            "losses": 9,
+            "draws": 8,
             "penta_WW": 0,
-            "penta_WD": 1,
-            "penta_WL": 2,
+            "penta_WD": 0,
+            "penta_WL": 3,
             "penta_DD": 1,
-            "penta_LD": 4,
-            "penta_LL": 2
+            "penta_LD": 6,
+            "penta_LL": 0
         }
     }
 }

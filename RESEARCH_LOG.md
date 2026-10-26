@@ -478,3 +478,18 @@ P6's unfiltered arms show a small, noisy tree advantage (75k: T -132 vs G -141; 
 -67 vs -82, each +/-22, 400 games vs master), much smaller than P4's +83 (quiet-filtered, 186k, direct
 1000-game match). P7 resolves this: (a) P4 teacher_T / teacher_G vs master (400 games each) to place them on
 the P6 ladder; (b) direct head-to-head RS_T_300000 vs RS_G_300000 (1000 games).
+
+## P6 RESULT: data scaling, production stacks, teacher labels, unfiltered (pre-registered)
+400 games vs master each (20k nodes); per-match Elo (+/- ~22):
+| n | G (5000-node games) | T (tree) | T - G |
+|---|---|---|---|
+| 75k | -141.0 | -131.9 | +9 |
+| 150k | -98.1 | -109.5 | -11 |
+| 300k | -82.3 | -66.8 | +15 |
+| 600k | -54.3 | -53.4 | +1 (direct P3 match: +15.1 +/- 17.6) |
+Validation (VT) is consistently better for T (0.00459/0.00332/0.00234/0.00164 vs 0.00565/0.00422/0.00298/0.00220),
+but Elo is not: **data multiplier ~1x** for unfiltered teacher-label re-distillation of the stacks.
+(The 600k matches are byte-identical replays of P3's, same nets and opening seed.)
+Correction to the P3/P4 picture: in the production architecture with a frozen FT, tree positions are
+clearly better than *fast-game* positions (+43) and under the quiet filter (P4, +83, being checked in P7),
+but not detectably better than standard 5000-node game positions without filtering.
