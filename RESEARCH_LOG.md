@@ -370,3 +370,23 @@ The production net (trained on game positions of Leela data) is ~1.8x further fr
 positions than on quiet game positions, also when material is balanced. Consistent with the
 distribution-mismatch hypothesis, but tree positions may also be intrinsically harder: fine-tuning
 (P2-F1) tests whether the gap is learnable.
+
+## P2-F1 RESULT (pre-registered primary endpoint)
+Arms: 186,365 quiet positions each, 5000-node search labels (corrected units), lr 1e-4 (selected on pooled
+validation with the mixed arm), 1500 steps x 8192, seed 0, layer stacks only.
+Validation MSE vs search (VG / VT): master 0.01263 / 0.0451; FT-G 0.01099 / 0.0402; FT-T 0.01388 / 0.0326;
+FT-M 0.0116 / 0.0347. Each arm specialises to its own distribution.
+- PRIMARY: FT-T vs FT-G = **-27.2 +/- 12.7** (1000 games, 20k nodes, LOS 0%). Hypothesis rejected in this setting.
+- FT-T vs master = -66.8 +/- 13.4: fine-tuning on this label set degrades the production net.
+Interpretation (to be tested): (1) 186k positions of 5000-node labels cannot improve a net trained on
+billions of Leela positions; fine-tuning drifts. (2) For a strong evaluator, accuracy matters most at
+decision-relevant nodes (PV / near the alpha-beta window); uniformly sampled tree positions are mostly
+refuted subtrees, so fitting them trades away accuracy where it matters (FT-T's game-position MSE got worse).
+
+## PRE-REGISTRATION P3 (before results): re-distillation of the production layer stacks
+Frozen master feature transformer; layer stacks re-initialised at random and trained on master's own
+eval (teacher labels, ftdump sfEval) - the production-architecture analogue of Phase I's R1.
+Arms (600k positions each, all non-check positions, no quiet filter): RS-G (run1 game positions, 5000-node
+self-play), RS-F (game positions from 100-node self-play = best game pipeline of Phase I), RS-T (run1 tree).
+LR chosen on pooled VG+VT validation (teacher target) with a G+T mix arm, then frozen.
+Primary endpoint: RS-T vs RS-F, 1000 games at 20k nodes. Secondary: RS-T vs RS-G, each vs master.

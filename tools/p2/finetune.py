@@ -128,7 +128,7 @@ class Stacks(torch.nn.Module):
         write_stacks(path, prefix, st)
 
 
-def prepare(d, quiet_only=False, nkeep=0):
+def prepare(d, quiet_only=False, nkeep=0, target='search'):
     """Returns (ft u8 tensor, bucket, raw-space target, mask of kept rows)."""
     recs = d['rec']
     keep = np.ones(len(d), bool)
@@ -139,8 +139,11 @@ def prepare(d, quiet_only=False, nkeep=0):
     if nkeep:
         idx = idx[:nkeep]
     r = recs[idx]
-    se, mat, r50 = board_stats(r)
-    t = inverse_scale(cp_to_internal(r['score'], r), se, mat, r50)
+    if target == 'teacher':  # distillation: the source net's own raw eval (ftdump sfEval)
+        t = d['sfeval'][idx].astype(np.float64)
+    else:
+        se, mat, r50 = board_stats(r)
+        t = inverse_scale(cp_to_internal(r['score'], r), se, mat, r50)
     return (torch.from_numpy(np.ascontiguousarray(d['ft'][idx])), torch.from_numpy(d['bucket'][idx].astype(np.int64)),
             torch.from_numpy(t.astype(np.float32)), torch.from_numpy(d['sfeval'][idx].astype(np.float32)))
 
@@ -175,6 +178,8 @@ def main():
     ap.add_argument('--n', type=int, default=0, help='use only the first n positions of each train set')
     ap.add_argument('--nkeep', type=int, default=0, help='cap each train set at this many rows after filtering')
     ap.add_argument('--seed', type=int, default=0)
+    ap.add_argument('--target', default='search', choices=['search', 'teacher'])
+    ap.add_argument('--reinit', action='store_true', help='random re-initialisation of all layer stacks')
     ap.add_argument('--threads', type=int, default=4)
     a = ap.parse_args()
     torch.manual_seed(a.seed); torch.set_num_threads(a.threads)
@@ -182,17 +187,24 @@ def main():
     t0 = time.time()
     prefix, st = read_stacks(a.net)
     model = Stacks(st)
+    if a.reinit:
+        with torch.no_grad():
+            g = torch.Generator().manual_seed(a.seed)
+            for W, b, fan in ((model.W0, model.b0, 1024), (model.W1, model.b1, 64), (model.W2, model.b2, 128)):
+                lim = 1.0 / fan ** 0.5
+                W.uniform_(-lim, lim, generator=g); b.uniform_(-lim, lim, generator=g)
+            model.init = {k: v.detach().clone() for k, v in model.named_parameters()}
     sets = []
     for spec in a.train:
         path, _, w = spec.partition(':')
         d = load(path)
         if a.n: d = d[:a.n]
-        sets.append((prepare(d, a.quiet, a.nkeep), float(w) if w else 1.0, path))
+        sets.append((prepare(d, a.quiet, a.nkeep, a.target), float(w) if w else 1.0, path))
     tot = sum(w for _, w, _ in sets)
     vals = {}
     for v in a.val:
         name, path = v.split('=')
-        vals[name] = prepare(load(path), False)
+        vals[name] = prepare(load(path), False, 0, a.target)
     res = {'args': vars(a), 'train_sizes': [len(s[0][0]) for s in sets]}
     res['val_before'] = {k: evaluate(model, v) for k, v in vals.items()}
     opt = torch.optim.Adam(model.parameters(), lr=a.lr)

@@ -133,6 +133,22 @@ struct Net {
     }
 };
 
+static bool load_student(Net& net, const std::string& p) {
+    FILE* f = fopen(p.c_str(), "rb");
+    if (!f) return false;
+    char magic[8]; int32_t h, nb, fs = 0; float sc;
+    if (fread(magic, 1, 8, f) != 8) return false;
+    fread(&h, 4, 1, f); fread(&nb, 4, 1, f); fread(&sc, 4, 1, f);
+    if (!memcmp(magic, "STUDNT02", 8)) fread(&fs, 4, 1, f);
+    if (h != net.H || fs != 0) { fclose(f); return false; }
+    size_t n = fread(net.ftW.data(), 4, size_t(768) * h, f);
+    n += fread(net.ftB.data(), 4, h, f);
+    n += fread(net.outW.data(), 4, net.outW.size(), f);
+    n += fread(net.outB.data(), 4, net.outB.size(), f);
+    fclose(f);
+    return n == size_t(768) * h + h + net.outW.size() + net.outB.size();
+}
+
 enum Label { TEACHER, SCORE, BLEND };
 
 static float target(const Rec& r, Label lab, float lam) {
@@ -174,6 +190,8 @@ int main(int argc, char** argv) {
     int src = -1, H = 256, threads = 4, batch = 16384;
     double positions = 1e7, lr = 2e-3, lam = 0.7, maxN = 0, wd = 0, frac = 1.0, skip = 0.0;
     uint64_t seed = 0;
+    std::string mineNet;   // error-guided selection: student used to score the pool
+    double mineK = 0, mineAlpha = 1.0;
     for (int i = 1; i < argc; ++i) {
         std::string a = argv[i];
         auto nx = [&] { return std::string(argv[++i]); };
@@ -197,6 +215,9 @@ int main(int argc, char** argv) {
         else if (a == "--skip") skip = std::stod(nx());
         else if (a == "--fset") FSET = std::stoi(nx());
         else if (a == "--plymin") PLYMIN = std::stoi(nx());
+        else if (a == "--mine") mineNet = nx();
+        else if (a == "--mine_k") mineK = std::stod(nx());
+        else if (a == "--mine_alpha") mineAlpha = std::stod(nx());
         else if (a == "--plymax") PLYMAX = std::stoi(nx());
         else if (a == "--seed") seed = std::stoull(nx());
         else { fprintf(stderr, "unknown arg %s\n", a.c_str()); return 1; }
@@ -214,6 +235,32 @@ int main(int argc, char** argv) {
     }
     for (auto& f : trainFiles) { auto v = load(f, src, frac, skip); data.insert(data.end(), v.begin(), v.end()); }
     std::mt19937_64 rng(seed * 7919 + 17);
+    if (!mineNet.empty() && mineK > 0 && mineK < data.size()) {
+        // weighted sampling without replacement, weight = err^alpha (err = |sigmoid(student) - sigmoid(teacher)|)
+        Net scorer(H);
+        if (!load_student(scorer, mineNet)) { fprintf(stderr, "cannot load %s\n", mineNet.c_str()); return 1; }
+        std::vector<std::pair<double, uint32_t>> keys(data.size());
+        std::vector<std::thread> th;
+        for (int t = 0; t < threads; ++t)
+            th.emplace_back([&, t] {
+                std::mt19937_64 r(seed * 1000 + t);
+                std::uniform_real_distribution<double> U(1e-12, 1.0);
+                std::vector<float> acc(2 * H); int fs[64], fn[64], n, b;
+                for (size_t i = t; i < data.size(); i += threads) {
+                    float o = scorer.forward(data[i], acc.data(), fs, fn, n, b);
+                    double e = std::fabs(sigm(o) - sigm(data[i].teacher / SCALE)) + 1e-4;
+                    double w = std::pow(e, mineAlpha);
+                    keys[i] = {std::log(U(r)) / w, uint32_t(i)};  // Efraimidis-Spirakis key
+                }
+            });
+        for (auto& x : th) x.join();
+        size_t K = size_t(mineK);
+        std::nth_element(keys.begin(), keys.begin() + K, keys.end(), [](auto& x, auto& y) { return x.first > y.first; });
+        std::vector<Rec> sel(K);
+        for (size_t i = 0; i < K; ++i) sel[i] = data[keys[i].second];
+        data.swap(sel);
+        fprintf(stderr, "mined %zu positions (alpha %.2f) with %s\n", K, mineAlpha, mineNet.c_str());
+    }
     if (maxN > 0 && maxN < data.size()) {
         std::shuffle(data.begin(), data.end(), rng);
         data.resize(size_t(maxN));
