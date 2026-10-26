@@ -394,3 +394,10 @@ P2-F1 secondary results (each vs master, 1000 games, 20k nodes): FT-G -25.1 +/- 
 FT-T -66.8 +/- 13.4. Monotone in the tree fraction (0% / 50% / 100%). Direct FT-T vs FT-G -27.2 +/- 12.7.
 Conclusion P2-F1: with search-score labels and fine-tuning of a production net, uniformly sampled tree
 positions are harmful relative to game positions, and all such fine-tunes are below master.
+
+## PRE-REGISTRATION P4 (before results): 2x2 factorial, positions x labels, production architecture
+Same positions for both label types: the P2-D1 quiet sets (186,365 game G, 186,365 tree T; identical
+rows), layer stacks re-initialised (seed 0), lr 3e-3 (P3 selection), 1500 steps x 8192, frozen master FT.
+Labels: teacher (master raw eval) vs search (5000-node, corrected units, inverse-scaled).
+Endpoints (1000 games each, 20k nodes): position effect under teacher labels (T vs G, teacher) and under
+search labels (T vs G, search). The interaction = difference of the two effects.

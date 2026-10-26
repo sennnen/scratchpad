@@ -2,7 +2,7 @@
 # B1 + B3 (mechanism): which tree positions carry the value? Equal-count (500k) H=256 students trained on
 # teacher-tree positions from one boundary-annotated pool, restricted by ply-from-root band (B1) or by
 # search context (B3: |scaled eval - beta|, qsearch vs main search), vs a uniform sample.
-until grep -q P3_DONE /home/user/nets/p3.log 2>/dev/null; do sleep 30; done
+until grep -q P4_DONE /home/user/nets/p4.log 2>/dev/null; do sleep 30; done
 G=/home/user/data/sf_p2c; B=/home/user/data/UHO_Lichess_4852_v1.epd; O=/home/user/data/b1; N=/home/user/nets/b1; mkdir -p $O $N
 for i in 1 2 3 4; do
   [ -f $O/t.$i.done ] || { (echo "gendata nodes 5000 games 400 out $O/t.$i.bin book $B seed $((9000+i)) treerate 0.08 boundary 1"; echo quit) | $G 2>&1 | grep -a "gendata games" | tail -n1 > $O/t.$i.log; touch $O/t.$i.done; } &
