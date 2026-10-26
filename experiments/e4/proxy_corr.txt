@@ -1,0 +1,20 @@
+tree_h1024               elo   682.6 vgame 0.01557 vtree 0.01542
+tree_kb512               elo   654.2 vgame 0.01565 vtree 0.01570
+tree_h512                elo   612.7 vgame 0.01641 vtree 0.01643
+tree_kb256               elo   604.7 vgame 0.01638 vtree 0.01675
+tree_teacher             elo   544.6 vgame 0.01855 vtree 0.01863
+tree_f2                  elo   520.0 vgame 0.01935 vtree 0.01999
+tree_f4                  elo   465.4 vgame 0.02115 vtree 0.02179
+tree_f8                  elo   398.3 vgame 0.02327 vtree 0.02400
+tree_f16                 elo   263.7 vgame 0.02605 vtree 0.02701
+tree_teacher_sm          elo   207.1 vgame 0.02893 vtree 0.02963
+tree_f32                 elo   110.6 vgame 0.02901 vtree 0.02975
+game_h512                elo     1.7 vgame 0.02582 vtree 0.03516
+game_teacher_p1.5e7      elo     0.0 vgame 0.02491 vtree 0.03438
+game_h1024               elo    -5.2 vgame 0.02650 vtree 0.03535
+gq_teacher_p1.5e7        elo   -22.6 vgame 0.02536 vtree 0.03465
+game_kb256               elo  -132.9 vgame 0.02925 vtree 0.03939
+game_f2                  elo  -159.3 vgame 0.02798 vtree 0.03811
+game_f4                  elo  -362.0 vgame 0.03208 vtree 0.04249
+n=18 spearman(elo,-vgame)=0.882 spearman(elo,-vtree)=0.988
+pearson(elo,-vgame)=0.920 pearson(elo,-vtree)=0.995

@@ -1,0 +1,1233 @@
+/home/user/work/fastchess/fastchess -engine cmd=/home/user/data/sf_research name=base_T1S1 option.StudentFile=/home/user/nets/e2/base_T1S1.stud -engine cmd=/home/user/data/sf_research name=base_T1T2 option.StudentFile=/home/user/nets/e2/base_T1T2.stud -each tc=inf nodes=20000 option.Threads=1 option.Hash=16 -openings file=/home/user/data/UHO_4060_v4.epd format=epd order=random -srand 1 -repeat -rounds 300 -concurrency 4 -resign movecount=3 score=1000 twosided=true -draw movenumber=40 movecount=8 score=8 -pgnout file=experiments/e2/matches/base_T1S1_vs_base_T1T2.pgn -ratinginterval 100
+Indexing opening suite...
+Started game 1 of 600 (base_T1S1 vs base_T1T2)
+Started game 3 of 600 (base_T1S1 vs base_T1T2)
+Started game 2 of 600 (base_T1T2 vs base_T1S1)
+Started game 4 of 600 (base_T1T2 vs base_T1S1)
+Finished game 4 (base_T1T2 vs base_T1S1): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 5 of 600 (base_T1S1 vs base_T1T2)
+Finished game 1 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 6 of 600 (base_T1T2 vs base_T1S1)
+Finished game 3 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 7 of 600 (base_T1S1 vs base_T1T2)
+Finished game 5 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 8 of 600 (base_T1T2 vs base_T1S1)
+Finished game 2 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 9 of 600 (base_T1S1 vs base_T1T2)
+Finished game 6 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 10 of 600 (base_T1T2 vs base_T1S1)
+Finished game 8 (base_T1T2 vs base_T1S1): 1/2-1/2 {Draw by adjudication}
+Started game 11 of 600 (base_T1S1 vs base_T1T2)
+Finished game 7 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 12 of 600 (base_T1T2 vs base_T1S1)
+Finished game 9 (base_T1S1 vs base_T1T2): 1/2-1/2 {Draw by adjudication}
+Started game 13 of 600 (base_T1S1 vs base_T1T2)
+Finished game 10 (base_T1T2 vs base_T1S1): 1/2-1/2 {Draw by adjudication}
+Started game 14 of 600 (base_T1T2 vs base_T1S1)
+Finished game 12 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 15 of 600 (base_T1S1 vs base_T1T2)
+Finished game 11 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 16 of 600 (base_T1T2 vs base_T1S1)
+Finished game 13 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 17 of 600 (base_T1S1 vs base_T1T2)
+Finished game 14 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 18 of 600 (base_T1T2 vs base_T1S1)
+Finished game 16 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 19 of 600 (base_T1S1 vs base_T1T2)
+Finished game 17 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 20 of 600 (base_T1T2 vs base_T1S1)
+Finished game 15 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 21 of 600 (base_T1S1 vs base_T1T2)
+Finished game 19 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 22 of 600 (base_T1T2 vs base_T1S1)
+Finished game 20 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 23 of 600 (base_T1S1 vs base_T1T2)
+Finished game 18 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 24 of 600 (base_T1T2 vs base_T1S1)
+Finished game 22 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 25 of 600 (base_T1S1 vs base_T1T2)
+Finished game 23 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 26 of 600 (base_T1T2 vs base_T1S1)
+Finished game 24 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 27 of 600 (base_T1S1 vs base_T1T2)
+Finished game 21 (base_T1S1 vs base_T1T2): 1/2-1/2 {Draw by fifty moves rule}
+Started game 28 of 600 (base_T1T2 vs base_T1S1)
+Finished game 26 (base_T1T2 vs base_T1S1): 1/2-1/2 {Draw by insufficient mating material}
+Started game 29 of 600 (base_T1S1 vs base_T1T2)
+Finished game 28 (base_T1T2 vs base_T1S1): 1/2-1/2 {Draw by adjudication}
+Started game 30 of 600 (base_T1T2 vs base_T1S1)
+Finished game 27 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 31 of 600 (base_T1S1 vs base_T1T2)
+Finished game 25 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 32 of 600 (base_T1T2 vs base_T1S1)
+Finished game 30 (base_T1T2 vs base_T1S1): 0-1 {Black wins by adjudication}
+Started game 33 of 600 (base_T1S1 vs base_T1T2)
+Finished game 31 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 34 of 600 (base_T1T2 vs base_T1S1)
+Finished game 29 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 35 of 600 (base_T1S1 vs base_T1T2)
+Finished game 32 (base_T1T2 vs base_T1S1): 1/2-1/2 {Draw by insufficient mating material}
+Started game 36 of 600 (base_T1T2 vs base_T1S1)
+Finished game 33 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 37 of 600 (base_T1S1 vs base_T1T2)
+Finished game 35 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 38 of 600 (base_T1T2 vs base_T1S1)
+Finished game 34 (base_T1T2 vs base_T1S1): 0-1 {Black wins by adjudication}
+Started game 39 of 600 (base_T1S1 vs base_T1T2)
+Finished game 36 (base_T1T2 vs base_T1S1): 0-1 {Black wins by adjudication}
+Started game 40 of 600 (base_T1T2 vs base_T1S1)
+Finished game 37 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 41 of 600 (base_T1S1 vs base_T1T2)
+Finished game 39 (base_T1S1 vs base_T1T2): 1-0 {White mates}
+Started game 42 of 600 (base_T1T2 vs base_T1S1)
+Finished game 38 (base_T1T2 vs base_T1S1): 0-1 {Black wins by adjudication}
+Started game 43 of 600 (base_T1S1 vs base_T1T2)
+Finished game 41 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 44 of 600 (base_T1T2 vs base_T1S1)
+Finished game 40 (base_T1T2 vs base_T1S1): 0-1 {Black wins by adjudication}
+Started game 45 of 600 (base_T1S1 vs base_T1T2)
+Finished game 42 (base_T1T2 vs base_T1S1): 1/2-1/2 {Draw by adjudication}
+Started game 46 of 600 (base_T1T2 vs base_T1S1)
+Finished game 43 (base_T1S1 vs base_T1T2): 0-1 {Black wins by adjudication}
+Started game 47 of 600 (base_T1S1 vs base_T1T2)
+Finished game 44 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 48 of 600 (base_T1T2 vs base_T1S1)
+Finished game 45 (base_T1S1 vs base_T1T2): 1/2-1/2 {Draw by adjudication}
+Started game 49 of 600 (base_T1S1 vs base_T1T2)
+Finished game 47 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 50 of 600 (base_T1T2 vs base_T1S1)
+Finished game 46 (base_T1T2 vs base_T1S1): 1/2-1/2 {Draw by insufficient mating material}
+Started game 51 of 600 (base_T1S1 vs base_T1T2)
+Finished game 49 (base_T1S1 vs base_T1T2): 0-1 {Black wins by adjudication}
+Started game 52 of 600 (base_T1T2 vs base_T1S1)
+Finished game 48 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 53 of 600 (base_T1S1 vs base_T1T2)
+Finished game 50 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 54 of 600 (base_T1T2 vs base_T1S1)
+Finished game 51 (base_T1S1 vs base_T1T2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 55 of 600 (base_T1S1 vs base_T1T2)
+Finished game 53 (base_T1S1 vs base_T1T2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 56 of 600 (base_T1T2 vs base_T1S1)
+Finished game 52 (base_T1T2 vs base_T1S1): 1/2-1/2 {Draw by insufficient mating material}
+Started game 57 of 600 (base_T1S1 vs base_T1T2)
+Finished game 54 (base_T1T2 vs base_T1S1): 1/2-1/2 {Draw by insufficient mating material}
+Started game 58 of 600 (base_T1T2 vs base_T1S1)
+Finished game 56 (base_T1T2 vs base_T1S1): 0-1 {Black wins by adjudication}
+Started game 59 of 600 (base_T1S1 vs base_T1T2)
+Finished game 58 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 60 of 600 (base_T1T2 vs base_T1S1)
+Finished game 57 (base_T1S1 vs base_T1T2): 0-1 {Black wins by adjudication}
+Started game 61 of 600 (base_T1S1 vs base_T1T2)
+Finished game 55 (base_T1S1 vs base_T1T2): 0-1 {Black wins by adjudication}
+Started game 62 of 600 (base_T1T2 vs base_T1S1)
+Finished game 59 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 63 of 600 (base_T1S1 vs base_T1T2)
+Finished game 60 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 64 of 600 (base_T1T2 vs base_T1S1)
+Finished game 61 (base_T1S1 vs base_T1T2): 1/2-1/2 {Draw by adjudication}
+Started game 65 of 600 (base_T1S1 vs base_T1T2)
+Finished game 62 (base_T1T2 vs base_T1S1): 0-1 {Black wins by adjudication}
+Started game 66 of 600 (base_T1T2 vs base_T1S1)
+Finished game 64 (base_T1T2 vs base_T1S1): 0-1 {Black mates}
+Started game 67 of 600 (base_T1S1 vs base_T1T2)
+Finished game 65 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 68 of 600 (base_T1T2 vs base_T1S1)
+Finished game 63 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 69 of 600 (base_T1S1 vs base_T1T2)
+Finished game 66 (base_T1T2 vs base_T1S1): 0-1 {Black wins by adjudication}
+Started game 70 of 600 (base_T1T2 vs base_T1S1)
+Finished game 67 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 71 of 600 (base_T1S1 vs base_T1T2)
+Finished game 68 (base_T1T2 vs base_T1S1): 0-1 {Black wins by adjudication}
+Started game 72 of 600 (base_T1T2 vs base_T1S1)
+Finished game 69 (base_T1S1 vs base_T1T2): 0-1 {Black wins by adjudication}
+Started game 73 of 600 (base_T1S1 vs base_T1T2)
+Finished game 70 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 74 of 600 (base_T1T2 vs base_T1S1)
+Finished game 72 (base_T1T2 vs base_T1S1): 1/2-1/2 {Draw by insufficient mating material}
+Started game 75 of 600 (base_T1S1 vs base_T1T2)
+Finished game 74 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 76 of 600 (base_T1T2 vs base_T1S1)
+Finished game 73 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 77 of 600 (base_T1S1 vs base_T1T2)
+Finished game 71 (base_T1S1 vs base_T1T2): 1/2-1/2 {Draw by fifty moves rule}
+Started game 78 of 600 (base_T1T2 vs base_T1S1)
+Finished game 75 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 79 of 600 (base_T1S1 vs base_T1T2)
+Finished game 78 (base_T1T2 vs base_T1S1): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 80 of 600 (base_T1T2 vs base_T1S1)
+Finished game 76 (base_T1T2 vs base_T1S1): 0-1 {Black wins by adjudication}
+Started game 81 of 600 (base_T1S1 vs base_T1T2)
+Finished game 77 (base_T1S1 vs base_T1T2): 1/2-1/2 {Draw by adjudication}
+Started game 82 of 600 (base_T1T2 vs base_T1S1)
+Finished game 80 (base_T1T2 vs base_T1S1): 0-1 {Black wins by adjudication}
+Started game 83 of 600 (base_T1S1 vs base_T1T2)
+Finished game 81 (base_T1S1 vs base_T1T2): 0-1 {Black wins by adjudication}
+Started game 84 of 600 (base_T1T2 vs base_T1S1)
+Finished game 79 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 85 of 600 (base_T1S1 vs base_T1T2)
+Finished game 82 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 86 of 600 (base_T1T2 vs base_T1S1)
+Finished game 83 (base_T1S1 vs base_T1T2): 0-1 {Black wins by adjudication}
+Started game 87 of 600 (base_T1S1 vs base_T1T2)
+Finished game 84 (base_T1T2 vs base_T1S1): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 88 of 600 (base_T1T2 vs base_T1S1)
+Finished game 85 (base_T1S1 vs base_T1T2): 0-1 {Black wins by adjudication}
+Started game 89 of 600 (base_T1S1 vs base_T1T2)
+Finished game 89 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 90 of 600 (base_T1T2 vs base_T1S1)
+Finished game 86 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 91 of 600 (base_T1S1 vs base_T1T2)
+Finished game 88 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 92 of 600 (base_T1T2 vs base_T1S1)
+Finished game 87 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 93 of 600 (base_T1S1 vs base_T1T2)
+Finished game 90 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 94 of 600 (base_T1T2 vs base_T1S1)
+Finished game 93 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 95 of 600 (base_T1S1 vs base_T1T2)
+Finished game 92 (base_T1T2 vs base_T1S1): 1/2-1/2 {Draw by stalemate}
+Started game 96 of 600 (base_T1T2 vs base_T1S1)
+Finished game 91 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 97 of 600 (base_T1S1 vs base_T1T2)
+Finished game 94 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 98 of 600 (base_T1T2 vs base_T1S1)
+Finished game 95 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 99 of 600 (base_T1S1 vs base_T1T2)
+Finished game 96 (base_T1T2 vs base_T1S1): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 100 of 600 (base_T1T2 vs base_T1S1)
+Finished game 97 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 101 of 600 (base_T1S1 vs base_T1T2)
+Finished game 100 (base_T1T2 vs base_T1S1): 1/2-1/2 {Draw by adjudication}
+Started game 102 of 600 (base_T1T2 vs base_T1S1)
+Finished game 99 (base_T1S1 vs base_T1T2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 103 of 600 (base_T1S1 vs base_T1T2)
+Finished game 98 (base_T1T2 vs base_T1S1): 0-1 {Black mates}
+Started game 104 of 600 (base_T1T2 vs base_T1S1)
+Finished game 101 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 105 of 600 (base_T1S1 vs base_T1T2)
+Finished game 104 (base_T1T2 vs base_T1S1): 0-1 {Black wins by adjudication}
+Started game 106 of 600 (base_T1T2 vs base_T1S1)
+Finished game 102 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 107 of 600 (base_T1S1 vs base_T1T2)
+Finished game 103 (base_T1S1 vs base_T1T2): 1/2-1/2 {Draw by insufficient mating material}
+Started game 108 of 600 (base_T1T2 vs base_T1S1)
+Finished game 105 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 109 of 600 (base_T1S1 vs base_T1T2)
+Finished game 106 (base_T1T2 vs base_T1S1): 0-1 {Black wins by adjudication}
+Started game 110 of 600 (base_T1T2 vs base_T1S1)
+Finished game 107 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 111 of 600 (base_T1S1 vs base_T1T2)
+Finished game 108 (base_T1T2 vs base_T1S1): 0-1 {Black wins by adjudication}
+Started game 112 of 600 (base_T1T2 vs base_T1S1)
+Finished game 109 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 113 of 600 (base_T1S1 vs base_T1T2)
+Finished game 111 (base_T1S1 vs base_T1T2): 1-0 {White mates}
+Started game 114 of 600 (base_T1T2 vs base_T1S1)
+Finished game 110 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 115 of 600 (base_T1S1 vs base_T1T2)
+Finished game 113 (base_T1S1 vs base_T1T2): 1/2-1/2 {Draw by insufficient mating material}
+Started game 116 of 600 (base_T1T2 vs base_T1S1)
+Finished game 114 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 117 of 600 (base_T1S1 vs base_T1T2)
+Finished game 112 (base_T1T2 vs base_T1S1): 1/2-1/2 {Draw by adjudication}
+Started game 118 of 600 (base_T1T2 vs base_T1S1)
+Finished game 116 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 119 of 600 (base_T1S1 vs base_T1T2)
+Finished game 115 (base_T1S1 vs base_T1T2): 0-1 {Black wins by adjudication}
+Started game 120 of 600 (base_T1T2 vs base_T1S1)
+Finished game 117 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 121 of 600 (base_T1S1 vs base_T1T2)
+Finished game 118 (base_T1T2 vs base_T1S1): 0-1 {Black wins by adjudication}
+Started game 122 of 600 (base_T1T2 vs base_T1S1)
+Finished game 120 (base_T1T2 vs base_T1S1): 0-1 {Black wins by adjudication}
+Started game 123 of 600 (base_T1S1 vs base_T1T2)
+Finished game 121 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 124 of 600 (base_T1T2 vs base_T1S1)
+Finished game 119 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 125 of 600 (base_T1S1 vs base_T1T2)
+Finished game 123 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 126 of 600 (base_T1T2 vs base_T1S1)
+Finished game 122 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 127 of 600 (base_T1S1 vs base_T1T2)
+Finished game 125 (base_T1S1 vs base_T1T2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 128 of 600 (base_T1T2 vs base_T1S1)
+Finished game 124 (base_T1T2 vs base_T1S1): 0-1 {Black wins by adjudication}
+Started game 129 of 600 (base_T1S1 vs base_T1T2)
+Finished game 126 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 130 of 600 (base_T1T2 vs base_T1S1)
+Finished game 129 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 131 of 600 (base_T1S1 vs base_T1T2)
+Finished game 128 (base_T1T2 vs base_T1S1): 0-1 {Black wins by adjudication}
+Started game 132 of 600 (base_T1T2 vs base_T1S1)
+Finished game 130 (base_T1T2 vs base_T1S1): 0-1 {Black wins by adjudication}
+Started game 133 of 600 (base_T1S1 vs base_T1T2)
+Finished game 127 (base_T1S1 vs base_T1T2): 1/2-1/2 {Draw by adjudication}
+Started game 134 of 600 (base_T1T2 vs base_T1S1)
+Finished game 131 (base_T1S1 vs base_T1T2): 1/2-1/2 {Draw by adjudication}
+Started game 135 of 600 (base_T1S1 vs base_T1T2)
+Finished game 132 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 136 of 600 (base_T1T2 vs base_T1S1)
+Finished game 134 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 137 of 600 (base_T1S1 vs base_T1T2)
+Finished game 133 (base_T1S1 vs base_T1T2): 1/2-1/2 {Draw by stalemate}
+Started game 138 of 600 (base_T1T2 vs base_T1S1)
+Finished game 135 (base_T1S1 vs base_T1T2): 1/2-1/2 {Draw by adjudication}
+Started game 139 of 600 (base_T1S1 vs base_T1T2)
+Finished game 136 (base_T1T2 vs base_T1S1): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 140 of 600 (base_T1T2 vs base_T1S1)
+Finished game 138 (base_T1T2 vs base_T1S1): 0-1 {Black wins by adjudication}
+Started game 141 of 600 (base_T1S1 vs base_T1T2)
+Finished game 137 (base_T1S1 vs base_T1T2): 1/2-1/2 {Draw by insufficient mating material}
+Started game 142 of 600 (base_T1T2 vs base_T1S1)
+Finished game 140 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 143 of 600 (base_T1S1 vs base_T1T2)
+Finished game 139 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 144 of 600 (base_T1T2 vs base_T1S1)
+Finished game 141 (base_T1S1 vs base_T1T2): 1/2-1/2 {Draw by adjudication}
+Started game 145 of 600 (base_T1S1 vs base_T1T2)
+Finished game 143 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 146 of 600 (base_T1T2 vs base_T1S1)
+Finished game 142 (base_T1T2 vs base_T1S1): 1-0 {White mates}
+Started game 147 of 600 (base_T1S1 vs base_T1T2)
+Finished game 144 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 148 of 600 (base_T1T2 vs base_T1S1)
+Finished game 145 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 149 of 600 (base_T1S1 vs base_T1T2)
+Finished game 147 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 150 of 600 (base_T1T2 vs base_T1S1)
+Finished game 146 (base_T1T2 vs base_T1S1): 0-1 {Black wins by adjudication}
+Started game 151 of 600 (base_T1S1 vs base_T1T2)
+Finished game 148 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 152 of 600 (base_T1T2 vs base_T1S1)
+Finished game 149 (base_T1S1 vs base_T1T2): 0-1 {Black wins by adjudication}
+Started game 153 of 600 (base_T1S1 vs base_T1T2)
+Finished game 151 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 154 of 600 (base_T1T2 vs base_T1S1)
+Finished game 150 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 155 of 600 (base_T1S1 vs base_T1T2)
+Finished game 152 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 156 of 600 (base_T1T2 vs base_T1S1)
+Finished game 153 (base_T1S1 vs base_T1T2): 0-1 {Black wins by adjudication}
+Started game 157 of 600 (base_T1S1 vs base_T1T2)
+Finished game 155 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 158 of 600 (base_T1T2 vs base_T1S1)
+Finished game 154 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 159 of 600 (base_T1S1 vs base_T1T2)
+Finished game 156 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 160 of 600 (base_T1T2 vs base_T1S1)
+Finished game 157 (base_T1S1 vs base_T1T2): 0-1 {Black wins by adjudication}
+Started game 161 of 600 (base_T1S1 vs base_T1T2)
+Finished game 158 (base_T1T2 vs base_T1S1): 1/2-1/2 {Draw by insufficient mating material}
+Started game 162 of 600 (base_T1T2 vs base_T1S1)
+Finished game 159 (base_T1S1 vs base_T1T2): 0-1 {Black wins by adjudication}
+Started game 163 of 600 (base_T1S1 vs base_T1T2)
+Finished game 160 (base_T1T2 vs base_T1S1): 0-1 {Black wins by adjudication}
+Started game 164 of 600 (base_T1T2 vs base_T1S1)
+Finished game 161 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 165 of 600 (base_T1S1 vs base_T1T2)
+Finished game 163 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 166 of 600 (base_T1T2 vs base_T1S1)
+Finished game 164 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 167 of 600 (base_T1S1 vs base_T1T2)
+Finished game 162 (base_T1T2 vs base_T1S1): 0-1 {Black wins by adjudication}
+Started game 168 of 600 (base_T1T2 vs base_T1S1)
+Finished game 166 (base_T1T2 vs base_T1S1): 0-1 {Black mates}
+Started game 169 of 600 (base_T1S1 vs base_T1T2)
+Finished game 165 (base_T1S1 vs base_T1T2): 0-1 {Black wins by adjudication}
+Started game 170 of 600 (base_T1T2 vs base_T1S1)
+Finished game 168 (base_T1T2 vs base_T1S1): 0-1 {Black wins by adjudication}
+Started game 171 of 600 (base_T1S1 vs base_T1T2)
+Finished game 167 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 172 of 600 (base_T1T2 vs base_T1S1)
+Finished game 170 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 173 of 600 (base_T1S1 vs base_T1T2)
+Finished game 169 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 174 of 600 (base_T1T2 vs base_T1S1)
+Finished game 171 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 175 of 600 (base_T1S1 vs base_T1T2)
+Finished game 172 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 176 of 600 (base_T1T2 vs base_T1S1)
+Finished game 174 (base_T1T2 vs base_T1S1): 0-1 {Black wins by adjudication}
+Started game 177 of 600 (base_T1S1 vs base_T1T2)
+Finished game 173 (base_T1S1 vs base_T1T2): 0-1 {Black wins by adjudication}
+Started game 178 of 600 (base_T1T2 vs base_T1S1)
+Finished game 176 (base_T1T2 vs base_T1S1): 1/2-1/2 {Draw by adjudication}
+Started game 179 of 600 (base_T1S1 vs base_T1T2)
+Finished game 175 (base_T1S1 vs base_T1T2): 1/2-1/2 {Draw by adjudication}
+Started game 180 of 600 (base_T1T2 vs base_T1S1)
+Finished game 178 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 181 of 600 (base_T1S1 vs base_T1T2)
+Finished game 177 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 182 of 600 (base_T1T2 vs base_T1S1)
+Finished game 179 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 183 of 600 (base_T1S1 vs base_T1T2)
+Finished game 180 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 184 of 600 (base_T1T2 vs base_T1S1)
+Finished game 181 (base_T1S1 vs base_T1T2): 0-1 {Black wins by adjudication}
+Started game 185 of 600 (base_T1S1 vs base_T1T2)
+Finished game 182 (base_T1T2 vs base_T1S1): 1-0 {White mates}
+Started game 186 of 600 (base_T1T2 vs base_T1S1)
+Finished game 184 (base_T1T2 vs base_T1S1): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 187 of 600 (base_T1S1 vs base_T1T2)
+Finished game 183 (base_T1S1 vs base_T1T2): 1/2-1/2 {Draw by fifty moves rule}
+Started game 188 of 600 (base_T1T2 vs base_T1S1)
+Finished game 185 (base_T1S1 vs base_T1T2): 0-1 {Black wins by adjudication}
+Started game 189 of 600 (base_T1S1 vs base_T1T2)
+Finished game 187 (base_T1S1 vs base_T1T2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 190 of 600 (base_T1T2 vs base_T1S1)
+Finished game 186 (base_T1T2 vs base_T1S1): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 191 of 600 (base_T1S1 vs base_T1T2)
+Finished game 189 (base_T1S1 vs base_T1T2): 0-1 {Black wins by adjudication}
+Started game 192 of 600 (base_T1T2 vs base_T1S1)
+Finished game 190 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 193 of 600 (base_T1S1 vs base_T1T2)
+Finished game 188 (base_T1T2 vs base_T1S1): 0-1 {Black wins by adjudication}
+Started game 194 of 600 (base_T1T2 vs base_T1S1)
+Finished game 191 (base_T1S1 vs base_T1T2): 1/2-1/2 {Draw by adjudication}
+Started game 195 of 600 (base_T1S1 vs base_T1T2)
+Finished game 192 (base_T1T2 vs base_T1S1): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 196 of 600 (base_T1T2 vs base_T1S1)
+Finished game 195 (base_T1S1 vs base_T1T2): 0-1 {Black wins by adjudication}
+Started game 197 of 600 (base_T1S1 vs base_T1T2)
+Finished game 194 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 198 of 600 (base_T1T2 vs base_T1S1)
+Finished game 196 (base_T1T2 vs base_T1S1): 1/2-1/2 {Draw by adjudication}
+Started game 199 of 600 (base_T1S1 vs base_T1T2)
+Finished game 193 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 200 of 600 (base_T1T2 vs base_T1S1)
+Finished game 197 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 201 of 600 (base_T1S1 vs base_T1T2)
+Finished game 198 (base_T1T2 vs base_T1S1): 0-1 {Black wins by adjudication}
+Started game 202 of 600 (base_T1T2 vs base_T1S1)
+Finished game 199 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 203 of 600 (base_T1S1 vs base_T1T2)
+Finished game 200 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+--------------------------------------------------
+Results of base_T1S1 vs base_T1T2 (20000 nodes, 1t, 16MB, UHO_4060_v4.epd):
+Elo: 41.89 +/- 41.99, nElo: 48.76 +/- 48.15
+LOS: 97.64 %, DrawRatio: 44.00 %, PairsRatio: 1.67
+Games: 200, Wins: 89, Losses: 65, Draws: 46, Points: 112.0 (56.00 %)
+Ptnml(0-2): [11, 10, 44, 14, 21], WL/DD Ratio: 3.00
+--------------------------------------------------
+Started game 204 of 600 (base_T1T2 vs base_T1S1)
+Finished game 201 (base_T1S1 vs base_T1T2): 0-1 {Black wins by adjudication}
+Started game 205 of 600 (base_T1S1 vs base_T1T2)
+Finished game 203 (base_T1S1 vs base_T1T2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 206 of 600 (base_T1T2 vs base_T1S1)
+Finished game 202 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 207 of 600 (base_T1S1 vs base_T1T2)
+Finished game 204 (base_T1T2 vs base_T1S1): 0-1 {Black wins by adjudication}
+Started game 208 of 600 (base_T1T2 vs base_T1S1)
+Finished game 205 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 209 of 600 (base_T1S1 vs base_T1T2)
+Finished game 206 (base_T1T2 vs base_T1S1): 0-1 {Black wins by adjudication}
+Started game 210 of 600 (base_T1T2 vs base_T1S1)
+Finished game 208 (base_T1T2 vs base_T1S1): 1/2-1/2 {Draw by adjudication}
+Started game 211 of 600 (base_T1S1 vs base_T1T2)
+Finished game 209 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 212 of 600 (base_T1T2 vs base_T1S1)
+Finished game 207 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 213 of 600 (base_T1S1 vs base_T1T2)
+Finished game 210 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 214 of 600 (base_T1T2 vs base_T1S1)
+Finished game 211 (base_T1S1 vs base_T1T2): 0-1 {Black wins by adjudication}
+Started game 215 of 600 (base_T1S1 vs base_T1T2)
+Finished game 212 (base_T1T2 vs base_T1S1): 1/2-1/2 {Draw by adjudication}
+Started game 216 of 600 (base_T1T2 vs base_T1S1)
+Finished game 214 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 217 of 600 (base_T1S1 vs base_T1T2)
+Finished game 213 (base_T1S1 vs base_T1T2): 1/2-1/2 {Draw by insufficient mating material}
+Started game 218 of 600 (base_T1T2 vs base_T1S1)
+Finished game 215 (base_T1S1 vs base_T1T2): 0-1 {Black wins by adjudication}
+Started game 219 of 600 (base_T1S1 vs base_T1T2)
+Finished game 216 (base_T1T2 vs base_T1S1): 1-0 {White mates}
+Started game 220 of 600 (base_T1T2 vs base_T1S1)
+Finished game 218 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 221 of 600 (base_T1S1 vs base_T1T2)
+Finished game 217 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 222 of 600 (base_T1T2 vs base_T1S1)
+Finished game 219 (base_T1S1 vs base_T1T2): 1/2-1/2 {Draw by adjudication}
+Started game 223 of 600 (base_T1S1 vs base_T1T2)
+Finished game 221 (base_T1S1 vs base_T1T2): 0-1 {Black wins by adjudication}
+Started game 224 of 600 (base_T1T2 vs base_T1S1)
+Finished game 220 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 225 of 600 (base_T1S1 vs base_T1T2)
+Finished game 222 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 226 of 600 (base_T1T2 vs base_T1S1)
+Finished game 223 (base_T1S1 vs base_T1T2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 227 of 600 (base_T1S1 vs base_T1T2)
+Finished game 224 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 228 of 600 (base_T1T2 vs base_T1S1)
+Finished game 225 (base_T1S1 vs base_T1T2): 0-1 {Black wins by adjudication}
+Started game 229 of 600 (base_T1S1 vs base_T1T2)
+Finished game 226 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 230 of 600 (base_T1T2 vs base_T1S1)
+Finished game 227 (base_T1S1 vs base_T1T2): 0-1 {Black wins by adjudication}
+Started game 231 of 600 (base_T1S1 vs base_T1T2)
+Finished game 229 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 232 of 600 (base_T1T2 vs base_T1S1)
+Finished game 228 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 233 of 600 (base_T1S1 vs base_T1T2)
+Finished game 231 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 234 of 600 (base_T1T2 vs base_T1S1)
+Finished game 230 (base_T1T2 vs base_T1S1): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 235 of 600 (base_T1S1 vs base_T1T2)
+Finished game 232 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 236 of 600 (base_T1T2 vs base_T1S1)
+Finished game 233 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 237 of 600 (base_T1S1 vs base_T1T2)
+Finished game 234 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 238 of 600 (base_T1T2 vs base_T1S1)
+Finished game 235 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 239 of 600 (base_T1S1 vs base_T1T2)
+Finished game 236 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 240 of 600 (base_T1T2 vs base_T1S1)
+Finished game 237 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 241 of 600 (base_T1S1 vs base_T1T2)
+Finished game 238 (base_T1T2 vs base_T1S1): 1/2-1/2 {Draw by adjudication}
+Started game 242 of 600 (base_T1T2 vs base_T1S1)
+Finished game 239 (base_T1S1 vs base_T1T2): 0-1 {Black wins by adjudication}
+Started game 243 of 600 (base_T1S1 vs base_T1T2)
+Finished game 241 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 244 of 600 (base_T1T2 vs base_T1S1)
+Finished game 240 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 245 of 600 (base_T1S1 vs base_T1T2)
+Finished game 242 (base_T1T2 vs base_T1S1): 1/2-1/2 {Draw by adjudication}
+Started game 246 of 600 (base_T1T2 vs base_T1S1)
+Finished game 243 (base_T1S1 vs base_T1T2): 1/2-1/2 {Draw by adjudication}
+Started game 247 of 600 (base_T1S1 vs base_T1T2)
+Finished game 244 (base_T1T2 vs base_T1S1): 0-1 {Black wins by adjudication}
+Started game 248 of 600 (base_T1T2 vs base_T1S1)
+Finished game 245 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 249 of 600 (base_T1S1 vs base_T1T2)
+Finished game 246 (base_T1T2 vs base_T1S1): 0-1 {Black wins by adjudication}
+Started game 250 of 600 (base_T1T2 vs base_T1S1)
+Finished game 247 (base_T1S1 vs base_T1T2): 0-1 {Black wins by adjudication}
+Started game 251 of 600 (base_T1S1 vs base_T1T2)
+Finished game 248 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 252 of 600 (base_T1T2 vs base_T1S1)
+Finished game 249 (base_T1S1 vs base_T1T2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 253 of 600 (base_T1S1 vs base_T1T2)
+Finished game 250 (base_T1T2 vs base_T1S1): 0-1 {Black wins by adjudication}
+Started game 254 of 600 (base_T1T2 vs base_T1S1)
+Finished game 252 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 255 of 600 (base_T1S1 vs base_T1T2)
+Finished game 253 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 256 of 600 (base_T1T2 vs base_T1S1)
+Finished game 251 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 257 of 600 (base_T1S1 vs base_T1T2)
+Finished game 255 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 258 of 600 (base_T1T2 vs base_T1S1)
+Finished game 256 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 259 of 600 (base_T1S1 vs base_T1T2)
+Finished game 254 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 260 of 600 (base_T1T2 vs base_T1S1)
+Finished game 257 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 261 of 600 (base_T1S1 vs base_T1T2)
+Finished game 259 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 262 of 600 (base_T1T2 vs base_T1S1)
+Finished game 258 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 263 of 600 (base_T1S1 vs base_T1T2)
+Finished game 261 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 264 of 600 (base_T1T2 vs base_T1S1)
+Finished game 260 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 265 of 600 (base_T1S1 vs base_T1T2)
+Finished game 262 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 266 of 600 (base_T1T2 vs base_T1S1)
+Finished game 263 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 267 of 600 (base_T1S1 vs base_T1T2)
+Finished game 266 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 268 of 600 (base_T1T2 vs base_T1S1)
+Finished game 264 (base_T1T2 vs base_T1S1): 0-1 {Black wins by adjudication}
+Started game 269 of 600 (base_T1S1 vs base_T1T2)
+Finished game 265 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 270 of 600 (base_T1T2 vs base_T1S1)
+Finished game 267 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 271 of 600 (base_T1S1 vs base_T1T2)
+Finished game 268 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 272 of 600 (base_T1T2 vs base_T1S1)
+Finished game 270 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 273 of 600 (base_T1S1 vs base_T1T2)
+Finished game 269 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 274 of 600 (base_T1T2 vs base_T1S1)
+Finished game 273 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 275 of 600 (base_T1S1 vs base_T1T2)
+Finished game 272 (base_T1T2 vs base_T1S1): 1/2-1/2 {Draw by adjudication}
+Started game 276 of 600 (base_T1T2 vs base_T1S1)
+Finished game 271 (base_T1S1 vs base_T1T2): 1/2-1/2 {Draw by insufficient mating material}
+Started game 277 of 600 (base_T1S1 vs base_T1T2)
+Finished game 274 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 278 of 600 (base_T1T2 vs base_T1S1)
+Finished game 275 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 279 of 600 (base_T1S1 vs base_T1T2)
+Finished game 276 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 280 of 600 (base_T1T2 vs base_T1S1)
+Finished game 278 (base_T1T2 vs base_T1S1): 0-1 {Black wins by adjudication}
+Started game 281 of 600 (base_T1S1 vs base_T1T2)
+Finished game 277 (base_T1S1 vs base_T1T2): 0-1 {Black wins by adjudication}
+Started game 282 of 600 (base_T1T2 vs base_T1S1)
+Finished game 279 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 283 of 600 (base_T1S1 vs base_T1T2)
+Finished game 280 (base_T1T2 vs base_T1S1): 0-1 {Black wins by adjudication}
+Started game 284 of 600 (base_T1T2 vs base_T1S1)
+Finished game 282 (base_T1T2 vs base_T1S1): 1/2-1/2 {Draw by adjudication}
+Started game 285 of 600 (base_T1S1 vs base_T1T2)
+Finished game 281 (base_T1S1 vs base_T1T2): 1/2-1/2 {Draw by adjudication}
+Started game 286 of 600 (base_T1T2 vs base_T1S1)
+Finished game 283 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 287 of 600 (base_T1S1 vs base_T1T2)
+Finished game 286 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 288 of 600 (base_T1T2 vs base_T1S1)
+Finished game 284 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 289 of 600 (base_T1S1 vs base_T1T2)
+Finished game 285 (base_T1S1 vs base_T1T2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 290 of 600 (base_T1T2 vs base_T1S1)
+Finished game 288 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 291 of 600 (base_T1S1 vs base_T1T2)
+Finished game 289 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 292 of 600 (base_T1T2 vs base_T1S1)
+Finished game 287 (base_T1S1 vs base_T1T2): 1/2-1/2 {Draw by adjudication}
+Started game 293 of 600 (base_T1S1 vs base_T1T2)
+Finished game 290 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 294 of 600 (base_T1T2 vs base_T1S1)
+Finished game 291 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 295 of 600 (base_T1S1 vs base_T1T2)
+Finished game 292 (base_T1T2 vs base_T1S1): 0-1 {Black wins by adjudication}
+Started game 296 of 600 (base_T1T2 vs base_T1S1)
+Finished game 293 (base_T1S1 vs base_T1T2): 1/2-1/2 {Draw by adjudication}
+Started game 297 of 600 (base_T1S1 vs base_T1T2)
+Finished game 294 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 298 of 600 (base_T1T2 vs base_T1S1)
+Finished game 295 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 299 of 600 (base_T1S1 vs base_T1T2)
+Finished game 296 (base_T1T2 vs base_T1S1): 0-1 {Black wins by adjudication}
+Started game 300 of 600 (base_T1T2 vs base_T1S1)
+Finished game 298 (base_T1T2 vs base_T1S1): 0-1 {Black wins by adjudication}
+Started game 301 of 600 (base_T1S1 vs base_T1T2)
+Finished game 297 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 302 of 600 (base_T1T2 vs base_T1S1)
+Finished game 300 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 303 of 600 (base_T1S1 vs base_T1T2)
+Finished game 302 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 304 of 600 (base_T1T2 vs base_T1S1)
+Finished game 301 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 305 of 600 (base_T1S1 vs base_T1T2)
+Finished game 299 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 306 of 600 (base_T1T2 vs base_T1S1)
+Finished game 303 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 307 of 600 (base_T1S1 vs base_T1T2)
+Finished game 304 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 308 of 600 (base_T1T2 vs base_T1S1)
+Finished game 305 (base_T1S1 vs base_T1T2): 1/2-1/2 {Draw by adjudication}
+Started game 309 of 600 (base_T1S1 vs base_T1T2)
+Finished game 307 (base_T1S1 vs base_T1T2): 1/2-1/2 {Draw by insufficient mating material}
+Started game 310 of 600 (base_T1T2 vs base_T1S1)
+Finished game 306 (base_T1T2 vs base_T1S1): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 311 of 600 (base_T1S1 vs base_T1T2)
+Finished game 309 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 312 of 600 (base_T1T2 vs base_T1S1)
+Finished game 308 (base_T1T2 vs base_T1S1): 0-1 {Black wins by adjudication}
+Started game 313 of 600 (base_T1S1 vs base_T1T2)
+Finished game 313 (base_T1S1 vs base_T1T2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 314 of 600 (base_T1T2 vs base_T1S1)
+Finished game 312 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 315 of 600 (base_T1S1 vs base_T1T2)
+Finished game 310 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 316 of 600 (base_T1T2 vs base_T1S1)
+Finished game 311 (base_T1S1 vs base_T1T2): 1/2-1/2 {Draw by adjudication}
+Started game 317 of 600 (base_T1S1 vs base_T1T2)
+Finished game 314 (base_T1T2 vs base_T1S1): 1/2-1/2 {Draw by insufficient mating material}
+Started game 318 of 600 (base_T1T2 vs base_T1S1)
+Finished game 317 (base_T1S1 vs base_T1T2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 319 of 600 (base_T1S1 vs base_T1T2)
+Finished game 316 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 320 of 600 (base_T1T2 vs base_T1S1)
+Finished game 315 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 321 of 600 (base_T1S1 vs base_T1T2)
+Finished game 318 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 322 of 600 (base_T1T2 vs base_T1S1)
+Finished game 321 (base_T1S1 vs base_T1T2): 0-1 {Black wins by adjudication}
+Started game 323 of 600 (base_T1S1 vs base_T1T2)
+Finished game 319 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 324 of 600 (base_T1T2 vs base_T1S1)
+Finished game 320 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 325 of 600 (base_T1S1 vs base_T1T2)
+Finished game 322 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 326 of 600 (base_T1T2 vs base_T1S1)
+Finished game 324 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 327 of 600 (base_T1S1 vs base_T1T2)
+Finished game 323 (base_T1S1 vs base_T1T2): 0-1 {Black mates}
+Started game 328 of 600 (base_T1T2 vs base_T1S1)
+Finished game 326 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 329 of 600 (base_T1S1 vs base_T1T2)
+Finished game 325 (base_T1S1 vs base_T1T2): 1/2-1/2 {Draw by insufficient mating material}
+Started game 330 of 600 (base_T1T2 vs base_T1S1)
+Finished game 327 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 331 of 600 (base_T1S1 vs base_T1T2)
+Finished game 328 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 332 of 600 (base_T1T2 vs base_T1S1)
+Finished game 329 (base_T1S1 vs base_T1T2): 0-1 {Black wins by adjudication}
+Started game 333 of 600 (base_T1S1 vs base_T1T2)
+Finished game 331 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 334 of 600 (base_T1T2 vs base_T1S1)
+Finished game 330 (base_T1T2 vs base_T1S1): 0-1 {Black wins by adjudication}
+Started game 335 of 600 (base_T1S1 vs base_T1T2)
+Finished game 332 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 336 of 600 (base_T1T2 vs base_T1S1)
+Finished game 334 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 337 of 600 (base_T1S1 vs base_T1T2)
+Finished game 335 (base_T1S1 vs base_T1T2): 0-1 {Black wins by adjudication}
+Started game 338 of 600 (base_T1T2 vs base_T1S1)
+Finished game 333 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 339 of 600 (base_T1S1 vs base_T1T2)
+Finished game 336 (base_T1T2 vs base_T1S1): 0-1 {Black wins by adjudication}
+Started game 340 of 600 (base_T1T2 vs base_T1S1)
+Finished game 339 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 341 of 600 (base_T1S1 vs base_T1T2)
+Finished game 337 (base_T1S1 vs base_T1T2): 1/2-1/2 {Draw by adjudication}
+Started game 342 of 600 (base_T1T2 vs base_T1S1)
+Finished game 338 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 343 of 600 (base_T1S1 vs base_T1T2)
+Finished game 342 (base_T1T2 vs base_T1S1): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 344 of 600 (base_T1T2 vs base_T1S1)
+Finished game 340 (base_T1T2 vs base_T1S1): 0-1 {Black wins by adjudication}
+Started game 345 of 600 (base_T1S1 vs base_T1T2)
+Finished game 343 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 346 of 600 (base_T1T2 vs base_T1S1)
+Finished game 341 (base_T1S1 vs base_T1T2): 0-1 {Black wins by adjudication}
+Started game 347 of 600 (base_T1S1 vs base_T1T2)
+Finished game 346 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 348 of 600 (base_T1T2 vs base_T1S1)
+Finished game 344 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 349 of 600 (base_T1S1 vs base_T1T2)
+Finished game 345 (base_T1S1 vs base_T1T2): 0-1 {Black wins by adjudication}
+Started game 350 of 600 (base_T1T2 vs base_T1S1)
+Finished game 347 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 351 of 600 (base_T1S1 vs base_T1T2)
+Finished game 349 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 352 of 600 (base_T1T2 vs base_T1S1)
+Finished game 350 (base_T1T2 vs base_T1S1): 0-1 {Black wins by adjudication}
+Started game 353 of 600 (base_T1S1 vs base_T1T2)
+Finished game 348 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 354 of 600 (base_T1T2 vs base_T1S1)
+Finished game 351 (base_T1S1 vs base_T1T2): 0-1 {Black wins by adjudication}
+Started game 355 of 600 (base_T1S1 vs base_T1T2)
+Finished game 354 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 356 of 600 (base_T1T2 vs base_T1S1)
+Finished game 352 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 357 of 600 (base_T1S1 vs base_T1T2)
+Finished game 353 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 358 of 600 (base_T1T2 vs base_T1S1)
+Finished game 357 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 359 of 600 (base_T1S1 vs base_T1T2)
+Finished game 358 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 360 of 600 (base_T1T2 vs base_T1S1)
+Finished game 355 (base_T1S1 vs base_T1T2): 1/2-1/2 {Draw by fifty moves rule}
+Started game 361 of 600 (base_T1S1 vs base_T1T2)
+Finished game 356 (base_T1T2 vs base_T1S1): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 362 of 600 (base_T1T2 vs base_T1S1)
+Finished game 360 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 363 of 600 (base_T1S1 vs base_T1T2)
+Finished game 359 (base_T1S1 vs base_T1T2): 0-1 {Black wins by adjudication}
+Started game 364 of 600 (base_T1T2 vs base_T1S1)
+Finished game 361 (base_T1S1 vs base_T1T2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 365 of 600 (base_T1S1 vs base_T1T2)
+Finished game 364 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 366 of 600 (base_T1T2 vs base_T1S1)
+Finished game 363 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 367 of 600 (base_T1S1 vs base_T1T2)
+Finished game 362 (base_T1T2 vs base_T1S1): 0-1 {Black wins by adjudication}
+Started game 368 of 600 (base_T1T2 vs base_T1S1)
+Finished game 365 (base_T1S1 vs base_T1T2): 0-1 {Black wins by adjudication}
+Started game 369 of 600 (base_T1S1 vs base_T1T2)
+Finished game 367 (base_T1S1 vs base_T1T2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 370 of 600 (base_T1T2 vs base_T1S1)
+Finished game 366 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 371 of 600 (base_T1S1 vs base_T1T2)
+Finished game 368 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 372 of 600 (base_T1T2 vs base_T1S1)
+Finished game 369 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 373 of 600 (base_T1S1 vs base_T1T2)
+Finished game 370 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 374 of 600 (base_T1T2 vs base_T1S1)
+Finished game 371 (base_T1S1 vs base_T1T2): 1/2-1/2 {Draw by adjudication}
+Started game 375 of 600 (base_T1S1 vs base_T1T2)
+Finished game 373 (base_T1S1 vs base_T1T2): 1/2-1/2 {Draw by adjudication}
+Started game 376 of 600 (base_T1T2 vs base_T1S1)
+Finished game 372 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 377 of 600 (base_T1S1 vs base_T1T2)
+Finished game 374 (base_T1T2 vs base_T1S1): 1/2-1/2 {Draw by adjudication}
+Started game 378 of 600 (base_T1T2 vs base_T1S1)
+Finished game 375 (base_T1S1 vs base_T1T2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 379 of 600 (base_T1S1 vs base_T1T2)
+Finished game 376 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 380 of 600 (base_T1T2 vs base_T1S1)
+Finished game 377 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 381 of 600 (base_T1S1 vs base_T1T2)
+Finished game 379 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 382 of 600 (base_T1T2 vs base_T1S1)
+Finished game 378 (base_T1T2 vs base_T1S1): 1/2-1/2 {Draw by adjudication}
+Started game 383 of 600 (base_T1S1 vs base_T1T2)
+Finished game 380 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 384 of 600 (base_T1T2 vs base_T1S1)
+Finished game 382 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 385 of 600 (base_T1S1 vs base_T1T2)
+Finished game 381 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 386 of 600 (base_T1T2 vs base_T1S1)
+Finished game 384 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 387 of 600 (base_T1S1 vs base_T1T2)
+Finished game 383 (base_T1S1 vs base_T1T2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 388 of 600 (base_T1T2 vs base_T1S1)
+Finished game 386 (base_T1T2 vs base_T1S1): 0-1 {Black wins by adjudication}
+Started game 389 of 600 (base_T1S1 vs base_T1T2)
+Finished game 385 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 390 of 600 (base_T1T2 vs base_T1S1)
+Finished game 387 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 391 of 600 (base_T1S1 vs base_T1T2)
+Finished game 388 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 392 of 600 (base_T1T2 vs base_T1S1)
+Finished game 389 (base_T1S1 vs base_T1T2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 393 of 600 (base_T1S1 vs base_T1T2)
+Finished game 390 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 394 of 600 (base_T1T2 vs base_T1S1)
+Finished game 391 (base_T1S1 vs base_T1T2): 1/2-1/2 {Draw by adjudication}
+Started game 395 of 600 (base_T1S1 vs base_T1T2)
+Finished game 392 (base_T1T2 vs base_T1S1): 0-1 {Black wins by adjudication}
+Started game 396 of 600 (base_T1T2 vs base_T1S1)
+Finished game 393 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 397 of 600 (base_T1S1 vs base_T1T2)
+Finished game 394 (base_T1T2 vs base_T1S1): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 398 of 600 (base_T1T2 vs base_T1S1)
+Finished game 395 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 399 of 600 (base_T1S1 vs base_T1T2)
+Finished game 397 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 400 of 600 (base_T1T2 vs base_T1S1)
+Finished game 396 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 401 of 600 (base_T1S1 vs base_T1T2)
+Finished game 398 (base_T1T2 vs base_T1S1): 1/2-1/2 {Draw by adjudication}
+Started game 402 of 600 (base_T1T2 vs base_T1S1)
+Finished game 399 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 403 of 600 (base_T1S1 vs base_T1T2)
+Finished game 400 (base_T1T2 vs base_T1S1): 0-1 {Black wins by adjudication}
+--------------------------------------------------
+Results of base_T1S1 vs base_T1T2 (20000 nodes, 1t, 16MB, UHO_4060_v4.epd):
+Elo: 13.90 +/- 28.43, nElo: 16.71 +/- 34.05
+LOS: 83.19 %, DrawRatio: 45.00 %, PairsRatio: 1.16
+Games: 400, Wins: 164, Losses: 148, Draws: 88, Points: 208.0 (52.00 %)
+Ptnml(0-2): [24, 27, 90, 27, 32], WL/DD Ratio: 4.29
+--------------------------------------------------
+Started game 404 of 600 (base_T1T2 vs base_T1S1)
+Finished game 402 (base_T1T2 vs base_T1S1): 0-1 {Black wins by adjudication}
+Started game 405 of 600 (base_T1S1 vs base_T1T2)
+Finished game 401 (base_T1S1 vs base_T1T2): 1-0 {White mates}
+Started game 406 of 600 (base_T1T2 vs base_T1S1)
+Finished game 403 (base_T1S1 vs base_T1T2): 0-1 {Black wins by adjudication}
+Started game 407 of 600 (base_T1S1 vs base_T1T2)
+Finished game 405 (base_T1S1 vs base_T1T2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 408 of 600 (base_T1T2 vs base_T1S1)
+Finished game 408 (base_T1T2 vs base_T1S1): 0-1 {Black wins by adjudication}
+Started game 409 of 600 (base_T1S1 vs base_T1T2)
+Finished game 407 (base_T1S1 vs base_T1T2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 410 of 600 (base_T1T2 vs base_T1S1)
+Finished game 404 (base_T1T2 vs base_T1S1): 0-1 {Black wins by adjudication}
+Started game 411 of 600 (base_T1S1 vs base_T1T2)
+Finished game 406 (base_T1T2 vs base_T1S1): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 412 of 600 (base_T1T2 vs base_T1S1)
+Finished game 409 (base_T1S1 vs base_T1T2): 0-1 {Black wins by adjudication}
+Started game 413 of 600 (base_T1S1 vs base_T1T2)
+Finished game 411 (base_T1S1 vs base_T1T2): 0-1 {Black wins by adjudication}
+Started game 414 of 600 (base_T1T2 vs base_T1S1)
+Finished game 410 (base_T1T2 vs base_T1S1): 1/2-1/2 {Draw by adjudication}
+Started game 415 of 600 (base_T1S1 vs base_T1T2)
+Finished game 412 (base_T1T2 vs base_T1S1): 0-1 {Black wins by adjudication}
+Started game 416 of 600 (base_T1T2 vs base_T1S1)
+Finished game 413 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 417 of 600 (base_T1S1 vs base_T1T2)
+Finished game 416 (base_T1T2 vs base_T1S1): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 418 of 600 (base_T1T2 vs base_T1S1)
+Finished game 415 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 419 of 600 (base_T1S1 vs base_T1T2)
+Finished game 414 (base_T1T2 vs base_T1S1): 0-1 {Black wins by adjudication}
+Started game 420 of 600 (base_T1T2 vs base_T1S1)
+Finished game 417 (base_T1S1 vs base_T1T2): 0-1 {Black wins by adjudication}
+Started game 421 of 600 (base_T1S1 vs base_T1T2)
+Finished game 418 (base_T1T2 vs base_T1S1): 0-1 {Black wins by adjudication}
+Started game 422 of 600 (base_T1T2 vs base_T1S1)
+Finished game 419 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 423 of 600 (base_T1S1 vs base_T1T2)
+Finished game 420 (base_T1T2 vs base_T1S1): 1/2-1/2 {Draw by adjudication}
+Started game 424 of 600 (base_T1T2 vs base_T1S1)
+Finished game 421 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 425 of 600 (base_T1S1 vs base_T1T2)
+Finished game 422 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 426 of 600 (base_T1T2 vs base_T1S1)
+Finished game 423 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 427 of 600 (base_T1S1 vs base_T1T2)
+Finished game 424 (base_T1T2 vs base_T1S1): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 428 of 600 (base_T1T2 vs base_T1S1)
+Finished game 426 (base_T1T2 vs base_T1S1): 1-0 {White mates}
+Started game 429 of 600 (base_T1S1 vs base_T1T2)
+Finished game 425 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 430 of 600 (base_T1T2 vs base_T1S1)
+Finished game 427 (base_T1S1 vs base_T1T2): 0-1 {Black wins by adjudication}
+Started game 431 of 600 (base_T1S1 vs base_T1T2)
+Finished game 428 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 432 of 600 (base_T1T2 vs base_T1S1)
+Finished game 429 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 433 of 600 (base_T1S1 vs base_T1T2)
+Finished game 432 (base_T1T2 vs base_T1S1): 1/2-1/2 {Draw by adjudication}
+Started game 434 of 600 (base_T1T2 vs base_T1S1)
+Finished game 431 (base_T1S1 vs base_T1T2): 0-1 {Black wins by adjudication}
+Started game 435 of 600 (base_T1S1 vs base_T1T2)
+Finished game 430 (base_T1T2 vs base_T1S1): 0-1 {Black wins by adjudication}
+Started game 436 of 600 (base_T1T2 vs base_T1S1)
+Finished game 434 (base_T1T2 vs base_T1S1): 1/2-1/2 {Draw by adjudication}
+Started game 437 of 600 (base_T1S1 vs base_T1T2)
+Finished game 433 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 438 of 600 (base_T1T2 vs base_T1S1)
+Finished game 436 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 439 of 600 (base_T1S1 vs base_T1T2)
+Finished game 435 (base_T1S1 vs base_T1T2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 440 of 600 (base_T1T2 vs base_T1S1)
+Finished game 438 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 441 of 600 (base_T1S1 vs base_T1T2)
+Finished game 439 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 442 of 600 (base_T1T2 vs base_T1S1)
+Finished game 437 (base_T1S1 vs base_T1T2): 1/2-1/2 {Draw by insufficient mating material}
+Started game 443 of 600 (base_T1S1 vs base_T1T2)
+Finished game 440 (base_T1T2 vs base_T1S1): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 444 of 600 (base_T1T2 vs base_T1S1)
+Finished game 441 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 445 of 600 (base_T1S1 vs base_T1T2)
+Finished game 444 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 446 of 600 (base_T1T2 vs base_T1S1)
+Finished game 443 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 447 of 600 (base_T1S1 vs base_T1T2)
+Finished game 442 (base_T1T2 vs base_T1S1): 1/2-1/2 {Draw by adjudication}
+Started game 448 of 600 (base_T1T2 vs base_T1S1)
+Finished game 445 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 449 of 600 (base_T1S1 vs base_T1T2)
+Finished game 446 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 450 of 600 (base_T1T2 vs base_T1S1)
+Finished game 449 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 451 of 600 (base_T1S1 vs base_T1T2)
+Finished game 447 (base_T1S1 vs base_T1T2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 452 of 600 (base_T1T2 vs base_T1S1)
+Finished game 448 (base_T1T2 vs base_T1S1): 1/2-1/2 {Draw by adjudication}
+Started game 453 of 600 (base_T1S1 vs base_T1T2)
+Finished game 450 (base_T1T2 vs base_T1S1): 0-1 {Black wins by adjudication}
+Started game 454 of 600 (base_T1T2 vs base_T1S1)
+Finished game 451 (base_T1S1 vs base_T1T2): 0-1 {Black wins by adjudication}
+Started game 455 of 600 (base_T1S1 vs base_T1T2)
+Finished game 452 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 456 of 600 (base_T1T2 vs base_T1S1)
+Finished game 453 (base_T1S1 vs base_T1T2): 1/2-1/2 {Draw by adjudication}
+Started game 457 of 600 (base_T1S1 vs base_T1T2)
+Finished game 456 (base_T1T2 vs base_T1S1): 0-1 {Black wins by adjudication}
+Started game 458 of 600 (base_T1T2 vs base_T1S1)
+Finished game 455 (base_T1S1 vs base_T1T2): 1/2-1/2 {Draw by insufficient mating material}
+Started game 459 of 600 (base_T1S1 vs base_T1T2)
+Finished game 454 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 460 of 600 (base_T1T2 vs base_T1S1)
+Finished game 457 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 461 of 600 (base_T1S1 vs base_T1T2)
+Finished game 458 (base_T1T2 vs base_T1S1): 1/2-1/2 {Draw by adjudication}
+Started game 462 of 600 (base_T1T2 vs base_T1S1)
+Finished game 459 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 463 of 600 (base_T1S1 vs base_T1T2)
+Finished game 461 (base_T1S1 vs base_T1T2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 464 of 600 (base_T1T2 vs base_T1S1)
+Finished game 462 (base_T1T2 vs base_T1S1): 0-1 {Black wins by adjudication}
+Started game 465 of 600 (base_T1S1 vs base_T1T2)
+Finished game 460 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 466 of 600 (base_T1T2 vs base_T1S1)
+Finished game 464 (base_T1T2 vs base_T1S1): 0-1 {Black wins by adjudication}
+Started game 467 of 600 (base_T1S1 vs base_T1T2)
+Finished game 465 (base_T1S1 vs base_T1T2): 0-1 {Black wins by adjudication}
+Started game 468 of 600 (base_T1T2 vs base_T1S1)
+Finished game 463 (base_T1S1 vs base_T1T2): 0-1 {Black mates}
+Started game 469 of 600 (base_T1S1 vs base_T1T2)
+Finished game 466 (base_T1T2 vs base_T1S1): 0-1 {Black wins by adjudication}
+Started game 470 of 600 (base_T1T2 vs base_T1S1)
+Finished game 467 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 471 of 600 (base_T1S1 vs base_T1T2)
+Finished game 469 (base_T1S1 vs base_T1T2): 0-1 {Black wins by adjudication}
+Started game 472 of 600 (base_T1T2 vs base_T1S1)
+Finished game 468 (base_T1T2 vs base_T1S1): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 473 of 600 (base_T1S1 vs base_T1T2)
+Finished game 470 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 474 of 600 (base_T1T2 vs base_T1S1)
+Finished game 471 (base_T1S1 vs base_T1T2): 1/2-1/2 {Draw by adjudication}
+Started game 475 of 600 (base_T1S1 vs base_T1T2)
+Finished game 472 (base_T1T2 vs base_T1S1): 1/2-1/2 {Draw by adjudication}
+Started game 476 of 600 (base_T1T2 vs base_T1S1)
+Finished game 473 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 477 of 600 (base_T1S1 vs base_T1T2)
+Finished game 474 (base_T1T2 vs base_T1S1): 1/2-1/2 {Draw by adjudication}
+Started game 478 of 600 (base_T1T2 vs base_T1S1)
+Finished game 476 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 479 of 600 (base_T1S1 vs base_T1T2)
+Finished game 479 (base_T1S1 vs base_T1T2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 480 of 600 (base_T1T2 vs base_T1S1)
+Finished game 477 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 481 of 600 (base_T1S1 vs base_T1T2)
+Finished game 478 (base_T1T2 vs base_T1S1): 1/2-1/2 {Draw by adjudication}
+Started game 482 of 600 (base_T1T2 vs base_T1S1)
+Finished game 475 (base_T1S1 vs base_T1T2): 1/2-1/2 {Draw by adjudication}
+Started game 483 of 600 (base_T1S1 vs base_T1T2)
+Finished game 481 (base_T1S1 vs base_T1T2): 0-1 {Black wins by adjudication}
+Started game 484 of 600 (base_T1T2 vs base_T1S1)
+Finished game 480 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 485 of 600 (base_T1S1 vs base_T1T2)
+Finished game 482 (base_T1T2 vs base_T1S1): 0-1 {Black wins by adjudication}
+Started game 486 of 600 (base_T1T2 vs base_T1S1)
+Finished game 483 (base_T1S1 vs base_T1T2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 487 of 600 (base_T1S1 vs base_T1T2)
+Finished game 485 (base_T1S1 vs base_T1T2): 1/2-1/2 {Draw by adjudication}
+Started game 488 of 600 (base_T1T2 vs base_T1S1)
+Finished game 486 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 489 of 600 (base_T1S1 vs base_T1T2)
+Finished game 484 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 490 of 600 (base_T1T2 vs base_T1S1)
+Finished game 489 (base_T1S1 vs base_T1T2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 491 of 600 (base_T1S1 vs base_T1T2)
+Finished game 490 (base_T1T2 vs base_T1S1): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 492 of 600 (base_T1T2 vs base_T1S1)
+Finished game 488 (base_T1T2 vs base_T1S1): 1/2-1/2 {Draw by insufficient mating material}
+Started game 493 of 600 (base_T1S1 vs base_T1T2)
+Finished game 487 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 494 of 600 (base_T1T2 vs base_T1S1)
+Finished game 492 (base_T1T2 vs base_T1S1): 1/2-1/2 {Draw by adjudication}
+Started game 495 of 600 (base_T1S1 vs base_T1T2)
+Finished game 491 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 496 of 600 (base_T1T2 vs base_T1S1)
+Finished game 493 (base_T1S1 vs base_T1T2): 1/2-1/2 {Draw by adjudication}
+Started game 497 of 600 (base_T1S1 vs base_T1T2)
+Finished game 494 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 498 of 600 (base_T1T2 vs base_T1S1)
+Finished game 495 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 499 of 600 (base_T1S1 vs base_T1T2)
+Finished game 499 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 500 of 600 (base_T1T2 vs base_T1S1)
+Finished game 497 (base_T1S1 vs base_T1T2): 1/2-1/2 {Draw by adjudication}
+Started game 501 of 600 (base_T1S1 vs base_T1T2)
+Finished game 498 (base_T1T2 vs base_T1S1): 0-1 {Black wins by adjudication}
+Started game 502 of 600 (base_T1T2 vs base_T1S1)
+Finished game 496 (base_T1T2 vs base_T1S1): 1/2-1/2 {Draw by insufficient mating material}
+Started game 503 of 600 (base_T1S1 vs base_T1T2)
+Finished game 503 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 504 of 600 (base_T1T2 vs base_T1S1)
+Finished game 500 (base_T1T2 vs base_T1S1): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 505 of 600 (base_T1S1 vs base_T1T2)
+Finished game 501 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 506 of 600 (base_T1T2 vs base_T1S1)
+Finished game 502 (base_T1T2 vs base_T1S1): 0-1 {Black wins by adjudication}
+Started game 507 of 600 (base_T1S1 vs base_T1T2)
+Finished game 504 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 508 of 600 (base_T1T2 vs base_T1S1)
+Finished game 505 (base_T1S1 vs base_T1T2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 509 of 600 (base_T1S1 vs base_T1T2)
+Finished game 506 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 510 of 600 (base_T1T2 vs base_T1S1)
+Finished game 509 (base_T1S1 vs base_T1T2): 0-1 {Black wins by adjudication}
+Started game 511 of 600 (base_T1S1 vs base_T1T2)
+Finished game 508 (base_T1T2 vs base_T1S1): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 512 of 600 (base_T1T2 vs base_T1S1)
+Finished game 507 (base_T1S1 vs base_T1T2): 0-1 {Black wins by adjudication}
+Started game 513 of 600 (base_T1S1 vs base_T1T2)
+Finished game 510 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 514 of 600 (base_T1T2 vs base_T1S1)
+Finished game 512 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 515 of 600 (base_T1S1 vs base_T1T2)
+Finished game 513 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 516 of 600 (base_T1T2 vs base_T1S1)
+Finished game 511 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 517 of 600 (base_T1S1 vs base_T1T2)
+Finished game 514 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 518 of 600 (base_T1T2 vs base_T1S1)
+Finished game 515 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 519 of 600 (base_T1S1 vs base_T1T2)
+Finished game 516 (base_T1T2 vs base_T1S1): 1/2-1/2 {Draw by adjudication}
+Started game 520 of 600 (base_T1T2 vs base_T1S1)
+Finished game 517 (base_T1S1 vs base_T1T2): 0-1 {Black wins by adjudication}
+Started game 521 of 600 (base_T1S1 vs base_T1T2)
+Finished game 518 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 522 of 600 (base_T1T2 vs base_T1S1)
+Finished game 519 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 523 of 600 (base_T1S1 vs base_T1T2)
+Finished game 522 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 524 of 600 (base_T1T2 vs base_T1S1)
+Finished game 521 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 525 of 600 (base_T1S1 vs base_T1T2)
+Finished game 520 (base_T1T2 vs base_T1S1): 0-1 {Black wins by adjudication}
+Started game 526 of 600 (base_T1T2 vs base_T1S1)
+Finished game 523 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 527 of 600 (base_T1S1 vs base_T1T2)
+Finished game 524 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 528 of 600 (base_T1T2 vs base_T1S1)
+Finished game 525 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 529 of 600 (base_T1S1 vs base_T1T2)
+Finished game 526 (base_T1T2 vs base_T1S1): 0-1 {Black wins by adjudication}
+Started game 530 of 600 (base_T1T2 vs base_T1S1)
+Finished game 527 (base_T1S1 vs base_T1T2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 531 of 600 (base_T1S1 vs base_T1T2)
+Finished game 531 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 532 of 600 (base_T1T2 vs base_T1S1)
+Finished game 529 (base_T1S1 vs base_T1T2): 1-0 {White mates}
+Started game 533 of 600 (base_T1S1 vs base_T1T2)
+Finished game 528 (base_T1T2 vs base_T1S1): 1/2-1/2 {Draw by adjudication}
+Started game 534 of 600 (base_T1T2 vs base_T1S1)
+Finished game 530 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 535 of 600 (base_T1S1 vs base_T1T2)
+Finished game 532 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 536 of 600 (base_T1T2 vs base_T1S1)
+Finished game 534 (base_T1T2 vs base_T1S1): 0-1 {Black wins by adjudication}
+Started game 537 of 600 (base_T1S1 vs base_T1T2)
+Finished game 533 (base_T1S1 vs base_T1T2): 1/2-1/2 {Draw by insufficient mating material}
+Started game 538 of 600 (base_T1T2 vs base_T1S1)
+Finished game 536 (base_T1T2 vs base_T1S1): 0-1 {Black wins by adjudication}
+Started game 539 of 600 (base_T1S1 vs base_T1T2)
+Finished game 535 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 540 of 600 (base_T1T2 vs base_T1S1)
+Finished game 538 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 541 of 600 (base_T1S1 vs base_T1T2)
+Finished game 540 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 542 of 600 (base_T1T2 vs base_T1S1)
+Finished game 537 (base_T1S1 vs base_T1T2): 0-1 {Black wins by adjudication}
+Started game 543 of 600 (base_T1S1 vs base_T1T2)
+Finished game 539 (base_T1S1 vs base_T1T2): 0-1 {Black wins by adjudication}
+Started game 544 of 600 (base_T1T2 vs base_T1S1)
+Finished game 541 (base_T1S1 vs base_T1T2): 0-1 {Black wins by adjudication}
+Started game 545 of 600 (base_T1S1 vs base_T1T2)
+Finished game 542 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 546 of 600 (base_T1T2 vs base_T1S1)
+Finished game 543 (base_T1S1 vs base_T1T2): 0-1 {Black wins by adjudication}
+Started game 547 of 600 (base_T1S1 vs base_T1T2)
+Finished game 545 (base_T1S1 vs base_T1T2): 0-1 {Black wins by adjudication}
+Started game 548 of 600 (base_T1T2 vs base_T1S1)
+Finished game 546 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 549 of 600 (base_T1S1 vs base_T1T2)
+Finished game 544 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 550 of 600 (base_T1T2 vs base_T1S1)
+Finished game 547 (base_T1S1 vs base_T1T2): 1/2-1/2 {Draw by adjudication}
+Started game 551 of 600 (base_T1S1 vs base_T1T2)
+Finished game 549 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 552 of 600 (base_T1T2 vs base_T1S1)
+Finished game 550 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 553 of 600 (base_T1S1 vs base_T1T2)
+Finished game 548 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 554 of 600 (base_T1T2 vs base_T1S1)
+Finished game 551 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 555 of 600 (base_T1S1 vs base_T1T2)
+Finished game 553 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 556 of 600 (base_T1T2 vs base_T1S1)
+Finished game 552 (base_T1T2 vs base_T1S1): 0-1 {Black mates}
+Started game 557 of 600 (base_T1S1 vs base_T1T2)
+Finished game 554 (base_T1T2 vs base_T1S1): 1/2-1/2 {Draw by adjudication}
+Started game 558 of 600 (base_T1T2 vs base_T1S1)
+Finished game 555 (base_T1S1 vs base_T1T2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 559 of 600 (base_T1S1 vs base_T1T2)
+Finished game 557 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 560 of 600 (base_T1T2 vs base_T1S1)
+Finished game 556 (base_T1T2 vs base_T1S1): 0-1 {Black wins by adjudication}
+Started game 561 of 600 (base_T1S1 vs base_T1T2)
+Finished game 558 (base_T1T2 vs base_T1S1): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 562 of 600 (base_T1T2 vs base_T1S1)
+Finished game 559 (base_T1S1 vs base_T1T2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 563 of 600 (base_T1S1 vs base_T1T2)
+Finished game 562 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 564 of 600 (base_T1T2 vs base_T1S1)
+Finished game 560 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 565 of 600 (base_T1S1 vs base_T1T2)
+Finished game 561 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 566 of 600 (base_T1T2 vs base_T1S1)
+Finished game 563 (base_T1S1 vs base_T1T2): 0-1 {Black wins by adjudication}
+Started game 567 of 600 (base_T1S1 vs base_T1T2)
+Finished game 566 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 568 of 600 (base_T1T2 vs base_T1S1)
+Finished game 564 (base_T1T2 vs base_T1S1): 1/2-1/2 {Draw by insufficient mating material}
+Started game 569 of 600 (base_T1S1 vs base_T1T2)
+Finished game 565 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 570 of 600 (base_T1T2 vs base_T1S1)
+Finished game 570 (base_T1T2 vs base_T1S1): 0-1 {Black wins by adjudication}
+Started game 571 of 600 (base_T1S1 vs base_T1T2)
+Finished game 568 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 572 of 600 (base_T1T2 vs base_T1S1)
+Finished game 567 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 573 of 600 (base_T1S1 vs base_T1T2)
+Finished game 569 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 574 of 600 (base_T1T2 vs base_T1S1)
+Finished game 571 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 575 of 600 (base_T1S1 vs base_T1T2)
+Finished game 574 (base_T1T2 vs base_T1S1): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 576 of 600 (base_T1T2 vs base_T1S1)
+Finished game 573 (base_T1S1 vs base_T1T2): 0-1 {Black wins by adjudication}
+Started game 577 of 600 (base_T1S1 vs base_T1T2)
+Finished game 572 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 578 of 600 (base_T1T2 vs base_T1S1)
+Finished game 577 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 579 of 600 (base_T1S1 vs base_T1T2)
+Finished game 578 (base_T1T2 vs base_T1S1): 1/2-1/2 {Draw by adjudication}
+Started game 580 of 600 (base_T1T2 vs base_T1S1)
+Finished game 575 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 581 of 600 (base_T1S1 vs base_T1T2)
+Finished game 576 (base_T1T2 vs base_T1S1): 0-1 {Black wins by adjudication}
+Started game 582 of 600 (base_T1T2 vs base_T1S1)
+Finished game 581 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 583 of 600 (base_T1S1 vs base_T1T2)
+Finished game 580 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 584 of 600 (base_T1T2 vs base_T1S1)
+Finished game 579 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 585 of 600 (base_T1S1 vs base_T1T2)
+Finished game 584 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 586 of 600 (base_T1T2 vs base_T1S1)
+Finished game 582 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 587 of 600 (base_T1S1 vs base_T1T2)
+Finished game 583 (base_T1S1 vs base_T1T2): 0-1 {Black wins by adjudication}
+Started game 588 of 600 (base_T1T2 vs base_T1S1)
+Finished game 587 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 589 of 600 (base_T1S1 vs base_T1T2)
+Finished game 586 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 590 of 600 (base_T1T2 vs base_T1S1)
+Finished game 585 (base_T1S1 vs base_T1T2): 1/2-1/2 {Draw by fifty moves rule}
+Started game 591 of 600 (base_T1S1 vs base_T1T2)
+Finished game 588 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 592 of 600 (base_T1T2 vs base_T1S1)
+Finished game 589 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 593 of 600 (base_T1S1 vs base_T1T2)
+Finished game 590 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 594 of 600 (base_T1T2 vs base_T1S1)
+Finished game 592 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 595 of 600 (base_T1S1 vs base_T1T2)
+Finished game 593 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 596 of 600 (base_T1T2 vs base_T1S1)
+Finished game 591 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Started game 597 of 600 (base_T1S1 vs base_T1T2)
+Finished game 596 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 598 of 600 (base_T1T2 vs base_T1S1)
+Finished game 595 (base_T1S1 vs base_T1T2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 599 of 600 (base_T1S1 vs base_T1T2)
+Finished game 594 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+Started game 600 of 600 (base_T1T2 vs base_T1S1)
+Finished game 597 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+Finished game 600 (base_T1T2 vs base_T1S1): 0-1 {Black wins by adjudication}
+Finished game 599 (base_T1S1 vs base_T1T2): 1-0 {White wins by adjudication}
+--------------------------------------------------
+Results of base_T1S1 vs base_T1T2 (20000 nodes, 1t, 16MB, UHO_4060_v4.epd):
+Elo: 13.95 +/- 23.13, nElo: 16.84 +/- 27.85
+LOS: 88.20 %, DrawRatio: 41.47 %, PairsRatio: 1.19
+Games: 598, Wins: 241, Losses: 217, Draws: 140, Points: 311.0 (52.01 %)
+Ptnml(0-2): [35, 45, 124, 51, 44], WL/DD Ratio: 4.64
+--------------------------------------------------
+Finished game 598 (base_T1T2 vs base_T1S1): 1-0 {White wins by adjudication}
+--------------------------------------------------
+Results of base_T1S1 vs base_T1T2 (20000 nodes, 1t, 16MB, UHO_4060_v4.epd):
+Elo: 13.90 +/- 23.05, nElo: 16.81 +/- 27.80
+LOS: 88.20 %, DrawRatio: 41.67 %, PairsRatio: 1.19
+Games: 600, Wins: 242, Losses: 218, Draws: 140, Points: 312.0 (52.00 %)
+Ptnml(0-2): [35, 45, 125, 51, 44], WL/DD Ratio: 4.68
+--------------------------------------------------
+Finished match
+Total Time: 00:10:14 (hours:minutes:seconds)
+

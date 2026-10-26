@@ -1,0 +1,8 @@
+{
+ "out": "/home/user/nets/e8/e8_h1024_all.stud", "label": "teacher", "lam": 0.7, "src": 1, "H": 1024, "batch": 16384,
+ "frac": 1, "skip": 0, "positions": 4e+08, "lr": 0.002, "wd": 0, "seed": 0, "n_train_unique": 145226786, "steps": 24414,
+ "train_files": ["/home/user/data/run1/d1.bin", "/home/user/data/run1/d2.bin", "/home/user/data/run1/d3.bin", "/home/user/data/run1/d4.bin", "/home/user/data/e2/T2.1.bin", "/home/user/data/e2/T2.2.bin", "/home/user/data/e2/T2.3.bin", "/home/user/data/e2/T2.4.bin", "/home/user/data/e2/S1.1.bin", "/home/user/data/e2/S1.2.bin", "/home/user/data/e2/S1.3.bin", "/home/user/data/e2/S1.4.bin", "/home/user/data/e3/n5000_r08.1.bin", "/home/user/data/e3/n5000_r08.2.bin", "/home/user/data/e3/n5000_r08.3.bin", "/home/user/data/e3/n5000_r08.4.bin", "/home/user/data/e3/n20000_r08.1.bin", "/home/user/data/e3/n20000_r08.2.bin", "/home/user/data/e3/n20000_r08.3.bin", "/home/user/data/e3/n20000_r08.4.bin", "/home/user/data/e3/n1000_r08.1.bin", "/home/user/data/e3/n1000_r08.2.bin", "/home/user/data/e3/n1000_r08.3.bin", "/home/user/data/e3/n1000_r08.4.bin"],
+ "wall_s": 2251.07, "cpu_s": 7625.44, "peak_rss_mb": 7132.4,
+ "loss_hist": [[0, 0.120594], [1220, 0.019121], [2440, 0.015236], [3660, 0.014210], [4880, 0.013098], [6100, 0.012579], [7320, 0.012077], [8540, 0.011595], [9760, 0.010970], [10980, 0.010735], [12200, 0.010719], [13420, 0.010402], [14640, 0.010300], [15860, 0.010342], [17080, 0.009889], [18300, 0.009476], [19520, 0.009575], [20740, 0.009216], [21960, 0.009476], [23180, 0.009581], [24400, 0.009447], [24413, 0.009787]],
+ "val": {"vgame": {"mse_sig": 0.0119232, "mae_iu": 290.42, "n": 28480}, "vtree": {"mse_sig": 0.0122187, "mae_iu": 325.31, "n": 400000}, "vstree": {"mse_sig": 0.0111311, "mae_iu": 408.37, "n": 400000}}
+}

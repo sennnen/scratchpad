@@ -1,0 +1,619 @@
+/home/user/work/fastchess/fastchess -engine cmd=/home/user/data/sf_research_kb name=sq option.StudentFile=/home/user/nets/e8/e8_h1024_all.stud tc=inf nodes=20000 -engine cmd=/home/user/data/sf_research name=sf option.StudentFile=/home/user/nets/e8/e8_h1024_all.stud tc=inf nodes=20000 -each option.Threads=1 option.Hash=16 -openings file=/home/user/data/UHO_4060_v4.epd format=epd order=random -srand 1 -repeat -rounds 150 -concurrency 4 -resign movecount=3 score=1000 twosided=true -draw movenumber=40 movecount=8 score=8 -pgnout file=experiments/e7/matches/quant_vs_float.pgn -ratinginterval 100
+Indexing opening suite...
+Started game 1 of 300 (sq vs sf)
+Started game 2 of 300 (sf vs sq)
+Started game 3 of 300 (sq vs sf)
+Started game 4 of 300 (sf vs sq)
+Finished game 1 (sq vs sf): 1/2-1/2 {Draw by insufficient mating material}
+Started game 5 of 300 (sq vs sf)
+Finished game 2 (sf vs sq): 1/2-1/2 {Draw by adjudication}
+Started game 6 of 300 (sf vs sq)
+Finished game 4 (sf vs sq): 1-0 {White wins by adjudication}
+Started game 7 of 300 (sq vs sf)
+Finished game 3 (sq vs sf): 1-0 {White wins by adjudication}
+Started game 8 of 300 (sf vs sq)
+Finished game 7 (sq vs sf): 1-0 {White wins by adjudication}
+Started game 9 of 300 (sq vs sf)
+Finished game 5 (sq vs sf): 1/2-1/2 {Draw by adjudication}
+Started game 10 of 300 (sf vs sq)
+Finished game 6 (sf vs sq): 1-0 {White wins by adjudication}
+Started game 11 of 300 (sq vs sf)
+Finished game 8 (sf vs sq): 1/2-1/2 {Draw by adjudication}
+Started game 12 of 300 (sf vs sq)
+Finished game 9 (sq vs sf): 1-0 {White wins by adjudication}
+Started game 13 of 300 (sq vs sf)
+Finished game 11 (sq vs sf): 1-0 {White wins by adjudication}
+Started game 14 of 300 (sf vs sq)
+Finished game 12 (sf vs sq): 1-0 {White wins by adjudication}
+Started game 15 of 300 (sq vs sf)
+Finished game 10 (sf vs sq): 0-1 {Black wins by adjudication}
+Started game 16 of 300 (sf vs sq)
+Finished game 13 (sq vs sf): 0-1 {Black wins by adjudication}
+Started game 17 of 300 (sq vs sf)
+Finished game 14 (sf vs sq): 0-1 {Black wins by adjudication}
+Started game 18 of 300 (sf vs sq)
+Finished game 16 (sf vs sq): 1-0 {White wins by adjudication}
+Started game 19 of 300 (sq vs sf)
+Finished game 15 (sq vs sf): 0-1 {Black wins by adjudication}
+Started game 20 of 300 (sf vs sq)
+Finished game 17 (sq vs sf): 1-0 {White wins by adjudication}
+Started game 21 of 300 (sq vs sf)
+Finished game 18 (sf vs sq): 0-1 {Black wins by adjudication}
+Started game 22 of 300 (sf vs sq)
+Finished game 19 (sq vs sf): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 23 of 300 (sq vs sf)
+Finished game 21 (sq vs sf): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 24 of 300 (sf vs sq)
+Finished game 22 (sf vs sq): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 25 of 300 (sq vs sf)
+Finished game 20 (sf vs sq): 1/2-1/2 {Draw by insufficient mating material}
+Started game 26 of 300 (sf vs sq)
+Finished game 23 (sq vs sf): 1/2-1/2 {Draw by adjudication}
+Started game 27 of 300 (sq vs sf)
+Finished game 24 (sf vs sq): 1-0 {White wins by adjudication}
+Started game 28 of 300 (sf vs sq)
+Finished game 25 (sq vs sf): 1/2-1/2 {Draw by adjudication}
+Started game 29 of 300 (sq vs sf)
+Finished game 27 (sq vs sf): 1-0 {White wins by adjudication}
+Started game 30 of 300 (sf vs sq)
+Finished game 26 (sf vs sq): 0-1 {Black wins by adjudication}
+Started game 31 of 300 (sq vs sf)
+Finished game 28 (sf vs sq): 0-1 {Black wins by adjudication}
+Started game 32 of 300 (sf vs sq)
+Finished game 29 (sq vs sf): 1-0 {White wins by adjudication}
+Started game 33 of 300 (sq vs sf)
+Finished game 32 (sf vs sq): 0-1 {Black wins by adjudication}
+Started game 34 of 300 (sf vs sq)
+Finished game 31 (sq vs sf): 0-1 {Black wins by adjudication}
+Started game 35 of 300 (sq vs sf)
+Finished game 34 (sf vs sq): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 36 of 300 (sf vs sq)
+Finished game 33 (sq vs sf): 1-0 {White wins by adjudication}
+Started game 37 of 300 (sq vs sf)
+Finished game 30 (sf vs sq): 1-0 {White wins by adjudication}
+Started game 38 of 300 (sf vs sq)
+Finished game 36 (sf vs sq): 1-0 {White wins by adjudication}
+Started game 39 of 300 (sq vs sf)
+Finished game 37 (sq vs sf): 0-1 {Black wins by adjudication}
+Started game 40 of 300 (sf vs sq)
+Finished game 35 (sq vs sf): 1-0 {White wins by adjudication}
+Started game 41 of 300 (sq vs sf)
+Finished game 38 (sf vs sq): 1-0 {White wins by adjudication}
+Started game 42 of 300 (sf vs sq)
+Finished game 39 (sq vs sf): 1-0 {White mates}
+Started game 43 of 300 (sq vs sf)
+Finished game 40 (sf vs sq): 1-0 {White wins by adjudication}
+Started game 44 of 300 (sf vs sq)
+Finished game 42 (sf vs sq): 1-0 {White wins by adjudication}
+Started game 45 of 300 (sq vs sf)
+Finished game 41 (sq vs sf): 1-0 {White wins by adjudication}
+Started game 46 of 300 (sf vs sq)
+Finished game 43 (sq vs sf): 0-1 {Black wins by adjudication}
+Started game 47 of 300 (sq vs sf)
+Finished game 44 (sf vs sq): 0-1 {Black wins by adjudication}
+Started game 48 of 300 (sf vs sq)
+Finished game 45 (sq vs sf): 1/2-1/2 {Draw by insufficient mating material}
+Started game 49 of 300 (sq vs sf)
+Finished game 47 (sq vs sf): 1-0 {White wins by adjudication}
+Started game 50 of 300 (sf vs sq)
+Finished game 48 (sf vs sq): 0-1 {Black wins by adjudication}
+Started game 51 of 300 (sq vs sf)
+Finished game 49 (sq vs sf): 1-0 {White wins by adjudication}
+Started game 52 of 300 (sf vs sq)
+Finished game 46 (sf vs sq): 1/2-1/2 {Draw by adjudication}
+Started game 53 of 300 (sq vs sf)
+Finished game 51 (sq vs sf): 1-0 {White wins by adjudication}
+Started game 54 of 300 (sf vs sq)
+Finished game 53 (sq vs sf): 1-0 {White wins by adjudication}
+Started game 55 of 300 (sq vs sf)
+Finished game 50 (sf vs sq): 0-1 {Black wins by adjudication}
+Started game 56 of 300 (sf vs sq)
+Finished game 52 (sf vs sq): 1/2-1/2 {Draw by adjudication}
+Started game 57 of 300 (sq vs sf)
+Finished game 54 (sf vs sq): 1-0 {White wins by adjudication}
+Started game 58 of 300 (sf vs sq)
+Finished game 56 (sf vs sq): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 59 of 300 (sq vs sf)
+Finished game 57 (sq vs sf): 1-0 {White wins by adjudication}
+Started game 60 of 300 (sf vs sq)
+Finished game 55 (sq vs sf): 1-0 {White wins by adjudication}
+Started game 61 of 300 (sq vs sf)
+Finished game 58 (sf vs sq): 1/2-1/2 {Draw by adjudication}
+Started game 62 of 300 (sf vs sq)
+Finished game 59 (sq vs sf): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 63 of 300 (sq vs sf)
+Finished game 61 (sq vs sf): 1-0 {White wins by adjudication}
+Started game 64 of 300 (sf vs sq)
+Finished game 60 (sf vs sq): 1/2-1/2 {Draw by adjudication}
+Started game 65 of 300 (sq vs sf)
+Finished game 63 (sq vs sf): 1-0 {White wins by adjudication}
+Started game 66 of 300 (sf vs sq)
+Finished game 64 (sf vs sq): 1-0 {White wins by adjudication}
+Started game 67 of 300 (sq vs sf)
+Finished game 62 (sf vs sq): 1/2-1/2 {Draw by adjudication}
+Started game 68 of 300 (sf vs sq)
+Finished game 65 (sq vs sf): 1-0 {White wins by adjudication}
+Started game 69 of 300 (sq vs sf)
+Finished game 66 (sf vs sq): 1-0 {White wins by adjudication}
+Started game 70 of 300 (sf vs sq)
+Finished game 69 (sq vs sf): 0-1 {Black wins by adjudication}
+Started game 71 of 300 (sq vs sf)
+Finished game 67 (sq vs sf): 1-0 {White wins by adjudication}
+Started game 72 of 300 (sf vs sq)
+Finished game 68 (sf vs sq): 1/2-1/2 {Draw by adjudication}
+Started game 73 of 300 (sq vs sf)
+Finished game 70 (sf vs sq): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 74 of 300 (sf vs sq)
+Finished game 73 (sq vs sf): 1-0 {White wins by adjudication}
+Started game 75 of 300 (sq vs sf)
+Finished game 72 (sf vs sq): 1-0 {White wins by adjudication}
+Started game 76 of 300 (sf vs sq)
+Finished game 74 (sf vs sq): 1-0 {White wins by adjudication}
+Started game 77 of 300 (sq vs sf)
+Finished game 71 (sq vs sf): 1-0 {White wins by adjudication}
+Started game 78 of 300 (sf vs sq)
+Finished game 75 (sq vs sf): 1-0 {White wins by adjudication}
+Started game 79 of 300 (sq vs sf)
+Finished game 76 (sf vs sq): 1-0 {White wins by adjudication}
+Started game 80 of 300 (sf vs sq)
+Finished game 77 (sq vs sf): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 81 of 300 (sq vs sf)
+Finished game 78 (sf vs sq): 0-1 {Black wins by adjudication}
+Started game 82 of 300 (sf vs sq)
+Finished game 80 (sf vs sq): 1-0 {White wins by adjudication}
+Started game 83 of 300 (sq vs sf)
+Finished game 81 (sq vs sf): 0-1 {Black wins by adjudication}
+Started game 84 of 300 (sf vs sq)
+Finished game 83 (sq vs sf): 1-0 {White wins by adjudication}
+Started game 85 of 300 (sq vs sf)
+Finished game 82 (sf vs sq): 1/2-1/2 {Draw by adjudication}
+Started game 86 of 300 (sf vs sq)
+Finished game 84 (sf vs sq): 1-0 {White wins by adjudication}
+Started game 87 of 300 (sq vs sf)
+Finished game 79 (sq vs sf): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 88 of 300 (sf vs sq)
+Finished game 87 (sq vs sf): 1-0 {White wins by adjudication}
+Started game 89 of 300 (sq vs sf)
+Finished game 86 (sf vs sq): 1/2-1/2 {Draw by adjudication}
+Started game 90 of 300 (sf vs sq)
+Finished game 88 (sf vs sq): 1-0 {White wins by adjudication}
+Started game 91 of 300 (sq vs sf)
+Finished game 85 (sq vs sf): 1/2-1/2 {Draw by adjudication}
+Started game 92 of 300 (sf vs sq)
+Finished game 89 (sq vs sf): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 93 of 300 (sq vs sf)
+Finished game 90 (sf vs sq): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 94 of 300 (sf vs sq)
+Finished game 91 (sq vs sf): 1-0 {White wins by adjudication}
+Started game 95 of 300 (sq vs sf)
+Finished game 93 (sq vs sf): 0-1 {Black wins by adjudication}
+Started game 96 of 300 (sf vs sq)
+Finished game 92 (sf vs sq): 1/2-1/2 {Draw by adjudication}
+Started game 97 of 300 (sq vs sf)
+Finished game 94 (sf vs sq): 1-0 {White wins by adjudication}
+Started game 98 of 300 (sf vs sq)
+Finished game 97 (sq vs sf): 1-0 {White wins by adjudication}
+Started game 99 of 300 (sq vs sf)
+Finished game 96 (sf vs sq): 1-0 {White wins by adjudication}
+Started game 100 of 300 (sf vs sq)
+Finished game 95 (sq vs sf): 1-0 {White wins by adjudication}
+Started game 101 of 300 (sq vs sf)
+Finished game 99 (sq vs sf): 1/2-1/2 {Draw by adjudication}
+Started game 102 of 300 (sf vs sq)
+Finished game 98 (sf vs sq): 1-0 {White wins by adjudication}
+Started game 103 of 300 (sq vs sf)
+Finished game 101 (sq vs sf): 1-0 {White wins by adjudication}
+Started game 104 of 300 (sf vs sq)
+Finished game 102 (sf vs sq): 1/2-1/2 {Draw by adjudication}
+Started game 105 of 300 (sq vs sf)
+Finished game 100 (sf vs sq): 1-0 {White wins by adjudication}
+Started game 106 of 300 (sf vs sq)
+Finished game 103 (sq vs sf): 0-1 {Black wins by adjudication}
+Started game 107 of 300 (sq vs sf)
+Finished game 104 (sf vs sq): 1-0 {White wins by adjudication}
+Started game 108 of 300 (sf vs sq)
+Finished game 105 (sq vs sf): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 109 of 300 (sq vs sf)
+Finished game 106 (sf vs sq): 1-0 {White wins by adjudication}
+Started game 110 of 300 (sf vs sq)
+Finished game 107 (sq vs sf): 1-0 {White mates}
+Started game 111 of 300 (sq vs sf)
+Finished game 109 (sq vs sf): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 112 of 300 (sf vs sq)
+Finished game 110 (sf vs sq): 1/2-1/2 {Draw by insufficient mating material}
+Started game 113 of 300 (sq vs sf)
+Finished game 112 (sf vs sq): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 114 of 300 (sf vs sq)
+Finished game 108 (sf vs sq): 1/2-1/2 {Draw by fifty moves rule}
+Started game 115 of 300 (sq vs sf)
+Finished game 111 (sq vs sf): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 116 of 300 (sf vs sq)
+Finished game 114 (sf vs sq): 0-1 {Black wins by adjudication}
+Started game 117 of 300 (sq vs sf)
+Finished game 113 (sq vs sf): 1/2-1/2 {Draw by insufficient mating material}
+Started game 118 of 300 (sf vs sq)
+Finished game 115 (sq vs sf): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 119 of 300 (sq vs sf)
+Finished game 116 (sf vs sq): 1-0 {White wins by adjudication}
+Started game 120 of 300 (sf vs sq)
+Finished game 117 (sq vs sf): 1-0 {White wins by adjudication}
+Started game 121 of 300 (sq vs sf)
+Finished game 118 (sf vs sq): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 122 of 300 (sf vs sq)
+Finished game 119 (sq vs sf): 1/2-1/2 {Draw by stalemate}
+Started game 123 of 300 (sq vs sf)
+Finished game 121 (sq vs sf): 0-1 {Black wins by adjudication}
+Started game 124 of 300 (sf vs sq)
+Finished game 120 (sf vs sq): 1/2-1/2 {Draw by adjudication}
+Started game 125 of 300 (sq vs sf)
+Finished game 122 (sf vs sq): 1/2-1/2 {Draw by insufficient mating material}
+Started game 126 of 300 (sf vs sq)
+Finished game 125 (sq vs sf): 1-0 {White wins by adjudication}
+Started game 127 of 300 (sq vs sf)
+Finished game 123 (sq vs sf): 1-0 {White wins by adjudication}
+Started game 128 of 300 (sf vs sq)
+Finished game 124 (sf vs sq): 1-0 {White wins by adjudication}
+Started game 129 of 300 (sq vs sf)
+Finished game 129 (sq vs sf): 0-1 {Black wins by adjudication}
+Started game 130 of 300 (sf vs sq)
+Finished game 126 (sf vs sq): 1/2-1/2 {Draw by adjudication}
+Started game 131 of 300 (sq vs sf)
+Finished game 128 (sf vs sq): 1-0 {White wins by adjudication}
+Started game 132 of 300 (sf vs sq)
+Finished game 127 (sq vs sf): 1/2-1/2 {Draw by adjudication}
+Started game 133 of 300 (sq vs sf)
+Finished game 131 (sq vs sf): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 134 of 300 (sf vs sq)
+Finished game 133 (sq vs sf): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 135 of 300 (sq vs sf)
+Finished game 130 (sf vs sq): 0-1 {Black wins by adjudication}
+Started game 136 of 300 (sf vs sq)
+Finished game 132 (sf vs sq): 0-1 {Black wins by adjudication}
+Started game 137 of 300 (sq vs sf)
+Finished game 134 (sf vs sq): 1-0 {White wins by adjudication}
+Started game 138 of 300 (sf vs sq)
+Finished game 135 (sq vs sf): 0-1 {Black wins by adjudication}
+Started game 139 of 300 (sq vs sf)
+Finished game 137 (sq vs sf): 1-0 {White wins by adjudication}
+Started game 140 of 300 (sf vs sq)
+Finished game 136 (sf vs sq): 1-0 {White wins by adjudication}
+Started game 141 of 300 (sq vs sf)
+Finished game 139 (sq vs sf): 1/2-1/2 {Draw by adjudication}
+Started game 142 of 300 (sf vs sq)
+Finished game 140 (sf vs sq): 1/2-1/2 {Draw by adjudication}
+Started game 143 of 300 (sq vs sf)
+Finished game 142 (sf vs sq): 0-1 {Black wins by adjudication}
+Started game 144 of 300 (sf vs sq)
+Finished game 141 (sq vs sf): 1-0 {White wins by adjudication}
+Started game 145 of 300 (sq vs sf)
+Finished game 138 (sf vs sq): 1/2-1/2 {Draw by fifty moves rule}
+Started game 146 of 300 (sf vs sq)
+Finished game 143 (sq vs sf): 0-1 {Black wins by adjudication}
+Started game 147 of 300 (sq vs sf)
+Finished game 145 (sq vs sf): 0-1 {Black wins by adjudication}
+Started game 148 of 300 (sf vs sq)
+Finished game 144 (sf vs sq): 1-0 {White wins by adjudication}
+Started game 149 of 300 (sq vs sf)
+Finished game 146 (sf vs sq): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 150 of 300 (sf vs sq)
+Finished game 147 (sq vs sf): 1/2-1/2 {Draw by adjudication}
+Started game 151 of 300 (sq vs sf)
+Finished game 149 (sq vs sf): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 152 of 300 (sf vs sq)
+Finished game 148 (sf vs sq): 1/2-1/2 {Draw by adjudication}
+Started game 153 of 300 (sq vs sf)
+Finished game 150 (sf vs sq): 1-0 {White wins by adjudication}
+Started game 154 of 300 (sf vs sq)
+Finished game 151 (sq vs sf): 1-0 {White wins by adjudication}
+Started game 155 of 300 (sq vs sf)
+Finished game 152 (sf vs sq): 1/2-1/2 {Draw by insufficient mating material}
+Started game 156 of 300 (sf vs sq)
+Finished game 153 (sq vs sf): 0-1 {Black wins by adjudication}
+Started game 157 of 300 (sq vs sf)
+Finished game 154 (sf vs sq): 1/2-1/2 {Draw by adjudication}
+Started game 158 of 300 (sf vs sq)
+Finished game 155 (sq vs sf): 1-0 {White wins by adjudication}
+Started game 159 of 300 (sq vs sf)
+Finished game 156 (sf vs sq): 0-1 {Black wins by adjudication}
+Started game 160 of 300 (sf vs sq)
+Finished game 159 (sq vs sf): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 161 of 300 (sq vs sf)
+Finished game 157 (sq vs sf): 1-0 {White mates}
+Started game 162 of 300 (sf vs sq)
+Finished game 160 (sf vs sq): 1-0 {White wins by adjudication}
+Started game 163 of 300 (sq vs sf)
+Finished game 162 (sf vs sq): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 164 of 300 (sf vs sq)
+Finished game 161 (sq vs sf): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 165 of 300 (sq vs sf)
+Finished game 158 (sf vs sq): 1/2-1/2 {Draw by adjudication}
+Started game 166 of 300 (sf vs sq)
+Finished game 164 (sf vs sq): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 167 of 300 (sq vs sf)
+Finished game 165 (sq vs sf): 1-0 {White wins by adjudication}
+Started game 168 of 300 (sf vs sq)
+Finished game 166 (sf vs sq): 1/2-1/2 {Draw by adjudication}
+Started game 169 of 300 (sq vs sf)
+Finished game 168 (sf vs sq): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 170 of 300 (sf vs sq)
+Finished game 163 (sq vs sf): 1/2-1/2 {Draw by adjudication}
+Started game 171 of 300 (sq vs sf)
+Finished game 167 (sq vs sf): 1-0 {White wins by adjudication}
+Started game 172 of 300 (sf vs sq)
+Finished game 170 (sf vs sq): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 173 of 300 (sq vs sf)
+Finished game 169 (sq vs sf): 1-0 {White wins by adjudication}
+Started game 174 of 300 (sf vs sq)
+Finished game 171 (sq vs sf): 1/2-1/2 {Draw by adjudication}
+Started game 175 of 300 (sq vs sf)
+Finished game 174 (sf vs sq): 1/2-1/2 {Draw by adjudication}
+Started game 176 of 300 (sf vs sq)
+Finished game 175 (sq vs sf): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 177 of 300 (sq vs sf)
+Finished game 173 (sq vs sf): 1/2-1/2 {Draw by insufficient mating material}
+Started game 178 of 300 (sf vs sq)
+Finished game 172 (sf vs sq): 1/2-1/2 {Draw by adjudication}
+Started game 179 of 300 (sq vs sf)
+Finished game 176 (sf vs sq): 1-0 {White mates}
+Started game 180 of 300 (sf vs sq)
+Finished game 177 (sq vs sf): 1-0 {White wins by adjudication}
+Started game 181 of 300 (sq vs sf)
+Finished game 179 (sq vs sf): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 182 of 300 (sf vs sq)
+Finished game 178 (sf vs sq): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 183 of 300 (sq vs sf)
+Finished game 181 (sq vs sf): 1-0 {White wins by adjudication}
+Started game 184 of 300 (sf vs sq)
+Finished game 183 (sq vs sf): 1-0 {White wins by adjudication}
+Started game 185 of 300 (sq vs sf)
+Finished game 182 (sf vs sq): 0-1 {Black wins by adjudication}
+Started game 186 of 300 (sf vs sq)
+Finished game 180 (sf vs sq): 1-0 {White wins by adjudication}
+Started game 187 of 300 (sq vs sf)
+Finished game 184 (sf vs sq): 1-0 {White wins by adjudication}
+Started game 188 of 300 (sf vs sq)
+Finished game 185 (sq vs sf): 1-0 {White wins by adjudication}
+Started game 189 of 300 (sq vs sf)
+Finished game 186 (sf vs sq): 0-1 {Black wins by adjudication}
+Started game 190 of 300 (sf vs sq)
+Finished game 187 (sq vs sf): 1-0 {White wins by adjudication}
+Started game 191 of 300 (sq vs sf)
+Finished game 190 (sf vs sq): 0-1 {Black wins by adjudication}
+Started game 192 of 300 (sf vs sq)
+Finished game 189 (sq vs sf): 1-0 {White wins by adjudication}
+Started game 193 of 300 (sq vs sf)
+Finished game 188 (sf vs sq): 1-0 {White wins by adjudication}
+Started game 194 of 300 (sf vs sq)
+Finished game 191 (sq vs sf): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 195 of 300 (sq vs sf)
+Finished game 193 (sq vs sf): 0-1 {Black wins by adjudication}
+Started game 196 of 300 (sf vs sq)
+Finished game 192 (sf vs sq): 1-0 {White wins by adjudication}
+Started game 197 of 300 (sq vs sf)
+Finished game 194 (sf vs sq): 0-1 {Black wins by adjudication}
+Started game 198 of 300 (sf vs sq)
+Finished game 196 (sf vs sq): 1-0 {White wins by adjudication}
+Started game 199 of 300 (sq vs sf)
+Finished game 195 (sq vs sf): 1-0 {White wins by adjudication}
+Started game 200 of 300 (sf vs sq)
+Finished game 198 (sf vs sq): 1-0 {White wins by adjudication}
+Started game 201 of 300 (sq vs sf)
+Finished game 200 (sf vs sq): 0-1 {Black wins by adjudication}
+Started game 202 of 300 (sf vs sq)
+Finished game 197 (sq vs sf): 1/2-1/2 {Draw by adjudication}
+Started game 203 of 300 (sq vs sf)
+Finished game 199 (sq vs sf): 1/2-1/2 {Draw by adjudication}
+--------------------------------------------------
+Results of sq vs sf (20000 nodes, 1t, 16MB, UHO_4060_v4.epd):
+Elo: 22.62 +/- 35.21, nElo: 31.12 +/- 48.15
+LOS: 89.74 %, DrawRatio: 41.00 %, PairsRatio: 1.36
+Games: 200, Wins: 69, Losses: 56, Draws: 75, Points: 106.5 (53.25 %)
+Ptnml(0-2): [6, 19, 41, 24, 10], WL/DD Ratio: 1.56
+--------------------------------------------------
+Started game 204 of 300 (sf vs sq)
+Finished game 201 (sq vs sf): 1-0 {White wins by adjudication}
+Started game 205 of 300 (sq vs sf)
+Finished game 202 (sf vs sq): 1-0 {White wins by adjudication}
+Started game 206 of 300 (sf vs sq)
+Finished game 204 (sf vs sq): 1-0 {White wins by adjudication}
+Started game 207 of 300 (sq vs sf)
+Finished game 203 (sq vs sf): 1-0 {White wins by adjudication}
+Started game 208 of 300 (sf vs sq)
+Finished game 205 (sq vs sf): 0-1 {Black wins by adjudication}
+Started game 209 of 300 (sq vs sf)
+Finished game 208 (sf vs sq): 1-0 {White wins by adjudication}
+Started game 210 of 300 (sf vs sq)
+Finished game 206 (sf vs sq): 1-0 {White wins by adjudication}
+Started game 211 of 300 (sq vs sf)
+Finished game 207 (sq vs sf): 1-0 {White wins by adjudication}
+Started game 212 of 300 (sf vs sq)
+Finished game 211 (sq vs sf): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 213 of 300 (sq vs sf)
+Finished game 209 (sq vs sf): 0-1 {Black wins by adjudication}
+Started game 214 of 300 (sf vs sq)
+Finished game 213 (sq vs sf): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 215 of 300 (sq vs sf)
+Finished game 210 (sf vs sq): 1/2-1/2 {Draw by insufficient mating material}
+Started game 216 of 300 (sf vs sq)
+Finished game 212 (sf vs sq): 1/2-1/2 {Draw by insufficient mating material}
+Started game 217 of 300 (sq vs sf)
+Finished game 214 (sf vs sq): 1-0 {White wins by adjudication}
+Started game 218 of 300 (sf vs sq)
+Finished game 216 (sf vs sq): 1/2-1/2 {Draw by adjudication}
+Started game 219 of 300 (sq vs sf)
+Finished game 217 (sq vs sf): 1/2-1/2 {Draw by adjudication}
+Started game 220 of 300 (sf vs sq)
+Finished game 215 (sq vs sf): 1/2-1/2 {Draw by adjudication}
+Started game 221 of 300 (sq vs sf)
+Finished game 218 (sf vs sq): 1-0 {White wins by adjudication}
+Started game 222 of 300 (sf vs sq)
+Finished game 219 (sq vs sf): 1-0 {White wins by adjudication}
+Started game 223 of 300 (sq vs sf)
+Finished game 220 (sf vs sq): 1-0 {White wins by adjudication}
+Started game 224 of 300 (sf vs sq)
+Finished game 221 (sq vs sf): 1-0 {White wins by adjudication}
+Started game 225 of 300 (sq vs sf)
+Finished game 222 (sf vs sq): 0-1 {Black wins by adjudication}
+Started game 226 of 300 (sf vs sq)
+Finished game 224 (sf vs sq): 1-0 {White wins by adjudication}
+Started game 227 of 300 (sq vs sf)
+Finished game 225 (sq vs sf): 1-0 {White wins by adjudication}
+Started game 228 of 300 (sf vs sq)
+Finished game 226 (sf vs sq): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 229 of 300 (sq vs sf)
+Finished game 223 (sq vs sf): 1-0 {White mates}
+Started game 230 of 300 (sf vs sq)
+Finished game 227 (sq vs sf): 1-0 {White wins by adjudication}
+Started game 231 of 300 (sq vs sf)
+Finished game 230 (sf vs sq): 1-0 {White wins by adjudication}
+Started game 232 of 300 (sf vs sq)
+Finished game 228 (sf vs sq): 1-0 {White wins by adjudication}
+Started game 233 of 300 (sq vs sf)
+Finished game 229 (sq vs sf): 1/2-1/2 {Draw by adjudication}
+Started game 234 of 300 (sf vs sq)
+Finished game 231 (sq vs sf): 1-0 {White wins by adjudication}
+Started game 235 of 300 (sq vs sf)
+Finished game 233 (sq vs sf): 1/2-1/2 {Draw by stalemate}
+Started game 236 of 300 (sf vs sq)
+Finished game 234 (sf vs sq): 1-0 {White wins by adjudication}
+Started game 237 of 300 (sq vs sf)
+Finished game 235 (sq vs sf): 1-0 {White wins by adjudication}
+Started game 238 of 300 (sf vs sq)
+Finished game 232 (sf vs sq): 1/2-1/2 {Draw by adjudication}
+Started game 239 of 300 (sq vs sf)
+Finished game 238 (sf vs sq): 1/2-1/2 {Draw by adjudication}
+Started game 240 of 300 (sf vs sq)
+Finished game 236 (sf vs sq): 0-1 {Black wins by adjudication}
+Started game 241 of 300 (sq vs sf)
+Finished game 239 (sq vs sf): 1-0 {White wins by adjudication}
+Started game 242 of 300 (sf vs sq)
+Finished game 237 (sq vs sf): 1-0 {White wins by adjudication}
+Started game 243 of 300 (sq vs sf)
+Finished game 241 (sq vs sf): 1-0 {White wins by adjudication}
+Started game 244 of 300 (sf vs sq)
+Finished game 240 (sf vs sq): 1-0 {White wins by adjudication}
+Started game 245 of 300 (sq vs sf)
+Finished game 243 (sq vs sf): 1/2-1/2 {Draw by adjudication}
+Started game 246 of 300 (sf vs sq)
+Finished game 242 (sf vs sq): 0-1 {Black wins by adjudication}
+Started game 247 of 300 (sq vs sf)
+Finished game 245 (sq vs sf): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 248 of 300 (sf vs sq)
+Finished game 244 (sf vs sq): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 249 of 300 (sq vs sf)
+Finished game 247 (sq vs sf): 0-1 {Black wins by adjudication}
+Started game 250 of 300 (sf vs sq)
+Finished game 246 (sf vs sq): 1/2-1/2 {Draw by adjudication}
+Started game 251 of 300 (sq vs sf)
+Finished game 248 (sf vs sq): 1-0 {White wins by adjudication}
+Started game 252 of 300 (sf vs sq)
+Finished game 249 (sq vs sf): 0-1 {Black wins by adjudication}
+Started game 253 of 300 (sq vs sf)
+Finished game 250 (sf vs sq): 1-0 {White wins by adjudication}
+Started game 254 of 300 (sf vs sq)
+Finished game 251 (sq vs sf): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 255 of 300 (sq vs sf)
+Finished game 254 (sf vs sq): 1-0 {White wins by adjudication}
+Started game 256 of 300 (sf vs sq)
+Finished game 252 (sf vs sq): 1-0 {White wins by adjudication}
+Started game 257 of 300 (sq vs sf)
+Finished game 255 (sq vs sf): 0-1 {Black wins by adjudication}
+Started game 258 of 300 (sf vs sq)
+Finished game 253 (sq vs sf): 1-0 {White wins by adjudication}
+Started game 259 of 300 (sq vs sf)
+Finished game 256 (sf vs sq): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 260 of 300 (sf vs sq)
+Finished game 259 (sq vs sf): 1-0 {White wins by adjudication}
+Started game 261 of 300 (sq vs sf)
+Finished game 257 (sq vs sf): 1-0 {White wins by adjudication}
+Started game 262 of 300 (sf vs sq)
+Finished game 258 (sf vs sq): 1-0 {White wins by adjudication}
+Started game 263 of 300 (sq vs sf)
+Finished game 260 (sf vs sq): 1-0 {White wins by adjudication}
+Started game 264 of 300 (sf vs sq)
+Finished game 261 (sq vs sf): 1-0 {White wins by adjudication}
+Started game 265 of 300 (sq vs sf)
+Finished game 262 (sf vs sq): 1-0 {White wins by adjudication}
+Started game 266 of 300 (sf vs sq)
+Finished game 265 (sq vs sf): 1/2-1/2 {Draw by adjudication}
+Started game 267 of 300 (sq vs sf)
+Finished game 266 (sf vs sq): 1-0 {White wins by adjudication}
+Started game 268 of 300 (sf vs sq)
+Finished game 264 (sf vs sq): 1/2-1/2 {Draw by adjudication}
+Started game 269 of 300 (sq vs sf)
+Finished game 263 (sq vs sf): 1/2-1/2 {Draw by fifty moves rule}
+Started game 270 of 300 (sf vs sq)
+Finished game 267 (sq vs sf): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 271 of 300 (sq vs sf)
+Finished game 268 (sf vs sq): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 272 of 300 (sf vs sq)
+Finished game 269 (sq vs sf): 1-0 {White wins by adjudication}
+Started game 273 of 300 (sq vs sf)
+Finished game 270 (sf vs sq): 1-0 {White wins by adjudication}
+Started game 274 of 300 (sf vs sq)
+Finished game 272 (sf vs sq): 1-0 {White wins by adjudication}
+Started game 275 of 300 (sq vs sf)
+Finished game 274 (sf vs sq): 1/2-1/2 {Draw by insufficient mating material}
+Started game 276 of 300 (sf vs sq)
+Finished game 273 (sq vs sf): 1-0 {White wins by adjudication}
+Started game 277 of 300 (sq vs sf)
+Finished game 271 (sq vs sf): 1-0 {White wins by adjudication}
+Started game 278 of 300 (sf vs sq)
+Finished game 275 (sq vs sf): 1-0 {White wins by adjudication}
+Started game 279 of 300 (sq vs sf)
+Finished game 276 (sf vs sq): 1/2-1/2 {Draw by adjudication}
+Started game 280 of 300 (sf vs sq)
+Finished game 277 (sq vs sf): 1-0 {White wins by adjudication}
+Started game 281 of 300 (sq vs sf)
+Finished game 278 (sf vs sq): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 282 of 300 (sf vs sq)
+Finished game 279 (sq vs sf): 1-0 {White wins by adjudication}
+Started game 283 of 300 (sq vs sf)
+Finished game 280 (sf vs sq): 1-0 {White wins by adjudication}
+Started game 284 of 300 (sf vs sq)
+Finished game 282 (sf vs sq): 1/2-1/2 {Draw by adjudication}
+Started game 285 of 300 (sq vs sf)
+Finished game 281 (sq vs sf): 1-0 {White wins by adjudication}
+Started game 286 of 300 (sf vs sq)
+Finished game 284 (sf vs sq): 1/2-1/2 {Draw by adjudication}
+Started game 287 of 300 (sq vs sf)
+Finished game 283 (sq vs sf): 0-1 {Black wins by adjudication}
+Started game 288 of 300 (sf vs sq)
+Finished game 285 (sq vs sf): 1-0 {White wins by adjudication}
+Started game 289 of 300 (sq vs sf)
+Finished game 286 (sf vs sq): 1-0 {White wins by adjudication}
+Started game 290 of 300 (sf vs sq)
+Finished game 289 (sq vs sf): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 291 of 300 (sq vs sf)
+Finished game 288 (sf vs sq): 0-1 {Black wins by adjudication}
+Started game 292 of 300 (sf vs sq)
+Finished game 287 (sq vs sf): 1-0 {White wins by adjudication}
+Started game 293 of 300 (sq vs sf)
+Finished game 290 (sf vs sq): 1-0 {White wins by adjudication}
+Started game 294 of 300 (sf vs sq)
+Finished game 291 (sq vs sf): 0-1 {Black wins by adjudication}
+Started game 295 of 300 (sq vs sf)
+Finished game 293 (sq vs sf): 0-1 {Black wins by adjudication}
+Started game 296 of 300 (sf vs sq)
+Finished game 294 (sf vs sq): 1-0 {White wins by adjudication}
+Started game 297 of 300 (sq vs sf)
+Finished game 292 (sf vs sq): 0-1 {Black wins by adjudication}
+Started game 298 of 300 (sf vs sq)
+Finished game 295 (sq vs sf): 1-0 {White wins by adjudication}
+Started game 299 of 300 (sq vs sf)
+Finished game 297 (sq vs sf): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 300 of 300 (sf vs sq)
+Finished game 296 (sf vs sq): 1-0 {White wins by adjudication}
+Finished game 298 (sf vs sq): 1-0 {White wins by adjudication}
+Finished game 299 (sq vs sf): 1/2-1/2 {Draw by adjudication}
+Finished game 300 (sf vs sq): 1-0 {White wins by adjudication}
+--------------------------------------------------
+Results of sq vs sf (20000 nodes, 1t, 16MB, UHO_4060_v4.epd):
+Elo: 9.27 +/- 28.58, nElo: 12.78 +/- 39.32
+LOS: 73.80 %, DrawRatio: 42.67 %, PairsRatio: 1.10
+Games: 300, Wins: 101, Losses: 93, Draws: 106, Points: 154.0 (51.33 %)
+Ptnml(0-2): [10, 31, 64, 31, 14], WL/DD Ratio: 1.91
+--------------------------------------------------
+Finished match
+Total Time: 00:10:54 (hours:minutes:seconds)
+

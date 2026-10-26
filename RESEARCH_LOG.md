@@ -52,3 +52,264 @@
   C++ trainer validation MAE == numpy (311.27 both).
 - C++ trainer: ~225k positions/s on 2 contended threads vs ~12k/s for a PyTorch EmbeddingBag
   implementation on the same CPU (PyTorch abandoned for this net size).
+
+### Data run1 (E1 training data)
+- `gendata nodes 5000 games 1500 treerate 0.02`, seeds 101-104, book UHO_Lichess_4852_v1 (random line per game), 4 processes.
+- 6000 games (W/D/L 1985/2584/1431 from white), 734,092 game positions, 25,145,952 tree positions, 1.04 GB.
+- Cost: ~1872 s wall per process, 4 processes = ~7,490 CPU-s total (game + tree data produced by the same searches).
+  Game positions: ~98 /CPU-s. Tree positions (2% of evaluate() calls): ~3,360 /CPU-s; 100% would be ~168k /CPU-s.
+- Validation: separate run (seeds 901-904, 240 games) with the same settings -> `val/v.bin`.
+- Matches use a different book (UHO_4060_v4) to avoid opening overlap with training games.
+- Ops lesson: `pkill -f`/`pgrep -f` patterns matched the harness's own shells (whose command lines contain the
+  pattern); use `pgrep -x <procname>` and never put the kill pattern in the same command line.
+
+## E1: position source and label source (H=256 students, 20k nodes/move matches)
+Setup: all students (768->256)x2 SCReLU -> 8 buckets, Adam, one-cycle cosine, batch 16384, trained on
+run1 (7,490 CPU-s of 5000-node self-play). Validation: held-out games (seeds 901-904).
+Matches: research fork with StudentFile, `nodes=20000`, UHO_4060_v4 openings (disjoint book), paired,
+200 games per pair; joint Bradley-Terry fit with pentanomial bootstrap (`tools/ratings.py`).
+
+Validation MSE vs teacher (sigmoid space, scale 340):
+| student | positions trained | vgame | vtree |
+|---|---|---|---|
+| game_teacher (P=1e8, overfit) | 734k | 0.0311 | 0.0406 |
+| game_teacher_p1.5e7 (best length) | 734k | 0.0249 | 0.0344 |
+| gq_teacher_p1.5e7 (quiet filter) | 594k | 0.0254 | 0.0347 |
+| tree_teacher_sm (sample-matched) | 734k | 0.0289 | 0.0296 |
+| tree_teacher | 25.1M | 0.0186 | 0.0186 |
+
+Elo (anchor game_teacher_p1.5e7): tree_teacher +539 [472,626]; tree_teacher_sm +205 [156,257];
+gq_teacher -22 [-67,21]; gq_score -113 [-161,-63]; gq_blend(0.7) -252 [-312,-208];
+unfiltered game_blend/score: -600 to -1300 (static evals trained on unfiltered search scores are badly miscalibrated).
+
+Observations:
+- At equal sample count, tree positions give +205 Elo over game positions, although their MSE on *game*
+  validation positions is worse (0.0289 vs 0.0249). Validation loss on game positions is a misleading
+  proxy for strength; loss on the distribution the evaluator sees in search (vtree) ranks students correctly.
+- Weak students search far shallower at equal nodes (depth 8-9 vs 12-16) and hang material: eval errors
+  on off-distribution (material-imbalanced) positions degrade pruning, not just leaf accuracy.
+- Teacher static labels beat search-score labels (gq_teacher vs gq_score: +91), and WDL blending with
+  5000-node self-play results hurts (-139 vs pure score) at this data scale.
+
+## E1b: data scaling (generation-compute fractions of run1), 20k nodes, joint fit with E1
+`--frac f` = first fraction f of each generation file = fraction f of the games = fraction f of the
+7,490 generation CPU-s. Training length: tree 1.6e7..1e8 positions, game ~20 epochs (best on validation).
+Joint Bradley-Terry fit (`experiments/e1b/ratings_joint.txt`, aliases game_f1=game_teacher_p1.5e7,
+tree_f1=tree_teacher), anchor game_teacher_p1.5e7 = 0:
+
+| gen. compute | tree-position student | game-position student (teacher labels) |
+|---|---|---|
+| 1/32 (234 CPU-s) | +111 [75,151] | |
+| 1/16 | +264 [214,311] | |
+| 1/8 | +398 [353,448] | |
+| 1/4 | +465 [413,516] | -362 [-430,-303] |
+| 1/2 | +520 [466,576] | -159 [-202,-113] |
+| 1 (7,490 CPU-s) | +545 [493,615] | 0 |
+Conventional baseline at full compute (quiet positions, 5000-node search-score labels): -113 [-165,-66].
+
+Direct check: tree_f32 vs game_f1: +104 +/- 49 (200 games, LOS 100%).
+=> A student distilled from teacher search-tree positions with 1/32 of the generation compute is
+stronger than any game-position student trained on all of it. Total CPU (generation + training):
+tree_f32 ~ 234 + ~70 = ~300 CPU-s vs game_f1 ~ 7,556 CPU-s: >= 25x less total compute, and +111 Elo.
+The tree curve flattens (+69, +56, +26 per doubling from 1/8 up), consistent with the 256-neuron
+student nearing capacity; the game curve is still steep (+203, +159 per doubling) but starts far lower.
+Caveats: small student (768->256), node-limited matches (equal nodes, not equal time), single teacher,
+one generation setting (5000 nodes/move). Distillation requires an existing strong net.
+
+### Validation-loss proxy for strength (E1+E1b, 11 teacher-label H=256 students)
+`tools/proxy_corr.py`: Elo vs held-out MSE. Search-tree validation MSE: Pearson 0.996, Spearman 1.000.
+Game-position validation MSE: Pearson 0.850, Spearman 0.800; it ranks game_teacher_p1.5e7 (vgame 0.0249)
+above tree_f32/tree_teacher_sm/tree_f16 (vgame 0.026-0.029), which beat it by 111-264 Elo.
+=> Selecting/validating nets on game positions (common practice) is misleading for students trained on
+different distributions; loss on positions sampled from search trees is a near-perfect cheap proxy here.
+(Within one architecture and teacher; untested across architectures.)
+
+### Student inference engineering (patch 0002)
+- Float full-refresh student: 365k nps vs teacher 398k (same contended conditions): no speed benefit.
+- New: per-thread int16 accumulators for WHITE/BLACK perspectives, updated by diffing the 64-square
+  board against the last evaluated position (no do_move hooks; refresh if >12 squares differ);
+  float output layer. QA chosen per net so the worst case cannot overflow int16 (QA~700 here).
+  Accuracy vs float reference on 5000 search positions: mean |diff| 2.1, max 8 internal units.
+  Speed: ~560-780k nps under heavy contention (~2x the float student). Binary: sf_research_q.
+  Running experiments (E2/E3/E1c/E4) keep the float binary for consistency.
+
+## E2: on-policy (DAgger-style) data vs more teacher-tree data
+Data: S1 = 6000 self-play games where the *student* (E1 tree_teacher, H=256) searches (5000 nodes/move),
+2% of its evaluate() calls recorded with teacher labels: 24.1M positions, ~7,730 CPU-s (student search
+was not faster than the teacher's with the float evaluator). T2 = 6000 more teacher self-play games
+(seeds 201-204): 25.3M positions, ~7,580 CPU-s. Student self-play is more decisive (W/D/L from white
+2371/1611/2018 vs teacher 1973/2641/1386).
+Distribution stats (1M samples): share with material imbalance >= 300: game 0.241, teacher-tree 0.318,
+student-tree 0.341; median |teacher eval| 317 / 506 / 788 internal units.
+New validation set vs.bin: student (tree_teacher) self-play trees, seeds 951-954.
+All H=256, 2e8 training positions:
+| data | vgame | vtree | vstree |
+|---|---|---|---|
+| T1 (25M) | 0.01721 | 0.01702 | 0.01741 |
+| T1+T2 (50M) | 0.01633 | 0.01658 | 0.01662 |
+| T1+S1 (49M) | 0.01667 | 0.01706 | 0.01583 |
+Note: T1 trained for 2e8 instead of 1e8 positions improves vtree 0.01863 -> 0.01702, so E1b's fixed
+budgets understate the large-data points (the efficiency claim R1 is conservative in that respect).
+Matches (20k nodes, UHO_4060_v4, paired):
+- base_T1S1 vs base_T1T2: +13.9 +/- 23.1 (600 games, ptnml [35,45,125,51,44], LOS 88%)  -> inconclusive
+- base_T1T2 vs base_T1_2e8: +2.3 +/- 34.7 (300 games)  -> no measurable gain from 2x teacher-tree data
+- base_T1S1 vs base_T1_2e8: +46.6 +/- 32.2 (300 games, LOS 99.8%)
+Joint fit (anchor base_T1_2e8): T1S1 +34 [8, 58], T1T2 +14 [-10, 41].
+Interpretation (preliminary): at H=256 the student saturates on teacher-tree data (loss improves,
+Elo does not), while adding its own search-tree positions (teacher-labelled) still adds strength:
+consistent with H3 (covariate shift between teacher and student search distributions). The decisive
+head-to-head is not yet significant; 1,200 more games queued (E2b, opening seed 2).
+
+### Ops incident (E3)
+A helper function named `tr` piped its output into coreutils `tr`, recursing into itself and spawning
+thousands of nested shells (~3 minutes, killed). No data was lost; E3 generation had finished and is
+unaffected; training was relaunched. Rule: never shadow common command names in experiment scripts.
+
+## E3: generation settings at an equal generation budget (~1,870 CPU-s = 4 procs x 468 s)
+Reference n5000_r02 = e1b tree_f4 (5000 nodes/move, 2% of evaluate() calls; same compute). All H=256,
+1e8 training positions. 20k-node matches vs reference, 200 games each:
+| setting | records | vgame | vtree | Elo vs ref |
+|---|---|---|---|---|
+| 1000 nodes, 2% | 5.0M | 0.02241 | 0.02336 | -38 +/- 40 |
+| 5000 nodes, 2% (ref) | 6.3M | 0.02115 | 0.02179 | 0 |
+| 1000 nodes, 8% | 17.5M | 0.02077 | 0.02187 | +2 +/- 39 |
+| 5000 nodes, 8% | 25.3M | 0.02071 | 0.02029 | +33 +/- 44 |
+| 20000 nodes, 8% | 28.7M | 0.02050 | 0.02016 | +51 +/- 38 (LOS 99.6%) |
+- Recording more of each search's evaluate() calls is nearly free and helps; deeper per-move searches
+  are at least as good as shallow ones per CPU-s (1000 nodes/move: per-move overhead dominates, fewer evals/s).
+- Elo ordering again equals the vtree-MSE ordering (R2 holds out of sample).
+- Implication for R1: the 2%-rate setting used there is not the most efficient; the >=32x figure is conservative.
+
+## E1c: replication and node-budget robustness of R1
+Disjoint 1/32 subsets of run1 (`--frac 0.03125 --skip s`), H=256, 1.6e7 training positions; opponent:
+game-position student trained on all of run1 (game_f1). 200 games each, 20k nodes:
+| subset | vtree | Elo vs game_f1 |
+|---|---|---|
+| s=0 (E1b tree_f32) | 0.02975 | +104 +/- 49 |
+| s=0.25 | 0.03150 | +147 +/- 47 |
+| s=0.50 | 0.02984 | +133 +/- 47 |
+| s=0.75 | 0.03067 | +81 +/- 46 |
+4/4 subsets significant (LOS >= 99.99%); mean +116. Node budgets (tree_f32 vs game_f1):
+5k nodes +123 +/- 52, 20k +104 +/- 49, 80k +141 +/- 50. Full data at 80k nodes (tree_f1 vs game_f1):
+193-2-5, +655 +/- 176 (vs +545 at 20k): the advantage does not shrink with deeper search.
+
+## E4: capacity scaling on the same run1 data (7,490 generation CPU-s), 20k nodes
+Tree students 1.5e8 training positions; game students ~20 epochs. Matches on the quantized incremental
+binary (all E4 games); E1/E1b used the float binary (neutrality check in E7).
+| student | vgame | vtree | vstree | match |
+|---|---|---|---|---|
+| tree H=512 | 0.01641 | 0.01643 | 0.01623 | vs H256: +70 +/- 38 |
+| tree H=1024 | 0.01557 | 0.01542 | 0.01531 | vs H512: +72 +/- 39 |
+| tree kb256 (8 king buckets, mirrored, factorised) | 0.01638 | 0.01675 | 0.01644 | vs H256: +58 +/- 39 |
+| tree kb512 | 0.01565 | 0.01570 | 0.01506 | vs kb256: +47 +/- 36; vs H1024: -26 +/- 38 |
+| game H=512 | 0.02582 | 0.03516 | 0.03651 | vs game H256: +2 +/- 39 |
+| game H=1024 | 0.02650 | 0.03535 | 0.03734 | vs game H512: -7 +/- 46 |
+| game kb256 | 0.02925 | 0.03939 | 0.04136 | vs game H256: -133 +/- 44 |
+Joint ladder (experiments/e4/ratings_joint.txt, anchor game H256 = 0): tree H1024 +683 [616,751],
+tree kb512 +654, tree H512 +613, tree kb256 +605, tree H256 +545; game H512 +2, game H1024 -5,
+game kb256 -133; best conventional-label student -113.
+=> With game positions, extra capacity or richer features buy nothing (or hurt: overfitting to ~734k
+correlated positions). With tree positions every width doubling adds ~+70 Elo. The data-source gap
+widens with model size: ~+680 Elo between the best students of each kind at equal generation compute.
+
+## E6: without distillation (search-score labels on both sides)
+600k positions sampled uniformly from run1 search trees, each re-labelled by a fresh 5000-node search
+(`label` command, ~6,000 CPU-s, castling/ep rights dropped) vs the 594k quiet game positions of run1 whose
+labels are the 5000-node in-game search scores (gq_score_p1.5e7). Same label type, count and cost per label.
+H=256, `--label score`.
+| student | vgame (vs teacher) | vtree (vs teacher) | Elo vs gq_score_p1.5e7 |
+|---|---|---|---|
+| tree_score_p1.5e7 | 0.05029 | 0.04627 | +80 +/- 36 (300 games, LOS 100%) |
+| tree_score_p5e6 | 0.05197 | 0.04751 | -9 +/- 35 |
+=> The position-distribution effect is not specific to distillation: sampling training positions from
+search trees beats (quiet-filtered) game positions even with conventional search labels.
+Note: MSE-vs-teacher is not a valid proxy across different label types (tree_score has worse MSE but is
+stronger); R2 applies to students trained on the same target.
+
+### E2b: confirmation of the on-policy effect
+base_T1S1 vs base_T1T2, 1,200 more games with an independent opening seed: +27.0 +/- 15.8 (LOS 99.96%).
+Pooled with the first 600 games (1,800 games, 900 pairs): **+22.6 [9.6, 35.7]**. Joint fit (anchor T1):
+T1S1 +36.5 [11.7, 58.9], T1T2 +12.3 [-11.3, 36.0].
+=> H3 supported: at equal data volume and generation cost, teacher-labelled positions from the
+student's *own* search trees beat positions from the teacher's search trees by ~+23 Elo (H=256).
+Single iteration only; whether further DAgger iterations keep paying is untested.
+
+## E8: escalation (H=1024, all session tree data)
+H=1024 (768 features) trained on all tree positions generated this session: run1 T1, T2 (teacher trees),
+S1 (student trees), E3 n1000_r08/n5000_r08/n20000_r08: ~144M positions, 4e8 training positions
+(2,251 s wall, 7,625 CPU-s, peak RSS ~6.3 GB). Validation: vgame 0.01192, vtree 0.01222, vstree 0.01113
+(vs 0.01557/0.01542/0.01531 for H=1024 on run1 only). Total generation compute behind the data:
+~7,490 (T1) + 7,580 (T2) + 7,730 (S1) + 3 x 1,872 (E3) = ~28,400 CPU-s (~7.9 CPU-hours).
+
+## E7: teacher gap of the E8 student (quantized incremental binary for both sides)
+- Quantized int16 incremental vs float student (same net, 20k nodes): +9.3 +/- 28.6 (300 games): neutral.
+- Student @20k nodes vs teacher @20k: -382 +/- 80 (100 games, 1-81-18).
+- Student @20k vs teacher @5k: -56 +/- 45 (150 games). Student @20k vs teacher @1.25k: +409 +/- 82.
+  => the student is worth a teacher searching ~1/5 of the nodes (teacher gains +465 from 1.25k->5k and
+  +326 from 5k->20k nodes in this ladder).
+- Equal time, 10+0.1, 1 thread: -330 +/- 54 (100 games, 0-74-26). Speed (8 s search, contended machine):
+  teacher 357k nps, H=1024 student 232k nps (my student inference is a naive autovectorised
+  implementation; the teacher's SFNNv18 code is heavily optimised), H=256 student 484k nps.
+Conclusion: ~8 CPU-hours of distillation on 4 cores yields a net ~380 Elo below master at equal nodes.
+It does not approach master strength; R1-R6 are about *relative* efficiency of data sources.
+
+## E9: cheaper game-position baseline (correction to R1's ratio) + E8 vs E4
+Game positions from the E3 1000-node self-play (seeds 3001-3004; the n1000_r02/r08 runs are identical
+games, so one run's 749,661 game positions are used): 1,870 CPU-s, i.e. 4x cheaper per position than run1.
+- game_n1000_p1.5e7 (vgame 0.02590, vtree 0.03457) vs game_f1 (run1 games, 7,490 CPU-s): **+69 +/- 44**
+  (LOS 99.9%). Faster, weaker self-play gives *better* game-position data, consistent with R3: more
+  imbalanced/varied positions.
+- tree_f32 (234 CPU-s) vs game_n1000_p1.5e7 (1,870 CPU-s): **+61 +/- 45** (LOS 99.7%).
+=> Against the best game-position pipeline tested, the measured saving is >= 8x generation compute with the
+tree student still stronger; from the tree scaling slope (~+150 Elo per doubling at that end) equal
+strength would be reached at ~175 CPU-s, i.e. ~10x. The earlier ">= 32x" was relative to the 5000-node
+game baseline and overstates the advantage over a tuned game pipeline. E10 tests even cheaper games.
+- E8 (H=1024, all 144M tree positions) vs E4 tree_h1024 (run1 only): +125 +/- 44 (200 games).
+
+## E10: even cheaper game-position pipelines (second correction to R1's ratio)
+Game positions from 300- and 100-node self-play, same 1,870 CPU-s budget (seeds 5001-5004):
+1.42M and 2.08M game positions. H=256, teacher labels. 200-300 games each, 20k nodes:
+| student | vgame | vtree | Elo |
+|---|---|---|---|
+| game_n300_p1.5e7 | 0.02516 | 0.03332 | vs game_n1000: +91 +/- 47 |
+| game_n300_p3e7 | 0.02564 | 0.03343 | vs game_n1000: +115 +/- 47 |
+| game_n100_p1.5e7 | 0.02466 | 0.03379 | vs game_n1000: +108 +/- 44 |
+| game_n100_p3e7 | 0.02448 | 0.03269 | vs game_n1000: +151 +/- 50 |
+Decisive direct match: tree_f32 (234 CPU-s) vs game_n100_p3e7 (1,870 CPU-s): **-78 +/- 37** (300 games).
+Game-data quality rises steeply as self-play gets faster/weaker (5000 -> 1000 -> 100 nodes: 0, +69, ~+220
+on the run1 scale), consistent with the mechanism (diverse, unbalanced positions matter).
+Revised R1: versus the best game pipeline found (100-node self-play), tree distillation reaches equal
+strength with ~5x less generation compute (interpolating the tree curve between 234 and 468 CPU-s:
+~330-360 CPU-s vs 1,870), and is ~+250-300 Elo stronger at equal compute (tree at 1,870 CPU-s: +465,
+or ~+516 with the E3 settings). The earlier ">= 32x" and ">= 8x" figures were relative to weaker game
+baselines and are superseded.
+
+## E11: game-pipeline plateau and capacity with good game data (correction to R3)
+- 30-node self-play (1,870 CPU-s, 2.37M game positions; per-move overhead dominates): vtree 0.03255;
+  vs 100-node data: +19 +/- 48 (n.s.). The game pipeline plateaus around 30-100 nodes/move.
+- H=512 on the 100-node game data (2.08M positions): vtree 0.03220; vs H=256 on the same data: +56 +/- 43
+  (LOS 99.4%). So the E4 finding "capacity does not help game data" holds for standard 5000-node game data
+  (734k positions) but not for larger/more diverse fast-game data, where H=512 gains about as much as
+  with tree data (+70). Revised R3: capacity scaling is limited by data diversity; tree data has the most.
+
+## E12: tree data from fast self-play (does the game-data trend transfer?) - no
+Same 1,870 CPU-s budget, 25% of evaluate() calls recorded (seeds 7001-7004), H=256, 1e8 positions:
+| setting | tree positions | vgame | vtree | vs E3 best (20000 nodes, 8%) |
+|---|---|---|---|---|
+| 300 nodes, 25% | 35.3M | 0.02227 | 0.02355 | -44 +/- 41 |
+| 1000 nodes, 25% | 45.7M | 0.02078 | 0.02210 | -24 +/- 39 |
+| 20000 nodes, 8% (E3) | 28.7M | 0.02050 | 0.02016 | 0 |
+Opposite to game data: tree positions from deeper per-move searches are worth more (shallow trees are
+dominated by near-root, highly correlated nodes). The vtree proxy again orders the three correctly.
+Best tree recipe found: >= 5000-20000 nodes/move, record 8%+ of evaluate() calls.
+
+## E13: headline ratio with the best settings found on both sides
+Tree: 20000 nodes/move, 8% recording (E3 best), 4 procs x 59 s = 234 CPU-s (2.92M positions) and x 117 s =
+468 CPU-s (6.32M), H=256, 3.2e7 training positions. Game: 100-node self-play, 1,870 CPU-s (E10 best,
+game_n100_p3e7). 300 games each:
+- tree_c234 vs game_n100_p3e7: -13 +/- 36 (n.s.) -> equal strength at **8x less** generation compute.
+- tree_c468 vs game_n100_p3e7: **+61 +/- 38** (LOS 99.94%) at 4x less compute.
+Final R1: with tuned settings on both sides, tree distillation matches the best game-position pipeline
+with ~8x less data-generation compute (the ~5x interpolation in E10 used the untuned 5000-node/2% curve).
+Note: the vtree proxy under-rates the fast-game students (vtree 0.0327 but Elo ~ tree students at
+vtree ~0.029): R2 is reliable within a data family, less so across very different position sources.

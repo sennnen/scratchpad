@@ -1,0 +1,51 @@
+player                                elo             95% CI
+tree_h1024                          682.6   [  615.6,   750.6]
+tree_kb512                          654.2   [  588.7,   727.7]
+tree_h512                           612.7   [  550.2,   676.5]
+tree_kb256                          604.7   [  541.7,   669.7]
+tree_teacher                        544.6   [  484.9,   599.7]
+tree_f2                             520.0   [  455.1,   577.6]
+tree_f4                             465.4   [  410.8,   518.6]
+tree_f8                             398.3   [  353.9,   441.0]
+tree_f16                            263.7   [  216.2,   309.7]
+tree_teacher_sm                     207.1   [  164.8,   267.1]
+tree_f32                            110.6   [   68.7,   149.9]
+game_h512                             1.7   [  -36.6,    41.9]
+game_teacher_p1.5e7                   0.0   [    0.0,     0.0]
+game_h1024                           -5.2   [  -66.4,    52.3]
+gq_teacher_p1.5e7                   -22.6   [  -64.2,    16.6]
+gq_score_p1.5e7                    -113.3   [ -157.7,   -63.2]
+game_kb256                         -132.9   [ -177.2,   -87.8]
+game_f2                            -159.3   [ -197.7,  -114.8]
+gq_blend_p1.5e7                    -251.9   [ -312.0,  -190.8]
+game_f4                            -362.0   [ -424.9,  -298.2]
+game_blend_p5e6                    -603.9   [ -798.3,  -498.1]
+game_score                        -1207.7   [-1492.3, -1062.0]
+game_blend                        -1330.8   [-6123.9, -1150.8]
+matches:
+  game_blend vs game_blend_p5e6: ptnml [97, 0, 3, 0, 0] games 200
+  game_score vs game_blend_p5e6: ptnml [93, 2, 5, 0, 0] games 200
+  game_teacher_p1.5e7 vs game_blend_p5e6: ptnml [0, 0, 4, 4, 92] games 200
+  gq_blend_p1.5e7 vs game_teacher_p1.5e7: ptnml [58, 13, 25, 3, 1] games 200
+  gq_score_p1.5e7 vs game_teacher_p1.5e7: ptnml [37, 17, 28, 8, 10] games 200
+  gq_teacher_p1.5e7 vs game_teacher_p1.5e7: ptnml [17, 17, 40, 14, 12] games 200
+  tree_teacher_sm vs game_teacher_p1.5e7: ptnml [3, 2, 36, 4, 55] games 200
+  tree_teacher vs tree_teacher_sm: ptnml [1, 2, 11, 19, 67] games 200
+  game_f2 vs game_teacher_p1.5e7: ptnml [45, 8, 37, 2, 8] games 200
+  game_f4 vs game_f2: ptnml [50, 11, 35, 2, 2] games 200
+  tree_f16 vs tree_f32: ptnml [5, 7, 24, 26, 38] games 200
+  tree_teacher vs tree_f2: ptnml [9, 17, 37, 24, 13] games 200
+  tree_f2 vs tree_f4: ptnml [4, 14, 41, 28, 13] games 200
+  tree_f32 vs game_teacher_p1.5e7: ptnml [11, 4, 38, 10, 37] games 200
+  tree_f32 vs game_f2: ptnml [0, 0, 26, 12, 62] games 200
+  tree_f4 vs tree_f8: ptnml [9, 11, 37, 18, 25] games 200
+  tree_f8 vs game_teacher_p1.5e7: ptnml [0, 0, 16, 6, 78] games 200
+  tree_f8 vs tree_f16: ptnml [4, 8, 33, 18, 37] games 200
+  game_h1024 vs game_h512: ptnml [20, 13, 37, 11, 19] games 200
+  game_h512 vs game_teacher_p1.5e7: ptnml [14, 10, 48, 17, 11] games 200
+  game_kb256 vs game_teacher_p1.5e7: ptnml [36, 12, 46, 1, 5] games 200
+  tree_h1024 vs tree_h512: ptnml [6, 13, 31, 34, 16] games 200
+  tree_h512 vs tree_teacher: ptnml [4, 15, 37, 25, 19] games 200
+  tree_kb256 vs tree_teacher: ptnml [5, 16, 40, 19, 20] games 200
+  tree_kb512 vs tree_h1024: ptnml [13, 23, 39, 16, 9] games 200
+  tree_kb512 vs tree_kb256: ptnml [6, 10, 51, 17, 16] games 200
