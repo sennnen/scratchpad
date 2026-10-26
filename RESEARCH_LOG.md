@@ -211,3 +211,17 @@ game kb256 -133; best conventional-label student -113.
 => With game positions, extra capacity or richer features buy nothing (or hurt: overfitting to ~734k
 correlated positions). With tree positions every width doubling adds ~+70 Elo. The data-source gap
 widens with model size: ~+680 Elo between the best students of each kind at equal generation compute.
+
+## E6: without distillation (search-score labels on both sides)
+600k positions sampled uniformly from run1 search trees, each re-labelled by a fresh 5000-node search
+(`label` command, ~6,000 CPU-s, castling/ep rights dropped) vs the 594k quiet game positions of run1 whose
+labels are the 5000-node in-game search scores (gq_score_p1.5e7). Same label type, count and cost per label.
+H=256, `--label score`.
+| student | vgame (vs teacher) | vtree (vs teacher) | Elo vs gq_score_p1.5e7 |
+|---|---|---|---|
+| tree_score_p1.5e7 | 0.05029 | 0.04627 | +80 +/- 36 (300 games, LOS 100%) |
+| tree_score_p5e6 | 0.05197 | 0.04751 | -9 +/- 35 |
+=> The position-distribution effect is not specific to distillation: sampling training positions from
+search trees beats (quiet-filtered) game positions even with conventional search labels.
+Note: MSE-vs-teacher is not a valid proxy across different label types (tree_score has worse MSE but is
+stronger); R2 applies to students trained on the same target.

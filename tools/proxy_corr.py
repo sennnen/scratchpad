@@ -11,7 +11,7 @@ elo = {}
 for line in open(sys.argv[1]):
     m = re.match(r"(\S+)\s+(-?[\d.]+)\s+\[", line)
     if m: elo[m.group(1)] = float(m.group(2))
-alias = {"game_f1": "game_teacher_p1.5e7", "tree_f1": "tree_teacher"}
+alias = {"game_f1": "game_teacher_p1.5e7", "tree_f1": "tree_teacher", "tree_h256": "tree_teacher", "game_h256": "game_teacher_p1.5e7"}
 rows = []
 for d in sys.argv[2:]:
     for f in glob.glob(d + "/*.stud.json"):
