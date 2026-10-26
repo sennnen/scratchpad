@@ -1,0 +1,212 @@
+/home/user/work/fastchess/fastchess -engine cmd=/home/user/data/sf_research_kb name=stud option.StudentFile=/home/user/nets/e8/e8_h1024_all.stud tc=inf nodes=20000 -engine cmd=/home/user/data/sf_research_kb name=teacher tc=inf nodes=20000 -each option.Threads=1 option.Hash=16 -openings file=/home/user/data/UHO_4060_v4.epd format=epd order=random -srand 1 -repeat -rounds 50 -concurrency 4 -resign movecount=3 score=1000 twosided=true -draw movenumber=40 movecount=8 score=8 -pgnout file=experiments/e7/matches/stud_vs_teacher_n20k.pgn -ratinginterval 100
+Indexing opening suite...
+Started game 1 of 100 (stud vs teacher)
+Started game 2 of 100 (teacher vs stud)
+Started game 3 of 100 (stud vs teacher)
+Started game 4 of 100 (teacher vs stud)
+Finished game 2 (teacher vs stud): 1-0 {White wins by adjudication}
+Started game 5 of 100 (stud vs teacher)
+Finished game 4 (teacher vs stud): 1-0 {White wins by adjudication}
+Started game 6 of 100 (teacher vs stud)
+Finished game 1 (stud vs teacher): 1/2-1/2 {Draw by insufficient mating material}
+Started game 7 of 100 (stud vs teacher)
+Finished game 3 (stud vs teacher): 0-1 {Black wins by adjudication}
+Started game 8 of 100 (teacher vs stud)
+Finished game 6 (teacher vs stud): 1-0 {White wins by adjudication}
+Started game 9 of 100 (stud vs teacher)
+Finished game 5 (stud vs teacher): 0-1 {Black wins by adjudication}
+Started game 10 of 100 (teacher vs stud)
+Finished game 7 (stud vs teacher): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 11 of 100 (stud vs teacher)
+Finished game 8 (teacher vs stud): 1-0 {White wins by adjudication}
+Started game 12 of 100 (teacher vs stud)
+Finished game 10 (teacher vs stud): 1-0 {White wins by adjudication}
+Started game 13 of 100 (stud vs teacher)
+Finished game 11 (stud vs teacher): 0-1 {Black wins by adjudication}
+Started game 14 of 100 (teacher vs stud)
+Finished game 9 (stud vs teacher): 1/2-1/2 {Draw by insufficient mating material}
+Started game 15 of 100 (stud vs teacher)
+Finished game 12 (teacher vs stud): 1-0 {White wins by adjudication}
+Started game 16 of 100 (teacher vs stud)
+Finished game 14 (teacher vs stud): 1-0 {White wins by adjudication}
+Started game 17 of 100 (stud vs teacher)
+Finished game 13 (stud vs teacher): 0-1 {Black wins by adjudication}
+Started game 18 of 100 (teacher vs stud)
+Finished game 15 (stud vs teacher): 0-1 {Black wins by adjudication}
+Started game 19 of 100 (stud vs teacher)
+Finished game 16 (teacher vs stud): 1-0 {White wins by adjudication}
+Started game 20 of 100 (teacher vs stud)
+Finished game 17 (stud vs teacher): 0-1 {Black wins by adjudication}
+Started game 21 of 100 (stud vs teacher)
+Finished game 18 (teacher vs stud): 1-0 {White wins by adjudication}
+Started game 22 of 100 (teacher vs stud)
+Finished game 21 (stud vs teacher): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 23 of 100 (stud vs teacher)
+Finished game 20 (teacher vs stud): 1-0 {White wins by adjudication}
+Started game 24 of 100 (teacher vs stud)
+Finished game 19 (stud vs teacher): 1/2-1/2 {Draw by adjudication}
+Started game 25 of 100 (stud vs teacher)
+Finished game 22 (teacher vs stud): 1-0 {White mates}
+Started game 26 of 100 (teacher vs stud)
+Finished game 23 (stud vs teacher): 0-1 {Black wins by adjudication}
+Started game 27 of 100 (stud vs teacher)
+Finished game 24 (teacher vs stud): 1-0 {White wins by adjudication}
+Started game 28 of 100 (teacher vs stud)
+Finished game 27 (stud vs teacher): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 29 of 100 (stud vs teacher)
+Finished game 25 (stud vs teacher): 1/2-1/2 {Draw by adjudication}
+Started game 30 of 100 (teacher vs stud)
+Finished game 28 (teacher vs stud): 1-0 {White wins by adjudication}
+Started game 31 of 100 (stud vs teacher)
+Finished game 26 (teacher vs stud): 1-0 {White wins by adjudication}
+Started game 32 of 100 (teacher vs stud)
+Finished game 29 (stud vs teacher): 0-1 {Black wins by adjudication}
+Started game 33 of 100 (stud vs teacher)
+Finished game 32 (teacher vs stud): 1-0 {White wins by adjudication}
+Started game 34 of 100 (teacher vs stud)
+Finished game 30 (teacher vs stud): 1-0 {White wins by adjudication}
+Started game 35 of 100 (stud vs teacher)
+Finished game 31 (stud vs teacher): 0-1 {Black wins by adjudication}
+Started game 36 of 100 (teacher vs stud)
+Finished game 33 (stud vs teacher): 0-1 {Black wins by adjudication}
+Started game 37 of 100 (stud vs teacher)
+Finished game 34 (teacher vs stud): 1-0 {White wins by adjudication}
+Started game 38 of 100 (teacher vs stud)
+Finished game 36 (teacher vs stud): 1-0 {White wins by adjudication}
+Started game 39 of 100 (stud vs teacher)
+Finished game 38 (teacher vs stud): 1-0 {White mates}
+Started game 40 of 100 (teacher vs stud)
+Finished game 35 (stud vs teacher): 0-1 {Black wins by adjudication}
+Started game 41 of 100 (stud vs teacher)
+Finished game 37 (stud vs teacher): 0-1 {Black wins by adjudication}
+Started game 42 of 100 (teacher vs stud)
+Finished game 40 (teacher vs stud): 1-0 {White wins by adjudication}
+Started game 43 of 100 (stud vs teacher)
+Finished game 42 (teacher vs stud): 1-0 {White wins by adjudication}
+Started game 44 of 100 (teacher vs stud)
+Finished game 39 (stud vs teacher): 0-1 {Black wins by adjudication}
+Started game 45 of 100 (stud vs teacher)
+Finished game 41 (stud vs teacher): 0-1 {Black wins by adjudication}
+Started game 46 of 100 (teacher vs stud)
+Finished game 44 (teacher vs stud): 1-0 {White mates}
+Started game 47 of 100 (stud vs teacher)
+Finished game 45 (stud vs teacher): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 48 of 100 (teacher vs stud)
+Finished game 43 (stud vs teacher): 0-1 {Black wins by adjudication}
+Started game 49 of 100 (stud vs teacher)
+Finished game 46 (teacher vs stud): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 50 of 100 (teacher vs stud)
+Finished game 47 (stud vs teacher): 1/2-1/2 {Draw by adjudication}
+Started game 51 of 100 (stud vs teacher)
+Finished game 49 (stud vs teacher): 1/2-1/2 {Draw by adjudication}
+Started game 52 of 100 (teacher vs stud)
+Finished game 50 (teacher vs stud): 1-0 {White wins by adjudication}
+Started game 53 of 100 (stud vs teacher)
+Finished game 48 (teacher vs stud): 1-0 {White wins by adjudication}
+Started game 54 of 100 (teacher vs stud)
+Finished game 51 (stud vs teacher): 0-1 {Black wins by adjudication}
+Started game 55 of 100 (stud vs teacher)
+Finished game 52 (teacher vs stud): 1-0 {White wins by adjudication}
+Started game 56 of 100 (teacher vs stud)
+Finished game 54 (teacher vs stud): 1-0 {White wins by adjudication}
+Started game 57 of 100 (stud vs teacher)
+Finished game 53 (stud vs teacher): 0-1 {Black wins by adjudication}
+Started game 58 of 100 (teacher vs stud)
+Finished game 55 (stud vs teacher): 0-1 {Black wins by adjudication}
+Started game 59 of 100 (stud vs teacher)
+Finished game 56 (teacher vs stud): 1-0 {White wins by adjudication}
+Started game 60 of 100 (teacher vs stud)
+Finished game 58 (teacher vs stud): 1-0 {White wins by adjudication}
+Started game 61 of 100 (stud vs teacher)
+Finished game 57 (stud vs teacher): 0-1 {Black mates}
+Started game 62 of 100 (teacher vs stud)
+Finished game 59 (stud vs teacher): 1/2-1/2 {Draw by insufficient mating material}
+Started game 63 of 100 (stud vs teacher)
+Finished game 60 (teacher vs stud): 1-0 {White wins by adjudication}
+Started game 64 of 100 (teacher vs stud)
+Finished game 62 (teacher vs stud): 1-0 {White wins by adjudication}
+Started game 65 of 100 (stud vs teacher)
+Finished game 61 (stud vs teacher): 1-0 {White wins by adjudication}
+Started game 66 of 100 (teacher vs stud)
+Finished game 63 (stud vs teacher): 0-1 {Black wins by adjudication}
+Started game 67 of 100 (stud vs teacher)
+Finished game 64 (teacher vs stud): 1-0 {White wins by adjudication}
+Started game 68 of 100 (teacher vs stud)
+Finished game 66 (teacher vs stud): 1-0 {White wins by adjudication}
+Started game 69 of 100 (stud vs teacher)
+Finished game 68 (teacher vs stud): 1-0 {White mates}
+Started game 70 of 100 (teacher vs stud)
+Finished game 65 (stud vs teacher): 0-1 {Black wins by adjudication}
+Started game 71 of 100 (stud vs teacher)
+Finished game 69 (stud vs teacher): 0-1 {Black wins by adjudication}
+Started game 72 of 100 (teacher vs stud)
+Finished game 67 (stud vs teacher): 0-1 {Black wins by adjudication}
+Started game 73 of 100 (stud vs teacher)
+Finished game 70 (teacher vs stud): 1-0 {White wins by adjudication}
+Started game 74 of 100 (teacher vs stud)
+Finished game 72 (teacher vs stud): 1-0 {White wins by adjudication}
+Started game 75 of 100 (stud vs teacher)
+Finished game 71 (stud vs teacher): 1/2-1/2 {Draw by adjudication}
+Started game 76 of 100 (teacher vs stud)
+Finished game 73 (stud vs teacher): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 77 of 100 (stud vs teacher)
+Finished game 76 (teacher vs stud): 1-0 {White wins by adjudication}
+Started game 78 of 100 (teacher vs stud)
+Finished game 75 (stud vs teacher): 0-1 {Black wins by adjudication}
+Started game 79 of 100 (stud vs teacher)
+Finished game 74 (teacher vs stud): 1-0 {White wins by adjudication}
+Started game 80 of 100 (teacher vs stud)
+Finished game 78 (teacher vs stud): 1-0 {White wins by adjudication}
+Started game 81 of 100 (stud vs teacher)
+Finished game 77 (stud vs teacher): 0-1 {Black wins by adjudication}
+Started game 82 of 100 (teacher vs stud)
+Finished game 80 (teacher vs stud): 1-0 {White wins by adjudication}
+Started game 83 of 100 (stud vs teacher)
+Finished game 79 (stud vs teacher): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 84 of 100 (teacher vs stud)
+Finished game 83 (stud vs teacher): 0-1 {Black wins by adjudication}
+Started game 85 of 100 (stud vs teacher)
+Finished game 81 (stud vs teacher): 0-1 {Black wins by adjudication}
+Started game 86 of 100 (teacher vs stud)
+Finished game 82 (teacher vs stud): 1-0 {White wins by adjudication}
+Started game 87 of 100 (stud vs teacher)
+Finished game 84 (teacher vs stud): 1-0 {White mates}
+Started game 88 of 100 (teacher vs stud)
+Finished game 85 (stud vs teacher): 0-1 {Black wins by adjudication}
+Started game 89 of 100 (stud vs teacher)
+Finished game 86 (teacher vs stud): 1-0 {White wins by adjudication}
+Started game 90 of 100 (teacher vs stud)
+Finished game 88 (teacher vs stud): 1-0 {White wins by adjudication}
+Started game 91 of 100 (stud vs teacher)
+Finished game 87 (stud vs teacher): 0-1 {Black wins by adjudication}
+Started game 92 of 100 (teacher vs stud)
+Finished game 89 (stud vs teacher): 1/2-1/2 {Draw by adjudication}
+Started game 93 of 100 (stud vs teacher)
+Finished game 91 (stud vs teacher): 1/2-1/2 {Draw by adjudication}
+Started game 94 of 100 (teacher vs stud)
+Finished game 90 (teacher vs stud): 1-0 {White wins by adjudication}
+Started game 95 of 100 (stud vs teacher)
+Finished game 92 (teacher vs stud): 1-0 {White wins by adjudication}
+Started game 96 of 100 (teacher vs stud)
+Finished game 93 (stud vs teacher): 0-1 {Black wins by adjudication}
+Started game 97 of 100 (stud vs teacher)
+Finished game 95 (stud vs teacher): 0-1 {Black wins by adjudication}
+Started game 98 of 100 (teacher vs stud)
+Finished game 94 (teacher vs stud): 1-0 {White wins by adjudication}
+Started game 99 of 100 (stud vs teacher)
+Finished game 96 (teacher vs stud): 1-0 {White wins by adjudication}
+Started game 100 of 100 (teacher vs stud)
+Finished game 100 (teacher vs stud): 1-0 {White mates}
+Finished game 97 (stud vs teacher): 0-1 {Black wins by adjudication}
+Finished game 99 (stud vs teacher): 1/2-1/2 {Draw by adjudication}
+Finished game 98 (teacher vs stud): 1-0 {White wins by adjudication}
+--------------------------------------------------
+Results of stud vs teacher (20000 nodes, 1t, 16MB, UHO_4060_v4.epd):
+Elo: -381.70 +/- 79.52, nElo: -694.87 +/- 68.10
+LOS: 0.00 %, DrawRatio: 4.00 %, PairsRatio: 0.00
+Games: 100, Wins: 1, Losses: 81, Draws: 18, Points: 10.0 (10.00 %)
+Ptnml(0-2): [32, 16, 2, 0, 0], WL/DD Ratio: 1.00
+--------------------------------------------------
+Finished match
+Total Time: 00:02:46 (hours:minutes:seconds)
+

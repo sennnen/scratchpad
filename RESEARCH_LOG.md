@@ -233,3 +233,22 @@ T1S1 +36.5 [11.7, 58.9], T1T2 +12.3 [-11.3, 36.0].
 => H3 supported: at equal data volume and generation cost, teacher-labelled positions from the
 student's *own* search trees beat positions from the teacher's search trees by ~+23 Elo (H=256).
 Single iteration only; whether further DAgger iterations keep paying is untested.
+
+## E8: escalation (H=1024, all session tree data)
+H=1024 (768 features) trained on all tree positions generated this session: run1 T1, T2 (teacher trees),
+S1 (student trees), E3 n1000_r08/n5000_r08/n20000_r08: ~144M positions, 4e8 training positions
+(2,251 s wall, 7,625 CPU-s, peak RSS ~6.3 GB). Validation: vgame 0.01192, vtree 0.01222, vstree 0.01113
+(vs 0.01557/0.01542/0.01531 for H=1024 on run1 only). Total generation compute behind the data:
+~7,490 (T1) + 7,580 (T2) + 7,730 (S1) + 3 x 1,872 (E3) = ~28,400 CPU-s (~7.9 CPU-hours).
+
+## E7: teacher gap of the E8 student (quantized incremental binary for both sides)
+- Quantized int16 incremental vs float student (same net, 20k nodes): +9.3 +/- 28.6 (300 games): neutral.
+- Student @20k nodes vs teacher @20k: -382 +/- 80 (100 games, 1-81-18).
+- Student @20k vs teacher @5k: -56 +/- 45 (150 games). Student @20k vs teacher @1.25k: +409 +/- 82.
+  => the student is worth a teacher searching ~1/5 of the nodes (teacher gains +465 from 1.25k->5k and
+  +326 from 5k->20k nodes in this ladder).
+- Equal time, 10+0.1, 1 thread: -330 +/- 54 (100 games, 0-74-26). Speed (8 s search, contended machine):
+  teacher 357k nps, H=1024 student 232k nps (my student inference is a naive autovectorised
+  implementation; the teacher's SFNNv18 code is heavily optimised), H=256 student 484k nps.
+Conclusion: ~8 CPU-hours of distillation on 4 cores yields a net ~380 Elo below master at equal nodes.
+It does not approach master strength; R1-R6 are about *relative* efficiency of data sources.
