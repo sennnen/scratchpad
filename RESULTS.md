@@ -15,7 +15,7 @@ from UHO_Lichess_4852_v1 openings. Matches: paired openings from a *different* b
 |---|---|---|
 | R1 | Distilling from positions sampled out of the teacher's **search trees** (its `evaluate()` calls) instead of game positions needs **~5x less generation compute for equal strength** than the best game-position pipeline found (100-node self-play), and is ~+250-300 Elo stronger at equal compute. Against standard 5000-node self-play data the saving is >= 32x. | Proven at small scale; replicated; robust over 5k-80k nodes |
 | R2 | Validation loss on held-out **search-tree** positions predicts Elo almost perfectly (Pearson 0.995, 18 students); loss on game positions does not (0.92, misranks by up to 264 Elo). | Proven within one teacher, same label type |
-| R3 | With game positions, extra capacity or richer features buy nothing or hurt; with tree positions every doubling of width adds ~+70 Elo. The gap between data sources widens with model size (~+680 Elo at H=1024). | Proven at H <= 1024 |
+| R3 | Capacity scaling is limited by data diversity: on standard 5000-node game data, more width or king buckets buy nothing or hurt; on tree data every width doubling adds ~+70 Elo; on fast-game (100-node) data H=512 adds +56. | Proven at H <= 1024 (game side to H=512) |
 | R4 | On-policy (DAgger-style) data: teacher-labelled positions from the **student's own** search trees beat the same amount of teacher-tree data by +22.6 [9.6, 35.7] (1,800 games). | Proven for one iteration at H=256 |
 | R5 | The position effect is not specific to distillation: with conventional 5000-node search-score labels on both sides, tree positions beat quiet game positions by +80 +/- 36 at equal label count and cost. | Single experiment (300 games) |
 | R6 | ~10 CPU-hours of distillation yields a student ~380 Elo below master at equal nodes (worth master at ~1/5 of the nodes) and -330 at equal time. It does **not** approach Stockfish strength. | Measured; negative for "comparable strength" |
@@ -46,8 +46,8 @@ chained through direct matches):
   game data (>= 32x), replicated on three disjoint data subsets (+147, +133, +81, each +/- ~47, LOS >=
   99.99%) and at 5k/20k/80k nodes (+123/+104/+141).
 - How the ratio evolved: my first baselines (5000-node games) gave ">= 32x"; cheaper game generation
-  (E9, E10) improved the game pipeline by ~+220 Elo and reduced the ratio to ~5x. A broader sweep of game
-  settings could reduce it further (E11 tests 30 nodes/move).
+  (E9, E10) improved the game pipeline by ~+220 Elo and reduced the ratio to ~5x. 30-node games did not
+  improve further (+19 +/- 48 vs 100-node, E11), so the game pipeline appears to plateau there.
 - Sample-matched (734k positions each, same 7,490 CPU-s run): tree +207 [162, 253] over game positions, so
   the distribution matters, not only the quantity.
 - Generation settings (equal compute): recording 8% instead of 2% and/or 20k instead of 5k nodes/move
@@ -63,7 +63,7 @@ The game-position student has lower game-position loss (0.0249) than three tree 
 111-264 Elo. The proxy also ranked all five E3 generation settings correctly. It does **not** transfer
 across label types (search-labelled students have worse teacher-MSE but can be stronger, E6).
 
-## R3. Capacity only helps with tree data
+## R3. Capacity scaling depends on data diversity
 
 Same run1 data (7,490 CPU-s), joint ladder (anchor game H=256 = 0), direct match in parentheses:
 
@@ -79,7 +79,9 @@ Mechanism evidence: tree positions are more unbalanced than game positions (mate
 32% vs 24%; median |teacher eval| 506 vs 317 internal units), and weak students search shallower at
 equal nodes (depth 8-9 vs 12-16) and hang material: eval errors off the game distribution corrupt pruning.
 At full data the gap grows with search effort (+545 at 20k, +655 at 80k nodes). Consistently, faster and
-weaker self-play (1000 nodes/move) produced *better* game-position data than 5000-node self-play (E9).
+weaker self-play produced much better game-position data (1000 nodes +69, 100 nodes ~+220 vs 5000-node
+games at <= 1/4 of the compute; plateau at 30-100 nodes), and on that larger, more diverse game data
+capacity helps again (H=512 vs H=256: +56 +/- 43, E11). The table above uses 5000-node game data.
 
 ## R4. On-policy data (one DAgger iteration)
 

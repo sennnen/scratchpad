@@ -32,7 +32,7 @@
         "additional_lines_rgx": [],
         "event_name": "Fastchess Tournament",
         "site": "?",
-        "file": "experiments/e10/matches/tree_f32_vs_game_n100_p3e7.pgn",
+        "file": "experiments/e11/matches/game_n100_h512_p3e7_vs_game_n100_p3e7.pgn",
         "notation": 0,
         "append_file": true,
         "track_nodes": false,
@@ -69,7 +69,7 @@
     "wait": 0,
     "autosaveinterval": 20,
     "games": 2,
-    "rounds": 150,
+    "rounds": 100,
     "concurrency": 4,
     "force_concurrency": false,
     "recover": false,
@@ -89,7 +89,7 @@
     },
     "engines": [
         {
-            "name": "tree_f32",
+            "name": "game_n100_h512_p3e7",
             "dir": "",
             "cmd": "/home/user/data/sf_research",
             "args": "",
@@ -97,7 +97,7 @@
             "options": [
                 [
                     "StudentFile",
-                    "/home/user/nets/e10/tree_f32.stud"
+                    "/home/user/nets/e10/game_n100_h512_p3e7.stud"
                 ],
                 [
                     "Threads",
@@ -156,16 +156,16 @@
         }
     ],
     "stats": {
-        "tree_f32 vs game_n100_p3e7": {
-            "wins": 101,
-            "losses": 167,
-            "draws": 32,
-            "penta_WW": 15,
-            "penta_WD": 11,
-            "penta_WL": 60,
-            "penta_DD": 1,
-            "penta_LD": 19,
-            "penta_LL": 44
+        "game_n100_h512_p3e7 vs game_n100_p3e7": {
+            "wins": 99,
+            "losses": 67,
+            "draws": 34,
+            "penta_WW": 21,
+            "penta_WD": 22,
+            "penta_WL": 35,
+            "penta_DD": 0,
+            "penta_LD": 12,
+            "penta_LL": 10
         }
     }
 }

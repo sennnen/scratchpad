@@ -283,3 +283,11 @@ strength with ~5x less generation compute (interpolating the tree curve between 
 ~330-360 CPU-s vs 1,870), and is ~+250-300 Elo stronger at equal compute (tree at 1,870 CPU-s: +465,
 or ~+516 with the E3 settings). The earlier ">= 32x" and ">= 8x" figures were relative to weaker game
 baselines and are superseded.
+
+## E11: game-pipeline plateau and capacity with good game data (correction to R3)
+- 30-node self-play (1,870 CPU-s, 2.37M game positions; per-move overhead dominates): vtree 0.03255;
+  vs 100-node data: +19 +/- 48 (n.s.). The game pipeline plateaus around 30-100 nodes/move.
+- H=512 on the 100-node game data (2.08M positions): vtree 0.03220; vs H=256 on the same data: +56 +/- 43
+  (LOS 99.4%). So the E4 finding "capacity does not help game data" holds for standard 5000-node game data
+  (734k positions) but not for larger/more diverse fast-game data, where H=512 gains about as much as
+  with tree data (+70). Revised R3: capacity scaling is limited by data diversity; tree data has the most.
