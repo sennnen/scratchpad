@@ -153,15 +153,15 @@
     ],
     "stats": {
         "qT186 vs master": {
-            "wins": 3,
-            "losses": 9,
-            "draws": 8,
+            "wins": 17,
+            "losses": 44,
+            "draws": 39,
             "penta_WW": 0,
-            "penta_WD": 0,
-            "penta_WL": 3,
-            "penta_DD": 1,
-            "penta_LD": 6,
-            "penta_LL": 0
+            "penta_WD": 6,
+            "penta_WL": 11,
+            "penta_DD": 5,
+            "penta_LD": 23,
+            "penta_LL": 5
         }
     }
 }

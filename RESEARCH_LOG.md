@@ -493,3 +493,11 @@ but Elo is not: **data multiplier ~1x** for unfiltered teacher-label re-distilla
 Correction to the P3/P4 picture: in the production architecture with a frozen FT, tree positions are
 clearly better than *fast-game* positions (+43) and under the quiet filter (P4, +83, being checked in P7),
 but not detectably better than standard 5000-node game positions without filtering.
+
+## BUG FOUND (ratings.py): non-optimal fixed point for star-shaped match graphs
+The joint fitter applied per-player Newton steps to all players *including the anchor* and then
+re-centred; it can stop where each player's step equals the anchor's step instead of the MLE. On P6's star
+graph (all nets vs master only) this shifted every player by ~+51. Replaced by full Newton on the anchored
+Hessian (exact). Re-fitting all earlier joint ladders (E1/E1b/E4, E2, P3) reproduces their point
+estimates exactly (those graphs converged correctly), so no earlier conclusion changes; only the P6
+ladder file written minutes earlier was wrong and has been regenerated.
