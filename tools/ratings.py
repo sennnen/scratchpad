@@ -30,6 +30,7 @@ def fit(matches, names, anchor, iters=3000):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("dirs", nargs="+"); ap.add_argument("--anchor", required=True)
+    ap.add_argument("--alias", nargs="*", default=[], help="old=new name merges")
     ap.add_argument("--boot", type=int, default=200); ap.add_argument("--nodes", type=int, default=None)
     a = ap.parse_args()
     ms = []
@@ -39,6 +40,8 @@ def main():
             if "ptnml" not in j: continue
             if a.nodes and f"nodes={a.nodes}" not in j["cmd"]: continue
             pa, pb = players(j["cmd"])
+            al = dict(x.split("=") for x in a.alias)
+            pa, pb = al.get(pa, pa), al.get(pb, pb)
             ms.append((pa, pb, np.array(j["ptnml"])))
     names = sorted({x for m in ms for x in m[:2]})
     def to_scores(ptn_list):

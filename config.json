@@ -32,7 +32,7 @@
         "additional_lines_rgx": [],
         "event_name": "Fastchess Tournament",
         "site": "?",
-        "file": "experiments/e1/matches/gq_teacher_p1.5e7_vs_game_teacher_p1.5e7.pgn",
+        "file": "experiments/e1b/matches/tree_f8_vs_game_f1.pgn",
         "notation": 0,
         "append_file": true,
         "track_nodes": false,
@@ -89,7 +89,7 @@
     },
     "engines": [
         {
-            "name": "gq_teacher_p1.5e7",
+            "name": "tree_f8",
             "dir": "",
             "cmd": "/home/user/data/sf_research",
             "args": "",
@@ -97,7 +97,7 @@
             "options": [
                 [
                     "StudentFile",
-                    "/home/user/nets/e1/gq_teacher_p1.5e7.stud"
+                    "/home/user/nets/e1b/tree_f8.stud"
                 ],
                 [
                     "Threads",
@@ -122,7 +122,7 @@
             "variant": 0
         },
         {
-            "name": "game_teacher_p1.5e7",
+            "name": "game_f1",
             "dir": "",
             "cmd": "/home/user/data/sf_research",
             "args": "",
@@ -130,7 +130,7 @@
             "options": [
                 [
                     "StudentFile",
-                    "/home/user/nets/e1/game_teacher_p1.5e7.stud"
+                    "/home/user/nets/e1b/game_f1.stud"
                 ],
                 [
                     "Threads",
@@ -156,16 +156,16 @@
         }
     ],
     "stats": {
-        "gq_teacher_p1.5e7 vs game_teacher_p1.5e7": {
-            "wins": 74,
-            "losses": 87,
-            "draws": 39,
-            "penta_WW": 12,
-            "penta_WD": 14,
-            "penta_WL": 36,
-            "penta_DD": 4,
-            "penta_LD": 17,
-            "penta_LL": 17
+        "tree_f8 vs game_f1": {
+            "wins": 178,
+            "losses": 16,
+            "draws": 6,
+            "penta_WW": 78,
+            "penta_WD": 6,
+            "penta_WL": 16,
+            "penta_DD": 0,
+            "penta_LD": 0,
+            "penta_LL": 0
         }
     }
 }

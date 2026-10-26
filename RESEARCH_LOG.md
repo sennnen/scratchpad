@@ -90,3 +90,28 @@ Observations:
   on off-distribution (material-imbalanced) positions degrade pruning, not just leaf accuracy.
 - Teacher static labels beat search-score labels (gq_teacher vs gq_score: +91), and WDL blending with
   5000-node self-play results hurts (-139 vs pure score) at this data scale.
+
+## E1b: data scaling (generation-compute fractions of run1), 20k nodes, joint fit with E1
+`--frac f` = first fraction f of each generation file = fraction f of the games = fraction f of the
+7,490 generation CPU-s. Training length: tree 1.6e7..1e8 positions, game ~20 epochs (best on validation).
+Joint Bradley-Terry fit (`experiments/e1b/ratings_joint.txt`, aliases game_f1=game_teacher_p1.5e7,
+tree_f1=tree_teacher), anchor game_teacher_p1.5e7 = 0:
+
+| gen. compute | tree-position student | game-position student (teacher labels) |
+|---|---|---|
+| 1/32 (234 CPU-s) | +111 [75,151] | |
+| 1/16 | +264 [214,311] | |
+| 1/8 | +398 [353,448] | |
+| 1/4 | +465 [413,516] | -362 [-430,-303] |
+| 1/2 | +520 [466,576] | -159 [-202,-113] |
+| 1 (7,490 CPU-s) | +545 [493,615] | 0 |
+Conventional baseline at full compute (quiet positions, 5000-node search-score labels): -113 [-165,-66].
+
+Direct check: tree_f32 vs game_f1: +104 +/- 49 (200 games, LOS 100%).
+=> A student distilled from teacher search-tree positions with 1/32 of the generation compute is
+stronger than any game-position student trained on all of it. Total CPU (generation + training):
+tree_f32 ~ 234 + ~70 = ~300 CPU-s vs game_f1 ~ 7,556 CPU-s: >= 25x less total compute, and +111 Elo.
+The tree curve flattens (+69, +56, +26 per doubling from 1/8 up), consistent with the 256-neuron
+student nearing capacity; the game curve is still steep (+203, +159 per doubling) but starts far lower.
+Caveats: small student (768->256), node-limited matches (equal nodes, not equal time), single teacher,
+one generation setting (5000 nodes/move). Distillation requires an existing strong net.
