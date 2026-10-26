@@ -153,15 +153,15 @@
     ],
     "stats": {
         "FT_M vs master": {
-            "wins": 34,
-            "losses": 55,
-            "draws": 71,
-            "penta_WW": 0,
-            "penta_WD": 16,
-            "penta_WL": 18,
-            "penta_DD": 15,
-            "penta_LD": 25,
-            "penta_LL": 6
+            "wins": 231,
+            "losses": 346,
+            "draws": 423,
+            "penta_WW": 9,
+            "penta_WD": 73,
+            "penta_WL": 140,
+            "penta_DD": 94,
+            "penta_LD": 162,
+            "penta_LL": 22
         }
     }
 }

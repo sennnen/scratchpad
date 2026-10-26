@@ -390,3 +390,7 @@ Arms (600k positions each, all non-check positions, no quiet filter): RS-G (run1
 self-play), RS-F (game positions from 100-node self-play = best game pipeline of Phase I), RS-T (run1 tree).
 LR chosen on pooled VG+VT validation (teacher target) with a G+T mix arm, then frozen.
 Primary endpoint: RS-T vs RS-F, 1000 games at 20k nodes. Secondary: RS-T vs RS-G, each vs master.
+P2-F1 secondary results (each vs master, 1000 games, 20k nodes): FT-G -25.1 +/- 12.7; FT-M -40.1 +/- 12.6;
+FT-T -66.8 +/- 13.4. Monotone in the tree fraction (0% / 50% / 100%). Direct FT-T vs FT-G -27.2 +/- 12.7.
+Conclusion P2-F1: with search-score labels and fine-tuning of a production net, uniformly sampled tree
+positions are harmful relative to game positions, and all such fine-tunes are below master.
