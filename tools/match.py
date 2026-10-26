@@ -11,7 +11,11 @@ def engine_args(spec, binary, nodes=None, tc=None):
     name, _, net = spec.partition("=")
     net, _, n_over = net.partition("@")
     a = ["-engine", f"cmd={binary}", f"name={name}"]
-    if net and net != "teacher":
+    if net.endswith(".nnue"):
+        if not os.path.isfile(net):
+            raise SystemExit(f"net not found: {net}")
+        a.append(f"option.EvalFile={net}")
+    elif net and net != "teacher":
         if not os.path.isfile(net):
             raise SystemExit(f"student net not found: {net} (would silently fall back to the teacher)")
         a.append(f"option.StudentFile={net}")

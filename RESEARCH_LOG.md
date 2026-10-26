@@ -313,3 +313,34 @@ Final R1: with tuned settings on both sides, tree distillation matches the best 
 with ~8x less data-generation compute (the ~5x interpolation in E10 used the untuned 5000-node/2% curve).
 Note: the vtree proxy under-rates the fast-game students (vtree 0.0327 but Elo ~ tree students at
 vtree ~0.029): R2 is reliable within a data family, less so across very different position sources.
+
+# Phase II (branch claude/phase2-search-tree-training)
+
+## P2 setup: architecture-identical fine-tuning of the production net
+Rationale: a full SFNNv18 retrain is impossible on 4 CPUs, but its 32 dense layer stacks (1.13M of
+~113M parameters) can be fine-tuned on CPU with the feature transformer frozen. Any change is then
+architecture-identical (same speed), so fixed-node Elo is equal-time Elo and a positive result would
+be directly fishtest-testable.
+Infrastructure (verified):
+- `tools/p2/nnue_stacks.py`: reads/writes the stacks (last 32 x 35,208 bytes of the .nnue; all 32 stack
+  hashes 0x63337116; read->write round trip byte-identical).
+- fork patch 0005: `ftdump` (u8[1024] FT output + bucket + Stockfish raw eval per record), `label`
+  now flags positions whose search best move is a capture/promotion (Rec.src bit 7).
+- `tools/p2/finetune.py`: float layer-stack model with fake quantisation; reproduces Stockfish's raw
+  eval from ftdump features within rounding (mean |diff| 0.50, max 0.9995 internal units, 3,000 positions).
+  Targets: search scores mapped through the inverse of scale_evaluation (optimism 0; inversion exact to
+  <= 1 unit), so the fine-tuned raw output is calibrated for Stockfish's own rescaling.
+Data P2-D1: from run1 (master self-play, 5000 nodes/move, seeds 101-104): 300k game positions (G), 300k
+tree positions (T); held-out from val games (seeds 901-904): 20k VG, 20k VT. All re-labelled by the
+same 5000-node search (`label`), so labels are identical in kind for G and T.
+
+## PRE-REGISTRATION P2-F1 (written before any fine-tuning result)
+Question: fine-tuning master's layer stacks on search-labelled positions, do tree positions beat game
+positions (same label procedure, same count, same hyperparameters)?
+- Arms: FT-G (game), FT-T (tree), FT-M (50/50). Default: quiet filter (drop best-move-is-capture) applied
+  identically to all arms, as nnue-pytorch's smart fen skipping does. Same steps, LR, anchor, seed.
+- Hyperparameters (LR, anchor, steps) chosen ONLY on validation loss on the pooled VG+VT set, using FT-M,
+  then frozen for all arms.
+- Primary endpoint: direct match FT-T vs FT-G, 20k nodes, >= 1000 games. Secondary: each vs master.
+- A "Stockfish improvement" claim requires: candidate vs master > 0 with LOS >= 99% on >= 4000 games at
+  fixed nodes AND confirmation at STC (10+0.1) on an independent opening seed.
