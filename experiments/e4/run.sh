@@ -8,8 +8,14 @@ tr tree_h512 --src 1 --H 512 --positions 1.5e8
 tr tree_h1024 --src 1 --H 1024 --positions 1.5e8
 tr game_h512 --src 0 --H 512 --positions 1.5e7
 tr game_h1024 --src 0 --H 1024 --positions 1.5e7
+T=/home/user/nets/trainer.kb
+tr tree_kb256 --src 1 --H 256 --fset 1 --positions 1.5e8
+tr tree_kb512 --src 1 --H 512 --fset 1 --positions 1.5e8
+tr game_kb256 --src 0 --H 256 --fset 1 --positions 1.5e7
 cp /home/user/nets/e1/tree_teacher.stud $O/tree_h256.stud; cp /home/user/nets/e1/game_teacher_p1.5e7.stud $O/game_h256.stud
 cd /home/user/scratchpad; R=experiments/e4/matches
+export SF_BIN=/home/user/data/sf_research_kb  # quantized incremental eval for all E4 matches
 m() { [ -f $R/$1_vs_$2.json ] || python3 tools/match.py $1=$O/$1.stud $2=$O/$2.stud --nodes 20000 --rounds 100 --out $R/$1_vs_$2 | tail -1 | sed "s/'cmd'[^]]*\],//; s/=[^ ]*stud//g"; }
 m tree_h512 tree_h256; m tree_h1024 tree_h512; m game_h512 game_h256; m game_h1024 game_h512
+m tree_kb256 tree_h256; m tree_kb512 tree_kb256; m game_kb256 game_h256; m tree_kb512 tree_h1024
 echo E4_DONE

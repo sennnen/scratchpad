@@ -1,0 +1,8 @@
+{
+ "out": "/home/user/nets/e2/base_T1S1.stud", "label": "teacher", "lam": 0.7, "src": 1, "H": 256, "batch": 16384,
+ "frac": 1, "skip": 0, "positions": 2e+08, "lr": 0.002, "wd": 0, "seed": 0, "n_train_unique": 49295132, "steps": 12207,
+ "train_files": ["/home/user/data/run1/d1.bin", "/home/user/data/run1/d2.bin", "/home/user/data/run1/d3.bin", "/home/user/data/run1/d4.bin", "/home/user/data/e2/S1.1.bin", "/home/user/data/e2/S1.2.bin", "/home/user/data/e2/S1.3.bin", "/home/user/data/e2/S1.4.bin"],
+ "wall_s": 291.37, "cpu_s": 953.24, "peak_rss_mb": 2383.8,
+ "loss_hist": [[0, 0.126273], [610, 0.023870], [1220, 0.019934], [1830, 0.018490], [2440, 0.017036], [3050, 0.016673], [3660, 0.016659], [4270, 0.016330], [4880, 0.016218], [5490, 0.015496], [6100, 0.015480], [6710, 0.015180], [7320, 0.014621], [7930, 0.015150], [8540, 0.014348], [9150, 0.014361], [9760, 0.014272], [10370, 0.014050], [10980, 0.013538], [11590, 0.013800], [12200, 0.014010], [12206, 0.014298]],
+ "val": {"vgame": {"mse_sig": 0.0166748, "mae_iu": 315.01, "n": 28480}, "vtree": {"mse_sig": 0.0170584, "mae_iu": 353.86, "n": 400000}, "vstree": {"mse_sig": 0.0158315, "mae_iu": 441.85, "n": 400000}}
+}

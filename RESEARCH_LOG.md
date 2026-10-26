@@ -132,3 +132,21 @@ different distributions; loss on positions sampled from search trees is a near-p
   Accuracy vs float reference on 5000 search positions: mean |diff| 2.1, max 8 internal units.
   Speed: ~560-780k nps under heavy contention (~2x the float student). Binary: sf_research_q.
   Running experiments (E2/E3/E1c/E4) keep the float binary for consistency.
+
+## E2: on-policy (DAgger-style) data vs more teacher-tree data
+Data: S1 = 6000 self-play games where the *student* (E1 tree_teacher, H=256) searches (5000 nodes/move),
+2% of its evaluate() calls recorded with teacher labels: 24.1M positions, ~7,730 CPU-s (student search
+was not faster than the teacher's with the float evaluator). T2 = 6000 more teacher self-play games
+(seeds 201-204): 25.3M positions, ~7,580 CPU-s. Student self-play is more decisive (W/D/L from white
+2371/1611/2018 vs teacher 1973/2641/1386).
+Distribution stats (1M samples): share with material imbalance >= 300: game 0.241, teacher-tree 0.318,
+student-tree 0.341; median |teacher eval| 317 / 506 / 788 internal units.
+New validation set vs.bin: student (tree_teacher) self-play trees, seeds 951-954.
+All H=256, 2e8 training positions:
+| data | vgame | vtree | vstree |
+|---|---|---|---|
+| T1 (25M) | 0.01721 | 0.01702 | 0.01741 |
+| T1+T2 (50M) | 0.01633 | 0.01658 | 0.01662 |
+| T1+S1 (49M) | 0.01667 | 0.01706 | 0.01583 |
+Note: T1 trained for 2e8 instead of 1e8 positions improves vtree 0.01863 -> 0.01702, so E1b's fixed
+budgets understate the large-data points (the efficiency claim R1 is conservative in that respect).

@@ -1,0 +1,119 @@
+From 2f07273b8dd204183b8fab09568cd914459e02c4 Mon Sep 17 00:00:00 2001
+From: research <research@localhost>
+Date: Mon, 26 Oct 2026 03:25:44 +0000
+Subject: [PATCH] research: label command (re-label records with N-node search)
+
+---
+ src/gendata.cpp | 74 +++++++++++++++++++++++++++++++++++++++++++++++++
+ src/uci.cpp     |  6 ++++
+ 2 files changed, 80 insertions(+)
+
+diff --git a/src/gendata.cpp b/src/gendata.cpp
+index 082fa359..5cde9efd 100644
+--- a/src/gendata.cpp
++++ b/src/gendata.cpp
+@@ -175,3 +175,77 @@ void gendata(Engine& engine, std::istringstream& is) {
+ }
+ 
+ }  // namespace Stockfish
++
++namespace Stockfish {
++// label in FILE out FILE nodes N [max K] [skip S]: re-label records with a fresh N-node search score
++// (Rec.score, stm view). Castling/en-passant rights are not stored in records and are dropped.
++void label(Engine& engine, std::istringstream& is);
++void label(Engine& engine, std::istringstream& is) {
++    std::string in, out, token;
++    u64         nodes = 5000, maxRecs = ~u64(0), skip = 0;
++    while (is >> token)
++    {
++        if (token == "in") is >> in;
++        else if (token == "out") is >> out;
++        else if (token == "nodes") is >> nodes;
++        else if (token == "max") is >> maxRecs;
++        else if (token == "skip") is >> skip;
++    }
++    FILE* fi = std::fopen(in.c_str(), "rb");
++    FILE* fo = std::fopen(out.c_str(), "ab");
++    if (!fi || !fo) { std::cout << "info string label: cannot open files" << std::endl; return; }
++    std::fseek(fi, long(skip * sizeof(Research::Rec)), SEEK_SET);
++    int lastScore = 0;
++    engine.set_on_update_full([&](const Engine::InfoFull& i) {
++        i.score.visit([&](const auto& v) {
++            using T = std::decay_t<decltype(v)>;
++            if constexpr (std::is_same_v<T, Score::InternalUnits>) lastScore = v.value;
++            else if constexpr (std::is_same_v<T, Score::Mate>) lastScore = v.plies > 0 ? 32000 : -32000;
++            else lastScore = v.win ? 31000 : -31000;
++        });
++    });
++    engine.set_on_update_no_moves([&](const Engine::InfoShort&) {});
++    engine.set_on_iter([&](const Engine::InfoIter&) {});
++    engine.set_on_bestmove([&](std::string_view, std::string_view) {});
++    static const char* pc = " PNBRQK  pnbrqk";
++    Research::Rec r;
++    u64 done = 0, skipped = 0;
++    auto t0 = std::chrono::steady_clock::now();
++    while (done < maxRecs && std::fread(&r, sizeof r, 1, fi) == 1)
++    {
++        std::string fen;
++        for (int rank = 7; rank >= 0; --rank)
++        {
++            int empty = 0;
++            for (int file = 0; file < 8; ++file)
++            {
++                int s = rank * 8 + file, code = (r.board[s >> 1] >> ((s & 1) * 4)) & 15;
++                if (!code) { ++empty; continue; }
++                if (empty) { fen += char('0' + empty); empty = 0; }
++                fen += pc[code];
++            }
++            if (empty) fen += char('0' + empty);
++            if (rank) fen += '/';
++        }
++        fen += r.stm ? " b - - " : " w - - ";
++        fen += std::to_string(r.rule50) + " 1";
++        if (engine.set_position(fen, {}).has_value()) { ++skipped; continue; }
++        Search::LimitsType limits;
++        limits.startTime = now();
++        limits.nodes     = nodes;
++        engine.go(limits);
++        engine.wait_for_search_finished();
++        r.score = int16_t(std::clamp(lastScore, -32000, 32000));
++        std::fwrite(&r, sizeof r, 1, fo);
++        if (++done % 10000 == 0)
++        {
++            double secs = std::chrono::duration<double>(std::chrono::steady_clock::now() - t0).count();
++            std::cout << "info string label " << done << " skipped " << skipped << " secs " << secs << std::endl;
++            std::fflush(fo);
++        }
++    }
++    std::fclose(fi);
++    std::fclose(fo);
++    std::cout << "info string label done " << done << " skipped " << skipped << std::endl;
++}
++}  // namespace Stockfish
+diff --git a/src/uci.cpp b/src/uci.cpp
+index e951a8d3..3da198f6 100644
+--- a/src/uci.cpp
++++ b/src/uci.cpp
+@@ -46,6 +46,7 @@
+ namespace Stockfish {
+ 
+ void gendata(Engine& engine, std::istringstream& is);
++void label(Engine& engine, std::istringstream& is);
+ 
+ using Time = std::chrono::steady_clock;
+ using ms   = std::chrono::milliseconds;
+@@ -170,6 +171,11 @@ void UCIEngine::loop() {
+             gendata(engine, is);
+             init_search_update_listeners();
+         }
++        else if (token == "label")
++        {
++            label(engine, is);
++            init_search_update_listeners();
++        }
+         else if (token == "export_net")
+         {
+             std::optional<std::filesystem::path> file;
+-- 
+2.43.0
+
