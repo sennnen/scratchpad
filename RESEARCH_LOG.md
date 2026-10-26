@@ -598,3 +598,14 @@ training positions each. Validation (VG/VT/VS): ON_2 0.01685/0.01723/0.01581; OF
 - ON_2 vs ON_1: -15.1 +/- 21.7 (600); OFF_2 vs OFF_1: +16.2 +/- 20.8 (600): no measurable progress for
   either arm; the H=256 student is capacity-saturated (as already seen in E2: +12 n.s. for 2x teacher data).
 Iteration 3 is running to distinguish plateau from oscillation.
+
+## C1 iteration 3 and conclusion
+S3 = self-play of ON_2 (teacher labels), Tc3 = teacher self-play, same seeds (12301-12304), 1500 games x 8%.
+Validation (VG/VT/VS): ON_3 0.01644/0.01704/0.01550; OFF_3 0.01637/0.01650/0.01693.
+- ON_3 vs OFF_3: **+24.0 +/- 16.2** (1000 games). ON_3 vs ON_2: +7.0 +/- 21.0; OFF_3 vs OFF_2: +5.2 +/- 22.4.
+- Joint ladder (anchor T1-only): ON_1 +37.3, ON_2 +27.1, ON_3 +41.0; OFF_1 +11.5, OFF_2 +22.8, OFF_3 +21.1.
+- **Pooled ON vs OFF over the three iterations (3,800 games): +17.8 [9.1, 26.6].**
+Conclusion: iterating does not keep improving an H=256 student (capacity plateau after iteration 1), but
+the on-policy arm stays ahead of the matched off-policy arm at every iteration; iteration 2's +3 was
+within noise (correction to the iteration-2 entry, which said the edge "vanishes"). No instability or
+oscillation beyond match noise was observed.

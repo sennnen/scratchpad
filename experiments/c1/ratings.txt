@@ -1,0 +1,19 @@
+player                                elo             95% CI
+ON_3                                 41.0   [    8.0,    74.3]
+base_T1S1                            37.3   [   12.8,    59.0]
+ON_2                                 27.1   [   -0.8,    56.2]
+OFF_2                                22.8   [   -5.0,    50.9]
+OFF_3                                21.1   [  -11.2,    53.6]
+base_T1T2                            11.5   [  -11.8,    35.4]
+base_T1_2e8                           0.0   [    0.0,     0.0]
+matches:
+  OFF_2 vs base_T1T2: ptnml [19, 65, 117, 67, 32] games 600
+  OFF_3 vs OFF_2: ptnml [31, 61, 111, 62, 35] games 600
+  ON_2 vs OFF_2: ptnml [56, 90, 197, 103, 54] games 1000
+  ON_2 vs base_T1S1: ptnml [34, 67, 117, 55, 27] games 600
+  ON_3 vs OFF_3: ptnml [38, 79, 216, 110, 57] games 1000
+  ON_3 vs ON_2: ptnml [25, 61, 119, 67, 28] games 600
+  base_T1S1 vs base_T1T2: ptnml [35, 45, 125, 51, 44] games 600
+  base_T1S1 vs base_T1T2: ptnml [51, 104, 232, 127, 86] games 1200
+  base_T1S1 vs base_T1_2e8: ptnml [10, 26, 54, 34, 26] games 300
+  base_T1T2 vs base_T1_2e8: ptnml [22, 25, 56, 23, 24] games 300

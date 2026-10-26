@@ -25,7 +25,7 @@ pre-registered in RESEARCH_LOG before results.
 | Q5 | The quiet filter (drop capture-best positions) helps tree data and **hurts game data** under teacher labels. | quiet game -146 vs unfiltered -98 (vs master); SEE-filtered game -22 +/- 17 |
 | Q6 | Most of the tree advantage lives in **feature learning**; the readout benefits only when features lack coverage. | tree-trained vs game-trained features +531 +/- 104; readout effect +186 (game features) vs +3 (tree features) |
 | Q7 | Selecting "informative" tree positions loses to uniform sampling: near the alpha-beta window -531, far -119, main search only -80, by student error -100 to -849. | B1/B3/B2, 200 games each |
-| Q8 | On-policy data helps weak students for one iteration only, and not near-teacher students. | iteration 1 +22.6 [9.6, 35.7]; iteration 2 +3 +/- 17; production +6 +/- 13 |
+| Q8 | On-policy data gives weak students a persistent edge over matched off-policy data, but iterating does not keep improving a capacity-limited student; no detectable benefit for a near-teacher student. | pooled over 3 iterations +17.8 [9.1, 26.6] (3,800 games); per iteration +22.6 / +3.1 / +24.0; production +6 +/- 13 |
 
 ## Measured but small or inconclusive
 - Tree vs standard 5000-node game positions, unfiltered teacher labels, production stacks: +12.9 +/- 13.3
@@ -51,8 +51,8 @@ damaged coverage and lost. When features are already good (Stockfish's feature t
 billions of positions), the remaining readout is largely distribution-insensitive, so the gain shrinks to
 ~+14 Elo. Fine-tuning a strong net on a small, shallow-search-labelled sample moves it away from an
 optimum it reached with far better data, and tree positions, whose search labels are noisiest, move it
-furthest. On-policy data corrects the covariate shift between student and teacher trees, which only
-matters while that shift is large.
+furthest. On-policy data corrects the covariate shift between student and teacher trees: a persistent ~+18 Elo
+for a weak student, nothing detectable once the student is within ~40 Elo of its teacher.
 
 ## Bugs found and corrected in Phase II
 - Recorded search scores were centipawns, not internal units: all Phase I search-label results were
