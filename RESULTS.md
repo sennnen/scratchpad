@@ -32,6 +32,11 @@ score): -113 [-165, -66]; with 0.7 score + 0.3 game result: -252 [-315, -198]; w
   conventional-label student by ~+224 Elo. Counting training too, total CPU is ~300 s vs ~7,556 s (>=25x).
 - Sample-matched (734k positions each): tree positions still +207 [162, 253] over game positions, so
   the gain is not only quantity; the position distribution itself matters.
+- Replicated (E1c) on 4 disjoint 1/32 subsets: +104, +147, +133, +81 (each +/-~47, all LOS >= 99.99%).
+  Robust across node budgets: +123 (5k), +104 (20k), +141 (80k nodes/move). At full data the gap grows
+  with search effort: +545 at 20k, +655 at 80k nodes.
+- Generation settings (E3, equal compute): recording 8% instead of 2% of evaluate() calls and/or deeper
+  per-move searches adds up to +51 +/- 38, so the 2% setting behind the >=32x figure is conservative.
 
 ## R2. Search-tree validation loss predicts strength; game-position validation loss does not
 
@@ -52,4 +57,11 @@ decisions, not just leaf scores. Tree positions cover exactly those positions.
 - Distillation presupposes a strong teacher network; this is a method for transferring/bootstrapping
   strength (e.g. into new architectures), not for learning chess from scratch.
 
-(Pending: E2 on-policy/DAgger, E3 generation settings, E1c replication, E4 capacity scaling.)
+## R4 (preliminary). On-policy data from the student's own searches
+
+At H=256 doubling teacher-tree data no longer adds measurable Elo (+2 +/- 35), while adding the same
+amount of the *student's* search-tree positions (teacher-labelled, DAgger-style) adds +47 +/- 32
+(LOS 99.8%). Joint fit: on-policy +34 [8, 58] vs more teacher data +14 [-10, 41]. The direct head-to-head
+(+14 +/- 23, 600 games) is not yet significant; more games are queued.
+
+(Pending: E4 capacity scaling, E6 teacher-free variant, E7 teacher gap / equal time.)
