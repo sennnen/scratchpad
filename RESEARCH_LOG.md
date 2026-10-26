@@ -302,3 +302,14 @@ Same 1,870 CPU-s budget, 25% of evaluate() calls recorded (seeds 7001-7004), H=2
 Opposite to game data: tree positions from deeper per-move searches are worth more (shallow trees are
 dominated by near-root, highly correlated nodes). The vtree proxy again orders the three correctly.
 Best tree recipe found: >= 5000-20000 nodes/move, record 8%+ of evaluate() calls.
+
+## E13: headline ratio with the best settings found on both sides
+Tree: 20000 nodes/move, 8% recording (E3 best), 4 procs x 59 s = 234 CPU-s (2.92M positions) and x 117 s =
+468 CPU-s (6.32M), H=256, 3.2e7 training positions. Game: 100-node self-play, 1,870 CPU-s (E10 best,
+game_n100_p3e7). 300 games each:
+- tree_c234 vs game_n100_p3e7: -13 +/- 36 (n.s.) -> equal strength at **8x less** generation compute.
+- tree_c468 vs game_n100_p3e7: **+61 +/- 38** (LOS 99.94%) at 4x less compute.
+Final R1: with tuned settings on both sides, tree distillation matches the best game-position pipeline
+with ~8x less data-generation compute (the ~5x interpolation in E10 used the untuned 5000-node/2% curve).
+Note: the vtree proxy under-rates the fast-game students (vtree 0.0327 but Elo ~ tree students at
+vtree ~0.029): R2 is reliable within a data family, less so across very different position sources.

@@ -1,0 +1,619 @@
+/home/user/work/fastchess/fastchess -engine cmd=/home/user/data/sf_research name=tree_c234 option.StudentFile=/home/user/nets/e13/tree_c234.stud tc=inf nodes=20000 -engine cmd=/home/user/data/sf_research name=game_n100_p3e7 option.StudentFile=/home/user/nets/e13/game_n100_p3e7.stud tc=inf nodes=20000 -each option.Threads=1 option.Hash=16 -openings file=/home/user/data/UHO_4060_v4.epd format=epd order=random -srand 1 -repeat -rounds 150 -concurrency 4 -resign movecount=3 score=1000 twosided=true -draw movenumber=40 movecount=8 score=8 -pgnout file=experiments/e13/matches/tree_c234_vs_game_n100_p3e7.pgn -ratinginterval 100
+Indexing opening suite...
+Started game 1 of 300 (tree_c234 vs game_n100_p3e7)
+Started game 2 of 300 (game_n100_p3e7 vs tree_c234)
+Started game 4 of 300 (game_n100_p3e7 vs tree_c234)
+Started game 3 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 1 (tree_c234 vs game_n100_p3e7): 1-0 {White wins by adjudication}
+Started game 5 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 4 (game_n100_p3e7 vs tree_c234): 0-1 {Black wins by adjudication}
+Started game 6 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 3 (tree_c234 vs game_n100_p3e7): 0-1 {Black mates}
+Started game 7 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 2 (game_n100_p3e7 vs tree_c234): 0-1 {Black wins by adjudication}
+Started game 8 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 6 (game_n100_p3e7 vs tree_c234): 1-0 {White wins by adjudication}
+Started game 9 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 5 (tree_c234 vs game_n100_p3e7): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 10 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 7 (tree_c234 vs game_n100_p3e7): 0-1 {Black wins by adjudication}
+Started game 11 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 8 (game_n100_p3e7 vs tree_c234): 1-0 {White wins by adjudication}
+Started game 12 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 11 (tree_c234 vs game_n100_p3e7): 1-0 {White wins by adjudication}
+Started game 13 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 9 (tree_c234 vs game_n100_p3e7): 1-0 {White wins by adjudication}
+Started game 14 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 10 (game_n100_p3e7 vs tree_c234): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 15 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 13 (tree_c234 vs game_n100_p3e7): 1-0 {White wins by adjudication}
+Started game 16 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 12 (game_n100_p3e7 vs tree_c234): 1-0 {White wins by adjudication}
+Started game 17 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 14 (game_n100_p3e7 vs tree_c234): 1-0 {White wins by adjudication}
+Started game 18 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 15 (tree_c234 vs game_n100_p3e7): 0-1 {Black wins by adjudication}
+Started game 19 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 16 (game_n100_p3e7 vs tree_c234): 1-0 {White wins by adjudication}
+Started game 20 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 17 (tree_c234 vs game_n100_p3e7): 0-1 {Black wins by adjudication}
+Started game 21 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 18 (game_n100_p3e7 vs tree_c234): 0-1 {Black wins by adjudication}
+Started game 22 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 19 (tree_c234 vs game_n100_p3e7): 1-0 {White wins by adjudication}
+Started game 23 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 20 (game_n100_p3e7 vs tree_c234): 1/2-1/2 {Draw by insufficient mating material}
+Started game 24 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 22 (game_n100_p3e7 vs tree_c234): 1-0 {White wins by adjudication}
+Started game 25 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 21 (tree_c234 vs game_n100_p3e7): 1-0 {White wins by adjudication}
+Started game 26 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 23 (tree_c234 vs game_n100_p3e7): 1-0 {White wins by adjudication}
+Started game 27 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 25 (tree_c234 vs game_n100_p3e7): 1-0 {White wins by adjudication}
+Started game 28 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 26 (game_n100_p3e7 vs tree_c234): 0-1 {Black wins by adjudication}
+Started game 29 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 24 (game_n100_p3e7 vs tree_c234): 1-0 {White mates}
+Started game 30 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 27 (tree_c234 vs game_n100_p3e7): 1-0 {White wins by adjudication}
+Started game 31 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 29 (tree_c234 vs game_n100_p3e7): 0-1 {Black wins by adjudication}
+Started game 32 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 28 (game_n100_p3e7 vs tree_c234): 0-1 {Black wins by adjudication}
+Started game 33 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 31 (tree_c234 vs game_n100_p3e7): 1-0 {White wins by adjudication}
+Started game 34 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 32 (game_n100_p3e7 vs tree_c234): 1-0 {White wins by adjudication}
+Started game 35 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 30 (game_n100_p3e7 vs tree_c234): 1-0 {White wins by adjudication}
+Started game 36 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 33 (tree_c234 vs game_n100_p3e7): 1-0 {White wins by adjudication}
+Started game 37 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 34 (game_n100_p3e7 vs tree_c234): 1-0 {White wins by adjudication}
+Started game 38 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 36 (game_n100_p3e7 vs tree_c234): 1-0 {White wins by adjudication}
+Started game 39 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 35 (tree_c234 vs game_n100_p3e7): 1/2-1/2 {Draw by adjudication}
+Started game 40 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 37 (tree_c234 vs game_n100_p3e7): 1-0 {White wins by adjudication}
+Started game 41 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 41 (tree_c234 vs game_n100_p3e7): 1-0 {White wins by adjudication}
+Started game 42 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 38 (game_n100_p3e7 vs tree_c234): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 43 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 40 (game_n100_p3e7 vs tree_c234): 0-1 {Black wins by adjudication}
+Started game 44 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 39 (tree_c234 vs game_n100_p3e7): 1-0 {White wins by adjudication}
+Started game 45 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 42 (game_n100_p3e7 vs tree_c234): 0-1 {Black wins by adjudication}
+Started game 46 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 43 (tree_c234 vs game_n100_p3e7): 0-1 {Black wins by adjudication}
+Started game 47 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 44 (game_n100_p3e7 vs tree_c234): 0-1 {Black wins by adjudication}
+Started game 48 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 45 (tree_c234 vs game_n100_p3e7): 1-0 {White wins by adjudication}
+Started game 49 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 46 (game_n100_p3e7 vs tree_c234): 1-0 {White wins by adjudication}
+Started game 50 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 48 (game_n100_p3e7 vs tree_c234): 0-1 {Black wins by adjudication}
+Started game 51 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 47 (tree_c234 vs game_n100_p3e7): 0-1 {Black wins by adjudication}
+Started game 52 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 49 (tree_c234 vs game_n100_p3e7): 0-1 {Black wins by adjudication}
+Started game 53 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 50 (game_n100_p3e7 vs tree_c234): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 54 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 51 (tree_c234 vs game_n100_p3e7): 1-0 {White wins by adjudication}
+Started game 55 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 52 (game_n100_p3e7 vs tree_c234): 1-0 {White wins by adjudication}
+Started game 56 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 53 (tree_c234 vs game_n100_p3e7): 1-0 {White wins by adjudication}
+Started game 57 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 54 (game_n100_p3e7 vs tree_c234): 1-0 {White wins by adjudication}
+Started game 58 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 55 (tree_c234 vs game_n100_p3e7): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 59 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 56 (game_n100_p3e7 vs tree_c234): 1-0 {White wins by adjudication}
+Started game 60 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 60 (game_n100_p3e7 vs tree_c234): 0-1 {Black wins by adjudication}
+Started game 61 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 59 (tree_c234 vs game_n100_p3e7): 1-0 {White wins by adjudication}
+Started game 62 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 57 (tree_c234 vs game_n100_p3e7): 0-1 {Black wins by adjudication}
+Started game 63 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 58 (game_n100_p3e7 vs tree_c234): 0-1 {Black mates}
+Started game 64 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 61 (tree_c234 vs game_n100_p3e7): 0-1 {Black wins by adjudication}
+Started game 65 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 62 (game_n100_p3e7 vs tree_c234): 0-1 {Black wins by adjudication}
+Started game 66 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 63 (tree_c234 vs game_n100_p3e7): 1-0 {White wins by adjudication}
+Started game 67 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 66 (game_n100_p3e7 vs tree_c234): 1-0 {White wins by adjudication}
+Started game 68 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 64 (game_n100_p3e7 vs tree_c234): 1-0 {White wins by adjudication}
+Started game 69 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 67 (tree_c234 vs game_n100_p3e7): 1-0 {White wins by adjudication}
+Started game 70 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 65 (tree_c234 vs game_n100_p3e7): 1-0 {White mates}
+Started game 71 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 68 (game_n100_p3e7 vs tree_c234): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 72 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 69 (tree_c234 vs game_n100_p3e7): 1-0 {White wins by adjudication}
+Started game 73 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 72 (game_n100_p3e7 vs tree_c234): 1-0 {White wins by adjudication}
+Started game 74 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 70 (game_n100_p3e7 vs tree_c234): 1/2-1/2 {Draw by insufficient mating material}
+Started game 75 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 71 (tree_c234 vs game_n100_p3e7): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 76 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 75 (tree_c234 vs game_n100_p3e7): 0-1 {Black wins by adjudication}
+Started game 77 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 74 (game_n100_p3e7 vs tree_c234): 1-0 {White wins by adjudication}
+Started game 78 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 73 (tree_c234 vs game_n100_p3e7): 0-1 {Black wins by adjudication}
+Started game 79 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 76 (game_n100_p3e7 vs tree_c234): 0-1 {Black wins by adjudication}
+Started game 80 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 79 (tree_c234 vs game_n100_p3e7): 1-0 {White wins by adjudication}
+Started game 81 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 78 (game_n100_p3e7 vs tree_c234): 1-0 {White wins by adjudication}
+Started game 82 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 77 (tree_c234 vs game_n100_p3e7): 1/2-1/2 {Draw by insufficient mating material}
+Started game 83 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 81 (tree_c234 vs game_n100_p3e7): 1-0 {White wins by adjudication}
+Started game 84 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 80 (game_n100_p3e7 vs tree_c234): 0-1 {Black wins by adjudication}
+Started game 85 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 82 (game_n100_p3e7 vs tree_c234): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 86 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 85 (tree_c234 vs game_n100_p3e7): 0-1 {Black wins by adjudication}
+Started game 87 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 84 (game_n100_p3e7 vs tree_c234): 1-0 {White wins by adjudication}
+Started game 88 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 83 (tree_c234 vs game_n100_p3e7): 1/2-1/2 {Draw by adjudication}
+Started game 89 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 87 (tree_c234 vs game_n100_p3e7): 1-0 {White wins by adjudication}
+Started game 90 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 86 (game_n100_p3e7 vs tree_c234): 0-1 {Black wins by adjudication}
+Started game 91 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 88 (game_n100_p3e7 vs tree_c234): 1/2-1/2 {Draw by insufficient mating material}
+Started game 92 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 90 (game_n100_p3e7 vs tree_c234): 1-0 {White mates}
+Started game 93 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 89 (tree_c234 vs game_n100_p3e7): 1/2-1/2 {Draw by adjudication}
+Started game 94 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 91 (tree_c234 vs game_n100_p3e7): 1-0 {White wins by adjudication}
+Started game 95 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 92 (game_n100_p3e7 vs tree_c234): 1-0 {White wins by adjudication}
+Started game 96 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 93 (tree_c234 vs game_n100_p3e7): 0-1 {Black mates}
+Started game 97 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 94 (game_n100_p3e7 vs tree_c234): 0-1 {Black wins by adjudication}
+Started game 98 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 95 (tree_c234 vs game_n100_p3e7): 0-1 {Black wins by adjudication}
+Started game 99 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 96 (game_n100_p3e7 vs tree_c234): 1-0 {White wins by adjudication}
+Started game 100 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 97 (tree_c234 vs game_n100_p3e7): 1-0 {White wins by adjudication}
+Started game 101 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 99 (tree_c234 vs game_n100_p3e7): 1-0 {White wins by adjudication}
+Started game 102 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 101 (tree_c234 vs game_n100_p3e7): 1-0 {White wins by adjudication}
+Started game 103 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 100 (game_n100_p3e7 vs tree_c234): 1-0 {White wins by adjudication}
+Started game 104 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 98 (game_n100_p3e7 vs tree_c234): 1/2-1/2 {Draw by fifty moves rule}
+Started game 105 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 102 (game_n100_p3e7 vs tree_c234): 1-0 {White wins by adjudication}
+Started game 106 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 104 (game_n100_p3e7 vs tree_c234): 1-0 {White wins by adjudication}
+Started game 107 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 103 (tree_c234 vs game_n100_p3e7): 1-0 {White wins by adjudication}
+Started game 108 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 105 (tree_c234 vs game_n100_p3e7): 0-1 {Black wins by adjudication}
+Started game 109 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 106 (game_n100_p3e7 vs tree_c234): 1-0 {White wins by adjudication}
+Started game 110 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 108 (game_n100_p3e7 vs tree_c234): 1-0 {White wins by adjudication}
+Started game 111 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 110 (game_n100_p3e7 vs tree_c234): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 112 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 107 (tree_c234 vs game_n100_p3e7): 1-0 {White wins by adjudication}
+Started game 113 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 111 (tree_c234 vs game_n100_p3e7): 1-0 {White wins by adjudication}
+Started game 114 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 109 (tree_c234 vs game_n100_p3e7): 0-1 {Black wins by adjudication}
+Started game 115 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 114 (game_n100_p3e7 vs tree_c234): 1-0 {White wins by adjudication}
+Started game 116 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 115 (tree_c234 vs game_n100_p3e7): 1-0 {White mates}
+Started game 117 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 112 (game_n100_p3e7 vs tree_c234): 1-0 {White wins by adjudication}
+Started game 118 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 113 (tree_c234 vs game_n100_p3e7): 1-0 {White wins by adjudication}
+Started game 119 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 116 (game_n100_p3e7 vs tree_c234): 0-1 {Black wins by adjudication}
+Started game 120 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 118 (game_n100_p3e7 vs tree_c234): 1-0 {White wins by adjudication}
+Started game 121 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 119 (tree_c234 vs game_n100_p3e7): 1-0 {White wins by adjudication}
+Started game 122 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 117 (tree_c234 vs game_n100_p3e7): 0-1 {Black wins by adjudication}
+Started game 123 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 120 (game_n100_p3e7 vs tree_c234): 0-1 {Black wins by adjudication}
+Started game 124 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 121 (tree_c234 vs game_n100_p3e7): 0-1 {Black wins by adjudication}
+Started game 125 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 123 (tree_c234 vs game_n100_p3e7): 0-1 {Black wins by adjudication}
+Started game 126 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 124 (game_n100_p3e7 vs tree_c234): 0-1 {Black wins by adjudication}
+Started game 127 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 122 (game_n100_p3e7 vs tree_c234): 0-1 {Black wins by adjudication}
+Started game 128 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 125 (tree_c234 vs game_n100_p3e7): 1-0 {White wins by adjudication}
+Started game 129 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 127 (tree_c234 vs game_n100_p3e7): 1-0 {White wins by adjudication}
+Started game 130 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 126 (game_n100_p3e7 vs tree_c234): 0-1 {Black wins by adjudication}
+Started game 131 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 128 (game_n100_p3e7 vs tree_c234): 1-0 {White wins by adjudication}
+Started game 132 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 129 (tree_c234 vs game_n100_p3e7): 1-0 {White wins by adjudication}
+Started game 133 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 130 (game_n100_p3e7 vs tree_c234): 0-1 {Black wins by adjudication}
+Started game 134 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 132 (game_n100_p3e7 vs tree_c234): 0-1 {Black wins by adjudication}
+Started game 135 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 131 (tree_c234 vs game_n100_p3e7): 0-1 {Black wins by adjudication}
+Started game 136 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 133 (tree_c234 vs game_n100_p3e7): 0-1 {Black wins by adjudication}
+Started game 137 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 134 (game_n100_p3e7 vs tree_c234): 1-0 {White wins by adjudication}
+Started game 138 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 136 (game_n100_p3e7 vs tree_c234): 1-0 {White wins by adjudication}
+Started game 139 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 135 (tree_c234 vs game_n100_p3e7): 1-0 {White wins by adjudication}
+Started game 140 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 137 (tree_c234 vs game_n100_p3e7): 0-1 {Black wins by adjudication}
+Started game 141 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 139 (tree_c234 vs game_n100_p3e7): 1-0 {White wins by adjudication}
+Started game 142 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 138 (game_n100_p3e7 vs tree_c234): 1-0 {White wins by adjudication}
+Started game 143 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 140 (game_n100_p3e7 vs tree_c234): 1-0 {White wins by adjudication}
+Started game 144 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 143 (tree_c234 vs game_n100_p3e7): 1-0 {White wins by adjudication}
+Started game 145 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 141 (tree_c234 vs game_n100_p3e7): 0-1 {Black wins by adjudication}
+Started game 146 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 144 (game_n100_p3e7 vs tree_c234): 1-0 {White wins by adjudication}
+Started game 147 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 142 (game_n100_p3e7 vs tree_c234): 1-0 {White wins by adjudication}
+Started game 148 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 147 (tree_c234 vs game_n100_p3e7): 1-0 {White wins by adjudication}
+Started game 149 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 145 (tree_c234 vs game_n100_p3e7): 0-1 {Black wins by adjudication}
+Started game 150 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 146 (game_n100_p3e7 vs tree_c234): 1-0 {White wins by adjudication}
+Started game 151 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 149 (tree_c234 vs game_n100_p3e7): 0-1 {Black wins by adjudication}
+Started game 152 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 148 (game_n100_p3e7 vs tree_c234): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 153 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 150 (game_n100_p3e7 vs tree_c234): 1-0 {White wins by adjudication}
+Started game 154 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 152 (game_n100_p3e7 vs tree_c234): 1-0 {White wins by adjudication}
+Started game 155 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 153 (tree_c234 vs game_n100_p3e7): 0-1 {Black wins by adjudication}
+Started game 156 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 151 (tree_c234 vs game_n100_p3e7): 1/2-1/2 {Draw by adjudication}
+Started game 157 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 154 (game_n100_p3e7 vs tree_c234): 1-0 {White wins by adjudication}
+Started game 158 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 156 (game_n100_p3e7 vs tree_c234): 0-1 {Black wins by adjudication}
+Started game 159 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 157 (tree_c234 vs game_n100_p3e7): 1-0 {White wins by adjudication}
+Started game 160 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 155 (tree_c234 vs game_n100_p3e7): 1-0 {White wins by adjudication}
+Started game 161 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 158 (game_n100_p3e7 vs tree_c234): 1-0 {White wins by adjudication}
+Started game 162 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 161 (tree_c234 vs game_n100_p3e7): 1/2-1/2 {Draw by adjudication}
+Started game 163 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 159 (tree_c234 vs game_n100_p3e7): 1-0 {White wins by adjudication}
+Started game 164 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 162 (game_n100_p3e7 vs tree_c234): 1/2-1/2 {Draw by insufficient mating material}
+Started game 165 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 160 (game_n100_p3e7 vs tree_c234): 1/2-1/2 {Draw by insufficient mating material}
+Started game 166 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 163 (tree_c234 vs game_n100_p3e7): 1/2-1/2 {Draw by insufficient mating material}
+Started game 167 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 166 (game_n100_p3e7 vs tree_c234): 1-0 {White wins by adjudication}
+Started game 168 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 164 (game_n100_p3e7 vs tree_c234): 1-0 {White wins by adjudication}
+Started game 169 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 167 (tree_c234 vs game_n100_p3e7): 0-1 {Black wins by adjudication}
+Started game 170 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 169 (tree_c234 vs game_n100_p3e7): 0-1 {Black wins by adjudication}
+Started game 171 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 165 (tree_c234 vs game_n100_p3e7): 0-1 {Black wins by adjudication}
+Started game 172 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 168 (game_n100_p3e7 vs tree_c234): 0-1 {Black mates}
+Started game 173 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 170 (game_n100_p3e7 vs tree_c234): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 174 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 171 (tree_c234 vs game_n100_p3e7): 1-0 {White wins by adjudication}
+Started game 175 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 173 (tree_c234 vs game_n100_p3e7): 0-1 {Black wins by adjudication}
+Started game 176 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 172 (game_n100_p3e7 vs tree_c234): 1-0 {White wins by adjudication}
+Started game 177 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 174 (game_n100_p3e7 vs tree_c234): 0-1 {Black wins by adjudication}
+Started game 178 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 175 (tree_c234 vs game_n100_p3e7): 0-1 {Black wins by adjudication}
+Started game 179 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 177 (tree_c234 vs game_n100_p3e7): 1-0 {White wins by adjudication}
+Started game 180 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 176 (game_n100_p3e7 vs tree_c234): 1-0 {White mates}
+Started game 181 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 178 (game_n100_p3e7 vs tree_c234): 1-0 {White wins by adjudication}
+Started game 182 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 179 (tree_c234 vs game_n100_p3e7): 1-0 {White wins by adjudication}
+Started game 183 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 182 (game_n100_p3e7 vs tree_c234): 0-1 {Black wins by adjudication}
+Started game 184 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 180 (game_n100_p3e7 vs tree_c234): 1/2-1/2 {Draw by fifty moves rule}
+Started game 185 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 183 (tree_c234 vs game_n100_p3e7): 1-0 {White wins by adjudication}
+Started game 186 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 181 (tree_c234 vs game_n100_p3e7): 0-1 {Black wins by adjudication}
+Started game 187 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 184 (game_n100_p3e7 vs tree_c234): 0-1 {Black wins by adjudication}
+Started game 188 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 188 (game_n100_p3e7 vs tree_c234): 1-0 {White wins by adjudication}
+Started game 189 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 186 (game_n100_p3e7 vs tree_c234): 0-1 {Black wins by adjudication}
+Started game 190 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 187 (tree_c234 vs game_n100_p3e7): 0-1 {Black wins by adjudication}
+Started game 191 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 185 (tree_c234 vs game_n100_p3e7): 1-0 {White wins by adjudication}
+Started game 192 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 189 (tree_c234 vs game_n100_p3e7): 1-0 {White wins by adjudication}
+Started game 193 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 190 (game_n100_p3e7 vs tree_c234): 1-0 {White wins by adjudication}
+Started game 194 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 192 (game_n100_p3e7 vs tree_c234): 1-0 {White wins by adjudication}
+Started game 195 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 191 (tree_c234 vs game_n100_p3e7): 1-0 {White wins by adjudication}
+Started game 196 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 195 (tree_c234 vs game_n100_p3e7): 1-0 {White wins by adjudication}
+Started game 197 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 194 (game_n100_p3e7 vs tree_c234): 1-0 {White wins by adjudication}
+Started game 198 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 193 (tree_c234 vs game_n100_p3e7): 1-0 {White wins by adjudication}
+Started game 199 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 196 (game_n100_p3e7 vs tree_c234): 1-0 {White wins by adjudication}
+Started game 200 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 197 (tree_c234 vs game_n100_p3e7): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 201 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 198 (game_n100_p3e7 vs tree_c234): 1-0 {White wins by adjudication}
+Started game 202 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 199 (tree_c234 vs game_n100_p3e7): 1-0 {White wins by adjudication}
+Started game 203 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 200 (game_n100_p3e7 vs tree_c234): 1-0 {White wins by adjudication}
+--------------------------------------------------
+Results of tree_c234 vs game_n100_p3e7 (20000 nodes, 1t, 16MB, UHO_4060_v4.epd):
+Elo: -10.43 +/- 41.03, nElo: -12.30 +/- 48.15
+LOS: 30.83 %, DrawRatio: 46.00 %, PairsRatio: 0.86
+Games: 200, Wins: 84, Losses: 90, Draws: 26, Points: 97.0 (48.50 %)
+Ptnml(0-2): [16, 13, 46, 11, 14], WL/DD Ratio: 45.00
+--------------------------------------------------
+Started game 204 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 201 (tree_c234 vs game_n100_p3e7): 0-1 {Black mates}
+Started game 205 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 203 (tree_c234 vs game_n100_p3e7): 1-0 {White wins by adjudication}
+Started game 206 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 202 (game_n100_p3e7 vs tree_c234): 0-1 {Black wins by adjudication}
+Started game 207 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 204 (game_n100_p3e7 vs tree_c234): 1-0 {White wins by adjudication}
+Started game 208 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 205 (tree_c234 vs game_n100_p3e7): 0-1 {Black wins by adjudication}
+Started game 209 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 206 (game_n100_p3e7 vs tree_c234): 1-0 {White wins by adjudication}
+Started game 210 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 208 (game_n100_p3e7 vs tree_c234): 1-0 {White wins by adjudication}
+Started game 211 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 209 (tree_c234 vs game_n100_p3e7): 1-0 {White wins by adjudication}
+Started game 212 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 207 (tree_c234 vs game_n100_p3e7): 1-0 {White mates}
+Started game 213 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 211 (tree_c234 vs game_n100_p3e7): 1-0 {White wins by adjudication}
+Started game 214 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 212 (game_n100_p3e7 vs tree_c234): 0-1 {Black wins by adjudication}
+Started game 215 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 213 (tree_c234 vs game_n100_p3e7): 0-1 {Black wins by adjudication}
+Started game 216 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 210 (game_n100_p3e7 vs tree_c234): 0-1 {Black wins by adjudication}
+Started game 217 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 214 (game_n100_p3e7 vs tree_c234): 0-1 {Black wins by adjudication}
+Started game 218 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 216 (game_n100_p3e7 vs tree_c234): 1-0 {White wins by adjudication}
+Started game 219 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 215 (tree_c234 vs game_n100_p3e7): 0-1 {Black wins by adjudication}
+Started game 220 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 217 (tree_c234 vs game_n100_p3e7): 1-0 {White wins by adjudication}
+Started game 221 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 218 (game_n100_p3e7 vs tree_c234): 0-1 {Black wins by adjudication}
+Started game 222 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 219 (tree_c234 vs game_n100_p3e7): 0-1 {Black wins by adjudication}
+Started game 223 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 220 (game_n100_p3e7 vs tree_c234): 0-1 {Black wins by adjudication}
+Started game 224 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 222 (game_n100_p3e7 vs tree_c234): 1-0 {White wins by adjudication}
+Started game 225 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 221 (tree_c234 vs game_n100_p3e7): 1-0 {White wins by adjudication}
+Started game 226 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 224 (game_n100_p3e7 vs tree_c234): 0-1 {Black wins by adjudication}
+Started game 227 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 223 (tree_c234 vs game_n100_p3e7): 0-1 {Black wins by adjudication}
+Started game 228 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 226 (game_n100_p3e7 vs tree_c234): 0-1 {Black wins by adjudication}
+Started game 229 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 225 (tree_c234 vs game_n100_p3e7): 0-1 {Black wins by adjudication}
+Started game 230 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 227 (tree_c234 vs game_n100_p3e7): 0-1 {Black wins by adjudication}
+Started game 231 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 229 (tree_c234 vs game_n100_p3e7): 1-0 {White wins by adjudication}
+Started game 232 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 228 (game_n100_p3e7 vs tree_c234): 1-0 {White wins by adjudication}
+Started game 233 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 230 (game_n100_p3e7 vs tree_c234): 0-1 {Black wins by adjudication}
+Started game 234 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 231 (tree_c234 vs game_n100_p3e7): 1-0 {White wins by adjudication}
+Started game 235 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 232 (game_n100_p3e7 vs tree_c234): 1/2-1/2 {Draw by adjudication}
+Started game 236 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 233 (tree_c234 vs game_n100_p3e7): 1-0 {White wins by adjudication}
+Started game 237 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 235 (tree_c234 vs game_n100_p3e7): 1-0 {White wins by adjudication}
+Started game 238 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 234 (game_n100_p3e7 vs tree_c234): 1-0 {White wins by adjudication}
+Started game 239 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 236 (game_n100_p3e7 vs tree_c234): 1-0 {White wins by adjudication}
+Started game 240 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 238 (game_n100_p3e7 vs tree_c234): 1-0 {White wins by adjudication}
+Started game 241 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 240 (game_n100_p3e7 vs tree_c234): 0-1 {Black wins by adjudication}
+Started game 242 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 239 (tree_c234 vs game_n100_p3e7): 0-1 {Black mates}
+Started game 243 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 241 (tree_c234 vs game_n100_p3e7): 0-1 {Black wins by adjudication}
+Started game 244 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 237 (tree_c234 vs game_n100_p3e7): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 245 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 242 (game_n100_p3e7 vs tree_c234): 1-0 {White wins by adjudication}
+Started game 246 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 243 (tree_c234 vs game_n100_p3e7): 1-0 {White wins by adjudication}
+Started game 247 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 245 (tree_c234 vs game_n100_p3e7): 1-0 {White wins by adjudication}
+Started game 248 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 247 (tree_c234 vs game_n100_p3e7): 1-0 {White wins by adjudication}
+Started game 249 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 244 (game_n100_p3e7 vs tree_c234): 1-0 {White wins by adjudication}
+Started game 250 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 246 (game_n100_p3e7 vs tree_c234): 0-1 {Black wins by adjudication}
+Started game 251 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 248 (game_n100_p3e7 vs tree_c234): 1-0 {White wins by adjudication}
+Started game 252 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 249 (tree_c234 vs game_n100_p3e7): 0-1 {Black wins by adjudication}
+Started game 253 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 250 (game_n100_p3e7 vs tree_c234): 1-0 {White wins by adjudication}
+Started game 254 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 251 (tree_c234 vs game_n100_p3e7): 1-0 {White wins by adjudication}
+Started game 255 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 252 (game_n100_p3e7 vs tree_c234): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 256 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 253 (tree_c234 vs game_n100_p3e7): 1-0 {White wins by adjudication}
+Started game 257 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 254 (game_n100_p3e7 vs tree_c234): 0-1 {Black wins by adjudication}
+Started game 258 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 257 (tree_c234 vs game_n100_p3e7): 1-0 {White wins by adjudication}
+Started game 259 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 255 (tree_c234 vs game_n100_p3e7): 1-0 {White wins by adjudication}
+Started game 260 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 256 (game_n100_p3e7 vs tree_c234): 0-1 {Black wins by adjudication}
+Started game 261 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 258 (game_n100_p3e7 vs tree_c234): 1-0 {White wins by adjudication}
+Started game 262 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 259 (tree_c234 vs game_n100_p3e7): 1-0 {White wins by adjudication}
+Started game 263 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 261 (tree_c234 vs game_n100_p3e7): 1-0 {White wins by adjudication}
+Started game 264 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 262 (game_n100_p3e7 vs tree_c234): 0-1 {Black wins by adjudication}
+Started game 265 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 260 (game_n100_p3e7 vs tree_c234): 1-0 {White wins by adjudication}
+Started game 266 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 263 (tree_c234 vs game_n100_p3e7): 1-0 {White wins by adjudication}
+Started game 267 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 266 (game_n100_p3e7 vs tree_c234): 1-0 {White wins by adjudication}
+Started game 268 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 265 (tree_c234 vs game_n100_p3e7): 0-1 {Black wins by adjudication}
+Started game 269 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 264 (game_n100_p3e7 vs tree_c234): 1-0 {White wins by adjudication}
+Started game 270 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 268 (game_n100_p3e7 vs tree_c234): 1-0 {White wins by adjudication}
+Started game 271 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 269 (tree_c234 vs game_n100_p3e7): 0-1 {Black wins by adjudication}
+Started game 272 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 270 (game_n100_p3e7 vs tree_c234): 1-0 {White wins by adjudication}
+Started game 273 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 267 (tree_c234 vs game_n100_p3e7): 1/2-1/2 {Draw by adjudication}
+Started game 274 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 274 (game_n100_p3e7 vs tree_c234): 0-1 {Black wins by adjudication}
+Started game 275 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 271 (tree_c234 vs game_n100_p3e7): 0-1 {Black wins by adjudication}
+Started game 276 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 272 (game_n100_p3e7 vs tree_c234): 1-0 {White wins by adjudication}
+Started game 277 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 273 (tree_c234 vs game_n100_p3e7): 1-0 {White wins by adjudication}
+Started game 278 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 275 (tree_c234 vs game_n100_p3e7): 1-0 {White wins by adjudication}
+Started game 279 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 276 (game_n100_p3e7 vs tree_c234): 0-1 {Black wins by adjudication}
+Started game 280 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 278 (game_n100_p3e7 vs tree_c234): 1-0 {White wins by adjudication}
+Started game 281 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 279 (tree_c234 vs game_n100_p3e7): 1-0 {White wins by adjudication}
+Started game 282 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 280 (game_n100_p3e7 vs tree_c234): 1-0 {White wins by adjudication}
+Started game 283 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 277 (tree_c234 vs game_n100_p3e7): 0-1 {Black wins by adjudication}
+Started game 284 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 284 (game_n100_p3e7 vs tree_c234): 1-0 {White wins by adjudication}
+Started game 285 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 281 (tree_c234 vs game_n100_p3e7): 1-0 {White wins by adjudication}
+Started game 286 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 282 (game_n100_p3e7 vs tree_c234): 1/2-1/2 {Draw by adjudication}
+Started game 287 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 283 (tree_c234 vs game_n100_p3e7): 1/2-1/2 {Draw by insufficient mating material}
+Started game 288 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 287 (tree_c234 vs game_n100_p3e7): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 289 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 285 (tree_c234 vs game_n100_p3e7): 0-1 {Black mates}
+Started game 290 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 286 (game_n100_p3e7 vs tree_c234): 1-0 {White wins by adjudication}
+Started game 291 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 288 (game_n100_p3e7 vs tree_c234): 1-0 {White wins by adjudication}
+Started game 292 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 289 (tree_c234 vs game_n100_p3e7): 1-0 {White wins by adjudication}
+Started game 293 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 291 (tree_c234 vs game_n100_p3e7): 0-1 {Black wins by adjudication}
+Started game 294 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 293 (tree_c234 vs game_n100_p3e7): 1-0 {White wins by adjudication}
+Started game 295 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 292 (game_n100_p3e7 vs tree_c234): 1-0 {White wins by adjudication}
+Started game 296 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 290 (game_n100_p3e7 vs tree_c234): 1-0 {White wins by adjudication}
+Started game 297 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 294 (game_n100_p3e7 vs tree_c234): 0-1 {Black wins by adjudication}
+Started game 298 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 297 (tree_c234 vs game_n100_p3e7): 0-1 {Black wins by adjudication}
+Started game 299 of 300 (tree_c234 vs game_n100_p3e7)
+Finished game 295 (tree_c234 vs game_n100_p3e7): 0-1 {Black wins by adjudication}
+Started game 300 of 300 (game_n100_p3e7 vs tree_c234)
+Finished game 296 (game_n100_p3e7 vs tree_c234): 1-0 {White wins by adjudication}
+Finished game 298 (game_n100_p3e7 vs tree_c234): 1-0 {White wins by adjudication}
+Finished game 300 (game_n100_p3e7 vs tree_c234): 1-0 {White wins by adjudication}
+Finished game 299 (tree_c234 vs game_n100_p3e7): 1-0 {White wins by adjudication}
+--------------------------------------------------
+Results of tree_c234 vs game_n100_p3e7 (20000 nodes, 1t, 16MB, UHO_4060_v4.epd):
+Elo: -12.75 +/- 35.79, nElo: -14.06 +/- 39.32
+LOS: 24.16 %, DrawRatio: 43.33 %, PairsRatio: 0.85
+Games: 300, Wins: 128, Losses: 139, Draws: 33, Points: 144.5 (48.17 %)
+Ptnml(0-2): [29, 17, 65, 14, 25], WL/DD Ratio: 64.00
+--------------------------------------------------
+Finished match
+Total Time: 00:05:19 (hours:minutes:seconds)
+

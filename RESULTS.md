@@ -13,7 +13,7 @@ from UHO_Lichess_4852_v1 openings. Matches: paired openings from a *different* b
 
 | # | Finding | Status |
 |---|---|---|
-| R1 | Distilling from positions sampled out of the teacher's **search trees** (its `evaluate()` calls) instead of game positions needs **~5x less generation compute for equal strength** than the best game-position pipeline found (100-node self-play), and is ~+250-300 Elo stronger at equal compute. Against standard 5000-node self-play data the saving is >= 32x. | Proven at small scale; replicated; robust over 5k-80k nodes |
+| R1 | Distilling from positions sampled out of the teacher's **search trees** (its `evaluate()` calls) instead of game positions needs **~8x less generation compute for equal strength** than the best game-position pipeline found (100-node self-play), with tuned settings on both sides (E13), and is ~+250-300 Elo stronger at equal compute. Against standard 5000-node self-play data the saving is >= 32x. | Proven at small scale; replicated; robust over 5k-80k nodes |
 | R2 | Validation loss on held-out **search-tree** positions predicts Elo almost perfectly (Pearson 0.995, 18 students); loss on game positions does not (0.92, misranks by up to 264 Elo). | Proven within one teacher, same label type |
 | R3 | Capacity scaling is limited by data diversity: on standard 5000-node game data, more width or king buckets buy nothing or hurt; on tree data every width doubling adds ~+70 Elo; on fast-game (100-node) data H=512 adds +56. | Proven at H <= 1024 (game side to H=512) |
 | R4 | On-policy (DAgger-style) data: teacher-labelled positions from the **student's own** search trees beat the same amount of teacher-tree data by +22.6 [9.6, 35.7] (1,800 games). | Proven for one iteration at H=256 |
@@ -38,15 +38,16 @@ chained through direct matches):
 | 3,745 CPU-s | +520 [466, 576] | 5000-node games -159 |
 | 7,490 CPU-s | +545 [493, 615] | 5000-node games 0 |
 
-- Decisive direct match: the 234-CPU-s tree student vs the best game student (100-node self-play,
-  1,870 CPU-s): **-78 +/- 37** (300 games). Interpolating the tree curve, equal strength needs ~330-360
-  CPU-s of tree data: **~5x less generation compute**. At equal compute (1,870 CPU-s) the tree student is
+- Decisive direct matches against the best game student (100-node self-play, 1,870 CPU-s), with the best
+  tree settings (20k nodes/move, 8% recording, E13): tree at 234 CPU-s **-13 +/- 36** (equal strength at
+  **8x less compute**); tree at 468 CPU-s **+61 +/- 38** (LOS 99.94%). (With the untuned 5000-node/2%
+  tree setting, 234 CPU-s gave -78 +/- 37, i.e. ~5x.) At equal compute (1,870 CPU-s) the tree student is
   ~+250-300 Elo stronger.
 - Against the standard 5000-node game baseline: 234-CPU-s tree student +104 +/- 49 vs 7,490 CPU-s of
   game data (>= 32x), replicated on three disjoint data subsets (+147, +133, +81, each +/- ~47, LOS >=
   99.99%) and at 5k/20k/80k nodes (+123/+104/+141).
 - How the ratio evolved: my first baselines (5000-node games) gave ">= 32x"; cheaper game generation
-  (E9, E10) improved the game pipeline by ~+220 Elo and reduced the ratio to ~5x. 30-node games did not
+  (E9, E10) improved the game pipeline by ~+220 Elo and reduced the ratio; tuning the tree side (E3, E13) brought it back to ~8x. 30-node games did not
   improve further (+19 +/- 48 vs 100-node, E11), so the game pipeline appears to plateau there.
 - Sample-matched (734k positions each, same 7,490 CPU-s run): tree +207 [162, 253] over game positions, so
   the distribution matters, not only the quantity.
@@ -61,7 +62,8 @@ chained through direct matches):
 18 teacher-label students (H 256-1024, two feature sets, game and tree data):
 Pearson(Elo, -MSE_tree) = 0.995, Spearman 0.988; Pearson(Elo, -MSE_game) = 0.920, Spearman 0.882.
 The game-position student has lower game-position loss (0.0249) than three tree students that beat it by
-111-264 Elo. The proxy also ranked all five E3 generation settings correctly. It does **not** transfer
+111-264 Elo. The proxy also ranked all E3 and E12 generation settings correctly. It is less reliable across very
+different position sources: fast-game students score worse vtree than tree students of equal Elo (E13). It does **not** transfer
 across label types (search-labelled students have worse teacher-MSE but can be stronger, E6).
 
 ## R3. Capacity scaling depends on data diversity
