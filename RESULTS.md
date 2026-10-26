@@ -1,23 +1,64 @@
 # Results
 
-# Phase II: transfer to the production architecture (SFNNv18)
+# Phase II: does training on search-tree positions transfer to production Stockfish?
 
-All Phase II experiments use the *production* network architecture: Stockfish master's net
-`nn-c9e480e92425` with its 110 MB feature transformer frozen, and its 32 dense layer stacks
-(1.13M parameters) either fine-tuned or re-trained on CPU (exact float model with fake quantisation;
-exported nets load in Stockfish and reproduce the trainer's evals within rounding). Same architecture
-means same speed, so fixed-node Elo is equal-time Elo. Matches: 20k nodes/move, UHO_4060_v4, paired.
+**Short answer.** Partly. The effect is real and mechanistically understood, but in the production
+architecture (with Stockfish's own frozen feature transformer) it shrinks to a small gain, and no
+CPU-feasible modification produced a stronger Stockfish. The decisive full-scale test (training the
+feature transformer itself) is specified in FULLSCALE_PROTOCOL.md.
 
-| # | Finding | Evidence |
+**Setup.** Production net `nn-c9e480e92425` (SFNNv18, master `ff3a6c50`). Its 110 MB feature transformer
+is frozen; its 32 dense layer stacks (1.13M parameters) are fine-tuned or re-trained on CPU with an exact
+float model and fake quantisation (exported nets load in Stockfish and reproduce the trainer's evals within
+rounding). Identical architecture means identical speed, so fixed-node Elo equals equal-time Elo.
+Matches: 20k nodes/move, UHO_4060_v4 (disjoint from training openings), paired; key comparisons were
+pre-registered in RESEARCH_LOG before results.
+
+## Confirmed (pre-registered or replicated, LOS >= 99%)
+
+| # | Finding | Numbers |
 |---|---|---|
-| Q1 | The production net is ~1.8x further from its own search on quiet tree positions than on quiet game positions (MSE 0.0141 vs 0.0078), also on material-balanced positions. | P2-1 diagnostic, 40k held-out positions |
-| Q2 | Fine-tuning master's stacks on 5000-node search labels *degrades* it, and more so with tree positions: game -25, mix -40, tree -67 (each +/-13, 1000 games); tree vs game -27 +/- 13. | P2-F1, pre-registered |
-| Q3 | Re-learning the stacks (random init) from master's own evals: tree positions beat fast-game positions by +43 +/- 14 and standard game positions by ~+14 +/- 11 (pooled 1,600 games) at equal count. | P3, P7, pre-registered |
-| Q4 | 2x2 factorial at equal positions: tree beats game under teacher labels (+83 +/- 17) and under search labels (+44 +/- 19). Most of the +83 comes from the quiet filter: it helps tree positions (+28) and hurts game positions (-48). | P4, P7 |
-| Q5 | Coverage explains the ranking: KL(query distribution || training set) is 0.013 (tree), 0.184 (game), 0.547 (fast game), the same order as Elo. Duplicates are rare everywhere. | M1/M2 |
-| Q6 | On-policy data at production scale (student 43 Elo below teacher): +6 +/- 13, inconclusive (CI excludes > +19). | P5, pre-registered |
-| Q7 | No Stockfish improvement was found: every CPU fine-tune of master was weaker than master. | P2-F1 |
+| Q1 | The production net's static eval is ~1.8x further from its own 5000-node search on quiet tree positions than on quiet game positions, also when material is balanced. | MSE 0.0141 vs 0.0078 (40k held-out positions) |
+| Q2 | Fine-tuning master's stacks on small search-labelled sets degrades it, monotonically in the tree fraction. | game -25, mix -40, tree -67 (+/-13, 1000 games each); tree vs game -27 +/- 13 |
+| Q3 | Re-distilling the stacks from master's evals: tree positions beat fast-game positions. | +43.0 +/- 13.7 (1000 games) |
+| Q4 | 2x2 factorial (identical positions, re-initialised stacks): tree beats game under **both** label types. | teacher labels +82.8 +/- 16.6; search labels +43.7 +/- 18.7 |
+| Q5 | The quiet filter (drop capture-best positions) helps tree data and **hurts game data** under teacher labels. | quiet game -146 vs unfiltered -98 (vs master); SEE-filtered game -22 +/- 17 |
+| Q6 | Most of the tree advantage lives in **feature learning**; the readout benefits only when features lack coverage. | tree-trained vs game-trained features +531 +/- 104; readout effect +186 (game features) vs +3 (tree features) |
+| Q7 | Selecting "informative" tree positions loses to uniform sampling: near the alpha-beta window -531, far -119, main search only -80, by student error -100 to -849. | B1/B3/B2, 200 games each |
+| Q8 | On-policy data helps weak students for one iteration only, and not near-teacher students. | iteration 1 +22.6 [9.6, 35.7]; iteration 2 +3 +/- 17; production +6 +/- 13 |
 
+## Measured but small or inconclusive
+- Tree vs standard 5000-node game positions, unfiltered teacher labels, production stacks: +12.9 +/- 13.3
+  (300k) and +15.1 +/- 17.6 (600k); pooled about +14 +/- 11. P6 data scaling: no clear data multiplier
+  (T - G of +9, -11, +15, +1 at 75k-600k, +/-22 each).
+- SEE-filtered tree positions vs game positions: +3.8 +/- 13.7 (the cheap static filter does not
+  reproduce the search-quiet effect).
+- Coverage: KL(query distribution || training set) 0.013 (tree) < 0.184 (game) < 0.547 (fast game),
+  the same order as P3 Elo (-43, -58, -81 vs master).
+
+## Not achieved
+- **No stronger Stockfish.** Every CPU fine-tune of the production net was weaker than master (Q2), and
+  re-distilled stacks reach at best -43 vs master. No candidate merits fishtest submission.
+- **No order-of-magnitude saving at production scale.** The >= 8x saving holds for small students that
+  learn their own features; for the production readout it is ~1x to 1.6x.
+
+## Mechanism (synthesis)
+An evaluator inside alpha-beta search is queried on the positions search visits, which are more unbalanced,
+more tactical and further from good play than game positions. When an evaluator must *learn features*
+(small students, or any from-scratch training), covering that query distribution is worth hundreds of Elo
+at equal data (Phase I R1, B4), and every attempt to reweight towards "decision-relevant" or "hard" subsets
+damaged coverage and lost. When features are already good (Stockfish's feature transformer trained on
+billions of positions), the remaining readout is largely distribution-insensitive, so the gain shrinks to
+~+14 Elo. Fine-tuning a strong net on a small, shallow-search-labelled sample moves it away from an
+optimum it reached with far better data, and tree positions, whose search labels are noisiest, move it
+furthest. On-policy data corrects the covariate shift between student and teacher trees, which only
+matters while that shift is large.
+
+## Bugs found and corrected in Phase II
+- Recorded search scores were centipawns, not internal units: all Phase I search-label results were
+  withdrawn, and teacher-label results are unaffected.
+- The joint-Elo fitter could stop at a non-optimal point on star-shaped match graphs: fixed (exact
+  Newton). All earlier ladders reproduce exactly; only one Phase II ladder file was affected.
 
 # Phase I (small students)
 
