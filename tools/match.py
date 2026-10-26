@@ -6,11 +6,19 @@ SF = os.environ.get("SF_BIN", "/home/user/data/sf_research")
 FC = os.environ.get("FASTCHESS", "/home/user/work/fastchess/fastchess")
 
 
-def engine_args(spec, binary):
+def engine_args(spec, binary, nodes=None, tc=None):
+    """spec: name=net[@nodes]  (net 'teacher' = master net; '@nodes' overrides the node budget)"""
     name, _, net = spec.partition("=")
+    net, _, n_over = net.partition("@")
     a = ["-engine", f"cmd={binary}", f"name={name}"]
     if net and net != "teacher":
+        if not os.path.isfile(net):
+            raise SystemExit(f"student net not found: {net} (would silently fall back to the teacher)")
         a.append(f"option.StudentFile={net}")
+    if tc:
+        a += [f"tc={tc}"]
+    else:
+        a += ["tc=inf", f"nodes={n_over or nodes}"]
     return a
 
 
@@ -27,9 +35,8 @@ def main():
     ap.add_argument("--out", required=True)
     ap.add_argument("--sprt", default=None, help="elo0,elo1")
     a = ap.parse_args()
-    each = ["tc=inf", f"nodes={a.nodes}"] if not a.tc else [f"tc={a.tc}"]
-    cmd = [FC] + engine_args(a.a, a.bin_a) + engine_args(a.b, a.bin_b) + [
-        "-each", *each, "option.Threads=1", "option.Hash=16",
+    cmd = [FC] + engine_args(a.a, a.bin_a, a.nodes, a.tc) + engine_args(a.b, a.bin_b, a.nodes, a.tc) + [
+        "-each", "option.Threads=1", "option.Hash=16",
         "-openings", f"file={a.book}", "format=epd", "order=random",
         "-srand", str(a.seed), "-repeat", "-rounds", str(a.rounds), "-concurrency", str(a.concurrency),
         "-resign", "movecount=3", "score=1000", "twosided=true",

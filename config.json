@@ -32,7 +32,7 @@
         "additional_lines_rgx": [],
         "event_name": "Fastchess Tournament",
         "site": "?",
-        "file": "experiments/e2/matches/base_T1S1_vs_base_T1_2e8.pgn",
+        "file": "/home/user/scratchpad/experiments/e3/matches/n20000_r08_vs_n5000_r02.pgn",
         "notation": 0,
         "append_file": true,
         "track_nodes": false,
@@ -69,7 +69,7 @@
     "wait": 0,
     "autosaveinterval": 20,
     "games": 2,
-    "rounds": 150,
+    "rounds": 100,
     "concurrency": 4,
     "force_concurrency": false,
     "recover": false,
@@ -89,7 +89,7 @@
     },
     "engines": [
         {
-            "name": "base_T1S1",
+            "name": "n20000_r08",
             "dir": "",
             "cmd": "/home/user/data/sf_research",
             "args": "",
@@ -97,7 +97,7 @@
             "options": [
                 [
                     "StudentFile",
-                    "/home/user/nets/e2/base_T1S1.stud"
+                    "/home/user/nets/e3/n20000_r08.stud"
                 ],
                 [
                     "Threads",
@@ -122,7 +122,7 @@
             "variant": 0
         },
         {
-            "name": "base_T1_2e8",
+            "name": "n5000_r02",
             "dir": "",
             "cmd": "/home/user/data/sf_research",
             "args": "",
@@ -130,7 +130,7 @@
             "options": [
                 [
                     "StudentFile",
-                    "/home/user/nets/e2/base_T1_2e8.stud"
+                    "/home/user/nets/e3/n5000_r02.stud"
                 ],
                 [
                     "Threads",
@@ -156,16 +156,16 @@
         }
     ],
     "stats": {
-        "base_T1S1 vs base_T1_2e8": {
-            "wins": 132,
-            "losses": 92,
-            "draws": 76,
-            "penta_WW": 26,
-            "penta_WD": 34,
-            "penta_WL": 46,
-            "penta_DD": 8,
-            "penta_LD": 26,
-            "penta_LL": 10
+        "n20000_r08 vs n5000_r02": {
+            "wins": 97,
+            "losses": 68,
+            "draws": 35,
+            "penta_WW": 18,
+            "penta_WD": 17,
+            "penta_WL": 44,
+            "penta_DD": 3,
+            "penta_LD": 12,
+            "penta_LL": 6
         }
     }
 }

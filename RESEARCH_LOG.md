@@ -159,3 +159,23 @@ Interpretation (preliminary): at H=256 the student saturates on teacher-tree dat
 Elo does not), while adding its own search-tree positions (teacher-labelled) still adds strength:
 consistent with H3 (covariate shift between teacher and student search distributions). The decisive
 head-to-head is not yet significant; 1,200 more games queued (E2b, opening seed 2).
+
+### Ops incident (E3)
+A helper function named `tr` piped its output into coreutils `tr`, recursing into itself and spawning
+thousands of nested shells (~3 minutes, killed). No data was lost; E3 generation had finished and is
+unaffected; training was relaunched. Rule: never shadow common command names in experiment scripts.
+
+## E3: generation settings at an equal generation budget (~1,870 CPU-s = 4 procs x 468 s)
+Reference n5000_r02 = e1b tree_f4 (5000 nodes/move, 2% of evaluate() calls; same compute). All H=256,
+1e8 training positions. 20k-node matches vs reference, 200 games each:
+| setting | records | vgame | vtree | Elo vs ref |
+|---|---|---|---|---|
+| 1000 nodes, 2% | 5.0M | 0.02241 | 0.02336 | -38 +/- 40 |
+| 5000 nodes, 2% (ref) | 6.3M | 0.02115 | 0.02179 | 0 |
+| 1000 nodes, 8% | 17.5M | 0.02077 | 0.02187 | +2 +/- 39 |
+| 5000 nodes, 8% | 25.3M | 0.02071 | 0.02029 | +33 +/- 44 |
+| 20000 nodes, 8% | 28.7M | 0.02050 | 0.02016 | +51 +/- 38 (LOS 99.6%) |
+- Recording more of each search's evaluate() calls is nearly free and helps; deeper per-move searches
+  are at least as good as shallow ones per CPU-s (1000 nodes/move: per-move overhead dominates, fewer evals/s).
+- Elo ordering again equals the vtree-MSE ordering (R2 holds out of sample).
+- Implication for R1: the 2%-rate setting used there is not the most efficient; the >=32x figure is conservative.

@@ -2,6 +2,15 @@
 # E1c: replication of "tree data at 1/32 compute beats game data at full compute" on disjoint
 # 1/32 subsets of run1, and robustness of the comparison across node budgets.
 T=/home/user/nets/trainer; D=/home/user/data/run1; O=/home/user/nets/e1c; mkdir -p $O
+# --- E3 matches (generation settings at equal ~1,870 generation CPU-s; reference = e1b tree_f4,
+#     i.e. 5000 nodes/move, 2% rate, same compute) ---
+mkdir -p /home/user/scratchpad/experiments/e3/matches
+cp /home/user/nets/e1b/tree_f4.stud /home/user/nets/e3/n5000_r02.stud
+for t in n1000_r02 n1000_r08 n5000_r08 n20000_r08; do
+  f=/home/user/scratchpad/experiments/e3/matches/${t}_vs_n5000_r02
+  [ -f $f.json ] || (cd /home/user/scratchpad && python3 tools/match.py $t=/home/user/nets/e3/$t.stud n5000_r02=/home/user/nets/e3/n5000_r02.stud --nodes 20000 --rounds 100 --out $f | tail -1 | sed "s/'cmd'[^]]*\],//; s/=[^ ]*stud//g")
+done
+echo E3_MATCHES_DONE
 TR="--train $D/d1.bin --train $D/d2.bin --train $D/d3.bin --train $D/d4.bin"
 VAL="--val vgame=/home/user/data/val/v.bin:0 --val vtree=/home/user/data/val/v.bin:1"
 for s in 0.25 0.5 0.75; do
