@@ -557,3 +557,18 @@ Conclusion: the cheap static proxy does not reproduce the search-quiet gain of P
 positions by a small margin at equal count (~+5..+15 Elo, pooled direct matches), (ii) tree >> fast-game
 positions (+43), (iii) dropping capture positions from *game* data hurts under teacher labels (-22, -48),
 which is relevant because nnue-pytorch skips such positions by default (untested with Leela labels).
+
+## B2 RESULT: error-guided (active-learning-style) selection of tree positions
+Pool: B1 data (26.5M teacher-tree positions). Scorer: E1 tree_teacher (H=256, disjoint data). 1M positions
+sampled without replacement with weight err^alpha (err = |sigmoid(student) - sigmoid(teacher)|);
+H=256, 3e7 training positions; 200 games vs uniform 1M sample:
+| alpha | vgame | vtree | Elo vs uniform |
+|---|---|---|---|
+| 0 (uniform) | 0.02445 | 0.02575 | 0 |
+| 0.5 | 0.02818 | 0.02810 | -100 +/- 44 |
+| 1 | 0.03518 | 0.03527 | -342 +/- 68 |
+| 2 | 0.04656 | 0.04919 | -849 (1 win in 200) |
+Monotone and large: concentrating training on positions a previous student found hard distorts the
+distribution and destroys coverage. With B3 this gives a consistent picture: every selection rule tested
+(near the alpha-beta window, far from it, by ply, main search only, by student error) loses to a uniform
+sample of the search tree. "Which positions?" is answered by "the evaluator's whole query distribution".
