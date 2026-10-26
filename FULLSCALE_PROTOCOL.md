@@ -51,6 +51,7 @@ fishtest SPRT on each arm vs A: STC 10+0.1 [0, 2], then LTC 60+0.6 [0.5, 2.5]. C
 if B passes both **and** beats C (the tree effect, not the teacher-label effect).
 
 ## Cost estimate
-Generation: 1e9 tree positions need ~6e5 searches of 20k nodes (~1 core-year at ~500k nps is far more than
-needed). 1e8 positions at 8% from 20k-node searches is ~4 core-days. Conversion is I/O bound. Training
-uses the standard recipe's GPU budget per arm.
+Generation: E3 measured ~15,000 recorded tree positions per CPU-second (20k nodes/move, 8% recording,
+master, 1 thread on this machine), so 1e9 positions cost ~6.7e4 CPU-s (~18 core-hours), negligible next
+to GPU training. Each recorded position carries its teacher label for free. Conversion is I/O bound.
+Training uses the standard recipe's GPU budget per arm.
