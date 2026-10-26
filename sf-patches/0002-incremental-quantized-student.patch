@@ -1,0 +1,188 @@
+From 808e096f081d0c1ec8a35e545017b39edf6f3cdb Mon Sep 17 00:00:00 2001
+From: research <research@localhost>
+Date: Mon, 26 Oct 2026 02:34:44 +0000
+Subject: [PATCH] research: incremental int16 student accumulators
+ (board-diff), float output layer
+
+---
+ src/position.h   |   1 +
+ src/research.cpp | 118 ++++++++++++++++++++++++++++++++++++++++++++++-
+ src/research.h   |  10 +++-
+ 3 files changed, 126 insertions(+), 3 deletions(-)
+
+diff --git a/src/position.h b/src/position.h
+index 90e89a72..b69aaa3e 100644
+--- a/src/position.h
++++ b/src/position.h
+@@ -104,6 +104,7 @@ class Position {
+     template<typename... PieceTypes>
+     Bitboard                            pieces(Color c, PieceTypes... pts) const;
+     Piece                               piece_on(Square s) const;
++    const Piece*                        board_array() const { return board.data(); }
+     const std::array<Piece, SQUARE_NB>& piece_array() const;
+     Square                              ep_square() const;
+     bool                                empty(Square s) const;
+diff --git a/src/research.cpp b/src/research.cpp
+index 508669e2..2dad2125 100644
+--- a/src/research.cpp
++++ b/src/research.cpp
+@@ -55,11 +55,18 @@ bool StudentNet::load(const std::string& path) {
+     in.read(reinterpret_cast<char*>(ftB.data()), ftB.size() * 4);
+     in.read(reinterpret_cast<char*>(outW.data()), outW.size() * 4);
+     in.read(reinterpret_cast<char*>(outB.data()), outB.size() * 4);
+-    return bool(in);
++    if (!in)
++        return false;
++    quantize();
++    return H <= 2048;
+ }
+ 
+ Value StudentNet::evaluate(const Position& pos) const {
+-    alignas(64) float acc[2][1024];
++    return quantized ? evaluate_q(pos) : evaluate_float(pos);
++}
++
++Value StudentNet::evaluate_float(const Position& pos) const {
++    alignas(64) float acc[2][2048];
+     const Color       stm = pos.side_to_move();
+     for (int p = 0; p < 2; ++p)
+         std::memcpy(acc[p], ftB.data(), H * sizeof(float));
+@@ -100,6 +107,113 @@ Value StudentNet::evaluate(const Position& pos) const {
+     return Value(std::clamp(v, -20000, 20000));
+ }
+ 
++void StudentNet::quantize() {
++    auto q = [](float x, int scale, int lim) {
++        return int16_t(std::clamp(int(std::lround(x * scale)), -lim, lim));
++    };
++    // largest QA such that bias + 32 worst-case features cannot overflow int16
++    float maxW = 0, maxB = 0;
++    for (float x : ftW) maxW = std::max(maxW, std::fabs(x));
++    for (float x : ftB) maxB = std::max(maxB, std::fabs(x));
++    QA = std::clamp(int(32000.0f / (32 * maxW + maxB + 1e-6f)), 64, 4096);
++    qW.resize(ftW.size());
++    qB.resize(ftB.size());
++    qOut.resize(outW.size());
++    for (size_t i = 0; i < ftW.size(); ++i) qW[i] = q(ftW[i], QA, 32767);
++    for (size_t i = 0; i < ftB.size(); ++i) qB[i] = q(ftB[i], QA, 32767);
++    // |w * x| must fit int16 for x <= QA: |w_q| <= 127
++    for (size_t i = 0; i < outW.size(); ++i) qOut[i] = q(outW[i], QB, 127);
++}
++
++namespace {
++// Per-thread accumulator cache: accumulators from WHITE and BLACK perspective for the last
++// evaluated position, plus its board. A new position is reached by diffing the 64 squares.
++struct alignas(64) QCache {
++    int16_t           acc[2][2048];
++    Piece             board[64];
++    const StudentNet* net = nullptr;
++};
++thread_local QCache qcache;
++
++inline int feat(Color persp, Piece pc, int s) {
++    int rel = color_of(pc) == persp ? 0 : 1;
++    int sq  = persp == WHITE ? s : s ^ 56;
++    return (rel * 6 + type_of(pc) - 1) * 64 + sq;
++}
++}  // namespace
++
++Value StudentNet::evaluate_q(const Position& pos) const {
++    QCache&      c  = qcache;
++    const Piece* bd = pos.board_array();
++    const int    h  = H;
++    int          changed[64], nc = 0;
++    if (c.net == this)
++    {
++        for (int s = 0; s < 64; ++s)
++            if (c.board[s] != bd[s])
++                changed[nc++] = s;
++    }
++    if (c.net != this || nc > 12)
++    {
++        for (int p = 0; p < 2; ++p)
++        {
++            int16_t* a = c.acc[p];
++            std::memcpy(a, qB.data(), h * sizeof(int16_t));
++            for (int s = 0; s < 64; ++s)
++                if (bd[s] != NO_PIECE)
++                {
++                    const int16_t* w = &qW[size_t(feat(Color(p), bd[s], s)) * h];
++                    for (int i = 0; i < h; ++i) a[i] += w[i];
++                }
++        }
++        std::memcpy(c.board, bd, sizeof(c.board));
++        c.net = this;
++    }
++    else
++    {
++        for (int k = 0; k < nc; ++k)
++        {
++            int   s = changed[k];
++            Piece o = c.board[s], n = bd[s];
++            for (int p = 0; p < 2; ++p)
++            {
++                int16_t* a = c.acc[p];
++                if (o != NO_PIECE)
++                {
++                    const int16_t* w = &qW[size_t(feat(Color(p), o, s)) * h];
++                    for (int i = 0; i < h; ++i) a[i] -= w[i];
++                }
++                if (n != NO_PIECE)
++                {
++                    const int16_t* w = &qW[size_t(feat(Color(p), n, s)) * h];
++                    for (int i = 0; i < h; ++i) a[i] += w[i];
++                }
++            }
++            c.board[s] = n;
++        }
++    }
++    const Color    stm    = pos.side_to_move();
++    int            bucket = std::clamp((popcount(pos.pieces()) - 2) / 4, 0, NB - 1);
++    const float* ow  = &outW[size_t(bucket) * 2 * h];
++    float        out = 0;
++    const float inv = 1.0f / QA;
++    for (int p = 0; p < 2; ++p)
++    {
++        const int16_t* a = c.acc[p == 0 ? stm : ~stm];
++        const float*   w = ow + p * h;
++        float          sum = 0;
++        for (int i = 0; i < h; ++i)
++        {
++            float x = float(std::clamp<int>(a[i], 0, QA)) * inv;
++            sum += x * x * w[i];
++        }
++        out += sum;
++    }
++    double o = double(out) + outB[bucket];
++    int    v = int(std::lround(o * outScale));
++    return Value(std::clamp(v, -20000, 20000));
++}
++
+ bool load_student(const std::string& path) {
+     if (path.empty() || path == "<empty>")
+     {
+diff --git a/src/research.h b/src/research.h
+index 3e0e2a7f..b0eec319 100644
+--- a/src/research.h
++++ b/src/research.h
+@@ -53,8 +53,16 @@ struct StudentNet {
+     int                H = 0, NB = 0;
+     float              outScale = 1.0f;  // network output * outScale = internal units
+     std::vector<float> ftW, ftB, outW, outB;
++    // int16 quantized copy (QA for the feature transformer, QB for the output layer)
++    int QA = 255;
++    static constexpr int QB = 64;
++    std::vector<int16_t> qW, qB, qOut;
++    bool                 quantized = true;
+     bool               load(const std::string& path);
+-    Value              evaluate(const Position& pos) const;
++    void               quantize();
++    Value              evaluate(const Position& pos) const;        // dispatch
++    Value              evaluate_float(const Position& pos) const;  // reference full refresh
++    Value              evaluate_q(const Position& pos) const;      // incremental int16
+ };
+ extern const StudentNet* gStudent;
+ bool load_student(const std::string& path);
+-- 
+2.43.0
+

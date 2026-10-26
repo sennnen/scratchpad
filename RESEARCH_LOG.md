@@ -123,3 +123,12 @@ above tree_f32/tree_teacher_sm/tree_f16 (vgame 0.026-0.029), which beat it by 11
 => Selecting/validating nets on game positions (common practice) is misleading for students trained on
 different distributions; loss on positions sampled from search trees is a near-perfect cheap proxy here.
 (Within one architecture and teacher; untested across architectures.)
+
+### Student inference engineering (patch 0002)
+- Float full-refresh student: 365k nps vs teacher 398k (same contended conditions): no speed benefit.
+- New: per-thread int16 accumulators for WHITE/BLACK perspectives, updated by diffing the 64-square
+  board against the last evaluated position (no do_move hooks; refresh if >12 squares differ);
+  float output layer. QA chosen per net so the worst case cannot overflow int16 (QA~700 here).
+  Accuracy vs float reference on 5000 search positions: mean |diff| 2.1, max 8 internal units.
+  Speed: ~560-780k nps under heavy contention (~2x the float student). Binary: sf_research_q.
+  Running experiments (E2/E3/E1c/E4) keep the float binary for consistency.
