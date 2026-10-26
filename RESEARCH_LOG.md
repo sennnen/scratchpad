@@ -572,3 +572,20 @@ Monotone and large: concentrating training on positions a previous student found
 distribution and destroys coverage. With B3 this gives a consistent picture: every selection rule tested
 (near the alpha-beta window, far from it, by ply, main search only, by student error) loses to a uniform
 sample of the search tree. "Which positions?" is answered by "the evaluator's whole query distribution".
+
+## B4 RESULT: features vs readout (bridges small students and the production architecture)
+H=256 students; feature transformer frozen from E1 game_teacher_p1.5e7 (FTg, trained on 734k game positions)
+or E1 tree_teacher (FTt, trained on 25M tree positions); output layer re-initialised and trained on 734k
+game (G) or 734k tree (T) positions of run1 (teacher labels, 1.5e7 positions). 200 games each:
+| comparison | Elo |
+|---|---|
+| FTg: readout T vs readout G | **+186 +/- 50** |
+| FTt: readout T vs readout G | +3 +/- 33 |
+| readout G: FTt vs FTg | **+531 +/- 104** |
+Validation (VG/VT): FTg_G 0.0244/0.0337, FTg_T 0.0265/0.0289, FTt_G 0.0182/0.0228, FTt_T 0.0198/0.0203.
+Interpretation: most of the tree-position advantage is in *feature learning*. Given features that already
+cover the query distribution, the readout's training distribution barely matters (+3); given features
+learned from game positions only, a tree-trained readout recovers a lot (+186) but far from the
+feature effect (+531). The production master's FT (billions of Leela game positions) behaves like the
+"good features" case (P6/P7/P8: readout effect ~+5..+15). Hence the decisive upstream test, training the
+feature transformer itself with tree positions, needs GPU-scale training and could not be run here.

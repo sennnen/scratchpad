@@ -1,0 +1,412 @@
+/home/user/work/fastchess/fastchess -engine cmd=/home/user/data/sf_research name=FTt_G option.StudentFile=/home/user/nets/b4/FTt_G.stud tc=inf nodes=20000 -engine cmd=/home/user/data/sf_research name=FTg_G option.StudentFile=/home/user/nets/b4/FTg_G.stud tc=inf nodes=20000 -each option.Threads=1 option.Hash=16 -openings file=/home/user/data/UHO_4060_v4.epd format=epd order=random -srand 1 -repeat -rounds 100 -concurrency 4 -resign movecount=3 score=1000 twosided=true -draw movenumber=40 movecount=8 score=8 -pgnout file=experiments/b4/matches/FTt_G_vs_FTg_G.pgn -ratinginterval 100
+Indexing opening suite...
+Started game 2 of 200 (FTg_G vs FTt_G)
+Started game 3 of 200 (FTt_G vs FTg_G)
+Started game 4 of 200 (FTg_G vs FTt_G)
+Started game 1 of 200 (FTt_G vs FTg_G)
+Finished game 3 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 5 of 200 (FTt_G vs FTg_G)
+Finished game 4 (FTg_G vs FTt_G): 0-1 {Black wins by adjudication}
+Started game 6 of 200 (FTg_G vs FTt_G)
+Finished game 1 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 7 of 200 (FTt_G vs FTg_G)
+Finished game 2 (FTg_G vs FTt_G): 1-0 {White wins by adjudication}
+Started game 8 of 200 (FTg_G vs FTt_G)
+Finished game 5 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 9 of 200 (FTt_G vs FTg_G)
+Finished game 6 (FTg_G vs FTt_G): 0-1 {Black wins by adjudication}
+Started game 10 of 200 (FTg_G vs FTt_G)
+Finished game 9 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 11 of 200 (FTt_G vs FTg_G)
+Finished game 8 (FTg_G vs FTt_G): 0-1 {Black wins by adjudication}
+Started game 12 of 200 (FTg_G vs FTt_G)
+Finished game 7 (FTt_G vs FTg_G): 1-0 {White mates}
+Started game 13 of 200 (FTt_G vs FTg_G)
+Finished game 10 (FTg_G vs FTt_G): 0-1 {Black wins by adjudication}
+Started game 14 of 200 (FTg_G vs FTt_G)
+Finished game 12 (FTg_G vs FTt_G): 0-1 {Black wins by adjudication}
+Started game 15 of 200 (FTt_G vs FTg_G)
+Finished game 11 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 16 of 200 (FTg_G vs FTt_G)
+Finished game 16 (FTg_G vs FTt_G): 0-1 {Black wins by adjudication}
+Started game 17 of 200 (FTt_G vs FTg_G)
+Finished game 13 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 18 of 200 (FTg_G vs FTt_G)
+Finished game 14 (FTg_G vs FTt_G): 0-1 {Black wins by adjudication}
+Started game 19 of 200 (FTt_G vs FTg_G)
+Finished game 15 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 20 of 200 (FTg_G vs FTt_G)
+Finished game 17 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 21 of 200 (FTt_G vs FTg_G)
+Finished game 19 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 22 of 200 (FTg_G vs FTt_G)
+Finished game 18 (FTg_G vs FTt_G): 0-1 {Black wins by adjudication}
+Started game 23 of 200 (FTt_G vs FTg_G)
+Finished game 21 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 24 of 200 (FTg_G vs FTt_G)
+Finished game 20 (FTg_G vs FTt_G): 0-1 {Black wins by adjudication}
+Started game 25 of 200 (FTt_G vs FTg_G)
+Finished game 22 (FTg_G vs FTt_G): 0-1 {Black wins by adjudication}
+Started game 26 of 200 (FTg_G vs FTt_G)
+Finished game 23 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 27 of 200 (FTt_G vs FTg_G)
+Finished game 24 (FTg_G vs FTt_G): 0-1 {Black wins by adjudication}
+Started game 28 of 200 (FTg_G vs FTt_G)
+Finished game 26 (FTg_G vs FTt_G): 0-1 {Black wins by adjudication}
+Started game 29 of 200 (FTt_G vs FTg_G)
+Finished game 27 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 30 of 200 (FTg_G vs FTt_G)
+Finished game 25 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 31 of 200 (FTt_G vs FTg_G)
+Finished game 29 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 32 of 200 (FTg_G vs FTt_G)
+Finished game 28 (FTg_G vs FTt_G): 0-1 {Black mates}
+Started game 33 of 200 (FTt_G vs FTg_G)
+Finished game 31 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 34 of 200 (FTg_G vs FTt_G)
+Finished game 32 (FTg_G vs FTt_G): 0-1 {Black wins by adjudication}
+Started game 35 of 200 (FTt_G vs FTg_G)
+Finished game 33 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 36 of 200 (FTg_G vs FTt_G)
+Finished game 30 (FTg_G vs FTt_G): 1/2-1/2 {Draw by fifty moves rule}
+Started game 37 of 200 (FTt_G vs FTg_G)
+Finished game 34 (FTg_G vs FTt_G): 0-1 {Black wins by adjudication}
+Started game 38 of 200 (FTg_G vs FTt_G)
+Finished game 36 (FTg_G vs FTt_G): 0-1 {Black mates}
+Started game 39 of 200 (FTt_G vs FTg_G)
+Finished game 35 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 40 of 200 (FTg_G vs FTt_G)
+Finished game 37 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 41 of 200 (FTt_G vs FTg_G)
+Finished game 40 (FTg_G vs FTt_G): 0-1 {Black wins by adjudication}
+Started game 42 of 200 (FTg_G vs FTt_G)
+Finished game 38 (FTg_G vs FTt_G): 0-1 {Black wins by adjudication}
+Started game 43 of 200 (FTt_G vs FTg_G)
+Finished game 39 (FTt_G vs FTg_G): 1-0 {White mates}
+Started game 44 of 200 (FTg_G vs FTt_G)
+Finished game 41 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 45 of 200 (FTt_G vs FTg_G)
+Finished game 42 (FTg_G vs FTt_G): 0-1 {Black wins by adjudication}
+Started game 46 of 200 (FTg_G vs FTt_G)
+Finished game 43 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 47 of 200 (FTt_G vs FTg_G)
+Finished game 46 (FTg_G vs FTt_G): 0-1 {Black wins by adjudication}
+Started game 48 of 200 (FTg_G vs FTt_G)
+Finished game 45 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 49 of 200 (FTt_G vs FTg_G)
+Finished game 44 (FTg_G vs FTt_G): 0-1 {Black wins by adjudication}
+Started game 50 of 200 (FTg_G vs FTt_G)
+Finished game 47 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 51 of 200 (FTt_G vs FTg_G)
+Finished game 48 (FTg_G vs FTt_G): 0-1 {Black wins by adjudication}
+Started game 52 of 200 (FTg_G vs FTt_G)
+Finished game 50 (FTg_G vs FTt_G): 0-1 {Black mates}
+Started game 53 of 200 (FTt_G vs FTg_G)
+Finished game 49 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 54 of 200 (FTg_G vs FTt_G)
+Finished game 51 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 55 of 200 (FTt_G vs FTg_G)
+Finished game 53 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 56 of 200 (FTg_G vs FTt_G)
+Finished game 55 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 57 of 200 (FTt_G vs FTg_G)
+Finished game 52 (FTg_G vs FTt_G): 0-1 {Black wins by adjudication}
+Started game 58 of 200 (FTg_G vs FTt_G)
+Finished game 57 (FTt_G vs FTg_G): 0-1 {Black wins by adjudication}
+Started game 59 of 200 (FTt_G vs FTg_G)
+Finished game 54 (FTg_G vs FTt_G): 0-1 {Black wins by adjudication}
+Started game 60 of 200 (FTg_G vs FTt_G)
+Finished game 59 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 61 of 200 (FTt_G vs FTg_G)
+Finished game 56 (FTg_G vs FTt_G): 1-0 {White mates}
+Started game 62 of 200 (FTg_G vs FTt_G)
+Finished game 58 (FTg_G vs FTt_G): 0-1 {Black wins by adjudication}
+Started game 63 of 200 (FTt_G vs FTg_G)
+Finished game 60 (FTg_G vs FTt_G): 0-1 {Black wins by adjudication}
+Started game 64 of 200 (FTg_G vs FTt_G)
+Finished game 62 (FTg_G vs FTt_G): 0-1 {Black wins by adjudication}
+Started game 65 of 200 (FTt_G vs FTg_G)
+Finished game 63 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 66 of 200 (FTg_G vs FTt_G)
+Finished game 61 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 67 of 200 (FTt_G vs FTg_G)
+Finished game 64 (FTg_G vs FTt_G): 0-1 {Black wins by adjudication}
+Started game 68 of 200 (FTg_G vs FTt_G)
+Finished game 65 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 69 of 200 (FTt_G vs FTg_G)
+Finished game 67 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 70 of 200 (FTg_G vs FTt_G)
+Finished game 66 (FTg_G vs FTt_G): 0-1 {Black wins by adjudication}
+Started game 71 of 200 (FTt_G vs FTg_G)
+Finished game 71 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 72 of 200 (FTg_G vs FTt_G)
+Finished game 68 (FTg_G vs FTt_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 73 of 200 (FTt_G vs FTg_G)
+Finished game 70 (FTg_G vs FTt_G): 0-1 {Black wins by adjudication}
+Started game 74 of 200 (FTg_G vs FTt_G)
+Finished game 69 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 75 of 200 (FTt_G vs FTg_G)
+Finished game 72 (FTg_G vs FTt_G): 0-1 {Black wins by adjudication}
+Started game 76 of 200 (FTg_G vs FTt_G)
+Finished game 73 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 77 of 200 (FTt_G vs FTg_G)
+Finished game 75 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 78 of 200 (FTg_G vs FTt_G)
+Finished game 74 (FTg_G vs FTt_G): 0-1 {Black wins by adjudication}
+Started game 79 of 200 (FTt_G vs FTg_G)
+Finished game 77 (FTt_G vs FTg_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 80 of 200 (FTg_G vs FTt_G)
+Finished game 79 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 81 of 200 (FTt_G vs FTg_G)
+Finished game 80 (FTg_G vs FTt_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 82 of 200 (FTg_G vs FTt_G)
+Finished game 78 (FTg_G vs FTt_G): 0-1 {Black wins by adjudication}
+Started game 83 of 200 (FTt_G vs FTg_G)
+Finished game 81 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 84 of 200 (FTg_G vs FTt_G)
+Finished game 83 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 85 of 200 (FTt_G vs FTg_G)
+Finished game 82 (FTg_G vs FTt_G): 0-1 {Black wins by adjudication}
+Started game 86 of 200 (FTg_G vs FTt_G)
+Finished game 76 (FTg_G vs FTt_G): 1/2-1/2 {Draw by fifty moves rule}
+Started game 87 of 200 (FTt_G vs FTg_G)
+Finished game 85 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 88 of 200 (FTg_G vs FTt_G)
+Finished game 87 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 89 of 200 (FTt_G vs FTg_G)
+Finished game 86 (FTg_G vs FTt_G): 0-1 {Black wins by adjudication}
+Started game 90 of 200 (FTg_G vs FTt_G)
+Finished game 84 (FTg_G vs FTt_G): 0-1 {Black wins by adjudication}
+Started game 91 of 200 (FTt_G vs FTg_G)
+Finished game 89 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 92 of 200 (FTg_G vs FTt_G)
+Finished game 88 (FTg_G vs FTt_G): 0-1 {Black wins by adjudication}
+Started game 93 of 200 (FTt_G vs FTg_G)
+Finished game 93 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 94 of 200 (FTg_G vs FTt_G)
+Finished game 91 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 95 of 200 (FTt_G vs FTg_G)
+Finished game 94 (FTg_G vs FTt_G): 0-1 {Black wins by adjudication}
+Started game 96 of 200 (FTg_G vs FTt_G)
+Finished game 90 (FTg_G vs FTt_G): 0-1 {Black wins by adjudication}
+Started game 97 of 200 (FTt_G vs FTg_G)
+Finished game 92 (FTg_G vs FTt_G): 0-1 {Black wins by adjudication}
+Started game 98 of 200 (FTg_G vs FTt_G)
+Finished game 95 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 99 of 200 (FTt_G vs FTg_G)
+Finished game 97 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 100 of 200 (FTg_G vs FTt_G)
+Finished game 99 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 101 of 200 (FTt_G vs FTg_G)
+Finished game 98 (FTg_G vs FTt_G): 0-1 {Black wins by adjudication}
+Started game 102 of 200 (FTg_G vs FTt_G)
+Finished game 100 (FTg_G vs FTt_G): 0-1 {Black wins by adjudication}
+Started game 103 of 200 (FTt_G vs FTg_G)
+Finished game 96 (FTg_G vs FTt_G): 0-1 {Black wins by adjudication}
+Started game 104 of 200 (FTg_G vs FTt_G)
+Finished game 104 (FTg_G vs FTt_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 105 of 200 (FTt_G vs FTg_G)
+Finished game 101 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 106 of 200 (FTg_G vs FTt_G)
+Finished game 102 (FTg_G vs FTt_G): 0-1 {Black wins by adjudication}
+Started game 107 of 200 (FTt_G vs FTg_G)
+Finished game 103 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 108 of 200 (FTg_G vs FTt_G)
+Finished game 107 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 109 of 200 (FTt_G vs FTg_G)
+Finished game 106 (FTg_G vs FTt_G): 0-1 {Black wins by adjudication}
+Started game 110 of 200 (FTg_G vs FTt_G)
+Finished game 109 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 111 of 200 (FTt_G vs FTg_G)
+Finished game 105 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 112 of 200 (FTg_G vs FTt_G)
+Finished game 108 (FTg_G vs FTt_G): 0-1 {Black wins by adjudication}
+Started game 113 of 200 (FTt_G vs FTg_G)
+Finished game 113 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 114 of 200 (FTg_G vs FTt_G)
+Finished game 111 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 115 of 200 (FTt_G vs FTg_G)
+Finished game 110 (FTg_G vs FTt_G): 0-1 {Black wins by adjudication}
+Started game 116 of 200 (FTg_G vs FTt_G)
+Finished game 112 (FTg_G vs FTt_G): 0-1 {Black mates}
+Started game 117 of 200 (FTt_G vs FTg_G)
+Finished game 115 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 118 of 200 (FTg_G vs FTt_G)
+Finished game 117 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 119 of 200 (FTt_G vs FTg_G)
+Finished game 116 (FTg_G vs FTt_G): 0-1 {Black wins by adjudication}
+Started game 120 of 200 (FTg_G vs FTt_G)
+Finished game 114 (FTg_G vs FTt_G): 0-1 {Black wins by adjudication}
+Started game 121 of 200 (FTt_G vs FTg_G)
+Finished game 118 (FTg_G vs FTt_G): 0-1 {Black mates}
+Started game 122 of 200 (FTg_G vs FTt_G)
+Finished game 120 (FTg_G vs FTt_G): 0-1 {Black wins by adjudication}
+Started game 123 of 200 (FTt_G vs FTg_G)
+Finished game 119 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 124 of 200 (FTg_G vs FTt_G)
+Finished game 121 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 125 of 200 (FTt_G vs FTg_G)
+Finished game 122 (FTg_G vs FTt_G): 0-1 {Black wins by adjudication}
+Started game 126 of 200 (FTg_G vs FTt_G)
+Finished game 125 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 127 of 200 (FTt_G vs FTg_G)
+Finished game 123 (FTt_G vs FTg_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 128 of 200 (FTg_G vs FTt_G)
+Finished game 124 (FTg_G vs FTt_G): 0-1 {Black wins by adjudication}
+Started game 129 of 200 (FTt_G vs FTg_G)
+Finished game 126 (FTg_G vs FTt_G): 0-1 {Black wins by adjudication}
+Started game 130 of 200 (FTg_G vs FTt_G)
+Finished game 127 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 131 of 200 (FTt_G vs FTg_G)
+Finished game 128 (FTg_G vs FTt_G): 1/2-1/2 {Draw by adjudication}
+Started game 132 of 200 (FTg_G vs FTt_G)
+Finished game 129 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 133 of 200 (FTt_G vs FTg_G)
+Finished game 130 (FTg_G vs FTt_G): 0-1 {Black wins by adjudication}
+Started game 134 of 200 (FTg_G vs FTt_G)
+Finished game 132 (FTg_G vs FTt_G): 0-1 {Black wins by adjudication}
+Started game 135 of 200 (FTt_G vs FTg_G)
+Finished game 131 (FTt_G vs FTg_G): 1-0 {White mates}
+Started game 136 of 200 (FTg_G vs FTt_G)
+Finished game 133 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 137 of 200 (FTt_G vs FTg_G)
+Finished game 134 (FTg_G vs FTt_G): 0-1 {Black wins by adjudication}
+Started game 138 of 200 (FTg_G vs FTt_G)
+Finished game 136 (FTg_G vs FTt_G): 0-1 {Black wins by adjudication}
+Started game 139 of 200 (FTt_G vs FTg_G)
+Finished game 137 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 140 of 200 (FTg_G vs FTt_G)
+Finished game 138 (FTg_G vs FTt_G): 0-1 {Black mates}
+Started game 141 of 200 (FTt_G vs FTg_G)
+Finished game 135 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 142 of 200 (FTg_G vs FTt_G)
+Finished game 139 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 143 of 200 (FTt_G vs FTg_G)
+Finished game 140 (FTg_G vs FTt_G): 0-1 {Black wins by adjudication}
+Started game 144 of 200 (FTg_G vs FTt_G)
+Finished game 141 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 145 of 200 (FTt_G vs FTg_G)
+Finished game 142 (FTg_G vs FTt_G): 0-1 {Black wins by adjudication}
+Started game 146 of 200 (FTg_G vs FTt_G)
+Finished game 144 (FTg_G vs FTt_G): 0-1 {Black wins by adjudication}
+Started game 147 of 200 (FTt_G vs FTg_G)
+Finished game 145 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 148 of 200 (FTg_G vs FTt_G)
+Finished game 143 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 149 of 200 (FTt_G vs FTg_G)
+Finished game 148 (FTg_G vs FTt_G): 0-1 {Black wins by adjudication}
+Started game 150 of 200 (FTg_G vs FTt_G)
+Finished game 146 (FTg_G vs FTt_G): 0-1 {Black wins by adjudication}
+Started game 151 of 200 (FTt_G vs FTg_G)
+Finished game 147 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 152 of 200 (FTg_G vs FTt_G)
+Finished game 149 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 153 of 200 (FTt_G vs FTg_G)
+Finished game 151 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 154 of 200 (FTg_G vs FTt_G)
+Finished game 152 (FTg_G vs FTt_G): 0-1 {Black wins by adjudication}
+Started game 155 of 200 (FTt_G vs FTg_G)
+Finished game 150 (FTg_G vs FTt_G): 0-1 {Black wins by adjudication}
+Started game 156 of 200 (FTg_G vs FTt_G)
+Finished game 156 (FTg_G vs FTt_G): 0-1 {Black wins by adjudication}
+Started game 157 of 200 (FTt_G vs FTg_G)
+Finished game 155 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 158 of 200 (FTg_G vs FTt_G)
+Finished game 154 (FTg_G vs FTt_G): 0-1 {Black wins by adjudication}
+Started game 159 of 200 (FTt_G vs FTg_G)
+Finished game 153 (FTt_G vs FTg_G): 1/2-1/2 {Draw by adjudication}
+Started game 160 of 200 (FTg_G vs FTt_G)
+Finished game 158 (FTg_G vs FTt_G): 0-1 {Black wins by adjudication}
+Started game 161 of 200 (FTt_G vs FTg_G)
+Finished game 157 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 162 of 200 (FTg_G vs FTt_G)
+Finished game 160 (FTg_G vs FTt_G): 0-1 {Black wins by adjudication}
+Started game 163 of 200 (FTt_G vs FTg_G)
+Finished game 159 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 164 of 200 (FTg_G vs FTt_G)
+Finished game 161 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 165 of 200 (FTt_G vs FTg_G)
+Finished game 162 (FTg_G vs FTt_G): 0-1 {Black wins by adjudication}
+Started game 166 of 200 (FTg_G vs FTt_G)
+Finished game 163 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 167 of 200 (FTt_G vs FTg_G)
+Finished game 164 (FTg_G vs FTt_G): 0-1 {Black mates}
+Started game 168 of 200 (FTg_G vs FTt_G)
+Finished game 165 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 169 of 200 (FTt_G vs FTg_G)
+Finished game 167 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 170 of 200 (FTg_G vs FTt_G)
+Finished game 166 (FTg_G vs FTt_G): 0-1 {Black wins by adjudication}
+Started game 171 of 200 (FTt_G vs FTg_G)
+Finished game 168 (FTg_G vs FTt_G): 0-1 {Black wins by adjudication}
+Started game 172 of 200 (FTg_G vs FTt_G)
+Finished game 169 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 173 of 200 (FTt_G vs FTg_G)
+Finished game 170 (FTg_G vs FTt_G): 0-1 {Black mates}
+Started game 174 of 200 (FTg_G vs FTt_G)
+Finished game 173 (FTt_G vs FTg_G): 1-0 {White mates}
+Started game 175 of 200 (FTt_G vs FTg_G)
+Finished game 171 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 176 of 200 (FTg_G vs FTt_G)
+Finished game 172 (FTg_G vs FTt_G): 0-1 {Black wins by adjudication}
+Started game 177 of 200 (FTt_G vs FTg_G)
+Finished game 176 (FTg_G vs FTt_G): 0-1 {Black mates}
+Started game 178 of 200 (FTg_G vs FTt_G)
+Finished game 175 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 179 of 200 (FTt_G vs FTg_G)
+Finished game 174 (FTg_G vs FTt_G): 0-1 {Black wins by adjudication}
+Started game 180 of 200 (FTg_G vs FTt_G)
+Finished game 177 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 181 of 200 (FTt_G vs FTg_G)
+Finished game 179 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 182 of 200 (FTg_G vs FTt_G)
+Finished game 181 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 183 of 200 (FTt_G vs FTg_G)
+Finished game 178 (FTg_G vs FTt_G): 0-1 {Black wins by adjudication}
+Started game 184 of 200 (FTg_G vs FTt_G)
+Finished game 180 (FTg_G vs FTt_G): 1-0 {White wins by adjudication}
+Started game 185 of 200 (FTt_G vs FTg_G)
+Finished game 182 (FTg_G vs FTt_G): 0-1 {Black wins by adjudication}
+Started game 186 of 200 (FTg_G vs FTt_G)
+Finished game 183 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 187 of 200 (FTt_G vs FTg_G)
+Finished game 186 (FTg_G vs FTt_G): 0-1 {Black wins by adjudication}
+Started game 188 of 200 (FTg_G vs FTt_G)
+Finished game 185 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 189 of 200 (FTt_G vs FTg_G)
+Finished game 184 (FTg_G vs FTt_G): 0-1 {Black wins by adjudication}
+Started game 190 of 200 (FTg_G vs FTt_G)
+Finished game 187 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 191 of 200 (FTt_G vs FTg_G)
+Finished game 189 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 192 of 200 (FTg_G vs FTt_G)
+Finished game 191 (FTt_G vs FTg_G): 1-0 {White mates}
+Started game 193 of 200 (FTt_G vs FTg_G)
+Finished game 190 (FTg_G vs FTt_G): 0-1 {Black wins by adjudication}
+Started game 194 of 200 (FTg_G vs FTt_G)
+Finished game 188 (FTg_G vs FTt_G): 0-1 {Black wins by adjudication}
+Started game 195 of 200 (FTt_G vs FTg_G)
+Finished game 192 (FTg_G vs FTt_G): 0-1 {Black wins by adjudication}
+Started game 196 of 200 (FTg_G vs FTt_G)
+Finished game 193 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 197 of 200 (FTt_G vs FTg_G)
+Finished game 194 (FTg_G vs FTt_G): 0-1 {Black wins by adjudication}
+Started game 198 of 200 (FTg_G vs FTt_G)
+Finished game 196 (FTg_G vs FTt_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 199 of 200 (FTt_G vs FTg_G)
+Finished game 197 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Started game 200 of 200 (FTg_G vs FTt_G)
+Finished game 195 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Finished game 198 (FTg_G vs FTt_G): 0-1 {Black wins by adjudication}
+Finished game 199 (FTt_G vs FTg_G): 1-0 {White wins by adjudication}
+Finished game 200 (FTg_G vs FTt_G): 0-1 {Black wins by adjudication}
+--------------------------------------------------
+Results of FTt_G vs FTg_G (20000 nodes, 1t, 16MB, UHO_4060_v4.epd):
+Elo: 530.72 +/- 104.25, nElo: 937.23 +/- 48.15
+LOS: 100.00 %, DrawRatio: 4.00 %, PairsRatio: inf
+Games: 200, Wins: 186, Losses: 4, Draws: 10, Points: 191.0 (95.50 %)
+Ptnml(0-2): [0, 0, 4, 10, 86], WL/DD Ratio: inf
+--------------------------------------------------
+Finished match
+Total Time: 00:02:38 (hours:minutes:seconds)
+

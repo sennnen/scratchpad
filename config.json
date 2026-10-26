@@ -32,7 +32,7 @@
         "additional_lines_rgx": [],
         "event_name": "Fastchess Tournament",
         "site": "?",
-        "file": "experiments/b2/matches/mine_a2_vs_uniform.pgn",
+        "file": "experiments/b4/matches/FTt_G_vs_FTg_G.pgn",
         "notation": 0,
         "append_file": true,
         "track_nodes": false,
@@ -89,7 +89,7 @@
     },
     "engines": [
         {
-            "name": "mine_a2",
+            "name": "FTt_G",
             "dir": "",
             "cmd": "/home/user/data/sf_research",
             "args": "",
@@ -97,7 +97,7 @@
             "options": [
                 [
                     "StudentFile",
-                    "/home/user/nets/b2/mine_a2.stud"
+                    "/home/user/nets/b4/FTt_G.stud"
                 ],
                 [
                     "Threads",
@@ -122,7 +122,7 @@
             "variant": 0
         },
         {
-            "name": "uniform",
+            "name": "FTg_G",
             "dir": "",
             "cmd": "/home/user/data/sf_research",
             "args": "",
@@ -130,7 +130,7 @@
             "options": [
                 [
                     "StudentFile",
-                    "/home/user/nets/b2/uniform.stud"
+                    "/home/user/nets/b4/FTg_G.stud"
                 ],
                 [
                     "Threads",
@@ -156,16 +156,16 @@
         }
     ],
     "stats": {
-        "mine_a2 vs uniform": {
-            "wins": 1,
-            "losses": 198,
-            "draws": 1,
-            "penta_WW": 0,
-            "penta_WD": 0,
-            "penta_WL": 1,
+        "FTt_G vs FTg_G": {
+            "wins": 186,
+            "losses": 4,
+            "draws": 10,
+            "penta_WW": 86,
+            "penta_WD": 10,
+            "penta_WL": 4,
             "penta_DD": 0,
-            "penta_LD": 1,
-            "penta_LL": 98
+            "penta_LD": 0,
+            "penta_LL": 0
         }
     }
 }
