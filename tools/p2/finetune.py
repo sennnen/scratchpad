@@ -36,6 +36,21 @@ def board_stats(recs):
     return se, material, recs['rule50'].astype(np.int64)
 
 
+def wdl_a(recs):
+    """Stockfish win_rate_params 'a' (uci.cpp): Score::InternalUnits stores to_cp(v) = round(100 v / a)."""
+    b = recs['board']
+    codes = np.stack([b & 15, b >> 4], 2).reshape(len(recs), 64).astype(np.int64)
+    w = np.array([0, 1, 3, 3, 5, 9, 0, 0, 0, 1, 3, 3, 5, 9, 0, 0])
+    m = np.clip(w[codes].sum(1), 17, 78) / 58.0
+    a0, a1, a2, a3 = -142.72052667, 372.35176398, -340.71073572, 415.23490212
+    return ((a0 * m + a1) * m + a2) * m + a3
+
+
+def cp_to_internal(cp, recs):
+    """Recorded search scores (Rec.score from `label`/`gendata`) are centipawns; convert to Value units."""
+    return cp.astype(np.float64) * wdl_a(recs) / 100.0
+
+
 def scale_eval(nnue, se, material, r50):
     """Vectorised Stockfish scale_evaluation with optimism 0 (integer semantics approximated in float)."""
     se_norm = np.trunc(se * 1024 / (np.abs(se) + 1024))
@@ -113,11 +128,11 @@ def prepare(d, quiet_only=False):
     keep = np.ones(len(d), bool)
     if quiet_only:
         keep &= (recs['src'] & 0x80) == 0
-    keep &= np.abs(recs['score']) < 20000  # drop mate scores
+    keep &= np.abs(recs['score']) < 20000  # drop mate/TB scores (stored as +-31000/32000)
     idx = np.nonzero(keep)[0]
     r = recs[idx]
     se, mat, r50 = board_stats(r)
-    t = inverse_scale(r['score'], se, mat, r50)
+    t = inverse_scale(cp_to_internal(r['score'], r), se, mat, r50)
     return (torch.from_numpy(np.ascontiguousarray(d['ft'][idx])), torch.from_numpy(d['bucket'][idx].astype(np.int64)),
             torch.from_numpy(t.astype(np.float32)), torch.from_numpy(d['sfeval'][idx].astype(np.float32)))
 

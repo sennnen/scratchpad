@@ -344,3 +344,29 @@ positions (same label procedure, same count, same hyperparameters)?
 - Primary endpoint: direct match FT-T vs FT-G, 20k nodes, >= 1000 games. Secondary: each vs master.
 - A "Stockfish improvement" claim requires: candidate vs master > 0 with LOS >= 99% on >= 4000 games at
   fixed nodes AND confirmation at STC (10+0.1) on an independent opening seed.
+
+## BUG FOUND (affects Phase I search-label results): recorded search scores are centipawns
+`gendata`/`label` stored `Score::InternalUnits`, which Stockfish fills with `UCIEngine::to_cp(v)` =
+round(100 v / a(material)), a ~ 300-400. Teacher labels (raw net eval) are true internal units. Phase I
+trained "score"/"blend" students with sigmoid(score/340), i.e. on targets compressed ~3.4x.
+Impact on Phase I:
+- UNAFFECTED: all teacher-label results (R1 incl. E9/E10/E13, R2, R3, R4, E7/E8).
+- INVALID: absolute strength of all search-score-label students (E1 game_score/game_blend, gq_score,
+  gq_blend; "teacher labels beat search labels +91"; "WDL blending hurts"; "-600..-1300 unfiltered").
+  Their evals were ~3x too small for Stockfish's pruning margins. These claims are withdrawn.
+- E6 (tree_score vs gq_score, +80) compared two equally mis-scaled arms: internally consistent but at a
+  pathological scale; to be re-run with correct units before it can be claimed.
+- Adjudication thresholds in gendata (|score| >= 2500, <= 15) were in cp: only game lengths affected.
+Fix: `tools/p2/finetune.py: cp_to_internal()` (exact inverse of to_cp up to rounding). Check: slope of
+search value on scaled static eval is 1.07 (VG) / 1.11 (VT) after conversion (0.32 before).
+
+## P2-1: production master net vs its own 5000-node search (corrected units)
+Static eval mapped through scale_evaluation vs search value, sigmoid-MSE (scale 340), held-out sets:
+| set | n | best move capture | MSE all | MSE quiet | quiet & material-balanced | quiet & imbalanced | share |err|>300, quiet |
+|---|---|---|---|---|---|---|---|
+| VG game positions | 19,675 | 19% | 0.0144 | 0.0078 | 0.0086 | 0.0063 | 17.9% |
+| VT tree positions | 19,283 | 36% | 0.0479 | 0.0141 | 0.0166 | 0.0112 | 30.3% |
+The production net (trained on game positions of Leela data) is ~1.8x further from search on quiet tree
+positions than on quiet game positions, also when material is balanced. Consistent with the
+distribution-mismatch hypothesis, but tree positions may also be intrinsically harder: fine-tuning
+(P2-F1) tests whether the gap is learnable.
