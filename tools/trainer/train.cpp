@@ -14,7 +14,10 @@
 #include <vector>
 #include <sys/resource.h>
 
-static int PLYMIN = 0, PLYMAX = 63;  // tree-position ply-from-root filter (src bits 1-6)
+static int PLYMIN = 0, PLYMAX = 63;
+// boundary filters (records generated with `gendata ... boundary 1`): score = 2*beta + qsearch
+static int QSF = -1;                       // -1 any, 0 main search only, 1 qsearch only
+static double MARGIN_LT = 1e9, MARGIN_GT = -1;  // keep |scaled eval - beta| < LT and > GT  // tree-position ply-from-root filter (src bits 1-6)
 
 struct Rec {
     uint8_t board[32];
@@ -36,6 +39,28 @@ static std::vector<Rec> load(const std::string& path, int src, double frac = 1.0
     v.resize(n);
     fclose(f);
     if (src >= 0) v.erase(std::remove_if(v.begin(), v.end(), [&](const Rec& r) { return (r.src & 1) != src; }), v.end());
+    if (QSF >= 0 || MARGIN_LT < 1e9 || MARGIN_GT >= 0)
+        v.erase(std::remove_if(v.begin(), v.end(), [&](const Rec& r) {
+            int qs = r.score & 1, beta = r.score >> 1;
+            if (QSF >= 0 && qs != QSF) return true;
+            // Stockfish scale_evaluation (optimism 0) of the teacher raw eval
+            static const int val[16] = {0, 208, 781, 825, 1276, 2538, 0, 0, 0, 208, 781, 825, 1276, 2538, 0, 0};
+            int se = 0, npawn = 0, nonpawn = 0;
+            for (int sq = 0; sq < 64; ++sq) {
+                int c = (r.board[sq >> 1] >> ((sq & 1) * 4)) & 15;
+                if (!c) continue;
+                int sgn = ((c >> 3) == r.stm) ? 1 : -1;
+                se += sgn * val[c];
+                if ((c & 7) == 1) ++npawn; else nonpawn += val[c];
+            }
+            long nn = r.teacher;
+            long sen = se * 1024 / (std::abs(se) + 1024), nnn = nn * 1024 / (std::abs(nn) + 1024);
+            long correl = sen * nnn / 512, vv = nn + nn * correl / 65536;
+            vv += long(521 * npawn + nonpawn) * vv / 90649;
+            vv -= vv * r.rule50 / 189;
+            double m = std::fabs(double(vv - beta));
+            return !(m < MARGIN_LT && m > MARGIN_GT);
+        }), v.end());
     if (PLYMIN > 0 || PLYMAX < 63)
         v.erase(std::remove_if(v.begin(), v.end(), [&](const Rec& r) { int p = (r.src >> 1) & 63; return p < PLYMIN || p > PLYMAX; }), v.end());
     return v;
@@ -219,6 +244,9 @@ int main(int argc, char** argv) {
         else if (a == "--mine_k") mineK = std::stod(nx());
         else if (a == "--mine_alpha") mineAlpha = std::stod(nx());
         else if (a == "--plymax") PLYMAX = std::stoi(nx());
+        else if (a == "--qs") QSF = std::stoi(nx());
+        else if (a == "--margin_lt") MARGIN_LT = std::stod(nx());
+        else if (a == "--margin_gt") MARGIN_GT = std::stod(nx());
         else if (a == "--seed") seed = std::stoull(nx());
         else { fprintf(stderr, "unknown arg %s\n", a.c_str()); return 1; }
     }
@@ -269,6 +297,7 @@ int main(int argc, char** argv) {
     // drop extreme labels (mates) from training on teacher/score; keep for blend via clamp in sigmoid
     size_t N = data.size();
     if (N == 0) { fprintf(stderr, "no data\n"); return 1; }
+    if (N < size_t(batch)) { fprintf(stderr, "dataset (%zu) smaller than one batch (%d)\n", N, batch); return 1; }
 
     Net net(H);
     {

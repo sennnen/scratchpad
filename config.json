@@ -32,7 +32,7 @@
         "additional_lines_rgx": [],
         "event_name": "Fastchess Tournament",
         "site": "?",
-        "file": "experiments/p2f1/matches/FT_G_vs_master.pgn",
+        "file": "experiments/p2f1/matches/FT_M_vs_master.pgn",
         "notation": 0,
         "append_file": true,
         "track_nodes": false,
@@ -89,7 +89,7 @@
     },
     "engines": [
         {
-            "name": "FT_G",
+            "name": "FT_M",
             "dir": "",
             "cmd": "/home/user/data/sf_p2",
             "args": "",
@@ -97,7 +97,7 @@
             "options": [
                 [
                     "EvalFile",
-                    "/home/user/nets/p2f1/FT_G.nnue"
+                    "/home/user/nets/p2f1/FT_M.nnue"
                 ],
                 [
                     "Threads",
@@ -152,16 +152,16 @@
         }
     ],
     "stats": {
-        "FT_G vs master": {
-            "wins": 238,
-            "losses": 302,
-            "draws": 422,
-            "penta_WW": 14,
-            "penta_WD": 83,
-            "penta_WL": 127,
-            "penta_DD": 91,
-            "penta_LD": 157,
-            "penta_LL": 9
+        "FT_M vs master": {
+            "wins": 34,
+            "losses": 55,
+            "draws": 71,
+            "penta_WW": 0,
+            "penta_WD": 16,
+            "penta_WL": 18,
+            "penta_DD": 15,
+            "penta_LD": 25,
+            "penta_LL": 6
         }
     }
 }

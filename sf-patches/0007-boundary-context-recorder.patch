@@ -1,0 +1,149 @@
+From 48cda41b70c381de2871ea54e2c7ca30f7f6db82 Mon Sep 17 00:00:00 2001
+From: research <research@localhost>
+Date: Mon, 26 Oct 2026 13:48:24 +0000
+Subject: [PATCH] research: record search context (beta, PV, qsearch) of
+ evaluate() calls
+
+---
+ src/evaluate.cpp | 6 ++++++
+ src/gendata.cpp  | 3 +++
+ src/research.cpp | 2 ++
+ src/research.h   | 8 +++++++-
+ src/search.cpp   | 9 +++++----
+ 5 files changed, 23 insertions(+), 5 deletions(-)
+
+diff --git a/src/evaluate.cpp b/src/evaluate.cpp
+index a3c02192..efbb2463 100644
+--- a/src/evaluate.cpp
++++ b/src/evaluate.cpp
+@@ -63,6 +63,12 @@ Value Eval::evaluate(const Eval::NNUE::Network&     network,
+         Value t = Research::gStudent ? network.evaluate(pos, accumulators, caches) : nnue;
+         r.teacher = int16_t(std::clamp(int(t), -32000, 32000));
+         r.score   = int16_t(std::clamp(int(nnue), -32000, 32000));
++        if (Research::gRecorder->boundary && !Research::gStudent)
++        {
++            r.score = int16_t(2 * std::clamp(Research::tlBeta, -16000, 16000) + (Research::tlQs ? 1 : 0));
++            if (Research::tlPv)
++                r.src |= 0x80;
++        }
+         Research::gRecorder->write(r);
+     }
+     return scale_evaluation(nnue, optimism, pos);
+diff --git a/src/gendata.cpp b/src/gendata.cpp
+index 3158cc68..b576f26e 100644
+--- a/src/gendata.cpp
++++ b/src/gendata.cpp
+@@ -27,6 +27,7 @@ void gendata(Engine& engine, std::istringstream& is);
+ void gendata(Engine& engine, std::istringstream& is) {
+     u64         nodes = 5000, games = 10, seed = 1, maxply = 400, randply = 0;
+     double      treerate = 0.0;
++    bool        boundaryRec = false;
+     std::string out = "data.bin", book, token;
+     while (is >> token)
+     {
+@@ -38,6 +39,7 @@ void gendata(Engine& engine, std::istringstream& is) {
+         else if (token == "treerate") is >> treerate;
+         else if (token == "maxply") is >> maxply;
+         else if (token == "randply") is >> randply;
++        else if (token == "boundary") { int b; is >> b; boundaryRec = b != 0; }
+     }
+     std::vector<std::string> fens;
+     if (!book.empty())
+@@ -61,6 +63,7 @@ void gendata(Engine& engine, std::istringstream& is) {
+     Research::Recorder rec;
+     rec.f    = f;
+     rec.rate = treerate;
++    rec.boundary = boundaryRec;
+     rec.rng  = 0x9E3779B97F4A7C15ULL ^ (seed * 0xD1B54A32D192ED03ULL);
+     u64 rng  = seed * 0x2545F4914F6CDD1DULL + 1;
+     auto rnd = [&]() {
+diff --git a/src/research.cpp b/src/research.cpp
+index 3bcefe1c..15daae7a 100644
+--- a/src/research.cpp
++++ b/src/research.cpp
+@@ -13,6 +13,8 @@
+ namespace Stockfish::Research {
+ 
+ Recorder*         gRecorder = nullptr;
++thread_local int  tlBeta    = 0;
++thread_local bool tlPv = false, tlQs = false;
+ 
+ static const int KB_OF[32] = {0, 1, 2, 3, 4, 4, 5, 5, 6, 6, 6, 6, 7, 7, 7, 7,
+                               7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7};
+diff --git a/src/research.h b/src/research.h
+index 1a72b11b..9eaa1af2 100644
+--- a/src/research.h
++++ b/src/research.h
+@@ -46,7 +46,8 @@ struct Recorder {
+     double   rate = 0.0;  // probability of recording an evaluate() call
+     uint64_t rng  = 0x9E3779B97F4A7C15ULL;
+     uint64_t written = 0;
+-    int      rootPly = 0;  // game ply of the search root (tree records store ply-from-root in src bits 1-6)
++    int      rootPly = 0;
++    bool     boundary = false;  // game ply of the search root (tree records store ply-from-root in src bits 1-6)
+     bool sample() {
+         rng ^= rng << 13;
+         rng ^= rng >> 7;
+@@ -60,6 +61,11 @@ struct Recorder {
+ };
+ extern Recorder* gRecorder;  // single-threaded data generation only
+ 
++// Search context of the current evaluate() call (set by search right before calling evaluate).
++// With Recorder::boundary, tree records store score = 2*clamp(beta,+-16000) + qsearch and src bit7 = PvNode.
++extern thread_local int  tlBeta;
++extern thread_local bool tlPv, tlQs;
++
+ // Student: (768 -> H) x 2 perspectives, SCReLU, -> NB output buckets (by piece count).
+ struct StudentNet {
+     int                H = 0, NB = 0, fset = 0;  // fset 1: 8 king buckets x 768, mirrored
+diff --git a/src/search.cpp b/src/search.cpp
+index 7d9c9193..99555757 100644
+--- a/src/search.cpp
++++ b/src/search.cpp
+@@ -17,6 +17,7 @@
+ */
+ 
+ #include "search.h"
++#include "research.h"
+ 
+ #include <algorithm>
+ #include <array>
+@@ -858,7 +859,7 @@ Value Search::Worker::search(
+         // Never assume anything about values stored in TT
+         unadjustedStaticEval = ttData.eval;
+         if (!is_valid(unadjustedStaticEval))
+-            unadjustedStaticEval = evaluate(pos);
++            unadjustedStaticEval = (Research::tlBeta = beta, Research::tlPv = PvNode, Research::tlQs = false, evaluate(pos));
+ 
+         ss->staticEval = eval = to_corrected_static_eval(unadjustedStaticEval, correctionValue);
+ 
+@@ -869,7 +870,7 @@ Value Search::Worker::search(
+     }
+     else
+     {
+-        unadjustedStaticEval = evaluate(pos);
++        unadjustedStaticEval = (Research::tlBeta = beta, Research::tlPv = PvNode, Research::tlQs = false, evaluate(pos));
+         ss->staticEval = eval = to_corrected_static_eval(unadjustedStaticEval, correctionValue);
+ 
+         // Static evaluation is saved as it was before adjustment by correction history
+@@ -1762,7 +1763,7 @@ Value Search::Worker::qsearch(Position& pos, Stack* ss, Value alpha, Value beta)
+             unadjustedStaticEval = ttData.eval;
+ 
+             if (!is_valid(unadjustedStaticEval))
+-                unadjustedStaticEval = evaluate(pos);
++                unadjustedStaticEval = (Research::tlBeta = beta, Research::tlPv = PvNode, Research::tlQs = true, evaluate(pos));
+ 
+             ss->staticEval = bestValue =
+               to_corrected_static_eval(unadjustedStaticEval, correctionValue);
+@@ -1774,7 +1775,7 @@ Value Search::Worker::qsearch(Position& pos, Stack* ss, Value alpha, Value beta)
+         }
+         else
+         {
+-            unadjustedStaticEval = evaluate(pos);
++            unadjustedStaticEval = (Research::tlBeta = beta, Research::tlPv = PvNode, Research::tlQs = true, evaluate(pos));
+             ss->staticEval       = bestValue =
+               to_corrected_static_eval(unadjustedStaticEval, correctionValue);
+         }
+-- 
+2.43.0
+
