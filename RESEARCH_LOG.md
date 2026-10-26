@@ -115,3 +115,11 @@ The tree curve flattens (+69, +56, +26 per doubling from 1/8 up), consistent wit
 student nearing capacity; the game curve is still steep (+203, +159 per doubling) but starts far lower.
 Caveats: small student (768->256), node-limited matches (equal nodes, not equal time), single teacher,
 one generation setting (5000 nodes/move). Distillation requires an existing strong net.
+
+### Validation-loss proxy for strength (E1+E1b, 11 teacher-label H=256 students)
+`tools/proxy_corr.py`: Elo vs held-out MSE. Search-tree validation MSE: Pearson 0.996, Spearman 1.000.
+Game-position validation MSE: Pearson 0.850, Spearman 0.800; it ranks game_teacher_p1.5e7 (vgame 0.0249)
+above tree_f32/tree_teacher_sm/tree_f16 (vgame 0.026-0.029), which beat it by 111-264 Elo.
+=> Selecting/validating nets on game positions (common practice) is misleading for students trained on
+different distributions; loss on positions sampled from search trees is a near-perfect cheap proxy here.
+(Within one architecture and teacher; untested across architectures.)
