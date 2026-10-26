@@ -51,7 +51,8 @@ chained through direct matches):
 - Sample-matched (734k positions each, same 7,490 CPU-s run): tree +207 [162, 253] over game positions, so
   the distribution matters, not only the quantity.
 - Generation settings (equal compute): recording 8% instead of 2% and/or 20k instead of 5k nodes/move
-  adds up to +51 +/- 38 for tree data, so the tree side of the ratio is also not at its optimum.
+  adds up to +51 +/- 38 for tree data. Unlike game data, tree data gets *worse* from fast self-play
+  (300 nodes/25%: -44 +/- 41; 1000 nodes/25%: -24 +/- 39 vs 20k nodes/8%, E12).
 - Conventional labels on game positions are worse still: quiet positions + 5000-node search score -113
   [-165, -66]; with 0.7 score + 0.3 WDL -252; unfiltered search labels -600 to -1300.
 

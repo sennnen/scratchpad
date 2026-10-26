@@ -291,3 +291,14 @@ baselines and are superseded.
   (LOS 99.4%). So the E4 finding "capacity does not help game data" holds for standard 5000-node game data
   (734k positions) but not for larger/more diverse fast-game data, where H=512 gains about as much as
   with tree data (+70). Revised R3: capacity scaling is limited by data diversity; tree data has the most.
+
+## E12: tree data from fast self-play (does the game-data trend transfer?) - no
+Same 1,870 CPU-s budget, 25% of evaluate() calls recorded (seeds 7001-7004), H=256, 1e8 positions:
+| setting | tree positions | vgame | vtree | vs E3 best (20000 nodes, 8%) |
+|---|---|---|---|---|
+| 300 nodes, 25% | 35.3M | 0.02227 | 0.02355 | -44 +/- 41 |
+| 1000 nodes, 25% | 45.7M | 0.02078 | 0.02210 | -24 +/- 39 |
+| 20000 nodes, 8% (E3) | 28.7M | 0.02050 | 0.02016 | 0 |
+Opposite to game data: tree positions from deeper per-move searches are worth more (shallow trees are
+dominated by near-root, highly correlated nodes). The vtree proxy again orders the three correctly.
+Best tree recipe found: >= 5000-20000 nodes/move, record 8%+ of evaluate() calls.
