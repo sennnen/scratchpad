@@ -179,3 +179,16 @@ Reference n5000_r02 = e1b tree_f4 (5000 nodes/move, 2% of evaluate() calls; same
   are at least as good as shallow ones per CPU-s (1000 nodes/move: per-move overhead dominates, fewer evals/s).
 - Elo ordering again equals the vtree-MSE ordering (R2 holds out of sample).
 - Implication for R1: the 2%-rate setting used there is not the most efficient; the >=32x figure is conservative.
+
+## E1c: replication and node-budget robustness of R1
+Disjoint 1/32 subsets of run1 (`--frac 0.03125 --skip s`), H=256, 1.6e7 training positions; opponent:
+game-position student trained on all of run1 (game_f1). 200 games each, 20k nodes:
+| subset | vtree | Elo vs game_f1 |
+|---|---|---|
+| s=0 (E1b tree_f32) | 0.02975 | +104 +/- 49 |
+| s=0.25 | 0.03150 | +147 +/- 47 |
+| s=0.50 | 0.02984 | +133 +/- 47 |
+| s=0.75 | 0.03067 | +81 +/- 46 |
+4/4 subsets significant (LOS >= 99.99%); mean +116. Node budgets (tree_f32 vs game_f1):
+5k nodes +123 +/- 52, 20k +104 +/- 49, 80k +141 +/- 50. Full data at 80k nodes (tree_f1 vs game_f1):
+193-2-5, +655 +/- 176 (vs +545 at 20k): the advantage does not shrink with deeper search.

@@ -32,7 +32,7 @@
         "additional_lines_rgx": [],
         "event_name": "Fastchess Tournament",
         "site": "?",
-        "file": "/home/user/scratchpad/experiments/e3/matches/n20000_r08_vs_n5000_r02.pgn",
+        "file": "experiments/e1c/matches/tree_f1_vs_game_f1_n80000.pgn",
         "notation": 0,
         "append_file": true,
         "track_nodes": false,
@@ -89,7 +89,7 @@
     },
     "engines": [
         {
-            "name": "n20000_r08",
+            "name": "tree_f1",
             "dir": "",
             "cmd": "/home/user/data/sf_research",
             "args": "",
@@ -97,7 +97,7 @@
             "options": [
                 [
                     "StudentFile",
-                    "/home/user/nets/e3/n20000_r08.stud"
+                    "/home/user/nets/e1c/tree_f1.stud"
                 ],
                 [
                     "Threads",
@@ -116,13 +116,13 @@
                     "moves": 0,
                     "timemargin": 0
                 },
-                "nodes": 20000,
+                "nodes": 80000,
                 "plies": 0
             },
             "variant": 0
         },
         {
-            "name": "n5000_r02",
+            "name": "game_f1",
             "dir": "",
             "cmd": "/home/user/data/sf_research",
             "args": "",
@@ -130,7 +130,7 @@
             "options": [
                 [
                     "StudentFile",
-                    "/home/user/nets/e3/n5000_r02.stud"
+                    "/home/user/nets/e1c/game_f1.stud"
                 ],
                 [
                     "Threads",
@@ -149,23 +149,23 @@
                     "moves": 0,
                     "timemargin": 0
                 },
-                "nodes": 20000,
+                "nodes": 80000,
                 "plies": 0
             },
             "variant": 0
         }
     ],
     "stats": {
-        "n20000_r08 vs n5000_r02": {
-            "wins": 97,
-            "losses": 68,
-            "draws": 35,
-            "penta_WW": 18,
-            "penta_WD": 17,
-            "penta_WL": 44,
-            "penta_DD": 3,
-            "penta_LD": 12,
-            "penta_LL": 6
+        "tree_f1 vs game_f1": {
+            "wins": 193,
+            "losses": 2,
+            "draws": 5,
+            "penta_WW": 93,
+            "penta_WD": 5,
+            "penta_WL": 2,
+            "penta_DD": 0,
+            "penta_LD": 0,
+            "penta_LL": 0
         }
     }
 }
