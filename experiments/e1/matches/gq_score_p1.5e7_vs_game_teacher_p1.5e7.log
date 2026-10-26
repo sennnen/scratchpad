@@ -1,0 +1,412 @@
+/home/user/work/fastchess/fastchess -engine cmd=/home/user/data/sf_research name=gq_score_p1.5e7 option.StudentFile=/home/user/nets/e1/gq_score_p1.5e7.stud -engine cmd=/home/user/data/sf_research name=game_teacher_p1.5e7 option.StudentFile=/home/user/nets/e1/game_teacher_p1.5e7.stud -each tc=inf nodes=20000 option.Threads=1 option.Hash=16 -openings file=/home/user/data/UHO_4060_v4.epd format=epd order=random -srand 1 -repeat -rounds 100 -concurrency 4 -resign movecount=3 score=1000 twosided=true -draw movenumber=40 movecount=8 score=8 -pgnout file=experiments/e1/matches/gq_score_p1.5e7_vs_game_teacher_p1.5e7.pgn -ratinginterval 100
+Indexing opening suite...
+Started game 2 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Started game 3 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Started game 1 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Started game 4 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 1 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 1-0 {White wins by adjudication}
+Started game 5 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 3 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 0-1 {Black mates}
+Started game 6 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 4 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 1-0 {White wins by adjudication}
+Started game 7 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 5 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 8 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 2 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 1-0 {White wins by adjudication}
+Started game 9 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 7 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 1-0 {White wins by adjudication}
+Started game 10 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 6 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 1-0 {White wins by adjudication}
+Started game 11 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 8 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 1-0 {White wins by adjudication}
+Started game 12 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 9 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 1-0 {White wins by adjudication}
+Started game 13 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 12 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 1-0 {White mates}
+Started game 14 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 11 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 1-0 {White wins by adjudication}
+Started game 15 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 10 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 1/2-1/2 {Draw by adjudication}
+Started game 16 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 13 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 1-0 {White wins by adjudication}
+Started game 17 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 14 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 1-0 {White wins by adjudication}
+Started game 18 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 16 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 0-1 {Black wins by adjudication}
+Started game 19 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 15 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 0-1 {Black wins by adjudication}
+Started game 20 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 18 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 1-0 {White wins by adjudication}
+Started game 21 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 17 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 0-1 {Black wins by adjudication}
+Started game 22 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 19 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 1-0 {White wins by adjudication}
+Started game 23 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 20 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 1-0 {White wins by adjudication}
+Started game 24 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 22 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 1-0 {White wins by adjudication}
+Started game 25 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 21 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 1-0 {White mates}
+Started game 26 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 24 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 0-1 {Black wins by adjudication}
+Started game 27 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 23 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 1-0 {White wins by adjudication}
+Started game 28 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 25 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 0-1 {Black wins by adjudication}
+Started game 29 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 27 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 1-0 {White wins by adjudication}
+Started game 30 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 29 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 0-1 {Black mates}
+Started game 31 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 26 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 1-0 {White wins by adjudication}
+Started game 32 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 28 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 1-0 {White wins by adjudication}
+Started game 33 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 31 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 0-1 {Black wins by adjudication}
+Started game 34 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 30 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 35 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 33 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 0-1 {Black wins by adjudication}
+Started game 36 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 32 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 1-0 {White wins by adjudication}
+Started game 37 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 34 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 1-0 {White wins by adjudication}
+Started game 38 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 37 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 1-0 {White wins by adjudication}
+Started game 39 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 36 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 1-0 {White wins by adjudication}
+Started game 40 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 35 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 0-1 {Black wins by adjudication}
+Started game 41 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 38 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 1-0 {White wins by adjudication}
+Started game 42 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 40 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 0-1 {Black wins by adjudication}
+Started game 43 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 39 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 1-0 {White wins by adjudication}
+Started game 44 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 42 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 1-0 {White wins by adjudication}
+Started game 45 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 43 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 1-0 {White wins by adjudication}
+Started game 46 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 44 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 1-0 {White wins by adjudication}
+Started game 47 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 41 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 0-1 {Black wins by adjudication}
+Started game 48 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 46 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 1-0 {White wins by adjudication}
+Started game 49 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 48 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 1-0 {White wins by adjudication}
+Started game 50 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 45 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 0-1 {Black wins by adjudication}
+Started game 51 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 49 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 0-1 {Black wins by adjudication}
+Started game 52 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 50 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 53 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 47 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 0-1 {Black wins by adjudication}
+Started game 54 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 52 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 0-1 {Black wins by adjudication}
+Started game 55 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 53 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 0-1 {Black wins by adjudication}
+Started game 56 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 51 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 0-1 {Black wins by adjudication}
+Started game 57 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 54 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 0-1 {Black wins by adjudication}
+Started game 58 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 55 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 1-0 {White wins by adjudication}
+Started game 59 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 56 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 1-0 {White wins by adjudication}
+Started game 60 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 57 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 1-0 {White wins by adjudication}
+Started game 61 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 59 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 1-0 {White wins by adjudication}
+Started game 62 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 60 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 0-1 {Black mates}
+Started game 63 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 58 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 0-1 {Black wins by adjudication}
+Started game 64 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 64 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 65 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 61 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 0-1 {Black wins by adjudication}
+Started game 66 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 62 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 1-0 {White wins by adjudication}
+Started game 67 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 63 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 0-1 {Black wins by adjudication}
+Started game 68 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 66 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 1-0 {White wins by adjudication}
+Started game 69 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 67 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 1-0 {White wins by adjudication}
+Started game 70 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 68 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 0-1 {Black wins by adjudication}
+Started game 71 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 65 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 1/2-1/2 {Draw by adjudication}
+Started game 72 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 69 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 0-1 {Black wins by adjudication}
+Started game 73 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 71 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 1-0 {White wins by adjudication}
+Started game 74 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 70 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 1-0 {White wins by adjudication}
+Started game 75 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 72 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 0-1 {Black wins by adjudication}
+Started game 76 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 73 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 0-1 {Black wins by adjudication}
+Started game 77 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 74 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 1-0 {White wins by adjudication}
+Started game 78 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 75 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 1-0 {White wins by adjudication}
+Started game 79 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 76 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 0-1 {Black wins by adjudication}
+Started game 80 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 78 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 1-0 {White wins by adjudication}
+Started game 81 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 77 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 0-1 {Black wins by adjudication}
+Started game 82 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 80 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 1-0 {White wins by adjudication}
+Started game 83 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 79 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 0-1 {Black wins by adjudication}
+Started game 84 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 82 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 1-0 {White wins by adjudication}
+Started game 85 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 81 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 0-1 {Black wins by adjudication}
+Started game 86 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 83 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 87 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 86 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 1-0 {White wins by adjudication}
+Started game 88 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 84 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 1-0 {White wins by adjudication}
+Started game 89 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 85 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 1/2-1/2 {Draw by adjudication}
+Started game 90 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 88 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 1-0 {White wins by adjudication}
+Started game 91 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 89 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 1-0 {White wins by adjudication}
+Started game 92 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 87 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 0-1 {Black wins by adjudication}
+Started game 93 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 90 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 1-0 {White wins by adjudication}
+Started game 94 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 91 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 0-1 {Black wins by adjudication}
+Started game 95 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 92 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 1-0 {White wins by adjudication}
+Started game 96 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 93 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 1-0 {White wins by adjudication}
+Started game 97 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 95 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 1-0 {White wins by adjudication}
+Started game 98 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 96 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 1-0 {White wins by adjudication}
+Started game 99 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 97 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 100 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 94 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 1/2-1/2 {Draw by insufficient mating material}
+Started game 101 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 99 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 1-0 {White wins by adjudication}
+Started game 102 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 98 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 0-1 {Black wins by adjudication}
+Started game 103 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 100 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 0-1 {Black wins by adjudication}
+Started game 104 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 101 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 105 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 105 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 0-1 {Black wins by adjudication}
+Started game 106 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 104 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 1-0 {White wins by adjudication}
+Started game 107 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 102 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 0-1 {Black wins by adjudication}
+Started game 108 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 103 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 1/2-1/2 {Draw by insufficient mating material}
+Started game 109 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 107 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 0-1 {Black wins by adjudication}
+Started game 110 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 106 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 1-0 {White wins by adjudication}
+Started game 111 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 108 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 1-0 {White wins by adjudication}
+Started game 112 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 109 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 0-1 {Black wins by adjudication}
+Started game 113 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 110 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 1-0 {White wins by adjudication}
+Started game 114 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 111 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 1/2-1/2 {Draw by adjudication}
+Started game 115 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 112 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 1-0 {White wins by adjudication}
+Started game 116 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 114 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 1-0 {White mates}
+Started game 117 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 116 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 1-0 {White mates}
+Started game 118 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 115 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 0-1 {Black mates}
+Started game 119 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 113 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 1/2-1/2 {Draw by adjudication}
+Started game 120 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 117 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 1-0 {White wins by adjudication}
+Started game 121 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 118 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 1-0 {White wins by adjudication}
+Started game 122 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 122 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 1-0 {White wins by adjudication}
+Started game 123 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 119 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 0-1 {Black wins by adjudication}
+Started game 124 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 121 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 125 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 120 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 1-0 {White wins by adjudication}
+Started game 126 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 125 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 1-0 {White wins by adjudication}
+Started game 127 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 123 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 0-1 {Black wins by adjudication}
+Started game 128 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 126 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 1-0 {White wins by adjudication}
+Started game 129 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 124 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 1-0 {White wins by adjudication}
+Started game 130 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 127 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 1-0 {White mates}
+Started game 131 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 130 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 1-0 {White wins by adjudication}
+Started game 132 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 128 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 1-0 {White wins by adjudication}
+Started game 133 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 129 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 134 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 131 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 0-1 {Black wins by adjudication}
+Started game 135 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 133 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 0-1 {Black wins by adjudication}
+Started game 136 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 132 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 1-0 {White wins by adjudication}
+Started game 137 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 134 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 0-1 {Black wins by adjudication}
+Started game 138 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 135 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 0-1 {Black wins by adjudication}
+Started game 139 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 137 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 0-1 {Black wins by adjudication}
+Started game 140 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 139 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 141 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 136 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 1-0 {White wins by adjudication}
+Started game 142 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 138 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 1-0 {White wins by adjudication}
+Started game 143 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 141 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 0-1 {Black mates}
+Started game 144 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 140 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 0-1 {Black mates}
+Started game 145 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 142 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 1-0 {White wins by adjudication}
+Started game 146 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 143 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 0-1 {Black wins by adjudication}
+Started game 147 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 145 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 1-0 {White wins by adjudication}
+Started game 148 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 146 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 0-1 {Black wins by adjudication}
+Started game 149 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 144 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 0-1 {Black wins by adjudication}
+Started game 150 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 147 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 0-1 {Black wins by adjudication}
+Started game 151 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 149 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 0-1 {Black wins by adjudication}
+Started game 152 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 151 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 1-0 {White mates}
+Started game 153 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 150 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 1/2-1/2 {Draw by adjudication}
+Started game 154 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 148 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 1-0 {White wins by adjudication}
+Started game 155 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 152 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 156 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 154 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 1-0 {White wins by adjudication}
+Started game 157 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 153 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 0-1 {Black wins by adjudication}
+Started game 158 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 156 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 1/2-1/2 {Draw by insufficient mating material}
+Started game 159 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 155 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 1-0 {White mates}
+Started game 160 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 157 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 1/2-1/2 {Draw by adjudication}
+Started game 161 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 158 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 1-0 {White wins by adjudication}
+Started game 162 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 160 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 1-0 {White wins by adjudication}
+Started game 163 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 159 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 0-1 {Black wins by adjudication}
+Started game 164 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 162 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 1-0 {White wins by adjudication}
+Started game 165 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 161 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 0-1 {Black wins by adjudication}
+Started game 166 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 165 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 1-0 {White wins by adjudication}
+Started game 167 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 164 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 1-0 {White wins by adjudication}
+Started game 168 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 163 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 0-1 {Black wins by adjudication}
+Started game 169 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 166 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 1-0 {White wins by adjudication}
+Started game 170 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 169 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 0-1 {Black wins by adjudication}
+Started game 171 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 167 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 0-1 {Black wins by adjudication}
+Started game 172 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 168 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 1-0 {White wins by adjudication}
+Started game 173 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 170 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 1-0 {White wins by adjudication}
+Started game 174 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 172 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 1-0 {White wins by adjudication}
+Started game 175 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 173 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 0-1 {Black wins by adjudication}
+Started game 176 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 171 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 0-1 {Black wins by adjudication}
+Started game 177 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 175 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 1-0 {White wins by adjudication}
+Started game 178 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 177 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 1-0 {White mates}
+Started game 179 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 176 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 1-0 {White wins by adjudication}
+Started game 180 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 174 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 0-1 {Black wins by adjudication}
+Started game 181 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 178 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 1-0 {White wins by adjudication}
+Started game 182 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 181 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 0-1 {Black wins by adjudication}
+Started game 183 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 180 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 0-1 {Black wins by adjudication}
+Started game 184 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 184 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 1-0 {White wins by adjudication}
+Started game 185 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 182 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 0-1 {Black wins by adjudication}
+Started game 186 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 183 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 1/2-1/2 {Draw by insufficient mating material}
+Started game 187 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 179 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 1/2-1/2 {Draw by fifty moves rule}
+Started game 188 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 186 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 189 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 185 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 0-1 {Black wins by adjudication}
+Started game 190 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 188 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 0-1 {Black wins by adjudication}
+Started game 191 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 187 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 1-0 {White wins by adjudication}
+Started game 192 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 191 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 193 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 189 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 1-0 {White wins by adjudication}
+Started game 194 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 190 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 1-0 {White wins by adjudication}
+Started game 195 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 192 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 1-0 {White wins by adjudication}
+Started game 196 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 193 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 1-0 {White wins by adjudication}
+Started game 197 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 194 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 1-0 {White wins by adjudication}
+Started game 198 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 195 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 1-0 {White wins by adjudication}
+Started game 199 of 200 (gq_score_p1.5e7 vs game_teacher_p1.5e7)
+Finished game 196 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 1-0 {White wins by adjudication}
+Started game 200 of 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7)
+Finished game 198 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 1-0 {White wins by adjudication}
+Finished game 197 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 0-1 {Black wins by adjudication}
+Finished game 200 (game_teacher_p1.5e7 vs gq_score_p1.5e7): 1-0 {White wins by adjudication}
+Finished game 199 (gq_score_p1.5e7 vs game_teacher_p1.5e7): 0-1 {Black wins by adjudication}
+--------------------------------------------------
+Results of gq_score_p1.5e7 vs game_teacher_p1.5e7 (20000 nodes, 1t, 16MB, UHO_4060_v4.epd):
+Elo: -113.29 +/- 50.21, nElo: -117.57 +/- 48.15
+LOS: 0.00 %, DrawRatio: 28.00 %, PairsRatio: 0.33
+Games: 200, Wins: 56, Losses: 119, Draws: 25, Points: 68.5 (34.25 %)
+Ptnml(0-2): [37, 17, 28, 8, 10], WL/DD Ratio: inf
+--------------------------------------------------
+Finished match
+Total Time: 00:03:05 (hours:minutes:seconds)
+

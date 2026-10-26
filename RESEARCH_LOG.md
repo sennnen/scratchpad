@@ -52,3 +52,41 @@
   C++ trainer validation MAE == numpy (311.27 both).
 - C++ trainer: ~225k positions/s on 2 contended threads vs ~12k/s for a PyTorch EmbeddingBag
   implementation on the same CPU (PyTorch abandoned for this net size).
+
+### Data run1 (E1 training data)
+- `gendata nodes 5000 games 1500 treerate 0.02`, seeds 101-104, book UHO_Lichess_4852_v1 (random line per game), 4 processes.
+- 6000 games (W/D/L 1985/2584/1431 from white), 734,092 game positions, 25,145,952 tree positions, 1.04 GB.
+- Cost: ~1872 s wall per process, 4 processes = ~7,490 CPU-s total (game + tree data produced by the same searches).
+  Game positions: ~98 /CPU-s. Tree positions (2% of evaluate() calls): ~3,360 /CPU-s; 100% would be ~168k /CPU-s.
+- Validation: separate run (seeds 901-904, 240 games) with the same settings -> `val/v.bin`.
+- Matches use a different book (UHO_4060_v4) to avoid opening overlap with training games.
+- Ops lesson: `pkill -f`/`pgrep -f` patterns matched the harness's own shells (whose command lines contain the
+  pattern); use `pgrep -x <procname>` and never put the kill pattern in the same command line.
+
+## E1: position source and label source (H=256 students, 20k nodes/move matches)
+Setup: all students (768->256)x2 SCReLU -> 8 buckets, Adam, one-cycle cosine, batch 16384, trained on
+run1 (7,490 CPU-s of 5000-node self-play). Validation: held-out games (seeds 901-904).
+Matches: research fork with StudentFile, `nodes=20000`, UHO_4060_v4 openings (disjoint book), paired,
+200 games per pair; joint Bradley-Terry fit with pentanomial bootstrap (`tools/ratings.py`).
+
+Validation MSE vs teacher (sigmoid space, scale 340):
+| student | positions trained | vgame | vtree |
+|---|---|---|---|
+| game_teacher (P=1e8, overfit) | 734k | 0.0311 | 0.0406 |
+| game_teacher_p1.5e7 (best length) | 734k | 0.0249 | 0.0344 |
+| gq_teacher_p1.5e7 (quiet filter) | 594k | 0.0254 | 0.0347 |
+| tree_teacher_sm (sample-matched) | 734k | 0.0289 | 0.0296 |
+| tree_teacher | 25.1M | 0.0186 | 0.0186 |
+
+Elo (anchor game_teacher_p1.5e7): tree_teacher +539 [472,626]; tree_teacher_sm +205 [156,257];
+gq_teacher -22 [-67,21]; gq_score -113 [-161,-63]; gq_blend(0.7) -252 [-312,-208];
+unfiltered game_blend/score: -600 to -1300 (static evals trained on unfiltered search scores are badly miscalibrated).
+
+Observations:
+- At equal sample count, tree positions give +205 Elo over game positions, although their MSE on *game*
+  validation positions is worse (0.0289 vs 0.0249). Validation loss on game positions is a misleading
+  proxy for strength; loss on the distribution the evaluator sees in search (vtree) ranks students correctly.
+- Weak students search far shallower at equal nodes (depth 8-9 vs 12-16) and hang material: eval errors
+  on off-distribution (material-imbalanced) positions degrade pruning, not just leaf accuracy.
+- Teacher static labels beat search-score labels (gq_teacher vs gq_score: +91), and WDL blending with
+  5000-node self-play results hurts (-139 vs pure score) at this data scale.

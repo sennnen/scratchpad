@@ -1,0 +1,19 @@
+player                                elo             95% CI
+tree_teacher                        539.1   [  473.7,   632.7]
+tree_teacher_sm                     205.4   [  155.5,   254.5]
+game_teacher_p1.5e7                   0.0   [    0.0,     0.0]
+gq_teacher_p1.5e7                   -22.3   [  -67.9,    20.4]
+gq_score_p1.5e7                    -113.0   [ -160.5,   -62.9]
+gq_blend_p1.5e7                    -251.6   [ -319.4,  -204.8]
+game_blend_p5e6                    -603.5   [ -759.4,  -494.7]
+game_score                        -1207.7   [-1454.7, -1054.6]
+game_blend                        -1330.8   [-6152.7, -1161.8]
+matches:
+  game_blend vs game_blend_p5e6: ptnml [97, 0, 3, 0, 0] games 200
+  game_score vs game_blend_p5e6: ptnml [93, 2, 5, 0, 0] games 200
+  game_teacher_p1.5e7 vs game_blend_p5e6: ptnml [0, 0, 4, 4, 92] games 200
+  gq_blend_p1.5e7 vs game_teacher_p1.5e7: ptnml [58, 13, 25, 3, 1] games 200
+  gq_score_p1.5e7 vs game_teacher_p1.5e7: ptnml [37, 17, 28, 8, 10] games 200
+  gq_teacher_p1.5e7 vs game_teacher_p1.5e7: ptnml [17, 17, 40, 14, 12] games 200
+  tree_teacher_sm vs game_teacher_p1.5e7: ptnml [3, 2, 36, 4, 55] games 200
+  tree_teacher vs tree_teacher_sm: ptnml [1, 2, 11, 19, 67] games 200
