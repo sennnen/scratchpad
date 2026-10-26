@@ -1,5 +1,26 @@
 # Results
 
+# Phase II: transfer to the production architecture (SFNNv18)
+
+All Phase II experiments use the *production* network architecture: Stockfish master's net
+`nn-c9e480e92425` with its 110 MB feature transformer frozen, and its 32 dense layer stacks
+(1.13M parameters) either fine-tuned or re-trained on CPU (exact float model with fake quantisation;
+exported nets load in Stockfish and reproduce the trainer's evals within rounding). Same architecture
+means same speed, so fixed-node Elo is equal-time Elo. Matches: 20k nodes/move, UHO_4060_v4, paired.
+
+| # | Finding | Evidence |
+|---|---|---|
+| Q1 | The production net is ~1.8x further from its own search on quiet tree positions than on quiet game positions (MSE 0.0141 vs 0.0078), also on material-balanced positions. | P2-1 diagnostic, 40k held-out positions |
+| Q2 | Fine-tuning master's stacks on 5000-node search labels *degrades* it, and more so with tree positions: game -25, mix -40, tree -67 (each +/-13, 1000 games); tree vs game -27 +/- 13. | P2-F1, pre-registered |
+| Q3 | Re-learning the stacks (random init) from master's own evals: tree positions beat fast-game positions by +43 +/- 14 and standard game positions by ~+14 +/- 11 (pooled 1,600 games) at equal count. | P3, P7, pre-registered |
+| Q4 | 2x2 factorial at equal positions: tree beats game under teacher labels (+83 +/- 17) and under search labels (+44 +/- 19). Most of the +83 comes from the quiet filter: it helps tree positions (+28) and hurts game positions (-48). | P4, P7 |
+| Q5 | Coverage explains the ranking: KL(query distribution || training set) is 0.013 (tree), 0.184 (game), 0.547 (fast game), the same order as Elo. Duplicates are rare everywhere. | M1/M2 |
+| Q6 | On-policy data at production scale (student 43 Elo below teacher): +6 +/- 13, inconclusive (CI excludes > +19). | P5, pre-registered |
+| Q7 | No Stockfish improvement was found: every CPU fine-tune of master was weaker than master. | P2-F1 |
+
+
+# Phase I (small students)
+
 > **Phase II correction (2026-10-26):** recorded search scores were centipawns, not internal units
 > (see RESEARCH_LOG "BUG FOUND"). All results trained on *teacher* labels (R1-R4, R6) are unaffected.
 > All absolute numbers for *search-score-label* students are withdrawn (the "conventional labels"
