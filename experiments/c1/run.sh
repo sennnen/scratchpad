@@ -3,7 +3,7 @@
 # Iteration 1 = E2: ON_1 = T1+S1 (student = E1 tree_teacher), OFF_1 = T1+T2.
 # Iteration k>1: S_k = self-play of ON_{k-1}'s student (teacher-labelled); T_{k+1} = teacher self-play,
 # same games/seeds. ON_k = ON_{k-1} + S_k, OFF_k = OFF_{k-1} + T_{k+1}. 1500 games x 8% per new block.
-until grep -q B2_DONE /home/user/nets/b2.log 2>/dev/null; do sleep 30; done
+until grep -q B4_DONE /home/user/nets/b4.log 2>/dev/null; do sleep 30; done
 G=/home/user/data/sf_research; B=/home/user/data/UHO_Lichess_4852_v1.epd; D=/home/user/data/c1; N=/home/user/nets/c1; mkdir -p $D $N
 VAL="--val vgame=/home/user/data/val/v.bin:0 --val vtree=/home/user/data/val/v.bin:1 --val vstree=/home/user/data/val/vs.bin:1"
 T=/home/user/nets/trainer

@@ -215,6 +215,7 @@ int main(int argc, char** argv) {
     int src = -1, H = 256, threads = 4, batch = 16384;
     double positions = 1e7, lr = 2e-3, lam = 0.7, maxN = 0, wd = 0, frac = 1.0, skip = 0.0;
     uint64_t seed = 0;
+    std::string initNet; bool freezeFt = false, reinitOut = false;
     std::string mineNet;   // error-guided selection: student used to score the pool
     double mineK = 0, mineAlpha = 1.0;
     for (int i = 1; i < argc; ++i) {
@@ -241,6 +242,9 @@ int main(int argc, char** argv) {
         else if (a == "--fset") FSET = std::stoi(nx());
         else if (a == "--plymin") PLYMIN = std::stoi(nx());
         else if (a == "--mine") mineNet = nx();
+        else if (a == "--init") initNet = nx();
+        else if (a == "--freeze_ft") freezeFt = true;
+        else if (a == "--reinit_out") reinitOut = true;
         else if (a == "--mine_k") mineK = std::stod(nx());
         else if (a == "--mine_alpha") mineAlpha = std::stod(nx());
         else if (a == "--plymax") PLYMAX = std::stoi(nx());
@@ -306,6 +310,13 @@ int main(int argc, char** argv) {
         if (FSET == 1)  // bucket rows start at zero: the net starts as the shared 768-feature net
             std::fill(net.ftW.begin(), net.ftW.begin() + size_t(8 * 768) * H, 0.0f);
         for (auto& w : net.outW) w = no(rng);
+    }
+    if (!initNet.empty() && !load_student(net, initNet)) { fprintf(stderr, "cannot load init %s\n", initNet.c_str()); return 1; }
+    if (freezeFt && initNet.empty()) { fprintf(stderr, "--freeze_ft needs --init\n"); return 1; }
+    if (reinitOut) {
+        std::normal_distribution<float> no(0, 1.0f / std::sqrt(2.0f * H));
+        for (auto& w : net.outW) w = no(rng);
+        std::fill(net.outB.begin(), net.outB.end(), 0.0f);
     }
     size_t P = net.size();
     std::vector<float> m1(P), m2(P);
@@ -373,6 +384,7 @@ int main(int argc, char** argv) {
             th2.emplace_back([&, t] {
                 size_t lo = P * t / threads, hi = P * (t + 1) / threads;
                 for (size_t i = lo; i < hi; ++i) {
+                    if (freezeFt && i < offs[2]) continue;  // feature transformer weights + biases frozen
                     float g = 0;
                     for (int u = 0; u < threads; ++u) g += grads[u][i];
                     m1[i] = b1 * m1[i] + (1 - b1) * g;
