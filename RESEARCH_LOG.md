@@ -542,3 +542,18 @@ validation files, which lack the metadata. Training data and matches are unaffec
   sees decisive material balances), refuting the naive boundary hypothesis for learning from scratch.
 - Quiescence nodes (the leaves whose evals search actually returns) carry most of the value; mid-depth
   plies are as good as the mixture, the extremes are worse.
+
+### Ops: disk allowance nearly exhausted (424 MB free)
+Deleted reproducible data of completed experiments (E3, E12, E13 generation runs; P5 dumps; P3 fast-game
+dump; ~8.8 GB). Nets, metrics and scripts are kept; data can be regenerated from the logged seeds.
+
+## P8 RESULT (pre-registered): SEE-filtered tree positions
+Validation (VG/VT, unfiltered sets): SEE-T 0.003795/0.00436, SEE-G 0.004004/0.005689 (cf. unfiltered 300k:
+T 0.002432/0.002338, G 0.002363/0.00298).
+- PRIMARY: SEE-T vs RS_G_300000 = **+3.8 +/- 13.7** (1000 games, opening seed 3): no advantage.
+- SEE-G vs RS_G_300000 = **-22.0 +/- 17.4** (600 games): filtering capture positions hurts game data again.
+Conclusion: the cheap static proxy does not reproduce the search-quiet gain of P4/P7, and the "1.6x" estimate
+(from two +/-22 ladder points) is not confirmed. Robust production-architecture findings: (i) tree >= game
+positions by a small margin at equal count (~+5..+15 Elo, pooled direct matches), (ii) tree >> fast-game
+positions (+43), (iii) dropping capture positions from *game* data hurts under teacher labels (-22, -48),
+which is relevant because nnue-pytorch skips such positions by default (untested with Leela labels).
