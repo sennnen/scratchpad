@@ -416,3 +416,10 @@ distilled layer stacks; they match game positions on game-position accuracy and 
 positions. Unlike from-scratch small students (Phase I), fast/weak-play game positions are the *worst*
 source here: when the frozen FT already supplies coverage, matching the distribution the evaluator is
 queried on matters more than raw diversity.
+
+## PRE-REGISTRATION P5 (before results): on-policy distillation in the production architecture
+Student S = RS-T (P3). Generate 400 self-play games each with (a) S as evaluator and (b) master
+(same seeds 9101-9104, 5000 nodes, 8% recording). Positions from S's trees are labelled by master via
+ftdump with the master net (shared frozen FT, so features are identical). Train re-initialised stacks
+(lr 3e-3, 3000 steps) on: ON = P3 T (600k) + 600k S-tree; OFF = P3 T (600k) + 600k master-tree
+(from the 400 master games). Primary endpoint: ON vs OFF, 1000 games at 20k nodes.
