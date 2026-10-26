@@ -32,7 +32,7 @@
         "additional_lines_rgx": [],
         "event_name": "Fastchess Tournament",
         "site": "?",
-        "file": "experiments/p4/matches/search_T_vs_search_G.pgn",
+        "file": "experiments/p5/matches/RS_on_vs_RS_off.pgn",
         "notation": 0,
         "append_file": true,
         "track_nodes": false,
@@ -89,7 +89,7 @@
     },
     "engines": [
         {
-            "name": "search_T",
+            "name": "RS_on",
             "dir": "",
             "cmd": "/home/user/data/sf_p2",
             "args": "",
@@ -97,7 +97,7 @@
             "options": [
                 [
                     "EvalFile",
-                    "/home/user/nets/p4/search_T.nnue"
+                    "/home/user/nets/p5/RS_on.nnue"
                 ],
                 [
                     "Threads",
@@ -122,7 +122,7 @@
             "variant": 0
         },
         {
-            "name": "search_G",
+            "name": "RS_off",
             "dir": "",
             "cmd": "/home/user/data/sf_p2",
             "args": "",
@@ -130,7 +130,7 @@
             "options": [
                 [
                     "EvalFile",
-                    "/home/user/nets/p4/search_G.nnue"
+                    "/home/user/nets/p5/RS_off.nnue"
                 ],
                 [
                     "Threads",
@@ -156,16 +156,16 @@
         }
     ],
     "stats": {
-        "search_T vs search_G": {
-            "wins": 478,
-            "losses": 353,
-            "draws": 169,
-            "penta_WW": 106,
-            "penta_WD": 75,
-            "penta_WL": 191,
-            "penta_DD": 17,
-            "penta_LD": 60,
-            "penta_LL": 51
+        "RS_on vs RS_off": {
+            "wins": 290,
+            "losses": 272,
+            "draws": 438,
+            "penta_WW": 14,
+            "penta_WD": 132,
+            "penta_WL": 130,
+            "penta_DD": 97,
+            "penta_LD": 112,
+            "penta_LL": 15
         }
     }
 }

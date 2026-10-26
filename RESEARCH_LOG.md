@@ -444,3 +444,14 @@ P3 data (unfiltered, teacher labels), first n rows of G.ft and T.ft (random orde
 plus the P3 600k nets. Steps scale with n (1500 at 75k/150k, 3000 at 300k/600k), lr 3e-3, seed 0.
 Every net plays master (400 games, 20k nodes); joint fit anchored at master. Endpoint: the data
 multiplier k such that T at n matches G at k*n (interpolated in log n).
+
+## P5 RESULT: on-policy distillation, production architecture
+Generation: 400 games each (seeds 9101-9104, 5000 nodes, 8%): S (= RS-T) self-play 6.74M tree positions,
+master self-play 6.77M; 600k sampled from each, labelled by master via ftdump. Stacks re-initialised,
+trained on P3 T (600k) + 600k ON or OFF; validation (VG/VT) ON 0.001288/0.001241, OFF 0.001220/0.001264.
+- PRIMARY: RS_on vs RS_off = **+6.3 +/- 12.9** (1000 games, LOS 83%): inconclusive; 95% CI [-6.7, +19.2]
+  excludes a large on-policy benefit here.
+Interpretation: Phase I's on-policy gain (+22.6 [9.6, 35.7]) came from a student ~380 Elo below its
+teacher; here the student is ~43 Elo below. Consistent with DAgger theory: the covariate shift between
+student and teacher search trees (and hence the value of on-policy data) shrinks as the student
+approaches the teacher. On-policy data is a tool for weak students, not (yet shown) for near-teacher ones.
