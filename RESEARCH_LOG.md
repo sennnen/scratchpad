@@ -423,3 +423,18 @@ Student S = RS-T (P3). Generate 400 self-play games each with (a) S as evaluator
 ftdump with the master net (shared frozen FT, so features are identical). Train re-initialised stacks
 (lr 3e-3, 3000 steps) on: ON = P3 T (600k) + 600k S-tree; OFF = P3 T (600k) + 600k master-tree
 (from the 400 master games). Primary endpoint: ON vs OFF, 1000 games at 20k nodes.
+
+## P4 RESULT: 2x2 factorial (positions x labels), production architecture, re-initialised stacks
+Identical 186,365 quiet positions per position arm; 1500 steps; lr 3e-3; 1000 games each, 20k nodes.
+| labels | T vs G |
+|---|---|
+| teacher (master eval) | **+82.8 +/- 16.6** (LOS 100%) |
+| search (5000 nodes, corrected units) | **+43.7 +/- 18.7** (LOS 100%) |
+Position main effect is positive under both label types; the interaction (+39 +/- 25) changes magnitude,
+not sign. Validation (own target): teacher_G 0.00422/0.00562, teacher_T 0.00379/0.00430 (VG/VT);
+search_G 0.0214/0.0578, search_T 0.0283/0.0484 (search_T is *worse* on game positions yet stronger).
+Reconciliation with P2-F1: tree positions help when the evaluator is *learning* the mapping (from scratch,
+either label type); they hurt when *fine-tuning* an already-strong net away from its optimum with a small
+set of shallow-search labels. P2-F1's negative is a fine-tuning-regime effect, not a search-label effect.
+(The Phase I E6 direction, +80 for search-labelled tree positions, is thereby confirmed with correct units
+in a different architecture.)
