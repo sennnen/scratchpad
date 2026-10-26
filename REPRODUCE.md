@@ -51,3 +51,25 @@ trainer --train d1.bin ... --src 1 --label teacher --positions 1e8 --out tree_te
 python3 tools/match.py A=a.stud B=b.stud --nodes 20000 --rounds 100 --out experiments/x/matches/A_vs_B
 python3 tools/ratings.py experiments/e1/matches --anchor game_teacher_p1.5e7
 ```
+
+## Phase II (production-architecture experiments)
+Fork patches 0005-0008 on top of 0001-0004: `ftdump` (FT outputs + bucket + eval, SEE flag), `label`
+capture flag, ply-from-root and search-context (beta, PV, qsearch) metadata for tree records.
+Python deps: numpy, torch (CPU). Scripts: `experiments/p2_label.sh`, `experiments/p2f1/run.sh`,
+`experiments/p3_run.sh` ... `p8_run.sh`, `experiments/b1|b2|b4|c1/run.sh`.
+
+```bash
+# label positions with an N-node search and dump FT outputs
+experiments/p2_label.sh 5000 VG VT G T            # needs tools/p2/make_sets.py output first
+# fine-tune / re-distill the 32 layer stacks of the production net
+python3 tools/p2/finetune.py --net nn-c9e480e92425.nnue --train T.ft --val vg=VG.l5000.ft vt=VT.l5000.ft \
+   --target teacher --reinit --lr 3e-3 --steps 3000 --out RS_T.nnue      # P3 recipe
+python3 tools/p2/finetune.py ... --target search --quiet --nkeep 186365 --lr 1e-4 --steps 1500   # P2-F1
+# verify an exported net against Stockfish's integer inference
+(echo "setoption name EvalFile value RS_T.nnue"; echo "ftdump in VG.l5000.bin out check.ft max 3000"; echo quit) | ./stockfish
+python3 tools/p2/verify_float.py RS_T.nnue check.ft      # expect max |diff| < 1 internal unit
+# matches with full nets
+python3 tools/match.py A=RS_T.nnue master=teacher --nodes 20000 --rounds 500 --out experiments/x/A_vs_master
+```
+Important: `Rec.score` written by `gendata`/`label` is in **centipawns** (Stockfish `to_cp`); convert with
+`tools/p2/finetune.py:cp_to_internal` before using it as a target in internal units.
