@@ -57,11 +57,10 @@ decisions, not just leaf scores. Tree positions cover exactly those positions.
 - Distillation presupposes a strong teacher network; this is a method for transferring/bootstrapping
   strength (e.g. into new architectures), not for learning chess from scratch.
 
-## R4 (preliminary). On-policy data from the student's own searches
+## R4. On-policy (DAgger-style) data from the student's own searches
 
-At H=256 doubling teacher-tree data no longer adds measurable Elo (+2 +/- 35), while adding the same
-amount of the *student's* search-tree positions (teacher-labelled, DAgger-style) adds +47 +/- 32
-(LOS 99.8%). Joint fit: on-policy +34 [8, 58] vs more teacher data +14 [-10, 41]. The direct head-to-head
-(+14 +/- 23, 600 games) is not yet significant; more games are queued.
+At H=256, doubling teacher-tree data adds little (+12 [-11, 36]), while adding the same amount of the
+*student's* search-tree positions (teacher-labelled) adds +37 [12, 59]. Direct head-to-head over 1,800
+games: **+22.6 [9.6, 35.7]** for on-policy data at equal volume and generation cost. One iteration tested.
 
 (Pending: E4 capacity scaling, E6 teacher-free variant, E7 teacher gap / equal time.)

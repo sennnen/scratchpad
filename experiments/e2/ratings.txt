@@ -1,8 +1,9 @@
 player                                elo             95% CI
-base_T1S1                            34.4   [    8.2,    57.7]
-base_T1T2                            14.4   [  -10.5,    41.5]
+base_T1S1                            36.5   [   11.7,    58.9]
+base_T1T2                            12.3   [  -11.3,    36.0]
 base_T1_2e8                           0.0   [    0.0,     0.0]
 matches:
   base_T1S1 vs base_T1T2: ptnml [35, 45, 125, 51, 44] games 600
+  base_T1S1 vs base_T1T2: ptnml [51, 104, 232, 127, 86] games 1200
   base_T1S1 vs base_T1_2e8: ptnml [10, 26, 54, 34, 26] games 300
   base_T1T2 vs base_T1_2e8: ptnml [22, 25, 56, 23, 24] games 300

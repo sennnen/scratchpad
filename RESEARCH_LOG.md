@@ -225,3 +225,11 @@ H=256, `--label score`.
 search trees beats (quiet-filtered) game positions even with conventional search labels.
 Note: MSE-vs-teacher is not a valid proxy across different label types (tree_score has worse MSE but is
 stronger); R2 applies to students trained on the same target.
+
+### E2b: confirmation of the on-policy effect
+base_T1S1 vs base_T1T2, 1,200 more games with an independent opening seed: +27.0 +/- 15.8 (LOS 99.96%).
+Pooled with the first 600 games (1,800 games, 900 pairs): **+22.6 [9.6, 35.7]**. Joint fit (anchor T1):
+T1S1 +36.5 [11.7, 58.9], T1T2 +12.3 [-11.3, 36.0].
+=> H3 supported: at equal data volume and generation cost, teacher-labelled positions from the
+student's *own* search trees beat positions from the teacher's search trees by ~+23 Elo (H=256).
+Single iteration only; whether further DAgger iterations keep paying is untested.
