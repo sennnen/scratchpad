@@ -472,3 +472,9 @@ yield ~3x more positions per CPU-s), while P3 compares at equal *count*; but Pha
 1000-node over 5000-node games at near-equal counts. Tentative two-regime account: learning features
 from scratch benefits from diverse coverage, while learning a readout on fixed features benefits most
 from matching the query distribution. Not tested directly.
+
+## P7 (added after seeing P6 partial results; exploratory, not pre-registered)
+P6's unfiltered arms show a small, noisy tree advantage (75k: T -132 vs G -141; 150k: -109 vs -98; 300k:
+-67 vs -82, each +/-22, 400 games vs master), much smaller than P4's +83 (quiet-filtered, 186k, direct
+1000-game match). P7 resolves this: (a) P4 teacher_T / teacher_G vs master (400 games each) to place them on
+the P6 ladder; (b) direct head-to-head RS_T_300000 vs RS_G_300000 (1000 games).

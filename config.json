@@ -32,7 +32,7 @@
         "additional_lines_rgx": [],
         "event_name": "Fastchess Tournament",
         "site": "?",
-        "file": "experiments/p5/matches/RS_on_vs_RS_off.pgn",
+        "file": "experiments/p6/matches/RS_G_600000_vs_master.pgn",
         "notation": 0,
         "append_file": true,
         "track_nodes": false,
@@ -69,7 +69,7 @@
     "wait": 0,
     "autosaveinterval": 20,
     "games": 2,
-    "rounds": 500,
+    "rounds": 200,
     "concurrency": 4,
     "force_concurrency": false,
     "recover": false,
@@ -89,7 +89,7 @@
     },
     "engines": [
         {
-            "name": "RS_on",
+            "name": "RS_G_600000",
             "dir": "",
             "cmd": "/home/user/data/sf_p2",
             "args": "",
@@ -97,7 +97,7 @@
             "options": [
                 [
                     "EvalFile",
-                    "/home/user/nets/p5/RS_on.nnue"
+                    "/home/user/nets/p6/RS_G_600000.nnue"
                 ],
                 [
                     "Threads",
@@ -122,16 +122,12 @@
             "variant": 0
         },
         {
-            "name": "RS_off",
+            "name": "master",
             "dir": "",
             "cmd": "/home/user/data/sf_p2",
             "args": "",
             "restart": false,
             "options": [
-                [
-                    "EvalFile",
-                    "/home/user/nets/p5/RS_off.nnue"
-                ],
                 [
                     "Threads",
                     "1"
@@ -156,16 +152,16 @@
         }
     ],
     "stats": {
-        "RS_on vs RS_off": {
-            "wins": 290,
-            "losses": 272,
-            "draws": 438,
-            "penta_WW": 14,
-            "penta_WD": 132,
-            "penta_WL": 130,
-            "penta_DD": 97,
-            "penta_LD": 112,
-            "penta_LL": 15
+        "RS_G_600000 vs master": {
+            "wins": 3,
+            "losses": 10,
+            "draws": 7,
+            "penta_WW": 0,
+            "penta_WD": 1,
+            "penta_WL": 2,
+            "penta_DD": 1,
+            "penta_LD": 4,
+            "penta_LL": 2
         }
     }
 }
