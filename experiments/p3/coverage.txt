@@ -1,0 +1,7 @@
+G (5000-node games)    n=600000 unique-board frac 0.972  KL(usage || set) 0.184  KL(set || usage) 0.154
+F (100-node games)     n=600000 unique-board frac 0.988  KL(usage || set) 0.547  KL(set || usage) 0.515
+T (tree)               n=600000 unique-board frac 0.999  KL(usage || set) 0.013  KL(set || usage) 0.013
+vs weak-student query distribution (Phase I vs.bin):
+  G (5000-node games)    KL(student-usage || set) 0.336
+  F (100-node games)     KL(student-usage || set) 0.484
+  T (tree)               KL(student-usage || set) 0.076

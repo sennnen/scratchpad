@@ -455,3 +455,20 @@ Interpretation: Phase I's on-policy gain (+22.6 [9.6, 35.7]) came from a student
 teacher; here the student is ~43 Elo below. Consistent with DAgger theory: the covariate shift between
 student and teacher search trees (and hence the value of on-policy data) shrinks as the student
 approaches the teacher. On-policy data is a tool for weak students, not (yet shown) for near-teacher ones.
+
+## M1/M2: redundancy and coverage (tools/p2/coverage.py)
+Joint cells: material imbalance (pawns, stm view) x piece-count bucket x log-|teacher eval| bucket.
+Query distribution = held-out master search-tree positions (val v.bin, tree records).
+| set (600k, P3) | unique boards | KL(query || set) | P3 Elo vs master |
+|---|---|---|---|
+| T (tree) | 99.9% | 0.013 | -43 |
+| G (5000-node games) | 97.2% | 0.184 | -58 |
+| F (100-node games) | 98.8% | 0.547 | -81 |
+Distillation quality orders exactly with coverage of the query distribution; exact duplicates are rare in
+all sets (so redundancy is not the driver). Against the *weak student's* query distribution (Phase I
+vs.bin) the order is the same (T 0.076, G 0.336, F 0.484), so the Phase I finding that fast-game data was
+better is not explained by coverage. Phase I compared game pipelines at equal *compute* (fast games
+yield ~3x more positions per CPU-s), while P3 compares at equal *count*; but Phase I also found +69 for
+1000-node over 5000-node games at near-equal counts. Tentative two-regime account: learning features
+from scratch benefits from diverse coverage, while learning a readout on fixed features benefits most
+from matching the query distribution. Not tested directly.
