@@ -1,5 +1,10 @@
 # Results
 
+> **Phase II correction (2026-10-26):** recorded search scores were centipawns, not internal units
+> (see RESEARCH_LOG "BUG FOUND"). All results trained on *teacher* labels (R1-R4, R6) are unaffected.
+> All absolute numbers for *search-score-label* students are withdrawn (the "conventional labels"
+> bullets in R1, the WDL-blending note), and R5 needs a re-run with correct units.
+
 All numbers were measured in this session on a 4-vCPU cloud container (AVX-512 VNNI, 15 GB RAM, no GPU).
 
 **Setup.** Teacher: Stockfish master `ff3a6c50` with net `nn-c9e480e92425` (SFNNv18). Students: small

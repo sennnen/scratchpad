@@ -14,6 +14,8 @@
 #include <vector>
 #include <sys/resource.h>
 
+static int PLYMIN = 0, PLYMAX = 63;  // tree-position ply-from-root filter (src bits 1-6)
+
 struct Rec {
     uint8_t board[32];
     uint8_t stm, result, src, rule50;
@@ -33,7 +35,9 @@ static std::vector<Rec> load(const std::string& path, int src, double frac = 1.0
     n = fread(v.data(), sizeof(Rec), n, f);
     v.resize(n);
     fclose(f);
-    if (src >= 0) v.erase(std::remove_if(v.begin(), v.end(), [&](const Rec& r) { return r.src != src; }), v.end());
+    if (src >= 0) v.erase(std::remove_if(v.begin(), v.end(), [&](const Rec& r) { return (r.src & 1) != src; }), v.end());
+    if (PLYMIN > 0 || PLYMAX < 63)
+        v.erase(std::remove_if(v.begin(), v.end(), [&](const Rec& r) { int p = (r.src >> 1) & 63; return p < PLYMIN || p > PLYMAX; }), v.end());
     return v;
 }
 
@@ -192,6 +196,8 @@ int main(int argc, char** argv) {
         else if (a == "--frac") frac = std::stod(nx());
         else if (a == "--skip") skip = std::stod(nx());
         else if (a == "--fset") FSET = std::stoi(nx());
+        else if (a == "--plymin") PLYMIN = std::stoi(nx());
+        else if (a == "--plymax") PLYMAX = std::stoi(nx());
         else if (a == "--seed") seed = std::stoull(nx());
         else { fprintf(stderr, "unknown arg %s\n", a.c_str()); return 1; }
     }

@@ -12,7 +12,7 @@ def load(paths, src=None, max_n=None):
     for p in paths:
         a = np.fromfile(p, dtype=REC)
         if src is not None:
-            a = a[a["src"] == src]
+            a = a[(a["src"] & 1) == src]  # bits 1-7 carry ply / label flags
         arrs.append(a)
     a = np.concatenate(arrs) if arrs else np.zeros(0, REC)
     if max_n is not None:

@@ -96,19 +96,25 @@ class Stacks(torch.nn.Module):
         return torch.cat([sq, cl], 1)
 
     def forward(self, ft, bucket):
-        out = torch.empty(len(ft))
+        """Batch is processed per bucket on contiguous slices (sorted by bucket)."""
+        order = torch.argsort(bucket, stable=True)
+        inv = torch.empty_like(order); inv[order] = torch.arange(len(order))
+        ft, bucket = ft[order], bucket[order]
+        counts = torch.bincount(bucket, minlength=len(self.hashes)).tolist()
         W0 = ste_round(self.W0.clamp(-127 / 128, 127 / 128), 128)
         W1 = ste_round(self.W1.clamp(-127 / 64, 127 / 64), 64)
         W2 = ste_round(self.W2.clamp(-127 / 128, 127 / 128), 128)
-        for b in torch.unique(bucket).tolist():
-            m = (bucket == b).nonzero().squeeze(1)
-            x = ft[m]
-            h0 = x @ W0[b].T + self.b0[b]
+        outs, start = [], 0
+        for b, c in enumerate(counts):
+            if c == 0: continue
+            x = ft[start:start + c]; start += c
+            h0 = torch.addmm(self.b0[b], x, W0[b].T)
             a0 = self.act(h0)
-            h1 = a0 @ W1[b].T + self.b1[b]
+            h1 = torch.addmm(self.b1[b], a0, W1[b].T)
             a1 = self.act(h1)
-            o = torch.cat([a0, a1], 1) @ W2[b].T + self.b2[b]
-            out[m] = o[:, 0] + h0[:, 30] - h0[:, 31]
+            o = torch.addmm(self.b2[b], torch.cat([a0, a1], 1), W2[b].T)
+            outs.append(o[:, 0] + h0[:, 30] - h0[:, 31])
+        out = torch.cat(outs)[inv]
         return out * 600.0  # raw eval, internal units
 
     def anchor(self):
@@ -122,7 +128,7 @@ class Stacks(torch.nn.Module):
         write_stacks(path, prefix, st)
 
 
-def prepare(d, quiet_only=False):
+def prepare(d, quiet_only=False, nkeep=0):
     """Returns (ft u8 tensor, bucket, raw-space target, mask of kept rows)."""
     recs = d['rec']
     keep = np.ones(len(d), bool)
@@ -130,6 +136,8 @@ def prepare(d, quiet_only=False):
         keep &= (recs['src'] & 0x80) == 0
     keep &= np.abs(recs['score']) < 20000  # drop mate/TB scores (stored as +-31000/32000)
     idx = np.nonzero(keep)[0]
+    if nkeep:
+        idx = idx[:nkeep]
     r = recs[idx]
     se, mat, r50 = board_stats(r)
     t = inverse_scale(cp_to_internal(r['score'], r), se, mat, r50)
@@ -165,6 +173,7 @@ def main():
     ap.add_argument('--anchor', type=float, default=0.0)
     ap.add_argument('--quiet', action='store_true', help='drop positions whose search best move is a capture')
     ap.add_argument('--n', type=int, default=0, help='use only the first n positions of each train set')
+    ap.add_argument('--nkeep', type=int, default=0, help='cap each train set at this many rows after filtering')
     ap.add_argument('--seed', type=int, default=0)
     ap.add_argument('--threads', type=int, default=4)
     a = ap.parse_args()
@@ -178,7 +187,7 @@ def main():
         path, _, w = spec.partition(':')
         d = load(path)
         if a.n: d = d[:a.n]
-        sets.append((prepare(d, a.quiet), float(w) if w else 1.0, path))
+        sets.append((prepare(d, a.quiet, a.nkeep), float(w) if w else 1.0, path))
     tot = sum(w for _, w, _ in sets)
     vals = {}
     for v in a.val:
