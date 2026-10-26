@@ -198,6 +198,14 @@ int main(int argc, char** argv) {
     Label lab = label == "teacher" ? TEACHER : label == "score" ? SCORE : BLEND;
     auto t0 = std::chrono::steady_clock::now();
     std::vector<Rec> data;
+    {   // reserve the upper bound first: geometric growth would transiently need ~2x the data size
+        size_t total = 0;
+        for (auto& f : trainFiles) {
+            FILE* fp = fopen(f.c_str(), "rb");
+            if (fp) { fseek(fp, 0, SEEK_END); total += size_t(ftell(fp) / sizeof(Rec) * frac) + 1; fclose(fp); }
+        }
+        data.reserve(total);
+    }
     for (auto& f : trainFiles) { auto v = load(f, src, frac, skip); data.insert(data.end(), v.begin(), v.end()); }
     std::mt19937_64 rng(seed * 7919 + 17);
     if (maxN > 0 && maxN < data.size()) {

@@ -24,6 +24,9 @@ https://github.com/official-stockfish/books: `UHO_Lichess_4852_v1.epd` (data gen
 `UHO_4060_v4.epd` (matches; disjoint from training openings).
 
 Trainer: `g++ -O3 -march=native -ffast-math -std=c++20 -pthread tools/trainer/train.cpp -o trainer`.
+(E1-E3 ran an earlier build of the same file before `--fset`/`--skip`/reserve were added; the
+feature/forward/backward code for `--fset 0` is unchanged. Fork patches: apply 0001-0004 in order;
+E1-E3 matches used the float evaluator of patch 0001, E4+ the incremental int16 evaluator of 0002/0003.)
 
 ## 2. Data generation (UCI command added by the patch)
 ```
