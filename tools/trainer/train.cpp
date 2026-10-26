@@ -37,22 +37,49 @@ static std::vector<Rec> load(const std::string& path, int src, double frac = 1.0
     return v;
 }
 
-constexpr int NF = 768, NB = 8, MAXH = 2048;
+constexpr int NB = 8, MAXH = 2048;
 constexpr float SCALE = 340.0f;
+// Feature sets: 0 = 768 piece-square (perspective relative)
+//               1 = 8 king buckets x 768 with horizontal mirroring (own king on files e-h),
+//                   trained with an extra shared 768-row factoriser that is folded in on export.
+static int FSET = 0;
+static int KB_OF[32] = {0, 1, 2, 3, 4, 4, 5, 5, 6, 6, 6, 6, 7, 7, 7, 7,
+                        7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7};
+static inline int n_buckets() { return FSET == 1 ? 8 : 1; }
+static inline int NF_train() { return FSET == 1 ? 768 * 9 : 768; }
 
-// features for both perspectives; returns count
+// features for both perspectives; returns count (<= 64)
 static inline int feats(const Rec& r, int* fs, int* fn, int& bucket) {
-    int n = 0, stm = r.stm;
+    int codes[64], kings[2] = {0, 0}, np = 0;
     for (int sq = 0; sq < 64; ++sq) {
-        int code = (r.board[sq >> 1] >> ((sq & 1) * 4)) & 15;
-        if (!code) continue;
-        int pt = (code & 7) - 1, col = code >> 3;
-        int rel = col != stm;
-        fs[n] = ((rel * 6 + pt) << 6) + (sq ^ (56 * stm));
-        fn[n] = (((1 - rel) * 6 + pt) << 6) + (sq ^ (56 * (1 - stm)));
-        ++n;
+        codes[sq] = (r.board[sq >> 1] >> ((sq & 1) * 4)) & 15;
+        if (codes[sq] == 6) kings[0] = sq;
+        if (codes[sq] == 14) kings[1] = sq;
     }
-    bucket = std::clamp((n - 2) / 4, 0, NB - 1);
+    int stm = r.stm, n = 0;
+    int persp[2] = {stm, 1 - stm};
+    int kb[2] = {0, 0}, mir[2] = {0, 0};
+    if (FSET == 1)
+        for (int p = 0; p < 2; ++p) {
+            int c = persp[p], ko = kings[c] ^ (56 * c);
+            mir[p] = (ko & 7) >= 4 ? 7 : 0;
+            kb[p] = KB_OF[(ko >> 3) * 4 + ((ko & 7) ^ mir[p])];
+        }
+    for (int sq = 0; sq < 64; ++sq) {
+        int code = codes[sq];
+        if (!code) continue;
+        ++np;
+        int pt = (code & 7) - 1, col = code >> 3;
+        int* out[2] = {fs, fn};
+        for (int p = 0; p < 2; ++p) {
+            int c = persp[p], rel = col != c;
+            int base = ((rel * 6 + pt) << 6) + ((sq ^ (56 * c)) ^ mir[p]);
+            out[p][n] = kb[p] * 768 + base;
+            if (FSET == 1) out[p][n + 1] = 768 * 8 + base;
+        }
+        n += FSET == 1 ? 2 : 1;
+    }
+    bucket = std::clamp((np - 2) / 4, 0, NB - 1);
     return n;
 }
 
@@ -61,7 +88,7 @@ static inline float sigm(float x) { return 1.0f / (1.0f + std::exp(-x)); }
 struct Net {
     int H;
     std::vector<float> ftW, ftB, outW, outB;
-    explicit Net(int h) : H(h), ftW(size_t(NF) * h), ftB(h), outW(size_t(NB) * 2 * h), outB(NB) {}
+    explicit Net(int h) : H(h), ftW(size_t(NF_train()) * h), ftB(h), outW(size_t(NB) * 2 * h), outB(NB) {}
     size_t size() const { return ftW.size() + ftB.size() + outW.size() + outB.size(); }
     float* seg(int i) { return i == 0 ? ftW.data() : i == 1 ? ftB.data() : i == 2 ? outW.data() : outB.data(); }
     size_t segn(int i) const { return i == 0 ? ftW.size() : i == 1 ? ftB.size() : i == 2 ? outW.size() : outB.size(); }
@@ -84,10 +111,19 @@ struct Net {
     }
     void save(const std::string& p) const {
         FILE* f = fopen(p.c_str(), "wb");
-        fwrite("STUDNT01", 1, 8, f);
-        int32_t h = H, nb = NB; float sc = SCALE;
+        int32_t h = H, nb = NB, fset = FSET; float sc = SCALE;
+        fwrite(FSET ? "STUDNT02" : "STUDNT01", 1, 8, f);
         fwrite(&h, 4, 1, f); fwrite(&nb, 4, 1, f); fwrite(&sc, 4, 1, f);
-        fwrite(ftW.data(), 4, ftW.size(), f); fwrite(ftB.data(), 4, ftB.size(), f);
+        if (FSET) fwrite(&fset, 4, 1, f);
+        if (FSET == 1) {
+            std::vector<float> w(size_t(768) * 8 * H);
+            for (int kb = 0; kb < 8; ++kb)
+                for (int fi = 0; fi < 768; ++fi)
+                    for (int i = 0; i < H; ++i)
+                        w[(size_t(kb) * 768 + fi) * H + i] = ftW[(size_t(kb) * 768 + fi) * H + i] + ftW[(size_t(8 * 768) + fi) * H + i];
+            fwrite(w.data(), 4, w.size(), f);
+        } else fwrite(ftW.data(), 4, ftW.size(), f);
+        fwrite(ftB.data(), 4, ftB.size(), f);
         fwrite(outW.data(), 4, outW.size(), f); fwrite(outB.data(), 4, outB.size(), f);
         fclose(f);
     }
@@ -111,7 +147,7 @@ static Metrics validate(const Net& net, const std::vector<Rec>& v, int threads) 
     for (int t = 0; t < threads; ++t)
         th.emplace_back([&, t] {
             std::vector<float> acc(2 * net.H);
-            int fs[32], fn[32], n, b;
+            int fs[64], fn[64], n, b;
             for (size_t i = t; i < v.size(); i += threads) {
                 float o = net.forward(v[i], acc.data(), fs, fn, n, b);
                 float d = sigm(o) - sigm(v[i].teacher / SCALE);
@@ -155,6 +191,7 @@ int main(int argc, char** argv) {
         else if (a == "--wd") wd = std::stod(nx());
         else if (a == "--frac") frac = std::stod(nx());
         else if (a == "--skip") skip = std::stod(nx());
+        else if (a == "--fset") FSET = std::stoi(nx());
         else if (a == "--seed") seed = std::stoull(nx());
         else { fprintf(stderr, "unknown arg %s\n", a.c_str()); return 1; }
     }
@@ -176,6 +213,8 @@ int main(int argc, char** argv) {
     {
         std::normal_distribution<float> nd(0, 0.05f), no(0, 1.0f / std::sqrt(2.0f * H));
         for (auto& w : net.ftW) w = nd(rng);
+        if (FSET == 1)  // bucket rows start at zero: the net starts as the shared 768-feature net
+            std::fill(net.ftW.begin(), net.ftW.begin() + size_t(8 * 768) * H, 0.0f);
         for (auto& w : net.outW) w = no(rng);
     }
     size_t P = net.size();
@@ -202,7 +241,7 @@ int main(int argc, char** argv) {
                 float* gW = g.data(); float* gB = gW + net.ftW.size();
                 float* gO = gB + H; float* gOB = gO + net.outW.size();
                 std::vector<float> acc(2 * H), dacc(2 * H);
-                int fs[32], fn[32], n, b;
+                int fs[64], fn[64], n, b;
                 double ls = 0;
                 for (int k = t; k < batch; k += threads) {
                     const Rec& r = data[idx[k]];

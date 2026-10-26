@@ -1,0 +1,183 @@
+From 4a8509daa2f4a7d858de1916301939c284c39854 Mon Sep 17 00:00:00 2001
+From: research <research@localhost>
+Date: Mon, 26 Oct 2026 02:51:28 +0000
+Subject: [PATCH] research: king-bucketed student feature set (STUDNT02, fset
+ 1)
+
+---
+ src/research.cpp | 81 +++++++++++++++++++++++++++++++-----------------
+ src/research.h   |  2 +-
+ 2 files changed, 53 insertions(+), 30 deletions(-)
+
+diff --git a/src/research.cpp b/src/research.cpp
+index 2dad2125..f4c454ef 100644
+--- a/src/research.cpp
++++ b/src/research.cpp
+@@ -13,6 +13,21 @@
+ namespace Stockfish::Research {
+ 
+ Recorder*         gRecorder = nullptr;
++
++static const int KB_OF[32] = {0, 1, 2, 3, 4, 4, 5, 5, 6, 6, 6, 6, 7, 7, 7, 7,
++                              7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7};
++// Perspective transform for perspective color c: returns (bucket*768 offset, xor mask for squares)
++static inline void persp_xf(int fset, Color c, Square ownKing, int& off, int& x) {
++    x   = c == WHITE ? 0 : 56;
++    off = 0;
++    if (fset == 1)
++    {
++        int ko  = int(ownKing) ^ x;
++        int mir = (ko & 7) >= 4 ? 7 : 0;
++        off     = KB_OF[(ko >> 3) * 4 + ((ko & 7) ^ mir)] * 768;
++        x ^= mir;
++    }
++}
+ const StudentNet* gStudent  = nullptr;
+ static std::unique_ptr<StudentNet> studentStorage;
+ 
+@@ -39,15 +54,19 @@ bool StudentNet::load(const std::string& path) {
+         return false;
+     char magic[8];
+     in.read(magic, 8);
+-    if (std::memcmp(magic, "STUDNT01", 8) != 0)
++    bool v2 = std::memcmp(magic, "STUDNT02", 8) == 0;
++    if (!v2 && std::memcmp(magic, "STUDNT01", 8) != 0)
+         return false;
+-    int32_t h, nb;
++    int32_t h, nb, fs = 0;
+     in.read(reinterpret_cast<char*>(&h), 4);
+     in.read(reinterpret_cast<char*>(&nb), 4);
+     in.read(reinterpret_cast<char*>(&outScale), 4);
+-    H  = h;
+-    NB = nb;
+-    ftW.resize(size_t(768) * H);
++    if (v2)
++        in.read(reinterpret_cast<char*>(&fs), 4);
++    H    = h;
++    NB   = nb;
++    fset = fs;
++    ftW.resize(size_t(768) * (fset == 1 ? 8 : 1) * H);
+     ftB.resize(H);
+     outW.resize(size_t(NB) * 2 * H);
+     outB.resize(NB);
+@@ -71,6 +90,12 @@ Value StudentNet::evaluate_float(const Position& pos) const {
+     for (int p = 0; p < 2; ++p)
+         std::memcpy(acc[p], ftB.data(), H * sizeof(float));
+ 
++    int offs[2], xs[2];
++    for (int p = 0; p < 2; ++p)
++    {
++        Color persp = p == 0 ? stm : ~stm;
++        persp_xf(fset, persp, pos.square<KING>(persp), offs[p], xs[p]);
++    }
+     Bitboard occ = pos.pieces();
+     while (occ)
+     {
+@@ -81,8 +106,8 @@ Value StudentNet::evaluate_float(const Position& pos) const {
+         {
+             Color persp = p == 0 ? stm : ~stm;
+             int   rel   = color_of(pc) == persp ? 0 : 1;
+-            int   sq    = persp == WHITE ? int(s) : int(s) ^ 56;
+-            const float* w = &ftW[size_t((rel * 6 + pt) * 64 + sq) * H];
++            int   sq    = int(s) ^ xs[p];
++            const float* w = &ftW[size_t(offs[p] + (rel * 6 + pt) * 64 + sq) * H];
+             float*       a = acc[p];
+             for (int i = 0; i < H; ++i)
+                 a[i] += w[i];
+@@ -131,14 +156,14 @@ namespace {
+ struct alignas(64) QCache {
+     int16_t           acc[2][2048];
+     Piece             board[64];
++    int               off[2], x[2];
+     const StudentNet* net = nullptr;
+ };
+ thread_local QCache qcache;
+ 
+-inline int feat(Color persp, Piece pc, int s) {
++inline int feat(Color persp, Piece pc, int s, int off, int x) {
+     int rel = color_of(pc) == persp ? 0 : 1;
+-    int sq  = persp == WHITE ? s : s ^ 56;
+-    return (rel * 6 + type_of(pc) - 1) * 64 + sq;
++    return off + (rel * 6 + type_of(pc) - 1) * 64 + (s ^ x);
+ }
+ }  // namespace
+ 
+@@ -153,45 +178,43 @@ Value StudentNet::evaluate_q(const Position& pos) const {
+             if (c.board[s] != bd[s])
+                 changed[nc++] = s;
+     }
+-    if (c.net != this || nc > 12)
++    bool full = c.net != this || nc > 12;
++    for (int p = 0; p < 2; ++p)
+     {
+-        for (int p = 0; p < 2; ++p)
++        int off, x;
++        persp_xf(fset, Color(p), pos.square<KING>(Color(p)), off, x);
++        int16_t* a = c.acc[p];
++        if (full || off != c.off[p] || x != c.x[p])
+         {
+-            int16_t* a = c.acc[p];
+             std::memcpy(a, qB.data(), h * sizeof(int16_t));
+             for (int s = 0; s < 64; ++s)
+                 if (bd[s] != NO_PIECE)
+                 {
+-                    const int16_t* w = &qW[size_t(feat(Color(p), bd[s], s)) * h];
++                    const int16_t* w = &qW[size_t(feat(Color(p), bd[s], s, off, x)) * h];
+                     for (int i = 0; i < h; ++i) a[i] += w[i];
+                 }
++            c.off[p] = off;
++            c.x[p]   = x;
+         }
+-        std::memcpy(c.board, bd, sizeof(c.board));
+-        c.net = this;
+-    }
+-    else
+-    {
+-        for (int k = 0; k < nc; ++k)
+-        {
+-            int   s = changed[k];
+-            Piece o = c.board[s], n = bd[s];
+-            for (int p = 0; p < 2; ++p)
++        else
++            for (int k = 0; k < nc; ++k)
+             {
+-                int16_t* a = c.acc[p];
++                int   s = changed[k];
++                Piece o = c.board[s], n = bd[s];
+                 if (o != NO_PIECE)
+                 {
+-                    const int16_t* w = &qW[size_t(feat(Color(p), o, s)) * h];
++                    const int16_t* w = &qW[size_t(feat(Color(p), o, s, off, x)) * h];
+                     for (int i = 0; i < h; ++i) a[i] -= w[i];
+                 }
+                 if (n != NO_PIECE)
+                 {
+-                    const int16_t* w = &qW[size_t(feat(Color(p), n, s)) * h];
++                    const int16_t* w = &qW[size_t(feat(Color(p), n, s, off, x)) * h];
+                     for (int i = 0; i < h; ++i) a[i] += w[i];
+                 }
+             }
+-            c.board[s] = n;
+-        }
+     }
++    std::memcpy(c.board, bd, sizeof(c.board));
++    c.net = this;
+     const Color    stm    = pos.side_to_move();
+     int            bucket = std::clamp((popcount(pos.pieces()) - 2) / 4, 0, NB - 1);
+     const float* ow  = &outW[size_t(bucket) * 2 * h];
+diff --git a/src/research.h b/src/research.h
+index b0eec319..184db3a5 100644
+--- a/src/research.h
++++ b/src/research.h
+@@ -50,7 +50,7 @@ extern Recorder* gRecorder;  // single-threaded data generation only
+ 
+ // Student: (768 -> H) x 2 perspectives, SCReLU, -> NB output buckets (by piece count).
+ struct StudentNet {
+-    int                H = 0, NB = 0;
++    int                H = 0, NB = 0, fset = 0;  // fset 1: 8 king buckets x 768, mirrored
+     float              outScale = 1.0f;  // network output * outScale = internal units
+     std::vector<float> ftW, ftB, outW, outB;
+     // int16 quantized copy (QA for the feature transformer, QB for the output layer)
+-- 
+2.43.0
+
