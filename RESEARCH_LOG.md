@@ -192,3 +192,22 @@ game-position student trained on all of run1 (game_f1). 200 games each, 20k node
 4/4 subsets significant (LOS >= 99.99%); mean +116. Node budgets (tree_f32 vs game_f1):
 5k nodes +123 +/- 52, 20k +104 +/- 49, 80k +141 +/- 50. Full data at 80k nodes (tree_f1 vs game_f1):
 193-2-5, +655 +/- 176 (vs +545 at 20k): the advantage does not shrink with deeper search.
+
+## E4: capacity scaling on the same run1 data (7,490 generation CPU-s), 20k nodes
+Tree students 1.5e8 training positions; game students ~20 epochs. Matches on the quantized incremental
+binary (all E4 games); E1/E1b used the float binary (neutrality check in E7).
+| student | vgame | vtree | vstree | match |
+|---|---|---|---|---|
+| tree H=512 | 0.01641 | 0.01643 | 0.01623 | vs H256: +70 +/- 38 |
+| tree H=1024 | 0.01557 | 0.01542 | 0.01531 | vs H512: +72 +/- 39 |
+| tree kb256 (8 king buckets, mirrored, factorised) | 0.01638 | 0.01675 | 0.01644 | vs H256: +58 +/- 39 |
+| tree kb512 | 0.01565 | 0.01570 | 0.01506 | vs kb256: +47 +/- 36; vs H1024: -26 +/- 38 |
+| game H=512 | 0.02582 | 0.03516 | 0.03651 | vs game H256: +2 +/- 39 |
+| game H=1024 | 0.02650 | 0.03535 | 0.03734 | vs game H512: -7 +/- 46 |
+| game kb256 | 0.02925 | 0.03939 | 0.04136 | vs game H256: -133 +/- 44 |
+Joint ladder (experiments/e4/ratings_joint.txt, anchor game H256 = 0): tree H1024 +683 [616,751],
+tree kb512 +654, tree H512 +613, tree kb256 +605, tree H256 +545; game H512 +2, game H1024 -5,
+game kb256 -133; best conventional-label student -113.
+=> With game positions, extra capacity or richer features buy nothing (or hurt: overfitting to ~734k
+correlated positions). With tree positions every width doubling adds ~+70 Elo. The data-source gap
+widens with model size: ~+680 Elo between the best students of each kind at equal generation compute.

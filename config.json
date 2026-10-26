@@ -32,7 +32,7 @@
         "additional_lines_rgx": [],
         "event_name": "Fastchess Tournament",
         "site": "?",
-        "file": "experiments/e1c/matches/tree_f1_vs_game_f1_n80000.pgn",
+        "file": "experiments/e4/matches/tree_kb512_vs_tree_h1024.pgn",
         "notation": 0,
         "append_file": true,
         "track_nodes": false,
@@ -89,15 +89,15 @@
     },
     "engines": [
         {
-            "name": "tree_f1",
+            "name": "tree_kb512",
             "dir": "",
-            "cmd": "/home/user/data/sf_research",
+            "cmd": "/home/user/data/sf_research_kb",
             "args": "",
             "restart": false,
             "options": [
                 [
                     "StudentFile",
-                    "/home/user/nets/e1c/tree_f1.stud"
+                    "/home/user/nets/e4/tree_kb512.stud"
                 ],
                 [
                     "Threads",
@@ -116,21 +116,21 @@
                     "moves": 0,
                     "timemargin": 0
                 },
-                "nodes": 80000,
+                "nodes": 20000,
                 "plies": 0
             },
             "variant": 0
         },
         {
-            "name": "game_f1",
+            "name": "tree_h1024",
             "dir": "",
-            "cmd": "/home/user/data/sf_research",
+            "cmd": "/home/user/data/sf_research_kb",
             "args": "",
             "restart": false,
             "options": [
                 [
                     "StudentFile",
-                    "/home/user/nets/e1c/game_f1.stud"
+                    "/home/user/nets/e4/tree_h1024.stud"
                 ],
                 [
                     "Threads",
@@ -149,23 +149,23 @@
                     "moves": 0,
                     "timemargin": 0
                 },
-                "nodes": 80000,
+                "nodes": 20000,
                 "plies": 0
             },
             "variant": 0
         }
     ],
     "stats": {
-        "tree_f1 vs game_f1": {
-            "wins": 193,
-            "losses": 2,
-            "draws": 5,
-            "penta_WW": 93,
-            "penta_WD": 5,
-            "penta_WL": 2,
+        "tree_kb512 vs tree_h1024": {
+            "wins": 73,
+            "losses": 88,
+            "draws": 39,
+            "penta_WW": 9,
+            "penta_WD": 16,
+            "penta_WL": 39,
             "penta_DD": 0,
-            "penta_LD": 0,
-            "penta_LL": 0
+            "penta_LD": 23,
+            "penta_LL": 13
         }
     }
 }
