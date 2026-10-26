@@ -150,3 +150,12 @@ All H=256, 2e8 training positions:
 | T1+S1 (49M) | 0.01667 | 0.01706 | 0.01583 |
 Note: T1 trained for 2e8 instead of 1e8 positions improves vtree 0.01863 -> 0.01702, so E1b's fixed
 budgets understate the large-data points (the efficiency claim R1 is conservative in that respect).
+Matches (20k nodes, UHO_4060_v4, paired):
+- base_T1S1 vs base_T1T2: +13.9 +/- 23.1 (600 games, ptnml [35,45,125,51,44], LOS 88%)  -> inconclusive
+- base_T1T2 vs base_T1_2e8: +2.3 +/- 34.7 (300 games)  -> no measurable gain from 2x teacher-tree data
+- base_T1S1 vs base_T1_2e8: +46.6 +/- 32.2 (300 games, LOS 99.8%)
+Joint fit (anchor base_T1_2e8): T1S1 +34 [8, 58], T1T2 +14 [-10, 41].
+Interpretation (preliminary): at H=256 the student saturates on teacher-tree data (loss improves,
+Elo does not), while adding its own search-tree positions (teacher-labelled) still adds strength:
+consistent with H3 (covariate shift between teacher and student search distributions). The decisive
+head-to-head is not yet significant; 1,200 more games queued (E2b, opening seed 2).

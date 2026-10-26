@@ -32,7 +32,7 @@
         "additional_lines_rgx": [],
         "event_name": "Fastchess Tournament",
         "site": "?",
-        "file": "experiments/e2/matches/base_T1S1_vs_base_T1T2.pgn",
+        "file": "experiments/e2/matches/base_T1S1_vs_base_T1_2e8.pgn",
         "notation": 0,
         "append_file": true,
         "track_nodes": false,
@@ -69,7 +69,7 @@
     "wait": 0,
     "autosaveinterval": 20,
     "games": 2,
-    "rounds": 300,
+    "rounds": 150,
     "concurrency": 4,
     "force_concurrency": false,
     "recover": false,
@@ -122,7 +122,7 @@
             "variant": 0
         },
         {
-            "name": "base_T1T2",
+            "name": "base_T1_2e8",
             "dir": "",
             "cmd": "/home/user/data/sf_research",
             "args": "",
@@ -130,7 +130,7 @@
             "options": [
                 [
                     "StudentFile",
-                    "/home/user/nets/e2/base_T1T2.stud"
+                    "/home/user/nets/e2/base_T1_2e8.stud"
                 ],
                 [
                     "Threads",
@@ -156,16 +156,16 @@
         }
     ],
     "stats": {
-        "base_T1S1 vs base_T1T2": {
-            "wins": 9,
-            "losses": 7,
-            "draws": 4,
-            "penta_WW": 0,
-            "penta_WD": 2,
-            "penta_WL": 7,
-            "penta_DD": 1,
-            "penta_LD": 0,
-            "penta_LL": 0
+        "base_T1S1 vs base_T1_2e8": {
+            "wins": 132,
+            "losses": 92,
+            "draws": 76,
+            "penta_WW": 26,
+            "penta_WD": 34,
+            "penta_WL": 46,
+            "penta_DD": 8,
+            "penta_LD": 26,
+            "penta_LL": 10
         }
     }
 }
