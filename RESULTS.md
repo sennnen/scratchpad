@@ -13,7 +13,7 @@ from UHO_Lichess_4852_v1 openings. Matches: paired openings from a *different* b
 
 | # | Finding | Status |
 |---|---|---|
-| R1 | Distilling from positions sampled out of the teacher's **search trees** (its `evaluate()` calls) instead of game positions gives far more strength per CPU-second: a 234 CPU-s tree student beats the best game-position students trained with 8x (1,870 CPU-s) and 32x (7,490 CPU-s) more compute. | Proven at small scale, replicated 4x, robust over 5k-80k nodes |
+| R1 | Distilling from positions sampled out of the teacher's **search trees** (its `evaluate()` calls) instead of game positions needs **~5x less generation compute for equal strength** than the best game-position pipeline found (100-node self-play), and is ~+250-300 Elo stronger at equal compute. Against standard 5000-node self-play data the saving is >= 32x. | Proven at small scale; replicated; robust over 5k-80k nodes |
 | R2 | Validation loss on held-out **search-tree** positions predicts Elo almost perfectly (Pearson 0.995, 18 students); loss on game positions does not (0.92, misranks by up to 264 Elo). | Proven within one teacher, same label type |
 | R3 | With game positions, extra capacity or richer features buy nothing or hurt; with tree positions every doubling of width adds ~+70 Elo. The gap between data sources widens with model size (~+680 Elo at H=1024). | Proven at H <= 1024 |
 | R4 | On-policy (DAgger-style) data: teacher-labelled positions from the **student's own** search trees beat the same amount of teacher-tree data by +22.6 [9.6, 35.7] (1,800 games). | Proven for one iteration at H=256 |
@@ -26,22 +26,28 @@ Every `evaluate()` call in a teacher search is a (position, teacher eval) pair a
 2% of them yields ~34x more labelled positions per CPU-s than the game positions of the same self-play, and
 those positions follow the distribution an evaluator is queried on during search.
 
-Elo vs generation compute (anchor: game-position student on all of run1 = 0):
+Elo vs generation compute (anchor: game-position student on all of run1 = 0; game rows at 1,870 CPU-s
+chained through direct matches):
 
 | generation compute | tree-position student | game-position student |
 |---|---|---|
 | 234 CPU-s | **+111** [75, 151] | |
 | 468 CPU-s | +264 [214, 311] | |
 | 936 CPU-s | +398 [353, 448] | |
-| 1,870 CPU-s | +465 [413, 516] | -362 [-430, -303] (5000-node games); **+69 +/- 44 (1000-node games)** |
-| 3,745 CPU-s | +520 [466, 576] | -159 [-202, -113] |
-| 7,490 CPU-s | +545 [493, 615] | 0 (5000-node games) |
+| 1,870 CPU-s | +465 [413, 516] (E3 settings: ~+516) | 5000-node games -362; 1000-node +69; 300-node ~+184; **100-node ~+220** |
+| 3,745 CPU-s | +520 [466, 576] | 5000-node games -159 |
+| 7,490 CPU-s | +545 [493, 615] | 5000-node games 0 |
 
-- Direct matches: 234-CPU-s tree student vs 7,490-CPU-s game student +104 +/- 49; replicated on three
-  disjoint data subsets (+147, +133, +81, each +/- ~47, LOS >= 99.99%); at 5k/20k/80k nodes: +123/+104/+141.
-- Against the best game pipeline tested (1000-node self-play, 1,870 CPU-s): the 234-CPU-s tree student
-  still wins +61 +/- 45 (LOS 99.7%). **Measured saving: >= 8x generation compute at higher strength**
-  (~10x at equal strength by interpolation); >= 32x versus the 5000-node game baseline. E10_PLACEHOLDER
+- Decisive direct match: the 234-CPU-s tree student vs the best game student (100-node self-play,
+  1,870 CPU-s): **-78 +/- 37** (300 games). Interpolating the tree curve, equal strength needs ~330-360
+  CPU-s of tree data: **~5x less generation compute**. At equal compute (1,870 CPU-s) the tree student is
+  ~+250-300 Elo stronger.
+- Against the standard 5000-node game baseline: 234-CPU-s tree student +104 +/- 49 vs 7,490 CPU-s of
+  game data (>= 32x), replicated on three disjoint data subsets (+147, +133, +81, each +/- ~47, LOS >=
+  99.99%) and at 5k/20k/80k nodes (+123/+104/+141).
+- How the ratio evolved: my first baselines (5000-node games) gave ">= 32x"; cheaper game generation
+  (E9, E10) improved the game pipeline by ~+220 Elo and reduced the ratio to ~5x. A broader sweep of game
+  settings could reduce it further (E11 tests 30 nodes/move).
 - Sample-matched (734k positions each, same 7,490 CPU-s run): tree +207 [162, 253] over game positions, so
   the distribution matters, not only the quantity.
 - Generation settings (equal compute): recording 8% instead of 2% and/or 20k instead of 5k nodes/move
