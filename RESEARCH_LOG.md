@@ -252,3 +252,16 @@ S1 (student trees), E3 n1000_r08/n5000_r08/n20000_r08: ~144M positions, 4e8 trai
   implementation; the teacher's SFNNv18 code is heavily optimised), H=256 student 484k nps.
 Conclusion: ~8 CPU-hours of distillation on 4 cores yields a net ~380 Elo below master at equal nodes.
 It does not approach master strength; R1-R6 are about *relative* efficiency of data sources.
+
+## E9: cheaper game-position baseline (correction to R1's ratio) + E8 vs E4
+Game positions from the E3 1000-node self-play (seeds 3001-3004; the n1000_r02/r08 runs are identical
+games, so one run's 749,661 game positions are used): 1,870 CPU-s, i.e. 4x cheaper per position than run1.
+- game_n1000_p1.5e7 (vgame 0.02590, vtree 0.03457) vs game_f1 (run1 games, 7,490 CPU-s): **+69 +/- 44**
+  (LOS 99.9%). Faster, weaker self-play gives *better* game-position data, consistent with R3: more
+  imbalanced/varied positions.
+- tree_f32 (234 CPU-s) vs game_n1000_p1.5e7 (1,870 CPU-s): **+61 +/- 45** (LOS 99.7%).
+=> Against the best game-position pipeline tested, the measured saving is >= 8x generation compute with the
+tree student still stronger; from the tree scaling slope (~+150 Elo per doubling at that end) equal
+strength would be reached at ~175 CPU-s, i.e. ~10x. The earlier ">= 32x" was relative to the 5000-node
+game baseline and overstates the advantage over a tuned game pipeline. E10 tests even cheaper games.
+- E8 (H=1024, all 144M tree positions) vs E4 tree_h1024 (run1 only): +125 +/- 44 (200 games).

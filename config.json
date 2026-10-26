@@ -32,7 +32,7 @@
         "additional_lines_rgx": [],
         "event_name": "Fastchess Tournament",
         "site": "?",
-        "file": "experiments/e7/matches/stud_vs_teacher_tc10.pgn",
+        "file": "experiments/e9/matches/e8_h1024_all_vs_tree_h1024.pgn",
         "notation": 0,
         "append_file": true,
         "track_nodes": false,
@@ -69,7 +69,7 @@
     "wait": 0,
     "autosaveinterval": 20,
     "games": 2,
-    "rounds": 50,
+    "rounds": 100,
     "concurrency": 4,
     "force_concurrency": false,
     "recover": false,
@@ -89,7 +89,7 @@
     },
     "engines": [
         {
-            "name": "stud",
+            "name": "e8_h1024_all",
             "dir": "",
             "cmd": "/home/user/data/sf_research_kb",
             "args": "",
@@ -97,7 +97,7 @@
             "options": [
                 [
                     "StudentFile",
-                    "/home/user/nets/e8/e8_h1024_all.stud"
+                    "/home/user/nets/e9/e8_h1024_all.stud"
                 ],
                 [
                     "Threads",
@@ -110,25 +110,29 @@
             ],
             "limit": {
                 "tc": {
-                    "increment": 100,
+                    "increment": 0,
                     "fixed_time": 0,
-                    "time": 10000,
+                    "time": 0,
                     "moves": 0,
                     "timemargin": 0
                 },
-                "nodes": 0,
+                "nodes": 20000,
                 "plies": 0
             },
             "variant": 0
         },
         {
-            "name": "teacher",
+            "name": "tree_h1024",
             "dir": "",
             "cmd": "/home/user/data/sf_research_kb",
             "args": "",
             "restart": false,
             "options": [
                 [
+                    "StudentFile",
+                    "/home/user/nets/e9/tree_h1024.stud"
+                ],
+                [
                     "Threads",
                     "1"
                 ],
@@ -139,29 +143,29 @@
             ],
             "limit": {
                 "tc": {
-                    "increment": 100,
+                    "increment": 0,
                     "fixed_time": 0,
-                    "time": 10000,
+                    "time": 0,
                     "moves": 0,
                     "timemargin": 0
                 },
-                "nodes": 0,
+                "nodes": 20000,
                 "plies": 0
             },
             "variant": 0
         }
     ],
     "stats": {
-        "stud vs teacher": {
-            "wins": 0,
-            "losses": 74,
-            "draws": 26,
-            "penta_WW": 0,
-            "penta_WD": 0,
-            "penta_WL": 0,
-            "penta_DD": 0,
-            "penta_LD": 26,
-            "penta_LL": 24
+        "e8_h1024_all vs tree_h1024": {
+            "wins": 113,
+            "losses": 44,
+            "draws": 43,
+            "penta_WW": 29,
+            "penta_WD": 30,
+            "penta_WL": 25,
+            "penta_DD": 2,
+            "penta_LD": 9,
+            "penta_LL": 5
         }
     }
 }
