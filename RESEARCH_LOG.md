@@ -401,3 +401,18 @@ rows), layer stacks re-initialised (seed 0), lr 3e-3 (P3 selection), 1500 steps 
 Labels: teacher (master raw eval) vs search (5000-node, corrected units, inverse-scaled).
 Endpoints (1000 games each, 20k nodes): position effect under teacher labels (T vs G, teacher) and under
 search labels (T vs G, search). The interaction = difference of the two effects.
+
+## P3 RESULT: re-distillation of the production layer stacks (pre-registered)
+Frozen master FT; stacks re-initialised; teacher labels; 600k positions per arm; lr 3e-3 selected on pooled
+validation with the G+T mix arm (grid 3e-4 / 1e-3 / 3e-3: pooled MSE 0.00284 / 0.00192 / 0.00165);
+3000 steps x 8192 (~8 min, 4 threads, ~1.9 GB RAM). Validation MSE vs master eval (VG / VT):
+RS-G 0.001705 / 0.002199; RS-F 0.002771 / 0.003002; RS-T 0.001705 / 0.001640.
+- PRIMARY: RS-T vs RS-F = **+43.0 +/- 13.7** (1000 games, LOS 100%).
+- RS-T vs RS-G = +15.1 +/- 17.6 (600 games, LOS 95%; n.s.).
+- vs master (400 games each): RS-T -53.4 +/- 21.3, RS-F -70.4 +/- 22.2.
+- Joint fit (anchor master): RS-T -42.7 [-59.0, -27.5], RS-G -57.8 [-80.5, -35.3], RS-F -81.4 [-98.0, -65.2].
+Interpretation: in the production architecture, with labels held identical, tree positions give the best
+distilled layer stacks; they match game positions on game-position accuracy and beat them on tree
+positions. Unlike from-scratch small students (Phase I), fast/weak-play game positions are the *worst*
+source here: when the frozen FT already supplies coverage, matching the distribution the evaluator is
+queried on matters more than raw diversity.
