@@ -128,13 +128,15 @@ class Stacks(torch.nn.Module):
         write_stacks(path, prefix, st)
 
 
-def prepare(d, quiet_only=False, nkeep=0, target='search'):
+def prepare(d, quiet_only=False, nkeep=0, target='search', see_filter=False):
     """Returns (ft u8 tensor, bucket, raw-space target, mask of kept rows)."""
     recs = d['rec']
     keep = np.ones(len(d), bool)
     if quiet_only:
         keep &= (recs['src'] & 0x80) == 0
     keep &= np.abs(recs['score']) < 20000  # drop mate/TB scores (stored as +-31000/32000)
+    if see_filter:  # ftdump pad bit0: winning capture available (SEE >= 1)
+        keep &= (d['pad'] & 1) == 0
     idx = np.nonzero(keep)[0]
     if nkeep:
         idx = idx[:nkeep]
@@ -179,6 +181,7 @@ def main():
     ap.add_argument('--nkeep', type=int, default=0, help='cap each train set at this many rows after filtering')
     ap.add_argument('--seed', type=int, default=0)
     ap.add_argument('--target', default='search', choices=['search', 'teacher'])
+    ap.add_argument('--see', action='store_true', help='drop positions with a winning capture (SEE>=1)')
     ap.add_argument('--reinit', action='store_true', help='random re-initialisation of all layer stacks')
     ap.add_argument('--threads', type=int, default=4)
     a = ap.parse_args()
@@ -199,7 +202,7 @@ def main():
         path, _, w = spec.partition(':')
         d = load(path)
         if a.n: d = d[:a.n]
-        sets.append((prepare(d, a.quiet, a.nkeep, a.target), float(w) if w else 1.0, path))
+        sets.append((prepare(d, a.quiet, a.nkeep, a.target, a.see), float(w) if w else 1.0, path))
     tot = sum(w for _, w, _ in sets)
     vals = {}
     for v in a.val:

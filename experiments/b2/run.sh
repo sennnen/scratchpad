@@ -1,7 +1,7 @@
 #!/bin/bash
 # B2: error-guided selection of tree positions. Pool: B1 teacher-tree data. Scorer: E1 tree_teacher (H=256,
 # trained on run1, disjoint games). Equal-count H=256 students (K=1M), weights err^alpha.
-until grep -q B1_DONE /home/user/nets/b1.log; do sleep 30; done
+until grep -q P8_DONE /home/user/nets/p8.log 2>/dev/null; do sleep 30; done
 O=/home/user/data/b1; N=/home/user/nets/b2; mkdir -p $N; S=/home/user/nets/e1/tree_teacher.stud
 F=$(for i in 1 2 3 4; do echo --train $O/t.$i.bin; done)
 VAL="--val vgame=/home/user/data/val/v.bin:0 --val vtree=/home/user/data/val/v.bin:1"

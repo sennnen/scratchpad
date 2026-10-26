@@ -32,7 +32,7 @@
         "additional_lines_rgx": [],
         "event_name": "Fastchess Tournament",
         "site": "?",
-        "file": "experiments/p7/matches/qT186_vs_master.pgn",
+        "file": "experiments/p7/matches/RS_T_300000_vs_RS_G_300000.pgn",
         "notation": 0,
         "append_file": true,
         "track_nodes": false,
@@ -69,7 +69,7 @@
     "wait": 0,
     "autosaveinterval": 20,
     "games": 2,
-    "rounds": 200,
+    "rounds": 500,
     "concurrency": 4,
     "force_concurrency": false,
     "recover": false,
@@ -89,7 +89,7 @@
     },
     "engines": [
         {
-            "name": "qT186",
+            "name": "RS_T_300000",
             "dir": "",
             "cmd": "/home/user/data/sf_p2",
             "args": "",
@@ -97,7 +97,7 @@
             "options": [
                 [
                     "EvalFile",
-                    "/home/user/nets/p4/teacher_T.nnue"
+                    "/home/user/nets/p6/RS_T_300000.nnue"
                 ],
                 [
                     "Threads",
@@ -122,12 +122,16 @@
             "variant": 0
         },
         {
-            "name": "master",
+            "name": "RS_G_300000",
             "dir": "",
             "cmd": "/home/user/data/sf_p2",
             "args": "",
             "restart": false,
             "options": [
+                [
+                    "EvalFile",
+                    "/home/user/nets/p6/RS_G_300000.nnue"
+                ],
                 [
                     "Threads",
                     "1"
@@ -152,16 +156,16 @@
         }
     ],
     "stats": {
-        "qT186 vs master": {
-            "wins": 17,
-            "losses": 44,
-            "draws": 39,
-            "penta_WW": 0,
-            "penta_WD": 6,
-            "penta_WL": 11,
-            "penta_DD": 5,
-            "penta_LD": 23,
-            "penta_LL": 5
+        "RS_T_300000 vs RS_G_300000": {
+            "wins": 322,
+            "losses": 285,
+            "draws": 393,
+            "penta_WW": 20,
+            "penta_WD": 138,
+            "penta_WL": 144,
+            "penta_DD": 70,
+            "penta_LD": 115,
+            "penta_LL": 13
         }
     }
 }

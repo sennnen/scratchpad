@@ -1,0 +1,38 @@
+From c561bbe0f9013a5c7c516868f3a6e0d0dc4e008b Mon Sep 17 00:00:00 2001
+From: research <research@localhost>
+Date: Mon, 26 Oct 2026 19:59:48 +0000
+Subject: [PATCH] research: ftdump SEE flag (winning capture available)
+
+---
+ src/engine.cpp | 8 ++++++++
+ 1 file changed, 8 insertions(+)
+
+diff --git a/src/engine.cpp b/src/engine.cpp
+index b45c6a6b..4cfabb6e 100644
+--- a/src/engine.cpp
++++ b/src/engine.cpp
+@@ -17,6 +17,7 @@
+ */
+ 
+ #include "engine.h"
++#include "movegen.h"
+ 
+ #include <algorithm>
+ #include <cassert>
+@@ -170,6 +171,13 @@ void Engine::ft_dump(const std::string& in, const std::string& out, u64 maxRecs,
+         fr.sfEval = int16_t(std::clamp(int(network->transform_dump(p, *accumulators, *caches, fr.ft, bucket)), -32000, 32000));
+         fr.bucket = uint8_t(bucket);
+         fr.pad    = 0;
++        // bit0: side to move has a winning capture/promotion (SEE >= 1) - cheap "not quiet" proxy
++        for (const auto& m : MoveList<ALL>(p))
++            if (p.capture_stage(m) && p.see_ge(m, Value(1)))
++            {
++                fr.pad |= 1;
++                break;
++            }
+         std::fwrite(&fr, sizeof fr, 1, fo);
+         ++done;
+     }
+-- 
+2.43.0
+

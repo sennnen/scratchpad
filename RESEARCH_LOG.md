@@ -501,3 +501,23 @@ graph (all nets vs master only) this shifted every player by ~+51. Replaced by f
 Hessian (exact). Re-fitting all earlier joint ladders (E1/E1b/E4, E2, P3) reproduces their point
 estimates exactly (those graphs converged correctly), so no earlier conclusion changes; only the P6
 ladder file written minutes earlier was wrong and has been regenerated.
+
+## P7 RESULT: what drove P4's +83?
+400 games vs master each: qT186 (P4 teacher_T, quiet-filtered tree, 186k) **-81.4 +/- 21.6**;
+qG186 (P4 teacher_G, quiet-filtered game, 186k) **-146.2 +/- 26.6**. Compare unfiltered (P6) at 150k:
+T -109.5, G -98.1. => The quiet filter (drop positions whose search best move is a capture) *helps* tree
+positions (+28 despite similar size) and *hurts* game positions (-48 despite more positions) under teacher
+labels. Capture-best tree positions are mostly refuted lines with hanging material where a static target is
+unreliable; capture-best game positions are ordinary recaptures the evaluator must handle in qsearch.
+P4's +83 = good arm (quiet T) vs handicapped arm (quiet G).
+Direct, unfiltered, 300k: RS_T_300000 vs RS_G_300000 = **+12.9 +/- 13.3** (1000 games). Pooled with P3's
+600k direct (+15.1 +/- 17.6): about +14 +/- 11 for unfiltered tree over game positions at equal count.
+Best recipe so far: quiet-filtered tree positions (186k, -81) ~ unfiltered game positions at 300k (-82):
+~1.6x data efficiency. Quiet flag requires a search per position; a static proxy is tested in P8.
+
+## PRE-REGISTRATION P8 (before results): SEE-filtered tree positions (cheap quiet proxy)
+Filter: drop positions where the side to move has a capture/promotion with SEE >= 1 (ftdump pad bit0;
+on VT it catches 86% of search-capture-best positions, precision 72%, removes 43%).
+Arms (teacher labels, re-initialised stacks, lr 3e-3, 3000 steps, 300k each): SEE-T (P3 T pool filtered),
+SEE-G (P3 G pool filtered), vs RS_G_300000 (unfiltered G). Primary: SEE-T vs RS_G_300000 (1000 games).
+Secondary: SEE-G vs RS_G_300000 (600 games).
