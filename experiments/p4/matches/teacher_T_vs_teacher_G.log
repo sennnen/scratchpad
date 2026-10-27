@@ -1,0 +1,2040 @@
+/home/user/work/fastchess/fastchess -engine cmd=/home/user/data/sf_p2 name=teacher_T option.EvalFile=/home/user/nets/p4/teacher_T.nnue tc=inf nodes=20000 -engine cmd=/home/user/data/sf_p2 name=teacher_G option.EvalFile=/home/user/nets/p4/teacher_G.nnue tc=inf nodes=20000 -each option.Threads=1 option.Hash=16 -openings file=/home/user/data/UHO_4060_v4.epd format=epd order=random -srand 1 -repeat -rounds 500 -concurrency 4 -resign movecount=3 score=1000 twosided=true -draw movenumber=40 movecount=8 score=8 -pgnout file=experiments/p4/matches/teacher_T_vs_teacher_G.pgn -ratinginterval 100
+Indexing opening suite...
+Started game 1 of 1000 (teacher_T vs teacher_G)
+Started game 2 of 1000 (teacher_G vs teacher_T)
+Started game 3 of 1000 (teacher_T vs teacher_G)
+Started game 4 of 1000 (teacher_G vs teacher_T)
+Finished game 2 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 5 of 1000 (teacher_T vs teacher_G)
+Finished game 1 (teacher_T vs teacher_G): 1/2-1/2 {Draw by adjudication}
+Started game 6 of 1000 (teacher_G vs teacher_T)
+Finished game 3 (teacher_T vs teacher_G): 0-1 {Black wins by adjudication}
+Started game 7 of 1000 (teacher_T vs teacher_G)
+Finished game 4 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 8 of 1000 (teacher_G vs teacher_T)
+Finished game 7 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 9 of 1000 (teacher_T vs teacher_G)
+Finished game 5 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 10 of 1000 (teacher_G vs teacher_T)
+Finished game 8 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 11 of 1000 (teacher_T vs teacher_G)
+Finished game 6 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 12 of 1000 (teacher_G vs teacher_T)
+Finished game 9 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 13 of 1000 (teacher_T vs teacher_G)
+Finished game 11 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 14 of 1000 (teacher_G vs teacher_T)
+Finished game 10 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 15 of 1000 (teacher_T vs teacher_G)
+Finished game 12 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 16 of 1000 (teacher_G vs teacher_T)
+Finished game 13 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 17 of 1000 (teacher_T vs teacher_G)
+Finished game 15 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 18 of 1000 (teacher_G vs teacher_T)
+Finished game 14 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 19 of 1000 (teacher_T vs teacher_G)
+Finished game 16 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 20 of 1000 (teacher_G vs teacher_T)
+Finished game 18 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 21 of 1000 (teacher_T vs teacher_G)
+Finished game 17 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 22 of 1000 (teacher_G vs teacher_T)
+Finished game 19 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 23 of 1000 (teacher_T vs teacher_G)
+Finished game 20 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 24 of 1000 (teacher_G vs teacher_T)
+Finished game 21 (teacher_T vs teacher_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 25 of 1000 (teacher_T vs teacher_G)
+Finished game 25 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 26 of 1000 (teacher_G vs teacher_T)
+Finished game 22 (teacher_G vs teacher_T): 1/2-1/2 {Draw by adjudication}
+Started game 27 of 1000 (teacher_T vs teacher_G)
+Finished game 23 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 28 of 1000 (teacher_G vs teacher_T)
+Finished game 24 (teacher_G vs teacher_T): 1/2-1/2 {Draw by insufficient mating material}
+Started game 29 of 1000 (teacher_T vs teacher_G)
+Finished game 26 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 30 of 1000 (teacher_G vs teacher_T)
+Finished game 27 (teacher_T vs teacher_G): 0-1 {Black wins by adjudication}
+Started game 31 of 1000 (teacher_T vs teacher_G)
+Finished game 29 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 32 of 1000 (teacher_G vs teacher_T)
+Finished game 28 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 33 of 1000 (teacher_T vs teacher_G)
+Finished game 30 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 34 of 1000 (teacher_G vs teacher_T)
+Finished game 31 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 35 of 1000 (teacher_T vs teacher_G)
+Finished game 33 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 36 of 1000 (teacher_G vs teacher_T)
+Finished game 34 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 37 of 1000 (teacher_T vs teacher_G)
+Finished game 32 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 38 of 1000 (teacher_G vs teacher_T)
+Finished game 35 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 39 of 1000 (teacher_T vs teacher_G)
+Finished game 36 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 40 of 1000 (teacher_G vs teacher_T)
+Finished game 37 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 41 of 1000 (teacher_T vs teacher_G)
+Finished game 40 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 42 of 1000 (teacher_G vs teacher_T)
+Finished game 39 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 43 of 1000 (teacher_T vs teacher_G)
+Finished game 38 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 44 of 1000 (teacher_G vs teacher_T)
+Finished game 43 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 45 of 1000 (teacher_T vs teacher_G)
+Finished game 41 (teacher_T vs teacher_G): 1/2-1/2 {Draw by insufficient mating material}
+Started game 46 of 1000 (teacher_G vs teacher_T)
+Finished game 44 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 47 of 1000 (teacher_T vs teacher_G)
+Finished game 47 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 48 of 1000 (teacher_G vs teacher_T)
+Finished game 42 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 49 of 1000 (teacher_T vs teacher_G)
+Finished game 48 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 50 of 1000 (teacher_G vs teacher_T)
+Finished game 46 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 51 of 1000 (teacher_T vs teacher_G)
+Finished game 45 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 52 of 1000 (teacher_G vs teacher_T)
+Finished game 49 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 53 of 1000 (teacher_T vs teacher_G)
+Finished game 51 (teacher_T vs teacher_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 54 of 1000 (teacher_G vs teacher_T)
+Finished game 52 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 55 of 1000 (teacher_T vs teacher_G)
+Finished game 50 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 56 of 1000 (teacher_G vs teacher_T)
+Finished game 54 (teacher_G vs teacher_T): 1/2-1/2 {Draw by adjudication}
+Started game 57 of 1000 (teacher_T vs teacher_G)
+Finished game 56 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 58 of 1000 (teacher_G vs teacher_T)
+Finished game 53 (teacher_T vs teacher_G): 0-1 {Black wins by adjudication}
+Started game 59 of 1000 (teacher_T vs teacher_G)
+Finished game 58 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 60 of 1000 (teacher_G vs teacher_T)
+Finished game 57 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 61 of 1000 (teacher_T vs teacher_G)
+Finished game 55 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 62 of 1000 (teacher_G vs teacher_T)
+Finished game 59 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 63 of 1000 (teacher_T vs teacher_G)
+Finished game 62 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 64 of 1000 (teacher_G vs teacher_T)
+Finished game 60 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 65 of 1000 (teacher_T vs teacher_G)
+Finished game 61 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 66 of 1000 (teacher_G vs teacher_T)
+Finished game 65 (teacher_T vs teacher_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 67 of 1000 (teacher_T vs teacher_G)
+Finished game 64 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 68 of 1000 (teacher_G vs teacher_T)
+Finished game 66 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 69 of 1000 (teacher_T vs teacher_G)
+Finished game 68 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 70 of 1000 (teacher_G vs teacher_T)
+Finished game 63 (teacher_T vs teacher_G): 1/2-1/2 {Draw by fifty moves rule}
+Started game 71 of 1000 (teacher_T vs teacher_G)
+Finished game 67 (teacher_T vs teacher_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 72 of 1000 (teacher_G vs teacher_T)
+Finished game 69 (teacher_T vs teacher_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 73 of 1000 (teacher_T vs teacher_G)
+Finished game 71 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 74 of 1000 (teacher_G vs teacher_T)
+Finished game 70 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 75 of 1000 (teacher_T vs teacher_G)
+Finished game 72 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 76 of 1000 (teacher_G vs teacher_T)
+Finished game 75 (teacher_T vs teacher_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 77 of 1000 (teacher_T vs teacher_G)
+Finished game 73 (teacher_T vs teacher_G): 1/2-1/2 {Draw by adjudication}
+Started game 78 of 1000 (teacher_G vs teacher_T)
+Finished game 74 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 79 of 1000 (teacher_T vs teacher_G)
+Finished game 76 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 80 of 1000 (teacher_G vs teacher_T)
+Finished game 77 (teacher_T vs teacher_G): 1/2-1/2 {Draw by adjudication}
+Started game 81 of 1000 (teacher_T vs teacher_G)
+Finished game 78 (teacher_G vs teacher_T): 1/2-1/2 {Draw by adjudication}
+Started game 82 of 1000 (teacher_G vs teacher_T)
+Finished game 80 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 83 of 1000 (teacher_T vs teacher_G)
+Finished game 79 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 84 of 1000 (teacher_G vs teacher_T)
+Finished game 81 (teacher_T vs teacher_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 85 of 1000 (teacher_T vs teacher_G)
+Finished game 83 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 86 of 1000 (teacher_G vs teacher_T)
+Finished game 82 (teacher_G vs teacher_T): 1/2-1/2 {Draw by adjudication}
+Started game 87 of 1000 (teacher_T vs teacher_G)
+Finished game 84 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 88 of 1000 (teacher_G vs teacher_T)
+Finished game 85 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 89 of 1000 (teacher_T vs teacher_G)
+Finished game 87 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 90 of 1000 (teacher_G vs teacher_T)
+Finished game 86 (teacher_G vs teacher_T): 1/2-1/2 {Draw by insufficient mating material}
+Started game 91 of 1000 (teacher_T vs teacher_G)
+Finished game 91 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 92 of 1000 (teacher_G vs teacher_T)
+Finished game 88 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 93 of 1000 (teacher_T vs teacher_G)
+Finished game 89 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 94 of 1000 (teacher_G vs teacher_T)
+Finished game 90 (teacher_G vs teacher_T): 1/2-1/2 {Draw by adjudication}
+Started game 95 of 1000 (teacher_T vs teacher_G)
+Finished game 92 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 96 of 1000 (teacher_G vs teacher_T)
+Finished game 93 (teacher_T vs teacher_G): 1/2-1/2 {Draw by adjudication}
+Started game 97 of 1000 (teacher_T vs teacher_G)
+Finished game 95 (teacher_T vs teacher_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 98 of 1000 (teacher_G vs teacher_T)
+Finished game 97 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 99 of 1000 (teacher_T vs teacher_G)
+Finished game 94 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 100 of 1000 (teacher_G vs teacher_T)
+Finished game 96 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 101 of 1000 (teacher_T vs teacher_G)
+Finished game 98 (teacher_G vs teacher_T): 1/2-1/2 {Draw by adjudication}
+Started game 102 of 1000 (teacher_G vs teacher_T)
+Finished game 99 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 103 of 1000 (teacher_T vs teacher_G)
+Finished game 102 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 104 of 1000 (teacher_G vs teacher_T)
+Finished game 100 (teacher_G vs teacher_T): 1/2-1/2 {Draw by adjudication}
+Started game 105 of 1000 (teacher_T vs teacher_G)
+Finished game 103 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 106 of 1000 (teacher_G vs teacher_T)
+Finished game 101 (teacher_T vs teacher_G): 0-1 {Black wins by adjudication}
+Started game 107 of 1000 (teacher_T vs teacher_G)
+Finished game 104 (teacher_G vs teacher_T): 1/2-1/2 {Draw by insufficient mating material}
+Started game 108 of 1000 (teacher_G vs teacher_T)
+Finished game 105 (teacher_T vs teacher_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 109 of 1000 (teacher_T vs teacher_G)
+Finished game 106 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 110 of 1000 (teacher_G vs teacher_T)
+Finished game 107 (teacher_T vs teacher_G): 0-1 {Black wins by adjudication}
+Started game 111 of 1000 (teacher_T vs teacher_G)
+Finished game 108 (teacher_G vs teacher_T): 1/2-1/2 {Draw by adjudication}
+Started game 112 of 1000 (teacher_G vs teacher_T)
+Finished game 110 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 113 of 1000 (teacher_T vs teacher_G)
+Finished game 111 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 114 of 1000 (teacher_G vs teacher_T)
+Finished game 112 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 115 of 1000 (teacher_T vs teacher_G)
+Finished game 109 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 116 of 1000 (teacher_G vs teacher_T)
+Finished game 115 (teacher_T vs teacher_G): 1-0 {White mates}
+Started game 117 of 1000 (teacher_T vs teacher_G)
+Finished game 113 (teacher_T vs teacher_G): 1/2-1/2 {Draw by adjudication}
+Started game 118 of 1000 (teacher_G vs teacher_T)
+Finished game 114 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 119 of 1000 (teacher_T vs teacher_G)
+Finished game 117 (teacher_T vs teacher_G): 1/2-1/2 {Draw by adjudication}
+Started game 120 of 1000 (teacher_G vs teacher_T)
+Finished game 118 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 121 of 1000 (teacher_T vs teacher_G)
+Finished game 116 (teacher_G vs teacher_T): 1/2-1/2 {Draw by adjudication}
+Started game 122 of 1000 (teacher_G vs teacher_T)
+Finished game 119 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 123 of 1000 (teacher_T vs teacher_G)
+Finished game 120 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 124 of 1000 (teacher_G vs teacher_T)
+Finished game 122 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 125 of 1000 (teacher_T vs teacher_G)
+Finished game 123 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 126 of 1000 (teacher_G vs teacher_T)
+Finished game 124 (teacher_G vs teacher_T): 1/2-1/2 {Draw by insufficient mating material}
+Started game 127 of 1000 (teacher_T vs teacher_G)
+Finished game 121 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 128 of 1000 (teacher_G vs teacher_T)
+Finished game 125 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 129 of 1000 (teacher_T vs teacher_G)
+Finished game 126 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 130 of 1000 (teacher_G vs teacher_T)
+Finished game 127 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 131 of 1000 (teacher_T vs teacher_G)
+Finished game 128 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 132 of 1000 (teacher_G vs teacher_T)
+Finished game 129 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 133 of 1000 (teacher_T vs teacher_G)
+Finished game 130 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 134 of 1000 (teacher_G vs teacher_T)
+Finished game 132 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 135 of 1000 (teacher_T vs teacher_G)
+Finished game 133 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 136 of 1000 (teacher_G vs teacher_T)
+Finished game 131 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 137 of 1000 (teacher_T vs teacher_G)
+Finished game 135 (teacher_T vs teacher_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 138 of 1000 (teacher_G vs teacher_T)
+Finished game 134 (teacher_G vs teacher_T): 1/2-1/2 {Draw by adjudication}
+Started game 139 of 1000 (teacher_T vs teacher_G)
+Finished game 136 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 140 of 1000 (teacher_G vs teacher_T)
+Finished game 138 (teacher_G vs teacher_T): 1/2-1/2 {Draw by adjudication}
+Started game 141 of 1000 (teacher_T vs teacher_G)
+Finished game 140 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 142 of 1000 (teacher_G vs teacher_T)
+Finished game 137 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 143 of 1000 (teacher_T vs teacher_G)
+Finished game 143 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 144 of 1000 (teacher_G vs teacher_T)
+Finished game 139 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 145 of 1000 (teacher_T vs teacher_G)
+Finished game 141 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 146 of 1000 (teacher_G vs teacher_T)
+Finished game 142 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 147 of 1000 (teacher_T vs teacher_G)
+Finished game 144 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 148 of 1000 (teacher_G vs teacher_T)
+Finished game 147 (teacher_T vs teacher_G): 0-1 {Black wins by adjudication}
+Started game 149 of 1000 (teacher_T vs teacher_G)
+Finished game 146 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 150 of 1000 (teacher_G vs teacher_T)
+Finished game 145 (teacher_T vs teacher_G): 1/2-1/2 {Draw by adjudication}
+Started game 151 of 1000 (teacher_T vs teacher_G)
+Finished game 148 (teacher_G vs teacher_T): 1/2-1/2 {Draw by adjudication}
+Started game 152 of 1000 (teacher_G vs teacher_T)
+Finished game 151 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 153 of 1000 (teacher_T vs teacher_G)
+Finished game 150 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 154 of 1000 (teacher_G vs teacher_T)
+Finished game 154 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 155 of 1000 (teacher_T vs teacher_G)
+Finished game 149 (teacher_T vs teacher_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 156 of 1000 (teacher_G vs teacher_T)
+Finished game 153 (teacher_T vs teacher_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 157 of 1000 (teacher_T vs teacher_G)
+Finished game 156 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 158 of 1000 (teacher_G vs teacher_T)
+Finished game 152 (teacher_G vs teacher_T): 1/2-1/2 {Draw by fifty moves rule}
+Started game 159 of 1000 (teacher_T vs teacher_G)
+Finished game 155 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 160 of 1000 (teacher_G vs teacher_T)
+Finished game 159 (teacher_T vs teacher_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 161 of 1000 (teacher_T vs teacher_G)
+Finished game 158 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 162 of 1000 (teacher_G vs teacher_T)
+Finished game 157 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 163 of 1000 (teacher_T vs teacher_G)
+Finished game 161 (teacher_T vs teacher_G): 1/2-1/2 {Draw by adjudication}
+Started game 164 of 1000 (teacher_G vs teacher_T)
+Finished game 160 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 165 of 1000 (teacher_T vs teacher_G)
+Finished game 163 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 166 of 1000 (teacher_G vs teacher_T)
+Finished game 162 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 167 of 1000 (teacher_T vs teacher_G)
+Finished game 165 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 168 of 1000 (teacher_G vs teacher_T)
+Finished game 167 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 169 of 1000 (teacher_T vs teacher_G)
+Finished game 166 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 170 of 1000 (teacher_G vs teacher_T)
+Finished game 168 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 171 of 1000 (teacher_T vs teacher_G)
+Finished game 169 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 172 of 1000 (teacher_G vs teacher_T)
+Finished game 171 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 173 of 1000 (teacher_T vs teacher_G)
+Finished game 170 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 174 of 1000 (teacher_G vs teacher_T)
+Finished game 173 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 175 of 1000 (teacher_T vs teacher_G)
+Finished game 172 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 176 of 1000 (teacher_G vs teacher_T)
+Finished game 174 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 177 of 1000 (teacher_T vs teacher_G)
+Finished game 175 (teacher_T vs teacher_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 178 of 1000 (teacher_G vs teacher_T)
+Finished game 176 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 179 of 1000 (teacher_T vs teacher_G)
+Finished game 177 (teacher_T vs teacher_G): 0-1 {Black wins by adjudication}
+Started game 180 of 1000 (teacher_G vs teacher_T)
+Finished game 178 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 181 of 1000 (teacher_T vs teacher_G)
+Finished game 164 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 182 of 1000 (teacher_G vs teacher_T)
+Finished game 179 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 183 of 1000 (teacher_T vs teacher_G)
+Finished game 181 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 184 of 1000 (teacher_G vs teacher_T)
+Finished game 182 (teacher_G vs teacher_T): 1/2-1/2 {Draw by adjudication}
+Started game 185 of 1000 (teacher_T vs teacher_G)
+Finished game 180 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 186 of 1000 (teacher_G vs teacher_T)
+Finished game 183 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 187 of 1000 (teacher_T vs teacher_G)
+Finished game 185 (teacher_T vs teacher_G): 1/2-1/2 {Draw by adjudication}
+Started game 188 of 1000 (teacher_G vs teacher_T)
+Finished game 186 (teacher_G vs teacher_T): 1/2-1/2 {Draw by adjudication}
+Started game 189 of 1000 (teacher_T vs teacher_G)
+Finished game 187 (teacher_T vs teacher_G): 0-1 {Black wins by adjudication}
+Started game 190 of 1000 (teacher_G vs teacher_T)
+Finished game 184 (teacher_G vs teacher_T): 1/2-1/2 {Draw by adjudication}
+Started game 191 of 1000 (teacher_T vs teacher_G)
+Finished game 188 (teacher_G vs teacher_T): 1/2-1/2 {Draw by adjudication}
+Started game 192 of 1000 (teacher_G vs teacher_T)
+Finished game 191 (teacher_T vs teacher_G): 1/2-1/2 {Draw by adjudication}
+Started game 193 of 1000 (teacher_T vs teacher_G)
+Finished game 189 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 194 of 1000 (teacher_G vs teacher_T)
+Finished game 190 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 195 of 1000 (teacher_T vs teacher_G)
+Finished game 192 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 196 of 1000 (teacher_G vs teacher_T)
+Finished game 193 (teacher_T vs teacher_G): 1/2-1/2 {Draw by adjudication}
+Started game 197 of 1000 (teacher_T vs teacher_G)
+Finished game 195 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 198 of 1000 (teacher_G vs teacher_T)
+Finished game 194 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 199 of 1000 (teacher_T vs teacher_G)
+Finished game 196 (teacher_G vs teacher_T): 1/2-1/2 {Draw by adjudication}
+Started game 200 of 1000 (teacher_G vs teacher_T)
+Finished game 197 (teacher_T vs teacher_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 201 of 1000 (teacher_T vs teacher_G)
+Finished game 198 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 202 of 1000 (teacher_G vs teacher_T)
+Finished game 199 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 203 of 1000 (teacher_T vs teacher_G)
+Finished game 203 (teacher_T vs teacher_G): 1/2-1/2 {Draw by adjudication}
+Started game 204 of 1000 (teacher_G vs teacher_T)
+Finished game 202 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 205 of 1000 (teacher_T vs teacher_G)
+Finished game 201 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 206 of 1000 (teacher_G vs teacher_T)
+Finished game 200 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+--------------------------------------------------
+Results of teacher_T vs teacher_G (20000 nodes, 1t, 16MB, UHO_4060_v4.epd):
+Elo: 71.51 +/- 35.36, nElo: 100.05 +/- 47.91
+LOS: 100.00 %, DrawRatio: 34.65 %, PairsRatio: 2.67
+Games: 202, Wins: 88, Losses: 47, Draws: 67, Points: 121.5 (60.15 %)
+Ptnml(0-2): [3, 15, 35, 34, 14], WL/DD Ratio: 2.89
+--------------------------------------------------
+Started game 207 of 1000 (teacher_T vs teacher_G)
+Finished game 205 (teacher_T vs teacher_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 208 of 1000 (teacher_G vs teacher_T)
+Finished game 204 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 209 of 1000 (teacher_T vs teacher_G)
+Finished game 206 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 210 of 1000 (teacher_G vs teacher_T)
+Finished game 207 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 211 of 1000 (teacher_T vs teacher_G)
+Finished game 208 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 212 of 1000 (teacher_G vs teacher_T)
+Finished game 211 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 213 of 1000 (teacher_T vs teacher_G)
+Finished game 209 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 214 of 1000 (teacher_G vs teacher_T)
+Finished game 214 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 215 of 1000 (teacher_T vs teacher_G)
+Finished game 210 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 216 of 1000 (teacher_G vs teacher_T)
+Finished game 213 (teacher_T vs teacher_G): 0-1 {Black wins by adjudication}
+Started game 217 of 1000 (teacher_T vs teacher_G)
+Finished game 212 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 218 of 1000 (teacher_G vs teacher_T)
+Finished game 215 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 219 of 1000 (teacher_T vs teacher_G)
+Finished game 216 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 220 of 1000 (teacher_G vs teacher_T)
+Finished game 217 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 221 of 1000 (teacher_T vs teacher_G)
+Finished game 219 (teacher_T vs teacher_G): 1/2-1/2 {Draw by adjudication}
+Started game 222 of 1000 (teacher_G vs teacher_T)
+Finished game 218 (teacher_G vs teacher_T): 1/2-1/2 {Draw by adjudication}
+Started game 223 of 1000 (teacher_T vs teacher_G)
+Finished game 220 (teacher_G vs teacher_T): 1/2-1/2 {Draw by insufficient mating material}
+Started game 224 of 1000 (teacher_G vs teacher_T)
+Finished game 222 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 225 of 1000 (teacher_T vs teacher_G)
+Finished game 221 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 226 of 1000 (teacher_G vs teacher_T)
+Finished game 223 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 227 of 1000 (teacher_T vs teacher_G)
+Finished game 224 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 228 of 1000 (teacher_G vs teacher_T)
+Finished game 226 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 229 of 1000 (teacher_T vs teacher_G)
+Finished game 225 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 230 of 1000 (teacher_G vs teacher_T)
+Finished game 227 (teacher_T vs teacher_G): 1/2-1/2 {Draw by adjudication}
+Started game 231 of 1000 (teacher_T vs teacher_G)
+Finished game 229 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 232 of 1000 (teacher_G vs teacher_T)
+Finished game 228 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 233 of 1000 (teacher_T vs teacher_G)
+Finished game 230 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 234 of 1000 (teacher_G vs teacher_T)
+Finished game 233 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 235 of 1000 (teacher_T vs teacher_G)
+Finished game 232 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 236 of 1000 (teacher_G vs teacher_T)
+Finished game 234 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 237 of 1000 (teacher_T vs teacher_G)
+Finished game 231 (teacher_T vs teacher_G): 1/2-1/2 {Draw by adjudication}
+Started game 238 of 1000 (teacher_G vs teacher_T)
+Finished game 236 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 239 of 1000 (teacher_T vs teacher_G)
+Finished game 238 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 240 of 1000 (teacher_G vs teacher_T)
+Finished game 235 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 241 of 1000 (teacher_T vs teacher_G)
+Finished game 237 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 242 of 1000 (teacher_G vs teacher_T)
+Finished game 240 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 243 of 1000 (teacher_T vs teacher_G)
+Finished game 239 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 244 of 1000 (teacher_G vs teacher_T)
+Finished game 241 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 245 of 1000 (teacher_T vs teacher_G)
+Finished game 244 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 246 of 1000 (teacher_G vs teacher_T)
+Finished game 243 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 247 of 1000 (teacher_T vs teacher_G)
+Finished game 242 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 248 of 1000 (teacher_G vs teacher_T)
+Finished game 245 (teacher_T vs teacher_G): 1/2-1/2 {Draw by insufficient mating material}
+Started game 249 of 1000 (teacher_T vs teacher_G)
+Finished game 246 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 250 of 1000 (teacher_G vs teacher_T)
+Finished game 247 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 251 of 1000 (teacher_T vs teacher_G)
+Finished game 248 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 252 of 1000 (teacher_G vs teacher_T)
+Finished game 249 (teacher_T vs teacher_G): 1/2-1/2 {Draw by adjudication}
+Started game 253 of 1000 (teacher_T vs teacher_G)
+Finished game 251 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 254 of 1000 (teacher_G vs teacher_T)
+Finished game 250 (teacher_G vs teacher_T): 1/2-1/2 {Draw by insufficient mating material}
+Started game 255 of 1000 (teacher_T vs teacher_G)
+Finished game 252 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 256 of 1000 (teacher_G vs teacher_T)
+Finished game 254 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 257 of 1000 (teacher_T vs teacher_G)
+Finished game 253 (teacher_T vs teacher_G): 0-1 {Black wins by adjudication}
+Started game 258 of 1000 (teacher_G vs teacher_T)
+Finished game 257 (teacher_T vs teacher_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 259 of 1000 (teacher_T vs teacher_G)
+Finished game 258 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 260 of 1000 (teacher_G vs teacher_T)
+Finished game 255 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 261 of 1000 (teacher_T vs teacher_G)
+Finished game 256 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 262 of 1000 (teacher_G vs teacher_T)
+Finished game 259 (teacher_T vs teacher_G): 1/2-1/2 {Draw by adjudication}
+Started game 263 of 1000 (teacher_T vs teacher_G)
+Finished game 260 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 264 of 1000 (teacher_G vs teacher_T)
+Finished game 261 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 265 of 1000 (teacher_T vs teacher_G)
+Finished game 263 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 266 of 1000 (teacher_G vs teacher_T)
+Finished game 264 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 267 of 1000 (teacher_T vs teacher_G)
+Finished game 262 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 268 of 1000 (teacher_G vs teacher_T)
+Finished game 265 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 269 of 1000 (teacher_T vs teacher_G)
+Finished game 266 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 270 of 1000 (teacher_G vs teacher_T)
+Finished game 267 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 271 of 1000 (teacher_T vs teacher_G)
+Finished game 268 (teacher_G vs teacher_T): 1/2-1/2 {Draw by adjudication}
+Started game 272 of 1000 (teacher_G vs teacher_T)
+Finished game 270 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 273 of 1000 (teacher_T vs teacher_G)
+Finished game 269 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 274 of 1000 (teacher_G vs teacher_T)
+Finished game 271 (teacher_T vs teacher_G): 1/2-1/2 {Draw by insufficient mating material}
+Started game 275 of 1000 (teacher_T vs teacher_G)
+Finished game 274 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 276 of 1000 (teacher_G vs teacher_T)
+Finished game 273 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 277 of 1000 (teacher_T vs teacher_G)
+Finished game 277 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 278 of 1000 (teacher_G vs teacher_T)
+Finished game 272 (teacher_G vs teacher_T): 1/2-1/2 {Draw by adjudication}
+Started game 279 of 1000 (teacher_T vs teacher_G)
+Finished game 276 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 280 of 1000 (teacher_G vs teacher_T)
+Finished game 275 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 281 of 1000 (teacher_T vs teacher_G)
+Finished game 280 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 282 of 1000 (teacher_G vs teacher_T)
+Finished game 279 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 283 of 1000 (teacher_T vs teacher_G)
+Finished game 278 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 284 of 1000 (teacher_G vs teacher_T)
+Finished game 281 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 285 of 1000 (teacher_T vs teacher_G)
+Finished game 282 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 286 of 1000 (teacher_G vs teacher_T)
+Finished game 285 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 287 of 1000 (teacher_T vs teacher_G)
+Finished game 283 (teacher_T vs teacher_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 288 of 1000 (teacher_G vs teacher_T)
+Finished game 286 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 289 of 1000 (teacher_T vs teacher_G)
+Finished game 284 (teacher_G vs teacher_T): 1/2-1/2 {Draw by fifty moves rule}
+Started game 290 of 1000 (teacher_G vs teacher_T)
+Finished game 288 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 291 of 1000 (teacher_T vs teacher_G)
+Finished game 287 (teacher_T vs teacher_G): 1/2-1/2 {Draw by fifty moves rule}
+Started game 292 of 1000 (teacher_G vs teacher_T)
+Finished game 290 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 293 of 1000 (teacher_T vs teacher_G)
+Finished game 291 (teacher_T vs teacher_G): 0-1 {Black wins by adjudication}
+Started game 294 of 1000 (teacher_G vs teacher_T)
+Finished game 292 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 295 of 1000 (teacher_T vs teacher_G)
+Finished game 289 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 296 of 1000 (teacher_G vs teacher_T)
+Finished game 293 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 297 of 1000 (teacher_T vs teacher_G)
+Finished game 296 (teacher_G vs teacher_T): 1/2-1/2 {Draw by adjudication}
+Started game 298 of 1000 (teacher_G vs teacher_T)
+Finished game 294 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 299 of 1000 (teacher_T vs teacher_G)
+Finished game 295 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 300 of 1000 (teacher_G vs teacher_T)
+Finished game 297 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 301 of 1000 (teacher_T vs teacher_G)
+Finished game 299 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 302 of 1000 (teacher_G vs teacher_T)
+Finished game 302 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 303 of 1000 (teacher_T vs teacher_G)
+Finished game 301 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 304 of 1000 (teacher_G vs teacher_T)
+Finished game 300 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 305 of 1000 (teacher_T vs teacher_G)
+Finished game 298 (teacher_G vs teacher_T): 1/2-1/2 {Draw by adjudication}
+Started game 306 of 1000 (teacher_G vs teacher_T)
+Finished game 303 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 307 of 1000 (teacher_T vs teacher_G)
+Finished game 304 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 308 of 1000 (teacher_G vs teacher_T)
+Finished game 305 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 309 of 1000 (teacher_T vs teacher_G)
+Finished game 306 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 310 of 1000 (teacher_G vs teacher_T)
+Finished game 307 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 311 of 1000 (teacher_T vs teacher_G)
+Finished game 308 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 312 of 1000 (teacher_G vs teacher_T)
+Finished game 311 (teacher_T vs teacher_G): 1-0 {White mates}
+Started game 313 of 1000 (teacher_T vs teacher_G)
+Finished game 309 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 314 of 1000 (teacher_G vs teacher_T)
+Finished game 312 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 315 of 1000 (teacher_T vs teacher_G)
+Finished game 313 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 316 of 1000 (teacher_G vs teacher_T)
+Finished game 310 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 317 of 1000 (teacher_T vs teacher_G)
+Finished game 314 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 318 of 1000 (teacher_G vs teacher_T)
+Finished game 317 (teacher_T vs teacher_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 319 of 1000 (teacher_T vs teacher_G)
+Finished game 316 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 320 of 1000 (teacher_G vs teacher_T)
+Finished game 315 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 321 of 1000 (teacher_T vs teacher_G)
+Finished game 319 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 322 of 1000 (teacher_G vs teacher_T)
+Finished game 318 (teacher_G vs teacher_T): 1/2-1/2 {Draw by adjudication}
+Started game 323 of 1000 (teacher_T vs teacher_G)
+Finished game 321 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 324 of 1000 (teacher_G vs teacher_T)
+Finished game 320 (teacher_G vs teacher_T): 1/2-1/2 {Draw by adjudication}
+Started game 325 of 1000 (teacher_T vs teacher_G)
+Finished game 324 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 326 of 1000 (teacher_G vs teacher_T)
+Finished game 323 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 327 of 1000 (teacher_T vs teacher_G)
+Finished game 322 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 328 of 1000 (teacher_G vs teacher_T)
+Finished game 325 (teacher_T vs teacher_G): 1/2-1/2 {Draw by insufficient mating material}
+Started game 329 of 1000 (teacher_T vs teacher_G)
+Finished game 327 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 330 of 1000 (teacher_G vs teacher_T)
+Finished game 326 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 331 of 1000 (teacher_T vs teacher_G)
+Finished game 330 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 332 of 1000 (teacher_G vs teacher_T)
+Finished game 328 (teacher_G vs teacher_T): 1/2-1/2 {Draw by adjudication}
+Started game 333 of 1000 (teacher_T vs teacher_G)
+Finished game 329 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 334 of 1000 (teacher_G vs teacher_T)
+Finished game 332 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 335 of 1000 (teacher_T vs teacher_G)
+Finished game 333 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 336 of 1000 (teacher_G vs teacher_T)
+Finished game 331 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 337 of 1000 (teacher_T vs teacher_G)
+Finished game 337 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 338 of 1000 (teacher_G vs teacher_T)
+Finished game 336 (teacher_G vs teacher_T): 1/2-1/2 {Draw by adjudication}
+Started game 339 of 1000 (teacher_T vs teacher_G)
+Finished game 335 (teacher_T vs teacher_G): 1/2-1/2 {Draw by insufficient mating material}
+Started game 340 of 1000 (teacher_G vs teacher_T)
+Finished game 334 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 341 of 1000 (teacher_T vs teacher_G)
+Finished game 339 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 342 of 1000 (teacher_G vs teacher_T)
+Finished game 340 (teacher_G vs teacher_T): 1/2-1/2 {Draw by adjudication}
+Started game 343 of 1000 (teacher_T vs teacher_G)
+Finished game 338 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 344 of 1000 (teacher_G vs teacher_T)
+Finished game 342 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 345 of 1000 (teacher_T vs teacher_G)
+Finished game 341 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 346 of 1000 (teacher_G vs teacher_T)
+Finished game 345 (teacher_T vs teacher_G): 1/2-1/2 {Draw by adjudication}
+Started game 347 of 1000 (teacher_T vs teacher_G)
+Finished game 344 (teacher_G vs teacher_T): 1/2-1/2 {Draw by adjudication}
+Started game 348 of 1000 (teacher_G vs teacher_T)
+Finished game 343 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 349 of 1000 (teacher_T vs teacher_G)
+Finished game 349 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 350 of 1000 (teacher_G vs teacher_T)
+Finished game 346 (teacher_G vs teacher_T): 1/2-1/2 {Draw by fifty moves rule}
+Started game 351 of 1000 (teacher_T vs teacher_G)
+Finished game 347 (teacher_T vs teacher_G): 1/2-1/2 {Draw by adjudication}
+Started game 352 of 1000 (teacher_G vs teacher_T)
+Finished game 348 (teacher_G vs teacher_T): 1/2-1/2 {Draw by insufficient mating material}
+Started game 353 of 1000 (teacher_T vs teacher_G)
+Finished game 350 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 354 of 1000 (teacher_G vs teacher_T)
+Finished game 354 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 355 of 1000 (teacher_T vs teacher_G)
+Finished game 351 (teacher_T vs teacher_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 356 of 1000 (teacher_G vs teacher_T)
+Finished game 352 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 357 of 1000 (teacher_T vs teacher_G)
+Finished game 353 (teacher_T vs teacher_G): 0-1 {Black wins by adjudication}
+Started game 358 of 1000 (teacher_G vs teacher_T)
+Finished game 358 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 359 of 1000 (teacher_T vs teacher_G)
+Finished game 357 (teacher_T vs teacher_G): 1/2-1/2 {Draw by adjudication}
+Started game 360 of 1000 (teacher_G vs teacher_T)
+Finished game 355 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 361 of 1000 (teacher_T vs teacher_G)
+Finished game 360 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 362 of 1000 (teacher_G vs teacher_T)
+Finished game 356 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 363 of 1000 (teacher_T vs teacher_G)
+Finished game 361 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 364 of 1000 (teacher_G vs teacher_T)
+Finished game 359 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 365 of 1000 (teacher_T vs teacher_G)
+Finished game 364 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 366 of 1000 (teacher_G vs teacher_T)
+Finished game 362 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 367 of 1000 (teacher_T vs teacher_G)
+Finished game 365 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 368 of 1000 (teacher_G vs teacher_T)
+Finished game 363 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 369 of 1000 (teacher_T vs teacher_G)
+Finished game 366 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 370 of 1000 (teacher_G vs teacher_T)
+Finished game 367 (teacher_T vs teacher_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 371 of 1000 (teacher_T vs teacher_G)
+Finished game 368 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 372 of 1000 (teacher_G vs teacher_T)
+Finished game 369 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 373 of 1000 (teacher_T vs teacher_G)
+Finished game 371 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 374 of 1000 (teacher_G vs teacher_T)
+Finished game 370 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 375 of 1000 (teacher_T vs teacher_G)
+Finished game 372 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 376 of 1000 (teacher_G vs teacher_T)
+Finished game 375 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 377 of 1000 (teacher_T vs teacher_G)
+Finished game 374 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 378 of 1000 (teacher_G vs teacher_T)
+Finished game 373 (teacher_T vs teacher_G): 1/2-1/2 {Draw by adjudication}
+Started game 379 of 1000 (teacher_T vs teacher_G)
+Finished game 376 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 380 of 1000 (teacher_G vs teacher_T)
+Finished game 377 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 381 of 1000 (teacher_T vs teacher_G)
+Finished game 378 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 382 of 1000 (teacher_G vs teacher_T)
+Finished game 379 (teacher_T vs teacher_G): 1/2-1/2 {Draw by adjudication}
+Started game 383 of 1000 (teacher_T vs teacher_G)
+Finished game 381 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 384 of 1000 (teacher_G vs teacher_T)
+Finished game 382 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 385 of 1000 (teacher_T vs teacher_G)
+Finished game 380 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 386 of 1000 (teacher_G vs teacher_T)
+Finished game 383 (teacher_T vs teacher_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 387 of 1000 (teacher_T vs teacher_G)
+Finished game 385 (teacher_T vs teacher_G): 0-1 {Black wins by adjudication}
+Started game 388 of 1000 (teacher_G vs teacher_T)
+Finished game 386 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 389 of 1000 (teacher_T vs teacher_G)
+Finished game 384 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 390 of 1000 (teacher_G vs teacher_T)
+Finished game 387 (teacher_T vs teacher_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 391 of 1000 (teacher_T vs teacher_G)
+Finished game 388 (teacher_G vs teacher_T): 1/2-1/2 {Draw by adjudication}
+Started game 392 of 1000 (teacher_G vs teacher_T)
+Finished game 392 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 393 of 1000 (teacher_T vs teacher_G)
+Finished game 390 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 394 of 1000 (teacher_G vs teacher_T)
+Finished game 391 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 395 of 1000 (teacher_T vs teacher_G)
+Finished game 389 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 396 of 1000 (teacher_G vs teacher_T)
+Finished game 395 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 397 of 1000 (teacher_T vs teacher_G)
+Finished game 396 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 398 of 1000 (teacher_G vs teacher_T)
+Finished game 397 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 399 of 1000 (teacher_T vs teacher_G)
+Finished game 393 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 400 of 1000 (teacher_G vs teacher_T)
+Finished game 394 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 401 of 1000 (teacher_T vs teacher_G)
+Finished game 398 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 402 of 1000 (teacher_G vs teacher_T)
+Finished game 399 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 403 of 1000 (teacher_T vs teacher_G)
+Finished game 401 (teacher_T vs teacher_G): 1/2-1/2 {Draw by adjudication}
+Started game 404 of 1000 (teacher_G vs teacher_T)
+Finished game 400 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+--------------------------------------------------
+Results of teacher_T vs teacher_G (20000 nodes, 1t, 16MB, UHO_4060_v4.epd):
+Elo: 74.97 +/- 26.31, nElo: 100.27 +/- 34.05
+LOS: 100.00 %, DrawRatio: 39.50 %, PairsRatio: 2.67
+Games: 400, Wins: 183, Losses: 98, Draws: 119, Points: 242.5 (60.62 %)
+Ptnml(0-2): [7, 26, 79, 51, 37], WL/DD Ratio: 2.76
+--------------------------------------------------
+Started game 405 of 1000 (teacher_T vs teacher_G)
+Finished game 403 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 406 of 1000 (teacher_G vs teacher_T)
+Finished game 402 (teacher_G vs teacher_T): 1/2-1/2 {Draw by adjudication}
+Started game 407 of 1000 (teacher_T vs teacher_G)
+Finished game 405 (teacher_T vs teacher_G): 1/2-1/2 {Draw by insufficient mating material}
+Started game 408 of 1000 (teacher_G vs teacher_T)
+Finished game 404 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 409 of 1000 (teacher_T vs teacher_G)
+Finished game 406 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 410 of 1000 (teacher_G vs teacher_T)
+Finished game 409 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 411 of 1000 (teacher_T vs teacher_G)
+Finished game 407 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 412 of 1000 (teacher_G vs teacher_T)
+Finished game 408 (teacher_G vs teacher_T): 0-1 {Black mates}
+Started game 413 of 1000 (teacher_T vs teacher_G)
+Finished game 411 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 414 of 1000 (teacher_G vs teacher_T)
+Finished game 412 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 415 of 1000 (teacher_T vs teacher_G)
+Finished game 413 (teacher_T vs teacher_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 416 of 1000 (teacher_G vs teacher_T)
+Finished game 415 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 417 of 1000 (teacher_T vs teacher_G)
+Finished game 410 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 418 of 1000 (teacher_G vs teacher_T)
+Finished game 414 (teacher_G vs teacher_T): 1/2-1/2 {Draw by insufficient mating material}
+Started game 419 of 1000 (teacher_T vs teacher_G)
+Finished game 417 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 420 of 1000 (teacher_G vs teacher_T)
+Finished game 416 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 421 of 1000 (teacher_T vs teacher_G)
+Finished game 420 (teacher_G vs teacher_T): 0-1 {Black mates}
+Started game 422 of 1000 (teacher_G vs teacher_T)
+Finished game 418 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 423 of 1000 (teacher_T vs teacher_G)
+Finished game 421 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 424 of 1000 (teacher_G vs teacher_T)
+Finished game 419 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 425 of 1000 (teacher_T vs teacher_G)
+Finished game 423 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 426 of 1000 (teacher_G vs teacher_T)
+Finished game 422 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 427 of 1000 (teacher_T vs teacher_G)
+Finished game 424 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 428 of 1000 (teacher_G vs teacher_T)
+Finished game 425 (teacher_T vs teacher_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 429 of 1000 (teacher_T vs teacher_G)
+Finished game 428 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 430 of 1000 (teacher_G vs teacher_T)
+Finished game 427 (teacher_T vs teacher_G): 1/2-1/2 {Draw by adjudication}
+Started game 431 of 1000 (teacher_T vs teacher_G)
+Finished game 426 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 432 of 1000 (teacher_G vs teacher_T)
+Finished game 431 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 433 of 1000 (teacher_T vs teacher_G)
+Finished game 429 (teacher_T vs teacher_G): 1/2-1/2 {Draw by fifty moves rule}
+Started game 434 of 1000 (teacher_G vs teacher_T)
+Finished game 430 (teacher_G vs teacher_T): 0-1 {Black mates}
+Started game 435 of 1000 (teacher_T vs teacher_G)
+Finished game 434 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 436 of 1000 (teacher_G vs teacher_T)
+Finished game 432 (teacher_G vs teacher_T): 1/2-1/2 {Draw by adjudication}
+Started game 437 of 1000 (teacher_T vs teacher_G)
+Finished game 433 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 438 of 1000 (teacher_G vs teacher_T)
+Finished game 436 (teacher_G vs teacher_T): 1/2-1/2 {Draw by adjudication}
+Started game 439 of 1000 (teacher_T vs teacher_G)
+Finished game 437 (teacher_T vs teacher_G): 1-0 {White mates}
+Started game 440 of 1000 (teacher_G vs teacher_T)
+Finished game 435 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 441 of 1000 (teacher_T vs teacher_G)
+Finished game 438 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 442 of 1000 (teacher_G vs teacher_T)
+Finished game 440 (teacher_G vs teacher_T): 1/2-1/2 {Draw by insufficient mating material}
+Started game 443 of 1000 (teacher_T vs teacher_G)
+Finished game 439 (teacher_T vs teacher_G): 1/2-1/2 {Draw by adjudication}
+Started game 444 of 1000 (teacher_G vs teacher_T)
+Finished game 442 (teacher_G vs teacher_T): 1-0 {White mates}
+Started game 445 of 1000 (teacher_T vs teacher_G)
+Finished game 441 (teacher_T vs teacher_G): 1/2-1/2 {Draw by adjudication}
+Started game 446 of 1000 (teacher_G vs teacher_T)
+Finished game 443 (teacher_T vs teacher_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 447 of 1000 (teacher_T vs teacher_G)
+Finished game 444 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 448 of 1000 (teacher_G vs teacher_T)
+Finished game 446 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 449 of 1000 (teacher_T vs teacher_G)
+Finished game 447 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 450 of 1000 (teacher_G vs teacher_T)
+Finished game 449 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 451 of 1000 (teacher_T vs teacher_G)
+Finished game 448 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 452 of 1000 (teacher_G vs teacher_T)
+Finished game 450 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 453 of 1000 (teacher_T vs teacher_G)
+Finished game 451 (teacher_T vs teacher_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 454 of 1000 (teacher_G vs teacher_T)
+Finished game 453 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 455 of 1000 (teacher_T vs teacher_G)
+Finished game 452 (teacher_G vs teacher_T): 1/2-1/2 {Draw by adjudication}
+Started game 456 of 1000 (teacher_G vs teacher_T)
+Finished game 454 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 457 of 1000 (teacher_T vs teacher_G)
+Finished game 456 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 458 of 1000 (teacher_G vs teacher_T)
+Finished game 455 (teacher_T vs teacher_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 459 of 1000 (teacher_T vs teacher_G)
+Finished game 459 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 460 of 1000 (teacher_G vs teacher_T)
+Finished game 457 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 461 of 1000 (teacher_T vs teacher_G)
+Finished game 458 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 462 of 1000 (teacher_G vs teacher_T)
+Finished game 460 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 463 of 1000 (teacher_T vs teacher_G)
+Finished game 462 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 464 of 1000 (teacher_G vs teacher_T)
+Finished game 445 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 465 of 1000 (teacher_T vs teacher_G)
+Finished game 461 (teacher_T vs teacher_G): 1/2-1/2 {Draw by fifty moves rule}
+Started game 466 of 1000 (teacher_G vs teacher_T)
+Finished game 463 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 467 of 1000 (teacher_T vs teacher_G)
+Finished game 465 (teacher_T vs teacher_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 468 of 1000 (teacher_G vs teacher_T)
+Finished game 466 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 469 of 1000 (teacher_T vs teacher_G)
+Finished game 464 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 470 of 1000 (teacher_G vs teacher_T)
+Finished game 467 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 471 of 1000 (teacher_T vs teacher_G)
+Finished game 469 (teacher_T vs teacher_G): 0-1 {Black wins by adjudication}
+Started game 472 of 1000 (teacher_G vs teacher_T)
+Finished game 468 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 473 of 1000 (teacher_T vs teacher_G)
+Finished game 470 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 474 of 1000 (teacher_G vs teacher_T)
+Finished game 471 (teacher_T vs teacher_G): 1/2-1/2 {Draw by adjudication}
+Started game 475 of 1000 (teacher_T vs teacher_G)
+Finished game 473 (teacher_T vs teacher_G): 1/2-1/2 {Draw by adjudication}
+Started game 476 of 1000 (teacher_G vs teacher_T)
+Finished game 472 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 477 of 1000 (teacher_T vs teacher_G)
+Finished game 474 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 478 of 1000 (teacher_G vs teacher_T)
+Finished game 476 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 479 of 1000 (teacher_T vs teacher_G)
+Finished game 475 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 480 of 1000 (teacher_G vs teacher_T)
+Finished game 477 (teacher_T vs teacher_G): 1/2-1/2 {Draw by adjudication}
+Started game 481 of 1000 (teacher_T vs teacher_G)
+Finished game 479 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 482 of 1000 (teacher_G vs teacher_T)
+Finished game 480 (teacher_G vs teacher_T): 1/2-1/2 {Draw by adjudication}
+Started game 483 of 1000 (teacher_T vs teacher_G)
+Finished game 478 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 484 of 1000 (teacher_G vs teacher_T)
+Finished game 481 (teacher_T vs teacher_G): 0-1 {Black wins by adjudication}
+Started game 485 of 1000 (teacher_T vs teacher_G)
+Finished game 483 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 486 of 1000 (teacher_G vs teacher_T)
+Finished game 482 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 487 of 1000 (teacher_T vs teacher_G)
+Finished game 485 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 488 of 1000 (teacher_G vs teacher_T)
+Finished game 487 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 489 of 1000 (teacher_T vs teacher_G)
+Finished game 488 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 490 of 1000 (teacher_G vs teacher_T)
+Finished game 486 (teacher_G vs teacher_T): 1/2-1/2 {Draw by adjudication}
+Started game 491 of 1000 (teacher_T vs teacher_G)
+Finished game 484 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 492 of 1000 (teacher_G vs teacher_T)
+Finished game 489 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 493 of 1000 (teacher_T vs teacher_G)
+Finished game 490 (teacher_G vs teacher_T): 0-1 {Black mates}
+Started game 494 of 1000 (teacher_G vs teacher_T)
+Finished game 493 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 495 of 1000 (teacher_T vs teacher_G)
+Finished game 495 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 496 of 1000 (teacher_G vs teacher_T)
+Finished game 491 (teacher_T vs teacher_G): 1/2-1/2 {Draw by adjudication}
+Started game 497 of 1000 (teacher_T vs teacher_G)
+Finished game 494 (teacher_G vs teacher_T): 1/2-1/2 {Draw by adjudication}
+Started game 498 of 1000 (teacher_G vs teacher_T)
+Finished game 492 (teacher_G vs teacher_T): 1/2-1/2 {Draw by stalemate}
+Started game 499 of 1000 (teacher_T vs teacher_G)
+Finished game 498 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 500 of 1000 (teacher_G vs teacher_T)
+Finished game 499 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 501 of 1000 (teacher_T vs teacher_G)
+Finished game 497 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 502 of 1000 (teacher_G vs teacher_T)
+Finished game 496 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 503 of 1000 (teacher_T vs teacher_G)
+Finished game 500 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 504 of 1000 (teacher_G vs teacher_T)
+Finished game 501 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 505 of 1000 (teacher_T vs teacher_G)
+Finished game 502 (teacher_G vs teacher_T): 1/2-1/2 {Draw by insufficient mating material}
+Started game 506 of 1000 (teacher_G vs teacher_T)
+Finished game 503 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 507 of 1000 (teacher_T vs teacher_G)
+Finished game 504 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 508 of 1000 (teacher_G vs teacher_T)
+Finished game 507 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 509 of 1000 (teacher_T vs teacher_G)
+Finished game 505 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 510 of 1000 (teacher_G vs teacher_T)
+Finished game 506 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 511 of 1000 (teacher_T vs teacher_G)
+Finished game 509 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 512 of 1000 (teacher_G vs teacher_T)
+Finished game 508 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 513 of 1000 (teacher_T vs teacher_G)
+Finished game 510 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 514 of 1000 (teacher_G vs teacher_T)
+Finished game 511 (teacher_T vs teacher_G): 1/2-1/2 {Draw by adjudication}
+Started game 515 of 1000 (teacher_T vs teacher_G)
+Finished game 513 (teacher_T vs teacher_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 516 of 1000 (teacher_G vs teacher_T)
+Finished game 512 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 517 of 1000 (teacher_T vs teacher_G)
+Finished game 515 (teacher_T vs teacher_G): 1-0 {White mates}
+Started game 518 of 1000 (teacher_G vs teacher_T)
+Finished game 514 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 519 of 1000 (teacher_T vs teacher_G)
+Finished game 517 (teacher_T vs teacher_G): 0-1 {Black wins by adjudication}
+Started game 520 of 1000 (teacher_G vs teacher_T)
+Finished game 516 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 521 of 1000 (teacher_T vs teacher_G)
+Finished game 518 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 522 of 1000 (teacher_G vs teacher_T)
+Finished game 520 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 523 of 1000 (teacher_T vs teacher_G)
+Finished game 519 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 524 of 1000 (teacher_G vs teacher_T)
+Finished game 522 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 525 of 1000 (teacher_T vs teacher_G)
+Finished game 521 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 526 of 1000 (teacher_G vs teacher_T)
+Finished game 523 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 527 of 1000 (teacher_T vs teacher_G)
+Finished game 524 (teacher_G vs teacher_T): 1/2-1/2 {Draw by adjudication}
+Started game 528 of 1000 (teacher_G vs teacher_T)
+Finished game 525 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 529 of 1000 (teacher_T vs teacher_G)
+Finished game 528 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 530 of 1000 (teacher_G vs teacher_T)
+Finished game 526 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 531 of 1000 (teacher_T vs teacher_G)
+Finished game 527 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 532 of 1000 (teacher_G vs teacher_T)
+Finished game 532 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 533 of 1000 (teacher_T vs teacher_G)
+Finished game 530 (teacher_G vs teacher_T): 1/2-1/2 {Draw by insufficient mating material}
+Started game 534 of 1000 (teacher_G vs teacher_T)
+Finished game 529 (teacher_T vs teacher_G): 1/2-1/2 {Draw by insufficient mating material}
+Started game 535 of 1000 (teacher_T vs teacher_G)
+Finished game 531 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 536 of 1000 (teacher_G vs teacher_T)
+Finished game 536 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 537 of 1000 (teacher_T vs teacher_G)
+Finished game 533 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 538 of 1000 (teacher_G vs teacher_T)
+Finished game 535 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 539 of 1000 (teacher_T vs teacher_G)
+Finished game 534 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 540 of 1000 (teacher_G vs teacher_T)
+Finished game 537 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 541 of 1000 (teacher_T vs teacher_G)
+Finished game 538 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 542 of 1000 (teacher_G vs teacher_T)
+Finished game 539 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 543 of 1000 (teacher_T vs teacher_G)
+Finished game 541 (teacher_T vs teacher_G): 1/2-1/2 {Draw by adjudication}
+Started game 544 of 1000 (teacher_G vs teacher_T)
+Finished game 542 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 545 of 1000 (teacher_T vs teacher_G)
+Finished game 540 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 546 of 1000 (teacher_G vs teacher_T)
+Finished game 543 (teacher_T vs teacher_G): 0-1 {Black wins by adjudication}
+Started game 547 of 1000 (teacher_T vs teacher_G)
+Finished game 545 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 548 of 1000 (teacher_G vs teacher_T)
+Finished game 547 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 549 of 1000 (teacher_T vs teacher_G)
+Finished game 544 (teacher_G vs teacher_T): 1/2-1/2 {Draw by fifty moves rule}
+Started game 550 of 1000 (teacher_G vs teacher_T)
+Finished game 546 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 551 of 1000 (teacher_T vs teacher_G)
+Finished game 548 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 552 of 1000 (teacher_G vs teacher_T)
+Finished game 550 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 553 of 1000 (teacher_T vs teacher_G)
+Finished game 552 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 554 of 1000 (teacher_G vs teacher_T)
+Finished game 549 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 555 of 1000 (teacher_T vs teacher_G)
+Finished game 551 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 556 of 1000 (teacher_G vs teacher_T)
+Finished game 553 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 557 of 1000 (teacher_T vs teacher_G)
+Finished game 556 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 558 of 1000 (teacher_G vs teacher_T)
+Finished game 555 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 559 of 1000 (teacher_T vs teacher_G)
+Finished game 554 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 560 of 1000 (teacher_G vs teacher_T)
+Finished game 557 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 561 of 1000 (teacher_T vs teacher_G)
+Finished game 558 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 562 of 1000 (teacher_G vs teacher_T)
+Finished game 559 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 563 of 1000 (teacher_T vs teacher_G)
+Finished game 561 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 564 of 1000 (teacher_G vs teacher_T)
+Finished game 560 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 565 of 1000 (teacher_T vs teacher_G)
+Finished game 562 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 566 of 1000 (teacher_G vs teacher_T)
+Finished game 564 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 567 of 1000 (teacher_T vs teacher_G)
+Finished game 566 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 568 of 1000 (teacher_G vs teacher_T)
+Finished game 568 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 569 of 1000 (teacher_T vs teacher_G)
+Finished game 565 (teacher_T vs teacher_G): 1/2-1/2 {Draw by fifty moves rule}
+Started game 570 of 1000 (teacher_G vs teacher_T)
+Finished game 567 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 571 of 1000 (teacher_T vs teacher_G)
+Finished game 563 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 572 of 1000 (teacher_G vs teacher_T)
+Finished game 570 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 573 of 1000 (teacher_T vs teacher_G)
+Finished game 569 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 574 of 1000 (teacher_G vs teacher_T)
+Finished game 572 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 575 of 1000 (teacher_T vs teacher_G)
+Finished game 571 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 576 of 1000 (teacher_G vs teacher_T)
+Finished game 574 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 577 of 1000 (teacher_T vs teacher_G)
+Finished game 573 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 578 of 1000 (teacher_G vs teacher_T)
+Finished game 576 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 579 of 1000 (teacher_T vs teacher_G)
+Finished game 575 (teacher_T vs teacher_G): 1/2-1/2 {Draw by insufficient mating material}
+Started game 580 of 1000 (teacher_G vs teacher_T)
+Finished game 579 (teacher_T vs teacher_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 581 of 1000 (teacher_T vs teacher_G)
+Finished game 577 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 582 of 1000 (teacher_G vs teacher_T)
+Finished game 578 (teacher_G vs teacher_T): 1/2-1/2 {Draw by insufficient mating material}
+Started game 583 of 1000 (teacher_T vs teacher_G)
+Finished game 581 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 584 of 1000 (teacher_G vs teacher_T)
+Finished game 580 (teacher_G vs teacher_T): 1/2-1/2 {Draw by adjudication}
+Started game 585 of 1000 (teacher_T vs teacher_G)
+Finished game 583 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 586 of 1000 (teacher_G vs teacher_T)
+Finished game 582 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 587 of 1000 (teacher_T vs teacher_G)
+Finished game 584 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 588 of 1000 (teacher_G vs teacher_T)
+Finished game 586 (teacher_G vs teacher_T): 1/2-1/2 {Draw by adjudication}
+Started game 589 of 1000 (teacher_T vs teacher_G)
+Finished game 585 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 590 of 1000 (teacher_G vs teacher_T)
+Finished game 588 (teacher_G vs teacher_T): 1/2-1/2 {Draw by adjudication}
+Started game 591 of 1000 (teacher_T vs teacher_G)
+Finished game 587 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 592 of 1000 (teacher_G vs teacher_T)
+Finished game 589 (teacher_T vs teacher_G): 1/2-1/2 {Draw by adjudication}
+Started game 593 of 1000 (teacher_T vs teacher_G)
+Finished game 590 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 594 of 1000 (teacher_G vs teacher_T)
+Finished game 591 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 595 of 1000 (teacher_T vs teacher_G)
+Finished game 592 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 596 of 1000 (teacher_G vs teacher_T)
+Finished game 593 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 597 of 1000 (teacher_T vs teacher_G)
+Finished game 594 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 598 of 1000 (teacher_G vs teacher_T)
+Finished game 595 (teacher_T vs teacher_G): 0-1 {Black wins by adjudication}
+Started game 599 of 1000 (teacher_T vs teacher_G)
+Finished game 597 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 600 of 1000 (teacher_G vs teacher_T)
+Finished game 596 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 601 of 1000 (teacher_T vs teacher_G)
+Finished game 598 (teacher_G vs teacher_T): 1/2-1/2 {Draw by adjudication}
+Started game 602 of 1000 (teacher_G vs teacher_T)
+Finished game 600 (teacher_G vs teacher_T): 1/2-1/2 {Draw by adjudication}
+Started game 603 of 1000 (teacher_T vs teacher_G)
+Finished game 599 (teacher_T vs teacher_G): 1-0 {White mates}
+--------------------------------------------------
+Results of teacher_T vs teacher_G (20000 nodes, 1t, 16MB, UHO_4060_v4.epd):
+Elo: 87.51 +/- 21.48, nElo: 118.28 +/- 27.80
+LOS: 100.00 %, DrawRatio: 39.67 %, PairsRatio: 3.21
+Games: 600, Wins: 283, Losses: 135, Draws: 182, Points: 374.0 (62.33 %)
+Ptnml(0-2): [8, 35, 119, 77, 61], WL/DD Ratio: 2.40
+--------------------------------------------------
+Started game 604 of 1000 (teacher_G vs teacher_T)
+Finished game 603 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 605 of 1000 (teacher_T vs teacher_G)
+Finished game 602 (teacher_G vs teacher_T): 1/2-1/2 {Draw by adjudication}
+Started game 606 of 1000 (teacher_G vs teacher_T)
+Finished game 604 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 607 of 1000 (teacher_T vs teacher_G)
+Finished game 601 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 608 of 1000 (teacher_G vs teacher_T)
+Finished game 606 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 609 of 1000 (teacher_T vs teacher_G)
+Finished game 607 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 610 of 1000 (teacher_G vs teacher_T)
+Finished game 605 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 611 of 1000 (teacher_T vs teacher_G)
+Finished game 609 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 612 of 1000 (teacher_G vs teacher_T)
+Finished game 610 (teacher_G vs teacher_T): 1/2-1/2 {Draw by adjudication}
+Started game 613 of 1000 (teacher_T vs teacher_G)
+Finished game 608 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 614 of 1000 (teacher_G vs teacher_T)
+Finished game 613 (teacher_T vs teacher_G): 1/2-1/2 {Draw by insufficient mating material}
+Started game 615 of 1000 (teacher_T vs teacher_G)
+Finished game 614 (teacher_G vs teacher_T): 1/2-1/2 {Draw by adjudication}
+Started game 616 of 1000 (teacher_G vs teacher_T)
+Finished game 612 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 617 of 1000 (teacher_T vs teacher_G)
+Finished game 611 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 618 of 1000 (teacher_G vs teacher_T)
+Finished game 615 (teacher_T vs teacher_G): 1-0 {White mates}
+Started game 619 of 1000 (teacher_T vs teacher_G)
+Finished game 618 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 620 of 1000 (teacher_G vs teacher_T)
+Finished game 616 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 621 of 1000 (teacher_T vs teacher_G)
+Finished game 619 (teacher_T vs teacher_G): 1/2-1/2 {Draw by adjudication}
+Started game 622 of 1000 (teacher_G vs teacher_T)
+Finished game 617 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 623 of 1000 (teacher_T vs teacher_G)
+Finished game 620 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 624 of 1000 (teacher_G vs teacher_T)
+Finished game 622 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 625 of 1000 (teacher_T vs teacher_G)
+Finished game 621 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 626 of 1000 (teacher_G vs teacher_T)
+Finished game 624 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 627 of 1000 (teacher_T vs teacher_G)
+Finished game 625 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 628 of 1000 (teacher_G vs teacher_T)
+Finished game 623 (teacher_T vs teacher_G): 1/2-1/2 {Draw by fifty moves rule}
+Started game 629 of 1000 (teacher_T vs teacher_G)
+Finished game 626 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 630 of 1000 (teacher_G vs teacher_T)
+Finished game 627 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 631 of 1000 (teacher_T vs teacher_G)
+Finished game 628 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 632 of 1000 (teacher_G vs teacher_T)
+Finished game 630 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 633 of 1000 (teacher_T vs teacher_G)
+Finished game 629 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 634 of 1000 (teacher_G vs teacher_T)
+Finished game 634 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 635 of 1000 (teacher_T vs teacher_G)
+Finished game 632 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 636 of 1000 (teacher_G vs teacher_T)
+Finished game 633 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 637 of 1000 (teacher_T vs teacher_G)
+Finished game 631 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 638 of 1000 (teacher_G vs teacher_T)
+Finished game 636 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 639 of 1000 (teacher_T vs teacher_G)
+Finished game 635 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 640 of 1000 (teacher_G vs teacher_T)
+Finished game 637 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 641 of 1000 (teacher_T vs teacher_G)
+Finished game 640 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 642 of 1000 (teacher_G vs teacher_T)
+Finished game 639 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 643 of 1000 (teacher_T vs teacher_G)
+Finished game 638 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 644 of 1000 (teacher_G vs teacher_T)
+Finished game 643 (teacher_T vs teacher_G): 1/2-1/2 {Draw by insufficient mating material}
+Started game 645 of 1000 (teacher_T vs teacher_G)
+Finished game 641 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 646 of 1000 (teacher_G vs teacher_T)
+Finished game 642 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 647 of 1000 (teacher_T vs teacher_G)
+Finished game 644 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 648 of 1000 (teacher_G vs teacher_T)
+Finished game 645 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 649 of 1000 (teacher_T vs teacher_G)
+Finished game 646 (teacher_G vs teacher_T): 1/2-1/2 {Draw by adjudication}
+Started game 650 of 1000 (teacher_G vs teacher_T)
+Finished game 647 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 651 of 1000 (teacher_T vs teacher_G)
+Finished game 648 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 652 of 1000 (teacher_G vs teacher_T)
+Finished game 649 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 653 of 1000 (teacher_T vs teacher_G)
+Finished game 650 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 654 of 1000 (teacher_G vs teacher_T)
+Finished game 652 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 655 of 1000 (teacher_T vs teacher_G)
+Finished game 651 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 656 of 1000 (teacher_G vs teacher_T)
+Finished game 654 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 657 of 1000 (teacher_T vs teacher_G)
+Finished game 653 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 658 of 1000 (teacher_G vs teacher_T)
+Finished game 656 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 659 of 1000 (teacher_T vs teacher_G)
+Finished game 655 (teacher_T vs teacher_G): 1/2-1/2 {Draw by adjudication}
+Started game 660 of 1000 (teacher_G vs teacher_T)
+Finished game 658 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 661 of 1000 (teacher_T vs teacher_G)
+Finished game 657 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 662 of 1000 (teacher_G vs teacher_T)
+Finished game 659 (teacher_T vs teacher_G): 0-1 {Black wins by adjudication}
+Started game 663 of 1000 (teacher_T vs teacher_G)
+Finished game 660 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 664 of 1000 (teacher_G vs teacher_T)
+Finished game 661 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 665 of 1000 (teacher_T vs teacher_G)
+Finished game 663 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 666 of 1000 (teacher_G vs teacher_T)
+Finished game 662 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 667 of 1000 (teacher_T vs teacher_G)
+Finished game 665 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 668 of 1000 (teacher_G vs teacher_T)
+Finished game 666 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 669 of 1000 (teacher_T vs teacher_G)
+Finished game 664 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 670 of 1000 (teacher_G vs teacher_T)
+Finished game 667 (teacher_T vs teacher_G): 1-0 {White mates}
+Started game 671 of 1000 (teacher_T vs teacher_G)
+Finished game 668 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 672 of 1000 (teacher_G vs teacher_T)
+Finished game 671 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 673 of 1000 (teacher_T vs teacher_G)
+Finished game 669 (teacher_T vs teacher_G): 1/2-1/2 {Draw by insufficient mating material}
+Started game 674 of 1000 (teacher_G vs teacher_T)
+Finished game 670 (teacher_G vs teacher_T): 1/2-1/2 {Draw by adjudication}
+Started game 675 of 1000 (teacher_T vs teacher_G)
+Finished game 673 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 676 of 1000 (teacher_G vs teacher_T)
+Finished game 674 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 677 of 1000 (teacher_T vs teacher_G)
+Finished game 672 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 678 of 1000 (teacher_G vs teacher_T)
+Finished game 675 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 679 of 1000 (teacher_T vs teacher_G)
+Finished game 676 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 680 of 1000 (teacher_G vs teacher_T)
+Finished game 677 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 681 of 1000 (teacher_T vs teacher_G)
+Finished game 678 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 682 of 1000 (teacher_G vs teacher_T)
+Finished game 679 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 683 of 1000 (teacher_T vs teacher_G)
+Finished game 680 (teacher_G vs teacher_T): 1/2-1/2 {Draw by adjudication}
+Started game 684 of 1000 (teacher_G vs teacher_T)
+Finished game 682 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 685 of 1000 (teacher_T vs teacher_G)
+Finished game 683 (teacher_T vs teacher_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 686 of 1000 (teacher_G vs teacher_T)
+Finished game 681 (teacher_T vs teacher_G): 0-1 {Black wins by adjudication}
+Started game 687 of 1000 (teacher_T vs teacher_G)
+Finished game 686 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 688 of 1000 (teacher_G vs teacher_T)
+Finished game 684 (teacher_G vs teacher_T): 1/2-1/2 {Draw by insufficient mating material}
+Started game 689 of 1000 (teacher_T vs teacher_G)
+Finished game 685 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 690 of 1000 (teacher_G vs teacher_T)
+Finished game 687 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 691 of 1000 (teacher_T vs teacher_G)
+Finished game 688 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 692 of 1000 (teacher_G vs teacher_T)
+Finished game 691 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 693 of 1000 (teacher_T vs teacher_G)
+Finished game 689 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 694 of 1000 (teacher_G vs teacher_T)
+Finished game 690 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 695 of 1000 (teacher_T vs teacher_G)
+Finished game 692 (teacher_G vs teacher_T): 1/2-1/2 {Draw by adjudication}
+Started game 696 of 1000 (teacher_G vs teacher_T)
+Finished game 693 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 697 of 1000 (teacher_T vs teacher_G)
+Finished game 695 (teacher_T vs teacher_G): 1/2-1/2 {Draw by adjudication}
+Started game 698 of 1000 (teacher_G vs teacher_T)
+Finished game 694 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 699 of 1000 (teacher_T vs teacher_G)
+Finished game 696 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 700 of 1000 (teacher_G vs teacher_T)
+Finished game 697 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 701 of 1000 (teacher_T vs teacher_G)
+Finished game 699 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 702 of 1000 (teacher_G vs teacher_T)
+Finished game 698 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 703 of 1000 (teacher_T vs teacher_G)
+Finished game 700 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 704 of 1000 (teacher_G vs teacher_T)
+Finished game 702 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 705 of 1000 (teacher_T vs teacher_G)
+Finished game 701 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 706 of 1000 (teacher_G vs teacher_T)
+Finished game 706 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 707 of 1000 (teacher_T vs teacher_G)
+Finished game 704 (teacher_G vs teacher_T): 1/2-1/2 {Draw by adjudication}
+Started game 708 of 1000 (teacher_G vs teacher_T)
+Finished game 705 (teacher_T vs teacher_G): 1/2-1/2 {Draw by adjudication}
+Started game 709 of 1000 (teacher_T vs teacher_G)
+Finished game 707 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 710 of 1000 (teacher_G vs teacher_T)
+Finished game 703 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 711 of 1000 (teacher_T vs teacher_G)
+Finished game 709 (teacher_T vs teacher_G): 0-1 {Black wins by adjudication}
+Started game 712 of 1000 (teacher_G vs teacher_T)
+Finished game 710 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 713 of 1000 (teacher_T vs teacher_G)
+Finished game 712 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 714 of 1000 (teacher_G vs teacher_T)
+Finished game 713 (teacher_T vs teacher_G): 1/2-1/2 {Draw by adjudication}
+Started game 715 of 1000 (teacher_T vs teacher_G)
+Finished game 711 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 716 of 1000 (teacher_G vs teacher_T)
+Finished game 715 (teacher_T vs teacher_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 717 of 1000 (teacher_T vs teacher_G)
+Finished game 716 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 718 of 1000 (teacher_G vs teacher_T)
+Finished game 708 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 719 of 1000 (teacher_T vs teacher_G)
+Finished game 714 (teacher_G vs teacher_T): 1/2-1/2 {Draw by adjudication}
+Started game 720 of 1000 (teacher_G vs teacher_T)
+Finished game 719 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 721 of 1000 (teacher_T vs teacher_G)
+Finished game 717 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 722 of 1000 (teacher_G vs teacher_T)
+Finished game 720 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 723 of 1000 (teacher_T vs teacher_G)
+Finished game 718 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 724 of 1000 (teacher_G vs teacher_T)
+Finished game 721 (teacher_T vs teacher_G): 1/2-1/2 {Draw by adjudication}
+Started game 725 of 1000 (teacher_T vs teacher_G)
+Finished game 724 (teacher_G vs teacher_T): 1/2-1/2 {Draw by adjudication}
+Started game 726 of 1000 (teacher_G vs teacher_T)
+Finished game 723 (teacher_T vs teacher_G): 1/2-1/2 {Draw by insufficient mating material}
+Started game 727 of 1000 (teacher_T vs teacher_G)
+Finished game 722 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 728 of 1000 (teacher_G vs teacher_T)
+Finished game 725 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 729 of 1000 (teacher_T vs teacher_G)
+Finished game 728 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 730 of 1000 (teacher_G vs teacher_T)
+Finished game 727 (teacher_T vs teacher_G): 0-1 {Black wins by adjudication}
+Started game 731 of 1000 (teacher_T vs teacher_G)
+Finished game 729 (teacher_T vs teacher_G): 1/2-1/2 {Draw by adjudication}
+Started game 732 of 1000 (teacher_G vs teacher_T)
+Finished game 726 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 733 of 1000 (teacher_T vs teacher_G)
+Finished game 731 (teacher_T vs teacher_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 734 of 1000 (teacher_G vs teacher_T)
+Finished game 730 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 735 of 1000 (teacher_T vs teacher_G)
+Finished game 733 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 736 of 1000 (teacher_G vs teacher_T)
+Finished game 734 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 737 of 1000 (teacher_T vs teacher_G)
+Finished game 735 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 738 of 1000 (teacher_G vs teacher_T)
+Finished game 732 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 739 of 1000 (teacher_T vs teacher_G)
+Finished game 736 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 740 of 1000 (teacher_G vs teacher_T)
+Finished game 737 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 741 of 1000 (teacher_T vs teacher_G)
+Finished game 738 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 742 of 1000 (teacher_G vs teacher_T)
+Finished game 741 (teacher_T vs teacher_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 743 of 1000 (teacher_T vs teacher_G)
+Finished game 739 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 744 of 1000 (teacher_G vs teacher_T)
+Finished game 742 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 745 of 1000 (teacher_T vs teacher_G)
+Finished game 740 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 746 of 1000 (teacher_G vs teacher_T)
+Finished game 745 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 747 of 1000 (teacher_T vs teacher_G)
+Finished game 746 (teacher_G vs teacher_T): 1/2-1/2 {Draw by adjudication}
+Started game 748 of 1000 (teacher_G vs teacher_T)
+Finished game 744 (teacher_G vs teacher_T): 1/2-1/2 {Draw by insufficient mating material}
+Started game 749 of 1000 (teacher_T vs teacher_G)
+Finished game 743 (teacher_T vs teacher_G): 1-0 {White mates}
+Started game 750 of 1000 (teacher_G vs teacher_T)
+Finished game 749 (teacher_T vs teacher_G): 0-1 {Black wins by adjudication}
+Started game 751 of 1000 (teacher_T vs teacher_G)
+Finished game 748 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 752 of 1000 (teacher_G vs teacher_T)
+Finished game 747 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 753 of 1000 (teacher_T vs teacher_G)
+Finished game 750 (teacher_G vs teacher_T): 1/2-1/2 {Draw by adjudication}
+Started game 754 of 1000 (teacher_G vs teacher_T)
+Finished game 751 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 755 of 1000 (teacher_T vs teacher_G)
+Finished game 753 (teacher_T vs teacher_G): 1/2-1/2 {Draw by adjudication}
+Started game 756 of 1000 (teacher_G vs teacher_T)
+Finished game 752 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 757 of 1000 (teacher_T vs teacher_G)
+Finished game 754 (teacher_G vs teacher_T): 1/2-1/2 {Draw by adjudication}
+Started game 758 of 1000 (teacher_G vs teacher_T)
+Finished game 755 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 759 of 1000 (teacher_T vs teacher_G)
+Finished game 757 (teacher_T vs teacher_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 760 of 1000 (teacher_G vs teacher_T)
+Finished game 756 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 761 of 1000 (teacher_T vs teacher_G)
+Finished game 758 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 762 of 1000 (teacher_G vs teacher_T)
+Finished game 759 (teacher_T vs teacher_G): 1/2-1/2 {Draw by insufficient mating material}
+Started game 763 of 1000 (teacher_T vs teacher_G)
+Finished game 760 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 764 of 1000 (teacher_G vs teacher_T)
+Finished game 762 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 765 of 1000 (teacher_T vs teacher_G)
+Finished game 761 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 766 of 1000 (teacher_G vs teacher_T)
+Finished game 763 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 767 of 1000 (teacher_T vs teacher_G)
+Finished game 764 (teacher_G vs teacher_T): 1/2-1/2 {Draw by stalemate}
+Started game 768 of 1000 (teacher_G vs teacher_T)
+Finished game 766 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 769 of 1000 (teacher_T vs teacher_G)
+Finished game 765 (teacher_T vs teacher_G): 0-1 {Black wins by adjudication}
+Started game 770 of 1000 (teacher_G vs teacher_T)
+Finished game 767 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 771 of 1000 (teacher_T vs teacher_G)
+Finished game 769 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 772 of 1000 (teacher_G vs teacher_T)
+Finished game 768 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 773 of 1000 (teacher_T vs teacher_G)
+Finished game 770 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 774 of 1000 (teacher_G vs teacher_T)
+Finished game 772 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 775 of 1000 (teacher_T vs teacher_G)
+Finished game 771 (teacher_T vs teacher_G): 0-1 {Black wins by adjudication}
+Started game 776 of 1000 (teacher_G vs teacher_T)
+Finished game 775 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 777 of 1000 (teacher_T vs teacher_G)
+Finished game 774 (teacher_G vs teacher_T): 1/2-1/2 {Draw by insufficient mating material}
+Started game 778 of 1000 (teacher_G vs teacher_T)
+Finished game 776 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 779 of 1000 (teacher_T vs teacher_G)
+Finished game 773 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 780 of 1000 (teacher_G vs teacher_T)
+Finished game 777 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 781 of 1000 (teacher_T vs teacher_G)
+Finished game 779 (teacher_T vs teacher_G): 1/2-1/2 {Draw by insufficient mating material}
+Started game 782 of 1000 (teacher_G vs teacher_T)
+Finished game 778 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 783 of 1000 (teacher_T vs teacher_G)
+Finished game 781 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 784 of 1000 (teacher_G vs teacher_T)
+Finished game 780 (teacher_G vs teacher_T): 1/2-1/2 {Draw by adjudication}
+Started game 785 of 1000 (teacher_T vs teacher_G)
+Finished game 784 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 786 of 1000 (teacher_G vs teacher_T)
+Finished game 783 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 787 of 1000 (teacher_T vs teacher_G)
+Finished game 782 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 788 of 1000 (teacher_G vs teacher_T)
+Finished game 785 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 789 of 1000 (teacher_T vs teacher_G)
+Finished game 786 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 790 of 1000 (teacher_G vs teacher_T)
+Finished game 788 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 791 of 1000 (teacher_T vs teacher_G)
+Finished game 789 (teacher_T vs teacher_G): 0-1 {Black wins by adjudication}
+Started game 792 of 1000 (teacher_G vs teacher_T)
+Finished game 790 (teacher_G vs teacher_T): 1/2-1/2 {Draw by adjudication}
+Started game 793 of 1000 (teacher_T vs teacher_G)
+Finished game 787 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 794 of 1000 (teacher_G vs teacher_T)
+Finished game 794 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 795 of 1000 (teacher_T vs teacher_G)
+Finished game 791 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 796 of 1000 (teacher_G vs teacher_T)
+Finished game 792 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 797 of 1000 (teacher_T vs teacher_G)
+Finished game 795 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 798 of 1000 (teacher_G vs teacher_T)
+Finished game 793 (teacher_T vs teacher_G): 1/2-1/2 {Draw by adjudication}
+Started game 799 of 1000 (teacher_T vs teacher_G)
+Finished game 796 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 800 of 1000 (teacher_G vs teacher_T)
+Finished game 799 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 801 of 1000 (teacher_T vs teacher_G)
+Finished game 798 (teacher_G vs teacher_T): 1/2-1/2 {Draw by adjudication}
+Started game 802 of 1000 (teacher_G vs teacher_T)
+Finished game 797 (teacher_T vs teacher_G): 1/2-1/2 {Draw by adjudication}
+Started game 803 of 1000 (teacher_T vs teacher_G)
+Finished game 800 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+--------------------------------------------------
+Results of teacher_T vs teacher_G (20000 nodes, 1t, 16MB, UHO_4060_v4.epd):
+Elo: 89.67 +/- 18.61, nElo: 121.37 +/- 24.08
+LOS: 100.00 %, DrawRatio: 39.00 %, PairsRatio: 3.36
+Games: 800, Wins: 379, Losses: 177, Draws: 244, Points: 501.0 (62.62 %)
+Ptnml(0-2): [11, 45, 156, 107, 81], WL/DD Ratio: 2.39
+--------------------------------------------------
+Started game 804 of 1000 (teacher_G vs teacher_T)
+Finished game 801 (teacher_T vs teacher_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 805 of 1000 (teacher_T vs teacher_G)
+Finished game 802 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 806 of 1000 (teacher_G vs teacher_T)
+Finished game 803 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 807 of 1000 (teacher_T vs teacher_G)
+Finished game 806 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 808 of 1000 (teacher_G vs teacher_T)
+Finished game 807 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 809 of 1000 (teacher_T vs teacher_G)
+Finished game 805 (teacher_T vs teacher_G): 0-1 {Black wins by adjudication}
+Started game 810 of 1000 (teacher_G vs teacher_T)
+Finished game 804 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 811 of 1000 (teacher_T vs teacher_G)
+Finished game 810 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 812 of 1000 (teacher_G vs teacher_T)
+Finished game 808 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 813 of 1000 (teacher_T vs teacher_G)
+Finished game 809 (teacher_T vs teacher_G): 1/2-1/2 {Draw by adjudication}
+Started game 814 of 1000 (teacher_G vs teacher_T)
+Finished game 811 (teacher_T vs teacher_G): 1/2-1/2 {Draw by adjudication}
+Started game 815 of 1000 (teacher_T vs teacher_G)
+Finished game 812 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 816 of 1000 (teacher_G vs teacher_T)
+Finished game 815 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 817 of 1000 (teacher_T vs teacher_G)
+Finished game 814 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 818 of 1000 (teacher_G vs teacher_T)
+Finished game 817 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 819 of 1000 (teacher_T vs teacher_G)
+Finished game 813 (teacher_T vs teacher_G): 1/2-1/2 {Draw by fifty moves rule}
+Started game 820 of 1000 (teacher_G vs teacher_T)
+Finished game 816 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 821 of 1000 (teacher_T vs teacher_G)
+Finished game 818 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 822 of 1000 (teacher_G vs teacher_T)
+Finished game 820 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 823 of 1000 (teacher_T vs teacher_G)
+Finished game 821 (teacher_T vs teacher_G): 1/2-1/2 {Draw by adjudication}
+Started game 824 of 1000 (teacher_G vs teacher_T)
+Finished game 822 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 825 of 1000 (teacher_T vs teacher_G)
+Finished game 823 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 826 of 1000 (teacher_G vs teacher_T)
+Finished game 826 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 827 of 1000 (teacher_T vs teacher_G)
+Finished game 819 (teacher_T vs teacher_G): 1/2-1/2 {Draw by fifty moves rule}
+Started game 828 of 1000 (teacher_G vs teacher_T)
+Finished game 824 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 829 of 1000 (teacher_T vs teacher_G)
+Finished game 825 (teacher_T vs teacher_G): 1/2-1/2 {Draw by adjudication}
+Started game 830 of 1000 (teacher_G vs teacher_T)
+Finished game 828 (teacher_G vs teacher_T): 1/2-1/2 {Draw by adjudication}
+Started game 831 of 1000 (teacher_T vs teacher_G)
+Finished game 829 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 832 of 1000 (teacher_G vs teacher_T)
+Finished game 827 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 833 of 1000 (teacher_T vs teacher_G)
+Finished game 830 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 834 of 1000 (teacher_G vs teacher_T)
+Finished game 831 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 835 of 1000 (teacher_T vs teacher_G)
+Finished game 832 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 836 of 1000 (teacher_G vs teacher_T)
+Finished game 833 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 837 of 1000 (teacher_T vs teacher_G)
+Finished game 834 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 838 of 1000 (teacher_G vs teacher_T)
+Finished game 835 (teacher_T vs teacher_G): 1/2-1/2 {Draw by adjudication}
+Started game 839 of 1000 (teacher_T vs teacher_G)
+Finished game 836 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 840 of 1000 (teacher_G vs teacher_T)
+Finished game 837 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 841 of 1000 (teacher_T vs teacher_G)
+Finished game 839 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 842 of 1000 (teacher_G vs teacher_T)
+Finished game 838 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 843 of 1000 (teacher_T vs teacher_G)
+Finished game 842 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 844 of 1000 (teacher_G vs teacher_T)
+Finished game 840 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 845 of 1000 (teacher_T vs teacher_G)
+Finished game 841 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 846 of 1000 (teacher_G vs teacher_T)
+Finished game 843 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 847 of 1000 (teacher_T vs teacher_G)
+Finished game 845 (teacher_T vs teacher_G): 1-0 {White mates}
+Started game 848 of 1000 (teacher_G vs teacher_T)
+Finished game 846 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 849 of 1000 (teacher_T vs teacher_G)
+Finished game 844 (teacher_G vs teacher_T): 1/2-1/2 {Draw by adjudication}
+Started game 850 of 1000 (teacher_G vs teacher_T)
+Finished game 847 (teacher_T vs teacher_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 851 of 1000 (teacher_T vs teacher_G)
+Finished game 848 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 852 of 1000 (teacher_G vs teacher_T)
+Finished game 850 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 853 of 1000 (teacher_T vs teacher_G)
+Finished game 851 (teacher_T vs teacher_G): 1/2-1/2 {Draw by insufficient mating material}
+Started game 854 of 1000 (teacher_G vs teacher_T)
+Finished game 852 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 855 of 1000 (teacher_T vs teacher_G)
+Finished game 849 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 856 of 1000 (teacher_G vs teacher_T)
+Finished game 853 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 857 of 1000 (teacher_T vs teacher_G)
+Finished game 854 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 858 of 1000 (teacher_G vs teacher_T)
+Finished game 855 (teacher_T vs teacher_G): 1/2-1/2 {Draw by adjudication}
+Started game 859 of 1000 (teacher_T vs teacher_G)
+Finished game 857 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 860 of 1000 (teacher_G vs teacher_T)
+Finished game 856 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 861 of 1000 (teacher_T vs teacher_G)
+Finished game 858 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 862 of 1000 (teacher_G vs teacher_T)
+Finished game 860 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 863 of 1000 (teacher_T vs teacher_G)
+Finished game 859 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 864 of 1000 (teacher_G vs teacher_T)
+Finished game 861 (teacher_T vs teacher_G): 0-1 {Black wins by adjudication}
+Started game 865 of 1000 (teacher_T vs teacher_G)
+Finished game 862 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 866 of 1000 (teacher_G vs teacher_T)
+Finished game 863 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 867 of 1000 (teacher_T vs teacher_G)
+Finished game 867 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 868 of 1000 (teacher_G vs teacher_T)
+Finished game 864 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 869 of 1000 (teacher_T vs teacher_G)
+Finished game 866 (teacher_G vs teacher_T): 1/2-1/2 {Draw by adjudication}
+Started game 870 of 1000 (teacher_G vs teacher_T)
+Finished game 868 (teacher_G vs teacher_T): 1/2-1/2 {Draw by insufficient mating material}
+Started game 871 of 1000 (teacher_T vs teacher_G)
+Finished game 869 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 872 of 1000 (teacher_G vs teacher_T)
+Finished game 865 (teacher_T vs teacher_G): 1/2-1/2 {Draw by adjudication}
+Started game 873 of 1000 (teacher_T vs teacher_G)
+Finished game 870 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 874 of 1000 (teacher_G vs teacher_T)
+Finished game 871 (teacher_T vs teacher_G): 1/2-1/2 {Draw by insufficient mating material}
+Started game 875 of 1000 (teacher_T vs teacher_G)
+Finished game 872 (teacher_G vs teacher_T): 1/2-1/2 {Draw by adjudication}
+Started game 876 of 1000 (teacher_G vs teacher_T)
+Finished game 874 (teacher_G vs teacher_T): 1/2-1/2 {Draw by adjudication}
+Started game 877 of 1000 (teacher_T vs teacher_G)
+Finished game 873 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 878 of 1000 (teacher_G vs teacher_T)
+Finished game 875 (teacher_T vs teacher_G): 1/2-1/2 {Draw by adjudication}
+Started game 879 of 1000 (teacher_T vs teacher_G)
+Finished game 876 (teacher_G vs teacher_T): 1/2-1/2 {Draw by insufficient mating material}
+Started game 880 of 1000 (teacher_G vs teacher_T)
+Finished game 879 (teacher_T vs teacher_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 881 of 1000 (teacher_T vs teacher_G)
+Finished game 877 (teacher_T vs teacher_G): 1/2-1/2 {Draw by insufficient mating material}
+Started game 882 of 1000 (teacher_G vs teacher_T)
+Finished game 878 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 883 of 1000 (teacher_T vs teacher_G)
+Finished game 882 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 884 of 1000 (teacher_G vs teacher_T)
+Finished game 880 (teacher_G vs teacher_T): 1/2-1/2 {Draw by insufficient mating material}
+Started game 885 of 1000 (teacher_T vs teacher_G)
+Finished game 881 (teacher_T vs teacher_G): 1-0 {White mates}
+Started game 886 of 1000 (teacher_G vs teacher_T)
+Finished game 885 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 887 of 1000 (teacher_T vs teacher_G)
+Finished game 883 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 888 of 1000 (teacher_G vs teacher_T)
+Finished game 884 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 889 of 1000 (teacher_T vs teacher_G)
+Finished game 887 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 890 of 1000 (teacher_G vs teacher_T)
+Finished game 886 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 891 of 1000 (teacher_T vs teacher_G)
+Finished game 889 (teacher_T vs teacher_G): 1/2-1/2 {Draw by adjudication}
+Started game 892 of 1000 (teacher_G vs teacher_T)
+Finished game 890 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 893 of 1000 (teacher_T vs teacher_G)
+Finished game 891 (teacher_T vs teacher_G): 1/2-1/2 {Draw by adjudication}
+Started game 894 of 1000 (teacher_G vs teacher_T)
+Finished game 893 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 895 of 1000 (teacher_T vs teacher_G)
+Finished game 888 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 896 of 1000 (teacher_G vs teacher_T)
+Finished game 892 (teacher_G vs teacher_T): 1/2-1/2 {Draw by adjudication}
+Started game 897 of 1000 (teacher_T vs teacher_G)
+Finished game 895 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 898 of 1000 (teacher_G vs teacher_T)
+Finished game 896 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 899 of 1000 (teacher_T vs teacher_G)
+Finished game 897 (teacher_T vs teacher_G): 0-1 {Black wins by adjudication}
+Started game 900 of 1000 (teacher_G vs teacher_T)
+Finished game 894 (teacher_G vs teacher_T): 1/2-1/2 {Draw by fifty moves rule}
+Started game 901 of 1000 (teacher_T vs teacher_G)
+Finished game 899 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 902 of 1000 (teacher_G vs teacher_T)
+Finished game 898 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 903 of 1000 (teacher_T vs teacher_G)
+Finished game 900 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 904 of 1000 (teacher_G vs teacher_T)
+Finished game 902 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 905 of 1000 (teacher_T vs teacher_G)
+Finished game 901 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 906 of 1000 (teacher_G vs teacher_T)
+Finished game 903 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 907 of 1000 (teacher_T vs teacher_G)
+Finished game 904 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 908 of 1000 (teacher_G vs teacher_T)
+Finished game 906 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 909 of 1000 (teacher_T vs teacher_G)
+Finished game 905 (teacher_T vs teacher_G): 1/2-1/2 {Draw by adjudication}
+Started game 910 of 1000 (teacher_G vs teacher_T)
+Finished game 908 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 911 of 1000 (teacher_T vs teacher_G)
+Finished game 910 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 912 of 1000 (teacher_G vs teacher_T)
+Finished game 909 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 913 of 1000 (teacher_T vs teacher_G)
+Finished game 907 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 914 of 1000 (teacher_G vs teacher_T)
+Finished game 913 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 915 of 1000 (teacher_T vs teacher_G)
+Finished game 911 (teacher_T vs teacher_G): 1-0 {White mates}
+Started game 916 of 1000 (teacher_G vs teacher_T)
+Finished game 912 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 917 of 1000 (teacher_T vs teacher_G)
+Finished game 917 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 918 of 1000 (teacher_G vs teacher_T)
+Finished game 914 (teacher_G vs teacher_T): 1/2-1/2 {Draw by adjudication}
+Started game 919 of 1000 (teacher_T vs teacher_G)
+Finished game 916 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 920 of 1000 (teacher_G vs teacher_T)
+Finished game 915 (teacher_T vs teacher_G): 1/2-1/2 {Draw by fifty moves rule}
+Started game 921 of 1000 (teacher_T vs teacher_G)
+Finished game 918 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 922 of 1000 (teacher_G vs teacher_T)
+Finished game 919 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 923 of 1000 (teacher_T vs teacher_G)
+Finished game 922 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 924 of 1000 (teacher_G vs teacher_T)
+Finished game 920 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 925 of 1000 (teacher_T vs teacher_G)
+Finished game 923 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 926 of 1000 (teacher_G vs teacher_T)
+Finished game 921 (teacher_T vs teacher_G): 0-1 {Black wins by adjudication}
+Started game 927 of 1000 (teacher_T vs teacher_G)
+Finished game 926 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 928 of 1000 (teacher_G vs teacher_T)
+Finished game 927 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 929 of 1000 (teacher_T vs teacher_G)
+Finished game 924 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 930 of 1000 (teacher_G vs teacher_T)
+Finished game 925 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 931 of 1000 (teacher_T vs teacher_G)
+Finished game 930 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 932 of 1000 (teacher_G vs teacher_T)
+Finished game 929 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 933 of 1000 (teacher_T vs teacher_G)
+Finished game 931 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 934 of 1000 (teacher_G vs teacher_T)
+Finished game 928 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 935 of 1000 (teacher_T vs teacher_G)
+Finished game 933 (teacher_T vs teacher_G): 1/2-1/2 {Draw by adjudication}
+Started game 936 of 1000 (teacher_G vs teacher_T)
+Finished game 932 (teacher_G vs teacher_T): 1/2-1/2 {Draw by adjudication}
+Started game 937 of 1000 (teacher_T vs teacher_G)
+Finished game 936 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 938 of 1000 (teacher_G vs teacher_T)
+Finished game 934 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 939 of 1000 (teacher_T vs teacher_G)
+Finished game 937 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 940 of 1000 (teacher_G vs teacher_T)
+Finished game 935 (teacher_T vs teacher_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 941 of 1000 (teacher_T vs teacher_G)
+Finished game 939 (teacher_T vs teacher_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 942 of 1000 (teacher_G vs teacher_T)
+Finished game 941 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 943 of 1000 (teacher_T vs teacher_G)
+Finished game 938 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 944 of 1000 (teacher_G vs teacher_T)
+Finished game 940 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 945 of 1000 (teacher_T vs teacher_G)
+Finished game 943 (teacher_T vs teacher_G): 1/2-1/2 {Draw by adjudication}
+Started game 946 of 1000 (teacher_G vs teacher_T)
+Finished game 942 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 947 of 1000 (teacher_T vs teacher_G)
+Finished game 944 (teacher_G vs teacher_T): 1/2-1/2 {Draw by adjudication}
+Started game 948 of 1000 (teacher_G vs teacher_T)
+Finished game 945 (teacher_T vs teacher_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 949 of 1000 (teacher_T vs teacher_G)
+Finished game 947 (teacher_T vs teacher_G): 0-1 {Black wins by adjudication}
+Started game 950 of 1000 (teacher_G vs teacher_T)
+Finished game 948 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 951 of 1000 (teacher_T vs teacher_G)
+Finished game 949 (teacher_T vs teacher_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 952 of 1000 (teacher_G vs teacher_T)
+Finished game 946 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 953 of 1000 (teacher_T vs teacher_G)
+Finished game 951 (teacher_T vs teacher_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 954 of 1000 (teacher_G vs teacher_T)
+Finished game 950 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 955 of 1000 (teacher_T vs teacher_G)
+Finished game 952 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 956 of 1000 (teacher_G vs teacher_T)
+Finished game 953 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 957 of 1000 (teacher_T vs teacher_G)
+Finished game 956 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 958 of 1000 (teacher_G vs teacher_T)
+Finished game 954 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 959 of 1000 (teacher_T vs teacher_G)
+Finished game 959 (teacher_T vs teacher_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 960 of 1000 (teacher_G vs teacher_T)
+Finished game 958 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 961 of 1000 (teacher_T vs teacher_G)
+Finished game 957 (teacher_T vs teacher_G): 1/2-1/2 {Draw by adjudication}
+Started game 962 of 1000 (teacher_G vs teacher_T)
+Finished game 955 (teacher_T vs teacher_G): 1/2-1/2 {Draw by adjudication}
+Started game 963 of 1000 (teacher_T vs teacher_G)
+Finished game 960 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 964 of 1000 (teacher_G vs teacher_T)
+Finished game 961 (teacher_T vs teacher_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 965 of 1000 (teacher_T vs teacher_G)
+Finished game 963 (teacher_T vs teacher_G): 1/2-1/2 {Draw by adjudication}
+Started game 966 of 1000 (teacher_G vs teacher_T)
+Finished game 962 (teacher_G vs teacher_T): 1/2-1/2 {Draw by adjudication}
+Started game 967 of 1000 (teacher_T vs teacher_G)
+Finished game 964 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 968 of 1000 (teacher_G vs teacher_T)
+Finished game 965 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 969 of 1000 (teacher_T vs teacher_G)
+Finished game 967 (teacher_T vs teacher_G): 1/2-1/2 {Draw by adjudication}
+Started game 970 of 1000 (teacher_G vs teacher_T)
+Finished game 966 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 971 of 1000 (teacher_T vs teacher_G)
+Finished game 968 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 972 of 1000 (teacher_G vs teacher_T)
+Finished game 969 (teacher_T vs teacher_G): 1/2-1/2 {Draw by adjudication}
+Started game 973 of 1000 (teacher_T vs teacher_G)
+Finished game 970 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 974 of 1000 (teacher_G vs teacher_T)
+Finished game 972 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 975 of 1000 (teacher_T vs teacher_G)
+Finished game 971 (teacher_T vs teacher_G): 1/2-1/2 {Draw by adjudication}
+Started game 976 of 1000 (teacher_G vs teacher_T)
+Finished game 973 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 977 of 1000 (teacher_T vs teacher_G)
+Finished game 974 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 978 of 1000 (teacher_G vs teacher_T)
+Finished game 975 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 979 of 1000 (teacher_T vs teacher_G)
+Finished game 977 (teacher_T vs teacher_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 980 of 1000 (teacher_G vs teacher_T)
+Finished game 978 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 981 of 1000 (teacher_T vs teacher_G)
+Finished game 976 (teacher_G vs teacher_T): 1/2-1/2 {Draw by adjudication}
+Started game 982 of 1000 (teacher_G vs teacher_T)
+Finished game 980 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 983 of 1000 (teacher_T vs teacher_G)
+Finished game 981 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 984 of 1000 (teacher_G vs teacher_T)
+Finished game 979 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 985 of 1000 (teacher_T vs teacher_G)
+Finished game 982 (teacher_G vs teacher_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 986 of 1000 (teacher_G vs teacher_T)
+Finished game 983 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 987 of 1000 (teacher_T vs teacher_G)
+Finished game 985 (teacher_T vs teacher_G): 1/2-1/2 {Draw by insufficient mating material}
+Started game 988 of 1000 (teacher_G vs teacher_T)
+Finished game 986 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 989 of 1000 (teacher_T vs teacher_G)
+Finished game 984 (teacher_G vs teacher_T): 1/2-1/2 {Draw by fifty moves rule}
+Started game 990 of 1000 (teacher_G vs teacher_T)
+Finished game 987 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 991 of 1000 (teacher_T vs teacher_G)
+Finished game 988 (teacher_G vs teacher_T): 0-1 {Black wins by adjudication}
+Started game 992 of 1000 (teacher_G vs teacher_T)
+Finished game 989 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 993 of 1000 (teacher_T vs teacher_G)
+Finished game 990 (teacher_G vs teacher_T): 1/2-1/2 {Draw by adjudication}
+Started game 994 of 1000 (teacher_G vs teacher_T)
+Finished game 991 (teacher_T vs teacher_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 995 of 1000 (teacher_T vs teacher_G)
+Finished game 993 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 996 of 1000 (teacher_G vs teacher_T)
+Finished game 995 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Started game 997 of 1000 (teacher_T vs teacher_G)
+Finished game 992 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 998 of 1000 (teacher_G vs teacher_T)
+Finished game 996 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 999 of 1000 (teacher_T vs teacher_G)
+Finished game 994 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Started game 1000 of 1000 (teacher_G vs teacher_T)
+Finished game 997 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Finished game 998 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+Finished game 999 (teacher_T vs teacher_G): 1-0 {White wins by adjudication}
+Finished game 1000 (teacher_G vs teacher_T): 1-0 {White wins by adjudication}
+--------------------------------------------------
+Results of teacher_T vs teacher_G (20000 nodes, 1t, 16MB, UHO_4060_v4.epd):
+Elo: 82.83 +/- 16.61, nElo: 111.62 +/- 21.53
+LOS: 100.00 %, DrawRatio: 38.60 %, PairsRatio: 2.94
+Games: 1000, Wins: 458, Losses: 224, Draws: 318, Points: 617.0 (61.70 %)
+Ptnml(0-2): [14, 64, 193, 132, 97], WL/DD Ratio: 2.16
+--------------------------------------------------
+Finished match
+Total Time: 00:22:00 (hours:minutes:seconds)
+

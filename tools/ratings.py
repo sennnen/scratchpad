@@ -9,21 +9,28 @@ def players(cmd):
     return [c.split("=", 1)[1] for c in cmd if c.startswith("name=")]
 
 
-def fit(matches, names, anchor, iters=3000):
+def fit(matches, names, anchor, iters=200):
+    """Bradley-Terry MLE (logistic Elo) by full Newton on the anchored Hessian. The anchor is fixed at 0.
+    (Earlier versions used per-player Newton steps including the anchor and re-centred, which can stop
+    at a non-optimal fixed point; see RESEARCH_LOG 'BUG FOUND (ratings.py)'.)"""
     idx = {n: i for i, n in enumerate(names)}
-    r = np.zeros(len(names))
+    k = len(names); c = np.log(10) / 400
+    free = [i for i in range(k) if i != idx[anchor]]
+    r = np.zeros(k)
     for _ in range(iters):
-        g = np.zeros(len(names)); h = np.zeros(len(names))
+        g = np.zeros(k); H = np.zeros((k, k))
         for a, b, score, n in matches:
-            p = 1 / (1 + 10 ** ((r[idx[b]] - r[idx[a]]) / 400))
-            d = (score - n * p)
-            g[idx[a]] += d; g[idx[b]] -= d
-            w = n * p * (1 - p) * np.log(10) / 400
-            h[idx[a]] += w; h[idx[b]] += w
-        step = 400 / np.log(10) * g / np.maximum(h * 400 / np.log(10), 1e-9)
-        r += np.clip(step, -50, 50)
-        r -= r[idx[anchor]]
-        if np.abs(step).max() < 1e-4: break
+            i, j = idx[a], idx[b]
+            p = 1 / (1 + 10 ** ((r[j] - r[i]) / 400))
+            d = c * (score - n * p)
+            g[i] += d; g[j] -= d
+            w = n * p * (1 - p) * c * c
+            H[i, i] += w; H[j, j] += w; H[i, j] -= w; H[j, i] -= w
+        Hf = H[np.ix_(free, free)] + 1e-9 * np.eye(len(free))
+        step = np.linalg.solve(Hf, g[free])
+        step = np.clip(step, -200, 200)
+        r[free] += step
+        if np.abs(step).max() < 1e-6: break
     return r
 
 
@@ -54,7 +61,7 @@ def main():
         for _, _, p in ms:
             n = p.sum()
             pl.append(rng.multinomial(n, p / n))
-        boots.append(fit(to_scores(pl), names, a.anchor, iters=500))
+        boots.append(fit(to_scores(pl), names, a.anchor, iters=100))
     boots = np.array(boots)
     lo, hi = np.percentile(boots, 2.5, axis=0), np.percentile(boots, 97.5, axis=0)
     order = np.argsort(-base)

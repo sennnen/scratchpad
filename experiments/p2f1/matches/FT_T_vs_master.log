@@ -1,0 +1,2040 @@
+/home/user/work/fastchess/fastchess -engine cmd=/home/user/data/sf_p2 name=FT_T option.EvalFile=/home/user/nets/p2f1/FT_T.nnue tc=inf nodes=20000 -engine cmd=/home/user/data/sf_p2 name=master tc=inf nodes=20000 -each option.Threads=1 option.Hash=16 -openings file=/home/user/data/UHO_4060_v4.epd format=epd order=random -srand 1 -repeat -rounds 500 -concurrency 4 -resign movecount=3 score=1000 twosided=true -draw movenumber=40 movecount=8 score=8 -pgnout file=experiments/p2f1/matches/FT_T_vs_master.pgn -ratinginterval 100
+Indexing opening suite...
+Started game 1 of 1000 (FT_T vs master)
+Started game 2 of 1000 (master vs FT_T)
+Started game 4 of 1000 (master vs FT_T)
+Started game 3 of 1000 (FT_T vs master)
+Finished game 4 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 5 of 1000 (FT_T vs master)
+Finished game 2 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 6 of 1000 (master vs FT_T)
+Finished game 3 (FT_T vs master): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 7 of 1000 (FT_T vs master)
+Finished game 1 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 8 of 1000 (master vs FT_T)
+Finished game 5 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 9 of 1000 (FT_T vs master)
+Finished game 6 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 10 of 1000 (master vs FT_T)
+Finished game 7 (FT_T vs master): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 11 of 1000 (FT_T vs master)
+Finished game 8 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 12 of 1000 (master vs FT_T)
+Finished game 9 (FT_T vs master): 1/2-1/2 {Draw by insufficient mating material}
+Started game 13 of 1000 (FT_T vs master)
+Finished game 12 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 14 of 1000 (master vs FT_T)
+Finished game 10 (master vs FT_T): 1/2-1/2 {Draw by adjudication}
+Started game 15 of 1000 (FT_T vs master)
+Finished game 11 (FT_T vs master): 1/2-1/2 {Draw by insufficient mating material}
+Started game 16 of 1000 (master vs FT_T)
+Finished game 13 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 17 of 1000 (FT_T vs master)
+Finished game 14 (master vs FT_T): 1/2-1/2 {Draw by adjudication}
+Started game 18 of 1000 (master vs FT_T)
+Finished game 17 (FT_T vs master): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 19 of 1000 (FT_T vs master)
+Finished game 16 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 20 of 1000 (master vs FT_T)
+Finished game 15 (FT_T vs master): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 21 of 1000 (FT_T vs master)
+Finished game 18 (master vs FT_T): 0-1 {Black wins by adjudication}
+Started game 22 of 1000 (master vs FT_T)
+Finished game 19 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 23 of 1000 (FT_T vs master)
+Finished game 21 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 24 of 1000 (master vs FT_T)
+Finished game 20 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 25 of 1000 (FT_T vs master)
+Finished game 22 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 26 of 1000 (master vs FT_T)
+Finished game 23 (FT_T vs master): 1/2-1/2 {Draw by insufficient mating material}
+Started game 27 of 1000 (FT_T vs master)
+Finished game 24 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 28 of 1000 (master vs FT_T)
+Finished game 26 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 29 of 1000 (FT_T vs master)
+Finished game 25 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 30 of 1000 (master vs FT_T)
+Finished game 27 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 31 of 1000 (FT_T vs master)
+Finished game 29 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 32 of 1000 (master vs FT_T)
+Finished game 28 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 33 of 1000 (FT_T vs master)
+Finished game 30 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 34 of 1000 (master vs FT_T)
+Finished game 31 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 35 of 1000 (FT_T vs master)
+Finished game 32 (master vs FT_T): 1/2-1/2 {Draw by adjudication}
+Started game 36 of 1000 (master vs FT_T)
+Finished game 34 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 37 of 1000 (FT_T vs master)
+Finished game 33 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 38 of 1000 (master vs FT_T)
+Finished game 35 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 39 of 1000 (FT_T vs master)
+Finished game 39 (FT_T vs master): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 40 of 1000 (master vs FT_T)
+Finished game 36 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 41 of 1000 (FT_T vs master)
+Finished game 38 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 42 of 1000 (master vs FT_T)
+Finished game 37 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 43 of 1000 (FT_T vs master)
+Finished game 40 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 44 of 1000 (master vs FT_T)
+Finished game 42 (master vs FT_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 45 of 1000 (FT_T vs master)
+Finished game 41 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 46 of 1000 (master vs FT_T)
+Finished game 43 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 47 of 1000 (FT_T vs master)
+Finished game 46 (master vs FT_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 48 of 1000 (master vs FT_T)
+Finished game 44 (master vs FT_T): 1/2-1/2 {Draw by adjudication}
+Started game 49 of 1000 (FT_T vs master)
+Finished game 45 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 50 of 1000 (master vs FT_T)
+Finished game 48 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 51 of 1000 (FT_T vs master)
+Finished game 47 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 52 of 1000 (master vs FT_T)
+Finished game 49 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 53 of 1000 (FT_T vs master)
+Finished game 50 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 54 of 1000 (master vs FT_T)
+Finished game 51 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 55 of 1000 (FT_T vs master)
+Finished game 53 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 56 of 1000 (master vs FT_T)
+Finished game 52 (master vs FT_T): 0-1 {Black wins by adjudication}
+Started game 57 of 1000 (FT_T vs master)
+Finished game 55 (FT_T vs master): 1/2-1/2 {Draw by insufficient mating material}
+Started game 58 of 1000 (master vs FT_T)
+Finished game 57 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 59 of 1000 (FT_T vs master)
+Finished game 56 (master vs FT_T): 1-0 {White mates}
+Started game 60 of 1000 (master vs FT_T)
+Finished game 54 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 61 of 1000 (FT_T vs master)
+Finished game 58 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 62 of 1000 (master vs FT_T)
+Finished game 59 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 63 of 1000 (FT_T vs master)
+Finished game 61 (FT_T vs master): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 64 of 1000 (master vs FT_T)
+Finished game 60 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 65 of 1000 (FT_T vs master)
+Finished game 62 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 66 of 1000 (master vs FT_T)
+Finished game 63 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 67 of 1000 (FT_T vs master)
+Finished game 65 (FT_T vs master): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 68 of 1000 (master vs FT_T)
+Finished game 64 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 69 of 1000 (FT_T vs master)
+Finished game 66 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 70 of 1000 (master vs FT_T)
+Finished game 69 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 71 of 1000 (FT_T vs master)
+Finished game 70 (master vs FT_T): 1-0 {White mates}
+Started game 72 of 1000 (master vs FT_T)
+Finished game 71 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 73 of 1000 (FT_T vs master)
+Finished game 67 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 74 of 1000 (master vs FT_T)
+Finished game 68 (master vs FT_T): 1/2-1/2 {Draw by fifty moves rule}
+Started game 75 of 1000 (FT_T vs master)
+Finished game 72 (master vs FT_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 76 of 1000 (master vs FT_T)
+Finished game 75 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 77 of 1000 (FT_T vs master)
+Finished game 76 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 78 of 1000 (master vs FT_T)
+Finished game 73 (FT_T vs master): 0-1 {Black wins by adjudication}
+Started game 79 of 1000 (FT_T vs master)
+Finished game 74 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 80 of 1000 (master vs FT_T)
+Finished game 78 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 81 of 1000 (FT_T vs master)
+Finished game 77 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 82 of 1000 (master vs FT_T)
+Finished game 79 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 83 of 1000 (FT_T vs master)
+Finished game 80 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 84 of 1000 (master vs FT_T)
+Finished game 83 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 85 of 1000 (FT_T vs master)
+Finished game 81 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 86 of 1000 (master vs FT_T)
+Finished game 84 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 87 of 1000 (FT_T vs master)
+Finished game 82 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 88 of 1000 (master vs FT_T)
+Finished game 86 (master vs FT_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 89 of 1000 (FT_T vs master)
+Finished game 85 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 90 of 1000 (master vs FT_T)
+Finished game 88 (master vs FT_T): 1/2-1/2 {Draw by adjudication}
+Started game 91 of 1000 (FT_T vs master)
+Finished game 87 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 92 of 1000 (master vs FT_T)
+Finished game 89 (FT_T vs master): 1-0 {White mates}
+Started game 93 of 1000 (FT_T vs master)
+Finished game 90 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 94 of 1000 (master vs FT_T)
+Finished game 91 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 95 of 1000 (FT_T vs master)
+Finished game 93 (FT_T vs master): 0-1 {Black wins by adjudication}
+Started game 96 of 1000 (master vs FT_T)
+Finished game 92 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 97 of 1000 (FT_T vs master)
+Finished game 94 (master vs FT_T): 1/2-1/2 {Draw by insufficient mating material}
+Started game 98 of 1000 (master vs FT_T)
+Finished game 96 (master vs FT_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 99 of 1000 (FT_T vs master)
+Finished game 97 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 100 of 1000 (master vs FT_T)
+Finished game 98 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 101 of 1000 (FT_T vs master)
+Finished game 95 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 102 of 1000 (master vs FT_T)
+Finished game 99 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 103 of 1000 (FT_T vs master)
+Finished game 100 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 104 of 1000 (master vs FT_T)
+Finished game 101 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 105 of 1000 (FT_T vs master)
+Finished game 102 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 106 of 1000 (master vs FT_T)
+Finished game 103 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 107 of 1000 (FT_T vs master)
+Finished game 106 (master vs FT_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 108 of 1000 (master vs FT_T)
+Finished game 105 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 109 of 1000 (FT_T vs master)
+Finished game 104 (master vs FT_T): 1/2-1/2 {Draw by fifty moves rule}
+Started game 110 of 1000 (master vs FT_T)
+Finished game 107 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 111 of 1000 (FT_T vs master)
+Finished game 108 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 112 of 1000 (master vs FT_T)
+Finished game 109 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 113 of 1000 (FT_T vs master)
+Finished game 110 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 114 of 1000 (master vs FT_T)
+Finished game 111 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 115 of 1000 (FT_T vs master)
+Finished game 112 (master vs FT_T): 0-1 {Black mates}
+Started game 116 of 1000 (master vs FT_T)
+Finished game 113 (FT_T vs master): 0-1 {Black wins by adjudication}
+Started game 117 of 1000 (FT_T vs master)
+Finished game 116 (master vs FT_T): 1/2-1/2 {Draw by insufficient mating material}
+Started game 118 of 1000 (master vs FT_T)
+Finished game 114 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 119 of 1000 (FT_T vs master)
+Finished game 115 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 120 of 1000 (master vs FT_T)
+Finished game 117 (FT_T vs master): 0-1 {Black wins by adjudication}
+Started game 121 of 1000 (FT_T vs master)
+Finished game 119 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 122 of 1000 (master vs FT_T)
+Finished game 118 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 123 of 1000 (FT_T vs master)
+Finished game 120 (master vs FT_T): 1/2-1/2 {Draw by adjudication}
+Started game 124 of 1000 (master vs FT_T)
+Finished game 121 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 125 of 1000 (FT_T vs master)
+Finished game 123 (FT_T vs master): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 126 of 1000 (master vs FT_T)
+Finished game 124 (master vs FT_T): 1/2-1/2 {Draw by adjudication}
+Started game 127 of 1000 (FT_T vs master)
+Finished game 122 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 128 of 1000 (master vs FT_T)
+Finished game 125 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 129 of 1000 (FT_T vs master)
+Finished game 126 (master vs FT_T): 1/2-1/2 {Draw by stalemate}
+Started game 130 of 1000 (master vs FT_T)
+Finished game 127 (FT_T vs master): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 131 of 1000 (FT_T vs master)
+Finished game 129 (FT_T vs master): 0-1 {Black wins by adjudication}
+Started game 132 of 1000 (master vs FT_T)
+Finished game 131 (FT_T vs master): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 133 of 1000 (FT_T vs master)
+Finished game 128 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 134 of 1000 (master vs FT_T)
+Finished game 130 (master vs FT_T): 0-1 {Black wins by adjudication}
+Started game 135 of 1000 (FT_T vs master)
+Finished game 135 (FT_T vs master): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 136 of 1000 (master vs FT_T)
+Finished game 133 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 137 of 1000 (FT_T vs master)
+Finished game 132 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 138 of 1000 (master vs FT_T)
+Finished game 134 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 139 of 1000 (FT_T vs master)
+Finished game 136 (master vs FT_T): 1/2-1/2 {Draw by adjudication}
+Started game 140 of 1000 (master vs FT_T)
+Finished game 138 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 141 of 1000 (FT_T vs master)
+Finished game 137 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 142 of 1000 (master vs FT_T)
+Finished game 139 (FT_T vs master): 1/2-1/2 {Draw by insufficient mating material}
+Started game 143 of 1000 (FT_T vs master)
+Finished game 140 (master vs FT_T): 1/2-1/2 {Draw by adjudication}
+Started game 144 of 1000 (master vs FT_T)
+Finished game 142 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 145 of 1000 (FT_T vs master)
+Finished game 141 (FT_T vs master): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 146 of 1000 (master vs FT_T)
+Finished game 144 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 147 of 1000 (FT_T vs master)
+Finished game 147 (FT_T vs master): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 148 of 1000 (master vs FT_T)
+Finished game 145 (FT_T vs master): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 149 of 1000 (FT_T vs master)
+Finished game 143 (FT_T vs master): 1/2-1/2 {Draw by insufficient mating material}
+Started game 150 of 1000 (master vs FT_T)
+Finished game 146 (master vs FT_T): 1/2-1/2 {Draw by adjudication}
+Started game 151 of 1000 (FT_T vs master)
+Finished game 148 (master vs FT_T): 1/2-1/2 {Draw by insufficient mating material}
+Started game 152 of 1000 (master vs FT_T)
+Finished game 149 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 153 of 1000 (FT_T vs master)
+Finished game 150 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 154 of 1000 (master vs FT_T)
+Finished game 151 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 155 of 1000 (FT_T vs master)
+Finished game 152 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 156 of 1000 (master vs FT_T)
+Finished game 153 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 157 of 1000 (FT_T vs master)
+Finished game 154 (master vs FT_T): 1/2-1/2 {Draw by adjudication}
+Started game 158 of 1000 (master vs FT_T)
+Finished game 158 (master vs FT_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 159 of 1000 (FT_T vs master)
+Finished game 156 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 160 of 1000 (master vs FT_T)
+Finished game 155 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 161 of 1000 (FT_T vs master)
+Finished game 157 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 162 of 1000 (master vs FT_T)
+Finished game 161 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 163 of 1000 (FT_T vs master)
+Finished game 162 (master vs FT_T): 1/2-1/2 {Draw by adjudication}
+Started game 164 of 1000 (master vs FT_T)
+Finished game 160 (master vs FT_T): 1/2-1/2 {Draw by adjudication}
+Started game 165 of 1000 (FT_T vs master)
+Finished game 165 (FT_T vs master): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 166 of 1000 (master vs FT_T)
+Finished game 159 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 167 of 1000 (FT_T vs master)
+Finished game 163 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 168 of 1000 (master vs FT_T)
+Finished game 167 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 169 of 1000 (FT_T vs master)
+Finished game 164 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 170 of 1000 (master vs FT_T)
+Finished game 166 (master vs FT_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 171 of 1000 (FT_T vs master)
+Finished game 168 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 172 of 1000 (master vs FT_T)
+Finished game 171 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 173 of 1000 (FT_T vs master)
+Finished game 169 (FT_T vs master): 0-1 {Black wins by adjudication}
+Started game 174 of 1000 (master vs FT_T)
+Finished game 170 (master vs FT_T): 1-0 {White mates}
+Started game 175 of 1000 (FT_T vs master)
+Finished game 172 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 176 of 1000 (master vs FT_T)
+Finished game 175 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 177 of 1000 (FT_T vs master)
+Finished game 174 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 178 of 1000 (master vs FT_T)
+Finished game 173 (FT_T vs master): 0-1 {Black wins by adjudication}
+Started game 179 of 1000 (FT_T vs master)
+Finished game 177 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 180 of 1000 (master vs FT_T)
+Finished game 176 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 181 of 1000 (FT_T vs master)
+Finished game 179 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 182 of 1000 (master vs FT_T)
+Finished game 181 (FT_T vs master): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 183 of 1000 (FT_T vs master)
+Finished game 180 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 184 of 1000 (master vs FT_T)
+Finished game 178 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 185 of 1000 (FT_T vs master)
+Finished game 182 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 186 of 1000 (master vs FT_T)
+Finished game 184 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 187 of 1000 (FT_T vs master)
+Finished game 185 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 188 of 1000 (master vs FT_T)
+Finished game 183 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 189 of 1000 (FT_T vs master)
+Finished game 186 (master vs FT_T): 1/2-1/2 {Draw by adjudication}
+Started game 190 of 1000 (master vs FT_T)
+Finished game 187 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 191 of 1000 (FT_T vs master)
+Finished game 189 (FT_T vs master): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 192 of 1000 (master vs FT_T)
+Finished game 188 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 193 of 1000 (FT_T vs master)
+Finished game 190 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 194 of 1000 (master vs FT_T)
+Finished game 193 (FT_T vs master): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 195 of 1000 (FT_T vs master)
+Finished game 191 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 196 of 1000 (master vs FT_T)
+Finished game 192 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 197 of 1000 (FT_T vs master)
+Finished game 195 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 198 of 1000 (master vs FT_T)
+Finished game 196 (master vs FT_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 199 of 1000 (FT_T vs master)
+Finished game 194 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 200 of 1000 (master vs FT_T)
+Finished game 197 (FT_T vs master): 1/2-1/2 {Draw by stalemate}
+Started game 201 of 1000 (FT_T vs master)
+Finished game 199 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 202 of 1000 (master vs FT_T)
+Finished game 198 (master vs FT_T): 1/2-1/2 {Draw by adjudication}
+Started game 203 of 1000 (FT_T vs master)
+Finished game 200 (master vs FT_T): 1/2-1/2 {Draw by adjudication}
+--------------------------------------------------
+Results of FT_T vs master (20000 nodes, 1t, 16MB, UHO_4060_v4.epd):
+Elo: -50.74 +/- 25.75, nElo: -96.43 +/- 48.15
+LOS: 0.00 %, DrawRatio: 55.00 %, PairsRatio: 0.29
+Games: 200, Wins: 43, Losses: 72, Draws: 85, Points: 85.5 (42.75 %)
+Ptnml(0-2): [5, 30, 55, 9, 1], WL/DD Ratio: 1.39
+--------------------------------------------------
+Started game 204 of 1000 (master vs FT_T)
+Finished game 201 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 205 of 1000 (FT_T vs master)
+Finished game 202 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 206 of 1000 (master vs FT_T)
+Finished game 205 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 207 of 1000 (FT_T vs master)
+Finished game 203 (FT_T vs master): 1/2-1/2 {Draw by insufficient mating material}
+Started game 208 of 1000 (master vs FT_T)
+Finished game 204 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 209 of 1000 (FT_T vs master)
+Finished game 206 (master vs FT_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 210 of 1000 (master vs FT_T)
+Finished game 208 (master vs FT_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 211 of 1000 (FT_T vs master)
+Finished game 207 (FT_T vs master): 0-1 {Black wins by adjudication}
+Started game 212 of 1000 (master vs FT_T)
+Finished game 209 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 213 of 1000 (FT_T vs master)
+Finished game 212 (master vs FT_T): 1/2-1/2 {Draw by adjudication}
+Started game 214 of 1000 (master vs FT_T)
+Finished game 211 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 215 of 1000 (FT_T vs master)
+Finished game 210 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 216 of 1000 (master vs FT_T)
+Finished game 214 (master vs FT_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 217 of 1000 (FT_T vs master)
+Finished game 215 (FT_T vs master): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 218 of 1000 (master vs FT_T)
+Finished game 213 (FT_T vs master): 0-1 {Black wins by adjudication}
+Started game 219 of 1000 (FT_T vs master)
+Finished game 216 (master vs FT_T): 1/2-1/2 {Draw by adjudication}
+Started game 220 of 1000 (master vs FT_T)
+Finished game 219 (FT_T vs master): 1-0 {White mates}
+Started game 221 of 1000 (FT_T vs master)
+Finished game 218 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 222 of 1000 (master vs FT_T)
+Finished game 217 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 223 of 1000 (FT_T vs master)
+Finished game 220 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 224 of 1000 (master vs FT_T)
+Finished game 222 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 225 of 1000 (FT_T vs master)
+Finished game 221 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 226 of 1000 (master vs FT_T)
+Finished game 223 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 227 of 1000 (FT_T vs master)
+Finished game 224 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 228 of 1000 (master vs FT_T)
+Finished game 225 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 229 of 1000 (FT_T vs master)
+Finished game 226 (master vs FT_T): 1/2-1/2 {Draw by adjudication}
+Started game 230 of 1000 (master vs FT_T)
+Finished game 227 (FT_T vs master): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 231 of 1000 (FT_T vs master)
+Finished game 228 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 232 of 1000 (master vs FT_T)
+Finished game 229 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 233 of 1000 (FT_T vs master)
+Finished game 231 (FT_T vs master): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 234 of 1000 (master vs FT_T)
+Finished game 230 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 235 of 1000 (FT_T vs master)
+Finished game 232 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 236 of 1000 (master vs FT_T)
+Finished game 233 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 237 of 1000 (FT_T vs master)
+Finished game 235 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 238 of 1000 (master vs FT_T)
+Finished game 234 (master vs FT_T): 1/2-1/2 {Draw by fifty moves rule}
+Started game 239 of 1000 (FT_T vs master)
+Finished game 237 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 240 of 1000 (master vs FT_T)
+Finished game 240 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 241 of 1000 (FT_T vs master)
+Finished game 239 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 242 of 1000 (master vs FT_T)
+Finished game 236 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 243 of 1000 (FT_T vs master)
+Finished game 238 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 244 of 1000 (master vs FT_T)
+Finished game 241 (FT_T vs master): 0-1 {Black wins by adjudication}
+Started game 245 of 1000 (FT_T vs master)
+Finished game 243 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 246 of 1000 (master vs FT_T)
+Finished game 242 (master vs FT_T): 1/2-1/2 {Draw by insufficient mating material}
+Started game 247 of 1000 (FT_T vs master)
+Finished game 244 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 248 of 1000 (master vs FT_T)
+Finished game 245 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 249 of 1000 (FT_T vs master)
+Finished game 247 (FT_T vs master): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 250 of 1000 (master vs FT_T)
+Finished game 246 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 251 of 1000 (FT_T vs master)
+Finished game 248 (master vs FT_T): 1/2-1/2 {Draw by adjudication}
+Started game 252 of 1000 (master vs FT_T)
+Finished game 249 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 253 of 1000 (FT_T vs master)
+Finished game 250 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 254 of 1000 (master vs FT_T)
+Finished game 251 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 255 of 1000 (FT_T vs master)
+Finished game 252 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 256 of 1000 (master vs FT_T)
+Finished game 253 (FT_T vs master): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 257 of 1000 (FT_T vs master)
+Finished game 254 (master vs FT_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 258 of 1000 (master vs FT_T)
+Finished game 256 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 259 of 1000 (FT_T vs master)
+Finished game 257 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 260 of 1000 (master vs FT_T)
+Finished game 255 (FT_T vs master): 0-1 {Black wins by adjudication}
+Started game 261 of 1000 (FT_T vs master)
+Finished game 258 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 262 of 1000 (master vs FT_T)
+Finished game 259 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 263 of 1000 (FT_T vs master)
+Finished game 261 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 264 of 1000 (master vs FT_T)
+Finished game 260 (master vs FT_T): 1/2-1/2 {Draw by insufficient mating material}
+Started game 265 of 1000 (FT_T vs master)
+Finished game 262 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 266 of 1000 (master vs FT_T)
+Finished game 265 (FT_T vs master): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 267 of 1000 (FT_T vs master)
+Finished game 264 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 268 of 1000 (master vs FT_T)
+Finished game 263 (FT_T vs master): 0-1 {Black wins by adjudication}
+Started game 269 of 1000 (FT_T vs master)
+Finished game 266 (master vs FT_T): 0-1 {Black wins by adjudication}
+Started game 270 of 1000 (master vs FT_T)
+Finished game 267 (FT_T vs master): 1/2-1/2 {Draw by insufficient mating material}
+Started game 271 of 1000 (FT_T vs master)
+Finished game 269 (FT_T vs master): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 272 of 1000 (master vs FT_T)
+Finished game 270 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 273 of 1000 (FT_T vs master)
+Finished game 268 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 274 of 1000 (master vs FT_T)
+Finished game 272 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 275 of 1000 (FT_T vs master)
+Finished game 271 (FT_T vs master): 1/2-1/2 {Draw by fifty moves rule}
+Started game 276 of 1000 (master vs FT_T)
+Finished game 274 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 277 of 1000 (FT_T vs master)
+Finished game 275 (FT_T vs master): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 278 of 1000 (master vs FT_T)
+Finished game 273 (FT_T vs master): 0-1 {Black mates}
+Started game 279 of 1000 (FT_T vs master)
+Finished game 278 (master vs FT_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 280 of 1000 (master vs FT_T)
+Finished game 276 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 281 of 1000 (FT_T vs master)
+Finished game 277 (FT_T vs master): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 282 of 1000 (master vs FT_T)
+Finished game 279 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 283 of 1000 (FT_T vs master)
+Finished game 280 (master vs FT_T): 1/2-1/2 {Draw by adjudication}
+Started game 284 of 1000 (master vs FT_T)
+Finished game 283 (FT_T vs master): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 285 of 1000 (FT_T vs master)
+Finished game 282 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 286 of 1000 (master vs FT_T)
+Finished game 281 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 287 of 1000 (FT_T vs master)
+Finished game 285 (FT_T vs master): 0-1 {Black wins by adjudication}
+Started game 288 of 1000 (master vs FT_T)
+Finished game 286 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 289 of 1000 (FT_T vs master)
+Finished game 284 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 290 of 1000 (master vs FT_T)
+Finished game 287 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 291 of 1000 (FT_T vs master)
+Finished game 288 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 292 of 1000 (master vs FT_T)
+Finished game 290 (master vs FT_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 293 of 1000 (FT_T vs master)
+Finished game 289 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 294 of 1000 (master vs FT_T)
+Finished game 291 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 295 of 1000 (FT_T vs master)
+Finished game 292 (master vs FT_T): 1/2-1/2 {Draw by adjudication}
+Started game 296 of 1000 (master vs FT_T)
+Finished game 294 (master vs FT_T): 1/2-1/2 {Draw by insufficient mating material}
+Started game 297 of 1000 (FT_T vs master)
+Finished game 295 (FT_T vs master): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 298 of 1000 (master vs FT_T)
+Finished game 293 (FT_T vs master): 0-1 {Black wins by adjudication}
+Started game 299 of 1000 (FT_T vs master)
+Finished game 298 (master vs FT_T): 1/2-1/2 {Draw by adjudication}
+Started game 300 of 1000 (master vs FT_T)
+Finished game 299 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 301 of 1000 (FT_T vs master)
+Finished game 296 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 302 of 1000 (master vs FT_T)
+Finished game 297 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 303 of 1000 (FT_T vs master)
+Finished game 300 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 304 of 1000 (master vs FT_T)
+Finished game 301 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 305 of 1000 (FT_T vs master)
+Finished game 302 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 306 of 1000 (master vs FT_T)
+Finished game 303 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 307 of 1000 (FT_T vs master)
+Finished game 307 (FT_T vs master): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 308 of 1000 (master vs FT_T)
+Finished game 305 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 309 of 1000 (FT_T vs master)
+Finished game 304 (master vs FT_T): 1-0 {White mates}
+Started game 310 of 1000 (master vs FT_T)
+Finished game 306 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 311 of 1000 (FT_T vs master)
+Finished game 310 (master vs FT_T): 0-1 {Black wins by adjudication}
+Started game 312 of 1000 (master vs FT_T)
+Finished game 308 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 313 of 1000 (FT_T vs master)
+Finished game 309 (FT_T vs master): 1/2-1/2 {Draw by insufficient mating material}
+Started game 314 of 1000 (master vs FT_T)
+Finished game 311 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 315 of 1000 (FT_T vs master)
+Finished game 313 (FT_T vs master): 0-1 {Black wins by adjudication}
+Started game 316 of 1000 (master vs FT_T)
+Finished game 314 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 317 of 1000 (FT_T vs master)
+Finished game 312 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 318 of 1000 (master vs FT_T)
+Finished game 315 (FT_T vs master): 0-1 {Black wins by adjudication}
+Started game 319 of 1000 (FT_T vs master)
+Finished game 316 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 320 of 1000 (master vs FT_T)
+Finished game 318 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 321 of 1000 (FT_T vs master)
+Finished game 317 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 322 of 1000 (master vs FT_T)
+Finished game 320 (master vs FT_T): 0-1 {Black wins by adjudication}
+Started game 323 of 1000 (FT_T vs master)
+Finished game 319 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 324 of 1000 (master vs FT_T)
+Finished game 321 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 325 of 1000 (FT_T vs master)
+Finished game 324 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 326 of 1000 (master vs FT_T)
+Finished game 322 (master vs FT_T): 1/2-1/2 {Draw by insufficient mating material}
+Started game 327 of 1000 (FT_T vs master)
+Finished game 325 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 328 of 1000 (master vs FT_T)
+Finished game 323 (FT_T vs master): 1/2-1/2 {Draw by fifty moves rule}
+Started game 329 of 1000 (FT_T vs master)
+Finished game 326 (master vs FT_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 330 of 1000 (master vs FT_T)
+Finished game 327 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 331 of 1000 (FT_T vs master)
+Finished game 330 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 332 of 1000 (master vs FT_T)
+Finished game 329 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 333 of 1000 (FT_T vs master)
+Finished game 328 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 334 of 1000 (master vs FT_T)
+Finished game 331 (FT_T vs master): 0-1 {Black wins by adjudication}
+Started game 335 of 1000 (FT_T vs master)
+Finished game 332 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 336 of 1000 (master vs FT_T)
+Finished game 334 (master vs FT_T): 1/2-1/2 {Draw by stalemate}
+Started game 337 of 1000 (FT_T vs master)
+Finished game 333 (FT_T vs master): 1/2-1/2 {Draw by fifty moves rule}
+Started game 338 of 1000 (master vs FT_T)
+Finished game 336 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 339 of 1000 (FT_T vs master)
+Finished game 335 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 340 of 1000 (master vs FT_T)
+Finished game 337 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 341 of 1000 (FT_T vs master)
+Finished game 338 (master vs FT_T): 0-1 {Black wins by adjudication}
+Started game 342 of 1000 (master vs FT_T)
+Finished game 339 (FT_T vs master): 0-1 {Black wins by adjudication}
+Started game 343 of 1000 (FT_T vs master)
+Finished game 340 (master vs FT_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 344 of 1000 (master vs FT_T)
+Finished game 341 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 345 of 1000 (FT_T vs master)
+Finished game 342 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 346 of 1000 (master vs FT_T)
+Finished game 343 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 347 of 1000 (FT_T vs master)
+Finished game 346 (master vs FT_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 348 of 1000 (master vs FT_T)
+Finished game 344 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 349 of 1000 (FT_T vs master)
+Finished game 348 (master vs FT_T): 1/2-1/2 {Draw by adjudication}
+Started game 350 of 1000 (master vs FT_T)
+Finished game 347 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 351 of 1000 (FT_T vs master)
+Finished game 349 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 352 of 1000 (master vs FT_T)
+Finished game 345 (FT_T vs master): 1/2-1/2 {Draw by fifty moves rule}
+Started game 353 of 1000 (FT_T vs master)
+Finished game 352 (master vs FT_T): 0-1 {Black wins by adjudication}
+Started game 354 of 1000 (master vs FT_T)
+Finished game 350 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 355 of 1000 (FT_T vs master)
+Finished game 351 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 356 of 1000 (master vs FT_T)
+Finished game 354 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 357 of 1000 (FT_T vs master)
+Finished game 353 (FT_T vs master): 1/2-1/2 {Draw by insufficient mating material}
+Started game 358 of 1000 (master vs FT_T)
+Finished game 355 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 359 of 1000 (FT_T vs master)
+Finished game 358 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 360 of 1000 (master vs FT_T)
+Finished game 356 (master vs FT_T): 0-1 {Black wins by adjudication}
+Started game 361 of 1000 (FT_T vs master)
+Finished game 359 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 362 of 1000 (master vs FT_T)
+Finished game 357 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 363 of 1000 (FT_T vs master)
+Finished game 360 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 364 of 1000 (master vs FT_T)
+Finished game 361 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 365 of 1000 (FT_T vs master)
+Finished game 363 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 366 of 1000 (master vs FT_T)
+Finished game 362 (master vs FT_T): 0-1 {Black wins by adjudication}
+Started game 367 of 1000 (FT_T vs master)
+Finished game 365 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 368 of 1000 (master vs FT_T)
+Finished game 364 (master vs FT_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 369 of 1000 (FT_T vs master)
+Finished game 366 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 370 of 1000 (master vs FT_T)
+Finished game 367 (FT_T vs master): 0-1 {Black wins by adjudication}
+Started game 371 of 1000 (FT_T vs master)
+Finished game 368 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 372 of 1000 (master vs FT_T)
+Finished game 369 (FT_T vs master): 1/2-1/2 {Draw by insufficient mating material}
+Started game 373 of 1000 (FT_T vs master)
+Finished game 370 (master vs FT_T): 1/2-1/2 {Draw by adjudication}
+Started game 374 of 1000 (master vs FT_T)
+Finished game 371 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 375 of 1000 (FT_T vs master)
+Finished game 372 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 376 of 1000 (master vs FT_T)
+Finished game 373 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 377 of 1000 (FT_T vs master)
+Finished game 375 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 378 of 1000 (master vs FT_T)
+Finished game 374 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 379 of 1000 (FT_T vs master)
+Finished game 376 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 380 of 1000 (master vs FT_T)
+Finished game 377 (FT_T vs master): 1/2-1/2 {Draw by fifty moves rule}
+Started game 381 of 1000 (FT_T vs master)
+Finished game 379 (FT_T vs master): 1/2-1/2 {Draw by insufficient mating material}
+Started game 382 of 1000 (master vs FT_T)
+Finished game 378 (master vs FT_T): 1/2-1/2 {Draw by adjudication}
+Started game 383 of 1000 (FT_T vs master)
+Finished game 382 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 384 of 1000 (master vs FT_T)
+Finished game 383 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 385 of 1000 (FT_T vs master)
+Finished game 380 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 386 of 1000 (master vs FT_T)
+Finished game 381 (FT_T vs master): 1/2-1/2 {Draw by fifty moves rule}
+Started game 387 of 1000 (FT_T vs master)
+Finished game 386 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 388 of 1000 (master vs FT_T)
+Finished game 384 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 389 of 1000 (FT_T vs master)
+Finished game 385 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 390 of 1000 (master vs FT_T)
+Finished game 387 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 391 of 1000 (FT_T vs master)
+Finished game 389 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 392 of 1000 (master vs FT_T)
+Finished game 390 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 393 of 1000 (FT_T vs master)
+Finished game 388 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 394 of 1000 (master vs FT_T)
+Finished game 393 (FT_T vs master): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 395 of 1000 (FT_T vs master)
+Finished game 392 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 396 of 1000 (master vs FT_T)
+Finished game 394 (master vs FT_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 397 of 1000 (FT_T vs master)
+Finished game 391 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 398 of 1000 (master vs FT_T)
+Finished game 396 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 399 of 1000 (FT_T vs master)
+Finished game 398 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 400 of 1000 (master vs FT_T)
+Finished game 397 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 401 of 1000 (FT_T vs master)
+Finished game 395 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 402 of 1000 (master vs FT_T)
+Finished game 399 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 403 of 1000 (FT_T vs master)
+Finished game 401 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 404 of 1000 (master vs FT_T)
+Finished game 402 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 405 of 1000 (FT_T vs master)
+Finished game 403 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 406 of 1000 (master vs FT_T)
+Finished game 400 (master vs FT_T): 1/2-1/2 {Draw by insufficient mating material}
+--------------------------------------------------
+Results of FT_T vs master (20000 nodes, 1t, 16MB, UHO_4060_v4.epd):
+Elo: -52.25 +/- 20.24, nElo: -89.13 +/- 33.96
+LOS: 0.00 %, DrawRatio: 50.25 %, PairsRatio: 0.32
+Games: 402, Wins: 91, Losses: 151, Draws: 160, Points: 171.0 (42.54 %)
+Ptnml(0-2): [13, 63, 101, 19, 5], WL/DD Ratio: 1.59
+--------------------------------------------------
+Started game 407 of 1000 (FT_T vs master)
+Finished game 404 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 408 of 1000 (master vs FT_T)
+Finished game 405 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 409 of 1000 (FT_T vs master)
+Finished game 406 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 410 of 1000 (master vs FT_T)
+Finished game 407 (FT_T vs master): 0-1 {Black mates}
+Started game 411 of 1000 (FT_T vs master)
+Finished game 408 (master vs FT_T): 0-1 {Black mates}
+Started game 412 of 1000 (master vs FT_T)
+Finished game 409 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 413 of 1000 (FT_T vs master)
+Finished game 410 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 414 of 1000 (master vs FT_T)
+Finished game 413 (FT_T vs master): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 415 of 1000 (FT_T vs master)
+Finished game 411 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 416 of 1000 (master vs FT_T)
+Finished game 414 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 417 of 1000 (FT_T vs master)
+Finished game 412 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 418 of 1000 (master vs FT_T)
+Finished game 415 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 419 of 1000 (FT_T vs master)
+Finished game 416 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 420 of 1000 (master vs FT_T)
+Finished game 418 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 421 of 1000 (FT_T vs master)
+Finished game 417 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 422 of 1000 (master vs FT_T)
+Finished game 420 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 423 of 1000 (FT_T vs master)
+Finished game 421 (FT_T vs master): 0-1 {Black wins by adjudication}
+Started game 424 of 1000 (master vs FT_T)
+Finished game 419 (FT_T vs master): 0-1 {Black wins by adjudication}
+Started game 425 of 1000 (FT_T vs master)
+Finished game 422 (master vs FT_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 426 of 1000 (master vs FT_T)
+Finished game 423 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 427 of 1000 (FT_T vs master)
+Finished game 424 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 428 of 1000 (master vs FT_T)
+Finished game 425 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 429 of 1000 (FT_T vs master)
+Finished game 426 (master vs FT_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 430 of 1000 (master vs FT_T)
+Finished game 427 (FT_T vs master): 0-1 {Black wins by adjudication}
+Started game 431 of 1000 (FT_T vs master)
+Finished game 428 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 432 of 1000 (master vs FT_T)
+Finished game 430 (master vs FT_T): 0-1 {Black mates}
+Started game 433 of 1000 (FT_T vs master)
+Finished game 431 (FT_T vs master): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 434 of 1000 (master vs FT_T)
+Finished game 432 (master vs FT_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 435 of 1000 (FT_T vs master)
+Finished game 429 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 436 of 1000 (master vs FT_T)
+Finished game 433 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 437 of 1000 (FT_T vs master)
+Finished game 434 (master vs FT_T): 1/2-1/2 {Draw by insufficient mating material}
+Started game 438 of 1000 (master vs FT_T)
+Finished game 435 (FT_T vs master): 0-1 {Black wins by adjudication}
+Started game 439 of 1000 (FT_T vs master)
+Finished game 437 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 440 of 1000 (master vs FT_T)
+Finished game 436 (master vs FT_T): 1/2-1/2 {Draw by insufficient mating material}
+Started game 441 of 1000 (FT_T vs master)
+Finished game 438 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 442 of 1000 (master vs FT_T)
+Finished game 439 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 443 of 1000 (FT_T vs master)
+Finished game 440 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 444 of 1000 (master vs FT_T)
+Finished game 442 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 445 of 1000 (FT_T vs master)
+Finished game 443 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 446 of 1000 (master vs FT_T)
+Finished game 444 (master vs FT_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 447 of 1000 (FT_T vs master)
+Finished game 441 (FT_T vs master): 1/2-1/2 {Draw by insufficient mating material}
+Started game 448 of 1000 (master vs FT_T)
+Finished game 445 (FT_T vs master): 0-1 {Black wins by adjudication}
+Started game 449 of 1000 (FT_T vs master)
+Finished game 447 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 450 of 1000 (master vs FT_T)
+Finished game 448 (master vs FT_T): 1/2-1/2 {Draw by adjudication}
+Started game 451 of 1000 (FT_T vs master)
+Finished game 446 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 452 of 1000 (master vs FT_T)
+Finished game 451 (FT_T vs master): 0-1 {Black wins by adjudication}
+Started game 453 of 1000 (FT_T vs master)
+Finished game 449 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 454 of 1000 (master vs FT_T)
+Finished game 450 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 455 of 1000 (FT_T vs master)
+Finished game 452 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 456 of 1000 (master vs FT_T)
+Finished game 455 (FT_T vs master): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 457 of 1000 (FT_T vs master)
+Finished game 453 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 458 of 1000 (master vs FT_T)
+Finished game 454 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 459 of 1000 (FT_T vs master)
+Finished game 456 (master vs FT_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 460 of 1000 (master vs FT_T)
+Finished game 457 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 461 of 1000 (FT_T vs master)
+Finished game 459 (FT_T vs master): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 462 of 1000 (master vs FT_T)
+Finished game 458 (master vs FT_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 463 of 1000 (FT_T vs master)
+Finished game 460 (master vs FT_T): 1/2-1/2 {Draw by adjudication}
+Started game 464 of 1000 (master vs FT_T)
+Finished game 461 (FT_T vs master): 1/2-1/2 {Draw by insufficient mating material}
+Started game 465 of 1000 (FT_T vs master)
+Finished game 462 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 466 of 1000 (master vs FT_T)
+Finished game 463 (FT_T vs master): 1/2-1/2 {Draw by fifty moves rule}
+Started game 467 of 1000 (FT_T vs master)
+Finished game 465 (FT_T vs master): 1/2-1/2 {Draw by insufficient mating material}
+Started game 468 of 1000 (master vs FT_T)
+Finished game 464 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 469 of 1000 (FT_T vs master)
+Finished game 466 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 470 of 1000 (master vs FT_T)
+Finished game 468 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 471 of 1000 (FT_T vs master)
+Finished game 467 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 472 of 1000 (master vs FT_T)
+Finished game 469 (FT_T vs master): 1/2-1/2 {Draw by stalemate}
+Started game 473 of 1000 (FT_T vs master)
+Finished game 472 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 474 of 1000 (master vs FT_T)
+Finished game 471 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 475 of 1000 (FT_T vs master)
+Finished game 470 (master vs FT_T): 1/2-1/2 {Draw by adjudication}
+Started game 476 of 1000 (master vs FT_T)
+Finished game 473 (FT_T vs master): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 477 of 1000 (FT_T vs master)
+Finished game 475 (FT_T vs master): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 478 of 1000 (master vs FT_T)
+Finished game 474 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 479 of 1000 (FT_T vs master)
+Finished game 476 (master vs FT_T): 1/2-1/2 {Draw by insufficient mating material}
+Started game 480 of 1000 (master vs FT_T)
+Finished game 477 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 481 of 1000 (FT_T vs master)
+Finished game 478 (master vs FT_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 482 of 1000 (master vs FT_T)
+Finished game 479 (FT_T vs master): 1/2-1/2 {Draw by insufficient mating material}
+Started game 483 of 1000 (FT_T vs master)
+Finished game 481 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 484 of 1000 (master vs FT_T)
+Finished game 480 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 485 of 1000 (FT_T vs master)
+Finished game 485 (FT_T vs master): 1/2-1/2 {Draw by stalemate}
+Started game 486 of 1000 (master vs FT_T)
+Finished game 483 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 487 of 1000 (FT_T vs master)
+Finished game 482 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 488 of 1000 (master vs FT_T)
+Finished game 484 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 489 of 1000 (FT_T vs master)
+Finished game 487 (FT_T vs master): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 490 of 1000 (master vs FT_T)
+Finished game 488 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 491 of 1000 (FT_T vs master)
+Finished game 490 (master vs FT_T): 1/2-1/2 {Draw by adjudication}
+Started game 492 of 1000 (master vs FT_T)
+Finished game 489 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 493 of 1000 (FT_T vs master)
+Finished game 486 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 494 of 1000 (master vs FT_T)
+Finished game 491 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 495 of 1000 (FT_T vs master)
+Finished game 492 (master vs FT_T): 1/2-1/2 {Draw by adjudication}
+Started game 496 of 1000 (master vs FT_T)
+Finished game 493 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 497 of 1000 (FT_T vs master)
+Finished game 495 (FT_T vs master): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 498 of 1000 (master vs FT_T)
+Finished game 497 (FT_T vs master): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 499 of 1000 (FT_T vs master)
+Finished game 496 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 500 of 1000 (master vs FT_T)
+Finished game 494 (master vs FT_T): 1/2-1/2 {Draw by fifty moves rule}
+Started game 501 of 1000 (FT_T vs master)
+Finished game 498 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 502 of 1000 (master vs FT_T)
+Finished game 499 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 503 of 1000 (FT_T vs master)
+Finished game 500 (master vs FT_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 504 of 1000 (master vs FT_T)
+Finished game 501 (FT_T vs master): 0-1 {Black wins by adjudication}
+Started game 505 of 1000 (FT_T vs master)
+Finished game 502 (master vs FT_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 506 of 1000 (master vs FT_T)
+Finished game 503 (FT_T vs master): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 507 of 1000 (FT_T vs master)
+Finished game 504 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 508 of 1000 (master vs FT_T)
+Finished game 505 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 509 of 1000 (FT_T vs master)
+Finished game 506 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 510 of 1000 (master vs FT_T)
+Finished game 508 (master vs FT_T): 1-0 {White mates}
+Started game 511 of 1000 (FT_T vs master)
+Finished game 509 (FT_T vs master): 0-1 {Black wins by adjudication}
+Started game 512 of 1000 (master vs FT_T)
+Finished game 507 (FT_T vs master): 0-1 {Black wins by adjudication}
+Started game 513 of 1000 (FT_T vs master)
+Finished game 510 (master vs FT_T): 1/2-1/2 {Draw by fifty moves rule}
+Started game 514 of 1000 (master vs FT_T)
+Finished game 511 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 515 of 1000 (FT_T vs master)
+Finished game 512 (master vs FT_T): 1/2-1/2 {Draw by adjudication}
+Started game 516 of 1000 (master vs FT_T)
+Finished game 513 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 517 of 1000 (FT_T vs master)
+Finished game 515 (FT_T vs master): 0-1 {Black wins by adjudication}
+Started game 518 of 1000 (master vs FT_T)
+Finished game 514 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 519 of 1000 (FT_T vs master)
+Finished game 517 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 520 of 1000 (master vs FT_T)
+Finished game 516 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 521 of 1000 (FT_T vs master)
+Finished game 519 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 522 of 1000 (master vs FT_T)
+Finished game 518 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 523 of 1000 (FT_T vs master)
+Finished game 521 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 524 of 1000 (master vs FT_T)
+Finished game 520 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 525 of 1000 (FT_T vs master)
+Finished game 522 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 526 of 1000 (master vs FT_T)
+Finished game 523 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 527 of 1000 (FT_T vs master)
+Finished game 525 (FT_T vs master): 1/2-1/2 {Draw by insufficient mating material}
+Started game 528 of 1000 (master vs FT_T)
+Finished game 524 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 529 of 1000 (FT_T vs master)
+Finished game 526 (master vs FT_T): 1/2-1/2 {Draw by insufficient mating material}
+Started game 530 of 1000 (master vs FT_T)
+Finished game 529 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 531 of 1000 (FT_T vs master)
+Finished game 527 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 532 of 1000 (master vs FT_T)
+Finished game 528 (master vs FT_T): 1/2-1/2 {Draw by adjudication}
+Started game 533 of 1000 (FT_T vs master)
+Finished game 531 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 534 of 1000 (master vs FT_T)
+Finished game 530 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 535 of 1000 (FT_T vs master)
+Finished game 532 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 536 of 1000 (master vs FT_T)
+Finished game 533 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 537 of 1000 (FT_T vs master)
+Finished game 537 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 538 of 1000 (master vs FT_T)
+Finished game 536 (master vs FT_T): 1/2-1/2 {Draw by adjudication}
+Started game 539 of 1000 (FT_T vs master)
+Finished game 535 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 540 of 1000 (master vs FT_T)
+Finished game 534 (master vs FT_T): 1/2-1/2 {Draw by fifty moves rule}
+Started game 541 of 1000 (FT_T vs master)
+Finished game 538 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 542 of 1000 (master vs FT_T)
+Finished game 540 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 543 of 1000 (FT_T vs master)
+Finished game 539 (FT_T vs master): 1/2-1/2 {Draw by insufficient mating material}
+Started game 544 of 1000 (master vs FT_T)
+Finished game 542 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 545 of 1000 (FT_T vs master)
+Finished game 541 (FT_T vs master): 1/2-1/2 {Draw by fifty moves rule}
+Started game 546 of 1000 (master vs FT_T)
+Finished game 544 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 547 of 1000 (FT_T vs master)
+Finished game 543 (FT_T vs master): 1/2-1/2 {Draw by insufficient mating material}
+Started game 548 of 1000 (master vs FT_T)
+Finished game 546 (master vs FT_T): 0-1 {Black wins by adjudication}
+Started game 549 of 1000 (FT_T vs master)
+Finished game 545 (FT_T vs master): 1-0 {White mates}
+Started game 550 of 1000 (master vs FT_T)
+Finished game 547 (FT_T vs master): 0-1 {Black mates}
+Started game 551 of 1000 (FT_T vs master)
+Finished game 548 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 552 of 1000 (master vs FT_T)
+Finished game 550 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 553 of 1000 (FT_T vs master)
+Finished game 549 (FT_T vs master): 1-0 {White mates}
+Started game 554 of 1000 (master vs FT_T)
+Finished game 551 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 555 of 1000 (FT_T vs master)
+Finished game 552 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 556 of 1000 (master vs FT_T)
+Finished game 554 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 557 of 1000 (FT_T vs master)
+Finished game 555 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 558 of 1000 (master vs FT_T)
+Finished game 556 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 559 of 1000 (FT_T vs master)
+Finished game 557 (FT_T vs master): 1/2-1/2 {Draw by stalemate}
+Started game 560 of 1000 (master vs FT_T)
+Finished game 553 (FT_T vs master): 1/2-1/2 {Draw by fifty moves rule}
+Started game 561 of 1000 (FT_T vs master)
+Finished game 559 (FT_T vs master): 0-1 {Black wins by adjudication}
+Started game 562 of 1000 (master vs FT_T)
+Finished game 558 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 563 of 1000 (FT_T vs master)
+Finished game 560 (master vs FT_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 564 of 1000 (master vs FT_T)
+Finished game 561 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 565 of 1000 (FT_T vs master)
+Finished game 565 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 566 of 1000 (master vs FT_T)
+Finished game 564 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 567 of 1000 (FT_T vs master)
+Finished game 563 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 568 of 1000 (master vs FT_T)
+Finished game 562 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 569 of 1000 (FT_T vs master)
+Finished game 567 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 570 of 1000 (master vs FT_T)
+Finished game 568 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 571 of 1000 (FT_T vs master)
+Finished game 566 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 572 of 1000 (master vs FT_T)
+Finished game 569 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 573 of 1000 (FT_T vs master)
+Finished game 573 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 574 of 1000 (master vs FT_T)
+Finished game 570 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 575 of 1000 (FT_T vs master)
+Finished game 571 (FT_T vs master): 1/2-1/2 {Draw by insufficient mating material}
+Started game 576 of 1000 (master vs FT_T)
+Finished game 572 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 577 of 1000 (FT_T vs master)
+Finished game 574 (master vs FT_T): 1/2-1/2 {Draw by adjudication}
+Started game 578 of 1000 (master vs FT_T)
+Finished game 575 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 579 of 1000 (FT_T vs master)
+Finished game 577 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 580 of 1000 (master vs FT_T)
+Finished game 576 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 581 of 1000 (FT_T vs master)
+Finished game 578 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 582 of 1000 (master vs FT_T)
+Finished game 580 (master vs FT_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 583 of 1000 (FT_T vs master)
+Finished game 579 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 584 of 1000 (master vs FT_T)
+Finished game 581 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 585 of 1000 (FT_T vs master)
+Finished game 582 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 586 of 1000 (master vs FT_T)
+Finished game 584 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 587 of 1000 (FT_T vs master)
+Finished game 585 (FT_T vs master): 1/2-1/2 {Draw by insufficient mating material}
+Started game 588 of 1000 (master vs FT_T)
+Finished game 583 (FT_T vs master): 0-1 {Black wins by adjudication}
+Started game 589 of 1000 (FT_T vs master)
+Finished game 587 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 590 of 1000 (master vs FT_T)
+Finished game 588 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 591 of 1000 (FT_T vs master)
+Finished game 586 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 592 of 1000 (master vs FT_T)
+Finished game 591 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 593 of 1000 (FT_T vs master)
+Finished game 589 (FT_T vs master): 1/2-1/2 {Draw by insufficient mating material}
+Started game 594 of 1000 (master vs FT_T)
+Finished game 590 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 595 of 1000 (FT_T vs master)
+Finished game 592 (master vs FT_T): 1/2-1/2 {Draw by adjudication}
+Started game 596 of 1000 (master vs FT_T)
+Finished game 594 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 597 of 1000 (FT_T vs master)
+Finished game 595 (FT_T vs master): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 598 of 1000 (master vs FT_T)
+Finished game 593 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 599 of 1000 (FT_T vs master)
+Finished game 596 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 600 of 1000 (master vs FT_T)
+Finished game 597 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 601 of 1000 (FT_T vs master)
+Finished game 600 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 602 of 1000 (master vs FT_T)
+Finished game 599 (FT_T vs master): 0-1 {Black wins by adjudication}
+--------------------------------------------------
+Results of FT_T vs master (20000 nodes, 1t, 16MB, UHO_4060_v4.epd):
+Elo: -63.44 +/- 17.19, nElo: -105.14 +/- 27.85
+LOS: 0.00 %, DrawRatio: 44.82 %, PairsRatio: 0.28
+Games: 598, Wins: 125, Losses: 233, Draws: 240, Points: 245.0 (40.97 %)
+Ptnml(0-2): [22, 107, 134, 29, 7], WL/DD Ratio: 1.58
+--------------------------------------------------
+Started game 603 of 1000 (FT_T vs master)
+Finished game 598 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 604 of 1000 (master vs FT_T)
+Finished game 601 (FT_T vs master): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 605 of 1000 (FT_T vs master)
+Finished game 604 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 606 of 1000 (master vs FT_T)
+Finished game 602 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 607 of 1000 (FT_T vs master)
+Finished game 605 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 608 of 1000 (master vs FT_T)
+Finished game 603 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 609 of 1000 (FT_T vs master)
+Finished game 607 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 610 of 1000 (master vs FT_T)
+Finished game 606 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 611 of 1000 (FT_T vs master)
+Finished game 608 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 612 of 1000 (master vs FT_T)
+Finished game 609 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 613 of 1000 (FT_T vs master)
+Finished game 610 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 614 of 1000 (master vs FT_T)
+Finished game 611 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 615 of 1000 (FT_T vs master)
+Finished game 612 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 616 of 1000 (master vs FT_T)
+Finished game 613 (FT_T vs master): 0-1 {Black wins by adjudication}
+Started game 617 of 1000 (FT_T vs master)
+Finished game 614 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 618 of 1000 (master vs FT_T)
+Finished game 615 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 619 of 1000 (FT_T vs master)
+Finished game 617 (FT_T vs master): 1/2-1/2 {Draw by insufficient mating material}
+Started game 620 of 1000 (master vs FT_T)
+Finished game 616 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 621 of 1000 (FT_T vs master)
+Finished game 618 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 622 of 1000 (master vs FT_T)
+Finished game 621 (FT_T vs master): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 623 of 1000 (FT_T vs master)
+Finished game 620 (master vs FT_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 624 of 1000 (master vs FT_T)
+Finished game 622 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 625 of 1000 (FT_T vs master)
+Finished game 619 (FT_T vs master): 1/2-1/2 {Draw by insufficient mating material}
+Started game 626 of 1000 (master vs FT_T)
+Finished game 624 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 627 of 1000 (FT_T vs master)
+Finished game 625 (FT_T vs master): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 628 of 1000 (master vs FT_T)
+Finished game 623 (FT_T vs master): 0-1 {Black wins by adjudication}
+Started game 629 of 1000 (FT_T vs master)
+Finished game 629 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 630 of 1000 (master vs FT_T)
+Finished game 626 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 631 of 1000 (FT_T vs master)
+Finished game 627 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 632 of 1000 (master vs FT_T)
+Finished game 628 (master vs FT_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 633 of 1000 (FT_T vs master)
+Finished game 631 (FT_T vs master): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 634 of 1000 (master vs FT_T)
+Finished game 630 (master vs FT_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 635 of 1000 (FT_T vs master)
+Finished game 634 (master vs FT_T): 0-1 {Black wins by adjudication}
+Started game 636 of 1000 (master vs FT_T)
+Finished game 633 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 637 of 1000 (FT_T vs master)
+Finished game 632 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 638 of 1000 (master vs FT_T)
+Finished game 635 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 639 of 1000 (FT_T vs master)
+Finished game 638 (master vs FT_T): 1/2-1/2 {Draw by adjudication}
+Started game 640 of 1000 (master vs FT_T)
+Finished game 637 (FT_T vs master): 1/2-1/2 {Draw by insufficient mating material}
+Started game 641 of 1000 (FT_T vs master)
+Finished game 636 (master vs FT_T): 1/2-1/2 {Draw by adjudication}
+Started game 642 of 1000 (master vs FT_T)
+Finished game 639 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 643 of 1000 (FT_T vs master)
+Finished game 640 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 644 of 1000 (master vs FT_T)
+Finished game 642 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 645 of 1000 (FT_T vs master)
+Finished game 641 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 646 of 1000 (master vs FT_T)
+Finished game 643 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 647 of 1000 (FT_T vs master)
+Finished game 645 (FT_T vs master): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 648 of 1000 (master vs FT_T)
+Finished game 644 (master vs FT_T): 1/2-1/2 {Draw by stalemate}
+Started game 649 of 1000 (FT_T vs master)
+Finished game 648 (master vs FT_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 650 of 1000 (master vs FT_T)
+Finished game 646 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 651 of 1000 (FT_T vs master)
+Finished game 647 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 652 of 1000 (master vs FT_T)
+Finished game 649 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 653 of 1000 (FT_T vs master)
+Finished game 652 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 654 of 1000 (master vs FT_T)
+Finished game 650 (master vs FT_T): 1/2-1/2 {Draw by adjudication}
+Started game 655 of 1000 (FT_T vs master)
+Finished game 653 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 656 of 1000 (master vs FT_T)
+Finished game 654 (master vs FT_T): 1/2-1/2 {Draw by adjudication}
+Started game 657 of 1000 (FT_T vs master)
+Finished game 656 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 658 of 1000 (master vs FT_T)
+Finished game 655 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 659 of 1000 (FT_T vs master)
+Finished game 651 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 660 of 1000 (master vs FT_T)
+Finished game 657 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 661 of 1000 (FT_T vs master)
+Finished game 659 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 662 of 1000 (master vs FT_T)
+Finished game 660 (master vs FT_T): 0-1 {Black wins by adjudication}
+Started game 663 of 1000 (FT_T vs master)
+Finished game 661 (FT_T vs master): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 664 of 1000 (master vs FT_T)
+Finished game 658 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 665 of 1000 (FT_T vs master)
+Finished game 662 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 666 of 1000 (master vs FT_T)
+Finished game 663 (FT_T vs master): 1/2-1/2 {Draw by insufficient mating material}
+Started game 667 of 1000 (FT_T vs master)
+Finished game 664 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 668 of 1000 (master vs FT_T)
+Finished game 665 (FT_T vs master): 1/2-1/2 {Draw by insufficient mating material}
+Started game 669 of 1000 (FT_T vs master)
+Finished game 666 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 670 of 1000 (master vs FT_T)
+Finished game 668 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 671 of 1000 (FT_T vs master)
+Finished game 667 (FT_T vs master): 0-1 {Black wins by adjudication}
+Started game 672 of 1000 (master vs FT_T)
+Finished game 670 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 673 of 1000 (FT_T vs master)
+Finished game 669 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 674 of 1000 (master vs FT_T)
+Finished game 672 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 675 of 1000 (FT_T vs master)
+Finished game 671 (FT_T vs master): 1/2-1/2 {Draw by fifty moves rule}
+Started game 676 of 1000 (master vs FT_T)
+Finished game 674 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 677 of 1000 (FT_T vs master)
+Finished game 673 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 678 of 1000 (master vs FT_T)
+Finished game 677 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 679 of 1000 (FT_T vs master)
+Finished game 676 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 680 of 1000 (master vs FT_T)
+Finished game 675 (FT_T vs master): 0-1 {Black wins by adjudication}
+Started game 681 of 1000 (FT_T vs master)
+Finished game 678 (master vs FT_T): 1/2-1/2 {Draw by insufficient mating material}
+Started game 682 of 1000 (master vs FT_T)
+Finished game 681 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 683 of 1000 (FT_T vs master)
+Finished game 682 (master vs FT_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 684 of 1000 (master vs FT_T)
+Finished game 680 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 685 of 1000 (FT_T vs master)
+Finished game 679 (FT_T vs master): 1/2-1/2 {Draw by insufficient mating material}
+Started game 686 of 1000 (master vs FT_T)
+Finished game 684 (master vs FT_T): 1/2-1/2 {Draw by adjudication}
+Started game 687 of 1000 (FT_T vs master)
+Finished game 683 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 688 of 1000 (master vs FT_T)
+Finished game 686 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 689 of 1000 (FT_T vs master)
+Finished game 685 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 690 of 1000 (master vs FT_T)
+Finished game 687 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 691 of 1000 (FT_T vs master)
+Finished game 688 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 692 of 1000 (master vs FT_T)
+Finished game 690 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 693 of 1000 (FT_T vs master)
+Finished game 691 (FT_T vs master): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 694 of 1000 (master vs FT_T)
+Finished game 694 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 695 of 1000 (FT_T vs master)
+Finished game 689 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 696 of 1000 (master vs FT_T)
+Finished game 692 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 697 of 1000 (FT_T vs master)
+Finished game 693 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 698 of 1000 (master vs FT_T)
+Finished game 696 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 699 of 1000 (FT_T vs master)
+Finished game 697 (FT_T vs master): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 700 of 1000 (master vs FT_T)
+Finished game 695 (FT_T vs master): 0-1 {Black wins by adjudication}
+Started game 701 of 1000 (FT_T vs master)
+Finished game 701 (FT_T vs master): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 702 of 1000 (master vs FT_T)
+Finished game 700 (master vs FT_T): 1/2-1/2 {Draw by adjudication}
+Started game 703 of 1000 (FT_T vs master)
+Finished game 698 (master vs FT_T): 1/2-1/2 {Draw by adjudication}
+Started game 704 of 1000 (master vs FT_T)
+Finished game 699 (FT_T vs master): 0-1 {Black wins by adjudication}
+Started game 705 of 1000 (FT_T vs master)
+Finished game 702 (master vs FT_T): 1/2-1/2 {Draw by adjudication}
+Started game 706 of 1000 (master vs FT_T)
+Finished game 705 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 707 of 1000 (FT_T vs master)
+Finished game 704 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 708 of 1000 (master vs FT_T)
+Finished game 703 (FT_T vs master): 1/2-1/2 {Draw by fifty moves rule}
+Started game 709 of 1000 (FT_T vs master)
+Finished game 706 (master vs FT_T): 1/2-1/2 {Draw by adjudication}
+Started game 710 of 1000 (master vs FT_T)
+Finished game 709 (FT_T vs master): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 711 of 1000 (FT_T vs master)
+Finished game 708 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 712 of 1000 (master vs FT_T)
+Finished game 707 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 713 of 1000 (FT_T vs master)
+Finished game 710 (master vs FT_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 714 of 1000 (master vs FT_T)
+Finished game 711 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 715 of 1000 (FT_T vs master)
+Finished game 712 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 716 of 1000 (master vs FT_T)
+Finished game 713 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 717 of 1000 (FT_T vs master)
+Finished game 715 (FT_T vs master): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 718 of 1000 (master vs FT_T)
+Finished game 714 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 719 of 1000 (FT_T vs master)
+Finished game 718 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 720 of 1000 (master vs FT_T)
+Finished game 716 (master vs FT_T): 1/2-1/2 {Draw by adjudication}
+Started game 721 of 1000 (FT_T vs master)
+Finished game 717 (FT_T vs master): 0-1 {Black wins by adjudication}
+Started game 722 of 1000 (master vs FT_T)
+Finished game 721 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 723 of 1000 (FT_T vs master)
+Finished game 719 (FT_T vs master): 1/2-1/2 {Draw by fifty moves rule}
+Started game 724 of 1000 (master vs FT_T)
+Finished game 720 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 725 of 1000 (FT_T vs master)
+Finished game 722 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 726 of 1000 (master vs FT_T)
+Finished game 723 (FT_T vs master): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 727 of 1000 (FT_T vs master)
+Finished game 724 (master vs FT_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 728 of 1000 (master vs FT_T)
+Finished game 726 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 729 of 1000 (FT_T vs master)
+Finished game 725 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 730 of 1000 (master vs FT_T)
+Finished game 729 (FT_T vs master): 0-1 {Black wins by adjudication}
+Started game 731 of 1000 (FT_T vs master)
+Finished game 728 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 732 of 1000 (master vs FT_T)
+Finished game 727 (FT_T vs master): 1/2-1/2 {Draw by fifty moves rule}
+Started game 733 of 1000 (FT_T vs master)
+Finished game 730 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 734 of 1000 (master vs FT_T)
+Finished game 731 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 735 of 1000 (FT_T vs master)
+Finished game 733 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 736 of 1000 (master vs FT_T)
+Finished game 732 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 737 of 1000 (FT_T vs master)
+Finished game 734 (master vs FT_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 738 of 1000 (master vs FT_T)
+Finished game 735 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 739 of 1000 (FT_T vs master)
+Finished game 736 (master vs FT_T): 1/2-1/2 {Draw by insufficient mating material}
+Started game 740 of 1000 (master vs FT_T)
+Finished game 737 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 741 of 1000 (FT_T vs master)
+Finished game 738 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 742 of 1000 (master vs FT_T)
+Finished game 739 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 743 of 1000 (FT_T vs master)
+Finished game 740 (master vs FT_T): 1/2-1/2 {Draw by adjudication}
+Started game 744 of 1000 (master vs FT_T)
+Finished game 741 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 745 of 1000 (FT_T vs master)
+Finished game 742 (master vs FT_T): 0-1 {Black wins by adjudication}
+Started game 746 of 1000 (master vs FT_T)
+Finished game 743 (FT_T vs master): 0-1 {Black wins by adjudication}
+Started game 747 of 1000 (FT_T vs master)
+Finished game 745 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 748 of 1000 (master vs FT_T)
+Finished game 746 (master vs FT_T): 1/2-1/2 {Draw by adjudication}
+Started game 749 of 1000 (FT_T vs master)
+Finished game 744 (master vs FT_T): 1/2-1/2 {Draw by adjudication}
+Started game 750 of 1000 (master vs FT_T)
+Finished game 748 (master vs FT_T): 1/2-1/2 {Draw by adjudication}
+Started game 751 of 1000 (FT_T vs master)
+Finished game 747 (FT_T vs master): 1/2-1/2 {Draw by insufficient mating material}
+Started game 752 of 1000 (master vs FT_T)
+Finished game 749 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 753 of 1000 (FT_T vs master)
+Finished game 750 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 754 of 1000 (master vs FT_T)
+Finished game 753 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 755 of 1000 (FT_T vs master)
+Finished game 752 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 756 of 1000 (master vs FT_T)
+Finished game 751 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 757 of 1000 (FT_T vs master)
+Finished game 754 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 758 of 1000 (master vs FT_T)
+Finished game 755 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 759 of 1000 (FT_T vs master)
+Finished game 757 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 760 of 1000 (master vs FT_T)
+Finished game 756 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 761 of 1000 (FT_T vs master)
+Finished game 758 (master vs FT_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 762 of 1000 (master vs FT_T)
+Finished game 760 (master vs FT_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 763 of 1000 (FT_T vs master)
+Finished game 761 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 764 of 1000 (master vs FT_T)
+Finished game 759 (FT_T vs master): 1/2-1/2 {Draw by fifty moves rule}
+Started game 765 of 1000 (FT_T vs master)
+Finished game 763 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 766 of 1000 (master vs FT_T)
+Finished game 764 (master vs FT_T): 1/2-1/2 {Draw by adjudication}
+Started game 767 of 1000 (FT_T vs master)
+Finished game 765 (FT_T vs master): 1/2-1/2 {Draw by insufficient mating material}
+Started game 768 of 1000 (master vs FT_T)
+Finished game 762 (master vs FT_T): 1/2-1/2 {Draw by fifty moves rule}
+Started game 769 of 1000 (FT_T vs master)
+Finished game 766 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 770 of 1000 (master vs FT_T)
+Finished game 767 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 771 of 1000 (FT_T vs master)
+Finished game 768 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 772 of 1000 (master vs FT_T)
+Finished game 769 (FT_T vs master): 1-0 {White mates}
+Started game 773 of 1000 (FT_T vs master)
+Finished game 770 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 774 of 1000 (master vs FT_T)
+Finished game 771 (FT_T vs master): 0-1 {Black wins by adjudication}
+Started game 775 of 1000 (FT_T vs master)
+Finished game 772 (master vs FT_T): 1/2-1/2 {Draw by fifty moves rule}
+Started game 776 of 1000 (master vs FT_T)
+Finished game 775 (FT_T vs master): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 777 of 1000 (FT_T vs master)
+Finished game 773 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 778 of 1000 (master vs FT_T)
+Finished game 774 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 779 of 1000 (FT_T vs master)
+Finished game 776 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 780 of 1000 (master vs FT_T)
+Finished game 780 (master vs FT_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 781 of 1000 (FT_T vs master)
+Finished game 778 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 782 of 1000 (master vs FT_T)
+Finished game 777 (FT_T vs master): 1/2-1/2 {Draw by insufficient mating material}
+Started game 783 of 1000 (FT_T vs master)
+Finished game 779 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 784 of 1000 (master vs FT_T)
+Finished game 781 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 785 of 1000 (FT_T vs master)
+Finished game 782 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 786 of 1000 (master vs FT_T)
+Finished game 784 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 787 of 1000 (FT_T vs master)
+Finished game 783 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 788 of 1000 (master vs FT_T)
+Finished game 786 (master vs FT_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 789 of 1000 (FT_T vs master)
+Finished game 785 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 790 of 1000 (master vs FT_T)
+Finished game 787 (FT_T vs master): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 791 of 1000 (FT_T vs master)
+Finished game 788 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 792 of 1000 (master vs FT_T)
+Finished game 790 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 793 of 1000 (FT_T vs master)
+Finished game 789 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 794 of 1000 (master vs FT_T)
+Finished game 791 (FT_T vs master): 0-1 {Black wins by adjudication}
+Started game 795 of 1000 (FT_T vs master)
+Finished game 794 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 796 of 1000 (master vs FT_T)
+Finished game 792 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 797 of 1000 (FT_T vs master)
+Finished game 793 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 798 of 1000 (master vs FT_T)
+Finished game 795 (FT_T vs master): 0-1 {Black wins by adjudication}
+Started game 799 of 1000 (FT_T vs master)
+Finished game 796 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 800 of 1000 (master vs FT_T)
+Finished game 797 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 801 of 1000 (FT_T vs master)
+Finished game 799 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 802 of 1000 (master vs FT_T)
+Finished game 798 (master vs FT_T): 1/2-1/2 {Draw by adjudication}
+Started game 803 of 1000 (FT_T vs master)
+Finished game 800 (master vs FT_T): 1-0 {White wins by adjudication}
+--------------------------------------------------
+Results of FT_T vs master (20000 nodes, 1t, 16MB, UHO_4060_v4.epd):
+Elo: -65.02 +/- 14.84, nElo: -108.02 +/- 24.08
+LOS: 0.00 %, DrawRatio: 44.75 %, PairsRatio: 0.28
+Games: 800, Wins: 162, Losses: 310, Draws: 328, Points: 326.0 (40.75 %)
+Ptnml(0-2): [31, 142, 179, 40, 8], WL/DD Ratio: 1.45
+--------------------------------------------------
+Started game 804 of 1000 (master vs FT_T)
+Finished game 802 (master vs FT_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 805 of 1000 (FT_T vs master)
+Finished game 803 (FT_T vs master): 1/2-1/2 {Draw by insufficient mating material}
+Started game 806 of 1000 (master vs FT_T)
+Finished game 801 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 807 of 1000 (FT_T vs master)
+Finished game 804 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 808 of 1000 (master vs FT_T)
+Finished game 805 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 809 of 1000 (FT_T vs master)
+Finished game 807 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 810 of 1000 (master vs FT_T)
+Finished game 808 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 811 of 1000 (FT_T vs master)
+Finished game 809 (FT_T vs master): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 812 of 1000 (master vs FT_T)
+Finished game 806 (master vs FT_T): 1/2-1/2 {Draw by insufficient mating material}
+Started game 813 of 1000 (FT_T vs master)
+Finished game 811 (FT_T vs master): 0-1 {Black wins by adjudication}
+Started game 814 of 1000 (master vs FT_T)
+Finished game 810 (master vs FT_T): 1/2-1/2 {Draw by insufficient mating material}
+Started game 815 of 1000 (FT_T vs master)
+Finished game 814 (master vs FT_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 816 of 1000 (master vs FT_T)
+Finished game 812 (master vs FT_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 817 of 1000 (FT_T vs master)
+Finished game 813 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 818 of 1000 (master vs FT_T)
+Finished game 817 (FT_T vs master): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 819 of 1000 (FT_T vs master)
+Finished game 818 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 820 of 1000 (master vs FT_T)
+Finished game 815 (FT_T vs master): 1/2-1/2 {Draw by insufficient mating material}
+Started game 821 of 1000 (FT_T vs master)
+Finished game 816 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 822 of 1000 (master vs FT_T)
+Finished game 820 (master vs FT_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 823 of 1000 (FT_T vs master)
+Finished game 821 (FT_T vs master): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 824 of 1000 (master vs FT_T)
+Finished game 819 (FT_T vs master): 1/2-1/2 {Draw by fifty moves rule}
+Started game 825 of 1000 (FT_T vs master)
+Finished game 823 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 826 of 1000 (master vs FT_T)
+Finished game 822 (master vs FT_T): 1-0 {White mates}
+Started game 827 of 1000 (FT_T vs master)
+Finished game 824 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 828 of 1000 (master vs FT_T)
+Finished game 826 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 829 of 1000 (FT_T vs master)
+Finished game 825 (FT_T vs master): 1/2-1/2 {Draw by insufficient mating material}
+Started game 830 of 1000 (master vs FT_T)
+Finished game 827 (FT_T vs master): 0-1 {Black wins by adjudication}
+Started game 831 of 1000 (FT_T vs master)
+Finished game 829 (FT_T vs master): 0-1 {Black wins by adjudication}
+Started game 832 of 1000 (master vs FT_T)
+Finished game 830 (master vs FT_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 833 of 1000 (FT_T vs master)
+Finished game 828 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 834 of 1000 (master vs FT_T)
+Finished game 831 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 835 of 1000 (FT_T vs master)
+Finished game 834 (master vs FT_T): 1-0 {White mates}
+Started game 836 of 1000 (master vs FT_T)
+Finished game 833 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 837 of 1000 (FT_T vs master)
+Finished game 832 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 838 of 1000 (master vs FT_T)
+Finished game 835 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 839 of 1000 (FT_T vs master)
+Finished game 837 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 840 of 1000 (master vs FT_T)
+Finished game 838 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 841 of 1000 (FT_T vs master)
+Finished game 836 (master vs FT_T): 1/2-1/2 {Draw by insufficient mating material}
+Started game 842 of 1000 (master vs FT_T)
+Finished game 839 (FT_T vs master): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 843 of 1000 (FT_T vs master)
+Finished game 840 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 844 of 1000 (master vs FT_T)
+Finished game 842 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 845 of 1000 (FT_T vs master)
+Finished game 841 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 846 of 1000 (master vs FT_T)
+Finished game 843 (FT_T vs master): 0-1 {Black wins by adjudication}
+Started game 847 of 1000 (FT_T vs master)
+Finished game 844 (master vs FT_T): 1/2-1/2 {Draw by adjudication}
+Started game 848 of 1000 (master vs FT_T)
+Finished game 845 (FT_T vs master): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 849 of 1000 (FT_T vs master)
+Finished game 846 (master vs FT_T): 1/2-1/2 {Draw by adjudication}
+Started game 850 of 1000 (master vs FT_T)
+Finished game 847 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 851 of 1000 (FT_T vs master)
+Finished game 848 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 852 of 1000 (master vs FT_T)
+Finished game 850 (master vs FT_T): 1/2-1/2 {Draw by adjudication}
+Started game 853 of 1000 (FT_T vs master)
+Finished game 851 (FT_T vs master): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 854 of 1000 (master vs FT_T)
+Finished game 849 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 855 of 1000 (FT_T vs master)
+Finished game 855 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 856 of 1000 (master vs FT_T)
+Finished game 853 (FT_T vs master): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 857 of 1000 (FT_T vs master)
+Finished game 854 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 858 of 1000 (master vs FT_T)
+Finished game 852 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 859 of 1000 (FT_T vs master)
+Finished game 856 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 860 of 1000 (master vs FT_T)
+Finished game 857 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 861 of 1000 (FT_T vs master)
+Finished game 858 (master vs FT_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 862 of 1000 (master vs FT_T)
+Finished game 859 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 863 of 1000 (FT_T vs master)
+Finished game 861 (FT_T vs master): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 864 of 1000 (master vs FT_T)
+Finished game 860 (master vs FT_T): 1/2-1/2 {Draw by stalemate}
+Started game 865 of 1000 (FT_T vs master)
+Finished game 863 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 866 of 1000 (master vs FT_T)
+Finished game 862 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 867 of 1000 (FT_T vs master)
+Finished game 864 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 868 of 1000 (master vs FT_T)
+Finished game 866 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 869 of 1000 (FT_T vs master)
+Finished game 867 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 870 of 1000 (master vs FT_T)
+Finished game 868 (master vs FT_T): 1/2-1/2 {Draw by adjudication}
+Started game 871 of 1000 (FT_T vs master)
+Finished game 865 (FT_T vs master): 1/2-1/2 {Draw by fifty moves rule}
+Started game 872 of 1000 (master vs FT_T)
+Finished game 870 (master vs FT_T): 1/2-1/2 {Draw by insufficient mating material}
+Started game 873 of 1000 (FT_T vs master)
+Finished game 872 (master vs FT_T): 1/2-1/2 {Draw by adjudication}
+Started game 874 of 1000 (master vs FT_T)
+Finished game 871 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 875 of 1000 (FT_T vs master)
+Finished game 869 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 876 of 1000 (master vs FT_T)
+Finished game 873 (FT_T vs master): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 877 of 1000 (FT_T vs master)
+Finished game 874 (master vs FT_T): 1/2-1/2 {Draw by adjudication}
+Started game 878 of 1000 (master vs FT_T)
+Finished game 875 (FT_T vs master): 0-1 {Black wins by adjudication}
+Started game 879 of 1000 (FT_T vs master)
+Finished game 876 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 880 of 1000 (master vs FT_T)
+Finished game 878 (master vs FT_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 881 of 1000 (FT_T vs master)
+Finished game 877 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 882 of 1000 (master vs FT_T)
+Finished game 882 (master vs FT_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 883 of 1000 (FT_T vs master)
+Finished game 881 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 884 of 1000 (master vs FT_T)
+Finished game 879 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 885 of 1000 (FT_T vs master)
+Finished game 880 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 886 of 1000 (master vs FT_T)
+Finished game 883 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 887 of 1000 (FT_T vs master)
+Finished game 887 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 888 of 1000 (master vs FT_T)
+Finished game 884 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 889 of 1000 (FT_T vs master)
+Finished game 885 (FT_T vs master): 0-1 {Black wins by adjudication}
+Started game 890 of 1000 (master vs FT_T)
+Finished game 886 (master vs FT_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 891 of 1000 (FT_T vs master)
+Finished game 889 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 892 of 1000 (master vs FT_T)
+Finished game 888 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 893 of 1000 (FT_T vs master)
+Finished game 891 (FT_T vs master): 1/2-1/2 {Draw by insufficient mating material}
+Started game 894 of 1000 (master vs FT_T)
+Finished game 890 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 895 of 1000 (FT_T vs master)
+Finished game 892 (master vs FT_T): 1/2-1/2 {Draw by adjudication}
+Started game 896 of 1000 (master vs FT_T)
+Finished game 893 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 897 of 1000 (FT_T vs master)
+Finished game 894 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 898 of 1000 (master vs FT_T)
+Finished game 896 (master vs FT_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 899 of 1000 (FT_T vs master)
+Finished game 895 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 900 of 1000 (master vs FT_T)
+Finished game 897 (FT_T vs master): 1/2-1/2 {Draw by insufficient mating material}
+Started game 901 of 1000 (FT_T vs master)
+Finished game 899 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 902 of 1000 (master vs FT_T)
+Finished game 898 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 903 of 1000 (FT_T vs master)
+Finished game 901 (FT_T vs master): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 904 of 1000 (master vs FT_T)
+Finished game 900 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 905 of 1000 (FT_T vs master)
+Finished game 902 (master vs FT_T): 1-0 {White mates}
+Started game 906 of 1000 (master vs FT_T)
+Finished game 904 (master vs FT_T): 1/2-1/2 {Draw by adjudication}
+Started game 907 of 1000 (FT_T vs master)
+Finished game 903 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 908 of 1000 (master vs FT_T)
+Finished game 905 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 909 of 1000 (FT_T vs master)
+Finished game 906 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 910 of 1000 (master vs FT_T)
+Finished game 907 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 911 of 1000 (FT_T vs master)
+Finished game 908 (master vs FT_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 912 of 1000 (master vs FT_T)
+Finished game 909 (FT_T vs master): 0-1 {Black wins by adjudication}
+Started game 913 of 1000 (FT_T vs master)
+Finished game 911 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 914 of 1000 (master vs FT_T)
+Finished game 912 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 915 of 1000 (FT_T vs master)
+Finished game 910 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 916 of 1000 (master vs FT_T)
+Finished game 914 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 917 of 1000 (FT_T vs master)
+Finished game 915 (FT_T vs master): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 918 of 1000 (master vs FT_T)
+Finished game 913 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 919 of 1000 (FT_T vs master)
+Finished game 916 (master vs FT_T): 1/2-1/2 {Draw by adjudication}
+Started game 920 of 1000 (master vs FT_T)
+Finished game 918 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 921 of 1000 (FT_T vs master)
+Finished game 919 (FT_T vs master): 0-1 {Black wins by adjudication}
+Started game 922 of 1000 (master vs FT_T)
+Finished game 917 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 923 of 1000 (FT_T vs master)
+Finished game 920 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 924 of 1000 (master vs FT_T)
+Finished game 921 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 925 of 1000 (FT_T vs master)
+Finished game 924 (master vs FT_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 926 of 1000 (master vs FT_T)
+Finished game 922 (master vs FT_T): 1/2-1/2 {Draw by adjudication}
+Started game 927 of 1000 (FT_T vs master)
+Finished game 925 (FT_T vs master): 0-1 {Black wins by adjudication}
+Started game 928 of 1000 (master vs FT_T)
+Finished game 923 (FT_T vs master): 0-1 {Black wins by adjudication}
+Started game 929 of 1000 (FT_T vs master)
+Finished game 926 (master vs FT_T): 1/2-1/2 {Draw by adjudication}
+Started game 930 of 1000 (master vs FT_T)
+Finished game 928 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 931 of 1000 (FT_T vs master)
+Finished game 927 (FT_T vs master): 0-1 {Black wins by adjudication}
+Started game 932 of 1000 (master vs FT_T)
+Finished game 929 (FT_T vs master): 1/2-1/2 {Draw by insufficient mating material}
+Started game 933 of 1000 (FT_T vs master)
+Finished game 930 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 934 of 1000 (master vs FT_T)
+Finished game 931 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 935 of 1000 (FT_T vs master)
+Finished game 933 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 936 of 1000 (master vs FT_T)
+Finished game 932 (master vs FT_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 937 of 1000 (FT_T vs master)
+Finished game 934 (master vs FT_T): 1/2-1/2 {Draw by adjudication}
+Started game 938 of 1000 (master vs FT_T)
+Finished game 935 (FT_T vs master): 0-1 {Black wins by adjudication}
+Started game 939 of 1000 (FT_T vs master)
+Finished game 938 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 940 of 1000 (master vs FT_T)
+Finished game 937 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 941 of 1000 (FT_T vs master)
+Finished game 936 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 942 of 1000 (master vs FT_T)
+Finished game 942 (master vs FT_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 943 of 1000 (FT_T vs master)
+Finished game 939 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 944 of 1000 (master vs FT_T)
+Finished game 940 (master vs FT_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 945 of 1000 (FT_T vs master)
+Finished game 941 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 946 of 1000 (master vs FT_T)
+Finished game 943 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 947 of 1000 (FT_T vs master)
+Finished game 944 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 948 of 1000 (master vs FT_T)
+Finished game 946 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 949 of 1000 (FT_T vs master)
+Finished game 945 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 950 of 1000 (master vs FT_T)
+Finished game 947 (FT_T vs master): 0-1 {Black wins by adjudication}
+Started game 951 of 1000 (FT_T vs master)
+Finished game 948 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 952 of 1000 (master vs FT_T)
+Finished game 950 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 953 of 1000 (FT_T vs master)
+Finished game 949 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 954 of 1000 (master vs FT_T)
+Finished game 951 (FT_T vs master): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 955 of 1000 (FT_T vs master)
+Finished game 952 (master vs FT_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 956 of 1000 (master vs FT_T)
+Finished game 953 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 957 of 1000 (FT_T vs master)
+Finished game 954 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 958 of 1000 (master vs FT_T)
+Finished game 956 (master vs FT_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 959 of 1000 (FT_T vs master)
+Finished game 955 (FT_T vs master): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 960 of 1000 (master vs FT_T)
+Finished game 957 (FT_T vs master): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 961 of 1000 (FT_T vs master)
+Finished game 959 (FT_T vs master): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 962 of 1000 (master vs FT_T)
+Finished game 960 (master vs FT_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 963 of 1000 (FT_T vs master)
+Finished game 958 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 964 of 1000 (master vs FT_T)
+Finished game 961 (FT_T vs master): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 965 of 1000 (FT_T vs master)
+Finished game 964 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 966 of 1000 (master vs FT_T)
+Finished game 963 (FT_T vs master): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 967 of 1000 (FT_T vs master)
+Finished game 962 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 968 of 1000 (master vs FT_T)
+Finished game 965 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 969 of 1000 (FT_T vs master)
+Finished game 966 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 970 of 1000 (master vs FT_T)
+Finished game 968 (master vs FT_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 971 of 1000 (FT_T vs master)
+Finished game 969 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 972 of 1000 (master vs FT_T)
+Finished game 967 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 973 of 1000 (FT_T vs master)
+Finished game 970 (master vs FT_T): 1/2-1/2 {Draw by adjudication}
+Started game 974 of 1000 (master vs FT_T)
+Finished game 972 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 975 of 1000 (FT_T vs master)
+Finished game 971 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 976 of 1000 (master vs FT_T)
+Finished game 973 (FT_T vs master): 1/2-1/2 {Draw by fifty moves rule}
+Started game 977 of 1000 (FT_T vs master)
+Finished game 974 (master vs FT_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 978 of 1000 (master vs FT_T)
+Finished game 975 (FT_T vs master): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 979 of 1000 (FT_T vs master)
+Finished game 976 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 980 of 1000 (master vs FT_T)
+Finished game 977 (FT_T vs master): 1/2-1/2 {Draw by fifty moves rule}
+Started game 981 of 1000 (FT_T vs master)
+Finished game 978 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 982 of 1000 (master vs FT_T)
+Finished game 979 (FT_T vs master): 1/2-1/2 {Draw by fifty moves rule}
+Started game 983 of 1000 (FT_T vs master)
+Finished game 980 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 984 of 1000 (master vs FT_T)
+Finished game 982 (master vs FT_T): 0-1 {Black wins by adjudication}
+Started game 985 of 1000 (FT_T vs master)
+Finished game 984 (master vs FT_T): 1/2-1/2 {Draw by adjudication}
+Started game 986 of 1000 (master vs FT_T)
+Finished game 983 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 987 of 1000 (FT_T vs master)
+Finished game 981 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 988 of 1000 (master vs FT_T)
+Finished game 985 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 989 of 1000 (FT_T vs master)
+Finished game 986 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 990 of 1000 (master vs FT_T)
+Finished game 988 (master vs FT_T): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 991 of 1000 (FT_T vs master)
+Finished game 987 (FT_T vs master): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 992 of 1000 (master vs FT_T)
+Finished game 989 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 993 of 1000 (FT_T vs master)
+Finished game 990 (master vs FT_T): 1-0 {White mates}
+Started game 994 of 1000 (master vs FT_T)
+Finished game 991 (FT_T vs master): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 995 of 1000 (FT_T vs master)
+Finished game 992 (master vs FT_T): 1-0 {White wins by adjudication}
+Started game 996 of 1000 (master vs FT_T)
+Finished game 993 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 997 of 1000 (FT_T vs master)
+Finished game 995 (FT_T vs master): 1-0 {White wins by adjudication}
+Started game 998 of 1000 (master vs FT_T)
+Finished game 994 (master vs FT_T): 1/2-1/2 {Draw by adjudication}
+Started game 999 of 1000 (FT_T vs master)
+Finished game 997 (FT_T vs master): 1/2-1/2 {Draw by adjudication}
+Started game 1000 of 1000 (master vs FT_T)
+Finished game 996 (master vs FT_T): 1-0 {White wins by adjudication}
+Finished game 998 (master vs FT_T): 1/2-1/2 {Draw by adjudication}
+Finished game 1000 (master vs FT_T): 1-0 {White wins by adjudication}
+Finished game 999 (FT_T vs master): 0-1 {Black wins by adjudication}
+--------------------------------------------------
+Results of FT_T vs master (20000 nodes, 1t, 16MB, UHO_4060_v4.epd):
+Elo: -66.82 +/- 13.37, nElo: -110.36 +/- 21.53
+LOS: 0.00 %, DrawRatio: 42.20 %, PairsRatio: 0.29
+Games: 1000, Wins: 191, Losses: 381, Draws: 428, Points: 405.0 (40.50 %)
+Ptnml(0-2): [39, 185, 211, 57, 8], WL/DD Ratio: 1.27
+--------------------------------------------------
+Finished match
+Total Time: 00:22:04 (hours:minutes:seconds)
+

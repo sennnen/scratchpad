@@ -14,7 +14,7 @@ gq_blend_p1.5e7                    -251.9   [ -315.3,  -197.9]
 game_f4                            -362.0   [ -430.1,  -302.8]
 game_blend_p5e6                    -603.9   [ -759.1,  -506.8]
 game_score                        -1207.7   [-1463.7, -1062.0]
-game_blend                        -1330.8   [-6158.0, -1168.5]
+game_blend                        -1330.8   [-4086.0, -1168.5]
 matches:
   game_blend vs game_blend_p5e6: ptnml [97, 0, 3, 0, 0] games 200
   game_score vs game_blend_p5e6: ptnml [93, 2, 5, 0, 0] games 200

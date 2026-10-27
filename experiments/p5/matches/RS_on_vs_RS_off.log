@@ -1,0 +1,2040 @@
+/home/user/work/fastchess/fastchess -engine cmd=/home/user/data/sf_p2 name=RS_on option.EvalFile=/home/user/nets/p5/RS_on.nnue tc=inf nodes=20000 -engine cmd=/home/user/data/sf_p2 name=RS_off option.EvalFile=/home/user/nets/p5/RS_off.nnue tc=inf nodes=20000 -each option.Threads=1 option.Hash=16 -openings file=/home/user/data/UHO_4060_v4.epd format=epd order=random -srand 1 -repeat -rounds 500 -concurrency 4 -resign movecount=3 score=1000 twosided=true -draw movenumber=40 movecount=8 score=8 -pgnout file=experiments/p5/matches/RS_on_vs_RS_off.pgn -ratinginterval 100
+Indexing opening suite...
+Started game 2 of 1000 (RS_off vs RS_on)
+Started game 3 of 1000 (RS_on vs RS_off)
+Started game 1 of 1000 (RS_on vs RS_off)
+Started game 4 of 1000 (RS_off vs RS_on)
+Finished game 3 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 5 of 1000 (RS_on vs RS_off)
+Finished game 2 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 6 of 1000 (RS_off vs RS_on)
+Finished game 4 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 7 of 1000 (RS_on vs RS_off)
+Finished game 1 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 8 of 1000 (RS_off vs RS_on)
+Finished game 6 (RS_off vs RS_on): 0-1 {Black wins by adjudication}
+Started game 9 of 1000 (RS_on vs RS_off)
+Finished game 5 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 10 of 1000 (RS_off vs RS_on)
+Finished game 7 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 11 of 1000 (RS_on vs RS_off)
+Finished game 10 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 12 of 1000 (RS_off vs RS_on)
+Finished game 8 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 13 of 1000 (RS_on vs RS_off)
+Finished game 11 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 14 of 1000 (RS_off vs RS_on)
+Finished game 9 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 15 of 1000 (RS_on vs RS_off)
+Finished game 13 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 16 of 1000 (RS_off vs RS_on)
+Finished game 12 (RS_off vs RS_on): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 17 of 1000 (RS_on vs RS_off)
+Finished game 15 (RS_on vs RS_off): 1/2-1/2 {Draw by insufficient mating material}
+Started game 18 of 1000 (RS_off vs RS_on)
+Finished game 14 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 19 of 1000 (RS_on vs RS_off)
+Finished game 16 (RS_off vs RS_on): 1/2-1/2 {Draw by stalemate}
+Started game 20 of 1000 (RS_off vs RS_on)
+Finished game 18 (RS_off vs RS_on): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 21 of 1000 (RS_on vs RS_off)
+Finished game 17 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 22 of 1000 (RS_off vs RS_on)
+Finished game 19 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 23 of 1000 (RS_on vs RS_off)
+Finished game 21 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 24 of 1000 (RS_off vs RS_on)
+Finished game 22 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 25 of 1000 (RS_on vs RS_off)
+Finished game 20 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 26 of 1000 (RS_off vs RS_on)
+Finished game 23 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 27 of 1000 (RS_on vs RS_off)
+Finished game 24 (RS_off vs RS_on): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 28 of 1000 (RS_off vs RS_on)
+Finished game 25 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 29 of 1000 (RS_on vs RS_off)
+Finished game 28 (RS_off vs RS_on): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 30 of 1000 (RS_off vs RS_on)
+Finished game 26 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 31 of 1000 (RS_on vs RS_off)
+Finished game 27 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 32 of 1000 (RS_off vs RS_on)
+Finished game 29 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 33 of 1000 (RS_on vs RS_off)
+Finished game 31 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 34 of 1000 (RS_off vs RS_on)
+Finished game 32 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 35 of 1000 (RS_on vs RS_off)
+Finished game 30 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 36 of 1000 (RS_off vs RS_on)
+Finished game 34 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 37 of 1000 (RS_on vs RS_off)
+Finished game 33 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 38 of 1000 (RS_off vs RS_on)
+Finished game 35 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 39 of 1000 (RS_on vs RS_off)
+Finished game 36 (RS_off vs RS_on): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 40 of 1000 (RS_off vs RS_on)
+Finished game 39 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 41 of 1000 (RS_on vs RS_off)
+Finished game 38 (RS_off vs RS_on): 1-0 {White mates}
+Started game 42 of 1000 (RS_off vs RS_on)
+Finished game 37 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 43 of 1000 (RS_on vs RS_off)
+Finished game 40 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 44 of 1000 (RS_off vs RS_on)
+Finished game 41 (RS_on vs RS_off): 1/2-1/2 {Draw by insufficient mating material}
+Started game 45 of 1000 (RS_on vs RS_off)
+Finished game 42 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 46 of 1000 (RS_off vs RS_on)
+Finished game 44 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 47 of 1000 (RS_on vs RS_off)
+Finished game 43 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 48 of 1000 (RS_off vs RS_on)
+Finished game 45 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 49 of 1000 (RS_on vs RS_off)
+Finished game 46 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 50 of 1000 (RS_off vs RS_on)
+Finished game 47 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 51 of 1000 (RS_on vs RS_off)
+Finished game 49 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 52 of 1000 (RS_off vs RS_on)
+Finished game 50 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 53 of 1000 (RS_on vs RS_off)
+Finished game 52 (RS_off vs RS_on): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 54 of 1000 (RS_off vs RS_on)
+Finished game 48 (RS_off vs RS_on): 1/2-1/2 {Draw by fifty moves rule}
+Started game 55 of 1000 (RS_on vs RS_off)
+Finished game 51 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 56 of 1000 (RS_off vs RS_on)
+Finished game 53 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 57 of 1000 (RS_on vs RS_off)
+Finished game 55 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 58 of 1000 (RS_off vs RS_on)
+Finished game 56 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 59 of 1000 (RS_on vs RS_off)
+Finished game 57 (RS_on vs RS_off): 0-1 {Black wins by adjudication}
+Started game 60 of 1000 (RS_off vs RS_on)
+Finished game 54 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 61 of 1000 (RS_on vs RS_off)
+Finished game 59 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 62 of 1000 (RS_off vs RS_on)
+Finished game 60 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 63 of 1000 (RS_on vs RS_off)
+Finished game 58 (RS_off vs RS_on): 0-1 {Black wins by adjudication}
+Started game 64 of 1000 (RS_off vs RS_on)
+Finished game 61 (RS_on vs RS_off): 0-1 {Black wins by adjudication}
+Started game 65 of 1000 (RS_on vs RS_off)
+Finished game 65 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 66 of 1000 (RS_off vs RS_on)
+Finished game 63 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 67 of 1000 (RS_on vs RS_off)
+Finished game 62 (RS_off vs RS_on): 1/2-1/2 {Draw by fifty moves rule}
+Started game 68 of 1000 (RS_off vs RS_on)
+Finished game 64 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 69 of 1000 (RS_on vs RS_off)
+Finished game 67 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 70 of 1000 (RS_off vs RS_on)
+Finished game 68 (RS_off vs RS_on): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 71 of 1000 (RS_on vs RS_off)
+Finished game 66 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 72 of 1000 (RS_off vs RS_on)
+Finished game 69 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 73 of 1000 (RS_on vs RS_off)
+Finished game 70 (RS_off vs RS_on): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 74 of 1000 (RS_off vs RS_on)
+Finished game 71 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 75 of 1000 (RS_on vs RS_off)
+Finished game 72 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 76 of 1000 (RS_off vs RS_on)
+Finished game 73 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 77 of 1000 (RS_on vs RS_off)
+Finished game 74 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 78 of 1000 (RS_off vs RS_on)
+Finished game 75 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 79 of 1000 (RS_on vs RS_off)
+Finished game 76 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 80 of 1000 (RS_off vs RS_on)
+Finished game 77 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 81 of 1000 (RS_on vs RS_off)
+Finished game 78 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 82 of 1000 (RS_off vs RS_on)
+Finished game 81 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 83 of 1000 (RS_on vs RS_off)
+Finished game 80 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 84 of 1000 (RS_off vs RS_on)
+Finished game 79 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 85 of 1000 (RS_on vs RS_off)
+Finished game 82 (RS_off vs RS_on): 0-1 {Black wins by adjudication}
+Started game 86 of 1000 (RS_off vs RS_on)
+Finished game 86 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 87 of 1000 (RS_on vs RS_off)
+Finished game 84 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 88 of 1000 (RS_off vs RS_on)
+Finished game 83 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 89 of 1000 (RS_on vs RS_off)
+Finished game 87 (RS_on vs RS_off): 1/2-1/2 {Draw by stalemate}
+Started game 90 of 1000 (RS_off vs RS_on)
+Finished game 85 (RS_on vs RS_off): 1/2-1/2 {Draw by fifty moves rule}
+Started game 91 of 1000 (RS_on vs RS_off)
+Finished game 88 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 92 of 1000 (RS_off vs RS_on)
+Finished game 89 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 93 of 1000 (RS_on vs RS_off)
+Finished game 92 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 94 of 1000 (RS_off vs RS_on)
+Finished game 91 (RS_on vs RS_off): 1/2-1/2 {Draw by insufficient mating material}
+Started game 95 of 1000 (RS_on vs RS_off)
+Finished game 90 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 96 of 1000 (RS_off vs RS_on)
+Finished game 93 (RS_on vs RS_off): 0-1 {Black wins by adjudication}
+Started game 97 of 1000 (RS_on vs RS_off)
+Finished game 97 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 98 of 1000 (RS_off vs RS_on)
+Finished game 94 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 99 of 1000 (RS_on vs RS_off)
+Finished game 96 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 100 of 1000 (RS_off vs RS_on)
+Finished game 95 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 101 of 1000 (RS_on vs RS_off)
+Finished game 99 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 102 of 1000 (RS_off vs RS_on)
+Finished game 100 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 103 of 1000 (RS_on vs RS_off)
+Finished game 98 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 104 of 1000 (RS_off vs RS_on)
+Finished game 101 (RS_on vs RS_off): 0-1 {Black wins by adjudication}
+Started game 105 of 1000 (RS_on vs RS_off)
+Finished game 102 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 106 of 1000 (RS_off vs RS_on)
+Finished game 103 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 107 of 1000 (RS_on vs RS_off)
+Finished game 105 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 108 of 1000 (RS_off vs RS_on)
+Finished game 104 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 109 of 1000 (RS_on vs RS_off)
+Finished game 108 (RS_off vs RS_on): 1/2-1/2 {Draw by insufficient mating material}
+Started game 110 of 1000 (RS_off vs RS_on)
+Finished game 106 (RS_off vs RS_on): 0-1 {Black wins by adjudication}
+Started game 111 of 1000 (RS_on vs RS_off)
+Finished game 107 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 112 of 1000 (RS_off vs RS_on)
+Finished game 109 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 113 of 1000 (RS_on vs RS_off)
+Finished game 111 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 114 of 1000 (RS_off vs RS_on)
+Finished game 110 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 115 of 1000 (RS_on vs RS_off)
+Finished game 112 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 116 of 1000 (RS_off vs RS_on)
+Finished game 113 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 117 of 1000 (RS_on vs RS_off)
+Finished game 115 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 118 of 1000 (RS_off vs RS_on)
+Finished game 114 (RS_off vs RS_on): 1/2-1/2 {Draw by fifty moves rule}
+Started game 119 of 1000 (RS_on vs RS_off)
+Finished game 118 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 120 of 1000 (RS_off vs RS_on)
+Finished game 116 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 121 of 1000 (RS_on vs RS_off)
+Finished game 117 (RS_on vs RS_off): 1/2-1/2 {Draw by fifty moves rule}
+Started game 122 of 1000 (RS_off vs RS_on)
+Finished game 121 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 123 of 1000 (RS_on vs RS_off)
+Finished game 120 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 124 of 1000 (RS_off vs RS_on)
+Finished game 119 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 125 of 1000 (RS_on vs RS_off)
+Finished game 122 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 126 of 1000 (RS_off vs RS_on)
+Finished game 123 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 127 of 1000 (RS_on vs RS_off)
+Finished game 124 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 128 of 1000 (RS_off vs RS_on)
+Finished game 125 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 129 of 1000 (RS_on vs RS_off)
+Finished game 126 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 130 of 1000 (RS_off vs RS_on)
+Finished game 127 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 131 of 1000 (RS_on vs RS_off)
+Finished game 129 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 132 of 1000 (RS_off vs RS_on)
+Finished game 128 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 133 of 1000 (RS_on vs RS_off)
+Finished game 130 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 134 of 1000 (RS_off vs RS_on)
+Finished game 131 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 135 of 1000 (RS_on vs RS_off)
+Finished game 132 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 136 of 1000 (RS_off vs RS_on)
+Finished game 133 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 137 of 1000 (RS_on vs RS_off)
+Finished game 134 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 138 of 1000 (RS_off vs RS_on)
+Finished game 135 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 139 of 1000 (RS_on vs RS_off)
+Finished game 136 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 140 of 1000 (RS_off vs RS_on)
+Finished game 139 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 141 of 1000 (RS_on vs RS_off)
+Finished game 138 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 142 of 1000 (RS_off vs RS_on)
+Finished game 137 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 143 of 1000 (RS_on vs RS_off)
+Finished game 141 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 144 of 1000 (RS_off vs RS_on)
+Finished game 140 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 145 of 1000 (RS_on vs RS_off)
+Finished game 142 (RS_off vs RS_on): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 146 of 1000 (RS_off vs RS_on)
+Finished game 144 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 147 of 1000 (RS_on vs RS_off)
+Finished game 143 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 148 of 1000 (RS_off vs RS_on)
+Finished game 145 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 149 of 1000 (RS_on vs RS_off)
+Finished game 148 (RS_off vs RS_on): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 150 of 1000 (RS_off vs RS_on)
+Finished game 147 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 151 of 1000 (RS_on vs RS_off)
+Finished game 146 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 152 of 1000 (RS_off vs RS_on)
+Finished game 150 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 153 of 1000 (RS_on vs RS_off)
+Finished game 151 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 154 of 1000 (RS_off vs RS_on)
+Finished game 152 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 155 of 1000 (RS_on vs RS_off)
+Finished game 153 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 156 of 1000 (RS_off vs RS_on)
+Finished game 149 (RS_on vs RS_off): 1/2-1/2 {Draw by fifty moves rule}
+Started game 157 of 1000 (RS_on vs RS_off)
+Finished game 154 (RS_off vs RS_on): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 158 of 1000 (RS_off vs RS_on)
+Finished game 155 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 159 of 1000 (RS_on vs RS_off)
+Finished game 158 (RS_off vs RS_on): 1/2-1/2 {Draw by insufficient mating material}
+Started game 160 of 1000 (RS_off vs RS_on)
+Finished game 156 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 161 of 1000 (RS_on vs RS_off)
+Finished game 157 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 162 of 1000 (RS_off vs RS_on)
+Finished game 162 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 163 of 1000 (RS_on vs RS_off)
+Finished game 159 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 164 of 1000 (RS_off vs RS_on)
+Finished game 161 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 165 of 1000 (RS_on vs RS_off)
+Finished game 160 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 166 of 1000 (RS_off vs RS_on)
+Finished game 164 (RS_off vs RS_on): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 167 of 1000 (RS_on vs RS_off)
+Finished game 163 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 168 of 1000 (RS_off vs RS_on)
+Finished game 165 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 169 of 1000 (RS_on vs RS_off)
+Finished game 166 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 170 of 1000 (RS_off vs RS_on)
+Finished game 167 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 171 of 1000 (RS_on vs RS_off)
+Finished game 169 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 172 of 1000 (RS_off vs RS_on)
+Finished game 168 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 173 of 1000 (RS_on vs RS_off)
+Finished game 170 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 174 of 1000 (RS_off vs RS_on)
+Finished game 171 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 175 of 1000 (RS_on vs RS_off)
+Finished game 174 (RS_off vs RS_on): 1-0 {White mates}
+Started game 176 of 1000 (RS_off vs RS_on)
+Finished game 172 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 177 of 1000 (RS_on vs RS_off)
+Finished game 173 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 178 of 1000 (RS_off vs RS_on)
+Finished game 175 (RS_on vs RS_off): 0-1 {Black wins by adjudication}
+Started game 179 of 1000 (RS_on vs RS_off)
+Finished game 176 (RS_off vs RS_on): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 180 of 1000 (RS_off vs RS_on)
+Finished game 178 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 181 of 1000 (RS_on vs RS_off)
+Finished game 179 (RS_on vs RS_off): 1/2-1/2 {Draw by insufficient mating material}
+Started game 182 of 1000 (RS_off vs RS_on)
+Finished game 177 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 183 of 1000 (RS_on vs RS_off)
+Finished game 180 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 184 of 1000 (RS_off vs RS_on)
+Finished game 183 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 185 of 1000 (RS_on vs RS_off)
+Finished game 181 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 186 of 1000 (RS_off vs RS_on)
+Finished game 184 (RS_off vs RS_on): 0-1 {Black wins by adjudication}
+Started game 187 of 1000 (RS_on vs RS_off)
+Finished game 182 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 188 of 1000 (RS_off vs RS_on)
+Finished game 185 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 189 of 1000 (RS_on vs RS_off)
+Finished game 186 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 190 of 1000 (RS_off vs RS_on)
+Finished game 188 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 191 of 1000 (RS_on vs RS_off)
+Finished game 187 (RS_on vs RS_off): 0-1 {Black wins by adjudication}
+Started game 192 of 1000 (RS_off vs RS_on)
+Finished game 189 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 193 of 1000 (RS_on vs RS_off)
+Finished game 191 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 194 of 1000 (RS_off vs RS_on)
+Finished game 190 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 195 of 1000 (RS_on vs RS_off)
+Finished game 192 (RS_off vs RS_on): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 196 of 1000 (RS_off vs RS_on)
+Finished game 196 (RS_off vs RS_on): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 197 of 1000 (RS_on vs RS_off)
+Finished game 194 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 198 of 1000 (RS_off vs RS_on)
+Finished game 195 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 199 of 1000 (RS_on vs RS_off)
+Finished game 193 (RS_on vs RS_off): 1/2-1/2 {Draw by fifty moves rule}
+Started game 200 of 1000 (RS_off vs RS_on)
+Finished game 197 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 201 of 1000 (RS_on vs RS_off)
+Finished game 200 (RS_off vs RS_on): 0-1 {Black wins by adjudication}
+Started game 202 of 1000 (RS_off vs RS_on)
+Finished game 199 (RS_on vs RS_off): 1/2-1/2 {Draw by fifty moves rule}
+--------------------------------------------------
+Results of RS_on vs RS_off (20000 nodes, 1t, 16MB, UHO_4060_v4.epd):
+Elo: -15.80 +/- 28.10, nElo: -27.32 +/- 48.39
+LOS: 13.43 %, DrawRatio: 41.41 %, PairsRatio: 0.81
+Games: 198, Wins: 50, Losses: 59, Draws: 89, Points: 94.5 (47.73 %)
+Ptnml(0-2): [3, 29, 41, 26, 0], WL/DD Ratio: 1.41
+--------------------------------------------------
+Started game 203 of 1000 (RS_on vs RS_off)
+Finished game 201 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 204 of 1000 (RS_off vs RS_on)
+Finished game 198 (RS_off vs RS_on): 1/2-1/2 {Draw by fifty moves rule}
+Started game 205 of 1000 (RS_on vs RS_off)
+Finished game 202 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 206 of 1000 (RS_off vs RS_on)
+Finished game 204 (RS_off vs RS_on): 1/2-1/2 {Draw by insufficient mating material}
+Started game 207 of 1000 (RS_on vs RS_off)
+Finished game 203 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 208 of 1000 (RS_off vs RS_on)
+Finished game 205 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 209 of 1000 (RS_on vs RS_off)
+Finished game 206 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 210 of 1000 (RS_off vs RS_on)
+Finished game 208 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 211 of 1000 (RS_on vs RS_off)
+Finished game 207 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 212 of 1000 (RS_off vs RS_on)
+Finished game 209 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 213 of 1000 (RS_on vs RS_off)
+Finished game 211 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 214 of 1000 (RS_off vs RS_on)
+Finished game 212 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 215 of 1000 (RS_on vs RS_off)
+Finished game 213 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 216 of 1000 (RS_off vs RS_on)
+Finished game 210 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 217 of 1000 (RS_on vs RS_off)
+Finished game 214 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 218 of 1000 (RS_off vs RS_on)
+Finished game 216 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 219 of 1000 (RS_on vs RS_off)
+Finished game 217 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 220 of 1000 (RS_off vs RS_on)
+Finished game 215 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 221 of 1000 (RS_on vs RS_off)
+Finished game 219 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 222 of 1000 (RS_off vs RS_on)
+Finished game 220 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 223 of 1000 (RS_on vs RS_off)
+Finished game 221 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 224 of 1000 (RS_off vs RS_on)
+Finished game 218 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 225 of 1000 (RS_on vs RS_off)
+Finished game 222 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 226 of 1000 (RS_off vs RS_on)
+Finished game 223 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 227 of 1000 (RS_on vs RS_off)
+Finished game 224 (RS_off vs RS_on): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 228 of 1000 (RS_off vs RS_on)
+Finished game 227 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 229 of 1000 (RS_on vs RS_off)
+Finished game 226 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 230 of 1000 (RS_off vs RS_on)
+Finished game 225 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 231 of 1000 (RS_on vs RS_off)
+Finished game 228 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 232 of 1000 (RS_off vs RS_on)
+Finished game 230 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 233 of 1000 (RS_on vs RS_off)
+Finished game 231 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 234 of 1000 (RS_off vs RS_on)
+Finished game 229 (RS_on vs RS_off): 1/2-1/2 {Draw by fifty moves rule}
+Started game 235 of 1000 (RS_on vs RS_off)
+Finished game 232 (RS_off vs RS_on): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 236 of 1000 (RS_off vs RS_on)
+Finished game 233 (RS_on vs RS_off): 0-1 {Black wins by adjudication}
+Started game 237 of 1000 (RS_on vs RS_off)
+Finished game 234 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 238 of 1000 (RS_off vs RS_on)
+Finished game 235 (RS_on vs RS_off): 0-1 {Black wins by adjudication}
+Started game 239 of 1000 (RS_on vs RS_off)
+Finished game 237 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 240 of 1000 (RS_off vs RS_on)
+Finished game 236 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 241 of 1000 (RS_on vs RS_off)
+Finished game 238 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 242 of 1000 (RS_off vs RS_on)
+Finished game 239 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 243 of 1000 (RS_on vs RS_off)
+Finished game 240 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 244 of 1000 (RS_off vs RS_on)
+Finished game 242 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 245 of 1000 (RS_on vs RS_off)
+Finished game 241 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 246 of 1000 (RS_off vs RS_on)
+Finished game 244 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 247 of 1000 (RS_on vs RS_off)
+Finished game 243 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 248 of 1000 (RS_off vs RS_on)
+Finished game 245 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 249 of 1000 (RS_on vs RS_off)
+Finished game 247 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 250 of 1000 (RS_off vs RS_on)
+Finished game 246 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 251 of 1000 (RS_on vs RS_off)
+Finished game 248 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 252 of 1000 (RS_off vs RS_on)
+Finished game 250 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 253 of 1000 (RS_on vs RS_off)
+Finished game 253 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 254 of 1000 (RS_off vs RS_on)
+Finished game 249 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 255 of 1000 (RS_on vs RS_off)
+Finished game 252 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 256 of 1000 (RS_off vs RS_on)
+Finished game 251 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 257 of 1000 (RS_on vs RS_off)
+Finished game 254 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 258 of 1000 (RS_off vs RS_on)
+Finished game 255 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 259 of 1000 (RS_on vs RS_off)
+Finished game 256 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 260 of 1000 (RS_off vs RS_on)
+Finished game 257 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 261 of 1000 (RS_on vs RS_off)
+Finished game 258 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 262 of 1000 (RS_off vs RS_on)
+Finished game 259 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 263 of 1000 (RS_on vs RS_off)
+Finished game 260 (RS_off vs RS_on): 1/2-1/2 {Draw by insufficient mating material}
+Started game 264 of 1000 (RS_off vs RS_on)
+Finished game 262 (RS_off vs RS_on): 0-1 {Black wins by adjudication}
+Started game 265 of 1000 (RS_on vs RS_off)
+Finished game 261 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 266 of 1000 (RS_off vs RS_on)
+Finished game 264 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 267 of 1000 (RS_on vs RS_off)
+Finished game 263 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 268 of 1000 (RS_off vs RS_on)
+Finished game 265 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 269 of 1000 (RS_on vs RS_off)
+Finished game 267 (RS_on vs RS_off): 1/2-1/2 {Draw by insufficient mating material}
+Started game 270 of 1000 (RS_off vs RS_on)
+Finished game 266 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 271 of 1000 (RS_on vs RS_off)
+Finished game 268 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 272 of 1000 (RS_off vs RS_on)
+Finished game 269 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 273 of 1000 (RS_on vs RS_off)
+Finished game 271 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 274 of 1000 (RS_off vs RS_on)
+Finished game 270 (RS_off vs RS_on): 1/2-1/2 {Draw by fifty moves rule}
+Started game 275 of 1000 (RS_on vs RS_off)
+Finished game 272 (RS_off vs RS_on): 1/2-1/2 {Draw by insufficient mating material}
+Started game 276 of 1000 (RS_off vs RS_on)
+Finished game 273 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 277 of 1000 (RS_on vs RS_off)
+Finished game 274 (RS_off vs RS_on): 1/2-1/2 {Draw by insufficient mating material}
+Started game 278 of 1000 (RS_off vs RS_on)
+Finished game 275 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 279 of 1000 (RS_on vs RS_off)
+Finished game 276 (RS_off vs RS_on): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 280 of 1000 (RS_off vs RS_on)
+Finished game 277 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 281 of 1000 (RS_on vs RS_off)
+Finished game 278 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 282 of 1000 (RS_off vs RS_on)
+Finished game 280 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 283 of 1000 (RS_on vs RS_off)
+Finished game 279 (RS_on vs RS_off): 1-0 {White mates}
+Started game 284 of 1000 (RS_off vs RS_on)
+Finished game 281 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 285 of 1000 (RS_on vs RS_off)
+Finished game 282 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 286 of 1000 (RS_off vs RS_on)
+Finished game 283 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 287 of 1000 (RS_on vs RS_off)
+Finished game 284 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 288 of 1000 (RS_off vs RS_on)
+Finished game 286 (RS_off vs RS_on): 0-1 {Black wins by adjudication}
+Started game 289 of 1000 (RS_on vs RS_off)
+Finished game 285 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 290 of 1000 (RS_off vs RS_on)
+Finished game 287 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 291 of 1000 (RS_on vs RS_off)
+Finished game 288 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 292 of 1000 (RS_off vs RS_on)
+Finished game 289 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 293 of 1000 (RS_on vs RS_off)
+Finished game 290 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 294 of 1000 (RS_off vs RS_on)
+Finished game 294 (RS_off vs RS_on): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 295 of 1000 (RS_on vs RS_off)
+Finished game 291 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 296 of 1000 (RS_off vs RS_on)
+Finished game 293 (RS_on vs RS_off): 1/2-1/2 {Draw by insufficient mating material}
+Started game 297 of 1000 (RS_on vs RS_off)
+Finished game 292 (RS_off vs RS_on): 0-1 {Black mates}
+Started game 298 of 1000 (RS_off vs RS_on)
+Finished game 295 (RS_on vs RS_off): 1/2-1/2 {Draw by insufficient mating material}
+Started game 299 of 1000 (RS_on vs RS_off)
+Finished game 296 (RS_off vs RS_on): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 300 of 1000 (RS_off vs RS_on)
+Finished game 297 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 301 of 1000 (RS_on vs RS_off)
+Finished game 300 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 302 of 1000 (RS_off vs RS_on)
+Finished game 298 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 303 of 1000 (RS_on vs RS_off)
+Finished game 299 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 304 of 1000 (RS_off vs RS_on)
+Finished game 301 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 305 of 1000 (RS_on vs RS_off)
+Finished game 302 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 306 of 1000 (RS_off vs RS_on)
+Finished game 304 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 307 of 1000 (RS_on vs RS_off)
+Finished game 303 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 308 of 1000 (RS_off vs RS_on)
+Finished game 305 (RS_on vs RS_off): 1/2-1/2 {Draw by insufficient mating material}
+Started game 309 of 1000 (RS_on vs RS_off)
+Finished game 306 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 310 of 1000 (RS_off vs RS_on)
+Finished game 307 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 311 of 1000 (RS_on vs RS_off)
+Finished game 308 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 312 of 1000 (RS_off vs RS_on)
+Finished game 310 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 313 of 1000 (RS_on vs RS_off)
+Finished game 309 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 314 of 1000 (RS_off vs RS_on)
+Finished game 312 (RS_off vs RS_on): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 315 of 1000 (RS_on vs RS_off)
+Finished game 313 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 316 of 1000 (RS_off vs RS_on)
+Finished game 311 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 317 of 1000 (RS_on vs RS_off)
+Finished game 314 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 318 of 1000 (RS_off vs RS_on)
+Finished game 315 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 319 of 1000 (RS_on vs RS_off)
+Finished game 316 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 320 of 1000 (RS_off vs RS_on)
+Finished game 317 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 321 of 1000 (RS_on vs RS_off)
+Finished game 318 (RS_off vs RS_on): 1/2-1/2 {Draw by insufficient mating material}
+Started game 322 of 1000 (RS_off vs RS_on)
+Finished game 321 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 323 of 1000 (RS_on vs RS_off)
+Finished game 319 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 324 of 1000 (RS_off vs RS_on)
+Finished game 323 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 325 of 1000 (RS_on vs RS_off)
+Finished game 322 (RS_off vs RS_on): 1/2-1/2 {Draw by insufficient mating material}
+Started game 326 of 1000 (RS_off vs RS_on)
+Finished game 324 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 327 of 1000 (RS_on vs RS_off)
+Finished game 320 (RS_off vs RS_on): 1/2-1/2 {Draw by fifty moves rule}
+Started game 328 of 1000 (RS_off vs RS_on)
+Finished game 326 (RS_off vs RS_on): 0-1 {Black wins by adjudication}
+Started game 329 of 1000 (RS_on vs RS_off)
+Finished game 327 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 330 of 1000 (RS_off vs RS_on)
+Finished game 325 (RS_on vs RS_off): 1/2-1/2 {Draw by fifty moves rule}
+Started game 331 of 1000 (RS_on vs RS_off)
+Finished game 328 (RS_off vs RS_on): 1-0 {White mates}
+Started game 332 of 1000 (RS_off vs RS_on)
+Finished game 331 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 333 of 1000 (RS_on vs RS_off)
+Finished game 330 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 334 of 1000 (RS_off vs RS_on)
+Finished game 329 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 335 of 1000 (RS_on vs RS_off)
+Finished game 332 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 336 of 1000 (RS_off vs RS_on)
+Finished game 334 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 337 of 1000 (RS_on vs RS_off)
+Finished game 333 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 338 of 1000 (RS_off vs RS_on)
+Finished game 335 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 339 of 1000 (RS_on vs RS_off)
+Finished game 337 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 340 of 1000 (RS_off vs RS_on)
+Finished game 338 (RS_off vs RS_on): 0-1 {Black wins by adjudication}
+Started game 341 of 1000 (RS_on vs RS_off)
+Finished game 336 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 342 of 1000 (RS_off vs RS_on)
+Finished game 339 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 343 of 1000 (RS_on vs RS_off)
+Finished game 340 (RS_off vs RS_on): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 344 of 1000 (RS_off vs RS_on)
+Finished game 341 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 345 of 1000 (RS_on vs RS_off)
+Finished game 343 (RS_on vs RS_off): 1-0 {White mates}
+Started game 346 of 1000 (RS_off vs RS_on)
+Finished game 342 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 347 of 1000 (RS_on vs RS_off)
+Finished game 345 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 348 of 1000 (RS_off vs RS_on)
+Finished game 344 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 349 of 1000 (RS_on vs RS_off)
+Finished game 346 (RS_off vs RS_on): 1/2-1/2 {Draw by insufficient mating material}
+Started game 350 of 1000 (RS_off vs RS_on)
+Finished game 348 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 351 of 1000 (RS_on vs RS_off)
+Finished game 347 (RS_on vs RS_off): 1/2-1/2 {Draw by insufficient mating material}
+Started game 352 of 1000 (RS_off vs RS_on)
+Finished game 349 (RS_on vs RS_off): 1/2-1/2 {Draw by insufficient mating material}
+Started game 353 of 1000 (RS_on vs RS_off)
+Finished game 350 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 354 of 1000 (RS_off vs RS_on)
+Finished game 351 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 355 of 1000 (RS_on vs RS_off)
+Finished game 353 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 356 of 1000 (RS_off vs RS_on)
+Finished game 352 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 357 of 1000 (RS_on vs RS_off)
+Finished game 354 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 358 of 1000 (RS_off vs RS_on)
+Finished game 355 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 359 of 1000 (RS_on vs RS_off)
+Finished game 356 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 360 of 1000 (RS_off vs RS_on)
+Finished game 357 (RS_on vs RS_off): 1/2-1/2 {Draw by fifty moves rule}
+Started game 361 of 1000 (RS_on vs RS_off)
+Finished game 358 (RS_off vs RS_on): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 362 of 1000 (RS_off vs RS_on)
+Finished game 359 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 363 of 1000 (RS_on vs RS_off)
+Finished game 360 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 364 of 1000 (RS_off vs RS_on)
+Finished game 361 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 365 of 1000 (RS_on vs RS_off)
+Finished game 362 (RS_off vs RS_on): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 366 of 1000 (RS_off vs RS_on)
+Finished game 364 (RS_off vs RS_on): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 367 of 1000 (RS_on vs RS_off)
+Finished game 363 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 368 of 1000 (RS_off vs RS_on)
+Finished game 365 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 369 of 1000 (RS_on vs RS_off)
+Finished game 366 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 370 of 1000 (RS_off vs RS_on)
+Finished game 369 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 371 of 1000 (RS_on vs RS_off)
+Finished game 368 (RS_off vs RS_on): 1/2-1/2 {Draw by insufficient mating material}
+Started game 372 of 1000 (RS_off vs RS_on)
+Finished game 367 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 373 of 1000 (RS_on vs RS_off)
+Finished game 371 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 374 of 1000 (RS_off vs RS_on)
+Finished game 370 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 375 of 1000 (RS_on vs RS_off)
+Finished game 372 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 376 of 1000 (RS_off vs RS_on)
+Finished game 373 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 377 of 1000 (RS_on vs RS_off)
+Finished game 376 (RS_off vs RS_on): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 378 of 1000 (RS_off vs RS_on)
+Finished game 374 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 379 of 1000 (RS_on vs RS_off)
+Finished game 375 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 380 of 1000 (RS_off vs RS_on)
+Finished game 377 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 381 of 1000 (RS_on vs RS_off)
+Finished game 380 (RS_off vs RS_on): 1/2-1/2 {Draw by insufficient mating material}
+Started game 382 of 1000 (RS_off vs RS_on)
+Finished game 378 (RS_off vs RS_on): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 383 of 1000 (RS_on vs RS_off)
+Finished game 381 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 384 of 1000 (RS_off vs RS_on)
+Finished game 379 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 385 of 1000 (RS_on vs RS_off)
+Finished game 382 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 386 of 1000 (RS_off vs RS_on)
+Finished game 385 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 387 of 1000 (RS_on vs RS_off)
+Finished game 383 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 388 of 1000 (RS_off vs RS_on)
+Finished game 384 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 389 of 1000 (RS_on vs RS_off)
+Finished game 387 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 390 of 1000 (RS_off vs RS_on)
+Finished game 388 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 391 of 1000 (RS_on vs RS_off)
+Finished game 386 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 392 of 1000 (RS_off vs RS_on)
+Finished game 389 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 393 of 1000 (RS_on vs RS_off)
+Finished game 392 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 394 of 1000 (RS_off vs RS_on)
+Finished game 393 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 395 of 1000 (RS_on vs RS_off)
+Finished game 390 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 396 of 1000 (RS_off vs RS_on)
+Finished game 391 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 397 of 1000 (RS_on vs RS_off)
+Finished game 394 (RS_off vs RS_on): 1/2-1/2 {Draw by insufficient mating material}
+Started game 398 of 1000 (RS_off vs RS_on)
+Finished game 396 (RS_off vs RS_on): 0-1 {Black wins by adjudication}
+Started game 399 of 1000 (RS_on vs RS_off)
+Finished game 397 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 400 of 1000 (RS_off vs RS_on)
+Finished game 395 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 401 of 1000 (RS_on vs RS_off)
+Finished game 398 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 402 of 1000 (RS_off vs RS_on)
+Finished game 400 (RS_off vs RS_on): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 403 of 1000 (RS_on vs RS_off)
+Finished game 401 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 404 of 1000 (RS_off vs RS_on)
+Finished game 399 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+--------------------------------------------------
+Results of RS_on vs RS_off (20000 nodes, 1t, 16MB, UHO_4060_v4.epd):
+Elo: 1.74 +/- 19.58, nElo: 3.02 +/- 34.05
+LOS: 56.91 %, DrawRatio: 46.00 %, PairsRatio: 1.04
+Games: 400, Wins: 116, Losses: 114, Draws: 170, Points: 201.0 (50.25 %)
+Ptnml(0-2): [4, 49, 92, 51, 4], WL/DD Ratio: 1.63
+--------------------------------------------------
+Started game 405 of 1000 (RS_on vs RS_off)
+Finished game 402 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 406 of 1000 (RS_off vs RS_on)
+Finished game 403 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 407 of 1000 (RS_on vs RS_off)
+Finished game 405 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 408 of 1000 (RS_off vs RS_on)
+Finished game 404 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 409 of 1000 (RS_on vs RS_off)
+Finished game 407 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 410 of 1000 (RS_off vs RS_on)
+Finished game 406 (RS_off vs RS_on): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 411 of 1000 (RS_on vs RS_off)
+Finished game 408 (RS_off vs RS_on): 0-1 {Black wins by adjudication}
+Started game 412 of 1000 (RS_off vs RS_on)
+Finished game 409 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 413 of 1000 (RS_on vs RS_off)
+Finished game 411 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 414 of 1000 (RS_off vs RS_on)
+Finished game 410 (RS_off vs RS_on): 1/2-1/2 {Draw by insufficient mating material}
+Started game 415 of 1000 (RS_on vs RS_off)
+Finished game 412 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 416 of 1000 (RS_off vs RS_on)
+Finished game 413 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 417 of 1000 (RS_on vs RS_off)
+Finished game 414 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 418 of 1000 (RS_off vs RS_on)
+Finished game 415 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 419 of 1000 (RS_on vs RS_off)
+Finished game 417 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 420 of 1000 (RS_off vs RS_on)
+Finished game 416 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 421 of 1000 (RS_on vs RS_off)
+Finished game 418 (RS_off vs RS_on): 0-1 {Black wins by adjudication}
+Started game 422 of 1000 (RS_off vs RS_on)
+Finished game 419 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 423 of 1000 (RS_on vs RS_off)
+Finished game 422 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 424 of 1000 (RS_off vs RS_on)
+Finished game 420 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 425 of 1000 (RS_on vs RS_off)
+Finished game 421 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 426 of 1000 (RS_off vs RS_on)
+Finished game 423 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 427 of 1000 (RS_on vs RS_off)
+Finished game 425 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 428 of 1000 (RS_off vs RS_on)
+Finished game 426 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 429 of 1000 (RS_on vs RS_off)
+Finished game 427 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 430 of 1000 (RS_off vs RS_on)
+Finished game 424 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 431 of 1000 (RS_on vs RS_off)
+Finished game 428 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 432 of 1000 (RS_off vs RS_on)
+Finished game 429 (RS_on vs RS_off): 0-1 {Black wins by adjudication}
+Started game 433 of 1000 (RS_on vs RS_off)
+Finished game 431 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 434 of 1000 (RS_off vs RS_on)
+Finished game 430 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 435 of 1000 (RS_on vs RS_off)
+Finished game 434 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 436 of 1000 (RS_off vs RS_on)
+Finished game 433 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 437 of 1000 (RS_on vs RS_off)
+Finished game 432 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 438 of 1000 (RS_off vs RS_on)
+Finished game 437 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 439 of 1000 (RS_on vs RS_off)
+Finished game 436 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 440 of 1000 (RS_off vs RS_on)
+Finished game 435 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 441 of 1000 (RS_on vs RS_off)
+Finished game 438 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 442 of 1000 (RS_off vs RS_on)
+Finished game 439 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 443 of 1000 (RS_on vs RS_off)
+Finished game 440 (RS_off vs RS_on): 0-1 {Black wins by adjudication}
+Started game 444 of 1000 (RS_off vs RS_on)
+Finished game 441 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 445 of 1000 (RS_on vs RS_off)
+Finished game 442 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 446 of 1000 (RS_off vs RS_on)
+Finished game 444 (RS_off vs RS_on): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 447 of 1000 (RS_on vs RS_off)
+Finished game 446 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 448 of 1000 (RS_off vs RS_on)
+Finished game 443 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 449 of 1000 (RS_on vs RS_off)
+Finished game 445 (RS_on vs RS_off): 1/2-1/2 {Draw by insufficient mating material}
+Started game 450 of 1000 (RS_off vs RS_on)
+Finished game 447 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 451 of 1000 (RS_on vs RS_off)
+Finished game 449 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 452 of 1000 (RS_off vs RS_on)
+Finished game 448 (RS_off vs RS_on): 1/2-1/2 {Draw by fifty moves rule}
+Started game 453 of 1000 (RS_on vs RS_off)
+Finished game 450 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 454 of 1000 (RS_off vs RS_on)
+Finished game 451 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 455 of 1000 (RS_on vs RS_off)
+Finished game 453 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 456 of 1000 (RS_off vs RS_on)
+Finished game 452 (RS_off vs RS_on): 0-1 {Black wins by adjudication}
+Started game 457 of 1000 (RS_on vs RS_off)
+Finished game 454 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 458 of 1000 (RS_off vs RS_on)
+Finished game 455 (RS_on vs RS_off): 0-1 {Black wins by adjudication}
+Started game 459 of 1000 (RS_on vs RS_off)
+Finished game 458 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 460 of 1000 (RS_off vs RS_on)
+Finished game 456 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 461 of 1000 (RS_on vs RS_off)
+Finished game 457 (RS_on vs RS_off): 1/2-1/2 {Draw by stalemate}
+Started game 462 of 1000 (RS_off vs RS_on)
+Finished game 459 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 463 of 1000 (RS_on vs RS_off)
+Finished game 461 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 464 of 1000 (RS_off vs RS_on)
+Finished game 462 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 465 of 1000 (RS_on vs RS_off)
+Finished game 463 (RS_on vs RS_off): 0-1 {Black wins by adjudication}
+Started game 466 of 1000 (RS_off vs RS_on)
+Finished game 460 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 467 of 1000 (RS_on vs RS_off)
+Finished game 464 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 468 of 1000 (RS_off vs RS_on)
+Finished game 465 (RS_on vs RS_off): 1/2-1/2 {Draw by insufficient mating material}
+Started game 469 of 1000 (RS_on vs RS_off)
+Finished game 466 (RS_off vs RS_on): 0-1 {Black wins by adjudication}
+Started game 470 of 1000 (RS_off vs RS_on)
+Finished game 470 (RS_off vs RS_on): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 471 of 1000 (RS_on vs RS_off)
+Finished game 468 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 472 of 1000 (RS_off vs RS_on)
+Finished game 467 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 473 of 1000 (RS_on vs RS_off)
+Finished game 469 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 474 of 1000 (RS_off vs RS_on)
+Finished game 471 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 475 of 1000 (RS_on vs RS_off)
+Finished game 473 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 476 of 1000 (RS_off vs RS_on)
+Finished game 475 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 477 of 1000 (RS_on vs RS_off)
+Finished game 472 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 478 of 1000 (RS_off vs RS_on)
+Finished game 474 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 479 of 1000 (RS_on vs RS_off)
+Finished game 476 (RS_off vs RS_on): 1/2-1/2 {Draw by insufficient mating material}
+Started game 480 of 1000 (RS_off vs RS_on)
+Finished game 477 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 481 of 1000 (RS_on vs RS_off)
+Finished game 478 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 482 of 1000 (RS_off vs RS_on)
+Finished game 479 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 483 of 1000 (RS_on vs RS_off)
+Finished game 482 (RS_off vs RS_on): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 484 of 1000 (RS_off vs RS_on)
+Finished game 481 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 485 of 1000 (RS_on vs RS_off)
+Finished game 480 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 486 of 1000 (RS_off vs RS_on)
+Finished game 483 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 487 of 1000 (RS_on vs RS_off)
+Finished game 485 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 488 of 1000 (RS_off vs RS_on)
+Finished game 486 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 489 of 1000 (RS_on vs RS_off)
+Finished game 484 (RS_off vs RS_on): 1/2-1/2 {Draw by fifty moves rule}
+Started game 490 of 1000 (RS_off vs RS_on)
+Finished game 489 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 491 of 1000 (RS_on vs RS_off)
+Finished game 488 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 492 of 1000 (RS_off vs RS_on)
+Finished game 490 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 493 of 1000 (RS_on vs RS_off)
+Finished game 487 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 494 of 1000 (RS_off vs RS_on)
+Finished game 493 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 495 of 1000 (RS_on vs RS_off)
+Finished game 491 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 496 of 1000 (RS_off vs RS_on)
+Finished game 494 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 497 of 1000 (RS_on vs RS_off)
+Finished game 492 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 498 of 1000 (RS_off vs RS_on)
+Finished game 495 (RS_on vs RS_off): 1/2-1/2 {Draw by insufficient mating material}
+Started game 499 of 1000 (RS_on vs RS_off)
+Finished game 496 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 500 of 1000 (RS_off vs RS_on)
+Finished game 497 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 501 of 1000 (RS_on vs RS_off)
+Finished game 500 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 502 of 1000 (RS_off vs RS_on)
+Finished game 498 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 503 of 1000 (RS_on vs RS_off)
+Finished game 499 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 504 of 1000 (RS_off vs RS_on)
+Finished game 501 (RS_on vs RS_off): 1/2-1/2 {Draw by insufficient mating material}
+Started game 505 of 1000 (RS_on vs RS_off)
+Finished game 502 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 506 of 1000 (RS_off vs RS_on)
+Finished game 503 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 507 of 1000 (RS_on vs RS_off)
+Finished game 506 (RS_off vs RS_on): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 508 of 1000 (RS_off vs RS_on)
+Finished game 504 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 509 of 1000 (RS_on vs RS_off)
+Finished game 505 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 510 of 1000 (RS_off vs RS_on)
+Finished game 507 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 511 of 1000 (RS_on vs RS_off)
+Finished game 509 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 512 of 1000 (RS_off vs RS_on)
+Finished game 508 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 513 of 1000 (RS_on vs RS_off)
+Finished game 510 (RS_off vs RS_on): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 514 of 1000 (RS_off vs RS_on)
+Finished game 512 (RS_off vs RS_on): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 515 of 1000 (RS_on vs RS_off)
+Finished game 511 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 516 of 1000 (RS_off vs RS_on)
+Finished game 514 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 517 of 1000 (RS_on vs RS_off)
+Finished game 513 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 518 of 1000 (RS_off vs RS_on)
+Finished game 515 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 519 of 1000 (RS_on vs RS_off)
+Finished game 516 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 520 of 1000 (RS_off vs RS_on)
+Finished game 518 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 521 of 1000 (RS_on vs RS_off)
+Finished game 519 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 522 of 1000 (RS_off vs RS_on)
+Finished game 517 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 523 of 1000 (RS_on vs RS_off)
+Finished game 521 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 524 of 1000 (RS_off vs RS_on)
+Finished game 520 (RS_off vs RS_on): 1/2-1/2 {Draw by fifty moves rule}
+Started game 525 of 1000 (RS_on vs RS_off)
+Finished game 522 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 526 of 1000 (RS_off vs RS_on)
+Finished game 523 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 527 of 1000 (RS_on vs RS_off)
+Finished game 524 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 528 of 1000 (RS_off vs RS_on)
+Finished game 525 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 529 of 1000 (RS_on vs RS_off)
+Finished game 526 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 530 of 1000 (RS_off vs RS_on)
+Finished game 528 (RS_off vs RS_on): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 531 of 1000 (RS_on vs RS_off)
+Finished game 527 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 532 of 1000 (RS_off vs RS_on)
+Finished game 529 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 533 of 1000 (RS_on vs RS_off)
+Finished game 531 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 534 of 1000 (RS_off vs RS_on)
+Finished game 532 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 535 of 1000 (RS_on vs RS_off)
+Finished game 534 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 536 of 1000 (RS_off vs RS_on)
+Finished game 533 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 537 of 1000 (RS_on vs RS_off)
+Finished game 530 (RS_off vs RS_on): 1/2-1/2 {Draw by fifty moves rule}
+Started game 538 of 1000 (RS_off vs RS_on)
+Finished game 535 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 539 of 1000 (RS_on vs RS_off)
+Finished game 538 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 540 of 1000 (RS_off vs RS_on)
+Finished game 536 (RS_off vs RS_on): 1/2-1/2 {Draw by insufficient mating material}
+Started game 541 of 1000 (RS_on vs RS_off)
+Finished game 537 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 542 of 1000 (RS_off vs RS_on)
+Finished game 541 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 543 of 1000 (RS_on vs RS_off)
+Finished game 542 (RS_off vs RS_on): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 544 of 1000 (RS_off vs RS_on)
+Finished game 540 (RS_off vs RS_on): 1/2-1/2 {Draw by insufficient mating material}
+Started game 545 of 1000 (RS_on vs RS_off)
+Finished game 539 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 546 of 1000 (RS_off vs RS_on)
+Finished game 543 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 547 of 1000 (RS_on vs RS_off)
+Finished game 544 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 548 of 1000 (RS_off vs RS_on)
+Finished game 545 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 549 of 1000 (RS_on vs RS_off)
+Finished game 546 (RS_off vs RS_on): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 550 of 1000 (RS_off vs RS_on)
+Finished game 549 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 551 of 1000 (RS_on vs RS_off)
+Finished game 547 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 552 of 1000 (RS_off vs RS_on)
+Finished game 548 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 553 of 1000 (RS_on vs RS_off)
+Finished game 550 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 554 of 1000 (RS_off vs RS_on)
+Finished game 551 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 555 of 1000 (RS_on vs RS_off)
+Finished game 553 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 556 of 1000 (RS_off vs RS_on)
+Finished game 552 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 557 of 1000 (RS_on vs RS_off)
+Finished game 555 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 558 of 1000 (RS_off vs RS_on)
+Finished game 554 (RS_off vs RS_on): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 559 of 1000 (RS_on vs RS_off)
+Finished game 556 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 560 of 1000 (RS_off vs RS_on)
+Finished game 559 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 561 of 1000 (RS_on vs RS_off)
+Finished game 557 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 562 of 1000 (RS_off vs RS_on)
+Finished game 560 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 563 of 1000 (RS_on vs RS_off)
+Finished game 558 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 564 of 1000 (RS_off vs RS_on)
+Finished game 561 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 565 of 1000 (RS_on vs RS_off)
+Finished game 562 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 566 of 1000 (RS_off vs RS_on)
+Finished game 563 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 567 of 1000 (RS_on vs RS_off)
+Finished game 564 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 568 of 1000 (RS_off vs RS_on)
+Finished game 565 (RS_on vs RS_off): 0-1 {Black wins by adjudication}
+Started game 569 of 1000 (RS_on vs RS_off)
+Finished game 566 (RS_off vs RS_on): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 570 of 1000 (RS_off vs RS_on)
+Finished game 568 (RS_off vs RS_on): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 571 of 1000 (RS_on vs RS_off)
+Finished game 567 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 572 of 1000 (RS_off vs RS_on)
+Finished game 572 (RS_off vs RS_on): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 573 of 1000 (RS_on vs RS_off)
+Finished game 569 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 574 of 1000 (RS_off vs RS_on)
+Finished game 571 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 575 of 1000 (RS_on vs RS_off)
+Finished game 570 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 576 of 1000 (RS_off vs RS_on)
+Finished game 574 (RS_off vs RS_on): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 577 of 1000 (RS_on vs RS_off)
+Finished game 573 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 578 of 1000 (RS_off vs RS_on)
+Finished game 575 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 579 of 1000 (RS_on vs RS_off)
+Finished game 576 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 580 of 1000 (RS_off vs RS_on)
+Finished game 578 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 581 of 1000 (RS_on vs RS_off)
+Finished game 577 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 582 of 1000 (RS_off vs RS_on)
+Finished game 579 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 583 of 1000 (RS_on vs RS_off)
+Finished game 580 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 584 of 1000 (RS_off vs RS_on)
+Finished game 582 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 585 of 1000 (RS_on vs RS_off)
+Finished game 581 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 586 of 1000 (RS_off vs RS_on)
+Finished game 583 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 587 of 1000 (RS_on vs RS_off)
+Finished game 586 (RS_off vs RS_on): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 588 of 1000 (RS_off vs RS_on)
+Finished game 584 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 589 of 1000 (RS_on vs RS_off)
+Finished game 585 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 590 of 1000 (RS_off vs RS_on)
+Finished game 587 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 591 of 1000 (RS_on vs RS_off)
+Finished game 588 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 592 of 1000 (RS_off vs RS_on)
+Finished game 590 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 593 of 1000 (RS_on vs RS_off)
+Finished game 591 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 594 of 1000 (RS_off vs RS_on)
+Finished game 589 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 595 of 1000 (RS_on vs RS_off)
+Finished game 592 (RS_off vs RS_on): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 596 of 1000 (RS_off vs RS_on)
+Finished game 595 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 597 of 1000 (RS_on vs RS_off)
+Finished game 594 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 598 of 1000 (RS_off vs RS_on)
+Finished game 596 (RS_off vs RS_on): 1/2-1/2 {Draw by insufficient mating material}
+Started game 599 of 1000 (RS_on vs RS_off)
+Finished game 593 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 600 of 1000 (RS_off vs RS_on)
+Finished game 597 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 601 of 1000 (RS_on vs RS_off)
+Finished game 598 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 602 of 1000 (RS_off vs RS_on)
+Finished game 600 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 603 of 1000 (RS_on vs RS_off)
+Finished game 599 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+--------------------------------------------------
+Results of RS_on vs RS_off (20000 nodes, 1t, 16MB, UHO_4060_v4.epd):
+Elo: 7.53 +/- 16.48, nElo: 12.71 +/- 27.80
+LOS: 81.49 %, DrawRatio: 43.67 %, PairsRatio: 1.17
+Games: 600, Wins: 177, Losses: 164, Draws: 259, Points: 306.5 (51.08 %)
+Ptnml(0-2): [7, 71, 131, 84, 7], WL/DD Ratio: 1.52
+--------------------------------------------------
+Started game 604 of 1000 (RS_off vs RS_on)
+Finished game 601 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 605 of 1000 (RS_on vs RS_off)
+Finished game 602 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 606 of 1000 (RS_off vs RS_on)
+Finished game 603 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 607 of 1000 (RS_on vs RS_off)
+Finished game 606 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 608 of 1000 (RS_off vs RS_on)
+Finished game 604 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 609 of 1000 (RS_on vs RS_off)
+Finished game 605 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 610 of 1000 (RS_off vs RS_on)
+Finished game 607 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 611 of 1000 (RS_on vs RS_off)
+Finished game 608 (RS_off vs RS_on): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 612 of 1000 (RS_off vs RS_on)
+Finished game 610 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 613 of 1000 (RS_on vs RS_off)
+Finished game 612 (RS_off vs RS_on): 1/2-1/2 {Draw by insufficient mating material}
+Started game 614 of 1000 (RS_off vs RS_on)
+Finished game 611 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 615 of 1000 (RS_on vs RS_off)
+Finished game 609 (RS_on vs RS_off): 1/2-1/2 {Draw by fifty moves rule}
+Started game 616 of 1000 (RS_off vs RS_on)
+Finished game 614 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 617 of 1000 (RS_on vs RS_off)
+Finished game 613 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 618 of 1000 (RS_off vs RS_on)
+Finished game 615 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 619 of 1000 (RS_on vs RS_off)
+Finished game 616 (RS_off vs RS_on): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 620 of 1000 (RS_off vs RS_on)
+Finished game 617 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 621 of 1000 (RS_on vs RS_off)
+Finished game 618 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 622 of 1000 (RS_off vs RS_on)
+Finished game 619 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 623 of 1000 (RS_on vs RS_off)
+Finished game 620 (RS_off vs RS_on): 0-1 {Black wins by adjudication}
+Started game 624 of 1000 (RS_off vs RS_on)
+Finished game 621 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 625 of 1000 (RS_on vs RS_off)
+Finished game 622 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 626 of 1000 (RS_off vs RS_on)
+Finished game 623 (RS_on vs RS_off): 1/2-1/2 {Draw by insufficient mating material}
+Started game 627 of 1000 (RS_on vs RS_off)
+Finished game 625 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 628 of 1000 (RS_off vs RS_on)
+Finished game 627 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 629 of 1000 (RS_on vs RS_off)
+Finished game 624 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 630 of 1000 (RS_off vs RS_on)
+Finished game 626 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 631 of 1000 (RS_on vs RS_off)
+Finished game 628 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 632 of 1000 (RS_off vs RS_on)
+Finished game 630 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 633 of 1000 (RS_on vs RS_off)
+Finished game 631 (RS_on vs RS_off): 0-1 {Black wins by adjudication}
+Started game 634 of 1000 (RS_off vs RS_on)
+Finished game 632 (RS_off vs RS_on): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 635 of 1000 (RS_on vs RS_off)
+Finished game 629 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 636 of 1000 (RS_off vs RS_on)
+Finished game 633 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 637 of 1000 (RS_on vs RS_off)
+Finished game 634 (RS_off vs RS_on): 1/2-1/2 {Draw by insufficient mating material}
+Started game 638 of 1000 (RS_off vs RS_on)
+Finished game 635 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 639 of 1000 (RS_on vs RS_off)
+Finished game 636 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 640 of 1000 (RS_off vs RS_on)
+Finished game 638 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 641 of 1000 (RS_on vs RS_off)
+Finished game 639 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 642 of 1000 (RS_off vs RS_on)
+Finished game 637 (RS_on vs RS_off): 0-1 {Black wins by adjudication}
+Started game 643 of 1000 (RS_on vs RS_off)
+Finished game 640 (RS_off vs RS_on): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 644 of 1000 (RS_off vs RS_on)
+Finished game 641 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 645 of 1000 (RS_on vs RS_off)
+Finished game 643 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 646 of 1000 (RS_off vs RS_on)
+Finished game 642 (RS_off vs RS_on): 0-1 {Black wins by adjudication}
+Started game 647 of 1000 (RS_on vs RS_off)
+Finished game 644 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 648 of 1000 (RS_off vs RS_on)
+Finished game 645 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 649 of 1000 (RS_on vs RS_off)
+Finished game 647 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 650 of 1000 (RS_off vs RS_on)
+Finished game 646 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 651 of 1000 (RS_on vs RS_off)
+Finished game 648 (RS_off vs RS_on): 0-1 {Black wins by adjudication}
+Started game 652 of 1000 (RS_off vs RS_on)
+Finished game 650 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 653 of 1000 (RS_on vs RS_off)
+Finished game 649 (RS_on vs RS_off): 0-1 {Black wins by adjudication}
+Started game 654 of 1000 (RS_off vs RS_on)
+Finished game 651 (RS_on vs RS_off): 0-1 {Black wins by adjudication}
+Started game 655 of 1000 (RS_on vs RS_off)
+Finished game 652 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 656 of 1000 (RS_off vs RS_on)
+Finished game 653 (RS_on vs RS_off): 1/2-1/2 {Draw by insufficient mating material}
+Started game 657 of 1000 (RS_on vs RS_off)
+Finished game 654 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 658 of 1000 (RS_off vs RS_on)
+Finished game 655 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 659 of 1000 (RS_on vs RS_off)
+Finished game 657 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 660 of 1000 (RS_off vs RS_on)
+Finished game 656 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 661 of 1000 (RS_on vs RS_off)
+Finished game 658 (RS_off vs RS_on): 1/2-1/2 {Draw by insufficient mating material}
+Started game 662 of 1000 (RS_off vs RS_on)
+Finished game 659 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 663 of 1000 (RS_on vs RS_off)
+Finished game 660 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 664 of 1000 (RS_off vs RS_on)
+Finished game 662 (RS_off vs RS_on): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 665 of 1000 (RS_on vs RS_off)
+Finished game 661 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 666 of 1000 (RS_off vs RS_on)
+Finished game 664 (RS_off vs RS_on): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 667 of 1000 (RS_on vs RS_off)
+Finished game 663 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 668 of 1000 (RS_off vs RS_on)
+Finished game 666 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 669 of 1000 (RS_on vs RS_off)
+Finished game 667 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 670 of 1000 (RS_off vs RS_on)
+Finished game 665 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 671 of 1000 (RS_on vs RS_off)
+Finished game 669 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 672 of 1000 (RS_off vs RS_on)
+Finished game 668 (RS_off vs RS_on): 1/2-1/2 {Draw by insufficient mating material}
+Started game 673 of 1000 (RS_on vs RS_off)
+Finished game 670 (RS_off vs RS_on): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 674 of 1000 (RS_off vs RS_on)
+Finished game 673 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 675 of 1000 (RS_on vs RS_off)
+Finished game 671 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 676 of 1000 (RS_off vs RS_on)
+Finished game 672 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 677 of 1000 (RS_on vs RS_off)
+Finished game 677 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 678 of 1000 (RS_off vs RS_on)
+Finished game 676 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 679 of 1000 (RS_on vs RS_off)
+Finished game 675 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 680 of 1000 (RS_off vs RS_on)
+Finished game 674 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 681 of 1000 (RS_on vs RS_off)
+Finished game 678 (RS_off vs RS_on): 1/2-1/2 {Draw by insufficient mating material}
+Started game 682 of 1000 (RS_off vs RS_on)
+Finished game 681 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 683 of 1000 (RS_on vs RS_off)
+Finished game 680 (RS_off vs RS_on): 1/2-1/2 {Draw by insufficient mating material}
+Started game 684 of 1000 (RS_off vs RS_on)
+Finished game 679 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 685 of 1000 (RS_on vs RS_off)
+Finished game 682 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 686 of 1000 (RS_off vs RS_on)
+Finished game 683 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 687 of 1000 (RS_on vs RS_off)
+Finished game 684 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 688 of 1000 (RS_off vs RS_on)
+Finished game 685 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 689 of 1000 (RS_on vs RS_off)
+Finished game 686 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 690 of 1000 (RS_off vs RS_on)
+Finished game 689 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 691 of 1000 (RS_on vs RS_off)
+Finished game 687 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 692 of 1000 (RS_off vs RS_on)
+Finished game 688 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 693 of 1000 (RS_on vs RS_off)
+Finished game 690 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 694 of 1000 (RS_off vs RS_on)
+Finished game 693 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 695 of 1000 (RS_on vs RS_off)
+Finished game 691 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 696 of 1000 (RS_off vs RS_on)
+Finished game 694 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 697 of 1000 (RS_on vs RS_off)
+Finished game 692 (RS_off vs RS_on): 1/2-1/2 {Draw by insufficient mating material}
+Started game 698 of 1000 (RS_off vs RS_on)
+Finished game 695 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 699 of 1000 (RS_on vs RS_off)
+Finished game 698 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 700 of 1000 (RS_off vs RS_on)
+Finished game 697 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 701 of 1000 (RS_on vs RS_off)
+Finished game 696 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 702 of 1000 (RS_off vs RS_on)
+Finished game 699 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 703 of 1000 (RS_on vs RS_off)
+Finished game 702 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 704 of 1000 (RS_off vs RS_on)
+Finished game 701 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 705 of 1000 (RS_on vs RS_off)
+Finished game 700 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 706 of 1000 (RS_off vs RS_on)
+Finished game 703 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 707 of 1000 (RS_on vs RS_off)
+Finished game 704 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 708 of 1000 (RS_off vs RS_on)
+Finished game 705 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 709 of 1000 (RS_on vs RS_off)
+Finished game 706 (RS_off vs RS_on): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 710 of 1000 (RS_off vs RS_on)
+Finished game 707 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 711 of 1000 (RS_on vs RS_off)
+Finished game 710 (RS_off vs RS_on): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 712 of 1000 (RS_off vs RS_on)
+Finished game 708 (RS_off vs RS_on): 0-1 {Black wins by adjudication}
+Started game 713 of 1000 (RS_on vs RS_off)
+Finished game 709 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 714 of 1000 (RS_off vs RS_on)
+Finished game 712 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 715 of 1000 (RS_on vs RS_off)
+Finished game 711 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 716 of 1000 (RS_off vs RS_on)
+Finished game 713 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 717 of 1000 (RS_on vs RS_off)
+Finished game 714 (RS_off vs RS_on): 1/2-1/2 {Draw by insufficient mating material}
+Started game 718 of 1000 (RS_off vs RS_on)
+Finished game 715 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 719 of 1000 (RS_on vs RS_off)
+Finished game 716 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 720 of 1000 (RS_off vs RS_on)
+Finished game 717 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 721 of 1000 (RS_on vs RS_off)
+Finished game 718 (RS_off vs RS_on): 0-1 {Black wins by adjudication}
+Started game 722 of 1000 (RS_off vs RS_on)
+Finished game 719 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 723 of 1000 (RS_on vs RS_off)
+Finished game 720 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 724 of 1000 (RS_off vs RS_on)
+Finished game 722 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 725 of 1000 (RS_on vs RS_off)
+Finished game 721 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 726 of 1000 (RS_off vs RS_on)
+Finished game 723 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 727 of 1000 (RS_on vs RS_off)
+Finished game 724 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 728 of 1000 (RS_off vs RS_on)
+Finished game 726 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 729 of 1000 (RS_on vs RS_off)
+Finished game 725 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 730 of 1000 (RS_off vs RS_on)
+Finished game 727 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 731 of 1000 (RS_on vs RS_off)
+Finished game 729 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 732 of 1000 (RS_off vs RS_on)
+Finished game 730 (RS_off vs RS_on): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 733 of 1000 (RS_on vs RS_off)
+Finished game 728 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 734 of 1000 (RS_off vs RS_on)
+Finished game 731 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 735 of 1000 (RS_on vs RS_off)
+Finished game 732 (RS_off vs RS_on): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 736 of 1000 (RS_off vs RS_on)
+Finished game 733 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 737 of 1000 (RS_on vs RS_off)
+Finished game 735 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 738 of 1000 (RS_off vs RS_on)
+Finished game 736 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 739 of 1000 (RS_on vs RS_off)
+Finished game 734 (RS_off vs RS_on): 0-1 {Black wins by adjudication}
+Started game 740 of 1000 (RS_off vs RS_on)
+Finished game 740 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 741 of 1000 (RS_on vs RS_off)
+Finished game 737 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 742 of 1000 (RS_off vs RS_on)
+Finished game 739 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 743 of 1000 (RS_on vs RS_off)
+Finished game 738 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 744 of 1000 (RS_off vs RS_on)
+Finished game 741 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 745 of 1000 (RS_on vs RS_off)
+Finished game 742 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 746 of 1000 (RS_off vs RS_on)
+Finished game 744 (RS_off vs RS_on): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 747 of 1000 (RS_on vs RS_off)
+Finished game 743 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 748 of 1000 (RS_off vs RS_on)
+Finished game 745 (RS_on vs RS_off): 1/2-1/2 {Draw by insufficient mating material}
+Started game 749 of 1000 (RS_on vs RS_off)
+Finished game 747 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 750 of 1000 (RS_off vs RS_on)
+Finished game 746 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 751 of 1000 (RS_on vs RS_off)
+Finished game 748 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 752 of 1000 (RS_off vs RS_on)
+Finished game 749 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 753 of 1000 (RS_on vs RS_off)
+Finished game 751 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 754 of 1000 (RS_off vs RS_on)
+Finished game 750 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 755 of 1000 (RS_on vs RS_off)
+Finished game 752 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 756 of 1000 (RS_off vs RS_on)
+Finished game 754 (RS_off vs RS_on): 1/2-1/2 {Draw by insufficient mating material}
+Started game 757 of 1000 (RS_on vs RS_off)
+Finished game 755 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 758 of 1000 (RS_off vs RS_on)
+Finished game 753 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 759 of 1000 (RS_on vs RS_off)
+Finished game 757 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 760 of 1000 (RS_off vs RS_on)
+Finished game 756 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 761 of 1000 (RS_on vs RS_off)
+Finished game 758 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 762 of 1000 (RS_off vs RS_on)
+Finished game 759 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 763 of 1000 (RS_on vs RS_off)
+Finished game 761 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 764 of 1000 (RS_off vs RS_on)
+Finished game 760 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 765 of 1000 (RS_on vs RS_off)
+Finished game 762 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 766 of 1000 (RS_off vs RS_on)
+Finished game 765 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 767 of 1000 (RS_on vs RS_off)
+Finished game 763 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 768 of 1000 (RS_off vs RS_on)
+Finished game 766 (RS_off vs RS_on): 0-1 {Black wins by adjudication}
+Started game 769 of 1000 (RS_on vs RS_off)
+Finished game 767 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 770 of 1000 (RS_off vs RS_on)
+Finished game 764 (RS_off vs RS_on): 1/2-1/2 {Draw by fifty moves rule}
+Started game 771 of 1000 (RS_on vs RS_off)
+Finished game 769 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 772 of 1000 (RS_off vs RS_on)
+Finished game 768 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 773 of 1000 (RS_on vs RS_off)
+Finished game 770 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 774 of 1000 (RS_off vs RS_on)
+Finished game 771 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 775 of 1000 (RS_on vs RS_off)
+Finished game 773 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 776 of 1000 (RS_off vs RS_on)
+Finished game 774 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 777 of 1000 (RS_on vs RS_off)
+Finished game 772 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 778 of 1000 (RS_off vs RS_on)
+Finished game 776 (RS_off vs RS_on): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 779 of 1000 (RS_on vs RS_off)
+Finished game 775 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 780 of 1000 (RS_off vs RS_on)
+Finished game 779 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 781 of 1000 (RS_on vs RS_off)
+Finished game 777 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 782 of 1000 (RS_off vs RS_on)
+Finished game 778 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 783 of 1000 (RS_on vs RS_off)
+Finished game 780 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 784 of 1000 (RS_off vs RS_on)
+Finished game 781 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 785 of 1000 (RS_on vs RS_off)
+Finished game 782 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 786 of 1000 (RS_off vs RS_on)
+Finished game 783 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 787 of 1000 (RS_on vs RS_off)
+Finished game 784 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 788 of 1000 (RS_off vs RS_on)
+Finished game 785 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 789 of 1000 (RS_on vs RS_off)
+Finished game 786 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 790 of 1000 (RS_off vs RS_on)
+Finished game 787 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 791 of 1000 (RS_on vs RS_off)
+Finished game 788 (RS_off vs RS_on): 1/2-1/2 {Draw by stalemate}
+Started game 792 of 1000 (RS_off vs RS_on)
+Finished game 789 (RS_on vs RS_off): 0-1 {Black wins by adjudication}
+Started game 793 of 1000 (RS_on vs RS_off)
+Finished game 790 (RS_off vs RS_on): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 794 of 1000 (RS_off vs RS_on)
+Finished game 793 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 795 of 1000 (RS_on vs RS_off)
+Finished game 791 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 796 of 1000 (RS_off vs RS_on)
+Finished game 792 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 797 of 1000 (RS_on vs RS_off)
+Finished game 794 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 798 of 1000 (RS_off vs RS_on)
+Finished game 795 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 799 of 1000 (RS_on vs RS_off)
+Finished game 797 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 800 of 1000 (RS_off vs RS_on)
+Finished game 796 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 801 of 1000 (RS_on vs RS_off)
+Finished game 800 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 802 of 1000 (RS_off vs RS_on)
+Finished game 798 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 803 of 1000 (RS_on vs RS_off)
+Finished game 799 (RS_on vs RS_off): 1/2-1/2 {Draw by insufficient mating material}
+--------------------------------------------------
+Results of RS_on vs RS_off (20000 nodes, 1t, 16MB, UHO_4060_v4.epd):
+Elo: 8.69 +/- 14.34, nElo: 14.60 +/- 24.08
+LOS: 88.28 %, DrawRatio: 44.00 %, PairsRatio: 1.17
+Games: 800, Wins: 235, Losses: 215, Draws: 350, Points: 410.0 (51.25 %)
+Ptnml(0-2): [9, 94, 176, 110, 11], WL/DD Ratio: 1.41
+--------------------------------------------------
+Started game 804 of 1000 (RS_off vs RS_on)
+Finished game 802 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 805 of 1000 (RS_on vs RS_off)
+Finished game 803 (RS_on vs RS_off): 0-1 {Black wins by adjudication}
+Started game 806 of 1000 (RS_off vs RS_on)
+Finished game 801 (RS_on vs RS_off): 0-1 {Black wins by adjudication}
+Started game 807 of 1000 (RS_on vs RS_off)
+Finished game 804 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 808 of 1000 (RS_off vs RS_on)
+Finished game 805 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 809 of 1000 (RS_on vs RS_off)
+Finished game 806 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 810 of 1000 (RS_off vs RS_on)
+Finished game 807 (RS_on vs RS_off): 1/2-1/2 {Draw by stalemate}
+Started game 811 of 1000 (RS_on vs RS_off)
+Finished game 809 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 812 of 1000 (RS_off vs RS_on)
+Finished game 808 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 813 of 1000 (RS_on vs RS_off)
+Finished game 810 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 814 of 1000 (RS_off vs RS_on)
+Finished game 811 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 815 of 1000 (RS_on vs RS_off)
+Finished game 812 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 816 of 1000 (RS_off vs RS_on)
+Finished game 813 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 817 of 1000 (RS_on vs RS_off)
+Finished game 814 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 818 of 1000 (RS_off vs RS_on)
+Finished game 815 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 819 of 1000 (RS_on vs RS_off)
+Finished game 816 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 820 of 1000 (RS_off vs RS_on)
+Finished game 817 (RS_on vs RS_off): 1/2-1/2 {Draw by insufficient mating material}
+Started game 821 of 1000 (RS_on vs RS_off)
+Finished game 820 (RS_off vs RS_on): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 822 of 1000 (RS_off vs RS_on)
+Finished game 818 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 823 of 1000 (RS_on vs RS_off)
+Finished game 821 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 824 of 1000 (RS_off vs RS_on)
+Finished game 819 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 825 of 1000 (RS_on vs RS_off)
+Finished game 823 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 826 of 1000 (RS_off vs RS_on)
+Finished game 824 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 827 of 1000 (RS_on vs RS_off)
+Finished game 822 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 828 of 1000 (RS_off vs RS_on)
+Finished game 825 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 829 of 1000 (RS_on vs RS_off)
+Finished game 826 (RS_off vs RS_on): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 830 of 1000 (RS_off vs RS_on)
+Finished game 828 (RS_off vs RS_on): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 831 of 1000 (RS_on vs RS_off)
+Finished game 829 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 832 of 1000 (RS_off vs RS_on)
+Finished game 830 (RS_off vs RS_on): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 833 of 1000 (RS_on vs RS_off)
+Finished game 831 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 834 of 1000 (RS_off vs RS_on)
+Finished game 827 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 835 of 1000 (RS_on vs RS_off)
+Finished game 832 (RS_off vs RS_on): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 836 of 1000 (RS_off vs RS_on)
+Finished game 834 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 837 of 1000 (RS_on vs RS_off)
+Finished game 833 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 838 of 1000 (RS_off vs RS_on)
+Finished game 835 (RS_on vs RS_off): 1/2-1/2 {Draw by stalemate}
+Started game 839 of 1000 (RS_on vs RS_off)
+Finished game 837 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 840 of 1000 (RS_off vs RS_on)
+Finished game 839 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 841 of 1000 (RS_on vs RS_off)
+Finished game 838 (RS_off vs RS_on): 0-1 {Black wins by adjudication}
+Started game 842 of 1000 (RS_off vs RS_on)
+Finished game 840 (RS_off vs RS_on): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 843 of 1000 (RS_on vs RS_off)
+Finished game 836 (RS_off vs RS_on): 1/2-1/2 {Draw by fifty moves rule}
+Started game 844 of 1000 (RS_off vs RS_on)
+Finished game 841 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 845 of 1000 (RS_on vs RS_off)
+Finished game 842 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 846 of 1000 (RS_off vs RS_on)
+Finished game 843 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 847 of 1000 (RS_on vs RS_off)
+Finished game 844 (RS_off vs RS_on): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 848 of 1000 (RS_off vs RS_on)
+Finished game 846 (RS_off vs RS_on): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 849 of 1000 (RS_on vs RS_off)
+Finished game 845 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 850 of 1000 (RS_off vs RS_on)
+Finished game 847 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 851 of 1000 (RS_on vs RS_off)
+Finished game 848 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 852 of 1000 (RS_off vs RS_on)
+Finished game 851 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 853 of 1000 (RS_on vs RS_off)
+Finished game 849 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 854 of 1000 (RS_off vs RS_on)
+Finished game 850 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 855 of 1000 (RS_on vs RS_off)
+Finished game 853 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 856 of 1000 (RS_off vs RS_on)
+Finished game 852 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 857 of 1000 (RS_on vs RS_off)
+Finished game 857 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 858 of 1000 (RS_off vs RS_on)
+Finished game 856 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 859 of 1000 (RS_on vs RS_off)
+Finished game 854 (RS_off vs RS_on): 0-1 {Black wins by adjudication}
+Started game 860 of 1000 (RS_off vs RS_on)
+Finished game 855 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 861 of 1000 (RS_on vs RS_off)
+Finished game 858 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 862 of 1000 (RS_off vs RS_on)
+Finished game 861 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 863 of 1000 (RS_on vs RS_off)
+Finished game 859 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 864 of 1000 (RS_off vs RS_on)
+Finished game 860 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 865 of 1000 (RS_on vs RS_off)
+Finished game 863 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 866 of 1000 (RS_off vs RS_on)
+Finished game 865 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 867 of 1000 (RS_on vs RS_off)
+Finished game 862 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 868 of 1000 (RS_off vs RS_on)
+Finished game 864 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 869 of 1000 (RS_on vs RS_off)
+Finished game 866 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 870 of 1000 (RS_off vs RS_on)
+Finished game 869 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 871 of 1000 (RS_on vs RS_off)
+Finished game 868 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 872 of 1000 (RS_off vs RS_on)
+Finished game 867 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 873 of 1000 (RS_on vs RS_off)
+Finished game 870 (RS_off vs RS_on): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 874 of 1000 (RS_off vs RS_on)
+Finished game 871 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 875 of 1000 (RS_on vs RS_off)
+Finished game 872 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 876 of 1000 (RS_off vs RS_on)
+Finished game 873 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 877 of 1000 (RS_on vs RS_off)
+Finished game 875 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 878 of 1000 (RS_off vs RS_on)
+Finished game 874 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 879 of 1000 (RS_on vs RS_off)
+Finished game 876 (RS_off vs RS_on): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 880 of 1000 (RS_off vs RS_on)
+Finished game 879 (RS_on vs RS_off): 0-1 {Black wins by adjudication}
+Started game 881 of 1000 (RS_on vs RS_off)
+Finished game 878 (RS_off vs RS_on): 1/2-1/2 {Draw by insufficient mating material}
+Started game 882 of 1000 (RS_off vs RS_on)
+Finished game 877 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 883 of 1000 (RS_on vs RS_off)
+Finished game 880 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 884 of 1000 (RS_off vs RS_on)
+Finished game 882 (RS_off vs RS_on): 1-0 {White mates}
+Started game 885 of 1000 (RS_on vs RS_off)
+Finished game 881 (RS_on vs RS_off): 0-1 {Black wins by adjudication}
+Started game 886 of 1000 (RS_off vs RS_on)
+Finished game 883 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 887 of 1000 (RS_on vs RS_off)
+Finished game 884 (RS_off vs RS_on): 0-1 {Black wins by adjudication}
+Started game 888 of 1000 (RS_off vs RS_on)
+Finished game 885 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 889 of 1000 (RS_on vs RS_off)
+Finished game 889 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 890 of 1000 (RS_off vs RS_on)
+Finished game 886 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 891 of 1000 (RS_on vs RS_off)
+Finished game 887 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 892 of 1000 (RS_off vs RS_on)
+Finished game 888 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 893 of 1000 (RS_on vs RS_off)
+Finished game 890 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 894 of 1000 (RS_off vs RS_on)
+Finished game 891 (RS_on vs RS_off): 1/2-1/2 {Draw by stalemate}
+Started game 895 of 1000 (RS_on vs RS_off)
+Finished game 892 (RS_off vs RS_on): 1/2-1/2 {Draw by insufficient mating material}
+Started game 896 of 1000 (RS_off vs RS_on)
+Finished game 894 (RS_off vs RS_on): 1/2-1/2 {Draw by stalemate}
+Started game 897 of 1000 (RS_on vs RS_off)
+Finished game 896 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 898 of 1000 (RS_off vs RS_on)
+Finished game 895 (RS_on vs RS_off): 1/2-1/2 {Draw by stalemate}
+Started game 899 of 1000 (RS_on vs RS_off)
+Finished game 893 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 900 of 1000 (RS_off vs RS_on)
+Finished game 899 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 901 of 1000 (RS_on vs RS_off)
+Finished game 898 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 902 of 1000 (RS_off vs RS_on)
+Finished game 900 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 903 of 1000 (RS_on vs RS_off)
+Finished game 902 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 904 of 1000 (RS_off vs RS_on)
+Finished game 901 (RS_on vs RS_off): 0-1 {Black wins by adjudication}
+Started game 905 of 1000 (RS_on vs RS_off)
+Finished game 897 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 906 of 1000 (RS_off vs RS_on)
+Finished game 906 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 907 of 1000 (RS_on vs RS_off)
+Finished game 904 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 908 of 1000 (RS_off vs RS_on)
+Finished game 905 (RS_on vs RS_off): 1/2-1/2 {Draw by insufficient mating material}
+Started game 909 of 1000 (RS_on vs RS_off)
+Finished game 903 (RS_on vs RS_off): 1/2-1/2 {Draw by insufficient mating material}
+Started game 910 of 1000 (RS_off vs RS_on)
+Finished game 909 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 911 of 1000 (RS_on vs RS_off)
+Finished game 908 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 912 of 1000 (RS_off vs RS_on)
+Finished game 907 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 913 of 1000 (RS_on vs RS_off)
+Finished game 910 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 914 of 1000 (RS_off vs RS_on)
+Finished game 911 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 915 of 1000 (RS_on vs RS_off)
+Finished game 912 (RS_off vs RS_on): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 916 of 1000 (RS_off vs RS_on)
+Finished game 913 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 917 of 1000 (RS_on vs RS_off)
+Finished game 914 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 918 of 1000 (RS_off vs RS_on)
+Finished game 915 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 919 of 1000 (RS_on vs RS_off)
+Finished game 916 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 920 of 1000 (RS_off vs RS_on)
+Finished game 917 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 921 of 1000 (RS_on vs RS_off)
+Finished game 918 (RS_off vs RS_on): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 922 of 1000 (RS_off vs RS_on)
+Finished game 919 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 923 of 1000 (RS_on vs RS_off)
+Finished game 920 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 924 of 1000 (RS_off vs RS_on)
+Finished game 921 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 925 of 1000 (RS_on vs RS_off)
+Finished game 923 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 926 of 1000 (RS_off vs RS_on)
+Finished game 922 (RS_off vs RS_on): 1/2-1/2 {Draw by insufficient mating material}
+Started game 927 of 1000 (RS_on vs RS_off)
+Finished game 924 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 928 of 1000 (RS_off vs RS_on)
+Finished game 925 (RS_on vs RS_off): 0-1 {Black wins by adjudication}
+Started game 929 of 1000 (RS_on vs RS_off)
+Finished game 926 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 930 of 1000 (RS_off vs RS_on)
+Finished game 927 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 931 of 1000 (RS_on vs RS_off)
+Finished game 930 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 932 of 1000 (RS_off vs RS_on)
+Finished game 929 (RS_on vs RS_off): 1/2-1/2 {Draw by insufficient mating material}
+Started game 933 of 1000 (RS_on vs RS_off)
+Finished game 928 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 934 of 1000 (RS_off vs RS_on)
+Finished game 931 (RS_on vs RS_off): 0-1 {Black wins by adjudication}
+Started game 935 of 1000 (RS_on vs RS_off)
+Finished game 935 (RS_on vs RS_off): 0-1 {Black wins by adjudication}
+Started game 936 of 1000 (RS_off vs RS_on)
+Finished game 932 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 937 of 1000 (RS_on vs RS_off)
+Finished game 933 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 938 of 1000 (RS_off vs RS_on)
+Finished game 934 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 939 of 1000 (RS_on vs RS_off)
+Finished game 936 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 940 of 1000 (RS_off vs RS_on)
+Finished game 937 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 941 of 1000 (RS_on vs RS_off)
+Finished game 939 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 942 of 1000 (RS_off vs RS_on)
+Finished game 938 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 943 of 1000 (RS_on vs RS_off)
+Finished game 941 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 944 of 1000 (RS_off vs RS_on)
+Finished game 940 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 945 of 1000 (RS_on vs RS_off)
+Finished game 942 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 946 of 1000 (RS_off vs RS_on)
+Finished game 943 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 947 of 1000 (RS_on vs RS_off)
+Finished game 946 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 948 of 1000 (RS_off vs RS_on)
+Finished game 944 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 949 of 1000 (RS_on vs RS_off)
+Finished game 945 (RS_on vs RS_off): 1/2-1/2 {Draw by insufficient mating material}
+Started game 950 of 1000 (RS_off vs RS_on)
+Finished game 947 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 951 of 1000 (RS_on vs RS_off)
+Finished game 949 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 952 of 1000 (RS_off vs RS_on)
+Finished game 950 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 953 of 1000 (RS_on vs RS_off)
+Finished game 948 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 954 of 1000 (RS_off vs RS_on)
+Finished game 951 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 955 of 1000 (RS_on vs RS_off)
+Finished game 954 (RS_off vs RS_on): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 956 of 1000 (RS_off vs RS_on)
+Finished game 952 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 957 of 1000 (RS_on vs RS_off)
+Finished game 953 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 958 of 1000 (RS_off vs RS_on)
+Finished game 958 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 959 of 1000 (RS_on vs RS_off)
+Finished game 955 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 960 of 1000 (RS_off vs RS_on)
+Finished game 957 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 961 of 1000 (RS_on vs RS_off)
+Finished game 956 (RS_off vs RS_on): 1/2-1/2 {Draw by insufficient mating material}
+Started game 962 of 1000 (RS_off vs RS_on)
+Finished game 960 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 963 of 1000 (RS_on vs RS_off)
+Finished game 961 (RS_on vs RS_off): 1/2-1/2 {Draw by stalemate}
+Started game 964 of 1000 (RS_off vs RS_on)
+Finished game 959 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 965 of 1000 (RS_on vs RS_off)
+Finished game 962 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 966 of 1000 (RS_off vs RS_on)
+Finished game 963 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 967 of 1000 (RS_on vs RS_off)
+Finished game 964 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 968 of 1000 (RS_off vs RS_on)
+Finished game 965 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 969 of 1000 (RS_on vs RS_off)
+Finished game 966 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 970 of 1000 (RS_off vs RS_on)
+Finished game 967 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 971 of 1000 (RS_on vs RS_off)
+Finished game 969 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 972 of 1000 (RS_off vs RS_on)
+Finished game 968 (RS_off vs RS_on): 1/2-1/2 {Draw by insufficient mating material}
+Started game 973 of 1000 (RS_on vs RS_off)
+Finished game 970 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 974 of 1000 (RS_off vs RS_on)
+Finished game 971 (RS_on vs RS_off): 1/2-1/2 {Draw by insufficient mating material}
+Started game 975 of 1000 (RS_on vs RS_off)
+Finished game 972 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 976 of 1000 (RS_off vs RS_on)
+Finished game 975 (RS_on vs RS_off): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 977 of 1000 (RS_on vs RS_off)
+Finished game 973 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 978 of 1000 (RS_off vs RS_on)
+Finished game 974 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 979 of 1000 (RS_on vs RS_off)
+Finished game 977 (RS_on vs RS_off): 1/2-1/2 {Draw by insufficient mating material}
+Started game 980 of 1000 (RS_off vs RS_on)
+Finished game 978 (RS_off vs RS_on): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 981 of 1000 (RS_on vs RS_off)
+Finished game 976 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 982 of 1000 (RS_off vs RS_on)
+Finished game 979 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 983 of 1000 (RS_on vs RS_off)
+Finished game 980 (RS_off vs RS_on): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 984 of 1000 (RS_off vs RS_on)
+Finished game 982 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 985 of 1000 (RS_on vs RS_off)
+Finished game 981 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 986 of 1000 (RS_off vs RS_on)
+Finished game 984 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 987 of 1000 (RS_on vs RS_off)
+Finished game 985 (RS_on vs RS_off): 1/2-1/2 {Draw by insufficient mating material}
+Started game 988 of 1000 (RS_off vs RS_on)
+Finished game 983 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 989 of 1000 (RS_on vs RS_off)
+Finished game 987 (RS_on vs RS_off): 0-1 {Black wins by adjudication}
+Started game 990 of 1000 (RS_off vs RS_on)
+Finished game 986 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 991 of 1000 (RS_on vs RS_off)
+Finished game 989 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 992 of 1000 (RS_off vs RS_on)
+Finished game 988 (RS_off vs RS_on): 0-1 {Black wins by adjudication}
+Started game 993 of 1000 (RS_on vs RS_off)
+Finished game 992 (RS_off vs RS_on): 1/2-1/2 {Draw by insufficient mating material}
+Started game 994 of 1000 (RS_off vs RS_on)
+Finished game 991 (RS_on vs RS_off): 1/2-1/2 {Draw by insufficient mating material}
+Started game 995 of 1000 (RS_on vs RS_off)
+Finished game 990 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 996 of 1000 (RS_off vs RS_on)
+Finished game 993 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Started game 997 of 1000 (RS_on vs RS_off)
+Finished game 995 (RS_on vs RS_off): 1/2-1/2 {Draw by adjudication}
+Started game 998 of 1000 (RS_off vs RS_on)
+Finished game 996 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Started game 999 of 1000 (RS_on vs RS_off)
+Finished game 994 (RS_off vs RS_on): 1/2-1/2 {Draw by adjudication}
+Started game 1000 of 1000 (RS_off vs RS_on)
+Finished game 997 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+Finished game 998 (RS_off vs RS_on): 1-0 {White wins by adjudication}
+Finished game 1000 (RS_off vs RS_on): 0-1 {Black wins by adjudication}
+Finished game 999 (RS_on vs RS_off): 1-0 {White wins by adjudication}
+--------------------------------------------------
+Results of RS_on vs RS_off (20000 nodes, 1t, 16MB, UHO_4060_v4.epd):
+Elo: 6.25 +/- 12.92, nElo: 10.43 +/- 21.53
+LOS: 82.88 %, DrawRatio: 45.40 %, PairsRatio: 1.15
+Games: 1000, Wins: 290, Losses: 272, Draws: 438, Points: 509.0 (50.90 %)
+Ptnml(0-2): [15, 112, 227, 132, 14], WL/DD Ratio: 1.34
+--------------------------------------------------
+Finished match
+Total Time: 00:23:19 (hours:minutes:seconds)
+

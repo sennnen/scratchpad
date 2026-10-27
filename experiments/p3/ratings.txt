@@ -1,0 +1,10 @@
+player                                elo             95% CI
+master                                0.0   [    0.0,     0.0]
+RS_T                                -42.7   [  -59.0,   -27.5]
+RS_G                                -57.8   [  -80.5,   -35.3]
+RS_F                                -81.4   [  -98.0,   -65.2]
+matches:
+  RS_F vs master: ptnml [18, 79, 69, 33, 1] games 400
+  RS_T vs RS_F: ptnml [12, 77, 224, 150, 37] games 1000
+  RS_T vs RS_G: ptnml [12, 59, 132, 85, 12] games 600
+  RS_T vs master: ptnml [14, 69, 84, 30, 3] games 400

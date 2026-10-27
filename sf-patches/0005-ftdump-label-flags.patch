@@ -1,0 +1,228 @@
+From 08c9e1f38a3eabf41e5539cb43580042c40be3f6 Mon Sep 17 00:00:00 2001
+From: research <research@localhost>
+Date: Mon, 26 Oct 2026 11:46:57 +0000
+Subject: [PATCH] research: ftdump (FT outputs + bucket + eval), label capture
+ flag, rec_to_fen
+
+---
+ src/engine.cpp       | 28 ++++++++++++++++++++++++++++
+ src/engine.h         |  1 +
+ src/gendata.cpp      |  8 +++++++-
+ src/nnue/network.cpp | 18 ++++++++++++++++++
+ src/nnue/network.h   |  7 +++++++
+ src/research.cpp     | 21 +++++++++++++++++++++
+ src/research.h       | 13 ++++++++++++-
+ src/uci.cpp          | 13 +++++++++++++
+ 8 files changed, 107 insertions(+), 2 deletions(-)
+
+diff --git a/src/engine.cpp b/src/engine.cpp
+index e5913e4d..b45c6a6b 100644
+--- a/src/engine.cpp
++++ b/src/engine.cpp
+@@ -150,6 +150,34 @@ Engine::Engine(std::optional<std::filesystem::path> path) :
+     resize_threads();
+ }
+ 
++void Engine::ft_dump(const std::string& in, const std::string& out, u64 maxRecs, u64 skip) const {
++    FILE* fi = std::fopen(in.c_str(), "rb");
++    FILE* fo = std::fopen(out.c_str(), "ab");
++    if (!fi || !fo) { sync_cout << "info string ftdump: cannot open files" << sync_endl; return; }
++    std::fseek(fi, long(skip * sizeof(Research::Rec)), SEEK_SET);
++    auto accumulators = std::make_unique<Eval::NNUE::AccumulatorStack>();
++    auto caches       = std::make_unique<Eval::NNUE::AccumulatorCaches>(*network);
++    Research::FtRec fr;
++    u64 done = 0, skipped = 0;
++    while (done < maxRecs && std::fread(&fr.rec, sizeof fr.rec, 1, fi) == 1)
++    {
++        StateInfo st;
++        Position  p;
++        p.set(Research::rec_to_fen(fr.rec), false, &st);
++        if (p.checkers()) { ++skipped; continue; }
++        accumulators->reset();
++        int bucket;
++        fr.sfEval = int16_t(std::clamp(int(network->transform_dump(p, *accumulators, *caches, fr.ft, bucket)), -32000, 32000));
++        fr.bucket = uint8_t(bucket);
++        fr.pad    = 0;
++        std::fwrite(&fr, sizeof fr, 1, fo);
++        ++done;
++    }
++    std::fclose(fi);
++    std::fclose(fo);
++    sync_cout << "info string ftdump done " << done << " skipped " << skipped << sync_endl;
++}
++
+ int Engine::raw_eval() const {
+     if (pos.checkers())
+         return 0;
+diff --git a/src/engine.h b/src/engine.h
+index 2ae37470..c5a464ab 100644
+--- a/src/engine.h
++++ b/src/engine.h
+@@ -103,6 +103,7 @@ class Engine {
+ 
+     void trace_eval() const;
+     int  raw_eval() const;
++    void ft_dump(const std::string& in, const std::string& out, u64 maxRecs, u64 skip) const;
+     const Position& position() const { return pos; }
+ 
+     const OptionsMap& get_options() const;
+diff --git a/src/gendata.cpp b/src/gendata.cpp
+index 5cde9efd..38ff6048 100644
+--- a/src/gendata.cpp
++++ b/src/gendata.cpp
+@@ -206,7 +206,8 @@ void label(Engine& engine, std::istringstream& is) {
+     });
+     engine.set_on_update_no_moves([&](const Engine::InfoShort&) {});
+     engine.set_on_iter([&](const Engine::InfoIter&) {});
+-    engine.set_on_bestmove([&](std::string_view, std::string_view) {});
++    std::string bestmove;
++    engine.set_on_bestmove([&](std::string_view bm, std::string_view) { bestmove = std::string(bm); });
+     static const char* pc = " PNBRQK  pnbrqk";
+     Research::Rec r;
+     u64 done = 0, skipped = 0;
+@@ -236,6 +237,11 @@ void label(Engine& engine, std::istringstream& is) {
+         engine.go(limits);
+         engine.wait_for_search_finished();
+         r.score = int16_t(std::clamp(lastScore, -32000, 32000));
++        {   // flag (src bit 7) when the search's best move is a capture or promotion
++            Move bm = UCIEngine::to_move(engine.position(), bestmove);
++            if (bm != Move::none() && engine.position().capture_stage(bm))
++                r.src |= 0x80;
++        }
+         std::fwrite(&r, sizeof r, 1, fo);
+         if (++done % 10000 == 0)
+         {
+diff --git a/src/nnue/network.cpp b/src/nnue/network.cpp
+index 5e61cde0..f05be6fe 100644
+--- a/src/nnue/network.cpp
++++ b/src/nnue/network.cpp
+@@ -1,3 +1,4 @@
++#include <cstring>
+ /*
+   Stockfish, a UCI chess playing engine derived from Glaurung 2.1
+   Copyright (C) 2004-2026 The Stockfish developers (see AUTHORS file)
+@@ -204,6 +205,23 @@ void Network::verify(const std::function<void(std::string_view)>& f,
+ }
+ 
+ 
++Value Network::transform_dump(const Position&    pos,
++                              AccumulatorStack&  accumulatorStack,
++                              AccumulatorCaches& cache,
++                              u8*                out,
++                              int&               bucket) const {
++    alignas(CacheLineSize) TransformedFeatureType transformedFeatures[FeatureTransformer::BufferSize];
++    NNZInfo<L1> nnzInfo;
++    const int   pcBucket    = (pos.count<ALL_PIECES>() - 1) / 4;
++    const Color stm         = pos.side_to_move();
++    const int   queenBucket = (pos.pieces(stm, QUEEN) ? 2 : 0) | (pos.pieces(~stm, QUEEN) ? 1 : 0);
++    bucket                  = pcBucket * 4 + queenBucket;
++    featureTransformer.transform(pos, accumulatorStack, cache, transformedFeatures, nnzInfo);
++    std::memcpy(out, transformedFeatures, L1);
++    const auto positional = network[bucket].propagate(transformedFeatures, nnzInfo);
++    return static_cast<Value>(positional / OutputScale);
++}
++
+ NnueEvalTrace Network::trace_evaluate(const Position&    pos,
+                                       AccumulatorStack&  accumulatorStack,
+                                       AccumulatorCaches& cache) const {
+diff --git a/src/nnue/network.h b/src/nnue/network.h
+index cbcc60e7..0ce38aef 100644
+--- a/src/nnue/network.h
++++ b/src/nnue/network.h
+@@ -71,6 +71,13 @@ class Network {
+                 const EvalFile&                              evalFile,
+                 std::filesystem::path                        evalfilePath) const;
+ 
++    // research: feature-transformer output (L1 bytes) and layer-stack bucket; returns raw eval
++    Value transform_dump(const Position&    pos,
++                         AccumulatorStack&  accumulators,
++                         AccumulatorCaches& cache,
++                         u8*                out,
++                         int&               bucket) const;
++
+     NnueEvalTrace trace_evaluate(const Position&    pos,
+                                  AccumulatorStack&  accumulatorStack,
+                                  AccumulatorCaches& cache) const;
+diff --git a/src/research.cpp b/src/research.cpp
+index f4c454ef..3bcefe1c 100644
+--- a/src/research.cpp
++++ b/src/research.cpp
+@@ -45,6 +45,27 @@ void encode(const Position& pos, Rec& r) {
+     r.rule50 = uint8_t(std::min(pos.rule50_count(), 255));
+ }
+ 
++std::string rec_to_fen(const Rec& r) {
++    static const char* pc = " PNBRQK  pnbrqk";
++    std::string        fen;
++    for (int rank = 7; rank >= 0; --rank)
++    {
++        int empty = 0;
++        for (int file = 0; file < 8; ++file)
++        {
++            int s = rank * 8 + file, code = (r.board[s >> 1] >> ((s & 1) * 4)) & 15;
++            if (!code) { ++empty; continue; }
++            if (empty) { fen += char('0' + empty); empty = 0; }
++            fen += pc[code];
++        }
++        if (empty) fen += char('0' + empty);
++        if (rank) fen += '/';
++    }
++    fen += r.stm ? " b - - " : " w - - ";
++    fen += std::to_string(r.rule50) + " 1";
++    return fen;
++}
++
+ // File format (little endian):
+ //  char magic[8] = "STUDNT01"; int32 H; int32 NB; float outScale;
+ //  float ftW[768*H] (feature-major), ftB[H], outW[NB*2H], outB[NB]
+diff --git a/src/research.h b/src/research.h
+index 184db3a5..9f7b3eed 100644
+--- a/src/research.h
++++ b/src/research.h
+@@ -28,7 +28,18 @@ struct Rec {
+ };
+ static_assert(sizeof(Rec) == 40, "Rec must be 40 bytes");
+ 
+-void encode(const Position& pos, Rec& r);
++void        encode(const Position& pos, Rec& r);
++std::string rec_to_fen(const Rec& r);  // castling/ep rights are not stored and are dropped
++
++// ftdump output record: source record, Stockfish raw eval, layer-stack bucket, FT output
++struct FtRec {
++    Rec     rec;
++    int16_t sfEval;
++    uint8_t bucket;
++    uint8_t pad;
++    uint8_t ft[1024];
++};
++static_assert(sizeof(FtRec) == 1068, "FtRec must be 1068 bytes");
+ 
+ struct Recorder {
+     FILE*    f    = nullptr;
+diff --git a/src/uci.cpp b/src/uci.cpp
+index 3da198f6..eedc1bf0 100644
+--- a/src/uci.cpp
++++ b/src/uci.cpp
+@@ -176,6 +176,19 @@ void UCIEngine::loop() {
+             label(engine, is);
+             init_search_update_listeners();
+         }
++        else if (token == "ftdump")
++        {
++            std::string in, out, t;
++            u64         maxRecs = ~u64(0), skip = 0;
++            while (is >> t)
++            {
++                if (t == "in") is >> in;
++                else if (t == "out") is >> out;
++                else if (t == "max") is >> maxRecs;
++                else if (t == "skip") is >> skip;
++            }
++            engine.ft_dump(in, out, maxRecs, skip);
++        }
+         else if (token == "export_net")
+         {
+             std::optional<std::filesystem::path> file;
+-- 
+2.43.0
+

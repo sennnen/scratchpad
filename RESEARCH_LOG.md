@@ -313,3 +313,308 @@ Final R1: with tuned settings on both sides, tree distillation matches the best 
 with ~8x less data-generation compute (the ~5x interpolation in E10 used the untuned 5000-node/2% curve).
 Note: the vtree proxy under-rates the fast-game students (vtree 0.0327 but Elo ~ tree students at
 vtree ~0.029): R2 is reliable within a data family, less so across very different position sources.
+
+# Phase II (branch claude/phase2-search-tree-training)
+
+## P2 setup: architecture-identical fine-tuning of the production net
+Rationale: a full SFNNv18 retrain is impossible on 4 CPUs, but its 32 dense layer stacks (1.13M of
+~113M parameters) can be fine-tuned on CPU with the feature transformer frozen. Any change is then
+architecture-identical (same speed), so fixed-node Elo is equal-time Elo and a positive result would
+be directly fishtest-testable.
+Infrastructure (verified):
+- `tools/p2/nnue_stacks.py`: reads/writes the stacks (last 32 x 35,208 bytes of the .nnue; all 32 stack
+  hashes 0x63337116; read->write round trip byte-identical).
+- fork patch 0005: `ftdump` (u8[1024] FT output + bucket + Stockfish raw eval per record), `label`
+  now flags positions whose search best move is a capture/promotion (Rec.src bit 7).
+- `tools/p2/finetune.py`: float layer-stack model with fake quantisation; reproduces Stockfish's raw
+  eval from ftdump features within rounding (mean |diff| 0.50, max 0.9995 internal units, 3,000 positions).
+  Targets: search scores mapped through the inverse of scale_evaluation (optimism 0; inversion exact to
+  <= 1 unit), so the fine-tuned raw output is calibrated for Stockfish's own rescaling.
+Data P2-D1: from run1 (master self-play, 5000 nodes/move, seeds 101-104): 300k game positions (G), 300k
+tree positions (T); held-out from val games (seeds 901-904): 20k VG, 20k VT. All re-labelled by the
+same 5000-node search (`label`), so labels are identical in kind for G and T.
+
+## PRE-REGISTRATION P2-F1 (written before any fine-tuning result)
+Question: fine-tuning master's layer stacks on search-labelled positions, do tree positions beat game
+positions (same label procedure, same count, same hyperparameters)?
+- Arms: FT-G (game), FT-T (tree), FT-M (50/50). Default: quiet filter (drop best-move-is-capture) applied
+  identically to all arms, as nnue-pytorch's smart fen skipping does. Same steps, LR, anchor, seed.
+- Hyperparameters (LR, anchor, steps) chosen ONLY on validation loss on the pooled VG+VT set, using FT-M,
+  then frozen for all arms.
+- Primary endpoint: direct match FT-T vs FT-G, 20k nodes, >= 1000 games. Secondary: each vs master.
+- A "Stockfish improvement" claim requires: candidate vs master > 0 with LOS >= 99% on >= 4000 games at
+  fixed nodes AND confirmation at STC (10+0.1) on an independent opening seed.
+
+## BUG FOUND (affects Phase I search-label results): recorded search scores are centipawns
+`gendata`/`label` stored `Score::InternalUnits`, which Stockfish fills with `UCIEngine::to_cp(v)` =
+round(100 v / a(material)), a ~ 300-400. Teacher labels (raw net eval) are true internal units. Phase I
+trained "score"/"blend" students with sigmoid(score/340), i.e. on targets compressed ~3.4x.
+Impact on Phase I:
+- UNAFFECTED: all teacher-label results (R1 incl. E9/E10/E13, R2, R3, R4, E7/E8).
+- INVALID: absolute strength of all search-score-label students (E1 game_score/game_blend, gq_score,
+  gq_blend; "teacher labels beat search labels +91"; "WDL blending hurts"; "-600..-1300 unfiltered").
+  Their evals were ~3x too small for Stockfish's pruning margins. These claims are withdrawn.
+- E6 (tree_score vs gq_score, +80) compared two equally mis-scaled arms: internally consistent but at a
+  pathological scale; to be re-run with correct units before it can be claimed.
+- Adjudication thresholds in gendata (|score| >= 2500, <= 15) were in cp: only game lengths affected.
+Fix: `tools/p2/finetune.py: cp_to_internal()` (exact inverse of to_cp up to rounding). Check: slope of
+search value on scaled static eval is 1.07 (VG) / 1.11 (VT) after conversion (0.32 before).
+
+## P2-1: production master net vs its own 5000-node search (corrected units)
+Static eval mapped through scale_evaluation vs search value, sigmoid-MSE (scale 340), held-out sets:
+| set | n | best move capture | MSE all | MSE quiet | quiet & material-balanced | quiet & imbalanced | share |err|>300, quiet |
+|---|---|---|---|---|---|---|---|
+| VG game positions | 19,675 | 19% | 0.0144 | 0.0078 | 0.0086 | 0.0063 | 17.9% |
+| VT tree positions | 19,283 | 36% | 0.0479 | 0.0141 | 0.0166 | 0.0112 | 30.3% |
+The production net (trained on game positions of Leela data) is ~1.8x further from search on quiet tree
+positions than on quiet game positions, also when material is balanced. Consistent with the
+distribution-mismatch hypothesis, but tree positions may also be intrinsically harder: fine-tuning
+(P2-F1) tests whether the gap is learnable.
+
+## P2-F1 RESULT (pre-registered primary endpoint)
+Arms: 186,365 quiet positions each, 5000-node search labels (corrected units), lr 1e-4 (selected on pooled
+validation with the mixed arm), 1500 steps x 8192, seed 0, layer stacks only.
+Validation MSE vs search (VG / VT): master 0.01263 / 0.0451; FT-G 0.01099 / 0.0402; FT-T 0.01388 / 0.0326;
+FT-M 0.0116 / 0.0347. Each arm specialises to its own distribution.
+- PRIMARY: FT-T vs FT-G = **-27.2 +/- 12.7** (1000 games, 20k nodes, LOS 0%). Hypothesis rejected in this setting.
+- FT-T vs master = -66.8 +/- 13.4: fine-tuning on this label set degrades the production net.
+Interpretation (to be tested): (1) 186k positions of 5000-node labels cannot improve a net trained on
+billions of Leela positions; fine-tuning drifts. (2) For a strong evaluator, accuracy matters most at
+decision-relevant nodes (PV / near the alpha-beta window); uniformly sampled tree positions are mostly
+refuted subtrees, so fitting them trades away accuracy where it matters (FT-T's game-position MSE got worse).
+
+## PRE-REGISTRATION P3 (before results): re-distillation of the production layer stacks
+Frozen master feature transformer; layer stacks re-initialised at random and trained on master's own
+eval (teacher labels, ftdump sfEval) - the production-architecture analogue of Phase I's R1.
+Arms (600k positions each, all non-check positions, no quiet filter): RS-G (run1 game positions, 5000-node
+self-play), RS-F (game positions from 100-node self-play = best game pipeline of Phase I), RS-T (run1 tree).
+LR chosen on pooled VG+VT validation (teacher target) with a G+T mix arm, then frozen.
+Primary endpoint: RS-T vs RS-F, 1000 games at 20k nodes. Secondary: RS-T vs RS-G, each vs master.
+P2-F1 secondary results (each vs master, 1000 games, 20k nodes): FT-G -25.1 +/- 12.7; FT-M -40.1 +/- 12.6;
+FT-T -66.8 +/- 13.4. Monotone in the tree fraction (0% / 50% / 100%). Direct FT-T vs FT-G -27.2 +/- 12.7.
+Conclusion P2-F1: with search-score labels and fine-tuning of a production net, uniformly sampled tree
+positions are harmful relative to game positions, and all such fine-tunes are below master.
+
+## PRE-REGISTRATION P4 (before results): 2x2 factorial, positions x labels, production architecture
+Same positions for both label types: the P2-D1 quiet sets (186,365 game G, 186,365 tree T; identical
+rows), layer stacks re-initialised (seed 0), lr 3e-3 (P3 selection), 1500 steps x 8192, frozen master FT.
+Labels: teacher (master raw eval) vs search (5000-node, corrected units, inverse-scaled).
+Endpoints (1000 games each, 20k nodes): position effect under teacher labels (T vs G, teacher) and under
+search labels (T vs G, search). The interaction = difference of the two effects.
+
+## P3 RESULT: re-distillation of the production layer stacks (pre-registered)
+Frozen master FT; stacks re-initialised; teacher labels; 600k positions per arm; lr 3e-3 selected on pooled
+validation with the G+T mix arm (grid 3e-4 / 1e-3 / 3e-3: pooled MSE 0.00284 / 0.00192 / 0.00165);
+3000 steps x 8192 (~8 min, 4 threads, ~1.9 GB RAM). Validation MSE vs master eval (VG / VT):
+RS-G 0.001705 / 0.002199; RS-F 0.002771 / 0.003002; RS-T 0.001705 / 0.001640.
+- PRIMARY: RS-T vs RS-F = **+43.0 +/- 13.7** (1000 games, LOS 100%).
+- RS-T vs RS-G = +15.1 +/- 17.6 (600 games, LOS 95%; n.s.).
+- vs master (400 games each): RS-T -53.4 +/- 21.3, RS-F -70.4 +/- 22.2.
+- Joint fit (anchor master): RS-T -42.7 [-59.0, -27.5], RS-G -57.8 [-80.5, -35.3], RS-F -81.4 [-98.0, -65.2].
+Interpretation: in the production architecture, with labels held identical, tree positions give the best
+distilled layer stacks; they match game positions on game-position accuracy and beat them on tree
+positions. Unlike from-scratch small students (Phase I), fast/weak-play game positions are the *worst*
+source here: when the frozen FT already supplies coverage, matching the distribution the evaluator is
+queried on matters more than raw diversity.
+
+## PRE-REGISTRATION P5 (before results): on-policy distillation in the production architecture
+Student S = RS-T (P3). Generate 400 self-play games each with (a) S as evaluator and (b) master
+(same seeds 9101-9104, 5000 nodes, 8% recording). Positions from S's trees are labelled by master via
+ftdump with the master net (shared frozen FT, so features are identical). Train re-initialised stacks
+(lr 3e-3, 3000 steps) on: ON = P3 T (600k) + 600k S-tree; OFF = P3 T (600k) + 600k master-tree
+(from the 400 master games). Primary endpoint: ON vs OFF, 1000 games at 20k nodes.
+
+## P4 RESULT: 2x2 factorial (positions x labels), production architecture, re-initialised stacks
+Identical 186,365 quiet positions per position arm; 1500 steps; lr 3e-3; 1000 games each, 20k nodes.
+| labels | T vs G |
+|---|---|
+| teacher (master eval) | **+82.8 +/- 16.6** (LOS 100%) |
+| search (5000 nodes, corrected units) | **+43.7 +/- 18.7** (LOS 100%) |
+Position main effect is positive under both label types; the interaction (+39 +/- 25) changes magnitude,
+not sign. Validation (own target): teacher_G 0.00422/0.00562, teacher_T 0.00379/0.00430 (VG/VT);
+search_G 0.0214/0.0578, search_T 0.0283/0.0484 (search_T is *worse* on game positions yet stronger).
+Reconciliation with P2-F1: tree positions help when the evaluator is *learning* the mapping (from scratch,
+either label type); they hurt when *fine-tuning* an already-strong net away from its optimum with a small
+set of shallow-search labels. P2-F1's negative is a fine-tuning-regime effect, not a search-label effect.
+(The Phase I E6 direction, +80 for search-labelled tree positions, is thereby confirmed with correct units
+in a different architecture.)
+
+## PRE-REGISTRATION P6 (before results): data scaling of re-distilled production stacks
+P3 data (unfiltered, teacher labels), first n rows of G.ft and T.ft (random order), n in {75k, 150k, 300k}
+plus the P3 600k nets. Steps scale with n (1500 at 75k/150k, 3000 at 300k/600k), lr 3e-3, seed 0.
+Every net plays master (400 games, 20k nodes); joint fit anchored at master. Endpoint: the data
+multiplier k such that T at n matches G at k*n (interpolated in log n).
+
+## P5 RESULT: on-policy distillation, production architecture
+Generation: 400 games each (seeds 9101-9104, 5000 nodes, 8%): S (= RS-T) self-play 6.74M tree positions,
+master self-play 6.77M; 600k sampled from each, labelled by master via ftdump. Stacks re-initialised,
+trained on P3 T (600k) + 600k ON or OFF; validation (VG/VT) ON 0.001288/0.001241, OFF 0.001220/0.001264.
+- PRIMARY: RS_on vs RS_off = **+6.3 +/- 12.9** (1000 games, LOS 83%): inconclusive; 95% CI [-6.7, +19.2]
+  excludes a large on-policy benefit here.
+Interpretation: Phase I's on-policy gain (+22.6 [9.6, 35.7]) came from a student ~380 Elo below its
+teacher; here the student is ~43 Elo below. Consistent with DAgger theory: the covariate shift between
+student and teacher search trees (and hence the value of on-policy data) shrinks as the student
+approaches the teacher. On-policy data is a tool for weak students, not (yet shown) for near-teacher ones.
+
+## M1/M2: redundancy and coverage (tools/p2/coverage.py)
+Joint cells: material imbalance (pawns, stm view) x piece-count bucket x log-|teacher eval| bucket.
+Query distribution = held-out master search-tree positions (val v.bin, tree records).
+| set (600k, P3) | unique boards | KL(query || set) | P3 Elo vs master |
+|---|---|---|---|
+| T (tree) | 99.9% | 0.013 | -43 |
+| G (5000-node games) | 97.2% | 0.184 | -58 |
+| F (100-node games) | 98.8% | 0.547 | -81 |
+Distillation quality orders exactly with coverage of the query distribution; exact duplicates are rare in
+all sets (so redundancy is not the driver). Against the *weak student's* query distribution (Phase I
+vs.bin) the order is the same (T 0.076, G 0.336, F 0.484), so the Phase I finding that fast-game data was
+better is not explained by coverage. Phase I compared game pipelines at equal *compute* (fast games
+yield ~3x more positions per CPU-s), while P3 compares at equal *count*; but Phase I also found +69 for
+1000-node over 5000-node games at near-equal counts. Tentative two-regime account: learning features
+from scratch benefits from diverse coverage, while learning a readout on fixed features benefits most
+from matching the query distribution. Not tested directly.
+
+## P7 (added after seeing P6 partial results; exploratory, not pre-registered)
+P6's unfiltered arms show a small, noisy tree advantage (75k: T -132 vs G -141; 150k: -109 vs -98; 300k:
+-67 vs -82, each +/-22, 400 games vs master), much smaller than P4's +83 (quiet-filtered, 186k, direct
+1000-game match). P7 resolves this: (a) P4 teacher_T / teacher_G vs master (400 games each) to place them on
+the P6 ladder; (b) direct head-to-head RS_T_300000 vs RS_G_300000 (1000 games).
+
+## P6 RESULT: data scaling, production stacks, teacher labels, unfiltered (pre-registered)
+400 games vs master each (20k nodes); per-match Elo (+/- ~22):
+| n | G (5000-node games) | T (tree) | T - G |
+|---|---|---|---|
+| 75k | -141.0 | -131.9 | +9 |
+| 150k | -98.1 | -109.5 | -11 |
+| 300k | -82.3 | -66.8 | +15 |
+| 600k | -54.3 | -53.4 | +1 (direct P3 match: +15.1 +/- 17.6) |
+Validation (VT) is consistently better for T (0.00459/0.00332/0.00234/0.00164 vs 0.00565/0.00422/0.00298/0.00220),
+but Elo is not: **data multiplier ~1x** for unfiltered teacher-label re-distillation of the stacks.
+(The 600k matches are byte-identical replays of P3's, same nets and opening seed.)
+Correction to the P3/P4 picture: in the production architecture with a frozen FT, tree positions are
+clearly better than *fast-game* positions (+43) and under the quiet filter (P4, +83, being checked in P7),
+but not detectably better than standard 5000-node game positions without filtering.
+
+## BUG FOUND (ratings.py): non-optimal fixed point for star-shaped match graphs
+The joint fitter applied per-player Newton steps to all players *including the anchor* and then
+re-centred; it can stop where each player's step equals the anchor's step instead of the MLE. On P6's star
+graph (all nets vs master only) this shifted every player by ~+51. Replaced by full Newton on the anchored
+Hessian (exact). Re-fitting all earlier joint ladders (E1/E1b/E4, E2, P3) reproduces their point
+estimates exactly (those graphs converged correctly), so no earlier conclusion changes; only the P6
+ladder file written minutes earlier was wrong and has been regenerated.
+
+## P7 RESULT: what drove P4's +83?
+400 games vs master each: qT186 (P4 teacher_T, quiet-filtered tree, 186k) **-81.4 +/- 21.6**;
+qG186 (P4 teacher_G, quiet-filtered game, 186k) **-146.2 +/- 26.6**. Compare unfiltered (P6) at 150k:
+T -109.5, G -98.1. => The quiet filter (drop positions whose search best move is a capture) *helps* tree
+positions (+28 despite similar size) and *hurts* game positions (-48 despite more positions) under teacher
+labels. Capture-best tree positions are mostly refuted lines with hanging material where a static target is
+unreliable; capture-best game positions are ordinary recaptures the evaluator must handle in qsearch.
+P4's +83 = good arm (quiet T) vs handicapped arm (quiet G).
+Direct, unfiltered, 300k: RS_T_300000 vs RS_G_300000 = **+12.9 +/- 13.3** (1000 games). Pooled with P3's
+600k direct (+15.1 +/- 17.6): about +14 +/- 11 for unfiltered tree over game positions at equal count.
+Best recipe so far: quiet-filtered tree positions (186k, -81) ~ unfiltered game positions at 300k (-82):
+~1.6x data efficiency. Quiet flag requires a search per position; a static proxy is tested in P8.
+
+## PRE-REGISTRATION P8 (before results): SEE-filtered tree positions (cheap quiet proxy)
+Filter: drop positions where the side to move has a capture/promotion with SEE >= 1 (ftdump pad bit0;
+on VT it catches 86% of search-capture-best positions, precision 72%, removes 43%).
+Arms (teacher labels, re-initialised stacks, lr 3e-3, 3000 steps, 300k each): SEE-T (P3 T pool filtered),
+SEE-G (P3 G pool filtered), vs RS_G_300000 (unfiltered G). Primary: SEE-T vs RS_G_300000 (1000 games).
+Secondary: SEE-G vs RS_G_300000 (600 games).
+
+## B1 + B3 RESULTS (small students, mechanism): which tree positions carry the value?
+Pool: 1,600 master self-play games (seeds 9001-9004, 5000 nodes, 8%, boundary annotation), 26.5M tree
+positions. Each arm: 500k positions, H=256, 1.5e7 training positions; 200 games vs uniform, 20k nodes.
+(Validation numbers printed for filtered arms are invalid: the trainer applied the filters to the
+validation files, which lack the metadata. Training data and matches are unaffected.)
+| arm | Elo vs uniform |
+|---|---|
+| ply 1-4 from root | -47 +/- 37 |
+| ply 5-8 | -9 +/- 43 |
+| ply 9-12 | -2 +/- 41 |
+| ply 13+ | -60 +/- 43 |
+| \\|scaled eval - beta\\| < 100 (near window) | **-531 +/- 121** |
+| \\|scaled eval - beta\\| > 600 (far) | -119 +/- 49 |
+| quiescence nodes only | -17 +/- 41 |
+| main-search nodes only | -80 +/- 42 |
+- No targeted subset beats a uniform sample of the search tree. Coverage of the whole query distribution is
+  what matters; restricting to "decision-relevant" near-window positions is catastrophic (the student never
+  sees decisive material balances), refuting the naive boundary hypothesis for learning from scratch.
+- Quiescence nodes (the leaves whose evals search actually returns) carry most of the value; mid-depth
+  plies are as good as the mixture, the extremes are worse.
+
+### Ops: disk allowance nearly exhausted (424 MB free)
+Deleted reproducible data of completed experiments (E3, E12, E13 generation runs; P5 dumps; P3 fast-game
+dump; ~8.8 GB). Nets, metrics and scripts are kept; data can be regenerated from the logged seeds.
+
+## P8 RESULT (pre-registered): SEE-filtered tree positions
+Validation (VG/VT, unfiltered sets): SEE-T 0.003795/0.00436, SEE-G 0.004004/0.005689 (cf. unfiltered 300k:
+T 0.002432/0.002338, G 0.002363/0.00298).
+- PRIMARY: SEE-T vs RS_G_300000 = **+3.8 +/- 13.7** (1000 games, opening seed 3): no advantage.
+- SEE-G vs RS_G_300000 = **-22.0 +/- 17.4** (600 games): filtering capture positions hurts game data again.
+Conclusion: the cheap static proxy does not reproduce the search-quiet gain of P4/P7, and the "1.6x" estimate
+(from two +/-22 ladder points) is not confirmed. Robust production-architecture findings: (i) tree >= game
+positions by a small margin at equal count (~+5..+15 Elo, pooled direct matches), (ii) tree >> fast-game
+positions (+43), (iii) dropping capture positions from *game* data hurts under teacher labels (-22, -48),
+which is relevant because nnue-pytorch skips such positions by default (untested with Leela labels).
+
+## B2 RESULT: error-guided (active-learning-style) selection of tree positions
+Pool: B1 data (26.5M teacher-tree positions). Scorer: E1 tree_teacher (H=256, disjoint data). 1M positions
+sampled without replacement with weight err^alpha (err = |sigmoid(student) - sigmoid(teacher)|);
+H=256, 3e7 training positions; 200 games vs uniform 1M sample:
+| alpha | vgame | vtree | Elo vs uniform |
+|---|---|---|---|
+| 0 (uniform) | 0.02445 | 0.02575 | 0 |
+| 0.5 | 0.02818 | 0.02810 | -100 +/- 44 |
+| 1 | 0.03518 | 0.03527 | -342 +/- 68 |
+| 2 | 0.04656 | 0.04919 | -849 (1 win in 200) |
+Monotone and large: concentrating training on positions a previous student found hard distorts the
+distribution and destroys coverage. With B3 this gives a consistent picture: every selection rule tested
+(near the alpha-beta window, far from it, by ply, main search only, by student error) loses to a uniform
+sample of the search tree. "Which positions?" is answered by "the evaluator's whole query distribution".
+
+## B4 RESULT: features vs readout (bridges small students and the production architecture)
+H=256 students; feature transformer frozen from E1 game_teacher_p1.5e7 (FTg, trained on 734k game positions)
+or E1 tree_teacher (FTt, trained on 25M tree positions); output layer re-initialised and trained on 734k
+game (G) or 734k tree (T) positions of run1 (teacher labels, 1.5e7 positions). 200 games each:
+| comparison | Elo |
+|---|---|
+| FTg: readout T vs readout G | **+186 +/- 50** |
+| FTt: readout T vs readout G | +3 +/- 33 |
+| readout G: FTt vs FTg | **+531 +/- 104** |
+Validation (VG/VT): FTg_G 0.0244/0.0337, FTg_T 0.0265/0.0289, FTt_G 0.0182/0.0228, FTt_T 0.0198/0.0203.
+Interpretation: most of the tree-position advantage is in *feature learning*. Given features that already
+cover the query distribution, the readout's training distribution barely matters (+3); given features
+learned from game positions only, a tree-trained readout recovers a lot (+186) but far from the
+feature effect (+531). The production master's FT (billions of Leela game positions) behaves like the
+"good features" case (P6/P7/P8: readout effect ~+5..+15). Hence the decisive upstream test, training the
+feature transformer itself with tree positions, needs GPU-scale training and could not be run here.
+
+## C1: iterated on-policy distillation (small students, H=256), iteration 2
+New blocks: 1500 games x 8% each (seeds 12201-12204): S2 = self-play of ON_1 (= base_T1S1) with teacher
+labels (24.2M positions), Tc2 = teacher self-play, same seeds. ON_2 = T1+S1+S2, OFF_2 = T1+T2+Tc2, 2e8
+training positions each. Validation (VG/VT/VS): ON_2 0.01685/0.01723/0.01581; OFF_2 0.01653/0.01653/0.01692.
+- ON_2 vs OFF_2: **+3.1 +/- 17.2** (1000 games): the on-policy edge of iteration 1 (+22.6) vanishes.
+- ON_2 vs ON_1: -15.1 +/- 21.7 (600); OFF_2 vs OFF_1: +16.2 +/- 20.8 (600): no measurable progress for
+  either arm; the H=256 student is capacity-saturated (as already seen in E2: +12 n.s. for 2x teacher data).
+Iteration 3 is running to distinguish plateau from oscillation.
+
+## C1 iteration 3 and conclusion
+S3 = self-play of ON_2 (teacher labels), Tc3 = teacher self-play, same seeds (12301-12304), 1500 games x 8%.
+Validation (VG/VT/VS): ON_3 0.01644/0.01704/0.01550; OFF_3 0.01637/0.01650/0.01693.
+- ON_3 vs OFF_3: **+24.0 +/- 16.2** (1000 games). ON_3 vs ON_2: +7.0 +/- 21.0; OFF_3 vs OFF_2: +5.2 +/- 22.4.
+- Joint ladder (anchor T1-only): ON_1 +37.3, ON_2 +27.1, ON_3 +41.0; OFF_1 +11.5, OFF_2 +22.8, OFF_3 +21.1.
+- **Pooled ON vs OFF over the three iterations (3,800 games): +17.8 [9.1, 26.6].**
+Conclusion: iterating does not keep improving an H=256 student (capacity plateau after iteration 1), but
+the on-policy arm stays ahead of the matched off-policy arm at every iteration; iteration 2's +3 was
+within noise (correction to the iteration-2 entry, which said the edge "vanishes"). No instability or
+oscillation beyond match noise was observed.
+
+## B4r: replication of B4 at H=512 (independent E4 nets, training seed 1, opening seed 7, 300 games each)
+| comparison | H=256 (B4) | H=512 (B4r) |
+|---|---|---|
+| game-trained features: readout T vs G | +186 +/- 50 | **+208 +/- 41** |
+| tree-trained features: readout T vs G | +3 +/- 33 | **-2 +/- 29** |
+| readout G: tree-trained vs game-trained features | +531 +/- 104 | **+518 +/- 82** |
+Validation (VG/VT): FTg_G 0.0252/0.0344, FTg_T 0.0265/0.0285, FTt_G 0.0165/0.0205, FTt_T 0.0179/0.0183.
+The features-vs-readout mechanism replicates across widths and independently trained feature sources.

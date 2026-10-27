@@ -1,0 +1,1226 @@
+/home/user/work/fastchess/fastchess -engine cmd=/home/user/data/sf_p2 name=SEE_G option.EvalFile=/home/user/nets/p8/SEE_G.nnue tc=inf nodes=20000 -engine cmd=/home/user/data/sf_p2 name=RS_G_300000 option.EvalFile=/home/user/nets/p6/RS_G_300000.nnue tc=inf nodes=20000 -each option.Threads=1 option.Hash=16 -openings file=/home/user/data/UHO_4060_v4.epd format=epd order=random -srand 3 -repeat -rounds 300 -concurrency 4 -resign movecount=3 score=1000 twosided=true -draw movenumber=40 movecount=8 score=8 -pgnout file=experiments/p8/matches/SEE_G_vs_RS_G_300000.pgn -ratinginterval 100
+Indexing opening suite...
+Started game 1 of 600 (SEE_G vs RS_G_300000)
+Started game 2 of 600 (RS_G_300000 vs SEE_G)
+Started game 3 of 600 (SEE_G vs RS_G_300000)
+Started game 4 of 600 (RS_G_300000 vs SEE_G)
+Finished game 4 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by adjudication}
+Started game 5 of 600 (SEE_G vs RS_G_300000)
+Finished game 2 (RS_G_300000 vs SEE_G): 1-0 {White mates}
+Started game 6 of 600 (RS_G_300000 vs SEE_G)
+Finished game 1 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by insufficient mating material}
+Started game 7 of 600 (SEE_G vs RS_G_300000)
+Finished game 3 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 8 of 600 (RS_G_300000 vs SEE_G)
+Finished game 5 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 9 of 600 (SEE_G vs RS_G_300000)
+Finished game 8 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 10 of 600 (RS_G_300000 vs SEE_G)
+Finished game 6 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 11 of 600 (SEE_G vs RS_G_300000)
+Finished game 7 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by adjudication}
+Started game 12 of 600 (RS_G_300000 vs SEE_G)
+Finished game 10 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 13 of 600 (SEE_G vs RS_G_300000)
+Finished game 12 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by insufficient mating material}
+Started game 14 of 600 (RS_G_300000 vs SEE_G)
+Finished game 11 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by adjudication}
+Started game 15 of 600 (SEE_G vs RS_G_300000)
+Finished game 9 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by adjudication}
+Started game 16 of 600 (RS_G_300000 vs SEE_G)
+Finished game 13 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by adjudication}
+Started game 17 of 600 (SEE_G vs RS_G_300000)
+Finished game 14 (RS_G_300000 vs SEE_G): 0-1 {Black wins by adjudication}
+Started game 18 of 600 (RS_G_300000 vs SEE_G)
+Finished game 15 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by adjudication}
+Started game 19 of 600 (SEE_G vs RS_G_300000)
+Finished game 17 (SEE_G vs RS_G_300000): 1-0 {White mates}
+Started game 20 of 600 (RS_G_300000 vs SEE_G)
+Finished game 16 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 21 of 600 (SEE_G vs RS_G_300000)
+Finished game 19 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by insufficient mating material}
+Started game 22 of 600 (RS_G_300000 vs SEE_G)
+Finished game 18 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by adjudication}
+Started game 23 of 600 (SEE_G vs RS_G_300000)
+Finished game 21 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 24 of 600 (RS_G_300000 vs SEE_G)
+Finished game 20 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 25 of 600 (SEE_G vs RS_G_300000)
+Finished game 22 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 26 of 600 (RS_G_300000 vs SEE_G)
+Finished game 24 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by adjudication}
+Started game 27 of 600 (SEE_G vs RS_G_300000)
+Finished game 25 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by adjudication}
+Started game 28 of 600 (RS_G_300000 vs SEE_G)
+Finished game 23 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by fifty moves rule}
+Started game 29 of 600 (SEE_G vs RS_G_300000)
+Finished game 28 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 30 of 600 (RS_G_300000 vs SEE_G)
+Finished game 26 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 31 of 600 (SEE_G vs RS_G_300000)
+Finished game 27 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by insufficient mating material}
+Started game 32 of 600 (RS_G_300000 vs SEE_G)
+Finished game 29 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 33 of 600 (SEE_G vs RS_G_300000)
+Finished game 31 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 34 of 600 (RS_G_300000 vs SEE_G)
+Finished game 33 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 35 of 600 (SEE_G vs RS_G_300000)
+Finished game 32 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 36 of 600 (RS_G_300000 vs SEE_G)
+Finished game 36 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 37 of 600 (SEE_G vs RS_G_300000)
+Finished game 35 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 38 of 600 (RS_G_300000 vs SEE_G)
+Finished game 34 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by insufficient mating material}
+Started game 39 of 600 (SEE_G vs RS_G_300000)
+Finished game 30 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by insufficient mating material}
+Started game 40 of 600 (RS_G_300000 vs SEE_G)
+Finished game 38 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by insufficient mating material}
+Started game 41 of 600 (SEE_G vs RS_G_300000)
+Finished game 37 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 42 of 600 (RS_G_300000 vs SEE_G)
+Finished game 39 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 43 of 600 (SEE_G vs RS_G_300000)
+Finished game 40 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 44 of 600 (RS_G_300000 vs SEE_G)
+Finished game 41 (SEE_G vs RS_G_300000): 0-1 {Black wins by adjudication}
+Started game 45 of 600 (SEE_G vs RS_G_300000)
+Finished game 42 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 46 of 600 (RS_G_300000 vs SEE_G)
+Finished game 44 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by adjudication}
+Started game 47 of 600 (SEE_G vs RS_G_300000)
+Finished game 43 (SEE_G vs RS_G_300000): 0-1 {Black wins by adjudication}
+Started game 48 of 600 (RS_G_300000 vs SEE_G)
+Finished game 45 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 49 of 600 (SEE_G vs RS_G_300000)
+Finished game 46 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by adjudication}
+Started game 50 of 600 (RS_G_300000 vs SEE_G)
+Finished game 48 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 51 of 600 (SEE_G vs RS_G_300000)
+Finished game 47 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 52 of 600 (RS_G_300000 vs SEE_G)
+Finished game 49 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 53 of 600 (SEE_G vs RS_G_300000)
+Finished game 50 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 54 of 600 (RS_G_300000 vs SEE_G)
+Finished game 51 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 55 of 600 (SEE_G vs RS_G_300000)
+Finished game 54 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 56 of 600 (RS_G_300000 vs SEE_G)
+Finished game 53 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 57 of 600 (SEE_G vs RS_G_300000)
+Finished game 52 (RS_G_300000 vs SEE_G): 0-1 {Black wins by adjudication}
+Started game 58 of 600 (RS_G_300000 vs SEE_G)
+Finished game 56 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 59 of 600 (SEE_G vs RS_G_300000)
+Finished game 55 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by stalemate}
+Started game 60 of 600 (RS_G_300000 vs SEE_G)
+Finished game 57 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 61 of 600 (SEE_G vs RS_G_300000)
+Finished game 59 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 62 of 600 (RS_G_300000 vs SEE_G)
+Finished game 58 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 63 of 600 (SEE_G vs RS_G_300000)
+Finished game 63 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by adjudication}
+Started game 64 of 600 (RS_G_300000 vs SEE_G)
+Finished game 60 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 65 of 600 (SEE_G vs RS_G_300000)
+Finished game 62 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 66 of 600 (RS_G_300000 vs SEE_G)
+Finished game 61 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by adjudication}
+Started game 67 of 600 (SEE_G vs RS_G_300000)
+Finished game 64 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 68 of 600 (RS_G_300000 vs SEE_G)
+Finished game 66 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 69 of 600 (SEE_G vs RS_G_300000)
+Finished game 67 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by adjudication}
+Started game 70 of 600 (RS_G_300000 vs SEE_G)
+Finished game 65 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 71 of 600 (SEE_G vs RS_G_300000)
+Finished game 68 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 72 of 600 (RS_G_300000 vs SEE_G)
+Finished game 69 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 73 of 600 (SEE_G vs RS_G_300000)
+Finished game 70 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by adjudication}
+Started game 74 of 600 (RS_G_300000 vs SEE_G)
+Finished game 71 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 75 of 600 (SEE_G vs RS_G_300000)
+Finished game 72 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by insufficient mating material}
+Started game 76 of 600 (RS_G_300000 vs SEE_G)
+Finished game 73 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 77 of 600 (SEE_G vs RS_G_300000)
+Finished game 76 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 78 of 600 (RS_G_300000 vs SEE_G)
+Finished game 74 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 79 of 600 (SEE_G vs RS_G_300000)
+Finished game 75 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 80 of 600 (RS_G_300000 vs SEE_G)
+Finished game 78 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by adjudication}
+Started game 81 of 600 (SEE_G vs RS_G_300000)
+Finished game 77 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 82 of 600 (RS_G_300000 vs SEE_G)
+Finished game 79 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by adjudication}
+Started game 83 of 600 (SEE_G vs RS_G_300000)
+Finished game 80 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 84 of 600 (RS_G_300000 vs SEE_G)
+Finished game 82 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 85 of 600 (SEE_G vs RS_G_300000)
+Finished game 84 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by adjudication}
+Started game 86 of 600 (RS_G_300000 vs SEE_G)
+Finished game 81 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by insufficient mating material}
+Started game 87 of 600 (SEE_G vs RS_G_300000)
+Finished game 83 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 88 of 600 (RS_G_300000 vs SEE_G)
+Finished game 85 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 89 of 600 (SEE_G vs RS_G_300000)
+Finished game 86 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 90 of 600 (RS_G_300000 vs SEE_G)
+Finished game 87 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 91 of 600 (SEE_G vs RS_G_300000)
+Finished game 88 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 92 of 600 (RS_G_300000 vs SEE_G)
+Finished game 89 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 93 of 600 (SEE_G vs RS_G_300000)
+Finished game 92 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by adjudication}
+Started game 94 of 600 (RS_G_300000 vs SEE_G)
+Finished game 90 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 95 of 600 (SEE_G vs RS_G_300000)
+Finished game 91 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by fifty moves rule}
+Started game 96 of 600 (RS_G_300000 vs SEE_G)
+Finished game 93 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 97 of 600 (SEE_G vs RS_G_300000)
+Finished game 94 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by insufficient mating material}
+Started game 98 of 600 (RS_G_300000 vs SEE_G)
+Finished game 95 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 99 of 600 (SEE_G vs RS_G_300000)
+Finished game 97 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 100 of 600 (RS_G_300000 vs SEE_G)
+Finished game 98 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 101 of 600 (SEE_G vs RS_G_300000)
+Finished game 99 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 102 of 600 (RS_G_300000 vs SEE_G)
+Finished game 96 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by adjudication}
+Started game 103 of 600 (SEE_G vs RS_G_300000)
+Finished game 102 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 104 of 600 (RS_G_300000 vs SEE_G)
+Finished game 100 (RS_G_300000 vs SEE_G): 0-1 {Black wins by adjudication}
+Started game 105 of 600 (SEE_G vs RS_G_300000)
+Finished game 101 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by adjudication}
+Started game 106 of 600 (RS_G_300000 vs SEE_G)
+Finished game 103 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by adjudication}
+Started game 107 of 600 (SEE_G vs RS_G_300000)
+Finished game 106 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by stalemate}
+Started game 108 of 600 (RS_G_300000 vs SEE_G)
+Finished game 107 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 109 of 600 (SEE_G vs RS_G_300000)
+Finished game 104 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 110 of 600 (RS_G_300000 vs SEE_G)
+Finished game 105 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 111 of 600 (SEE_G vs RS_G_300000)
+Finished game 110 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 112 of 600 (RS_G_300000 vs SEE_G)
+Finished game 108 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by adjudication}
+Started game 113 of 600 (SEE_G vs RS_G_300000)
+Finished game 111 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 114 of 600 (RS_G_300000 vs SEE_G)
+Finished game 109 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 115 of 600 (SEE_G vs RS_G_300000)
+Finished game 112 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by adjudication}
+Started game 116 of 600 (RS_G_300000 vs SEE_G)
+Finished game 113 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by adjudication}
+Started game 117 of 600 (SEE_G vs RS_G_300000)
+Finished game 117 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 118 of 600 (RS_G_300000 vs SEE_G)
+Finished game 116 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by adjudication}
+Started game 119 of 600 (SEE_G vs RS_G_300000)
+Finished game 115 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by adjudication}
+Started game 120 of 600 (RS_G_300000 vs SEE_G)
+Finished game 114 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by fifty moves rule}
+Started game 121 of 600 (SEE_G vs RS_G_300000)
+Finished game 118 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 122 of 600 (RS_G_300000 vs SEE_G)
+Finished game 119 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by stalemate}
+Started game 123 of 600 (SEE_G vs RS_G_300000)
+Finished game 120 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 124 of 600 (RS_G_300000 vs SEE_G)
+Finished game 122 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 125 of 600 (SEE_G vs RS_G_300000)
+Finished game 123 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 126 of 600 (RS_G_300000 vs SEE_G)
+Finished game 124 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 127 of 600 (SEE_G vs RS_G_300000)
+Finished game 121 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 128 of 600 (RS_G_300000 vs SEE_G)
+Finished game 125 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by adjudication}
+Started game 129 of 600 (SEE_G vs RS_G_300000)
+Finished game 127 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by adjudication}
+Started game 130 of 600 (RS_G_300000 vs SEE_G)
+Finished game 128 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 131 of 600 (SEE_G vs RS_G_300000)
+Finished game 126 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 132 of 600 (RS_G_300000 vs SEE_G)
+Finished game 129 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 133 of 600 (SEE_G vs RS_G_300000)
+Finished game 132 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 134 of 600 (RS_G_300000 vs SEE_G)
+Finished game 131 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by adjudication}
+Started game 135 of 600 (SEE_G vs RS_G_300000)
+Finished game 130 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 136 of 600 (RS_G_300000 vs SEE_G)
+Finished game 133 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by adjudication}
+Started game 137 of 600 (SEE_G vs RS_G_300000)
+Finished game 136 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 138 of 600 (RS_G_300000 vs SEE_G)
+Finished game 135 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 139 of 600 (SEE_G vs RS_G_300000)
+Finished game 137 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 140 of 600 (RS_G_300000 vs SEE_G)
+Finished game 134 (RS_G_300000 vs SEE_G): 0-1 {Black wins by adjudication}
+Started game 141 of 600 (SEE_G vs RS_G_300000)
+Finished game 139 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 142 of 600 (RS_G_300000 vs SEE_G)
+Finished game 138 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by insufficient mating material}
+Started game 143 of 600 (SEE_G vs RS_G_300000)
+Finished game 140 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 144 of 600 (RS_G_300000 vs SEE_G)
+Finished game 141 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by insufficient mating material}
+Started game 145 of 600 (SEE_G vs RS_G_300000)
+Finished game 142 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 146 of 600 (RS_G_300000 vs SEE_G)
+Finished game 144 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 147 of 600 (SEE_G vs RS_G_300000)
+Finished game 147 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by insufficient mating material}
+Started game 148 of 600 (RS_G_300000 vs SEE_G)
+Finished game 145 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 149 of 600 (SEE_G vs RS_G_300000)
+Finished game 146 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 150 of 600 (RS_G_300000 vs SEE_G)
+Finished game 143 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 151 of 600 (SEE_G vs RS_G_300000)
+Finished game 150 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 152 of 600 (RS_G_300000 vs SEE_G)
+Finished game 149 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 153 of 600 (SEE_G vs RS_G_300000)
+Finished game 148 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 154 of 600 (RS_G_300000 vs SEE_G)
+Finished game 151 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 155 of 600 (SEE_G vs RS_G_300000)
+Finished game 152 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 156 of 600 (RS_G_300000 vs SEE_G)
+Finished game 153 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 157 of 600 (SEE_G vs RS_G_300000)
+Finished game 155 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 158 of 600 (RS_G_300000 vs SEE_G)
+Finished game 154 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by insufficient mating material}
+Started game 159 of 600 (SEE_G vs RS_G_300000)
+Finished game 159 (SEE_G vs RS_G_300000): 0-1 {Black wins by adjudication}
+Started game 160 of 600 (RS_G_300000 vs SEE_G)
+Finished game 156 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by insufficient mating material}
+Started game 161 of 600 (SEE_G vs RS_G_300000)
+Finished game 158 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 162 of 600 (RS_G_300000 vs SEE_G)
+Finished game 157 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by adjudication}
+Started game 163 of 600 (SEE_G vs RS_G_300000)
+Finished game 161 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by adjudication}
+Started game 164 of 600 (RS_G_300000 vs SEE_G)
+Finished game 160 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by insufficient mating material}
+Started game 165 of 600 (SEE_G vs RS_G_300000)
+Finished game 162 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by adjudication}
+Started game 166 of 600 (RS_G_300000 vs SEE_G)
+Finished game 163 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 167 of 600 (SEE_G vs RS_G_300000)
+Finished game 165 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 168 of 600 (RS_G_300000 vs SEE_G)
+Finished game 166 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by adjudication}
+Started game 169 of 600 (SEE_G vs RS_G_300000)
+Finished game 164 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by insufficient mating material}
+Started game 170 of 600 (RS_G_300000 vs SEE_G)
+Finished game 168 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by adjudication}
+Started game 171 of 600 (SEE_G vs RS_G_300000)
+Finished game 167 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 172 of 600 (RS_G_300000 vs SEE_G)
+Finished game 172 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 173 of 600 (SEE_G vs RS_G_300000)
+Finished game 170 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 174 of 600 (RS_G_300000 vs SEE_G)
+Finished game 169 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 175 of 600 (SEE_G vs RS_G_300000)
+Finished game 171 (SEE_G vs RS_G_300000): 0-1 {Black wins by adjudication}
+Started game 176 of 600 (RS_G_300000 vs SEE_G)
+Finished game 173 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 177 of 600 (SEE_G vs RS_G_300000)
+Finished game 174 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by insufficient mating material}
+Started game 178 of 600 (RS_G_300000 vs SEE_G)
+Finished game 175 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 179 of 600 (SEE_G vs RS_G_300000)
+Finished game 176 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 180 of 600 (RS_G_300000 vs SEE_G)
+Finished game 178 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 181 of 600 (SEE_G vs RS_G_300000)
+Finished game 177 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 182 of 600 (RS_G_300000 vs SEE_G)
+Finished game 179 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 183 of 600 (SEE_G vs RS_G_300000)
+Finished game 180 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 184 of 600 (RS_G_300000 vs SEE_G)
+Finished game 184 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by insufficient mating material}
+Started game 185 of 600 (SEE_G vs RS_G_300000)
+Finished game 181 (SEE_G vs RS_G_300000): 0-1 {Black wins by adjudication}
+Started game 186 of 600 (RS_G_300000 vs SEE_G)
+Finished game 183 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 187 of 600 (SEE_G vs RS_G_300000)
+Finished game 182 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by adjudication}
+Started game 188 of 600 (RS_G_300000 vs SEE_G)
+Finished game 186 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 189 of 600 (SEE_G vs RS_G_300000)
+Finished game 185 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by adjudication}
+Started game 190 of 600 (RS_G_300000 vs SEE_G)
+Finished game 188 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 191 of 600 (SEE_G vs RS_G_300000)
+Finished game 187 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 192 of 600 (RS_G_300000 vs SEE_G)
+Finished game 191 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 193 of 600 (SEE_G vs RS_G_300000)
+Finished game 190 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by adjudication}
+Started game 194 of 600 (RS_G_300000 vs SEE_G)
+Finished game 189 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 195 of 600 (SEE_G vs RS_G_300000)
+Finished game 192 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 196 of 600 (RS_G_300000 vs SEE_G)
+Finished game 194 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by adjudication}
+Started game 197 of 600 (SEE_G vs RS_G_300000)
+Finished game 193 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 198 of 600 (RS_G_300000 vs SEE_G)
+Finished game 195 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 199 of 600 (SEE_G vs RS_G_300000)
+Finished game 198 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 200 of 600 (RS_G_300000 vs SEE_G)
+Finished game 197 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 201 of 600 (SEE_G vs RS_G_300000)
+Finished game 196 (RS_G_300000 vs SEE_G): 0-1 {Black mates}
+Started game 202 of 600 (RS_G_300000 vs SEE_G)
+Finished game 199 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by adjudication}
+Started game 203 of 600 (SEE_G vs RS_G_300000)
+Finished game 203 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 204 of 600 (RS_G_300000 vs SEE_G)
+Finished game 201 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 205 of 600 (SEE_G vs RS_G_300000)
+Finished game 200 (RS_G_300000 vs SEE_G): 0-1 {Black wins by adjudication}
+--------------------------------------------------
+Results of SEE_G vs RS_G_300000 (20000 nodes, 1t, 16MB, UHO_4060_v4.epd):
+Elo: 8.69 +/- 29.13, nElo: 14.40 +/- 48.15
+LOS: 72.11 %, DrawRatio: 39.00 %, PairsRatio: 1.10
+Games: 200, Wins: 55, Losses: 50, Draws: 95, Points: 102.5 (51.25 %)
+Ptnml(0-2): [1, 28, 39, 29, 3], WL/DD Ratio: 1.05
+--------------------------------------------------
+Started game 206 of 600 (RS_G_300000 vs SEE_G)
+Finished game 204 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 207 of 600 (SEE_G vs RS_G_300000)
+Finished game 202 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 208 of 600 (RS_G_300000 vs SEE_G)
+Finished game 205 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 209 of 600 (SEE_G vs RS_G_300000)
+Finished game 207 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 210 of 600 (RS_G_300000 vs SEE_G)
+Finished game 206 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 211 of 600 (SEE_G vs RS_G_300000)
+Finished game 208 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 212 of 600 (RS_G_300000 vs SEE_G)
+Finished game 209 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 213 of 600 (SEE_G vs RS_G_300000)
+Finished game 211 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by adjudication}
+Started game 214 of 600 (RS_G_300000 vs SEE_G)
+Finished game 210 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 215 of 600 (SEE_G vs RS_G_300000)
+Finished game 213 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by adjudication}
+Started game 216 of 600 (RS_G_300000 vs SEE_G)
+Finished game 212 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by insufficient mating material}
+Started game 217 of 600 (SEE_G vs RS_G_300000)
+Finished game 214 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by insufficient mating material}
+Started game 218 of 600 (RS_G_300000 vs SEE_G)
+Finished game 215 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 219 of 600 (SEE_G vs RS_G_300000)
+Finished game 217 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 220 of 600 (RS_G_300000 vs SEE_G)
+Finished game 216 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 221 of 600 (SEE_G vs RS_G_300000)
+Finished game 218 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by insufficient mating material}
+Started game 222 of 600 (RS_G_300000 vs SEE_G)
+Finished game 219 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 223 of 600 (SEE_G vs RS_G_300000)
+Finished game 220 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 224 of 600 (RS_G_300000 vs SEE_G)
+Finished game 221 (SEE_G vs RS_G_300000): 0-1 {Black wins by adjudication}
+Started game 225 of 600 (SEE_G vs RS_G_300000)
+Finished game 224 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 226 of 600 (RS_G_300000 vs SEE_G)
+Finished game 223 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 227 of 600 (SEE_G vs RS_G_300000)
+Finished game 225 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 228 of 600 (RS_G_300000 vs SEE_G)
+Finished game 222 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by adjudication}
+Started game 229 of 600 (SEE_G vs RS_G_300000)
+Finished game 226 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 230 of 600 (RS_G_300000 vs SEE_G)
+Finished game 227 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by adjudication}
+Started game 231 of 600 (SEE_G vs RS_G_300000)
+Finished game 228 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 232 of 600 (RS_G_300000 vs SEE_G)
+Finished game 229 (SEE_G vs RS_G_300000): 0-1 {Black wins by adjudication}
+Started game 233 of 600 (SEE_G vs RS_G_300000)
+Finished game 230 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 234 of 600 (RS_G_300000 vs SEE_G)
+Finished game 231 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 235 of 600 (SEE_G vs RS_G_300000)
+Finished game 233 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by adjudication}
+Started game 236 of 600 (RS_G_300000 vs SEE_G)
+Finished game 232 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by adjudication}
+Started game 237 of 600 (SEE_G vs RS_G_300000)
+Finished game 234 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 238 of 600 (RS_G_300000 vs SEE_G)
+Finished game 235 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 239 of 600 (SEE_G vs RS_G_300000)
+Finished game 236 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 240 of 600 (RS_G_300000 vs SEE_G)
+Finished game 237 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 241 of 600 (SEE_G vs RS_G_300000)
+Finished game 238 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 242 of 600 (RS_G_300000 vs SEE_G)
+Finished game 239 (SEE_G vs RS_G_300000): 0-1 {Black wins by adjudication}
+Started game 243 of 600 (SEE_G vs RS_G_300000)
+Finished game 241 (SEE_G vs RS_G_300000): 0-1 {Black wins by adjudication}
+Started game 244 of 600 (RS_G_300000 vs SEE_G)
+Finished game 240 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 245 of 600 (SEE_G vs RS_G_300000)
+Finished game 242 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 246 of 600 (RS_G_300000 vs SEE_G)
+Finished game 243 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 247 of 600 (SEE_G vs RS_G_300000)
+Finished game 245 (SEE_G vs RS_G_300000): 0-1 {Black wins by adjudication}
+Started game 248 of 600 (RS_G_300000 vs SEE_G)
+Finished game 244 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 249 of 600 (SEE_G vs RS_G_300000)
+Finished game 248 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 250 of 600 (RS_G_300000 vs SEE_G)
+Finished game 247 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 251 of 600 (SEE_G vs RS_G_300000)
+Finished game 246 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 252 of 600 (RS_G_300000 vs SEE_G)
+Finished game 250 (RS_G_300000 vs SEE_G): 1-0 {White mates}
+Started game 253 of 600 (SEE_G vs RS_G_300000)
+Finished game 251 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 254 of 600 (RS_G_300000 vs SEE_G)
+Finished game 249 (SEE_G vs RS_G_300000): 0-1 {Black wins by adjudication}
+Started game 255 of 600 (SEE_G vs RS_G_300000)
+Finished game 253 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 256 of 600 (RS_G_300000 vs SEE_G)
+Finished game 252 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 257 of 600 (SEE_G vs RS_G_300000)
+Finished game 255 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 258 of 600 (RS_G_300000 vs SEE_G)
+Finished game 256 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by adjudication}
+Started game 259 of 600 (SEE_G vs RS_G_300000)
+Finished game 254 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 260 of 600 (RS_G_300000 vs SEE_G)
+Finished game 257 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by adjudication}
+Started game 261 of 600 (SEE_G vs RS_G_300000)
+Finished game 259 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 262 of 600 (RS_G_300000 vs SEE_G)
+Finished game 258 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 263 of 600 (SEE_G vs RS_G_300000)
+Finished game 261 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by adjudication}
+Started game 264 of 600 (RS_G_300000 vs SEE_G)
+Finished game 263 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 265 of 600 (SEE_G vs RS_G_300000)
+Finished game 264 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 266 of 600 (RS_G_300000 vs SEE_G)
+Finished game 262 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 267 of 600 (SEE_G vs RS_G_300000)
+Finished game 266 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 268 of 600 (RS_G_300000 vs SEE_G)
+Finished game 260 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by adjudication}
+Started game 269 of 600 (SEE_G vs RS_G_300000)
+Finished game 267 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 270 of 600 (RS_G_300000 vs SEE_G)
+Finished game 269 (SEE_G vs RS_G_300000): 1-0 {White mates}
+Started game 271 of 600 (SEE_G vs RS_G_300000)
+Finished game 265 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 272 of 600 (RS_G_300000 vs SEE_G)
+Finished game 268 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 273 of 600 (SEE_G vs RS_G_300000)
+Finished game 272 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 274 of 600 (RS_G_300000 vs SEE_G)
+Finished game 273 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by adjudication}
+Started game 275 of 600 (SEE_G vs RS_G_300000)
+Finished game 271 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 276 of 600 (RS_G_300000 vs SEE_G)
+Finished game 270 (RS_G_300000 vs SEE_G): 0-1 {Black wins by adjudication}
+Started game 277 of 600 (SEE_G vs RS_G_300000)
+Finished game 275 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 278 of 600 (RS_G_300000 vs SEE_G)
+Finished game 276 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by adjudication}
+Started game 279 of 600 (SEE_G vs RS_G_300000)
+Finished game 274 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 280 of 600 (RS_G_300000 vs SEE_G)
+Finished game 277 (SEE_G vs RS_G_300000): 0-1 {Black wins by adjudication}
+Started game 281 of 600 (SEE_G vs RS_G_300000)
+Finished game 278 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by insufficient mating material}
+Started game 282 of 600 (RS_G_300000 vs SEE_G)
+Finished game 280 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by adjudication}
+Started game 283 of 600 (SEE_G vs RS_G_300000)
+Finished game 279 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 284 of 600 (RS_G_300000 vs SEE_G)
+Finished game 281 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 285 of 600 (SEE_G vs RS_G_300000)
+Finished game 282 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 286 of 600 (RS_G_300000 vs SEE_G)
+Finished game 285 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 287 of 600 (SEE_G vs RS_G_300000)
+Finished game 286 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 288 of 600 (RS_G_300000 vs SEE_G)
+Finished game 283 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by adjudication}
+Started game 289 of 600 (SEE_G vs RS_G_300000)
+Finished game 284 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by adjudication}
+Started game 290 of 600 (RS_G_300000 vs SEE_G)
+Finished game 288 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 291 of 600 (SEE_G vs RS_G_300000)
+Finished game 289 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 292 of 600 (RS_G_300000 vs SEE_G)
+Finished game 291 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 293 of 600 (SEE_G vs RS_G_300000)
+Finished game 290 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by adjudication}
+Started game 294 of 600 (RS_G_300000 vs SEE_G)
+Finished game 287 (SEE_G vs RS_G_300000): 0-1 {Black wins by adjudication}
+Started game 295 of 600 (SEE_G vs RS_G_300000)
+Finished game 292 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by stalemate}
+Started game 296 of 600 (RS_G_300000 vs SEE_G)
+Finished game 293 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 297 of 600 (SEE_G vs RS_G_300000)
+Finished game 295 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 298 of 600 (RS_G_300000 vs SEE_G)
+Finished game 298 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 299 of 600 (SEE_G vs RS_G_300000)
+Finished game 294 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by insufficient mating material}
+Started game 300 of 600 (RS_G_300000 vs SEE_G)
+Finished game 297 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 301 of 600 (SEE_G vs RS_G_300000)
+Finished game 300 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 302 of 600 (RS_G_300000 vs SEE_G)
+Finished game 296 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 303 of 600 (SEE_G vs RS_G_300000)
+Finished game 299 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 304 of 600 (RS_G_300000 vs SEE_G)
+Finished game 301 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by insufficient mating material}
+Started game 305 of 600 (SEE_G vs RS_G_300000)
+Finished game 303 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 306 of 600 (RS_G_300000 vs SEE_G)
+Finished game 302 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 307 of 600 (SEE_G vs RS_G_300000)
+Finished game 306 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 308 of 600 (RS_G_300000 vs SEE_G)
+Finished game 305 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 309 of 600 (SEE_G vs RS_G_300000)
+Finished game 304 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 310 of 600 (RS_G_300000 vs SEE_G)
+Finished game 307 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by adjudication}
+Started game 311 of 600 (SEE_G vs RS_G_300000)
+Finished game 308 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 312 of 600 (RS_G_300000 vs SEE_G)
+Finished game 312 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 313 of 600 (SEE_G vs RS_G_300000)
+Finished game 310 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 314 of 600 (RS_G_300000 vs SEE_G)
+Finished game 311 (SEE_G vs RS_G_300000): 0-1 {Black wins by adjudication}
+Started game 315 of 600 (SEE_G vs RS_G_300000)
+Finished game 309 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 316 of 600 (RS_G_300000 vs SEE_G)
+Finished game 313 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 317 of 600 (SEE_G vs RS_G_300000)
+Finished game 315 (SEE_G vs RS_G_300000): 0-1 {Black mates}
+Started game 318 of 600 (RS_G_300000 vs SEE_G)
+Finished game 314 (RS_G_300000 vs SEE_G): 0-1 {Black wins by adjudication}
+Started game 319 of 600 (SEE_G vs RS_G_300000)
+Finished game 317 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 320 of 600 (RS_G_300000 vs SEE_G)
+Finished game 316 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by adjudication}
+Started game 321 of 600 (SEE_G vs RS_G_300000)
+Finished game 319 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 322 of 600 (RS_G_300000 vs SEE_G)
+Finished game 318 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 323 of 600 (SEE_G vs RS_G_300000)
+Finished game 320 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by adjudication}
+Started game 324 of 600 (RS_G_300000 vs SEE_G)
+Finished game 324 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 325 of 600 (SEE_G vs RS_G_300000)
+Finished game 321 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by adjudication}
+Started game 326 of 600 (RS_G_300000 vs SEE_G)
+Finished game 323 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 327 of 600 (SEE_G vs RS_G_300000)
+Finished game 322 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 328 of 600 (RS_G_300000 vs SEE_G)
+Finished game 325 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 329 of 600 (SEE_G vs RS_G_300000)
+Finished game 326 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 330 of 600 (RS_G_300000 vs SEE_G)
+Finished game 327 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 331 of 600 (SEE_G vs RS_G_300000)
+Finished game 330 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 332 of 600 (RS_G_300000 vs SEE_G)
+Finished game 331 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by insufficient mating material}
+Started game 333 of 600 (SEE_G vs RS_G_300000)
+Finished game 329 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by insufficient mating material}
+Started game 334 of 600 (RS_G_300000 vs SEE_G)
+Finished game 328 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by adjudication}
+Started game 335 of 600 (SEE_G vs RS_G_300000)
+Finished game 332 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 336 of 600 (RS_G_300000 vs SEE_G)
+Finished game 333 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by adjudication}
+Started game 337 of 600 (SEE_G vs RS_G_300000)
+Finished game 334 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 338 of 600 (RS_G_300000 vs SEE_G)
+Finished game 337 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 339 of 600 (SEE_G vs RS_G_300000)
+Finished game 336 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 340 of 600 (RS_G_300000 vs SEE_G)
+Finished game 335 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by adjudication}
+Started game 341 of 600 (SEE_G vs RS_G_300000)
+Finished game 338 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 342 of 600 (RS_G_300000 vs SEE_G)
+Finished game 339 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by adjudication}
+Started game 343 of 600 (SEE_G vs RS_G_300000)
+Finished game 341 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 344 of 600 (RS_G_300000 vs SEE_G)
+Finished game 340 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 345 of 600 (SEE_G vs RS_G_300000)
+Finished game 342 (RS_G_300000 vs SEE_G): 0-1 {Black wins by adjudication}
+Started game 346 of 600 (RS_G_300000 vs SEE_G)
+Finished game 346 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 347 of 600 (SEE_G vs RS_G_300000)
+Finished game 344 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 348 of 600 (RS_G_300000 vs SEE_G)
+Finished game 345 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 349 of 600 (SEE_G vs RS_G_300000)
+Finished game 343 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 350 of 600 (RS_G_300000 vs SEE_G)
+Finished game 348 (RS_G_300000 vs SEE_G): 0-1 {Black wins by adjudication}
+Started game 351 of 600 (SEE_G vs RS_G_300000)
+Finished game 347 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 352 of 600 (RS_G_300000 vs SEE_G)
+Finished game 350 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 353 of 600 (SEE_G vs RS_G_300000)
+Finished game 349 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 354 of 600 (RS_G_300000 vs SEE_G)
+Finished game 352 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by stalemate}
+Started game 355 of 600 (SEE_G vs RS_G_300000)
+Finished game 351 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 356 of 600 (RS_G_300000 vs SEE_G)
+Finished game 353 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 357 of 600 (SEE_G vs RS_G_300000)
+Finished game 354 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 358 of 600 (RS_G_300000 vs SEE_G)
+Finished game 355 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 359 of 600 (SEE_G vs RS_G_300000)
+Finished game 358 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 360 of 600 (RS_G_300000 vs SEE_G)
+Finished game 357 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 361 of 600 (SEE_G vs RS_G_300000)
+Finished game 356 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 362 of 600 (RS_G_300000 vs SEE_G)
+Finished game 361 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by stalemate}
+Started game 363 of 600 (SEE_G vs RS_G_300000)
+Finished game 359 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 364 of 600 (RS_G_300000 vs SEE_G)
+Finished game 362 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by insufficient mating material}
+Started game 365 of 600 (SEE_G vs RS_G_300000)
+Finished game 360 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 366 of 600 (RS_G_300000 vs SEE_G)
+Finished game 365 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 367 of 600 (SEE_G vs RS_G_300000)
+Finished game 366 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 368 of 600 (RS_G_300000 vs SEE_G)
+Finished game 363 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by adjudication}
+Started game 369 of 600 (SEE_G vs RS_G_300000)
+Finished game 364 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 370 of 600 (RS_G_300000 vs SEE_G)
+Finished game 367 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 371 of 600 (SEE_G vs RS_G_300000)
+Finished game 368 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 372 of 600 (RS_G_300000 vs SEE_G)
+Finished game 369 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 373 of 600 (SEE_G vs RS_G_300000)
+Finished game 371 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 374 of 600 (RS_G_300000 vs SEE_G)
+Finished game 373 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 375 of 600 (SEE_G vs RS_G_300000)
+Finished game 370 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by adjudication}
+Started game 376 of 600 (RS_G_300000 vs SEE_G)
+Finished game 374 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by adjudication}
+Started game 377 of 600 (SEE_G vs RS_G_300000)
+Finished game 372 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by adjudication}
+Started game 378 of 600 (RS_G_300000 vs SEE_G)
+Finished game 375 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 379 of 600 (SEE_G vs RS_G_300000)
+Finished game 378 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 380 of 600 (RS_G_300000 vs SEE_G)
+Finished game 376 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 381 of 600 (SEE_G vs RS_G_300000)
+Finished game 377 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 382 of 600 (RS_G_300000 vs SEE_G)
+Finished game 379 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by adjudication}
+Started game 383 of 600 (SEE_G vs RS_G_300000)
+Finished game 381 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 384 of 600 (RS_G_300000 vs SEE_G)
+Finished game 380 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 385 of 600 (SEE_G vs RS_G_300000)
+Finished game 384 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 386 of 600 (RS_G_300000 vs SEE_G)
+Finished game 383 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 387 of 600 (SEE_G vs RS_G_300000)
+Finished game 385 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by adjudication}
+Started game 388 of 600 (RS_G_300000 vs SEE_G)
+Finished game 382 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 389 of 600 (SEE_G vs RS_G_300000)
+Finished game 386 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 390 of 600 (RS_G_300000 vs SEE_G)
+Finished game 387 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 391 of 600 (SEE_G vs RS_G_300000)
+Finished game 389 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 392 of 600 (RS_G_300000 vs SEE_G)
+Finished game 388 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 393 of 600 (SEE_G vs RS_G_300000)
+Finished game 392 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 394 of 600 (RS_G_300000 vs SEE_G)
+Finished game 390 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 395 of 600 (SEE_G vs RS_G_300000)
+Finished game 393 (SEE_G vs RS_G_300000): 0-1 {Black wins by adjudication}
+Started game 396 of 600 (RS_G_300000 vs SEE_G)
+Finished game 394 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 397 of 600 (SEE_G vs RS_G_300000)
+Finished game 395 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 398 of 600 (RS_G_300000 vs SEE_G)
+Finished game 391 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by fifty moves rule}
+Started game 399 of 600 (SEE_G vs RS_G_300000)
+Finished game 396 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by insufficient mating material}
+Started game 400 of 600 (RS_G_300000 vs SEE_G)
+Finished game 400 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 401 of 600 (SEE_G vs RS_G_300000)
+Finished game 397 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by insufficient mating material}
+Started game 402 of 600 (RS_G_300000 vs SEE_G)
+Finished game 398 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 403 of 600 (SEE_G vs RS_G_300000)
+Finished game 399 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by adjudication}
+--------------------------------------------------
+Results of SEE_G vs RS_G_300000 (20000 nodes, 1t, 16MB, UHO_4060_v4.epd):
+Elo: -13.03 +/- 21.58, nElo: -20.61 +/- 34.05
+LOS: 11.77 %, DrawRatio: 40.50 %, PairsRatio: 0.80
+Games: 400, Wins: 110, Losses: 125, Draws: 165, Points: 192.5 (48.12 %)
+Ptnml(0-2): [8, 58, 81, 47, 6], WL/DD Ratio: 1.70
+--------------------------------------------------
+Started game 404 of 600 (RS_G_300000 vs SEE_G)
+Finished game 401 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by insufficient mating material}
+Started game 405 of 600 (SEE_G vs RS_G_300000)
+Finished game 402 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 406 of 600 (RS_G_300000 vs SEE_G)
+Finished game 404 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 407 of 600 (SEE_G vs RS_G_300000)
+Finished game 403 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 408 of 600 (RS_G_300000 vs SEE_G)
+Finished game 406 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 409 of 600 (SEE_G vs RS_G_300000)
+Finished game 405 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 410 of 600 (RS_G_300000 vs SEE_G)
+Finished game 407 (SEE_G vs RS_G_300000): 0-1 {Black wins by adjudication}
+Started game 411 of 600 (SEE_G vs RS_G_300000)
+Finished game 408 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 412 of 600 (RS_G_300000 vs SEE_G)
+Finished game 409 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 413 of 600 (SEE_G vs RS_G_300000)
+Finished game 410 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 414 of 600 (RS_G_300000 vs SEE_G)
+Finished game 412 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 415 of 600 (SEE_G vs RS_G_300000)
+Finished game 411 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 416 of 600 (RS_G_300000 vs SEE_G)
+Finished game 413 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 417 of 600 (SEE_G vs RS_G_300000)
+Finished game 414 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 418 of 600 (RS_G_300000 vs SEE_G)
+Finished game 417 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by adjudication}
+Started game 419 of 600 (SEE_G vs RS_G_300000)
+Finished game 415 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by insufficient mating material}
+Started game 420 of 600 (RS_G_300000 vs SEE_G)
+Finished game 416 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 421 of 600 (SEE_G vs RS_G_300000)
+Finished game 419 (SEE_G vs RS_G_300000): 0-1 {Black wins by adjudication}
+Started game 422 of 600 (RS_G_300000 vs SEE_G)
+Finished game 418 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by adjudication}
+Started game 423 of 600 (SEE_G vs RS_G_300000)
+Finished game 420 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 424 of 600 (RS_G_300000 vs SEE_G)
+Finished game 421 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 425 of 600 (SEE_G vs RS_G_300000)
+Finished game 422 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by adjudication}
+Started game 426 of 600 (RS_G_300000 vs SEE_G)
+Finished game 423 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 427 of 600 (SEE_G vs RS_G_300000)
+Finished game 425 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 428 of 600 (RS_G_300000 vs SEE_G)
+Finished game 424 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by adjudication}
+Started game 429 of 600 (SEE_G vs RS_G_300000)
+Finished game 426 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 430 of 600 (RS_G_300000 vs SEE_G)
+Finished game 428 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by insufficient mating material}
+Started game 431 of 600 (SEE_G vs RS_G_300000)
+Finished game 429 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by adjudication}
+Started game 432 of 600 (RS_G_300000 vs SEE_G)
+Finished game 430 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 433 of 600 (SEE_G vs RS_G_300000)
+Finished game 427 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by adjudication}
+Started game 434 of 600 (RS_G_300000 vs SEE_G)
+Finished game 433 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by adjudication}
+Started game 435 of 600 (SEE_G vs RS_G_300000)
+Finished game 431 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by insufficient mating material}
+Started game 436 of 600 (RS_G_300000 vs SEE_G)
+Finished game 432 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by adjudication}
+Started game 437 of 600 (SEE_G vs RS_G_300000)
+Finished game 434 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 438 of 600 (RS_G_300000 vs SEE_G)
+Finished game 435 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 439 of 600 (SEE_G vs RS_G_300000)
+Finished game 436 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by adjudication}
+Started game 440 of 600 (RS_G_300000 vs SEE_G)
+Finished game 438 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by insufficient mating material}
+Started game 441 of 600 (SEE_G vs RS_G_300000)
+Finished game 437 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 442 of 600 (RS_G_300000 vs SEE_G)
+Finished game 442 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 443 of 600 (SEE_G vs RS_G_300000)
+Finished game 440 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 444 of 600 (RS_G_300000 vs SEE_G)
+Finished game 441 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 445 of 600 (SEE_G vs RS_G_300000)
+Finished game 439 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 446 of 600 (RS_G_300000 vs SEE_G)
+Finished game 443 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by adjudication}
+Started game 447 of 600 (SEE_G vs RS_G_300000)
+Finished game 445 (SEE_G vs RS_G_300000): 0-1 {Black wins by adjudication}
+Started game 448 of 600 (RS_G_300000 vs SEE_G)
+Finished game 444 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by insufficient mating material}
+Started game 449 of 600 (SEE_G vs RS_G_300000)
+Finished game 446 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 450 of 600 (RS_G_300000 vs SEE_G)
+Finished game 448 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 451 of 600 (SEE_G vs RS_G_300000)
+Finished game 447 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by insufficient mating material}
+Started game 452 of 600 (RS_G_300000 vs SEE_G)
+Finished game 449 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 453 of 600 (SEE_G vs RS_G_300000)
+Finished game 450 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 454 of 600 (RS_G_300000 vs SEE_G)
+Finished game 451 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 455 of 600 (SEE_G vs RS_G_300000)
+Finished game 452 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 456 of 600 (RS_G_300000 vs SEE_G)
+Finished game 453 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by adjudication}
+Started game 457 of 600 (SEE_G vs RS_G_300000)
+Finished game 455 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 458 of 600 (RS_G_300000 vs SEE_G)
+Finished game 454 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 459 of 600 (SEE_G vs RS_G_300000)
+Finished game 456 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by adjudication}
+Started game 460 of 600 (RS_G_300000 vs SEE_G)
+Finished game 458 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 461 of 600 (SEE_G vs RS_G_300000)
+Finished game 459 (SEE_G vs RS_G_300000): 0-1 {Black wins by adjudication}
+Started game 462 of 600 (RS_G_300000 vs SEE_G)
+Finished game 457 (SEE_G vs RS_G_300000): 0-1 {Black wins by adjudication}
+Started game 463 of 600 (SEE_G vs RS_G_300000)
+Finished game 460 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 464 of 600 (RS_G_300000 vs SEE_G)
+Finished game 462 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 465 of 600 (SEE_G vs RS_G_300000)
+Finished game 463 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by adjudication}
+Started game 466 of 600 (RS_G_300000 vs SEE_G)
+Finished game 461 (SEE_G vs RS_G_300000): 0-1 {Black wins by adjudication}
+Started game 467 of 600 (SEE_G vs RS_G_300000)
+Finished game 464 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 468 of 600 (RS_G_300000 vs SEE_G)
+Finished game 466 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 469 of 600 (SEE_G vs RS_G_300000)
+Finished game 467 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 470 of 600 (RS_G_300000 vs SEE_G)
+Finished game 465 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by adjudication}
+Started game 471 of 600 (SEE_G vs RS_G_300000)
+Finished game 468 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 472 of 600 (RS_G_300000 vs SEE_G)
+Finished game 470 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 473 of 600 (SEE_G vs RS_G_300000)
+Finished game 469 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 474 of 600 (RS_G_300000 vs SEE_G)
+Finished game 471 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 475 of 600 (SEE_G vs RS_G_300000)
+Finished game 472 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by insufficient mating material}
+Started game 476 of 600 (RS_G_300000 vs SEE_G)
+Finished game 473 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 477 of 600 (SEE_G vs RS_G_300000)
+Finished game 476 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 478 of 600 (RS_G_300000 vs SEE_G)
+Finished game 475 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 479 of 600 (SEE_G vs RS_G_300000)
+Finished game 479 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 480 of 600 (RS_G_300000 vs SEE_G)
+Finished game 477 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 481 of 600 (SEE_G vs RS_G_300000)
+Finished game 474 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by fifty moves rule}
+Started game 482 of 600 (RS_G_300000 vs SEE_G)
+Finished game 478 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 483 of 600 (SEE_G vs RS_G_300000)
+Finished game 481 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by adjudication}
+Started game 484 of 600 (RS_G_300000 vs SEE_G)
+Finished game 483 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by adjudication}
+Started game 485 of 600 (SEE_G vs RS_G_300000)
+Finished game 482 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 486 of 600 (RS_G_300000 vs SEE_G)
+Finished game 486 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 487 of 600 (SEE_G vs RS_G_300000)
+Finished game 480 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by fifty moves rule}
+Started game 488 of 600 (RS_G_300000 vs SEE_G)
+Finished game 484 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 489 of 600 (SEE_G vs RS_G_300000)
+Finished game 485 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 490 of 600 (RS_G_300000 vs SEE_G)
+Finished game 488 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 491 of 600 (SEE_G vs RS_G_300000)
+Finished game 487 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 492 of 600 (RS_G_300000 vs SEE_G)
+Finished game 489 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 493 of 600 (SEE_G vs RS_G_300000)
+Finished game 490 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 494 of 600 (RS_G_300000 vs SEE_G)
+Finished game 491 (SEE_G vs RS_G_300000): 0-1 {Black wins by adjudication}
+Started game 495 of 600 (SEE_G vs RS_G_300000)
+Finished game 492 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 496 of 600 (RS_G_300000 vs SEE_G)
+Finished game 494 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 497 of 600 (SEE_G vs RS_G_300000)
+Finished game 493 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 498 of 600 (RS_G_300000 vs SEE_G)
+Finished game 495 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by adjudication}
+Started game 499 of 600 (SEE_G vs RS_G_300000)
+Finished game 497 (SEE_G vs RS_G_300000): 1-0 {White mates}
+Started game 500 of 600 (RS_G_300000 vs SEE_G)
+Finished game 496 (RS_G_300000 vs SEE_G): 1-0 {White mates}
+Started game 501 of 600 (SEE_G vs RS_G_300000)
+Finished game 498 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 502 of 600 (RS_G_300000 vs SEE_G)
+Finished game 499 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 503 of 600 (SEE_G vs RS_G_300000)
+Finished game 500 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 504 of 600 (RS_G_300000 vs SEE_G)
+Finished game 501 (SEE_G vs RS_G_300000): 1-0 {White mates}
+Started game 505 of 600 (SEE_G vs RS_G_300000)
+Finished game 502 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 506 of 600 (RS_G_300000 vs SEE_G)
+Finished game 503 (SEE_G vs RS_G_300000): 0-1 {Black wins by adjudication}
+Started game 507 of 600 (SEE_G vs RS_G_300000)
+Finished game 504 (RS_G_300000 vs SEE_G): 0-1 {Black wins by adjudication}
+Started game 508 of 600 (RS_G_300000 vs SEE_G)
+Finished game 505 (SEE_G vs RS_G_300000): 0-1 {Black wins by adjudication}
+Started game 509 of 600 (SEE_G vs RS_G_300000)
+Finished game 506 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 510 of 600 (RS_G_300000 vs SEE_G)
+Finished game 507 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 511 of 600 (SEE_G vs RS_G_300000)
+Finished game 509 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 512 of 600 (RS_G_300000 vs SEE_G)
+Finished game 510 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 513 of 600 (SEE_G vs RS_G_300000)
+Finished game 508 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 514 of 600 (RS_G_300000 vs SEE_G)
+Finished game 514 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 515 of 600 (SEE_G vs RS_G_300000)
+Finished game 513 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by adjudication}
+Started game 516 of 600 (RS_G_300000 vs SEE_G)
+Finished game 511 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 517 of 600 (SEE_G vs RS_G_300000)
+Finished game 512 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by adjudication}
+Started game 518 of 600 (RS_G_300000 vs SEE_G)
+Finished game 515 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 519 of 600 (SEE_G vs RS_G_300000)
+Finished game 517 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 520 of 600 (RS_G_300000 vs SEE_G)
+Finished game 516 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 521 of 600 (SEE_G vs RS_G_300000)
+Finished game 518 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 522 of 600 (RS_G_300000 vs SEE_G)
+Finished game 519 (SEE_G vs RS_G_300000): 0-1 {Black wins by adjudication}
+Started game 523 of 600 (SEE_G vs RS_G_300000)
+Finished game 520 (RS_G_300000 vs SEE_G): 0-1 {Black wins by adjudication}
+Started game 524 of 600 (RS_G_300000 vs SEE_G)
+Finished game 521 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 525 of 600 (SEE_G vs RS_G_300000)
+Finished game 524 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 526 of 600 (RS_G_300000 vs SEE_G)
+Finished game 523 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 527 of 600 (SEE_G vs RS_G_300000)
+Finished game 522 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 528 of 600 (RS_G_300000 vs SEE_G)
+Finished game 525 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 529 of 600 (SEE_G vs RS_G_300000)
+Finished game 528 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 530 of 600 (RS_G_300000 vs SEE_G)
+Finished game 527 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 531 of 600 (SEE_G vs RS_G_300000)
+Finished game 526 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 532 of 600 (RS_G_300000 vs SEE_G)
+Finished game 529 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by adjudication}
+Started game 533 of 600 (SEE_G vs RS_G_300000)
+Finished game 532 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 534 of 600 (RS_G_300000 vs SEE_G)
+Finished game 530 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 535 of 600 (SEE_G vs RS_G_300000)
+Finished game 533 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by insufficient mating material}
+Started game 536 of 600 (RS_G_300000 vs SEE_G)
+Finished game 531 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by adjudication}
+Started game 537 of 600 (SEE_G vs RS_G_300000)
+Finished game 536 (RS_G_300000 vs SEE_G): 0-1 {Black wins by adjudication}
+Started game 538 of 600 (RS_G_300000 vs SEE_G)
+Finished game 535 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by adjudication}
+Started game 539 of 600 (SEE_G vs RS_G_300000)
+Finished game 534 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by adjudication}
+Started game 540 of 600 (RS_G_300000 vs SEE_G)
+Finished game 537 (SEE_G vs RS_G_300000): 0-1 {Black wins by adjudication}
+Started game 541 of 600 (SEE_G vs RS_G_300000)
+Finished game 539 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 542 of 600 (RS_G_300000 vs SEE_G)
+Finished game 541 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by insufficient mating material}
+Started game 543 of 600 (SEE_G vs RS_G_300000)
+Finished game 540 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 544 of 600 (RS_G_300000 vs SEE_G)
+Finished game 538 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 545 of 600 (SEE_G vs RS_G_300000)
+Finished game 542 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by adjudication}
+Started game 546 of 600 (RS_G_300000 vs SEE_G)
+Finished game 544 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 547 of 600 (SEE_G vs RS_G_300000)
+Finished game 546 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 548 of 600 (RS_G_300000 vs SEE_G)
+Finished game 543 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 549 of 600 (SEE_G vs RS_G_300000)
+Finished game 545 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 550 of 600 (RS_G_300000 vs SEE_G)
+Finished game 547 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by insufficient mating material}
+Started game 551 of 600 (SEE_G vs RS_G_300000)
+Finished game 549 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by adjudication}
+Started game 552 of 600 (RS_G_300000 vs SEE_G)
+Finished game 550 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 553 of 600 (SEE_G vs RS_G_300000)
+Finished game 548 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 554 of 600 (RS_G_300000 vs SEE_G)
+Finished game 551 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 555 of 600 (SEE_G vs RS_G_300000)
+Finished game 552 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by insufficient mating material}
+Started game 556 of 600 (RS_G_300000 vs SEE_G)
+Finished game 554 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 557 of 600 (SEE_G vs RS_G_300000)
+Finished game 553 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by adjudication}
+Started game 558 of 600 (RS_G_300000 vs SEE_G)
+Finished game 555 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 559 of 600 (SEE_G vs RS_G_300000)
+Finished game 556 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by adjudication}
+Started game 560 of 600 (RS_G_300000 vs SEE_G)
+Finished game 558 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 561 of 600 (SEE_G vs RS_G_300000)
+Finished game 559 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 562 of 600 (RS_G_300000 vs SEE_G)
+Finished game 557 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 563 of 600 (SEE_G vs RS_G_300000)
+Finished game 562 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 564 of 600 (RS_G_300000 vs SEE_G)
+Finished game 561 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 565 of 600 (SEE_G vs RS_G_300000)
+Finished game 560 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 566 of 600 (RS_G_300000 vs SEE_G)
+Finished game 563 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by adjudication}
+Started game 567 of 600 (SEE_G vs RS_G_300000)
+Finished game 564 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 568 of 600 (RS_G_300000 vs SEE_G)
+Finished game 565 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 569 of 600 (SEE_G vs RS_G_300000)
+Finished game 566 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by stalemate}
+Started game 570 of 600 (RS_G_300000 vs SEE_G)
+Finished game 567 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 571 of 600 (SEE_G vs RS_G_300000)
+Finished game 568 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 572 of 600 (RS_G_300000 vs SEE_G)
+Finished game 569 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 573 of 600 (SEE_G vs RS_G_300000)
+Finished game 570 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 574 of 600 (RS_G_300000 vs SEE_G)
+Finished game 571 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 575 of 600 (SEE_G vs RS_G_300000)
+Finished game 572 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 576 of 600 (RS_G_300000 vs SEE_G)
+Finished game 573 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 577 of 600 (SEE_G vs RS_G_300000)
+Finished game 574 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 578 of 600 (RS_G_300000 vs SEE_G)
+Finished game 576 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by adjudication}
+Started game 579 of 600 (SEE_G vs RS_G_300000)
+Finished game 575 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 580 of 600 (RS_G_300000 vs SEE_G)
+Finished game 578 (RS_G_300000 vs SEE_G): 0-1 {Black wins by adjudication}
+Started game 581 of 600 (SEE_G vs RS_G_300000)
+Finished game 579 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 582 of 600 (RS_G_300000 vs SEE_G)
+Finished game 580 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 583 of 600 (SEE_G vs RS_G_300000)
+Finished game 582 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 584 of 600 (RS_G_300000 vs SEE_G)
+Finished game 577 (SEE_G vs RS_G_300000): 0-1 {Black wins by adjudication}
+Started game 585 of 600 (SEE_G vs RS_G_300000)
+Finished game 581 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 586 of 600 (RS_G_300000 vs SEE_G)
+Finished game 584 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 587 of 600 (SEE_G vs RS_G_300000)
+Finished game 583 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 588 of 600 (RS_G_300000 vs SEE_G)
+Finished game 585 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by adjudication}
+Started game 589 of 600 (SEE_G vs RS_G_300000)
+Finished game 586 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 590 of 600 (RS_G_300000 vs SEE_G)
+Finished game 587 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 591 of 600 (SEE_G vs RS_G_300000)
+Finished game 588 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by adjudication}
+Started game 592 of 600 (RS_G_300000 vs SEE_G)
+Finished game 589 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by insufficient mating material}
+Started game 593 of 600 (SEE_G vs RS_G_300000)
+Finished game 591 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 594 of 600 (RS_G_300000 vs SEE_G)
+Finished game 590 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 595 of 600 (SEE_G vs RS_G_300000)
+Finished game 593 (SEE_G vs RS_G_300000): 1-0 {White wins by adjudication}
+Started game 596 of 600 (RS_G_300000 vs SEE_G)
+Finished game 592 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by adjudication}
+Started game 597 of 600 (SEE_G vs RS_G_300000)
+Finished game 594 (RS_G_300000 vs SEE_G): 1/2-1/2 {Draw by adjudication}
+Started game 598 of 600 (RS_G_300000 vs SEE_G)
+Finished game 598 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Started game 599 of 600 (SEE_G vs RS_G_300000)
+Finished game 595 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by adjudication}
+Started game 600 of 600 (RS_G_300000 vs SEE_G)
+Finished game 596 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+Finished game 599 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by 3-fold repetition}
+Finished game 597 (SEE_G vs RS_G_300000): 1/2-1/2 {Draw by adjudication}
+Finished game 600 (RS_G_300000 vs SEE_G): 1-0 {White wins by adjudication}
+--------------------------------------------------
+Results of SEE_G vs RS_G_300000 (20000 nodes, 1t, 16MB, UHO_4060_v4.epd):
+Elo: -22.03 +/- 17.42, nElo: -35.30 +/- 27.80
+LOS: 0.64 %, DrawRatio: 40.67 %, PairsRatio: 0.71
+Games: 600, Wins: 162, Losses: 200, Draws: 238, Points: 281.0 (46.83 %)
+Ptnml(0-2): [14, 90, 122, 68, 6], WL/DD Ratio: 2.05
+--------------------------------------------------
+Finished match
+Total Time: 00:12:11 (hours:minutes:seconds)
+

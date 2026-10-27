@@ -1,0 +1,2040 @@
+/home/user/work/fastchess/fastchess -engine cmd=/home/user/data/sf_research name=ON_2 option.StudentFile=/home/user/nets/c1/ON_2.stud tc=inf nodes=20000 -engine cmd=/home/user/data/sf_research name=OFF_2 option.StudentFile=/home/user/nets/c1/OFF_2.stud tc=inf nodes=20000 -each option.Threads=1 option.Hash=16 -openings file=/home/user/data/UHO_4060_v4.epd format=epd order=random -srand 2 -repeat -rounds 500 -concurrency 4 -resign movecount=3 score=1000 twosided=true -draw movenumber=40 movecount=8 score=8 -pgnout file=experiments/c1/matches/ON_2_vs_OFF_2.pgn -ratinginterval 100
+Indexing opening suite...
+Started game 1 of 1000 (ON_2 vs OFF_2)
+Started game 2 of 1000 (OFF_2 vs ON_2)
+Started game 3 of 1000 (ON_2 vs OFF_2)
+Started game 4 of 1000 (OFF_2 vs ON_2)
+Finished game 1 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 5 of 1000 (ON_2 vs OFF_2)
+Finished game 3 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 6 of 1000 (OFF_2 vs ON_2)
+Finished game 2 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 7 of 1000 (ON_2 vs OFF_2)
+Finished game 5 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 8 of 1000 (OFF_2 vs ON_2)
+Finished game 7 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 9 of 1000 (ON_2 vs OFF_2)
+Finished game 6 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 10 of 1000 (OFF_2 vs ON_2)
+Finished game 4 (OFF_2 vs ON_2): 1/2-1/2 {Draw by fifty moves rule}
+Started game 11 of 1000 (ON_2 vs OFF_2)
+Finished game 10 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 12 of 1000 (OFF_2 vs ON_2)
+Finished game 9 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 13 of 1000 (ON_2 vs OFF_2)
+Finished game 8 (OFF_2 vs ON_2): 1/2-1/2 {Draw by adjudication}
+Started game 14 of 1000 (OFF_2 vs ON_2)
+Finished game 11 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 15 of 1000 (ON_2 vs OFF_2)
+Finished game 13 (ON_2 vs OFF_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 16 of 1000 (OFF_2 vs ON_2)
+Finished game 14 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 17 of 1000 (ON_2 vs OFF_2)
+Finished game 12 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 18 of 1000 (OFF_2 vs ON_2)
+Finished game 15 (ON_2 vs OFF_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 19 of 1000 (ON_2 vs OFF_2)
+Finished game 16 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 20 of 1000 (OFF_2 vs ON_2)
+Finished game 17 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 21 of 1000 (ON_2 vs OFF_2)
+Finished game 18 (OFF_2 vs ON_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 22 of 1000 (OFF_2 vs ON_2)
+Finished game 19 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 23 of 1000 (ON_2 vs OFF_2)
+Finished game 20 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 24 of 1000 (OFF_2 vs ON_2)
+Finished game 21 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 25 of 1000 (ON_2 vs OFF_2)
+Finished game 22 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 26 of 1000 (OFF_2 vs ON_2)
+Finished game 23 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 27 of 1000 (ON_2 vs OFF_2)
+Finished game 24 (OFF_2 vs ON_2): 1-0 {White mates}
+Started game 28 of 1000 (OFF_2 vs ON_2)
+Finished game 25 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 29 of 1000 (ON_2 vs OFF_2)
+Finished game 26 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 30 of 1000 (OFF_2 vs ON_2)
+Finished game 27 (ON_2 vs OFF_2): 1/2-1/2 {Draw by adjudication}
+Started game 31 of 1000 (ON_2 vs OFF_2)
+Finished game 28 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 32 of 1000 (OFF_2 vs ON_2)
+Finished game 31 (ON_2 vs OFF_2): 1/2-1/2 {Draw by adjudication}
+Started game 33 of 1000 (ON_2 vs OFF_2)
+Finished game 30 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 34 of 1000 (OFF_2 vs ON_2)
+Finished game 29 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 35 of 1000 (ON_2 vs OFF_2)
+Finished game 32 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 36 of 1000 (OFF_2 vs ON_2)
+Finished game 33 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 37 of 1000 (ON_2 vs OFF_2)
+Finished game 34 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 38 of 1000 (OFF_2 vs ON_2)
+Finished game 35 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 39 of 1000 (ON_2 vs OFF_2)
+Finished game 37 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 40 of 1000 (OFF_2 vs ON_2)
+Finished game 36 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 41 of 1000 (ON_2 vs OFF_2)
+Finished game 38 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 42 of 1000 (OFF_2 vs ON_2)
+Finished game 39 (ON_2 vs OFF_2): 1/2-1/2 {Draw by adjudication}
+Started game 43 of 1000 (ON_2 vs OFF_2)
+Finished game 40 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 44 of 1000 (OFF_2 vs ON_2)
+Finished game 41 (ON_2 vs OFF_2): 0-1 {Black mates}
+Started game 45 of 1000 (ON_2 vs OFF_2)
+Finished game 42 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 46 of 1000 (OFF_2 vs ON_2)
+Finished game 43 (ON_2 vs OFF_2): 1/2-1/2 {Draw by adjudication}
+Started game 47 of 1000 (ON_2 vs OFF_2)
+Finished game 44 (OFF_2 vs ON_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 48 of 1000 (OFF_2 vs ON_2)
+Finished game 46 (OFF_2 vs ON_2): 1/2-1/2 {Draw by insufficient mating material}
+Started game 49 of 1000 (ON_2 vs OFF_2)
+Finished game 45 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 50 of 1000 (OFF_2 vs ON_2)
+Finished game 47 (ON_2 vs OFF_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 51 of 1000 (ON_2 vs OFF_2)
+Finished game 48 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 52 of 1000 (OFF_2 vs ON_2)
+Finished game 50 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 53 of 1000 (ON_2 vs OFF_2)
+Finished game 49 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 54 of 1000 (OFF_2 vs ON_2)
+Finished game 51 (ON_2 vs OFF_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 55 of 1000 (ON_2 vs OFF_2)
+Finished game 52 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 56 of 1000 (OFF_2 vs ON_2)
+Finished game 54 (OFF_2 vs ON_2): 1/2-1/2 {Draw by adjudication}
+Started game 57 of 1000 (ON_2 vs OFF_2)
+Finished game 53 (ON_2 vs OFF_2): 1/2-1/2 {Draw by adjudication}
+Started game 58 of 1000 (OFF_2 vs ON_2)
+Finished game 55 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 59 of 1000 (ON_2 vs OFF_2)
+Finished game 57 (ON_2 vs OFF_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 60 of 1000 (OFF_2 vs ON_2)
+Finished game 58 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 61 of 1000 (ON_2 vs OFF_2)
+Finished game 59 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 62 of 1000 (OFF_2 vs ON_2)
+Finished game 60 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 63 of 1000 (ON_2 vs OFF_2)
+Finished game 56 (OFF_2 vs ON_2): 1/2-1/2 {Draw by fifty moves rule}
+Started game 64 of 1000 (OFF_2 vs ON_2)
+Finished game 63 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 65 of 1000 (ON_2 vs OFF_2)
+Finished game 64 (OFF_2 vs ON_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 66 of 1000 (OFF_2 vs ON_2)
+Finished game 61 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 67 of 1000 (ON_2 vs OFF_2)
+Finished game 62 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 68 of 1000 (OFF_2 vs ON_2)
+Finished game 65 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 69 of 1000 (ON_2 vs OFF_2)
+Finished game 67 (ON_2 vs OFF_2): 1/2-1/2 {Draw by adjudication}
+Started game 70 of 1000 (OFF_2 vs ON_2)
+Finished game 68 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 71 of 1000 (ON_2 vs OFF_2)
+Finished game 69 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 72 of 1000 (OFF_2 vs ON_2)
+Finished game 66 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 73 of 1000 (ON_2 vs OFF_2)
+Finished game 71 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 74 of 1000 (OFF_2 vs ON_2)
+Finished game 70 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 75 of 1000 (ON_2 vs OFF_2)
+Finished game 72 (OFF_2 vs ON_2): 1-0 {White mates}
+Started game 76 of 1000 (OFF_2 vs ON_2)
+Finished game 73 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 77 of 1000 (ON_2 vs OFF_2)
+Finished game 74 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 78 of 1000 (OFF_2 vs ON_2)
+Finished game 75 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 79 of 1000 (ON_2 vs OFF_2)
+Finished game 76 (OFF_2 vs ON_2): 1-0 {White mates}
+Started game 80 of 1000 (OFF_2 vs ON_2)
+Finished game 79 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 81 of 1000 (ON_2 vs OFF_2)
+Finished game 77 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 82 of 1000 (OFF_2 vs ON_2)
+Finished game 80 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 83 of 1000 (ON_2 vs OFF_2)
+Finished game 78 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 84 of 1000 (OFF_2 vs ON_2)
+Finished game 83 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 85 of 1000 (ON_2 vs OFF_2)
+Finished game 81 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 86 of 1000 (OFF_2 vs ON_2)
+Finished game 84 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 87 of 1000 (ON_2 vs OFF_2)
+Finished game 82 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 88 of 1000 (OFF_2 vs ON_2)
+Finished game 86 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 89 of 1000 (ON_2 vs OFF_2)
+Finished game 85 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 90 of 1000 (OFF_2 vs ON_2)
+Finished game 87 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 91 of 1000 (ON_2 vs OFF_2)
+Finished game 89 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 92 of 1000 (OFF_2 vs ON_2)
+Finished game 88 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 93 of 1000 (ON_2 vs OFF_2)
+Finished game 90 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 94 of 1000 (OFF_2 vs ON_2)
+Finished game 91 (ON_2 vs OFF_2): 1/2-1/2 {Draw by adjudication}
+Started game 95 of 1000 (ON_2 vs OFF_2)
+Finished game 94 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 96 of 1000 (OFF_2 vs ON_2)
+Finished game 92 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 97 of 1000 (ON_2 vs OFF_2)
+Finished game 95 (ON_2 vs OFF_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 98 of 1000 (OFF_2 vs ON_2)
+Finished game 93 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 99 of 1000 (ON_2 vs OFF_2)
+Finished game 96 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 100 of 1000 (OFF_2 vs ON_2)
+Finished game 98 (OFF_2 vs ON_2): 1/2-1/2 {Draw by adjudication}
+Started game 101 of 1000 (ON_2 vs OFF_2)
+Finished game 97 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 102 of 1000 (OFF_2 vs ON_2)
+Finished game 99 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 103 of 1000 (ON_2 vs OFF_2)
+Finished game 100 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 104 of 1000 (OFF_2 vs ON_2)
+Finished game 101 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 105 of 1000 (ON_2 vs OFF_2)
+Finished game 102 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 106 of 1000 (OFF_2 vs ON_2)
+Finished game 103 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 107 of 1000 (ON_2 vs OFF_2)
+Finished game 105 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 108 of 1000 (OFF_2 vs ON_2)
+Finished game 104 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 109 of 1000 (ON_2 vs OFF_2)
+Finished game 106 (OFF_2 vs ON_2): 1/2-1/2 {Draw by adjudication}
+Started game 110 of 1000 (OFF_2 vs ON_2)
+Finished game 107 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 111 of 1000 (ON_2 vs OFF_2)
+Finished game 109 (ON_2 vs OFF_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 112 of 1000 (OFF_2 vs ON_2)
+Finished game 110 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 113 of 1000 (ON_2 vs OFF_2)
+Finished game 108 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 114 of 1000 (OFF_2 vs ON_2)
+Finished game 111 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 115 of 1000 (ON_2 vs OFF_2)
+Finished game 115 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 116 of 1000 (OFF_2 vs ON_2)
+Finished game 114 (OFF_2 vs ON_2): 1/2-1/2 {Draw by insufficient mating material}
+Started game 117 of 1000 (ON_2 vs OFF_2)
+Finished game 112 (OFF_2 vs ON_2): 1/2-1/2 {Draw by adjudication}
+Started game 118 of 1000 (OFF_2 vs ON_2)
+Finished game 113 (ON_2 vs OFF_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 119 of 1000 (ON_2 vs OFF_2)
+Finished game 118 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 120 of 1000 (OFF_2 vs ON_2)
+Finished game 116 (OFF_2 vs ON_2): 1/2-1/2 {Draw by adjudication}
+Started game 121 of 1000 (ON_2 vs OFF_2)
+Finished game 117 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 122 of 1000 (OFF_2 vs ON_2)
+Finished game 119 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 123 of 1000 (ON_2 vs OFF_2)
+Finished game 123 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 124 of 1000 (OFF_2 vs ON_2)
+Finished game 120 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 125 of 1000 (ON_2 vs OFF_2)
+Finished game 121 (ON_2 vs OFF_2): 1/2-1/2 {Draw by insufficient mating material}
+Started game 126 of 1000 (OFF_2 vs ON_2)
+Finished game 124 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 127 of 1000 (ON_2 vs OFF_2)
+Finished game 122 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 128 of 1000 (OFF_2 vs ON_2)
+Finished game 125 (ON_2 vs OFF_2): 1/2-1/2 {Draw by adjudication}
+Started game 129 of 1000 (ON_2 vs OFF_2)
+Finished game 126 (OFF_2 vs ON_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 130 of 1000 (OFF_2 vs ON_2)
+Finished game 128 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 131 of 1000 (ON_2 vs OFF_2)
+Finished game 127 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 132 of 1000 (OFF_2 vs ON_2)
+Finished game 129 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 133 of 1000 (ON_2 vs OFF_2)
+Finished game 130 (OFF_2 vs ON_2): 1/2-1/2 {Draw by adjudication}
+Started game 134 of 1000 (OFF_2 vs ON_2)
+Finished game 131 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 135 of 1000 (ON_2 vs OFF_2)
+Finished game 132 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 136 of 1000 (OFF_2 vs ON_2)
+Finished game 133 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 137 of 1000 (ON_2 vs OFF_2)
+Finished game 134 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 138 of 1000 (OFF_2 vs ON_2)
+Finished game 136 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 139 of 1000 (ON_2 vs OFF_2)
+Finished game 135 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 140 of 1000 (OFF_2 vs ON_2)
+Finished game 140 (OFF_2 vs ON_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 141 of 1000 (ON_2 vs OFF_2)
+Finished game 138 (OFF_2 vs ON_2): 1/2-1/2 {Draw by insufficient mating material}
+Started game 142 of 1000 (OFF_2 vs ON_2)
+Finished game 137 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 143 of 1000 (ON_2 vs OFF_2)
+Finished game 141 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 144 of 1000 (OFF_2 vs ON_2)
+Finished game 139 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 145 of 1000 (ON_2 vs OFF_2)
+Finished game 142 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 146 of 1000 (OFF_2 vs ON_2)
+Finished game 144 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 147 of 1000 (ON_2 vs OFF_2)
+Finished game 143 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 148 of 1000 (OFF_2 vs ON_2)
+Finished game 146 (OFF_2 vs ON_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 149 of 1000 (ON_2 vs OFF_2)
+Finished game 145 (ON_2 vs OFF_2): 1/2-1/2 {Draw by insufficient mating material}
+Started game 150 of 1000 (OFF_2 vs ON_2)
+Finished game 147 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 151 of 1000 (ON_2 vs OFF_2)
+Finished game 150 (OFF_2 vs ON_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 152 of 1000 (OFF_2 vs ON_2)
+Finished game 148 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 153 of 1000 (ON_2 vs OFF_2)
+Finished game 151 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 154 of 1000 (OFF_2 vs ON_2)
+Finished game 149 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 155 of 1000 (ON_2 vs OFF_2)
+Finished game 153 (ON_2 vs OFF_2): 1/2-1/2 {Draw by stalemate}
+Started game 156 of 1000 (OFF_2 vs ON_2)
+Finished game 152 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 157 of 1000 (ON_2 vs OFF_2)
+Finished game 154 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 158 of 1000 (OFF_2 vs ON_2)
+Finished game 156 (OFF_2 vs ON_2): 1/2-1/2 {Draw by adjudication}
+Started game 159 of 1000 (ON_2 vs OFF_2)
+Finished game 155 (ON_2 vs OFF_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 160 of 1000 (OFF_2 vs ON_2)
+Finished game 158 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 161 of 1000 (ON_2 vs OFF_2)
+Finished game 157 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 162 of 1000 (OFF_2 vs ON_2)
+Finished game 159 (ON_2 vs OFF_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 163 of 1000 (ON_2 vs OFF_2)
+Finished game 160 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 164 of 1000 (OFF_2 vs ON_2)
+Finished game 162 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 165 of 1000 (ON_2 vs OFF_2)
+Finished game 161 (ON_2 vs OFF_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 166 of 1000 (OFF_2 vs ON_2)
+Finished game 164 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 167 of 1000 (ON_2 vs OFF_2)
+Finished game 166 (OFF_2 vs ON_2): 1/2-1/2 {Draw by adjudication}
+Started game 168 of 1000 (OFF_2 vs ON_2)
+Finished game 163 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 169 of 1000 (ON_2 vs OFF_2)
+Finished game 167 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 170 of 1000 (OFF_2 vs ON_2)
+Finished game 169 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 171 of 1000 (ON_2 vs OFF_2)
+Finished game 165 (ON_2 vs OFF_2): 1/2-1/2 {Draw by fifty moves rule}
+Started game 172 of 1000 (OFF_2 vs ON_2)
+Finished game 168 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 173 of 1000 (ON_2 vs OFF_2)
+Finished game 170 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 174 of 1000 (OFF_2 vs ON_2)
+Finished game 171 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 175 of 1000 (ON_2 vs OFF_2)
+Finished game 172 (OFF_2 vs ON_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 176 of 1000 (OFF_2 vs ON_2)
+Finished game 173 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 177 of 1000 (ON_2 vs OFF_2)
+Finished game 176 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 178 of 1000 (OFF_2 vs ON_2)
+Finished game 175 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 179 of 1000 (ON_2 vs OFF_2)
+Finished game 174 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 180 of 1000 (OFF_2 vs ON_2)
+Finished game 178 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 181 of 1000 (ON_2 vs OFF_2)
+Finished game 177 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 182 of 1000 (OFF_2 vs ON_2)
+Finished game 179 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 183 of 1000 (ON_2 vs OFF_2)
+Finished game 180 (OFF_2 vs ON_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 184 of 1000 (OFF_2 vs ON_2)
+Finished game 181 (ON_2 vs OFF_2): 1/2-1/2 {Draw by adjudication}
+Started game 185 of 1000 (ON_2 vs OFF_2)
+Finished game 182 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 186 of 1000 (OFF_2 vs ON_2)
+Finished game 183 (ON_2 vs OFF_2): 1/2-1/2 {Draw by insufficient mating material}
+Started game 187 of 1000 (ON_2 vs OFF_2)
+Finished game 186 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 188 of 1000 (OFF_2 vs ON_2)
+Finished game 184 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 189 of 1000 (ON_2 vs OFF_2)
+Finished game 185 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 190 of 1000 (OFF_2 vs ON_2)
+Finished game 187 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 191 of 1000 (ON_2 vs OFF_2)
+Finished game 188 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 192 of 1000 (OFF_2 vs ON_2)
+Finished game 189 (ON_2 vs OFF_2): 1/2-1/2 {Draw by insufficient mating material}
+Started game 193 of 1000 (ON_2 vs OFF_2)
+Finished game 192 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 194 of 1000 (OFF_2 vs ON_2)
+Finished game 191 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 195 of 1000 (ON_2 vs OFF_2)
+Finished game 190 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 196 of 1000 (OFF_2 vs ON_2)
+Finished game 193 (ON_2 vs OFF_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 197 of 1000 (ON_2 vs OFF_2)
+Finished game 194 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 198 of 1000 (OFF_2 vs ON_2)
+Finished game 195 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 199 of 1000 (ON_2 vs OFF_2)
+Finished game 196 (OFF_2 vs ON_2): 1/2-1/2 {Draw by adjudication}
+Started game 200 of 1000 (OFF_2 vs ON_2)
+Finished game 197 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 201 of 1000 (ON_2 vs OFF_2)
+Finished game 198 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 202 of 1000 (OFF_2 vs ON_2)
+Finished game 199 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 203 of 1000 (ON_2 vs OFF_2)
+Finished game 201 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 204 of 1000 (OFF_2 vs ON_2)
+Finished game 202 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 205 of 1000 (ON_2 vs OFF_2)
+Finished game 200 (OFF_2 vs ON_2): 1/2-1/2 {Draw by fifty moves rule}
+--------------------------------------------------
+Results of ON_2 vs OFF_2 (20000 nodes, 1t, 16MB, UHO_4060_v4.epd):
+Elo: 24.12 +/- 35.34, nElo: 32.92 +/- 47.91
+LOS: 91.10 %, DrawRatio: 44.55 %, PairsRatio: 1.43
+Games: 202, Wins: 82, Losses: 68, Draws: 52, Points: 108.0 (53.47 %)
+Ptnml(0-2): [7, 16, 45, 22, 11], WL/DD Ratio: 5.43
+--------------------------------------------------
+Started game 206 of 1000 (OFF_2 vs ON_2)
+Finished game 203 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 207 of 1000 (ON_2 vs OFF_2)
+Finished game 206 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 208 of 1000 (OFF_2 vs ON_2)
+Finished game 204 (OFF_2 vs ON_2): 1/2-1/2 {Draw by insufficient mating material}
+Started game 209 of 1000 (ON_2 vs OFF_2)
+Finished game 207 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 210 of 1000 (OFF_2 vs ON_2)
+Finished game 205 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 211 of 1000 (ON_2 vs OFF_2)
+Finished game 209 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 212 of 1000 (OFF_2 vs ON_2)
+Finished game 208 (OFF_2 vs ON_2): 1/2-1/2 {Draw by adjudication}
+Started game 213 of 1000 (ON_2 vs OFF_2)
+Finished game 211 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 214 of 1000 (OFF_2 vs ON_2)
+Finished game 212 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 215 of 1000 (ON_2 vs OFF_2)
+Finished game 213 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 216 of 1000 (OFF_2 vs ON_2)
+Finished game 210 (OFF_2 vs ON_2): 1/2-1/2 {Draw by adjudication}
+Started game 217 of 1000 (ON_2 vs OFF_2)
+Finished game 214 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 218 of 1000 (OFF_2 vs ON_2)
+Finished game 215 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 219 of 1000 (ON_2 vs OFF_2)
+Finished game 216 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 220 of 1000 (OFF_2 vs ON_2)
+Finished game 217 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 221 of 1000 (ON_2 vs OFF_2)
+Finished game 218 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 222 of 1000 (OFF_2 vs ON_2)
+Finished game 219 (ON_2 vs OFF_2): 1/2-1/2 {Draw by insufficient mating material}
+Started game 223 of 1000 (ON_2 vs OFF_2)
+Finished game 222 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 224 of 1000 (OFF_2 vs ON_2)
+Finished game 221 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 225 of 1000 (ON_2 vs OFF_2)
+Finished game 220 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 226 of 1000 (OFF_2 vs ON_2)
+Finished game 223 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 227 of 1000 (ON_2 vs OFF_2)
+Finished game 224 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 228 of 1000 (OFF_2 vs ON_2)
+Finished game 227 (ON_2 vs OFF_2): 1/2-1/2 {Draw by adjudication}
+Started game 229 of 1000 (ON_2 vs OFF_2)
+Finished game 225 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 230 of 1000 (OFF_2 vs ON_2)
+Finished game 226 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 231 of 1000 (ON_2 vs OFF_2)
+Finished game 228 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 232 of 1000 (OFF_2 vs ON_2)
+Finished game 231 (ON_2 vs OFF_2): 1/2-1/2 {Draw by adjudication}
+Started game 233 of 1000 (ON_2 vs OFF_2)
+Finished game 232 (OFF_2 vs ON_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 234 of 1000 (OFF_2 vs ON_2)
+Finished game 230 (OFF_2 vs ON_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 235 of 1000 (ON_2 vs OFF_2)
+Finished game 229 (ON_2 vs OFF_2): 1/2-1/2 {Draw by fifty moves rule}
+Started game 236 of 1000 (OFF_2 vs ON_2)
+Finished game 233 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 237 of 1000 (ON_2 vs OFF_2)
+Finished game 235 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 238 of 1000 (OFF_2 vs ON_2)
+Finished game 236 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 239 of 1000 (ON_2 vs OFF_2)
+Finished game 234 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 240 of 1000 (OFF_2 vs ON_2)
+Finished game 237 (ON_2 vs OFF_2): 0-1 {Black mates}
+Started game 241 of 1000 (ON_2 vs OFF_2)
+Finished game 240 (OFF_2 vs ON_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 242 of 1000 (OFF_2 vs ON_2)
+Finished game 239 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 243 of 1000 (ON_2 vs OFF_2)
+Finished game 241 (ON_2 vs OFF_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 244 of 1000 (OFF_2 vs ON_2)
+Finished game 242 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 245 of 1000 (ON_2 vs OFF_2)
+Finished game 238 (OFF_2 vs ON_2): 1/2-1/2 {Draw by fifty moves rule}
+Started game 246 of 1000 (OFF_2 vs ON_2)
+Finished game 243 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 247 of 1000 (ON_2 vs OFF_2)
+Finished game 244 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 248 of 1000 (OFF_2 vs ON_2)
+Finished game 246 (OFF_2 vs ON_2): 1/2-1/2 {Draw by adjudication}
+Started game 249 of 1000 (ON_2 vs OFF_2)
+Finished game 247 (ON_2 vs OFF_2): 1/2-1/2 {Draw by insufficient mating material}
+Started game 250 of 1000 (OFF_2 vs ON_2)
+Finished game 248 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 251 of 1000 (ON_2 vs OFF_2)
+Finished game 245 (ON_2 vs OFF_2): 1/2-1/2 {Draw by adjudication}
+Started game 252 of 1000 (OFF_2 vs ON_2)
+Finished game 250 (OFF_2 vs ON_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 253 of 1000 (ON_2 vs OFF_2)
+Finished game 249 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 254 of 1000 (OFF_2 vs ON_2)
+Finished game 251 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 255 of 1000 (ON_2 vs OFF_2)
+Finished game 252 (OFF_2 vs ON_2): 1/2-1/2 {Draw by fifty moves rule}
+Started game 256 of 1000 (OFF_2 vs ON_2)
+Finished game 254 (OFF_2 vs ON_2): 1/2-1/2 {Draw by adjudication}
+Started game 257 of 1000 (ON_2 vs OFF_2)
+Finished game 255 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 258 of 1000 (OFF_2 vs ON_2)
+Finished game 253 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 259 of 1000 (ON_2 vs OFF_2)
+Finished game 256 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 260 of 1000 (OFF_2 vs ON_2)
+Finished game 257 (ON_2 vs OFF_2): 1/2-1/2 {Draw by adjudication}
+Started game 261 of 1000 (ON_2 vs OFF_2)
+Finished game 259 (ON_2 vs OFF_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 262 of 1000 (OFF_2 vs ON_2)
+Finished game 258 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 263 of 1000 (ON_2 vs OFF_2)
+Finished game 262 (OFF_2 vs ON_2): 1/2-1/2 {Draw by adjudication}
+Started game 264 of 1000 (OFF_2 vs ON_2)
+Finished game 261 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 265 of 1000 (ON_2 vs OFF_2)
+Finished game 260 (OFF_2 vs ON_2): 1/2-1/2 {Draw by adjudication}
+Started game 266 of 1000 (OFF_2 vs ON_2)
+Finished game 263 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 267 of 1000 (ON_2 vs OFF_2)
+Finished game 265 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 268 of 1000 (OFF_2 vs ON_2)
+Finished game 266 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 269 of 1000 (ON_2 vs OFF_2)
+Finished game 267 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 270 of 1000 (OFF_2 vs ON_2)
+Finished game 264 (OFF_2 vs ON_2): 1/2-1/2 {Draw by fifty moves rule}
+Started game 271 of 1000 (ON_2 vs OFF_2)
+Finished game 268 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 272 of 1000 (OFF_2 vs ON_2)
+Finished game 269 (ON_2 vs OFF_2): 1/2-1/2 {Draw by insufficient mating material}
+Started game 273 of 1000 (ON_2 vs OFF_2)
+Finished game 270 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 274 of 1000 (OFF_2 vs ON_2)
+Finished game 272 (OFF_2 vs ON_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 275 of 1000 (ON_2 vs OFF_2)
+Finished game 271 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 276 of 1000 (OFF_2 vs ON_2)
+Finished game 273 (ON_2 vs OFF_2): 1/2-1/2 {Draw by adjudication}
+Started game 277 of 1000 (ON_2 vs OFF_2)
+Finished game 274 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 278 of 1000 (OFF_2 vs ON_2)
+Finished game 275 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 279 of 1000 (ON_2 vs OFF_2)
+Finished game 276 (OFF_2 vs ON_2): 1/2-1/2 {Draw by adjudication}
+Started game 280 of 1000 (OFF_2 vs ON_2)
+Finished game 277 (ON_2 vs OFF_2): 1/2-1/2 {Draw by adjudication}
+Started game 281 of 1000 (ON_2 vs OFF_2)
+Finished game 278 (OFF_2 vs ON_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 282 of 1000 (OFF_2 vs ON_2)
+Finished game 279 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 283 of 1000 (ON_2 vs OFF_2)
+Finished game 280 (OFF_2 vs ON_2): 1/2-1/2 {Draw by adjudication}
+Started game 284 of 1000 (OFF_2 vs ON_2)
+Finished game 282 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 285 of 1000 (ON_2 vs OFF_2)
+Finished game 283 (ON_2 vs OFF_2): 1/2-1/2 {Draw by adjudication}
+Started game 286 of 1000 (OFF_2 vs ON_2)
+Finished game 285 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 287 of 1000 (ON_2 vs OFF_2)
+Finished game 281 (ON_2 vs OFF_2): 1/2-1/2 {Draw by adjudication}
+Started game 288 of 1000 (OFF_2 vs ON_2)
+Finished game 284 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 289 of 1000 (ON_2 vs OFF_2)
+Finished game 287 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 290 of 1000 (OFF_2 vs ON_2)
+Finished game 288 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 291 of 1000 (ON_2 vs OFF_2)
+Finished game 289 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 292 of 1000 (OFF_2 vs ON_2)
+Finished game 290 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 293 of 1000 (ON_2 vs OFF_2)
+Finished game 286 (OFF_2 vs ON_2): 1/2-1/2 {Draw by adjudication}
+Started game 294 of 1000 (OFF_2 vs ON_2)
+Finished game 292 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 295 of 1000 (ON_2 vs OFF_2)
+Finished game 294 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 296 of 1000 (OFF_2 vs ON_2)
+Finished game 291 (ON_2 vs OFF_2): 1/2-1/2 {Draw by fifty moves rule}
+Started game 297 of 1000 (ON_2 vs OFF_2)
+Finished game 293 (ON_2 vs OFF_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 298 of 1000 (OFF_2 vs ON_2)
+Finished game 295 (ON_2 vs OFF_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 299 of 1000 (ON_2 vs OFF_2)
+Finished game 296 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 300 of 1000 (OFF_2 vs ON_2)
+Finished game 297 (ON_2 vs OFF_2): 1/2-1/2 {Draw by adjudication}
+Started game 301 of 1000 (ON_2 vs OFF_2)
+Finished game 298 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 302 of 1000 (OFF_2 vs ON_2)
+Finished game 299 (ON_2 vs OFF_2): 1/2-1/2 {Draw by insufficient mating material}
+Started game 303 of 1000 (ON_2 vs OFF_2)
+Finished game 300 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 304 of 1000 (OFF_2 vs ON_2)
+Finished game 301 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 305 of 1000 (ON_2 vs OFF_2)
+Finished game 302 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 306 of 1000 (OFF_2 vs ON_2)
+Finished game 303 (ON_2 vs OFF_2): 1/2-1/2 {Draw by insufficient mating material}
+Started game 307 of 1000 (ON_2 vs OFF_2)
+Finished game 305 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 308 of 1000 (OFF_2 vs ON_2)
+Finished game 304 (OFF_2 vs ON_2): 1/2-1/2 {Draw by insufficient mating material}
+Started game 309 of 1000 (ON_2 vs OFF_2)
+Finished game 308 (OFF_2 vs ON_2): 1/2-1/2 {Draw by adjudication}
+Started game 310 of 1000 (OFF_2 vs ON_2)
+Finished game 306 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 311 of 1000 (ON_2 vs OFF_2)
+Finished game 310 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 312 of 1000 (OFF_2 vs ON_2)
+Finished game 307 (ON_2 vs OFF_2): 1/2-1/2 {Draw by insufficient mating material}
+Started game 313 of 1000 (ON_2 vs OFF_2)
+Finished game 311 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 314 of 1000 (OFF_2 vs ON_2)
+Finished game 309 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 315 of 1000 (ON_2 vs OFF_2)
+Finished game 313 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 316 of 1000 (OFF_2 vs ON_2)
+Finished game 314 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 317 of 1000 (ON_2 vs OFF_2)
+Finished game 312 (OFF_2 vs ON_2): 1/2-1/2 {Draw by adjudication}
+Started game 318 of 1000 (OFF_2 vs ON_2)
+Finished game 315 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 319 of 1000 (ON_2 vs OFF_2)
+Finished game 318 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 320 of 1000 (OFF_2 vs ON_2)
+Finished game 317 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 321 of 1000 (ON_2 vs OFF_2)
+Finished game 316 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 322 of 1000 (OFF_2 vs ON_2)
+Finished game 322 (OFF_2 vs ON_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 323 of 1000 (ON_2 vs OFF_2)
+Finished game 319 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 324 of 1000 (OFF_2 vs ON_2)
+Finished game 320 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 325 of 1000 (ON_2 vs OFF_2)
+Finished game 321 (ON_2 vs OFF_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 326 of 1000 (OFF_2 vs ON_2)
+Finished game 323 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 327 of 1000 (ON_2 vs OFF_2)
+Finished game 326 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 328 of 1000 (OFF_2 vs ON_2)
+Finished game 325 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 329 of 1000 (ON_2 vs OFF_2)
+Finished game 327 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 330 of 1000 (OFF_2 vs ON_2)
+Finished game 324 (OFF_2 vs ON_2): 1/2-1/2 {Draw by adjudication}
+Started game 331 of 1000 (ON_2 vs OFF_2)
+Finished game 328 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 332 of 1000 (OFF_2 vs ON_2)
+Finished game 329 (ON_2 vs OFF_2): 0-1 {Black mates}
+Started game 333 of 1000 (ON_2 vs OFF_2)
+Finished game 331 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 334 of 1000 (OFF_2 vs ON_2)
+Finished game 330 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 335 of 1000 (ON_2 vs OFF_2)
+Finished game 332 (OFF_2 vs ON_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 336 of 1000 (OFF_2 vs ON_2)
+Finished game 333 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 337 of 1000 (ON_2 vs OFF_2)
+Finished game 336 (OFF_2 vs ON_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 338 of 1000 (OFF_2 vs ON_2)
+Finished game 335 (ON_2 vs OFF_2): 1/2-1/2 {Draw by adjudication}
+Started game 339 of 1000 (ON_2 vs OFF_2)
+Finished game 334 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 340 of 1000 (OFF_2 vs ON_2)
+Finished game 338 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 341 of 1000 (ON_2 vs OFF_2)
+Finished game 337 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 342 of 1000 (OFF_2 vs ON_2)
+Finished game 340 (OFF_2 vs ON_2): 1/2-1/2 {Draw by insufficient mating material}
+Started game 343 of 1000 (ON_2 vs OFF_2)
+Finished game 339 (ON_2 vs OFF_2): 1/2-1/2 {Draw by fifty moves rule}
+Started game 344 of 1000 (OFF_2 vs ON_2)
+Finished game 341 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 345 of 1000 (ON_2 vs OFF_2)
+Finished game 342 (OFF_2 vs ON_2): 1-0 {White mates}
+Started game 346 of 1000 (OFF_2 vs ON_2)
+Finished game 343 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 347 of 1000 (ON_2 vs OFF_2)
+Finished game 346 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 348 of 1000 (OFF_2 vs ON_2)
+Finished game 344 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 349 of 1000 (ON_2 vs OFF_2)
+Finished game 347 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 350 of 1000 (OFF_2 vs ON_2)
+Finished game 345 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 351 of 1000 (ON_2 vs OFF_2)
+Finished game 349 (ON_2 vs OFF_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 352 of 1000 (OFF_2 vs ON_2)
+Finished game 348 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 353 of 1000 (ON_2 vs OFF_2)
+Finished game 350 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 354 of 1000 (OFF_2 vs ON_2)
+Finished game 351 (ON_2 vs OFF_2): 1/2-1/2 {Draw by insufficient mating material}
+Started game 355 of 1000 (ON_2 vs OFF_2)
+Finished game 353 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 356 of 1000 (OFF_2 vs ON_2)
+Finished game 352 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 357 of 1000 (ON_2 vs OFF_2)
+Finished game 357 (ON_2 vs OFF_2): 1-0 {White mates}
+Started game 358 of 1000 (OFF_2 vs ON_2)
+Finished game 355 (ON_2 vs OFF_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 359 of 1000 (ON_2 vs OFF_2)
+Finished game 356 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 360 of 1000 (OFF_2 vs ON_2)
+Finished game 354 (OFF_2 vs ON_2): 1/2-1/2 {Draw by adjudication}
+Started game 361 of 1000 (ON_2 vs OFF_2)
+Finished game 358 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 362 of 1000 (OFF_2 vs ON_2)
+Finished game 360 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 363 of 1000 (ON_2 vs OFF_2)
+Finished game 359 (ON_2 vs OFF_2): 1/2-1/2 {Draw by adjudication}
+Started game 364 of 1000 (OFF_2 vs ON_2)
+Finished game 361 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 365 of 1000 (ON_2 vs OFF_2)
+Finished game 362 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 366 of 1000 (OFF_2 vs ON_2)
+Finished game 364 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 367 of 1000 (ON_2 vs OFF_2)
+Finished game 363 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 368 of 1000 (OFF_2 vs ON_2)
+Finished game 365 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 369 of 1000 (ON_2 vs OFF_2)
+Finished game 366 (OFF_2 vs ON_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 370 of 1000 (OFF_2 vs ON_2)
+Finished game 367 (ON_2 vs OFF_2): 1/2-1/2 {Draw by insufficient mating material}
+Started game 371 of 1000 (ON_2 vs OFF_2)
+Finished game 369 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 372 of 1000 (OFF_2 vs ON_2)
+Finished game 370 (OFF_2 vs ON_2): 1/2-1/2 {Draw by adjudication}
+Started game 373 of 1000 (ON_2 vs OFF_2)
+Finished game 371 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 374 of 1000 (OFF_2 vs ON_2)
+Finished game 372 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 375 of 1000 (ON_2 vs OFF_2)
+Finished game 368 (OFF_2 vs ON_2): 1/2-1/2 {Draw by fifty moves rule}
+Started game 376 of 1000 (OFF_2 vs ON_2)
+Finished game 373 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 377 of 1000 (ON_2 vs OFF_2)
+Finished game 375 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 378 of 1000 (OFF_2 vs ON_2)
+Finished game 374 (OFF_2 vs ON_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 379 of 1000 (ON_2 vs OFF_2)
+Finished game 376 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 380 of 1000 (OFF_2 vs ON_2)
+Finished game 377 (ON_2 vs OFF_2): 1/2-1/2 {Draw by adjudication}
+Started game 381 of 1000 (ON_2 vs OFF_2)
+Finished game 379 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 382 of 1000 (OFF_2 vs ON_2)
+Finished game 378 (OFF_2 vs ON_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 383 of 1000 (ON_2 vs OFF_2)
+Finished game 382 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 384 of 1000 (OFF_2 vs ON_2)
+Finished game 380 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 385 of 1000 (ON_2 vs OFF_2)
+Finished game 381 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 386 of 1000 (OFF_2 vs ON_2)
+Finished game 384 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 387 of 1000 (ON_2 vs OFF_2)
+Finished game 386 (OFF_2 vs ON_2): 1/2-1/2 {Draw by adjudication}
+Started game 388 of 1000 (OFF_2 vs ON_2)
+Finished game 383 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 389 of 1000 (ON_2 vs OFF_2)
+Finished game 385 (ON_2 vs OFF_2): 1/2-1/2 {Draw by insufficient mating material}
+Started game 390 of 1000 (OFF_2 vs ON_2)
+Finished game 387 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 391 of 1000 (ON_2 vs OFF_2)
+Finished game 390 (OFF_2 vs ON_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 392 of 1000 (OFF_2 vs ON_2)
+Finished game 391 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 393 of 1000 (ON_2 vs OFF_2)
+Finished game 388 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 394 of 1000 (OFF_2 vs ON_2)
+Finished game 389 (ON_2 vs OFF_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 395 of 1000 (ON_2 vs OFF_2)
+Finished game 393 (ON_2 vs OFF_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 396 of 1000 (OFF_2 vs ON_2)
+Finished game 395 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 397 of 1000 (ON_2 vs OFF_2)
+Finished game 392 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 398 of 1000 (OFF_2 vs ON_2)
+Finished game 394 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 399 of 1000 (ON_2 vs OFF_2)
+Finished game 396 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 400 of 1000 (OFF_2 vs ON_2)
+Finished game 397 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 401 of 1000 (ON_2 vs OFF_2)
+Finished game 398 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 402 of 1000 (OFF_2 vs ON_2)
+Finished game 399 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 403 of 1000 (ON_2 vs OFF_2)
+Finished game 401 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 404 of 1000 (OFF_2 vs ON_2)
+Finished game 400 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+--------------------------------------------------
+Results of ON_2 vs OFF_2 (20000 nodes, 1t, 16MB, UHO_4060_v4.epd):
+Elo: 3.47 +/- 24.94, nElo: 4.75 +/- 34.05
+LOS: 60.78 %, DrawRatio: 44.00 %, PairsRatio: 1.11
+Games: 400, Wins: 142, Losses: 138, Draws: 120, Points: 202.0 (50.50 %)
+Ptnml(0-2): [18, 35, 88, 43, 16], WL/DD Ratio: 3.19
+--------------------------------------------------
+Started game 405 of 1000 (ON_2 vs OFF_2)
+Finished game 402 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 406 of 1000 (OFF_2 vs ON_2)
+Finished game 404 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 407 of 1000 (ON_2 vs OFF_2)
+Finished game 403 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 408 of 1000 (OFF_2 vs ON_2)
+Finished game 406 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 409 of 1000 (ON_2 vs OFF_2)
+Finished game 408 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 410 of 1000 (OFF_2 vs ON_2)
+Finished game 407 (ON_2 vs OFF_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 411 of 1000 (ON_2 vs OFF_2)
+Finished game 405 (ON_2 vs OFF_2): 1/2-1/2 {Draw by fifty moves rule}
+Started game 412 of 1000 (OFF_2 vs ON_2)
+Finished game 409 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 413 of 1000 (ON_2 vs OFF_2)
+Finished game 412 (OFF_2 vs ON_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 414 of 1000 (OFF_2 vs ON_2)
+Finished game 410 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 415 of 1000 (ON_2 vs OFF_2)
+Finished game 411 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 416 of 1000 (OFF_2 vs ON_2)
+Finished game 413 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 417 of 1000 (ON_2 vs OFF_2)
+Finished game 416 (OFF_2 vs ON_2): 1/2-1/2 {Draw by adjudication}
+Started game 418 of 1000 (OFF_2 vs ON_2)
+Finished game 415 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 419 of 1000 (ON_2 vs OFF_2)
+Finished game 414 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 420 of 1000 (OFF_2 vs ON_2)
+Finished game 419 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 421 of 1000 (ON_2 vs OFF_2)
+Finished game 420 (OFF_2 vs ON_2): 1/2-1/2 {Draw by adjudication}
+Started game 422 of 1000 (OFF_2 vs ON_2)
+Finished game 417 (ON_2 vs OFF_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 423 of 1000 (ON_2 vs OFF_2)
+Finished game 418 (OFF_2 vs ON_2): 1/2-1/2 {Draw by adjudication}
+Started game 424 of 1000 (OFF_2 vs ON_2)
+Finished game 421 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 425 of 1000 (ON_2 vs OFF_2)
+Finished game 423 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 426 of 1000 (OFF_2 vs ON_2)
+Finished game 422 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 427 of 1000 (ON_2 vs OFF_2)
+Finished game 424 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 428 of 1000 (OFF_2 vs ON_2)
+Finished game 426 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 429 of 1000 (ON_2 vs OFF_2)
+Finished game 425 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 430 of 1000 (OFF_2 vs ON_2)
+Finished game 428 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 431 of 1000 (ON_2 vs OFF_2)
+Finished game 427 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 432 of 1000 (OFF_2 vs ON_2)
+Finished game 429 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 433 of 1000 (ON_2 vs OFF_2)
+Finished game 430 (OFF_2 vs ON_2): 1/2-1/2 {Draw by adjudication}
+Started game 434 of 1000 (OFF_2 vs ON_2)
+Finished game 433 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 435 of 1000 (ON_2 vs OFF_2)
+Finished game 434 (OFF_2 vs ON_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 436 of 1000 (OFF_2 vs ON_2)
+Finished game 432 (OFF_2 vs ON_2): 1/2-1/2 {Draw by adjudication}
+Started game 437 of 1000 (ON_2 vs OFF_2)
+Finished game 431 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 438 of 1000 (OFF_2 vs ON_2)
+Finished game 435 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 439 of 1000 (ON_2 vs OFF_2)
+Finished game 436 (OFF_2 vs ON_2): 1-0 {White mates}
+Started game 440 of 1000 (OFF_2 vs ON_2)
+Finished game 438 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 441 of 1000 (ON_2 vs OFF_2)
+Finished game 437 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 442 of 1000 (OFF_2 vs ON_2)
+Finished game 439 (ON_2 vs OFF_2): 1/2-1/2 {Draw by adjudication}
+Started game 443 of 1000 (ON_2 vs OFF_2)
+Finished game 442 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 444 of 1000 (OFF_2 vs ON_2)
+Finished game 441 (ON_2 vs OFF_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 445 of 1000 (ON_2 vs OFF_2)
+Finished game 440 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 446 of 1000 (OFF_2 vs ON_2)
+Finished game 443 (ON_2 vs OFF_2): 1/2-1/2 {Draw by adjudication}
+Started game 447 of 1000 (ON_2 vs OFF_2)
+Finished game 446 (OFF_2 vs ON_2): 1/2-1/2 {Draw by insufficient mating material}
+Started game 448 of 1000 (OFF_2 vs ON_2)
+Finished game 445 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 449 of 1000 (ON_2 vs OFF_2)
+Finished game 444 (OFF_2 vs ON_2): 1/2-1/2 {Draw by adjudication}
+Started game 450 of 1000 (OFF_2 vs ON_2)
+Finished game 447 (ON_2 vs OFF_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 451 of 1000 (ON_2 vs OFF_2)
+Finished game 450 (OFF_2 vs ON_2): 1-0 {White mates}
+Started game 452 of 1000 (OFF_2 vs ON_2)
+Finished game 449 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 453 of 1000 (ON_2 vs OFF_2)
+Finished game 448 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 454 of 1000 (OFF_2 vs ON_2)
+Finished game 451 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 455 of 1000 (ON_2 vs OFF_2)
+Finished game 453 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 456 of 1000 (OFF_2 vs ON_2)
+Finished game 454 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 457 of 1000 (ON_2 vs OFF_2)
+Finished game 455 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 458 of 1000 (OFF_2 vs ON_2)
+Finished game 452 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 459 of 1000 (ON_2 vs OFF_2)
+Finished game 457 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 460 of 1000 (OFF_2 vs ON_2)
+Finished game 456 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 461 of 1000 (ON_2 vs OFF_2)
+Finished game 460 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 462 of 1000 (OFF_2 vs ON_2)
+Finished game 459 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 463 of 1000 (ON_2 vs OFF_2)
+Finished game 458 (OFF_2 vs ON_2): 1/2-1/2 {Draw by stalemate}
+Started game 464 of 1000 (OFF_2 vs ON_2)
+Finished game 463 (ON_2 vs OFF_2): 1/2-1/2 {Draw by insufficient mating material}
+Started game 465 of 1000 (ON_2 vs OFF_2)
+Finished game 462 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 466 of 1000 (OFF_2 vs ON_2)
+Finished game 461 (ON_2 vs OFF_2): 1/2-1/2 {Draw by adjudication}
+Started game 467 of 1000 (ON_2 vs OFF_2)
+Finished game 464 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 468 of 1000 (OFF_2 vs ON_2)
+Finished game 467 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 469 of 1000 (ON_2 vs OFF_2)
+Finished game 465 (ON_2 vs OFF_2): 1/2-1/2 {Draw by adjudication}
+Started game 470 of 1000 (OFF_2 vs ON_2)
+Finished game 466 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 471 of 1000 (ON_2 vs OFF_2)
+Finished game 468 (OFF_2 vs ON_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 472 of 1000 (OFF_2 vs ON_2)
+Finished game 469 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 473 of 1000 (ON_2 vs OFF_2)
+Finished game 472 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 474 of 1000 (OFF_2 vs ON_2)
+Finished game 471 (ON_2 vs OFF_2): 1-0 {White mates}
+Started game 475 of 1000 (ON_2 vs OFF_2)
+Finished game 470 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 476 of 1000 (OFF_2 vs ON_2)
+Finished game 474 (OFF_2 vs ON_2): 1/2-1/2 {Draw by adjudication}
+Started game 477 of 1000 (ON_2 vs OFF_2)
+Finished game 473 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 478 of 1000 (OFF_2 vs ON_2)
+Finished game 475 (ON_2 vs OFF_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 479 of 1000 (ON_2 vs OFF_2)
+Finished game 476 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 480 of 1000 (OFF_2 vs ON_2)
+Finished game 477 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 481 of 1000 (ON_2 vs OFF_2)
+Finished game 478 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 482 of 1000 (OFF_2 vs ON_2)
+Finished game 479 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 483 of 1000 (ON_2 vs OFF_2)
+Finished game 480 (OFF_2 vs ON_2): 1/2-1/2 {Draw by insufficient mating material}
+Started game 484 of 1000 (OFF_2 vs ON_2)
+Finished game 481 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 485 of 1000 (ON_2 vs OFF_2)
+Finished game 482 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 486 of 1000 (OFF_2 vs ON_2)
+Finished game 485 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 487 of 1000 (ON_2 vs OFF_2)
+Finished game 483 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 488 of 1000 (OFF_2 vs ON_2)
+Finished game 486 (OFF_2 vs ON_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 489 of 1000 (ON_2 vs OFF_2)
+Finished game 487 (ON_2 vs OFF_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 490 of 1000 (OFF_2 vs ON_2)
+Finished game 484 (OFF_2 vs ON_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 491 of 1000 (ON_2 vs OFF_2)
+Finished game 488 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 492 of 1000 (OFF_2 vs ON_2)
+Finished game 489 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 493 of 1000 (ON_2 vs OFF_2)
+Finished game 490 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 494 of 1000 (OFF_2 vs ON_2)
+Finished game 491 (ON_2 vs OFF_2): 1/2-1/2 {Draw by adjudication}
+Started game 495 of 1000 (ON_2 vs OFF_2)
+Finished game 492 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 496 of 1000 (OFF_2 vs ON_2)
+Finished game 494 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 497 of 1000 (ON_2 vs OFF_2)
+Finished game 495 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 498 of 1000 (OFF_2 vs ON_2)
+Finished game 493 (ON_2 vs OFF_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 499 of 1000 (ON_2 vs OFF_2)
+Finished game 496 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 500 of 1000 (OFF_2 vs ON_2)
+Finished game 497 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 501 of 1000 (ON_2 vs OFF_2)
+Finished game 499 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 502 of 1000 (OFF_2 vs ON_2)
+Finished game 498 (OFF_2 vs ON_2): 1/2-1/2 {Draw by insufficient mating material}
+Started game 503 of 1000 (ON_2 vs OFF_2)
+Finished game 502 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 504 of 1000 (OFF_2 vs ON_2)
+Finished game 500 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 505 of 1000 (ON_2 vs OFF_2)
+Finished game 501 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 506 of 1000 (OFF_2 vs ON_2)
+Finished game 504 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 507 of 1000 (ON_2 vs OFF_2)
+Finished game 505 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 508 of 1000 (OFF_2 vs ON_2)
+Finished game 503 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 509 of 1000 (ON_2 vs OFF_2)
+Finished game 506 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 510 of 1000 (OFF_2 vs ON_2)
+Finished game 507 (ON_2 vs OFF_2): 1/2-1/2 {Draw by adjudication}
+Started game 511 of 1000 (ON_2 vs OFF_2)
+Finished game 510 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 512 of 1000 (OFF_2 vs ON_2)
+Finished game 509 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 513 of 1000 (ON_2 vs OFF_2)
+Finished game 508 (OFF_2 vs ON_2): 1/2-1/2 {Draw by adjudication}
+Started game 514 of 1000 (OFF_2 vs ON_2)
+Finished game 513 (ON_2 vs OFF_2): 1-0 {White mates}
+Started game 515 of 1000 (ON_2 vs OFF_2)
+Finished game 512 (OFF_2 vs ON_2): 1/2-1/2 {Draw by insufficient mating material}
+Started game 516 of 1000 (OFF_2 vs ON_2)
+Finished game 511 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 517 of 1000 (ON_2 vs OFF_2)
+Finished game 517 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 518 of 1000 (OFF_2 vs ON_2)
+Finished game 515 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 519 of 1000 (ON_2 vs OFF_2)
+Finished game 514 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 520 of 1000 (OFF_2 vs ON_2)
+Finished game 516 (OFF_2 vs ON_2): 1/2-1/2 {Draw by adjudication}
+Started game 521 of 1000 (ON_2 vs OFF_2)
+Finished game 519 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 522 of 1000 (OFF_2 vs ON_2)
+Finished game 518 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 523 of 1000 (ON_2 vs OFF_2)
+Finished game 520 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 524 of 1000 (OFF_2 vs ON_2)
+Finished game 521 (ON_2 vs OFF_2): 1/2-1/2 {Draw by insufficient mating material}
+Started game 525 of 1000 (ON_2 vs OFF_2)
+Finished game 523 (ON_2 vs OFF_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 526 of 1000 (OFF_2 vs ON_2)
+Finished game 524 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 527 of 1000 (ON_2 vs OFF_2)
+Finished game 522 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 528 of 1000 (OFF_2 vs ON_2)
+Finished game 525 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 529 of 1000 (ON_2 vs OFF_2)
+Finished game 527 (ON_2 vs OFF_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 530 of 1000 (OFF_2 vs ON_2)
+Finished game 526 (OFF_2 vs ON_2): 1/2-1/2 {Draw by adjudication}
+Started game 531 of 1000 (ON_2 vs OFF_2)
+Finished game 528 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 532 of 1000 (OFF_2 vs ON_2)
+Finished game 530 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 533 of 1000 (ON_2 vs OFF_2)
+Finished game 531 (ON_2 vs OFF_2): 1/2-1/2 {Draw by insufficient mating material}
+Started game 534 of 1000 (OFF_2 vs ON_2)
+Finished game 529 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 535 of 1000 (ON_2 vs OFF_2)
+Finished game 532 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 536 of 1000 (OFF_2 vs ON_2)
+Finished game 536 (OFF_2 vs ON_2): 1-0 {White mates}
+Started game 537 of 1000 (ON_2 vs OFF_2)
+Finished game 533 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 538 of 1000 (OFF_2 vs ON_2)
+Finished game 535 (ON_2 vs OFF_2): 1/2-1/2 {Draw by adjudication}
+Started game 539 of 1000 (ON_2 vs OFF_2)
+Finished game 534 (OFF_2 vs ON_2): 1/2-1/2 {Draw by adjudication}
+Started game 540 of 1000 (OFF_2 vs ON_2)
+Finished game 537 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 541 of 1000 (ON_2 vs OFF_2)
+Finished game 538 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 542 of 1000 (OFF_2 vs ON_2)
+Finished game 539 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 543 of 1000 (ON_2 vs OFF_2)
+Finished game 542 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 544 of 1000 (OFF_2 vs ON_2)
+Finished game 541 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 545 of 1000 (ON_2 vs OFF_2)
+Finished game 540 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 546 of 1000 (OFF_2 vs ON_2)
+Finished game 543 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 547 of 1000 (ON_2 vs OFF_2)
+Finished game 544 (OFF_2 vs ON_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 548 of 1000 (OFF_2 vs ON_2)
+Finished game 546 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 549 of 1000 (ON_2 vs OFF_2)
+Finished game 545 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 550 of 1000 (OFF_2 vs ON_2)
+Finished game 547 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 551 of 1000 (ON_2 vs OFF_2)
+Finished game 548 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 552 of 1000 (OFF_2 vs ON_2)
+Finished game 549 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 553 of 1000 (ON_2 vs OFF_2)
+Finished game 550 (OFF_2 vs ON_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 554 of 1000 (OFF_2 vs ON_2)
+Finished game 551 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 555 of 1000 (ON_2 vs OFF_2)
+Finished game 552 (OFF_2 vs ON_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 556 of 1000 (OFF_2 vs ON_2)
+Finished game 553 (ON_2 vs OFF_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 557 of 1000 (ON_2 vs OFF_2)
+Finished game 554 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 558 of 1000 (OFF_2 vs ON_2)
+Finished game 555 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 559 of 1000 (ON_2 vs OFF_2)
+Finished game 556 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 560 of 1000 (OFF_2 vs ON_2)
+Finished game 557 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 561 of 1000 (ON_2 vs OFF_2)
+Finished game 559 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 562 of 1000 (OFF_2 vs ON_2)
+Finished game 558 (OFF_2 vs ON_2): 1/2-1/2 {Draw by adjudication}
+Started game 563 of 1000 (ON_2 vs OFF_2)
+Finished game 560 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 564 of 1000 (OFF_2 vs ON_2)
+Finished game 561 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 565 of 1000 (ON_2 vs OFF_2)
+Finished game 564 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 566 of 1000 (OFF_2 vs ON_2)
+Finished game 562 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 567 of 1000 (ON_2 vs OFF_2)
+Finished game 563 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 568 of 1000 (OFF_2 vs ON_2)
+Finished game 565 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 569 of 1000 (ON_2 vs OFF_2)
+Finished game 566 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 570 of 1000 (OFF_2 vs ON_2)
+Finished game 569 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 571 of 1000 (ON_2 vs OFF_2)
+Finished game 568 (OFF_2 vs ON_2): 1/2-1/2 {Draw by insufficient mating material}
+Started game 572 of 1000 (OFF_2 vs ON_2)
+Finished game 567 (ON_2 vs OFF_2): 1/2-1/2 {Draw by adjudication}
+Started game 573 of 1000 (ON_2 vs OFF_2)
+Finished game 570 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 574 of 1000 (OFF_2 vs ON_2)
+Finished game 573 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 575 of 1000 (ON_2 vs OFF_2)
+Finished game 571 (ON_2 vs OFF_2): 1/2-1/2 {Draw by insufficient mating material}
+Started game 576 of 1000 (OFF_2 vs ON_2)
+Finished game 572 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 577 of 1000 (ON_2 vs OFF_2)
+Finished game 574 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 578 of 1000 (OFF_2 vs ON_2)
+Finished game 575 (ON_2 vs OFF_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 579 of 1000 (ON_2 vs OFF_2)
+Finished game 578 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 580 of 1000 (OFF_2 vs ON_2)
+Finished game 576 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 581 of 1000 (ON_2 vs OFF_2)
+Finished game 577 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 582 of 1000 (OFF_2 vs ON_2)
+Finished game 580 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 583 of 1000 (ON_2 vs OFF_2)
+Finished game 581 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 584 of 1000 (OFF_2 vs ON_2)
+Finished game 579 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 585 of 1000 (ON_2 vs OFF_2)
+Finished game 582 (OFF_2 vs ON_2): 1/2-1/2 {Draw by adjudication}
+Started game 586 of 1000 (OFF_2 vs ON_2)
+Finished game 585 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 587 of 1000 (ON_2 vs OFF_2)
+Finished game 584 (OFF_2 vs ON_2): 1/2-1/2 {Draw by insufficient mating material}
+Started game 588 of 1000 (OFF_2 vs ON_2)
+Finished game 583 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 589 of 1000 (ON_2 vs OFF_2)
+Finished game 586 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 590 of 1000 (OFF_2 vs ON_2)
+Finished game 587 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 591 of 1000 (ON_2 vs OFF_2)
+Finished game 588 (OFF_2 vs ON_2): 1/2-1/2 {Draw by adjudication}
+Started game 592 of 1000 (OFF_2 vs ON_2)
+Finished game 589 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 593 of 1000 (ON_2 vs OFF_2)
+Finished game 591 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 594 of 1000 (OFF_2 vs ON_2)
+Finished game 592 (OFF_2 vs ON_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 595 of 1000 (ON_2 vs OFF_2)
+Finished game 593 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 596 of 1000 (OFF_2 vs ON_2)
+Finished game 590 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 597 of 1000 (ON_2 vs OFF_2)
+Finished game 595 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 598 of 1000 (OFF_2 vs ON_2)
+Finished game 594 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 599 of 1000 (ON_2 vs OFF_2)
+Finished game 597 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 600 of 1000 (OFF_2 vs ON_2)
+Finished game 598 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 601 of 1000 (ON_2 vs OFF_2)
+Finished game 596 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 602 of 1000 (OFF_2 vs ON_2)
+Finished game 599 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 603 of 1000 (ON_2 vs OFF_2)
+Finished game 601 (ON_2 vs OFF_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 604 of 1000 (OFF_2 vs ON_2)
+Finished game 600 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+--------------------------------------------------
+Results of ON_2 vs OFF_2 (20000 nodes, 1t, 16MB, UHO_4060_v4.epd):
+Elo: 3.47 +/- 20.83, nElo: 4.64 +/- 27.80
+LOS: 62.83 %, DrawRatio: 41.00 %, PairsRatio: 1.11
+Games: 600, Wins: 216, Losses: 210, Draws: 174, Points: 303.0 (50.50 %)
+Ptnml(0-2): [28, 56, 123, 68, 25], WL/DD Ratio: 3.92
+--------------------------------------------------
+Started game 605 of 1000 (ON_2 vs OFF_2)
+Finished game 602 (OFF_2 vs ON_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 606 of 1000 (OFF_2 vs ON_2)
+Finished game 603 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 607 of 1000 (ON_2 vs OFF_2)
+Finished game 604 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 608 of 1000 (OFF_2 vs ON_2)
+Finished game 605 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 609 of 1000 (ON_2 vs OFF_2)
+Finished game 608 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 610 of 1000 (OFF_2 vs ON_2)
+Finished game 609 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 611 of 1000 (ON_2 vs OFF_2)
+Finished game 606 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 612 of 1000 (OFF_2 vs ON_2)
+Finished game 607 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 613 of 1000 (ON_2 vs OFF_2)
+Finished game 612 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 614 of 1000 (OFF_2 vs ON_2)
+Finished game 610 (OFF_2 vs ON_2): 1/2-1/2 {Draw by adjudication}
+Started game 615 of 1000 (ON_2 vs OFF_2)
+Finished game 613 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 616 of 1000 (OFF_2 vs ON_2)
+Finished game 611 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 617 of 1000 (ON_2 vs OFF_2)
+Finished game 614 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 618 of 1000 (OFF_2 vs ON_2)
+Finished game 616 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 619 of 1000 (ON_2 vs OFF_2)
+Finished game 617 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 620 of 1000 (OFF_2 vs ON_2)
+Finished game 615 (ON_2 vs OFF_2): 1-0 {White mates}
+Started game 621 of 1000 (ON_2 vs OFF_2)
+Finished game 618 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 622 of 1000 (OFF_2 vs ON_2)
+Finished game 620 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 623 of 1000 (ON_2 vs OFF_2)
+Finished game 621 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 624 of 1000 (OFF_2 vs ON_2)
+Finished game 622 (OFF_2 vs ON_2): 0-1 {Black mates}
+Started game 625 of 1000 (ON_2 vs OFF_2)
+Finished game 619 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 626 of 1000 (OFF_2 vs ON_2)
+Finished game 624 (OFF_2 vs ON_2): 1/2-1/2 {Draw by adjudication}
+Started game 627 of 1000 (ON_2 vs OFF_2)
+Finished game 623 (ON_2 vs OFF_2): 1/2-1/2 {Draw by adjudication}
+Started game 628 of 1000 (OFF_2 vs ON_2)
+Finished game 625 (ON_2 vs OFF_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 629 of 1000 (ON_2 vs OFF_2)
+Finished game 627 (ON_2 vs OFF_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 630 of 1000 (OFF_2 vs ON_2)
+Finished game 626 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 631 of 1000 (ON_2 vs OFF_2)
+Finished game 629 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 632 of 1000 (OFF_2 vs ON_2)
+Finished game 628 (OFF_2 vs ON_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 633 of 1000 (ON_2 vs OFF_2)
+Finished game 631 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 634 of 1000 (OFF_2 vs ON_2)
+Finished game 630 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 635 of 1000 (ON_2 vs OFF_2)
+Finished game 633 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 636 of 1000 (OFF_2 vs ON_2)
+Finished game 632 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 637 of 1000 (ON_2 vs OFF_2)
+Finished game 635 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 638 of 1000 (OFF_2 vs ON_2)
+Finished game 634 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 639 of 1000 (ON_2 vs OFF_2)
+Finished game 636 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 640 of 1000 (OFF_2 vs ON_2)
+Finished game 638 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 641 of 1000 (ON_2 vs OFF_2)
+Finished game 637 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 642 of 1000 (OFF_2 vs ON_2)
+Finished game 640 (OFF_2 vs ON_2): 1/2-1/2 {Draw by adjudication}
+Started game 643 of 1000 (ON_2 vs OFF_2)
+Finished game 639 (ON_2 vs OFF_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 644 of 1000 (OFF_2 vs ON_2)
+Finished game 642 (OFF_2 vs ON_2): 1/2-1/2 {Draw by adjudication}
+Started game 645 of 1000 (ON_2 vs OFF_2)
+Finished game 641 (ON_2 vs OFF_2): 1/2-1/2 {Draw by insufficient mating material}
+Started game 646 of 1000 (OFF_2 vs ON_2)
+Finished game 644 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 647 of 1000 (ON_2 vs OFF_2)
+Finished game 646 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 648 of 1000 (OFF_2 vs ON_2)
+Finished game 645 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 649 of 1000 (ON_2 vs OFF_2)
+Finished game 643 (ON_2 vs OFF_2): 1/2-1/2 {Draw by fifty moves rule}
+Started game 650 of 1000 (OFF_2 vs ON_2)
+Finished game 648 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 651 of 1000 (ON_2 vs OFF_2)
+Finished game 647 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 652 of 1000 (OFF_2 vs ON_2)
+Finished game 649 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 653 of 1000 (ON_2 vs OFF_2)
+Finished game 652 (OFF_2 vs ON_2): 1/2-1/2 {Draw by adjudication}
+Started game 654 of 1000 (OFF_2 vs ON_2)
+Finished game 650 (OFF_2 vs ON_2): 1/2-1/2 {Draw by insufficient mating material}
+Started game 655 of 1000 (ON_2 vs OFF_2)
+Finished game 653 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 656 of 1000 (OFF_2 vs ON_2)
+Finished game 651 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 657 of 1000 (ON_2 vs OFF_2)
+Finished game 654 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 658 of 1000 (OFF_2 vs ON_2)
+Finished game 656 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 659 of 1000 (ON_2 vs OFF_2)
+Finished game 655 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 660 of 1000 (OFF_2 vs ON_2)
+Finished game 658 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 661 of 1000 (ON_2 vs OFF_2)
+Finished game 659 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 662 of 1000 (OFF_2 vs ON_2)
+Finished game 660 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 663 of 1000 (ON_2 vs OFF_2)
+Finished game 657 (ON_2 vs OFF_2): 1/2-1/2 {Draw by fifty moves rule}
+Started game 664 of 1000 (OFF_2 vs ON_2)
+Finished game 663 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 665 of 1000 (ON_2 vs OFF_2)
+Finished game 664 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 666 of 1000 (OFF_2 vs ON_2)
+Finished game 661 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 667 of 1000 (ON_2 vs OFF_2)
+Finished game 662 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 668 of 1000 (OFF_2 vs ON_2)
+Finished game 665 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 669 of 1000 (ON_2 vs OFF_2)
+Finished game 667 (ON_2 vs OFF_2): 1/2-1/2 {Draw by insufficient mating material}
+Started game 670 of 1000 (OFF_2 vs ON_2)
+Finished game 666 (OFF_2 vs ON_2): 1/2-1/2 {Draw by adjudication}
+Started game 671 of 1000 (ON_2 vs OFF_2)
+Finished game 669 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 672 of 1000 (OFF_2 vs ON_2)
+Finished game 668 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 673 of 1000 (ON_2 vs OFF_2)
+Finished game 670 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 674 of 1000 (OFF_2 vs ON_2)
+Finished game 672 (OFF_2 vs ON_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 675 of 1000 (ON_2 vs OFF_2)
+Finished game 671 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 676 of 1000 (OFF_2 vs ON_2)
+Finished game 673 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 677 of 1000 (ON_2 vs OFF_2)
+Finished game 676 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 678 of 1000 (OFF_2 vs ON_2)
+Finished game 675 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 679 of 1000 (ON_2 vs OFF_2)
+Finished game 674 (OFF_2 vs ON_2): 1/2-1/2 {Draw by adjudication}
+Started game 680 of 1000 (OFF_2 vs ON_2)
+Finished game 677 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 681 of 1000 (ON_2 vs OFF_2)
+Finished game 681 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 682 of 1000 (OFF_2 vs ON_2)
+Finished game 679 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 683 of 1000 (ON_2 vs OFF_2)
+Finished game 680 (OFF_2 vs ON_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 684 of 1000 (OFF_2 vs ON_2)
+Finished game 682 (OFF_2 vs ON_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 685 of 1000 (ON_2 vs OFF_2)
+Finished game 678 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 686 of 1000 (OFF_2 vs ON_2)
+Finished game 684 (OFF_2 vs ON_2): 1/2-1/2 {Draw by adjudication}
+Started game 687 of 1000 (ON_2 vs OFF_2)
+Finished game 685 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 688 of 1000 (OFF_2 vs ON_2)
+Finished game 683 (ON_2 vs OFF_2): 1/2-1/2 {Draw by adjudication}
+Started game 689 of 1000 (ON_2 vs OFF_2)
+Finished game 686 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 690 of 1000 (OFF_2 vs ON_2)
+Finished game 687 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 691 of 1000 (ON_2 vs OFF_2)
+Finished game 688 (OFF_2 vs ON_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 692 of 1000 (OFF_2 vs ON_2)
+Finished game 689 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 693 of 1000 (ON_2 vs OFF_2)
+Finished game 690 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 694 of 1000 (OFF_2 vs ON_2)
+Finished game 691 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 695 of 1000 (ON_2 vs OFF_2)
+Finished game 693 (ON_2 vs OFF_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 696 of 1000 (OFF_2 vs ON_2)
+Finished game 692 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 697 of 1000 (ON_2 vs OFF_2)
+Finished game 695 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 698 of 1000 (OFF_2 vs ON_2)
+Finished game 697 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 699 of 1000 (ON_2 vs OFF_2)
+Finished game 698 (OFF_2 vs ON_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 700 of 1000 (OFF_2 vs ON_2)
+Finished game 694 (OFF_2 vs ON_2): 1/2-1/2 {Draw by fifty moves rule}
+Started game 701 of 1000 (ON_2 vs OFF_2)
+Finished game 696 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 702 of 1000 (OFF_2 vs ON_2)
+Finished game 699 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 703 of 1000 (ON_2 vs OFF_2)
+Finished game 702 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 704 of 1000 (OFF_2 vs ON_2)
+Finished game 700 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 705 of 1000 (ON_2 vs OFF_2)
+Finished game 701 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 706 of 1000 (OFF_2 vs ON_2)
+Finished game 703 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 707 of 1000 (ON_2 vs OFF_2)
+Finished game 704 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 708 of 1000 (OFF_2 vs ON_2)
+Finished game 705 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 709 of 1000 (ON_2 vs OFF_2)
+Finished game 706 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 710 of 1000 (OFF_2 vs ON_2)
+Finished game 707 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 711 of 1000 (ON_2 vs OFF_2)
+Finished game 711 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 712 of 1000 (OFF_2 vs ON_2)
+Finished game 709 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 713 of 1000 (ON_2 vs OFF_2)
+Finished game 710 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 714 of 1000 (OFF_2 vs ON_2)
+Finished game 708 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 715 of 1000 (ON_2 vs OFF_2)
+Finished game 712 (OFF_2 vs ON_2): 1/2-1/2 {Draw by adjudication}
+Started game 716 of 1000 (OFF_2 vs ON_2)
+Finished game 714 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 717 of 1000 (ON_2 vs OFF_2)
+Finished game 713 (ON_2 vs OFF_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 718 of 1000 (OFF_2 vs ON_2)
+Finished game 716 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 719 of 1000 (ON_2 vs OFF_2)
+Finished game 715 (ON_2 vs OFF_2): 1/2-1/2 {Draw by insufficient mating material}
+Started game 720 of 1000 (OFF_2 vs ON_2)
+Finished game 717 (ON_2 vs OFF_2): 1/2-1/2 {Draw by adjudication}
+Started game 721 of 1000 (ON_2 vs OFF_2)
+Finished game 718 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 722 of 1000 (OFF_2 vs ON_2)
+Finished game 719 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 723 of 1000 (ON_2 vs OFF_2)
+Finished game 720 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 724 of 1000 (OFF_2 vs ON_2)
+Finished game 722 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 725 of 1000 (ON_2 vs OFF_2)
+Finished game 721 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 726 of 1000 (OFF_2 vs ON_2)
+Finished game 723 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 727 of 1000 (ON_2 vs OFF_2)
+Finished game 724 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 728 of 1000 (OFF_2 vs ON_2)
+Finished game 726 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 729 of 1000 (ON_2 vs OFF_2)
+Finished game 725 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 730 of 1000 (OFF_2 vs ON_2)
+Finished game 728 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 731 of 1000 (ON_2 vs OFF_2)
+Finished game 727 (ON_2 vs OFF_2): 1/2-1/2 {Draw by adjudication}
+Started game 732 of 1000 (OFF_2 vs ON_2)
+Finished game 732 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 733 of 1000 (ON_2 vs OFF_2)
+Finished game 731 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 734 of 1000 (OFF_2 vs ON_2)
+Finished game 730 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 735 of 1000 (ON_2 vs OFF_2)
+Finished game 729 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 736 of 1000 (OFF_2 vs ON_2)
+Finished game 733 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 737 of 1000 (ON_2 vs OFF_2)
+Finished game 734 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 738 of 1000 (OFF_2 vs ON_2)
+Finished game 736 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 739 of 1000 (ON_2 vs OFF_2)
+Finished game 735 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 740 of 1000 (OFF_2 vs ON_2)
+Finished game 737 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 741 of 1000 (ON_2 vs OFF_2)
+Finished game 738 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 742 of 1000 (OFF_2 vs ON_2)
+Finished game 739 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 743 of 1000 (ON_2 vs OFF_2)
+Finished game 741 (ON_2 vs OFF_2): 1/2-1/2 {Draw by adjudication}
+Started game 744 of 1000 (OFF_2 vs ON_2)
+Finished game 742 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 745 of 1000 (ON_2 vs OFF_2)
+Finished game 740 (OFF_2 vs ON_2): 1/2-1/2 {Draw by insufficient mating material}
+Started game 746 of 1000 (OFF_2 vs ON_2)
+Finished game 744 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 747 of 1000 (ON_2 vs OFF_2)
+Finished game 743 (ON_2 vs OFF_2): 1/2-1/2 {Draw by adjudication}
+Started game 748 of 1000 (OFF_2 vs ON_2)
+Finished game 746 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 749 of 1000 (ON_2 vs OFF_2)
+Finished game 745 (ON_2 vs OFF_2): 1/2-1/2 {Draw by insufficient mating material}
+Started game 750 of 1000 (OFF_2 vs ON_2)
+Finished game 747 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 751 of 1000 (ON_2 vs OFF_2)
+Finished game 750 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 752 of 1000 (OFF_2 vs ON_2)
+Finished game 748 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 753 of 1000 (ON_2 vs OFF_2)
+Finished game 751 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 754 of 1000 (OFF_2 vs ON_2)
+Finished game 752 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 755 of 1000 (ON_2 vs OFF_2)
+Finished game 749 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 756 of 1000 (OFF_2 vs ON_2)
+Finished game 754 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 757 of 1000 (ON_2 vs OFF_2)
+Finished game 753 (ON_2 vs OFF_2): 0-1 {Black mates}
+Started game 758 of 1000 (OFF_2 vs ON_2)
+Finished game 756 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 759 of 1000 (ON_2 vs OFF_2)
+Finished game 755 (ON_2 vs OFF_2): 1/2-1/2 {Draw by adjudication}
+Started game 760 of 1000 (OFF_2 vs ON_2)
+Finished game 757 (ON_2 vs OFF_2): 1/2-1/2 {Draw by adjudication}
+Started game 761 of 1000 (ON_2 vs OFF_2)
+Finished game 758 (OFF_2 vs ON_2): 1/2-1/2 {Draw by adjudication}
+Started game 762 of 1000 (OFF_2 vs ON_2)
+Finished game 759 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 763 of 1000 (ON_2 vs OFF_2)
+Finished game 760 (OFF_2 vs ON_2): 1-0 {White mates}
+Started game 764 of 1000 (OFF_2 vs ON_2)
+Finished game 763 (ON_2 vs OFF_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 765 of 1000 (ON_2 vs OFF_2)
+Finished game 761 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 766 of 1000 (OFF_2 vs ON_2)
+Finished game 762 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 767 of 1000 (ON_2 vs OFF_2)
+Finished game 764 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 768 of 1000 (OFF_2 vs ON_2)
+Finished game 765 (ON_2 vs OFF_2): 1/2-1/2 {Draw by adjudication}
+Started game 769 of 1000 (ON_2 vs OFF_2)
+Finished game 767 (ON_2 vs OFF_2): 1/2-1/2 {Draw by adjudication}
+Started game 770 of 1000 (OFF_2 vs ON_2)
+Finished game 766 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 771 of 1000 (ON_2 vs OFF_2)
+Finished game 768 (OFF_2 vs ON_2): 1/2-1/2 {Draw by insufficient mating material}
+Started game 772 of 1000 (OFF_2 vs ON_2)
+Finished game 769 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 773 of 1000 (ON_2 vs OFF_2)
+Finished game 770 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 774 of 1000 (OFF_2 vs ON_2)
+Finished game 771 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 775 of 1000 (ON_2 vs OFF_2)
+Finished game 772 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 776 of 1000 (OFF_2 vs ON_2)
+Finished game 775 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 777 of 1000 (ON_2 vs OFF_2)
+Finished game 773 (ON_2 vs OFF_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 778 of 1000 (OFF_2 vs ON_2)
+Finished game 774 (OFF_2 vs ON_2): 1/2-1/2 {Draw by adjudication}
+Started game 779 of 1000 (ON_2 vs OFF_2)
+Finished game 776 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 780 of 1000 (OFF_2 vs ON_2)
+Finished game 777 (ON_2 vs OFF_2): 1/2-1/2 {Draw by insufficient mating material}
+Started game 781 of 1000 (ON_2 vs OFF_2)
+Finished game 778 (OFF_2 vs ON_2): 1/2-1/2 {Draw by insufficient mating material}
+Started game 782 of 1000 (OFF_2 vs ON_2)
+Finished game 780 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 783 of 1000 (ON_2 vs OFF_2)
+Finished game 779 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 784 of 1000 (OFF_2 vs ON_2)
+Finished game 782 (OFF_2 vs ON_2): 1/2-1/2 {Draw by stalemate}
+Started game 785 of 1000 (ON_2 vs OFF_2)
+Finished game 781 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 786 of 1000 (OFF_2 vs ON_2)
+Finished game 783 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 787 of 1000 (ON_2 vs OFF_2)
+Finished game 784 (OFF_2 vs ON_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 788 of 1000 (OFF_2 vs ON_2)
+Finished game 787 (ON_2 vs OFF_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 789 of 1000 (ON_2 vs OFF_2)
+Finished game 786 (OFF_2 vs ON_2): 0-1 {Black mates}
+Started game 790 of 1000 (OFF_2 vs ON_2)
+Finished game 785 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 791 of 1000 (ON_2 vs OFF_2)
+Finished game 789 (ON_2 vs OFF_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 792 of 1000 (OFF_2 vs ON_2)
+Finished game 788 (OFF_2 vs ON_2): 1/2-1/2 {Draw by fifty moves rule}
+Started game 793 of 1000 (ON_2 vs OFF_2)
+Finished game 790 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 794 of 1000 (OFF_2 vs ON_2)
+Finished game 791 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 795 of 1000 (ON_2 vs OFF_2)
+Finished game 793 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 796 of 1000 (OFF_2 vs ON_2)
+Finished game 792 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 797 of 1000 (ON_2 vs OFF_2)
+Finished game 794 (OFF_2 vs ON_2): 0-1 {Black mates}
+Started game 798 of 1000 (OFF_2 vs ON_2)
+Finished game 796 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 799 of 1000 (ON_2 vs OFF_2)
+Finished game 798 (OFF_2 vs ON_2): 1/2-1/2 {Draw by adjudication}
+Started game 800 of 1000 (OFF_2 vs ON_2)
+Finished game 797 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 801 of 1000 (ON_2 vs OFF_2)
+Finished game 795 (ON_2 vs OFF_2): 1/2-1/2 {Draw by fifty moves rule}
+Started game 802 of 1000 (OFF_2 vs ON_2)
+Finished game 799 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 803 of 1000 (ON_2 vs OFF_2)
+Finished game 800 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+--------------------------------------------------
+Results of ON_2 vs OFF_2 (20000 nodes, 1t, 16MB, UHO_4060_v4.epd):
+Elo: 5.65 +/- 18.95, nElo: 7.18 +/- 24.08
+LOS: 72.06 %, DrawRatio: 40.00 %, PairsRatio: 1.14
+Games: 800, Wins: 292, Losses: 279, Draws: 229, Points: 406.5 (50.81 %)
+Ptnml(0-2): [44, 68, 160, 87, 41], WL/DD Ratio: 3.32
+--------------------------------------------------
+Started game 804 of 1000 (OFF_2 vs ON_2)
+Finished game 801 (ON_2 vs OFF_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 805 of 1000 (ON_2 vs OFF_2)
+Finished game 803 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 806 of 1000 (OFF_2 vs ON_2)
+Finished game 802 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 807 of 1000 (ON_2 vs OFF_2)
+Finished game 804 (OFF_2 vs ON_2): 1/2-1/2 {Draw by fifty moves rule}
+Started game 808 of 1000 (OFF_2 vs ON_2)
+Finished game 806 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 809 of 1000 (ON_2 vs OFF_2)
+Finished game 805 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 810 of 1000 (OFF_2 vs ON_2)
+Finished game 807 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 811 of 1000 (ON_2 vs OFF_2)
+Finished game 809 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 812 of 1000 (OFF_2 vs ON_2)
+Finished game 808 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 813 of 1000 (ON_2 vs OFF_2)
+Finished game 811 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 814 of 1000 (OFF_2 vs ON_2)
+Finished game 810 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 815 of 1000 (ON_2 vs OFF_2)
+Finished game 813 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 816 of 1000 (OFF_2 vs ON_2)
+Finished game 812 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 817 of 1000 (ON_2 vs OFF_2)
+Finished game 815 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 818 of 1000 (OFF_2 vs ON_2)
+Finished game 814 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 819 of 1000 (ON_2 vs OFF_2)
+Finished game 816 (OFF_2 vs ON_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 820 of 1000 (OFF_2 vs ON_2)
+Finished game 817 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 821 of 1000 (ON_2 vs OFF_2)
+Finished game 818 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 822 of 1000 (OFF_2 vs ON_2)
+Finished game 819 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 823 of 1000 (ON_2 vs OFF_2)
+Finished game 821 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 824 of 1000 (OFF_2 vs ON_2)
+Finished game 820 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 825 of 1000 (ON_2 vs OFF_2)
+Finished game 822 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 826 of 1000 (OFF_2 vs ON_2)
+Finished game 823 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 827 of 1000 (ON_2 vs OFF_2)
+Finished game 826 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 828 of 1000 (OFF_2 vs ON_2)
+Finished game 825 (ON_2 vs OFF_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 829 of 1000 (ON_2 vs OFF_2)
+Finished game 827 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 830 of 1000 (OFF_2 vs ON_2)
+Finished game 824 (OFF_2 vs ON_2): 1/2-1/2 {Draw by fifty moves rule}
+Started game 831 of 1000 (ON_2 vs OFF_2)
+Finished game 829 (ON_2 vs OFF_2): 1/2-1/2 {Draw by insufficient mating material}
+Started game 832 of 1000 (OFF_2 vs ON_2)
+Finished game 828 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 833 of 1000 (ON_2 vs OFF_2)
+Finished game 831 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 834 of 1000 (OFF_2 vs ON_2)
+Finished game 830 (OFF_2 vs ON_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 835 of 1000 (ON_2 vs OFF_2)
+Finished game 833 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 836 of 1000 (OFF_2 vs ON_2)
+Finished game 832 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 837 of 1000 (ON_2 vs OFF_2)
+Finished game 835 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 838 of 1000 (OFF_2 vs ON_2)
+Finished game 834 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 839 of 1000 (ON_2 vs OFF_2)
+Finished game 838 (OFF_2 vs ON_2): 1/2-1/2 {Draw by adjudication}
+Started game 840 of 1000 (OFF_2 vs ON_2)
+Finished game 837 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 841 of 1000 (ON_2 vs OFF_2)
+Finished game 839 (ON_2 vs OFF_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 842 of 1000 (OFF_2 vs ON_2)
+Finished game 840 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 843 of 1000 (ON_2 vs OFF_2)
+Finished game 841 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 844 of 1000 (OFF_2 vs ON_2)
+Finished game 836 (OFF_2 vs ON_2): 1/2-1/2 {Draw by adjudication}
+Started game 845 of 1000 (ON_2 vs OFF_2)
+Finished game 842 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 846 of 1000 (OFF_2 vs ON_2)
+Finished game 845 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 847 of 1000 (ON_2 vs OFF_2)
+Finished game 843 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 848 of 1000 (OFF_2 vs ON_2)
+Finished game 844 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 849 of 1000 (ON_2 vs OFF_2)
+Finished game 846 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 850 of 1000 (OFF_2 vs ON_2)
+Finished game 847 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 851 of 1000 (ON_2 vs OFF_2)
+Finished game 848 (OFF_2 vs ON_2): 1/2-1/2 {Draw by insufficient mating material}
+Started game 852 of 1000 (OFF_2 vs ON_2)
+Finished game 850 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 853 of 1000 (ON_2 vs OFF_2)
+Finished game 852 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 854 of 1000 (OFF_2 vs ON_2)
+Finished game 849 (ON_2 vs OFF_2): 1/2-1/2 {Draw by adjudication}
+Started game 855 of 1000 (ON_2 vs OFF_2)
+Finished game 851 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 856 of 1000 (OFF_2 vs ON_2)
+Finished game 853 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 857 of 1000 (ON_2 vs OFF_2)
+Finished game 856 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 858 of 1000 (OFF_2 vs ON_2)
+Finished game 854 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 859 of 1000 (ON_2 vs OFF_2)
+Finished game 855 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 860 of 1000 (OFF_2 vs ON_2)
+Finished game 857 (ON_2 vs OFF_2): 1/2-1/2 {Draw by adjudication}
+Started game 861 of 1000 (ON_2 vs OFF_2)
+Finished game 860 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 862 of 1000 (OFF_2 vs ON_2)
+Finished game 859 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 863 of 1000 (ON_2 vs OFF_2)
+Finished game 858 (OFF_2 vs ON_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 864 of 1000 (OFF_2 vs ON_2)
+Finished game 861 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 865 of 1000 (ON_2 vs OFF_2)
+Finished game 864 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 866 of 1000 (OFF_2 vs ON_2)
+Finished game 863 (ON_2 vs OFF_2): 1/2-1/2 {Draw by adjudication}
+Started game 867 of 1000 (ON_2 vs OFF_2)
+Finished game 862 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 868 of 1000 (OFF_2 vs ON_2)
+Finished game 865 (ON_2 vs OFF_2): 1/2-1/2 {Draw by adjudication}
+Started game 869 of 1000 (ON_2 vs OFF_2)
+Finished game 867 (ON_2 vs OFF_2): 1/2-1/2 {Draw by adjudication}
+Started game 870 of 1000 (OFF_2 vs ON_2)
+Finished game 866 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 871 of 1000 (ON_2 vs OFF_2)
+Finished game 868 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 872 of 1000 (OFF_2 vs ON_2)
+Finished game 870 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 873 of 1000 (ON_2 vs OFF_2)
+Finished game 871 (ON_2 vs OFF_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 874 of 1000 (OFF_2 vs ON_2)
+Finished game 869 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 875 of 1000 (ON_2 vs OFF_2)
+Finished game 872 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 876 of 1000 (OFF_2 vs ON_2)
+Finished game 873 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 877 of 1000 (ON_2 vs OFF_2)
+Finished game 874 (OFF_2 vs ON_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 878 of 1000 (OFF_2 vs ON_2)
+Finished game 875 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 879 of 1000 (ON_2 vs OFF_2)
+Finished game 876 (OFF_2 vs ON_2): 1/2-1/2 {Draw by adjudication}
+Started game 880 of 1000 (OFF_2 vs ON_2)
+Finished game 877 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 881 of 1000 (ON_2 vs OFF_2)
+Finished game 878 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 882 of 1000 (OFF_2 vs ON_2)
+Finished game 879 (ON_2 vs OFF_2): 1/2-1/2 {Draw by adjudication}
+Started game 883 of 1000 (ON_2 vs OFF_2)
+Finished game 882 (OFF_2 vs ON_2): 1-0 {White mates}
+Started game 884 of 1000 (OFF_2 vs ON_2)
+Finished game 880 (OFF_2 vs ON_2): 1/2-1/2 {Draw by adjudication}
+Started game 885 of 1000 (ON_2 vs OFF_2)
+Finished game 881 (ON_2 vs OFF_2): 0-1 {Black mates}
+Started game 886 of 1000 (OFF_2 vs ON_2)
+Finished game 883 (ON_2 vs OFF_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 887 of 1000 (ON_2 vs OFF_2)
+Finished game 884 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 888 of 1000 (OFF_2 vs ON_2)
+Finished game 885 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 889 of 1000 (ON_2 vs OFF_2)
+Finished game 886 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 890 of 1000 (OFF_2 vs ON_2)
+Finished game 887 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 891 of 1000 (ON_2 vs OFF_2)
+Finished game 888 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 892 of 1000 (OFF_2 vs ON_2)
+Finished game 889 (ON_2 vs OFF_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 893 of 1000 (ON_2 vs OFF_2)
+Finished game 890 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 894 of 1000 (OFF_2 vs ON_2)
+Finished game 893 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 895 of 1000 (ON_2 vs OFF_2)
+Finished game 891 (ON_2 vs OFF_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 896 of 1000 (OFF_2 vs ON_2)
+Finished game 892 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 897 of 1000 (ON_2 vs OFF_2)
+Finished game 896 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 898 of 1000 (OFF_2 vs ON_2)
+Finished game 895 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 899 of 1000 (ON_2 vs OFF_2)
+Finished game 894 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 900 of 1000 (OFF_2 vs ON_2)
+Finished game 897 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 901 of 1000 (ON_2 vs OFF_2)
+Finished game 900 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 902 of 1000 (OFF_2 vs ON_2)
+Finished game 898 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 903 of 1000 (ON_2 vs OFF_2)
+Finished game 899 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 904 of 1000 (OFF_2 vs ON_2)
+Finished game 901 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 905 of 1000 (ON_2 vs OFF_2)
+Finished game 903 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 906 of 1000 (OFF_2 vs ON_2)
+Finished game 902 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 907 of 1000 (ON_2 vs OFF_2)
+Finished game 904 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 908 of 1000 (OFF_2 vs ON_2)
+Finished game 905 (ON_2 vs OFF_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 909 of 1000 (ON_2 vs OFF_2)
+Finished game 906 (OFF_2 vs ON_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 910 of 1000 (OFF_2 vs ON_2)
+Finished game 907 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 911 of 1000 (ON_2 vs OFF_2)
+Finished game 908 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 912 of 1000 (OFF_2 vs ON_2)
+Finished game 910 (OFF_2 vs ON_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 913 of 1000 (ON_2 vs OFF_2)
+Finished game 909 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 914 of 1000 (OFF_2 vs ON_2)
+Finished game 913 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 915 of 1000 (ON_2 vs OFF_2)
+Finished game 914 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 916 of 1000 (OFF_2 vs ON_2)
+Finished game 911 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 917 of 1000 (ON_2 vs OFF_2)
+Finished game 915 (ON_2 vs OFF_2): 1/2-1/2 {Draw by adjudication}
+Started game 918 of 1000 (OFF_2 vs ON_2)
+Finished game 917 (ON_2 vs OFF_2): 1-0 {White mates}
+Started game 919 of 1000 (ON_2 vs OFF_2)
+Finished game 912 (OFF_2 vs ON_2): 1/2-1/2 {Draw by fifty moves rule}
+Started game 920 of 1000 (OFF_2 vs ON_2)
+Finished game 916 (OFF_2 vs ON_2): 1/2-1/2 {Draw by insufficient mating material}
+Started game 921 of 1000 (ON_2 vs OFF_2)
+Finished game 918 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 922 of 1000 (OFF_2 vs ON_2)
+Finished game 919 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 923 of 1000 (ON_2 vs OFF_2)
+Finished game 920 (OFF_2 vs ON_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 924 of 1000 (OFF_2 vs ON_2)
+Finished game 922 (OFF_2 vs ON_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 925 of 1000 (ON_2 vs OFF_2)
+Finished game 923 (ON_2 vs OFF_2): 1/2-1/2 {Draw by stalemate}
+Started game 926 of 1000 (OFF_2 vs ON_2)
+Finished game 921 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 927 of 1000 (ON_2 vs OFF_2)
+Finished game 924 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 928 of 1000 (OFF_2 vs ON_2)
+Finished game 926 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 929 of 1000 (ON_2 vs OFF_2)
+Finished game 925 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 930 of 1000 (OFF_2 vs ON_2)
+Finished game 928 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 931 of 1000 (ON_2 vs OFF_2)
+Finished game 927 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 932 of 1000 (OFF_2 vs ON_2)
+Finished game 929 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 933 of 1000 (ON_2 vs OFF_2)
+Finished game 932 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 934 of 1000 (OFF_2 vs ON_2)
+Finished game 930 (OFF_2 vs ON_2): 1-0 {White mates}
+Started game 935 of 1000 (ON_2 vs OFF_2)
+Finished game 931 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 936 of 1000 (OFF_2 vs ON_2)
+Finished game 933 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 937 of 1000 (ON_2 vs OFF_2)
+Finished game 934 (OFF_2 vs ON_2): 1/2-1/2 {Draw by adjudication}
+Started game 938 of 1000 (OFF_2 vs ON_2)
+Finished game 935 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 939 of 1000 (ON_2 vs OFF_2)
+Finished game 936 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 940 of 1000 (OFF_2 vs ON_2)
+Finished game 937 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 941 of 1000 (ON_2 vs OFF_2)
+Finished game 939 (ON_2 vs OFF_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 942 of 1000 (OFF_2 vs ON_2)
+Finished game 940 (OFF_2 vs ON_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 943 of 1000 (ON_2 vs OFF_2)
+Finished game 942 (OFF_2 vs ON_2): 1/2-1/2 {Draw by adjudication}
+Started game 944 of 1000 (OFF_2 vs ON_2)
+Finished game 938 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 945 of 1000 (ON_2 vs OFF_2)
+Finished game 941 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 946 of 1000 (OFF_2 vs ON_2)
+Finished game 944 (OFF_2 vs ON_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 947 of 1000 (ON_2 vs OFF_2)
+Finished game 943 (ON_2 vs OFF_2): 1/2-1/2 {Draw by adjudication}
+Started game 948 of 1000 (OFF_2 vs ON_2)
+Finished game 946 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 949 of 1000 (ON_2 vs OFF_2)
+Finished game 945 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 950 of 1000 (OFF_2 vs ON_2)
+Finished game 947 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 951 of 1000 (ON_2 vs OFF_2)
+Finished game 949 (ON_2 vs OFF_2): 0-1 {Black mates}
+Started game 952 of 1000 (OFF_2 vs ON_2)
+Finished game 948 (OFF_2 vs ON_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 953 of 1000 (ON_2 vs OFF_2)
+Finished game 950 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 954 of 1000 (OFF_2 vs ON_2)
+Finished game 951 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 955 of 1000 (ON_2 vs OFF_2)
+Finished game 952 (OFF_2 vs ON_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 956 of 1000 (OFF_2 vs ON_2)
+Finished game 953 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 957 of 1000 (ON_2 vs OFF_2)
+Finished game 954 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 958 of 1000 (OFF_2 vs ON_2)
+Finished game 956 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 959 of 1000 (ON_2 vs OFF_2)
+Finished game 955 (ON_2 vs OFF_2): 1/2-1/2 {Draw by adjudication}
+Started game 960 of 1000 (OFF_2 vs ON_2)
+Finished game 957 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 961 of 1000 (ON_2 vs OFF_2)
+Finished game 958 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 962 of 1000 (OFF_2 vs ON_2)
+Finished game 959 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 963 of 1000 (ON_2 vs OFF_2)
+Finished game 962 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 964 of 1000 (OFF_2 vs ON_2)
+Finished game 961 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 965 of 1000 (ON_2 vs OFF_2)
+Finished game 960 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 966 of 1000 (OFF_2 vs ON_2)
+Finished game 963 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 967 of 1000 (ON_2 vs OFF_2)
+Finished game 965 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 968 of 1000 (OFF_2 vs ON_2)
+Finished game 964 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 969 of 1000 (ON_2 vs OFF_2)
+Finished game 966 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 970 of 1000 (OFF_2 vs ON_2)
+Finished game 967 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 971 of 1000 (ON_2 vs OFF_2)
+Finished game 971 (ON_2 vs OFF_2): 1-0 {White mates}
+Started game 972 of 1000 (OFF_2 vs ON_2)
+Finished game 969 (ON_2 vs OFF_2): 1/2-1/2 {Draw by adjudication}
+Started game 973 of 1000 (ON_2 vs OFF_2)
+Finished game 968 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 974 of 1000 (OFF_2 vs ON_2)
+Finished game 970 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 975 of 1000 (ON_2 vs OFF_2)
+Finished game 972 (OFF_2 vs ON_2): 0-1 {Black wins by adjudication}
+Started game 976 of 1000 (OFF_2 vs ON_2)
+Finished game 974 (OFF_2 vs ON_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 977 of 1000 (ON_2 vs OFF_2)
+Finished game 975 (ON_2 vs OFF_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 978 of 1000 (OFF_2 vs ON_2)
+Finished game 973 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 979 of 1000 (ON_2 vs OFF_2)
+Finished game 976 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 980 of 1000 (OFF_2 vs ON_2)
+Finished game 977 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 981 of 1000 (ON_2 vs OFF_2)
+Finished game 979 (ON_2 vs OFF_2): 1/2-1/2 {Draw by insufficient mating material}
+Started game 982 of 1000 (OFF_2 vs ON_2)
+Finished game 980 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 983 of 1000 (ON_2 vs OFF_2)
+Finished game 978 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 984 of 1000 (OFF_2 vs ON_2)
+Finished game 981 (ON_2 vs OFF_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 985 of 1000 (ON_2 vs OFF_2)
+Finished game 982 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 986 of 1000 (OFF_2 vs ON_2)
+Finished game 984 (OFF_2 vs ON_2): 1-0 {White mates}
+Started game 987 of 1000 (ON_2 vs OFF_2)
+Finished game 983 (ON_2 vs OFF_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 988 of 1000 (OFF_2 vs ON_2)
+Finished game 986 (OFF_2 vs ON_2): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 989 of 1000 (ON_2 vs OFF_2)
+Finished game 985 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 990 of 1000 (OFF_2 vs ON_2)
+Finished game 987 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 991 of 1000 (ON_2 vs OFF_2)
+Finished game 988 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 992 of 1000 (OFF_2 vs ON_2)
+Finished game 991 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 993 of 1000 (ON_2 vs OFF_2)
+Finished game 989 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 994 of 1000 (OFF_2 vs ON_2)
+Finished game 990 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 995 of 1000 (ON_2 vs OFF_2)
+Finished game 992 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 996 of 1000 (OFF_2 vs ON_2)
+Finished game 994 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Started game 997 of 1000 (ON_2 vs OFF_2)
+Finished game 993 (ON_2 vs OFF_2): 1-0 {White wins by adjudication}
+Started game 998 of 1000 (OFF_2 vs ON_2)
+Finished game 995 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+Started game 999 of 1000 (ON_2 vs OFF_2)
+Finished game 997 (ON_2 vs OFF_2): 0-1 {Black mates}
+Started game 1000 of 1000 (OFF_2 vs ON_2)
+Finished game 998 (OFF_2 vs ON_2): 1/2-1/2 {Draw by 3-fold repetition}
+Finished game 996 (OFF_2 vs ON_2): 1-0 {White wins by adjudication}
+Finished game 1000 (OFF_2 vs ON_2): 1/2-1/2 {Draw by stalemate}
+Finished game 999 (ON_2 vs OFF_2): 0-1 {Black wins by adjudication}
+--------------------------------------------------
+Results of ON_2 vs OFF_2 (20000 nodes, 1t, 16MB, UHO_4060_v4.epd):
+Elo: 3.13 +/- 17.15, nElo: 3.93 +/- 21.53
+LOS: 63.97 %, DrawRatio: 39.40 %, PairsRatio: 1.08
+Games: 1000, Wins: 364, Losses: 355, Draws: 281, Points: 504.5 (50.45 %)
+Ptnml(0-2): [56, 90, 197, 103, 54], WL/DD Ratio: 3.48
+--------------------------------------------------
+Finished match
+Total Time: 00:16:33 (hours:minutes:seconds)
+

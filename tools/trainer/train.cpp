@@ -14,6 +14,11 @@
 #include <vector>
 #include <sys/resource.h>
 
+static int PLYMIN = 0, PLYMAX = 63;
+// boundary filters (records generated with `gendata ... boundary 1`): score = 2*beta + qsearch
+static int QSF = -1;                       // -1 any, 0 main search only, 1 qsearch only
+static double MARGIN_LT = 1e9, MARGIN_GT = -1;  // keep |scaled eval - beta| < LT and > GT  // tree-position ply-from-root filter (src bits 1-6)
+
 struct Rec {
     uint8_t board[32];
     uint8_t stm, result, src, rule50;
@@ -33,7 +38,31 @@ static std::vector<Rec> load(const std::string& path, int src, double frac = 1.0
     n = fread(v.data(), sizeof(Rec), n, f);
     v.resize(n);
     fclose(f);
-    if (src >= 0) v.erase(std::remove_if(v.begin(), v.end(), [&](const Rec& r) { return r.src != src; }), v.end());
+    if (src >= 0) v.erase(std::remove_if(v.begin(), v.end(), [&](const Rec& r) { return (r.src & 1) != src; }), v.end());
+    if (QSF >= 0 || MARGIN_LT < 1e9 || MARGIN_GT >= 0)
+        v.erase(std::remove_if(v.begin(), v.end(), [&](const Rec& r) {
+            int qs = r.score & 1, beta = r.score >> 1;
+            if (QSF >= 0 && qs != QSF) return true;
+            // Stockfish scale_evaluation (optimism 0) of the teacher raw eval
+            static const int val[16] = {0, 208, 781, 825, 1276, 2538, 0, 0, 0, 208, 781, 825, 1276, 2538, 0, 0};
+            int se = 0, npawn = 0, nonpawn = 0;
+            for (int sq = 0; sq < 64; ++sq) {
+                int c = (r.board[sq >> 1] >> ((sq & 1) * 4)) & 15;
+                if (!c) continue;
+                int sgn = ((c >> 3) == r.stm) ? 1 : -1;
+                se += sgn * val[c];
+                if ((c & 7) == 1) ++npawn; else nonpawn += val[c];
+            }
+            long nn = r.teacher;
+            long sen = se * 1024 / (std::abs(se) + 1024), nnn = nn * 1024 / (std::abs(nn) + 1024);
+            long correl = sen * nnn / 512, vv = nn + nn * correl / 65536;
+            vv += long(521 * npawn + nonpawn) * vv / 90649;
+            vv -= vv * r.rule50 / 189;
+            double m = std::fabs(double(vv - beta));
+            return !(m < MARGIN_LT && m > MARGIN_GT);
+        }), v.end());
+    if (PLYMIN > 0 || PLYMAX < 63)
+        v.erase(std::remove_if(v.begin(), v.end(), [&](const Rec& r) { int p = (r.src >> 1) & 63; return p < PLYMIN || p > PLYMAX; }), v.end());
     return v;
 }
 
@@ -129,6 +158,22 @@ struct Net {
     }
 };
 
+static bool load_student(Net& net, const std::string& p) {
+    FILE* f = fopen(p.c_str(), "rb");
+    if (!f) return false;
+    char magic[8]; int32_t h, nb, fs = 0; float sc;
+    if (fread(magic, 1, 8, f) != 8) return false;
+    fread(&h, 4, 1, f); fread(&nb, 4, 1, f); fread(&sc, 4, 1, f);
+    if (!memcmp(magic, "STUDNT02", 8)) fread(&fs, 4, 1, f);
+    if (h != net.H || fs != 0) { fclose(f); return false; }
+    size_t n = fread(net.ftW.data(), 4, size_t(768) * h, f);
+    n += fread(net.ftB.data(), 4, h, f);
+    n += fread(net.outW.data(), 4, net.outW.size(), f);
+    n += fread(net.outB.data(), 4, net.outB.size(), f);
+    fclose(f);
+    return n == size_t(768) * h + h + net.outW.size() + net.outB.size();
+}
+
 enum Label { TEACHER, SCORE, BLEND };
 
 static float target(const Rec& r, Label lab, float lam) {
@@ -170,6 +215,9 @@ int main(int argc, char** argv) {
     int src = -1, H = 256, threads = 4, batch = 16384;
     double positions = 1e7, lr = 2e-3, lam = 0.7, maxN = 0, wd = 0, frac = 1.0, skip = 0.0;
     uint64_t seed = 0;
+    std::string initNet; bool freezeFt = false, reinitOut = false;
+    std::string mineNet;   // error-guided selection: student used to score the pool
+    double mineK = 0, mineAlpha = 1.0;
     for (int i = 1; i < argc; ++i) {
         std::string a = argv[i];
         auto nx = [&] { return std::string(argv[++i]); };
@@ -192,6 +240,17 @@ int main(int argc, char** argv) {
         else if (a == "--frac") frac = std::stod(nx());
         else if (a == "--skip") skip = std::stod(nx());
         else if (a == "--fset") FSET = std::stoi(nx());
+        else if (a == "--plymin") PLYMIN = std::stoi(nx());
+        else if (a == "--mine") mineNet = nx();
+        else if (a == "--init") initNet = nx();
+        else if (a == "--freeze_ft") freezeFt = true;
+        else if (a == "--reinit_out") reinitOut = true;
+        else if (a == "--mine_k") mineK = std::stod(nx());
+        else if (a == "--mine_alpha") mineAlpha = std::stod(nx());
+        else if (a == "--plymax") PLYMAX = std::stoi(nx());
+        else if (a == "--qs") QSF = std::stoi(nx());
+        else if (a == "--margin_lt") MARGIN_LT = std::stod(nx());
+        else if (a == "--margin_gt") MARGIN_GT = std::stod(nx());
         else if (a == "--seed") seed = std::stoull(nx());
         else { fprintf(stderr, "unknown arg %s\n", a.c_str()); return 1; }
     }
@@ -208,6 +267,32 @@ int main(int argc, char** argv) {
     }
     for (auto& f : trainFiles) { auto v = load(f, src, frac, skip); data.insert(data.end(), v.begin(), v.end()); }
     std::mt19937_64 rng(seed * 7919 + 17);
+    if (!mineNet.empty() && mineK > 0 && mineK < data.size()) {
+        // weighted sampling without replacement, weight = err^alpha (err = |sigmoid(student) - sigmoid(teacher)|)
+        Net scorer(H);
+        if (!load_student(scorer, mineNet)) { fprintf(stderr, "cannot load %s\n", mineNet.c_str()); return 1; }
+        std::vector<std::pair<double, uint32_t>> keys(data.size());
+        std::vector<std::thread> th;
+        for (int t = 0; t < threads; ++t)
+            th.emplace_back([&, t] {
+                std::mt19937_64 r(seed * 1000 + t);
+                std::uniform_real_distribution<double> U(1e-12, 1.0);
+                std::vector<float> acc(2 * H); int fs[64], fn[64], n, b;
+                for (size_t i = t; i < data.size(); i += threads) {
+                    float o = scorer.forward(data[i], acc.data(), fs, fn, n, b);
+                    double e = std::fabs(sigm(o) - sigm(data[i].teacher / SCALE)) + 1e-4;
+                    double w = std::pow(e, mineAlpha);
+                    keys[i] = {std::log(U(r)) / w, uint32_t(i)};  // Efraimidis-Spirakis key
+                }
+            });
+        for (auto& x : th) x.join();
+        size_t K = size_t(mineK);
+        std::nth_element(keys.begin(), keys.begin() + K, keys.end(), [](auto& x, auto& y) { return x.first > y.first; });
+        std::vector<Rec> sel(K);
+        for (size_t i = 0; i < K; ++i) sel[i] = data[keys[i].second];
+        data.swap(sel);
+        fprintf(stderr, "mined %zu positions (alpha %.2f) with %s\n", K, mineAlpha, mineNet.c_str());
+    }
     if (maxN > 0 && maxN < data.size()) {
         std::shuffle(data.begin(), data.end(), rng);
         data.resize(size_t(maxN));
@@ -216,6 +301,7 @@ int main(int argc, char** argv) {
     // drop extreme labels (mates) from training on teacher/score; keep for blend via clamp in sigmoid
     size_t N = data.size();
     if (N == 0) { fprintf(stderr, "no data\n"); return 1; }
+    if (N < size_t(batch)) { fprintf(stderr, "dataset (%zu) smaller than one batch (%d)\n", N, batch); return 1; }
 
     Net net(H);
     {
@@ -224,6 +310,13 @@ int main(int argc, char** argv) {
         if (FSET == 1)  // bucket rows start at zero: the net starts as the shared 768-feature net
             std::fill(net.ftW.begin(), net.ftW.begin() + size_t(8 * 768) * H, 0.0f);
         for (auto& w : net.outW) w = no(rng);
+    }
+    if (!initNet.empty() && !load_student(net, initNet)) { fprintf(stderr, "cannot load init %s\n", initNet.c_str()); return 1; }
+    if (freezeFt && initNet.empty()) { fprintf(stderr, "--freeze_ft needs --init\n"); return 1; }
+    if (reinitOut) {
+        std::normal_distribution<float> no(0, 1.0f / std::sqrt(2.0f * H));
+        for (auto& w : net.outW) w = no(rng);
+        std::fill(net.outB.begin(), net.outB.end(), 0.0f);
     }
     size_t P = net.size();
     std::vector<float> m1(P), m2(P);
@@ -291,6 +384,7 @@ int main(int argc, char** argv) {
             th2.emplace_back([&, t] {
                 size_t lo = P * t / threads, hi = P * (t + 1) / threads;
                 for (size_t i = lo; i < hi; ++i) {
+                    if (freezeFt && i < offs[2]) continue;  // feature transformer weights + biases frozen
                     float g = 0;
                     for (int u = 0; u < threads; ++u) g += grads[u][i];
                     m1[i] = b1 * m1[i] + (1 - b1) * g;

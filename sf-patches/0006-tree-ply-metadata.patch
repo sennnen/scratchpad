@@ -1,0 +1,61 @@
+From 2ee0dfc104ed96b9fe4cfdabd8459ff4af6dca58 Mon Sep 17 00:00:00 2001
+From: research <research@localhost>
+Date: Mon, 26 Oct 2026 11:54:57 +0000
+Subject: [PATCH] research: record ply-from-root of tree positions (src bits
+ 1-6)
+
+---
+ src/evaluate.cpp | 2 +-
+ src/gendata.cpp  | 1 +
+ src/research.h   | 3 ++-
+ 3 files changed, 4 insertions(+), 2 deletions(-)
+
+diff --git a/src/evaluate.cpp b/src/evaluate.cpp
+index 45acc47c..a3c02192 100644
+--- a/src/evaluate.cpp
++++ b/src/evaluate.cpp
+@@ -59,7 +59,7 @@ Value Eval::evaluate(const Eval::NNUE::Network&     network,
+     {
+         Research::Rec r;
+         Research::encode(pos, r);
+-        r.src   = 1;
++        r.src   = uint8_t(1 | (std::clamp(pos.game_ply() - Research::gRecorder->rootPly, 0, 63) << 1));
+         Value t = Research::gStudent ? network.evaluate(pos, accumulators, caches) : nnue;
+         r.teacher = int16_t(std::clamp(int(t), -32000, 32000));
+         r.score   = int16_t(std::clamp(int(nnue), -32000, 32000));
+diff --git a/src/gendata.cpp b/src/gendata.cpp
+index 38ff6048..3158cc68 100644
+--- a/src/gendata.cpp
++++ b/src/gendata.cpp
+@@ -116,6 +116,7 @@ void gendata(Engine& engine, std::istringstream& is) {
+             else
+             {
+                 engine.set_position(fen, moves);
++                rec.rootPly = engine.position().game_ply();
+                 Search::LimitsType limits;
+                 limits.startTime = now();
+                 limits.nodes     = nodes;
+diff --git a/src/research.h b/src/research.h
+index 9f7b3eed..1a72b11b 100644
+--- a/src/research.h
++++ b/src/research.h
+@@ -21,7 +21,7 @@ struct Rec {
+     uint8_t board[32];
+     uint8_t stm;      // 0 white, 1 black
+     uint8_t result;   // game result from stm view: 0 loss, 1 draw, 2 win, 255 unknown
+-    uint8_t src;      // 0 = game position, 1 = search-tree (evaluate() call) position
++    uint8_t src;      // bit0: 0 game / 1 search-tree position; bits1-6: ply from root (tree); bit7: label capture flag
+     uint8_t rule50;   // halfmove clock (clamped to 255)
+     int16_t teacher;  // teacher raw NNUE eval, stm view, internal units
+     int16_t score;    // search score (game positions) or student eval (tree), stm view
+@@ -46,6 +46,7 @@ struct Recorder {
+     double   rate = 0.0;  // probability of recording an evaluate() call
+     uint64_t rng  = 0x9E3779B97F4A7C15ULL;
+     uint64_t written = 0;
++    int      rootPly = 0;  // game ply of the search root (tree records store ply-from-root in src bits 1-6)
+     bool sample() {
+         rng ^= rng << 13;
+         rng ^= rng >> 7;
+-- 
+2.43.0
+

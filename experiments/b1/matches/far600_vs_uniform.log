@@ -1,0 +1,412 @@
+/home/user/work/fastchess/fastchess -engine cmd=/home/user/data/sf_research name=far600 option.StudentFile=/home/user/nets/b1/far600.stud tc=inf nodes=20000 -engine cmd=/home/user/data/sf_research name=uniform option.StudentFile=/home/user/nets/b1/uniform.stud tc=inf nodes=20000 -each option.Threads=1 option.Hash=16 -openings file=/home/user/data/UHO_4060_v4.epd format=epd order=random -srand 1 -repeat -rounds 100 -concurrency 4 -resign movecount=3 score=1000 twosided=true -draw movenumber=40 movecount=8 score=8 -pgnout file=experiments/b1/matches/far600_vs_uniform.pgn -ratinginterval 100
+Indexing opening suite...
+Started game 1 of 200 (far600 vs uniform)
+Started game 2 of 200 (uniform vs far600)
+Started game 4 of 200 (uniform vs far600)
+Started game 3 of 200 (far600 vs uniform)
+Finished game 3 (far600 vs uniform): 1-0 {White wins by adjudication}
+Started game 5 of 200 (far600 vs uniform)
+Finished game 2 (uniform vs far600): 1-0 {White wins by adjudication}
+Started game 6 of 200 (uniform vs far600)
+Finished game 4 (uniform vs far600): 1-0 {White wins by adjudication}
+Started game 7 of 200 (far600 vs uniform)
+Finished game 5 (far600 vs uniform): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 8 of 200 (uniform vs far600)
+Finished game 6 (uniform vs far600): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 9 of 200 (far600 vs uniform)
+Finished game 1 (far600 vs uniform): 0-1 {Black wins by adjudication}
+Started game 10 of 200 (uniform vs far600)
+Finished game 7 (far600 vs uniform): 0-1 {Black wins by adjudication}
+Started game 11 of 200 (far600 vs uniform)
+Finished game 8 (uniform vs far600): 1-0 {White wins by adjudication}
+Started game 12 of 200 (uniform vs far600)
+Finished game 9 (far600 vs uniform): 0-1 {Black wins by adjudication}
+Started game 13 of 200 (far600 vs uniform)
+Finished game 10 (uniform vs far600): 1-0 {White wins by adjudication}
+Started game 14 of 200 (uniform vs far600)
+Finished game 11 (far600 vs uniform): 0-1 {Black wins by adjudication}
+Started game 15 of 200 (far600 vs uniform)
+Finished game 13 (far600 vs uniform): 1-0 {White wins by adjudication}
+Started game 16 of 200 (uniform vs far600)
+Finished game 12 (uniform vs far600): 1-0 {White wins by adjudication}
+Started game 17 of 200 (far600 vs uniform)
+Finished game 14 (uniform vs far600): 0-1 {Black wins by adjudication}
+Started game 18 of 200 (uniform vs far600)
+Finished game 17 (far600 vs uniform): 1-0 {White wins by adjudication}
+Started game 19 of 200 (far600 vs uniform)
+Finished game 16 (uniform vs far600): 1-0 {White wins by adjudication}
+Started game 20 of 200 (uniform vs far600)
+Finished game 18 (uniform vs far600): 0-1 {Black wins by adjudication}
+Started game 21 of 200 (far600 vs uniform)
+Finished game 15 (far600 vs uniform): 1-0 {White wins by adjudication}
+Started game 22 of 200 (uniform vs far600)
+Finished game 19 (far600 vs uniform): 0-1 {Black wins by adjudication}
+Started game 23 of 200 (far600 vs uniform)
+Finished game 20 (uniform vs far600): 0-1 {Black wins by adjudication}
+Started game 24 of 200 (uniform vs far600)
+Finished game 22 (uniform vs far600): 1-0 {White wins by adjudication}
+Started game 25 of 200 (far600 vs uniform)
+Finished game 21 (far600 vs uniform): 1-0 {White wins by adjudication}
+Started game 26 of 200 (uniform vs far600)
+Finished game 23 (far600 vs uniform): 0-1 {Black wins by adjudication}
+Started game 27 of 200 (far600 vs uniform)
+Finished game 25 (far600 vs uniform): 0-1 {Black wins by adjudication}
+Started game 28 of 200 (uniform vs far600)
+Finished game 24 (uniform vs far600): 1-0 {White wins by adjudication}
+Started game 29 of 200 (far600 vs uniform)
+Finished game 26 (uniform vs far600): 1-0 {White wins by adjudication}
+Started game 30 of 200 (uniform vs far600)
+Finished game 28 (uniform vs far600): 0-1 {Black wins by adjudication}
+Started game 31 of 200 (far600 vs uniform)
+Finished game 27 (far600 vs uniform): 1/2-1/2 {Draw by adjudication}
+Started game 32 of 200 (uniform vs far600)
+Finished game 30 (uniform vs far600): 1-0 {White wins by adjudication}
+Started game 33 of 200 (far600 vs uniform)
+Finished game 29 (far600 vs uniform): 0-1 {Black wins by adjudication}
+Started game 34 of 200 (uniform vs far600)
+Finished game 31 (far600 vs uniform): 1/2-1/2 {Draw by adjudication}
+Started game 35 of 200 (far600 vs uniform)
+Finished game 32 (uniform vs far600): 0-1 {Black wins by adjudication}
+Started game 36 of 200 (uniform vs far600)
+Finished game 33 (far600 vs uniform): 1-0 {White wins by adjudication}
+Started game 37 of 200 (far600 vs uniform)
+Finished game 35 (far600 vs uniform): 0-1 {Black wins by adjudication}
+Started game 38 of 200 (uniform vs far600)
+Finished game 37 (far600 vs uniform): 1-0 {White wins by adjudication}
+Started game 39 of 200 (far600 vs uniform)
+Finished game 36 (uniform vs far600): 1-0 {White wins by adjudication}
+Started game 40 of 200 (uniform vs far600)
+Finished game 34 (uniform vs far600): 1-0 {White wins by adjudication}
+Started game 41 of 200 (far600 vs uniform)
+Finished game 41 (far600 vs uniform): 1-0 {White wins by adjudication}
+Started game 42 of 200 (uniform vs far600)
+Finished game 38 (uniform vs far600): 1-0 {White wins by adjudication}
+Started game 43 of 200 (far600 vs uniform)
+Finished game 40 (uniform vs far600): 0-1 {Black wins by adjudication}
+Started game 44 of 200 (uniform vs far600)
+Finished game 39 (far600 vs uniform): 0-1 {Black wins by adjudication}
+Started game 45 of 200 (far600 vs uniform)
+Finished game 42 (uniform vs far600): 1-0 {White wins by adjudication}
+Started game 46 of 200 (uniform vs far600)
+Finished game 43 (far600 vs uniform): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 47 of 200 (far600 vs uniform)
+Finished game 44 (uniform vs far600): 0-1 {Black wins by adjudication}
+Started game 48 of 200 (uniform vs far600)
+Finished game 45 (far600 vs uniform): 0-1 {Black wins by adjudication}
+Started game 49 of 200 (far600 vs uniform)
+Finished game 47 (far600 vs uniform): 1-0 {White wins by adjudication}
+Started game 50 of 200 (uniform vs far600)
+Finished game 46 (uniform vs far600): 1-0 {White wins by adjudication}
+Started game 51 of 200 (far600 vs uniform)
+Finished game 50 (uniform vs far600): 1-0 {White wins by adjudication}
+Started game 52 of 200 (uniform vs far600)
+Finished game 48 (uniform vs far600): 1-0 {White wins by adjudication}
+Started game 53 of 200 (far600 vs uniform)
+Finished game 49 (far600 vs uniform): 0-1 {Black wins by adjudication}
+Started game 54 of 200 (uniform vs far600)
+Finished game 51 (far600 vs uniform): 0-1 {Black mates}
+Started game 55 of 200 (far600 vs uniform)
+Finished game 53 (far600 vs uniform): 0-1 {Black wins by adjudication}
+Started game 56 of 200 (uniform vs far600)
+Finished game 52 (uniform vs far600): 1-0 {White wins by adjudication}
+Started game 57 of 200 (far600 vs uniform)
+Finished game 54 (uniform vs far600): 0-1 {Black wins by adjudication}
+Started game 58 of 200 (uniform vs far600)
+Finished game 55 (far600 vs uniform): 1-0 {White wins by adjudication}
+Started game 59 of 200 (far600 vs uniform)
+Finished game 57 (far600 vs uniform): 0-1 {Black wins by adjudication}
+Started game 60 of 200 (uniform vs far600)
+Finished game 56 (uniform vs far600): 0-1 {Black wins by adjudication}
+Started game 61 of 200 (far600 vs uniform)
+Finished game 58 (uniform vs far600): 1-0 {White wins by adjudication}
+Started game 62 of 200 (uniform vs far600)
+Finished game 59 (far600 vs uniform): 0-1 {Black wins by adjudication}
+Started game 63 of 200 (far600 vs uniform)
+Finished game 60 (uniform vs far600): 1-0 {White wins by adjudication}
+Started game 64 of 200 (uniform vs far600)
+Finished game 62 (uniform vs far600): 1-0 {White wins by adjudication}
+Started game 65 of 200 (far600 vs uniform)
+Finished game 61 (far600 vs uniform): 1/2-1/2 {Draw by adjudication}
+Started game 66 of 200 (uniform vs far600)
+Finished game 64 (uniform vs far600): 1-0 {White wins by adjudication}
+Started game 67 of 200 (far600 vs uniform)
+Finished game 63 (far600 vs uniform): 0-1 {Black wins by adjudication}
+Started game 68 of 200 (uniform vs far600)
+Finished game 66 (uniform vs far600): 1-0 {White wins by adjudication}
+Started game 69 of 200 (far600 vs uniform)
+Finished game 65 (far600 vs uniform): 1-0 {White wins by adjudication}
+Started game 70 of 200 (uniform vs far600)
+Finished game 67 (far600 vs uniform): 1-0 {White wins by adjudication}
+Started game 71 of 200 (far600 vs uniform)
+Finished game 68 (uniform vs far600): 1-0 {White mates}
+Started game 72 of 200 (uniform vs far600)
+Finished game 71 (far600 vs uniform): 0-1 {Black wins by adjudication}
+Started game 73 of 200 (far600 vs uniform)
+Finished game 70 (uniform vs far600): 1-0 {White wins by adjudication}
+Started game 74 of 200 (uniform vs far600)
+Finished game 72 (uniform vs far600): 1-0 {White wins by adjudication}
+Started game 75 of 200 (far600 vs uniform)
+Finished game 69 (far600 vs uniform): 0-1 {Black wins by adjudication}
+Started game 76 of 200 (uniform vs far600)
+Finished game 73 (far600 vs uniform): 0-1 {Black wins by adjudication}
+Started game 77 of 200 (far600 vs uniform)
+Finished game 74 (uniform vs far600): 1-0 {White wins by adjudication}
+Started game 78 of 200 (uniform vs far600)
+Finished game 75 (far600 vs uniform): 1/2-1/2 {Draw by insufficient mating material}
+Started game 79 of 200 (far600 vs uniform)
+Finished game 76 (uniform vs far600): 0-1 {Black wins by adjudication}
+Started game 80 of 200 (uniform vs far600)
+Finished game 78 (uniform vs far600): 1-0 {White wins by adjudication}
+Started game 81 of 200 (far600 vs uniform)
+Finished game 79 (far600 vs uniform): 0-1 {Black mates}
+Started game 82 of 200 (uniform vs far600)
+Finished game 77 (far600 vs uniform): 0-1 {Black wins by adjudication}
+Started game 83 of 200 (far600 vs uniform)
+Finished game 80 (uniform vs far600): 1/2-1/2 {Draw by adjudication}
+Started game 84 of 200 (uniform vs far600)
+Finished game 81 (far600 vs uniform): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 85 of 200 (far600 vs uniform)
+Finished game 82 (uniform vs far600): 1-0 {White wins by adjudication}
+Started game 86 of 200 (uniform vs far600)
+Finished game 84 (uniform vs far600): 1-0 {White wins by adjudication}
+Started game 87 of 200 (far600 vs uniform)
+Finished game 85 (far600 vs uniform): 0-1 {Black wins by adjudication}
+Started game 88 of 200 (uniform vs far600)
+Finished game 86 (uniform vs far600): 1-0 {White wins by adjudication}
+Started game 89 of 200 (far600 vs uniform)
+Finished game 83 (far600 vs uniform): 1/2-1/2 {Draw by adjudication}
+Started game 90 of 200 (uniform vs far600)
+Finished game 88 (uniform vs far600): 1-0 {White wins by adjudication}
+Started game 91 of 200 (far600 vs uniform)
+Finished game 87 (far600 vs uniform): 0-1 {Black wins by adjudication}
+Started game 92 of 200 (uniform vs far600)
+Finished game 90 (uniform vs far600): 1-0 {White wins by adjudication}
+Started game 93 of 200 (far600 vs uniform)
+Finished game 89 (far600 vs uniform): 1-0 {White wins by adjudication}
+Started game 94 of 200 (uniform vs far600)
+Finished game 92 (uniform vs far600): 1-0 {White wins by adjudication}
+Started game 95 of 200 (far600 vs uniform)
+Finished game 91 (far600 vs uniform): 0-1 {Black wins by adjudication}
+Started game 96 of 200 (uniform vs far600)
+Finished game 94 (uniform vs far600): 0-1 {Black wins by adjudication}
+Started game 97 of 200 (far600 vs uniform)
+Finished game 93 (far600 vs uniform): 0-1 {Black wins by adjudication}
+Started game 98 of 200 (uniform vs far600)
+Finished game 96 (uniform vs far600): 1-0 {White wins by adjudication}
+Started game 99 of 200 (far600 vs uniform)
+Finished game 95 (far600 vs uniform): 1/2-1/2 {Draw by insufficient mating material}
+Started game 100 of 200 (uniform vs far600)
+Finished game 97 (far600 vs uniform): 1-0 {White wins by adjudication}
+Started game 101 of 200 (far600 vs uniform)
+Finished game 98 (uniform vs far600): 1-0 {White wins by adjudication}
+Started game 102 of 200 (uniform vs far600)
+Finished game 100 (uniform vs far600): 1-0 {White wins by adjudication}
+Started game 103 of 200 (far600 vs uniform)
+Finished game 101 (far600 vs uniform): 0-1 {Black wins by adjudication}
+Started game 104 of 200 (uniform vs far600)
+Finished game 99 (far600 vs uniform): 0-1 {Black wins by adjudication}
+Started game 105 of 200 (far600 vs uniform)
+Finished game 102 (uniform vs far600): 1-0 {White wins by adjudication}
+Started game 106 of 200 (uniform vs far600)
+Finished game 103 (far600 vs uniform): 1-0 {White wins by adjudication}
+Started game 107 of 200 (far600 vs uniform)
+Finished game 104 (uniform vs far600): 1-0 {White wins by adjudication}
+Started game 108 of 200 (uniform vs far600)
+Finished game 105 (far600 vs uniform): 0-1 {Black wins by adjudication}
+Started game 109 of 200 (far600 vs uniform)
+Finished game 106 (uniform vs far600): 1-0 {White wins by adjudication}
+Started game 110 of 200 (uniform vs far600)
+Finished game 108 (uniform vs far600): 1-0 {White wins by adjudication}
+Started game 111 of 200 (far600 vs uniform)
+Finished game 107 (far600 vs uniform): 0-1 {Black wins by adjudication}
+Started game 112 of 200 (uniform vs far600)
+Finished game 109 (far600 vs uniform): 0-1 {Black wins by adjudication}
+Started game 113 of 200 (far600 vs uniform)
+Finished game 112 (uniform vs far600): 1-0 {White wins by adjudication}
+Started game 114 of 200 (uniform vs far600)
+Finished game 111 (far600 vs uniform): 1-0 {White wins by adjudication}
+Started game 115 of 200 (far600 vs uniform)
+Finished game 113 (far600 vs uniform): 0-1 {Black wins by adjudication}
+Started game 116 of 200 (uniform vs far600)
+Finished game 110 (uniform vs far600): 1/2-1/2 {Draw by adjudication}
+Started game 117 of 200 (far600 vs uniform)
+Finished game 117 (far600 vs uniform): 1-0 {White wins by adjudication}
+Started game 118 of 200 (uniform vs far600)
+Finished game 114 (uniform vs far600): 0-1 {Black wins by adjudication}
+Started game 119 of 200 (far600 vs uniform)
+Finished game 115 (far600 vs uniform): 0-1 {Black wins by adjudication}
+Started game 120 of 200 (uniform vs far600)
+Finished game 116 (uniform vs far600): 1-0 {White wins by adjudication}
+Started game 121 of 200 (far600 vs uniform)
+Finished game 118 (uniform vs far600): 0-1 {Black wins by adjudication}
+Started game 122 of 200 (uniform vs far600)
+Finished game 119 (far600 vs uniform): 0-1 {Black wins by adjudication}
+Started game 123 of 200 (far600 vs uniform)
+Finished game 120 (uniform vs far600): 1-0 {White wins by adjudication}
+Started game 124 of 200 (uniform vs far600)
+Finished game 121 (far600 vs uniform): 1-0 {White wins by adjudication}
+Started game 125 of 200 (far600 vs uniform)
+Finished game 123 (far600 vs uniform): 0-1 {Black wins by adjudication}
+Started game 126 of 200 (uniform vs far600)
+Finished game 122 (uniform vs far600): 0-1 {Black wins by adjudication}
+Started game 127 of 200 (far600 vs uniform)
+Finished game 124 (uniform vs far600): 1/2-1/2 {Draw by insufficient mating material}
+Started game 128 of 200 (uniform vs far600)
+Finished game 126 (uniform vs far600): 1-0 {White wins by adjudication}
+Started game 129 of 200 (far600 vs uniform)
+Finished game 125 (far600 vs uniform): 1-0 {White wins by adjudication}
+Started game 130 of 200 (uniform vs far600)
+Finished game 127 (far600 vs uniform): 0-1 {Black wins by adjudication}
+Started game 131 of 200 (far600 vs uniform)
+Finished game 129 (far600 vs uniform): 1-0 {White wins by adjudication}
+Started game 132 of 200 (uniform vs far600)
+Finished game 130 (uniform vs far600): 1/2-1/2 {Draw by adjudication}
+Started game 133 of 200 (far600 vs uniform)
+Finished game 131 (far600 vs uniform): 0-1 {Black wins by adjudication}
+Started game 134 of 200 (uniform vs far600)
+Finished game 128 (uniform vs far600): 1-0 {White wins by adjudication}
+Started game 135 of 200 (far600 vs uniform)
+Finished game 132 (uniform vs far600): 1-0 {White wins by adjudication}
+Started game 136 of 200 (uniform vs far600)
+Finished game 135 (far600 vs uniform): 1-0 {White wins by adjudication}
+Started game 137 of 200 (far600 vs uniform)
+Finished game 134 (uniform vs far600): 0-1 {Black wins by adjudication}
+Started game 138 of 200 (uniform vs far600)
+Finished game 136 (uniform vs far600): 0-1 {Black wins by adjudication}
+Started game 139 of 200 (far600 vs uniform)
+Finished game 133 (far600 vs uniform): 0-1 {Black wins by adjudication}
+Started game 140 of 200 (uniform vs far600)
+Finished game 137 (far600 vs uniform): 1-0 {White wins by adjudication}
+Started game 141 of 200 (far600 vs uniform)
+Finished game 138 (uniform vs far600): 0-1 {Black wins by adjudication}
+Started game 142 of 200 (uniform vs far600)
+Finished game 139 (far600 vs uniform): 0-1 {Black wins by adjudication}
+Started game 143 of 200 (far600 vs uniform)
+Finished game 140 (uniform vs far600): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 144 of 200 (uniform vs far600)
+Finished game 143 (far600 vs uniform): 1-0 {White wins by adjudication}
+Started game 145 of 200 (far600 vs uniform)
+Finished game 141 (far600 vs uniform): 1-0 {White wins by adjudication}
+Started game 146 of 200 (uniform vs far600)
+Finished game 142 (uniform vs far600): 1-0 {White wins by adjudication}
+Started game 147 of 200 (far600 vs uniform)
+Finished game 144 (uniform vs far600): 1-0 {White wins by adjudication}
+Started game 148 of 200 (uniform vs far600)
+Finished game 146 (uniform vs far600): 0-1 {Black wins by adjudication}
+Started game 149 of 200 (far600 vs uniform)
+Finished game 145 (far600 vs uniform): 0-1 {Black wins by adjudication}
+Started game 150 of 200 (uniform vs far600)
+Finished game 147 (far600 vs uniform): 1-0 {White wins by adjudication}
+Started game 151 of 200 (far600 vs uniform)
+Finished game 148 (uniform vs far600): 1/2-1/2 {Draw by adjudication}
+Started game 152 of 200 (uniform vs far600)
+Finished game 150 (uniform vs far600): 1-0 {White wins by adjudication}
+Started game 153 of 200 (far600 vs uniform)
+Finished game 151 (far600 vs uniform): 1-0 {White wins by adjudication}
+Started game 154 of 200 (uniform vs far600)
+Finished game 149 (far600 vs uniform): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 155 of 200 (far600 vs uniform)
+Finished game 152 (uniform vs far600): 0-1 {Black wins by adjudication}
+Started game 156 of 200 (uniform vs far600)
+Finished game 153 (far600 vs uniform): 0-1 {Black wins by adjudication}
+Started game 157 of 200 (far600 vs uniform)
+Finished game 155 (far600 vs uniform): 0-1 {Black wins by adjudication}
+Started game 158 of 200 (uniform vs far600)
+Finished game 156 (uniform vs far600): 1-0 {White wins by adjudication}
+Started game 159 of 200 (far600 vs uniform)
+Finished game 154 (uniform vs far600): 0-1 {Black wins by adjudication}
+Started game 160 of 200 (uniform vs far600)
+Finished game 157 (far600 vs uniform): 1-0 {White wins by adjudication}
+Started game 161 of 200 (far600 vs uniform)
+Finished game 159 (far600 vs uniform): 0-1 {Black wins by adjudication}
+Started game 162 of 200 (uniform vs far600)
+Finished game 158 (uniform vs far600): 0-1 {Black wins by adjudication}
+Started game 163 of 200 (far600 vs uniform)
+Finished game 160 (uniform vs far600): 1/2-1/2 {Draw by insufficient mating material}
+Started game 164 of 200 (uniform vs far600)
+Finished game 161 (far600 vs uniform): 0-1 {Black wins by adjudication}
+Started game 165 of 200 (far600 vs uniform)
+Finished game 162 (uniform vs far600): 1-0 {White wins by adjudication}
+Started game 166 of 200 (uniform vs far600)
+Finished game 163 (far600 vs uniform): 0-1 {Black wins by adjudication}
+Started game 167 of 200 (far600 vs uniform)
+Finished game 164 (uniform vs far600): 1-0 {White wins by adjudication}
+Started game 168 of 200 (uniform vs far600)
+Finished game 166 (uniform vs far600): 1/2-1/2 {Draw by adjudication}
+Started game 169 of 200 (far600 vs uniform)
+Finished game 165 (far600 vs uniform): 0-1 {Black wins by adjudication}
+Started game 170 of 200 (uniform vs far600)
+Finished game 168 (uniform vs far600): 1-0 {White wins by adjudication}
+Started game 171 of 200 (far600 vs uniform)
+Finished game 167 (far600 vs uniform): 1-0 {White wins by adjudication}
+Started game 172 of 200 (uniform vs far600)
+Finished game 169 (far600 vs uniform): 1-0 {White wins by adjudication}
+Started game 173 of 200 (far600 vs uniform)
+Finished game 172 (uniform vs far600): 1-0 {White wins by adjudication}
+Started game 174 of 200 (uniform vs far600)
+Finished game 171 (far600 vs uniform): 0-1 {Black wins by adjudication}
+Started game 175 of 200 (far600 vs uniform)
+Finished game 170 (uniform vs far600): 1-0 {White wins by adjudication}
+Started game 176 of 200 (uniform vs far600)
+Finished game 174 (uniform vs far600): 1-0 {White wins by adjudication}
+Started game 177 of 200 (far600 vs uniform)
+Finished game 173 (far600 vs uniform): 0-1 {Black wins by adjudication}
+Started game 178 of 200 (uniform vs far600)
+Finished game 175 (far600 vs uniform): 0-1 {Black wins by adjudication}
+Started game 179 of 200 (far600 vs uniform)
+Finished game 178 (uniform vs far600): 1-0 {White wins by adjudication}
+Started game 180 of 200 (uniform vs far600)
+Finished game 176 (uniform vs far600): 0-1 {Black wins by adjudication}
+Started game 181 of 200 (far600 vs uniform)
+Finished game 179 (far600 vs uniform): 0-1 {Black wins by adjudication}
+Started game 182 of 200 (uniform vs far600)
+Finished game 177 (far600 vs uniform): 1-0 {White wins by adjudication}
+Started game 183 of 200 (far600 vs uniform)
+Finished game 180 (uniform vs far600): 1-0 {White wins by adjudication}
+Started game 184 of 200 (uniform vs far600)
+Finished game 181 (far600 vs uniform): 0-1 {Black wins by adjudication}
+Started game 185 of 200 (far600 vs uniform)
+Finished game 182 (uniform vs far600): 1-0 {White wins by adjudication}
+Started game 186 of 200 (uniform vs far600)
+Finished game 184 (uniform vs far600): 1-0 {White wins by adjudication}
+Started game 187 of 200 (far600 vs uniform)
+Finished game 183 (far600 vs uniform): 0-1 {Black wins by adjudication}
+Started game 188 of 200 (uniform vs far600)
+Finished game 186 (uniform vs far600): 1-0 {White wins by adjudication}
+Started game 189 of 200 (far600 vs uniform)
+Finished game 187 (far600 vs uniform): 1-0 {White wins by adjudication}
+Started game 190 of 200 (uniform vs far600)
+Finished game 185 (far600 vs uniform): 1-0 {White wins by adjudication}
+Started game 191 of 200 (far600 vs uniform)
+Finished game 188 (uniform vs far600): 1-0 {White wins by adjudication}
+Started game 192 of 200 (uniform vs far600)
+Finished game 191 (far600 vs uniform): 1-0 {White wins by adjudication}
+Started game 193 of 200 (far600 vs uniform)
+Finished game 189 (far600 vs uniform): 1/2-1/2 {Draw by adjudication}
+Started game 194 of 200 (uniform vs far600)
+Finished game 190 (uniform vs far600): 1-0 {White wins by adjudication}
+Started game 195 of 200 (far600 vs uniform)
+Finished game 194 (uniform vs far600): 1-0 {White wins by adjudication}
+Started game 196 of 200 (uniform vs far600)
+Finished game 193 (far600 vs uniform): 0-1 {Black wins by adjudication}
+Started game 197 of 200 (far600 vs uniform)
+Finished game 192 (uniform vs far600): 1-0 {White wins by adjudication}
+Started game 198 of 200 (uniform vs far600)
+Finished game 195 (far600 vs uniform): 1/2-1/2 {Draw by insufficient mating material}
+Started game 199 of 200 (far600 vs uniform)
+Finished game 196 (uniform vs far600): 1-0 {White wins by adjudication}
+Started game 200 of 200 (uniform vs far600)
+Finished game 198 (uniform vs far600): 1-0 {White wins by adjudication}
+Finished game 199 (far600 vs uniform): 1/2-1/2 {Draw by insufficient mating material}
+Finished game 197 (far600 vs uniform): 1-0 {White wins by adjudication}
+Finished game 200 (uniform vs far600): 1-0 {White wins by adjudication}
+--------------------------------------------------
+Results of far600 vs uniform (20000 nodes, 1t, 16MB, UHO_4060_v4.epd):
+Elo: -119.11 +/- 49.44, nElo: -126.44 +/- 48.15
+LOS: 0.00 %, DrawRatio: 33.00 %, PairsRatio: 0.29
+Games: 200, Wins: 56, Losses: 122, Draws: 22, Points: 67.0 (33.50 %)
+Ptnml(0-2): [38, 14, 33, 6, 9], WL/DD Ratio: 32.00
+--------------------------------------------------
+Finished match
+Total Time: 00:03:23 (hours:minutes:seconds)
+

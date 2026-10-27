@@ -32,7 +32,7 @@
         "additional_lines_rgx": [],
         "event_name": "Fastchess Tournament",
         "site": "?",
-        "file": "experiments/e13/matches/tree_c468_vs_game_n100_p3e7.pgn",
+        "file": "experiments/b4r/matches/FTt_G_vs_FTg_G.pgn",
         "notation": 0,
         "append_file": true,
         "track_nodes": false,
@@ -60,7 +60,7 @@
     },
     "config_name": "config.json",
     "output": 0,
-    "seed": 1,
+    "seed": 7,
     "variant": 0,
     "type": 0,
     "gauntlet_seeds": 1,
@@ -89,15 +89,15 @@
     },
     "engines": [
         {
-            "name": "tree_c468",
+            "name": "FTt_G",
             "dir": "",
-            "cmd": "/home/user/data/sf_research",
+            "cmd": "/home/user/data/sf_research_kb",
             "args": "",
             "restart": false,
             "options": [
                 [
                     "StudentFile",
-                    "/home/user/nets/e13/tree_c468.stud"
+                    "/home/user/nets/b4r/FTt_G.stud"
                 ],
                 [
                     "Threads",
@@ -122,15 +122,15 @@
             "variant": 0
         },
         {
-            "name": "game_n100_p3e7",
+            "name": "FTg_G",
             "dir": "",
-            "cmd": "/home/user/data/sf_research",
+            "cmd": "/home/user/data/sf_research_kb",
             "args": "",
             "restart": false,
             "options": [
                 [
                     "StudentFile",
-                    "/home/user/nets/e13/game_n100_p3e7.stud"
+                    "/home/user/nets/b4r/FTg_G.stud"
                 ],
                 [
                     "Threads",
@@ -156,16 +156,16 @@
         }
     ],
     "stats": {
-        "tree_c468 vs game_n100_p3e7": {
-            "wins": 163,
-            "losses": 111,
-            "draws": 26,
-            "penta_WW": 43,
-            "penta_WD": 14,
-            "penta_WL": 63,
-            "penta_DD": 2,
-            "penta_LD": 8,
-            "penta_LL": 20
+        "FTt_G vs FTg_G": {
+            "wins": 279,
+            "losses": 8,
+            "draws": 13,
+            "penta_WW": 129,
+            "penta_WD": 13,
+            "penta_WL": 8,
+            "penta_DD": 0,
+            "penta_LD": 0,
+            "penta_LL": 0
         }
     }
 }
