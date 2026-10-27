@@ -23,7 +23,7 @@ pre-registered in RESEARCH_LOG before results.
 | Q3 | Re-distilling the stacks from master's evals: tree positions beat fast-game positions. | +43.0 +/- 13.7 (1000 games) |
 | Q4 | 2x2 factorial (identical positions, re-initialised stacks): tree beats game under **both** label types. | teacher labels +82.8 +/- 16.6; search labels +43.7 +/- 18.7 |
 | Q5 | The quiet filter (drop capture-best positions) helps tree data and **hurts game data** under teacher labels. | quiet game -146 vs unfiltered -98 (vs master); SEE-filtered game -22 +/- 17 |
-| Q6 | Most of the tree advantage lives in **feature learning**; the readout benefits only when features lack coverage. | tree-trained vs game-trained features +531 +/- 104; readout effect +186 (game features) vs +3 (tree features) |
+| Q6 | Most of the tree advantage lives in **feature learning**; the readout benefits only when features lack coverage. | tree-trained vs game-trained features +531 +/- 104 (H=256), +518 +/- 82 (H=512 replication); readout effect +186 / +208 (game features) vs +3 / -2 (tree features) |
 | Q7 | Selecting "informative" tree positions loses to uniform sampling: near the alpha-beta window -531, far -119, main search only -80, by student error -100 to -849. | B1/B3/B2, 200 games each |
 | Q8 | On-policy data gives weak students a persistent edge over matched off-policy data, but iterating does not keep improving a capacity-limited student; no detectable benefit for a near-teacher student. | pooled over 3 iterations +17.8 [9.1, 26.6] (3,800 games); per iteration +22.6 / +3.1 / +24.0; production +6 +/- 13 |
 

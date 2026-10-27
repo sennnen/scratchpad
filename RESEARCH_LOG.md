@@ -609,3 +609,12 @@ Conclusion: iterating does not keep improving an H=256 student (capacity plateau
 the on-policy arm stays ahead of the matched off-policy arm at every iteration; iteration 2's +3 was
 within noise (correction to the iteration-2 entry, which said the edge "vanishes"). No instability or
 oscillation beyond match noise was observed.
+
+## B4r: replication of B4 at H=512 (independent E4 nets, training seed 1, opening seed 7, 300 games each)
+| comparison | H=256 (B4) | H=512 (B4r) |
+|---|---|---|
+| game-trained features: readout T vs G | +186 +/- 50 | **+208 +/- 41** |
+| tree-trained features: readout T vs G | +3 +/- 33 | **-2 +/- 29** |
+| readout G: tree-trained vs game-trained features | +531 +/- 104 | **+518 +/- 82** |
+Validation (VG/VT): FTg_G 0.0252/0.0344, FTg_T 0.0265/0.0285, FTt_G 0.0165/0.0205, FTt_T 0.0179/0.0183.
+The features-vs-readout mechanism replicates across widths and independently trained feature sources.

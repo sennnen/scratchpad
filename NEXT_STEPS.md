@@ -16,10 +16,10 @@ Ranking = (probability the hypothesis is true and matters at full scale) x (valu
    evals on 600k tree positions reach -43 Elo of master in ~8 minutes. Ranking candidate layer-stack
    architectures by tree distillation could pre-screen changes before GPU training. Untested: whether
    distillation rankings predict full-training rankings.
-4. **On-policy (DAgger) data for weak students.** Gains scale with the student-teacher gap
-   (+23 at ~380 Elo below the teacher, +6 +/- 13 at ~43 below). Useful when bootstrapping small or new
-   architectures from a strong teacher, not for refining near-teacher nets. C1 (iterations 2-3) results are
-   in RESEARCH_LOG.
+4. **On-policy (DAgger) data for weak students.** A persistent edge of +17.8 [9.1, 26.6] over matched
+   off-policy data across three iterations for a student ~380 Elo below its teacher; nothing detectable at
+   ~43 below (+6 +/- 13). Iterating did not raise absolute strength of a capacity-limited student; test with
+   larger students where capacity is not binding.
 5. **Teacher-free variant.** Search-labelled tree positions beat quiet game positions (P4: +44 +/- 19 in
    the production architecture, E6 earlier). Relevant for engines without a strong teacher.
 6. Deprioritised after negative results: selecting "informative" positions by alpha-beta margin, ply,
